@@ -27,3 +27,8 @@ Thumbs.db
 # Vite cache
 .vite/
 *.local
+
+# Wrangler
+.wrangler/
+.wrangler-dry/
+.dev.vars

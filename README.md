@@ -50,7 +50,18 @@ src/
 npm run dev     # 解析数据 + 启动开发服务器
 npm run build   # 解析数据 + 构建到 dist/
 npm run data    # 只重新解析数据（改了 content/ 下的 md 后执行）
+npm run deploy  # 构建 + 部署到 Cloudflare Workers（wrangler deploy）
 ```
+
+## 部署
+
+站点为纯静态产物，通过 Cloudflare Workers 静态资源（`assets`）托管，配置见 `wrangler.jsonc`：
+
+- `assets.directory: ./dist` —— 直接读取 Vite 构建产物
+- `assets.not_found_handling: single-page-application` —— 未知路径回落到 `index.html`，配合 hash 路由
+
+Cloudflare 构建环境（Workers Builds）会自动执行 `npm clean-install` → `npm run build` → `npx wrangler deploy`。
+本地手动部署需先 `npx wrangler login` 授权。
 
 ## 维护方式
 

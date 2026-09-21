@@ -8,10 +8,12 @@
     "data": "node scripts/parse-boss.mjs && node scripts/parse-attachment.mjs",
     "dev": "node scripts/parse-boss.mjs && node scripts/parse-attachment.mjs && vite",
     "build": "node scripts/parse-boss.mjs && node scripts/parse-attachment.mjs && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && wrangler deploy"
   },
   "devDependencies": {
-    "vite": "^8.1.4"
+    "vite": "^8.1.4",
+    "wrangler": "^4.136.1"
   },
   "dependencies": {
     "genshin-db": "^5.2.13",
