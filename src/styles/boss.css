@@ -1,0 +1,387 @@
+/** ===== 幽境 Boss 图鉴样式 ===== */
+
+.boss-header h1 { margin-bottom: 0.2rem; }
+
+/* 版本导航珠子串 */
+.tabs {
+  display: flex;
+  justify-content: center;
+  padding: 1.4rem 0 0.4rem;
+}
+
+.bead-chain {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 8px 16px;
+  background: rgba(74, 137, 220, 0.1);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+}
+
+.bead {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin: 0 10px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bead + .bead::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  width: 20px;
+  height: 1px;
+  transform: translateY(-50%);
+  background: var(--border-color);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.bead-dot {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 28%, #4a5a76, #2c3850);
+  border: 1.5px solid #3d4a68;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.bead:hover .bead-dot {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
+  transform: scale(1.1);
+}
+
+.bead.active .bead-dot {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(74, 137, 220, 0.2), 0 0 12px var(--accent);
+  transform: scale(1.08);
+}
+
+.bead-tip {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%) translateY(2px);
+  padding: 4px 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-heading);
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s, transform 0.15s;
+  box-shadow: var(--shadow-md);
+  z-index: 5;
+}
+.bead-tip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: var(--border-color);
+}
+.bead:hover .bead-tip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* 主内容网格 */
+.enemy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* 敌人卡片（点击翻面） */
+.enemy-card {
+  position: relative;
+  perspective: 1200px;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
+  animation: card-fade-in 0.4s ease-out forwards;
+  cursor: pointer;
+}
+
+@keyframes card-fade-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.enemy-card:hover {
+  border-color: var(--accent-light);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.flip-inner {
+  position: relative;
+  display: grid;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.enemy-card.flipped .flip-inner { transform: rotateY(180deg); }
+
+.flip-face {
+  grid-area: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  background: var(--card-bg);
+}
+.flip-back { transform: rotateY(180deg); }
+
+.flip-face > .enemy-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.flip-face .face-body {
+  flex: 1;
+  min-height: 0;
+  padding-right: 4px;
+  padding-bottom: 14px;
+}
+
+.face-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-light);
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+  flex: none;
+}
+
+.flip-hint {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  padding: 9px 10px;
+  text-align: center;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  border-top: 1px solid var(--border-color);
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  background: var(--nav-bg);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.flip-hint .hint-back { display: none; }
+.enemy-card.flipped .flip-hint .hint-front { display: none; }
+.enemy-card.flipped .flip-hint .hint-back { display: inline; }
+.flip-face .enemy-card-content { padding-bottom: 44px; }
+
+/* 图片区域 */
+.enemy-image-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-body) 100%);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.enemy-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.enemy-card:hover .enemy-image-container img { transform: scale(1.04); }
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+.image-placeholder code {
+  font-size: 0.72rem;
+  word-break: break-all;
+}
+
+/* 卡片内容区 */
+.enemy-card-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 18px;
+  gap: 14px;
+}
+
+.enemy-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.enemy-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.enemy-hp {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin: 0;
+  font-family: var(--font-mono);
+}
+
+/* 板块化内容 */
+.block-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.block {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.block-text {
+  background: var(--bg-code);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--border-color);
+  color: var(--text-main);
+}
+
+.block-title {
+  background: rgba(74, 137, 220, 0.14);
+  border: 1px solid rgba(74, 137, 220, 0.3);
+  border-left: 3px solid var(--accent);
+  color: var(--text-heading);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+}
+.block-title-mark {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex: none;
+}
+
+.empty-hint {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* 背景折叠 */
+.background-section {
+  margin-top: 14px;
+  padding-top: 4px;
+  border-top: 1px solid var(--border-color);
+}
+
+.background-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  transition: color 0.16s;
+}
+.background-toggle:hover { color: var(--accent-light); }
+
+.bg-arrow {
+  display: inline-flex;
+  align-items: center;
+  transition: transform 0.3s ease-out;
+  color: var(--text-secondary);
+}
+.background-toggle.open .bg-arrow { transform: rotate(180deg); }
+
+.background-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s ease-out, opacity 0.35s ease-out;
+}
+.background-content.open {
+  opacity: 1;
+  margin-top: 10px;
+}
+
+/* 空状态 */
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-secondary);
+}
+
+/* 响应式 */
+@media (max-width: 1200px) {
+  .enemy-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .enemy-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .bead-chain { padding: 6px 12px; }
+  .bead { width: 14px; height: 14px; margin: 0 8px; }
+  .bead + .bead::before { left: -16px; width: 16px; }
+  .bead-dot { width: 10px; height: 10px; }
+  .enemy-image-container { aspect-ratio: 5 / 3; }
+  .enemy-card-content { padding: 12px; gap: 10px; }
+  .block { font-size: 0.8rem; padding: 8px 10px; }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "wiki-hub",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "艾莲的数据库 · 整合版：伤害计算公式 / 幽境Boss图鉴 / 产球及附着，统一 UI 框架",
+  "scripts": {
+    "data": "node scripts/parse-boss.mjs && node scripts/parse-attachment.mjs",
+    "dev": "node scripts/parse-boss.mjs && node scripts/parse-attachment.mjs && vite",
+    "build": "node scripts/parse-boss.mjs && node scripts/parse-attachment.mjs && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.1.4"
+  },
+  "dependencies": {
+    "genshin-db": "^5.2.13",
+    "katex": "^0.16.11",
+    "marked": "^14.0.0"
+  }
+}

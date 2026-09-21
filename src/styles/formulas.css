@@ -1,0 +1,135 @@
+/* formulas.css — 伤害计算公式页样式 */
+
+/* 布局：正文 + 右侧粘性目录 */
+.formulas-layout {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+.formula-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* 目录侧栏 */
+.formula-toc {
+  flex: none;
+  width: 190px;
+  position: sticky;
+  top: 76px;
+  max-height: calc(100vh - 96px);
+  overflow-y: auto;
+  padding: 0.9rem 1rem;
+}
+
+.formula-toc h4 {
+  margin: 0 0 0.6rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  letter-spacing: 2px;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-list li { margin: 0; }
+
+.toc-list a {
+  display: block;
+  padding: 0.35rem 0.6rem;
+  margin: 0 -0.6rem;
+  border-left: 2px solid transparent;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toc-list a:hover { color: var(--text-main); }
+
+.toc-list a.active {
+  color: var(--accent-light);
+  border-left-color: var(--accent-light);
+  background: var(--accent-soft);
+}
+
+/* ===== 章节卡片（renderMarkdown 已输出 .section-card，此处仅做公式页内的细化） ===== */
+
+.formula-content .section-card { padding: 1.1rem 1.3rem 0.6rem; }
+
+.formula-content .section-card > h2 {
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 1.15rem;
+  scroll-margin-top: 72px;
+}
+
+.formula-content .section-card > h3 {
+  margin: 1.2rem 0 0.6rem;
+  font-size: 1rem;
+}
+
+/* 行间公式：深色底卡 + 居中 + 横向滚动 */
+.formula-content .katex-wrap {
+  margin: 0.8rem 0 1.1rem;
+  padding: 0.9rem 1rem;
+  background: var(--bg-code);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  overflow-x: auto;
+  text-align: center;
+}
+
+.formula-content .katex-wrap .katex-display { margin: 0; }
+
+.formula-content .section-card table {
+  width: 100%;
+  font-size: 0.86rem;
+}
+
+.formula-content .section-card blockquote {
+  margin: 0.7rem 0;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.86rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--text-secondary);
+}
+
+.formula-content .section-card blockquote p { margin: 0.25rem 0; }
+
+/* 窄屏：目录转为顶部横向滚动条 */
+@media (max-width: 1024px) {
+  .formulas-layout { flex-direction: column; }
+  .formula-toc {
+    position: static;
+    width: 100%;
+    max-height: none;
+    top: auto;
+  }
+  .toc-list {
+    display: flex;
+    gap: 0.3rem;
+    overflow-x: auto;
+    padding-bottom: 0.2rem;
+  }
+  .toc-list a {
+    border-left: none;
+    border-bottom: 2px solid transparent;
+    border-radius: var(--radius) var(--radius) 0 0;
+    white-space: nowrap;
+  }
+  .toc-list a.active {
+    border-left-color: transparent;
+    border-bottom-color: var(--accent-light);
+  }
+}
