@@ -8,8 +8,8 @@
 | --- | --- | --- |
 | 角色图鉴 | `#/characters` | 127 名角色头像墙（7 列，5 星金光 / 4 星紫光），**按实装版本倒序**，元素、武器图标多选筛选（不选为全部），支持名称搜索 |
 | 角色详情 | `#/characters/:name` | 战斗天赋（描述 + 等级步进器，支持滚轮）+ 突破/固有天赋 + 命之座标签页；附着与产球表自动归入对应技能位置 |
-| 数据工具 | `#/characters/tools` | 圣遗物词条分布、普攻产球概率、角色充能计算器 |
-| 武器图鉴 | `#/weapons` | 247 把武器图标墙（与角色图鉴同构），**按实装版本倒序**，武器类型 / 稀有度多选筛选 + 名称搜索 |
+| 数据工具 | `#/characters/tools` | 圣遗物词条分布、普攻产球概率、**4 人角色充能计算器**（队伍人数可减到 1，后台吸收效率按 4/3/2 人取 60%/70%/80%） |
+| 武器图鉴 | `#/weapons` | 253 把武器图标墙（与角色图鉴同构），**按实装版本倒序**，武器类型 / 稀有度多选筛选 + 名称搜索 |
 | 武器详情 | `#/weapons/:name` | 等级滑块 + 突破勾选的属性模拟、武器技能精炼 R1~R5 切换、突破材料、武器故事 |
 | 圣遗物图鉴 | `#/artifacts` | 63 套圣遗物长卡片（每行两个，左图标 + 右套装效果），**按实装版本倒序**，稀有度筛选 + 名称搜索 |
 | 圣遗物详情 | `#/artifacts/:name` | 1/2/4 件套效果 + 五个部位的介绍与故事（可折叠，部位资料每行两个） |
@@ -23,11 +23,22 @@
 - 资料来源为 `content/characters/<角色名>.json`（仿 Snap.Hutao 的 Avatar/SkillDepot 模型：skills / passives / constellations）。
 - 等级数值按 `label + values 数组`存储，页面用步进器（− / ＋ / 鼠标滚轮）切换 1~max 级。
 - 描述文本约定：`\n\n` 分段；「标题+正文」段转为悬停术语（下划线 + 自定义气泡）；结尾无机制词的段落自动识别为**角色逸闻**，以附录色斜体显示。
-- 尚无资料的角色（如沃雅妮莎、薇斯纳）显示「等待补充」占位框架，已有的附着/产球表仍按技能归位；数据源更新后运行 `import-snap.mjs` 即可补齐。
+- 尚无资料的角色显示「等待补充」占位框架，已有的附着/产球表仍按技能归位；数据源更新后运行 `import-snap.mjs` 或 `npm run data:sync` 即可补齐。
+
+## 角色充能计算器
+
+工具页的充能计算器支持 **4 名角色**（队伍人数 = 显示的行数，可用 −/＋ 减到 1 人，最少 1 人），每行独立计算所需的元素充能效率。
+
+- 分母 = 前台（同色 ×3 + 无色 ×2 + 异色 ×1）+ 后台系数 ×（同色 ×3 + 无色 ×2 + 异色 ×1），结果 = 元素爆发能量 / 分母。
+- 系数来自公式页「元素充能计算」的吸收效率表：**前台** 同色 300% / 无色 200% / 异色 100%；**后台**（4 人配队）60% / 120% / 180%，（3 人配队）70% / 140% / 210%，（2 人配队）80% / 160% / 240%。因此后台系数随队伍人数变化：4 人 60%、3 人 70%、2 人 80%（单人无后台队友，沿用 60%）。
+- 输入角色名会自动填入元素爆发能量（数据来自 `src/data/characters.js`）。
+- 由圣遗物 / 武器 / 天赋 / 命座产生的**固定回能**不受元素充能效率与吸收效率影响，不计入本表。
+
+> 本表按**元素微粒**（基础回能值 1）折算；若面对的是怪物掉落的元素晶球（基础回能值 3），把球的个数除以 3 再填入即可。
 
 ## 武器 / 圣遗物详情页说明
 
-- 资料来源为 `content/weapons/<名称>.json`（247 把）与 `content/artifacts/<名称>.json`（63 套），由 genshin-db 生成，可手动微调文案。
+- 资料来源为 `content/weapons/<名称>.json`（253 把）与 `content/artifacts/<名称>.json`（63 套），由 genshin-db 生成、新内容由 `sync-gachabase.mjs` 补齐，可手动微调文案。
 - **武器列表与角色图鉴同构**：图标墙（7 列，窄屏递减），卡片无底板、星级渐变描边，主题色只由星级决定（5★ 金 / 4★ 紫 / 3★ 蓝 / 2★ 绿 / 1★ 灰）。悬停只有上浮 + 星级光晕，**不显示额外属性**。
 - **圣遗物列表为长卡片**：每行两个，左侧星级描边图标、右侧名称 + 星级 + 2/4 件套效果全文（数值同样高亮）。件套标签与正文用 flex 排版，正文换行后自动与标签右侧对齐。两个列表都不使用悬停遮罩，卡片也不用左侧彩色描边。
 - 圣遗物详情的「部位资料」**不再用颜色区分部位**：生之花 / 死之羽 / 时之沙 / 空之杯 / 理之冠 的标签统一为 `--text-secondary`，图标底框统一为中性描边（原按部位上色的 `SLOT_COLOR` 已移除）。
@@ -58,6 +69,7 @@ scripts/
   generate-weapons.mjs  genshin-db → content/weapons/*.json + src/data/weapons-index.json
   generate-artifacts.mjs genshin-db → content/artifacts/*.json + src/data/artifacts-index.json
   sync-character-versions.mjs  genshin-db → 给 content/characters/*.json 补 version（实装版本）字段
+  sync-gachabase.mjs    gachabase → 抓取最新（含测试服未实装）角色 / 武器 / 圣遗物，只补本地没有的条目
 src/
   main.js               模块注册表 + hash 路由 + 侧边导航
   core/                 统一渲染器（markdown.js / richtext.js / colors.js / tooltip.js）
@@ -69,19 +81,28 @@ src/
 ## 常用命令
 
 ```bash
-npm run dev     # 解析数据 + 启动开发服务器
-npm run build   # 解析数据 + 构建到 dist/
-npm run data    # 重新解析全部数据（改了 content/ 下的 md / json 后执行）
+npm run dev     # 解析数据 + 启动开发服务器（不联网）
+npm run build   # 解析数据 + 构建到 dist/（不联网）
+npm run data    # 拉取最新数据（含测试服）+ 重新解析全部数据
 npm run deploy  # 构建 + 部署到 Cloudflare Workers（wrangler deploy）
 ```
+
+> `dev` / `build` / `deploy` 都不联网，保证断网或数据源抽风时仍能起服务、构建；只有 `npm run data` 会去 gachabase 抓最新内容。
 
 武器 / 圣遗物的补充命令（均会重新汇总 `src/data/*-index.json`）：
 
 ```bash
 npm run data:equip:force   # 从 genshin-db 全量重刷武器与圣遗物 JSON
 npm run data:equip:icons   # 额外把图标下载到 content/*/images/（离线可用）
+npm run data:sync          # 只从 gachabase 同步最新（含测试服）内容，不打索引
 node scripts/sync-character-versions.mjs   # 只补/更新角色实装版本（已含在 npm run data 中）
 ```
+
+新增命令说明：
+
+- `npm run data:sync` —— 从 [gachabase](https://gi.gachabase.net) 拓最新图鉴数据，**只补本地没有的条目**（已实装内容仍以 genshin-db 生成的高精度数据为准），新条目带 `"beta": true`。
+- `node scripts/sync-gachabase.mjs --dry` 只看抓取结果不写文件；`--force` 连之前同步过的测试服条目一起重抓（测试服数值会被后续 revision 调整）。
+- 新条目的 `version` 取 gachabase 当前 beta 修订号的下一版（如 `7.0.54` → `7.1`），因此会排在三个图鉴的最前面；需要手写时用 `$env:BETA_VERSION='7.2'; npm run data:sync` 覆盖。
 
 ### 排序（实装顺序）
 
@@ -89,7 +110,7 @@ node scripts/sync-character-versions.mjs   # 只补/更新角色实装版本（�
 
 - 武器 / 圣遗物：版本写在 `content/*/*.json` 的 `version`（genshin-db 提供，247/247、63/63 全覆盖），由生成脚本写进索引并排序。
 - 角色：`content/characters/*.json` 的 `version` 由 `sync-character-versions.mjs` 补全（125 个来自 genshin-db）。
-  无 `version` 的角色（如 `薇斯纳`、`沃雅妮莎`）排在最后。
+  测试服条目（`"beta": true`）的 `version` 由 `sync-gachabase.mjs` 写入（当前为下一版，如 `7.1`，因此排在最前）。
   脚本只在版本变化时写文件，不会动其他字段，因此手工补的文案不会被覆盖。
 
 ## 部署
@@ -113,10 +134,12 @@ Cloudflare 构建环境（Workers Builds）会自动执行 `npm clean-install` �
   - **改武器获取方式**：只改 `content/meta/weapons-meta.json` 的 `sources`，然后跑 `node scripts/generate-weapons.mjs --force`（脚本会打印还有多少把未标注）。
 - **加 Boss 图片**：放入 `content/boss/images/`，文件名与 md 中 `images/xxx.webp` 一致。
 - **配色**：统一改 `content/meta/colors.json`。
-- **新角色数据缺失时**：genshin-db 收录后用 `generate-profiles.mjs`；仅 Snap.Metadata 收录时在 `import-snap.mjs` 的 `TARGETS` 中登记 `{ name, id, snap }` 后运行。
+- **新角色数据缺失时**：先跑 `npm run data:sync`（从 gachabase 抓最新角色/武器/圣遗物）；genshin-db 收录后用 `generate-profiles.mjs`；仅 Snap.Metadata 收录时在 `import-snap.mjs` 的 `TARGETS` 中登记 `{ name, id, snap }` 后运行。
+- **同步测试服新内容**：跑 `npm run data`（已包含 `sync-gachabase.mjs`），或单独 `npm run data:sync`。测试服武器暂无 lv1 数值与逐级曲线（页面属性位显示 `—`），实装后跑 `npm run data:equip:force` 即可被 genshin-db 数据覆盖补全。
 
 ## 外部数据源
 
 - [genshin-db](https://github.com/theBowja/genshin-db) — 角色资料与头像文件名、武器与圣遗物资料
+- [gachabase](https://gi.gachabase.net) — 最新（含测试服未实装）的角色 / 武器 / 圣遗物，由 `sync-gachabase.mjs` 拓取（只补本地缺口）
 - [Snap.Metadata](https://github.com/SnapHutaoRemasteringProject/Snap.Metadata) — 新角色中文元数据（比 genshin-db 更新）
 - [enka.network](https://enka.network) — 角色头像、武器与圣遗物图标 CDN

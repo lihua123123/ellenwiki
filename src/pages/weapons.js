@@ -306,8 +306,8 @@ function renderDetail(root, weapon) {
             ${weapon.version ? `<span class="weapon-version-chip">v${escapeHtml(weapon.version)}</span>` : ''}
           </div>
           ${buildLevelPanel(weapon) || `<div class="weapon-stat-row">
-            <div class="weapon-stat"><span class="weapon-stat-label">基础攻击力</span><span class="weapon-stat-value">${weapon.baseAtk}</span></div>
-            ${weapon.mainStat ? `<div class="weapon-stat"><span class="weapon-stat-label">${escapeHtml(weapon.mainStat)}</span><span class="weapon-stat-value">${escapeHtml(weapon.mainStatValue)}</span></div>` : ''}
+            <div class="weapon-stat"><span class="weapon-stat-label">基础攻击力</span><span class="weapon-stat-value">${weapon.baseAtk ?? '—'}</span></div>
+            ${weapon.mainStat ? `<div class="weapon-stat"><span class="weapon-stat-label">${escapeHtml(weapon.mainStat)}</span><span class="weapon-stat-value">${escapeHtml(weapon.mainStatValue || '—')}</span></div>` : ''}
           </div>`}
         </div>
       </header>

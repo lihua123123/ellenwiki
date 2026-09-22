@@ -63,6 +63,12 @@ const ELEMENT_AMOUNT_CLASSES = {
 };
 
 const CHANGELOG = [
+  ['V7.1.0', [
+    '角色充能计算器扩充到 4 人，可按队伍人数（4/3/2 人）修正后台吸收效率',
+    '接入测试服数据源，角色 / 武器 / 圣遗物均按最新数据自动构建（含未实装内容）',
+    '新增 7.1 内容：6 把武器、2 名角色（沃雅妮莎、薇斯纳）与对应头像',
+    '新增 7.2 幽境 Boss，修正相邻行内公式的渲染乱码',
+  ]],
   ['V7.0.0', ['使用 Vite 重构项目，数据驱动渲染', '同步更新角色数据至最新版本', '统一了技能描述']],
   ['V6.3.1', ['新增了角色充能计算器', '修正了一些角色信息']],
   ['V6.3.0', ['新增了角色的抗打断系数', '统一了格式和名称', '更新了 6.3 角色的附着以及产球']],
@@ -219,6 +225,13 @@ function renderList(root) {
 }
 
 /* ============ 工具页（通用数据表 + 充能计算器） ============ */
+
+/* 充能计算器：可输入 4 名角色，队伍人数 = 显示的行数（最少 1 人，由用户自己增减） */
+const ENERGY_ROWS = 4;
+const ENERGY_ROW_INDEXES = Array.from({ length: ENERGY_ROWS }, (_, i) => i + 1);
+/* 后台吸收效率随队伍人数变化（见「伤害公式 · 元素充能计算」的吸收效率表）；单人无后台队友，沿用 60% */
+const OFF_FIELD_RATE = { 1: 0.6, 2: 0.8, 3: 0.7, 4: 0.6 };
+
 function renderTools(root) {
   const firstH1 = mdSource.search(/^#\s+/m);
   const introMd = firstH1 > 0 ? mdSource.slice(0, firstH1) : '';
@@ -237,7 +250,16 @@ function renderTools(root) {
     <div class="markdown-body tools-intro">${renderMarkdown(introMd)}</div>
 
     <section class="card energy-card">
-      <h2 style="margin-top:0">角色充能计算器</h2>
+      <div class="energy-head">
+        <h2>角色充能计算器</h2>
+        <div class="energy-party" role="group" aria-label="队伍人数">
+          <span class="party-label">队伍人数</span>
+          <button type="button" class="party-btn" id="party-minus" aria-label="减少一人">−</button>
+          <span class="party-count" id="party-count">${ENERGY_ROWS}</span>
+          <button type="button" class="party-btn" id="party-plus" aria-label="增加一人">＋</button>
+          <span class="party-note">后台吸收 <strong id="party-rate">60%</strong></span>
+        </div>
+      </div>
       <div class="table-wrap"><table id="energy-calc-table">
         <colgroup>
           <col style="width: 13%;"><col style="width: 10%;">
@@ -258,23 +280,22 @@ function renderTools(root) {
           <tr><th>前台</th><th>后台</th><th>前台</th><th>后台</th><th>前台</th><th>后台</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td>
-              <input type="text" id="character-name" placeholder="角色名称" list="character-suggestions">
-              <datalist id="character-suggestions"></datalist>
-            </td>
-            <td><input type="text" id="x" placeholder="能量"></td>
-            <td><input type="text" id="a" placeholder="前台" value="0"></td>
-            <td><input type="text" id="d" placeholder="后台" value="0"></td>
-            <td><input type="text" id="b" placeholder="前台" value="0"></td>
-            <td><input type="text" id="e" placeholder="后台" value="0"></td>
-            <td><input type="text" id="c" placeholder="前台" value="0"></td>
-            <td><input type="text" id="f" placeholder="后台" value="0"></td>
-            <td class="calc-result" id="result">未输入</td>
-          </tr>
+          ${ENERGY_ROW_INDEXES.map(i => `
+          <tr data-row="${i}">
+            <td><input type="text" id="name${i}" placeholder="角色 ${i}" list="character-suggestions"></td>
+            <td><input type="text" id="x${i}" placeholder="能量"></td>
+            <td><input type="text" id="a${i}" placeholder="前台" value="0"></td>
+            <td><input type="text" id="d${i}" placeholder="后台" value="0"></td>
+            <td><input type="text" id="b${i}" placeholder="前台" value="0"></td>
+            <td><input type="text" id="e${i}" placeholder="后台" value="0"></td>
+            <td><input type="text" id="c${i}" placeholder="前台" value="0"></td>
+            <td><input type="text" id="f${i}" placeholder="后台" value="0"></td>
+            <td class="calc-result" id="result${i}">未输入</td>
+          </tr>`).join('')}
         </tbody>
       </table></div>
-      <p class="calc-hint">输入角色名可自动填充元素爆发能量；产球数按 3 能量/同色前台、2 能量/无色前台、1 能量/异色前台、后台 60% 折算。</p>
+      <datalist id="character-suggestions"></datalist>
+      <p class="calc-hint">输入角色名可自动填充元素爆发能量。产球按<b>元素微粒</b>（基础回能值 1）折算：同色前台 300%、无色前台 200%、异色前台 100%；后台吸收效率随队伍人数变化（4 人 60%、3 人 70%、2 人 80%，单人无后台队友仍按 60%）。由圣遗物 / 武器 / 天赋 / 命座产生的固定回能不受元素充能效率与吸收效率影响，不计入本表。</p>
     </section>
 
     <details class="card changelog">
@@ -287,37 +308,51 @@ function renderTools(root) {
   `;
 
   const q = (id) => root.querySelector(`#${id}`);
+  const num = (v) => parseFloat(v) || 0;
 
-  function calculateResult() {
-    const x = parseFloat(q('x')?.value) || 0;
-    const a = parseFloat(q('a')?.value) || 0;
-    const d = parseFloat(q('d')?.value) || 0;
-    const b = parseFloat(q('b')?.value) || 0;
-    const e = parseFloat(q('e')?.value) || 0;
-    const c = parseFloat(q('c')?.value) || 0;
-    const f = parseFloat(q('f')?.value) || 0;
-    const resultEl = q('result');
+  let partySize = ENERGY_ROWS;
+  const rowEls = ENERGY_ROW_INDEXES.map(i => root.querySelector(`tr[data-row="${i}"]`));
+
+  /* 分母 = 前台（同色 ×3 + 无色 ×2 + 异色 ×1）+ 后台系数 ×（同色 ×3 + 无色 ×2 + 异色 ×1）
+   * 系数即吸收效率：前台 100%/200%/300%，后台按队伍人数 60%(4人) / 70%(3人) / 80%(2人) */
+  function calculateResult(i) {
+    const resultEl = q(`result${i}`);
     if (!resultEl) return;
-    if (q('x')?.value === '') { resultEl.textContent = '未输入'; return; }
-    const denominator = (3 * a) + (2 * b) + c + 0.6 * ((3 * d) + (2 * e) + f);
-    resultEl.textContent = denominator === 0 ? '分母为零' : `${((x / denominator) * 100).toFixed(1)}%`;
+    if (q(`x${i}`).value === '') { resultEl.textContent = '未输入'; return; }
+    const onField = 3 * num(q(`a${i}`).value) + 2 * num(q(`b${i}`).value) + num(q(`c${i}`).value);
+    const offField = 3 * num(q(`d${i}`).value) + 2 * num(q(`e${i}`).value) + num(q(`f${i}`).value);
+    const denominator = onField + OFF_FIELD_RATE[partySize] * offField;
+    resultEl.textContent = denominator === 0
+      ? '分母为零'
+      : `${((num(q(`x${i}`).value) / denominator) * 100).toFixed(1)}%`;
   }
 
-  q('character-name').addEventListener('input', () => {
-    const name = q('character-name').value.trim();
-    const found = ALL_CHARACTERS.find(c => c.name === name);
-    if (found && found.energy && found.energy !== '未知') {
-      q('x').value = found.energy;
-      calculateResult();
-    }
-    const keyword = q('character-name').value.trim();
-    const names = ALL_CHARACTERS.filter(c => !keyword || c.name.includes(keyword)).map(c => c.name);
-    q('character-suggestions').innerHTML = Array.from(new Set(names)).map(n => `<option value="${escapeHtml(n)}"></option>`).join('');
+  function calculateResults() { ENERGY_ROW_INDEXES.forEach(calculateResult); }
+
+  /* 队伍人数 = 显示的行数，最少 1 人（减少后该行输入值仍保留） */
+  function applyPartySize() {
+    rowEls.forEach((el, idx) => { if (el) el.hidden = idx + 1 > partySize; });
+    q('party-count').textContent = String(partySize);
+    q('party-rate').textContent = `${Math.round(OFF_FIELD_RATE[partySize] * 100)}%`;
+    q('party-minus').disabled = partySize <= 1;
+    q('party-plus').disabled = partySize >= ENERGY_ROWS;
+    calculateResults();
+  }
+
+  ENERGY_ROW_INDEXES.forEach(i => {
+    q(`name${i}`).addEventListener('input', () => {
+      const found = ALL_CHARACTERS.find(c => c.name === q(`name${i}`).value.trim());
+      if (found && found.energy && found.energy !== '未知') q(`x${i}`).value = found.energy;
+      calculateResult(i);
+    });
+    ['x', 'a', 'd', 'b', 'e', 'c', 'f'].forEach(k => q(`${k}${i}`).addEventListener('input', () => calculateResult(i)));
   });
-  ['x', 'a', 'd', 'b', 'e', 'c', 'f'].forEach(id => q(id).addEventListener('input', calculateResult));
+
+  q('party-minus').addEventListener('click', () => { if (partySize > 1) { partySize -= 1; applyPartySize(); } });
+  q('party-plus').addEventListener('click', () => { if (partySize < ENERGY_ROWS) { partySize += 1; applyPartySize(); } });
 
   q('character-suggestions').innerHTML = ALL_CHARACTERS.map(c => `<option value="${escapeHtml(c.name)}"></option>`).join('');
-  calculateResult();
+  applyPartySize();
 }
 
 /* ============ 角色详情页 ============ */

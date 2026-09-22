@@ -1,0 +1,7 @@
+{
+  "_comment": "gachabase 同步明细（由 scripts/sync-gachabase.mjs 生成，可随时重跑覆盖）。",
+  "_fetchedAt": "2026-09-22",
+  "_source": "https://gi.gachabase.net/changelog/beta",
+  "_version": "7.1",
+  "added": []
+}
