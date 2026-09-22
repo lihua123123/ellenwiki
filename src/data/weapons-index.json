@@ -37,7 +37,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "誓言的回音",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Catalyst_GlintstoneCatalyst.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_GlintstoneCatalyst.png"
   },
@@ -51,7 +51,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "10%",
     "effectName": "万顷一掷",
-    "source": "",
+    "source": "珍珠纪行",
     "icon": "UI_EquipIcon_Pole_FaesCrystalle.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_FaesCrystalle.png"
   },
@@ -65,7 +65,7 @@
     "mainStat": "暴击率",
     "mainStatValue": "6%",
     "effectName": "交奏的昼与夜",
-    "source": "",
+    "source": "珍珠纪行",
     "icon": "UI_EquipIcon_Claymore_EscapeWheel.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_EscapeWheel.png"
   },
@@ -79,7 +79,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "罪责的悔赎",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Claymore_GlintstoneClaymore.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_GlintstoneClaymore.png"
   },
@@ -93,7 +93,7 @@
     "mainStat": "暴击率",
     "mainStatValue": "6%",
     "effectName": "被遗忘的昼夜",
-    "source": "",
+    "source": "珍珠纪行",
     "icon": "UI_EquipIcon_Catalyst_SandMemoria.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_SandMemoria.png"
   },
@@ -107,7 +107,7 @@
     "mainStat": "暴击率",
     "mainStatValue": "6%",
     "effectName": "独光的赐坠",
-    "source": "",
+    "source": "珍珠纪行",
     "icon": "UI_EquipIcon_Sword_SerpentTooth.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_SerpentTooth.png"
   },
@@ -121,7 +121,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "24",
     "effectName": "旧日和弦",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Pole_GlintstonePolearm.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_GlintstonePolearm.png"
   },
@@ -135,7 +135,7 @@
     "mainStat": "防御力",
     "mainStatValue": "11.3%",
     "effectName": "法度的制衡",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Bow_GlintstoneBow.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_GlintstoneBow.png"
   },
@@ -149,7 +149,7 @@
     "mainStat": "暴击率",
     "mainStatValue": "6%",
     "effectName": "缀夜为烛",
-    "source": "",
+    "source": "珍珠纪行",
     "icon": "UI_EquipIcon_Bow_ShatteredMirror.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_ShatteredMirror.png"
   },
@@ -163,7 +163,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "36",
     "effectName": "燃于雪原的星火",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Sword_GlintstoneSword.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_GlintstoneSword.png"
   },
@@ -303,7 +303,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "10%",
     "effectName": "圣座外的星语",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Bow_ElegguaBow.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_ElegguaBow.png"
   },
@@ -331,7 +331,7 @@
     "mainStat": "暴击率",
     "mainStatValue": "2%",
     "effectName": "未染的觖望",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Pole_Krivule.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Krivule.png"
   },
@@ -345,7 +345,7 @@
     "mainStat": "暴击伤害",
     "mainStatValue": "12%",
     "effectName": "深宵的胎梦",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Catalyst_Ziedas.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Ziedas.png"
   },
@@ -387,7 +387,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "当机立断",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Pole_Ilmarinen.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Ilmarinen.png"
   },
@@ -401,7 +401,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "13.3%",
     "effectName": "矫捷无影",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Bow_Ilmarinen.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Ilmarinen.png"
   },
@@ -415,7 +415,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "13.3%",
     "effectName": "沉声止语",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Sword_Ilmarinen.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Ilmarinen.png"
   },
@@ -429,7 +429,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "10%",
     "effectName": "最后的歌者",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Catalyst_SeeliesLute.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_SeeliesLute.png"
   },
@@ -443,7 +443,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "13.3%",
     "effectName": "迎刃而解",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Claymore_Ilmarinen.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Ilmarinen.png"
   },
@@ -457,7 +457,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "48",
     "effectName": "结契的凭证",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Catalyst_Ilmarinen.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Ilmarinen.png"
   },
@@ -471,7 +471,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "秘银的血告",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Sword_Miekka.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Miekka.png"
   },
@@ -499,7 +499,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "36",
     "effectName": "盛放的思绪",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Claymore_Polilith.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Polilith.png"
   },
@@ -541,7 +541,7 @@
     "mainStat": "生命值",
     "mainStatValue": "9%",
     "effectName": "静发",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Bow_Stinger.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Stinger.png"
   },
@@ -583,7 +583,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "6.7%",
     "effectName": "好事者奔行灯",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Pole_Aoandon.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Aoandon.png"
   },
@@ -639,7 +639,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "13.3%",
     "effectName": "长牙飞去来",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Catalyst_Umpakati.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Umpakati.png"
   },
@@ -653,7 +653,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "弥漫的边界",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Sword_SacrificialNgombe.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_SacrificialNgombe.png"
   },
@@ -667,7 +667,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "未至的花序",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Bow_Umpakati.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Umpakati.png"
   },
@@ -695,7 +695,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "陷阵者的自矜",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Sword_Umpakati.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Umpakati.png"
   },
@@ -709,7 +709,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "坠枝之重",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Claymore_Umpakati.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Umpakati.png"
   },
@@ -723,7 +723,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "6.7%",
     "effectName": "越峰之望",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Pole_Umpakati.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Umpakati.png"
   },
@@ -765,7 +765,7 @@
     "mainStat": "生命值",
     "mainStatValue": "9%",
     "effectName": "图帕克之握",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Catalyst_ConchSprayer.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_ConchSprayer.png"
   },
@@ -779,7 +779,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "苍翠之路的誓言",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Claymore_Isikhulu.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Isikhulu.png"
   },
@@ -793,7 +793,7 @@
     "mainStat": "防御力",
     "mainStatValue": "11.3%",
     "effectName": "流水与泉的约定",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Pole_Isikhulu.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Isikhulu.png"
   },
@@ -807,7 +807,7 @@
     "mainStat": "生命值",
     "mainStatValue": "9%",
     "effectName": "丰沃之陆的回声",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Catalyst_Isikhulu.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Isikhulu.png"
   },
@@ -821,7 +821,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "花与落羽的长歌",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Bow_Isikhulu.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Isikhulu.png"
   },
@@ -835,7 +835,7 @@
     "mainStat": "防御力",
     "mainStatValue": "15%",
     "effectName": "镜与烟色的隐谜",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Sword_Isikhulu.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Isikhulu.png"
   },
@@ -891,7 +891,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "36",
     "effectName": "镌岩为坊",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Bow_Ultimatum.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Ultimatum.png"
   },
@@ -933,7 +933,7 @@
     "mainStat": "生命值",
     "mainStatValue": "9%",
     "effectName": "均衡的原理",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Pole_Caduceus.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Caduceus.png"
   },
@@ -975,7 +975,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "6.7%",
     "effectName": "加油！",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Claymore_Champion.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Champion.png"
   },
@@ -1003,7 +1003,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "勇者之剑",
-    "source": "",
+    "source": "任务",
     "icon": "UI_EquipIcon_Sword_Purewill.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Purewill.png"
   },
@@ -1045,7 +1045,7 @@
     "mainStat": "生命值",
     "mainStatValue": "12%",
     "effectName": "船工号子",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Claymore_Mechanic.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Mechanic.png"
   },
@@ -1059,7 +1059,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "石匠号子",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Bow_Mechanic.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Mechanic.png"
   },
@@ -1073,7 +1073,7 @@
     "mainStat": "生命值",
     "mainStatValue": "9%",
     "effectName": "船工号子",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Sword_Mechanic.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Mechanic.png"
   },
@@ -1087,7 +1087,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "石匠号子",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Pole_Mechanic.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Mechanic.png"
   },
@@ -1101,7 +1101,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "6.7%",
     "effectName": "蔚蓝深空",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Catalyst_DandelionPoem.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_DandelionPoem.png"
   },
@@ -1129,7 +1129,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "未完的杰作",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Catalyst_Vorpal.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Vorpal.png"
   },
@@ -1143,7 +1143,7 @@
     "mainStat": "生命值",
     "mainStatValue": "6%",
     "effectName": "枪尖一点",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Pole_Vorpal.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Vorpal.png"
   },
@@ -1157,7 +1157,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "最终的崇高",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Sword_Vorpal.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Vorpal.png"
   },
@@ -1171,7 +1171,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "10%",
     "effectName": "铁骨",
-    "source": "",
+    "source": "钓鱼",
     "icon": "UI_EquipIcon_Sword_Machination.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Machination.png"
   },
@@ -1185,7 +1185,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "深海弦振",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Bow_Vorpal.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Vorpal.png"
   },
@@ -1199,7 +1199,7 @@
     "mainStat": "暴击率",
     "mainStatValue": "6%",
     "effectName": "苍狼北风",
-    "source": "",
+    "source": "珍珠纪行",
     "icon": "UI_EquipIcon_Sword_Boreas.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Boreas.png"
   },
@@ -1213,7 +1213,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "巡航的白浪",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Claymore_Vorpal.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Vorpal.png"
   },
@@ -1227,7 +1227,7 @@
     "mainStat": "暴击率",
     "mainStatValue": "4%",
     "effectName": "「伶牙俐齿」",
-    "source": "",
+    "source": "珍珠纪行",
     "icon": "UI_EquipIcon_Claymore_BeastTamer.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_BeastTamer.png"
   },
@@ -1241,7 +1241,7 @@
     "mainStat": "暴击率",
     "mainStatValue": "4%",
     "effectName": "阳炎古道",
-    "source": "",
+    "source": "珍珠纪行",
     "icon": "UI_EquipIcon_Bow_Gurabad.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Gurabad.png"
   },
@@ -1255,7 +1255,7 @@
     "mainStat": "暴击率",
     "mainStatValue": "6%",
     "effectName": "冰原的诸多故事",
-    "source": "",
+    "source": "珍珠纪行",
     "icon": "UI_EquipIcon_Pole_Shanty.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Shanty.png"
   },
@@ -1269,7 +1269,7 @@
     "mainStat": "暴击率",
     "mainStatValue": "8%",
     "effectName": "碧玉流转",
-    "source": "",
+    "source": "珍珠纪行",
     "icon": "UI_EquipIcon_Catalyst_Yue.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Yue.png"
   },
@@ -1283,7 +1283,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "秘智之眸的青睐",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Bow_Ibis.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Ibis.png"
   },
@@ -1325,7 +1325,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "24",
     "effectName": "风与花的密语",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Claymore_Fleurfair.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Fleurfair.png"
   },
@@ -1367,7 +1367,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "36",
     "effectName": "怪谭·时雨心地一本足",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Sword_Kasabouzu.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Kasabouzu.png"
   },
@@ -1423,7 +1423,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "不至之风",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Pole_Windvane.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Windvane.png"
   },
@@ -1437,7 +1437,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "36",
     "effectName": "林野晚星",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Catalyst_Pleroma.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Pleroma.png"
   },
@@ -1451,7 +1451,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "36",
     "effectName": "沙上楼阁",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Claymore_Pleroma.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Pleroma.png"
   },
@@ -1465,7 +1465,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "36",
     "effectName": "镇灵的低语",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Sword_Pleroma.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Pleroma.png"
   },
@@ -1493,7 +1493,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "24",
     "effectName": "幽林月影",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Pole_Arakalari.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Arakalari.png"
   },
@@ -1507,7 +1507,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "10%",
     "effectName": "网破",
-    "source": "",
+    "source": "钓鱼",
     "icon": "UI_EquipIcon_Bow_Fin.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Fin.png"
   },
@@ -1521,7 +1521,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "6.7%",
     "effectName": "森林的瑞佑",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Claymore_Arakalari.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Arakalari.png"
   },
@@ -1535,7 +1535,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "12%",
     "effectName": "迷宫之王的教导",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Bow_Arakalari.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Arakalari.png"
   },
@@ -1549,7 +1549,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "10%",
     "effectName": "圆满之相",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Catalyst_Arakalari.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Arakalari.png"
   },
@@ -1563,7 +1563,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "6.7%",
     "effectName": "森林的瑞佑",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Sword_Arakalari.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Arakalari.png"
   },
@@ -1577,7 +1577,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "徊徊切舍刀",
-    "source": "",
+    "source": "任务",
     "icon": "UI_EquipIcon_Sword_YoutouEnchanted.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_YoutouEnchanted.png"
   },
@@ -1591,7 +1591,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "澄澄一心传",
-    "source": "",
+    "source": "任务",
     "icon": "UI_EquipIcon_Sword_Youtou.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Youtou.png"
   },
@@ -1619,7 +1619,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "6.7%",
     "effectName": "渊中霞彩",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Bow_Fallensun.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Fallensun.png"
   },
@@ -1661,7 +1661,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "微光的海渊民",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Catalyst_Jyanome.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Jyanome.png"
   },
@@ -1703,7 +1703,7 @@
     "mainStat": "防御力",
     "mainStatValue": "15%",
     "effectName": "无垢之心",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Sword_Opus.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Opus.png"
   },
@@ -1731,7 +1731,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "3%",
     "effectName": "驭浪的海祇民",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Pole_Maria.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Maria.png"
   },
@@ -1745,7 +1745,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "驭浪的海祇民",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Claymore_Maria.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Maria.png"
   },
@@ -1759,7 +1759,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "驭浪的海祇民",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Bow_Maria.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Maria.png"
   },
@@ -1801,7 +1801,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "10%",
     "effectName": "船歌",
-    "source": "",
+    "source": "钓鱼",
     "icon": "UI_EquipIcon_Pole_Mori.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Mori.png"
   },
@@ -1815,7 +1815,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "强力攻击",
-    "source": "",
+    "source": "平台限定",
     "icon": "UI_EquipIcon_Bow_Predator.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Predator.png"
   },
@@ -1829,7 +1829,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "12%",
     "effectName": "海洋的胜利",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Claymore_MillenniaTuna.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_MillenniaTuna.png"
   },
@@ -1871,7 +1871,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "6.7%",
     "effectName": "樱之斋宫",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Catalyst_Bakufu.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Bakufu.png"
   },
@@ -1885,7 +1885,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "10%",
     "effectName": "名士振舞",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Claymore_Bakufu.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Bakufu.png"
   },
@@ -1899,7 +1899,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "12%",
     "effectName": "浅濑之弭",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Bow_Bakufu.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Bakufu.png"
   },
@@ -1913,7 +1913,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "12%",
     "effectName": "岩藏之胤",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Sword_Bakufu.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Bakufu.png"
   },
@@ -1927,7 +1927,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "24",
     "effectName": "名士振舞",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Pole_Bakufu.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Bakufu.png"
   },
@@ -1955,7 +1955,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "12%",
     "effectName": "嘟嘟！大冒险",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Catalyst_Ludiharpastum.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Ludiharpastum.png"
   },
@@ -1969,7 +1969,7 @@
     "mainStat": "物理伤害加成",
     "mainStatValue": "11.3%",
     "effectName": "极夜二重奏",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Bow_Nachtblind.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Nachtblind.png"
   },
@@ -2011,7 +2011,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "6.7%",
     "effectName": "变化万端",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Catalyst_Outlaw.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Outlaw.png"
   },
@@ -2025,7 +2025,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "街巷伏击",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Bow_Outlaw.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Outlaw.png"
   },
@@ -2039,7 +2039,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "12",
     "effectName": "街巷游侠",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Sword_Outlaw.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Outlaw.png"
   },
@@ -2053,7 +2053,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "36",
     "effectName": "风花之愿",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Bow_Fleurfair.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Fleurfair.png"
   },
@@ -2095,7 +2095,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "千岩诀·同心",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Claymore_Lapis.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Lapis.png"
   },
@@ -2109,7 +2109,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "千岩诀·同心",
-    "source": "",
+    "source": "限定抽取",
     "icon": "UI_EquipIcon_Pole_Lapis.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Lapis.png"
   },
@@ -2137,7 +2137,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "10%",
     "effectName": "无尽的渴慕",
-    "source": "",
+    "source": "活动限定",
     "icon": "UI_EquipIcon_Sword_Magnum.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Magnum.png"
   },
@@ -2151,7 +2151,7 @@
     "mainStat": "物理伤害加成",
     "mainStatValue": "15%",
     "effectName": "霜葬",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Pole_Everfrost.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Everfrost.png"
   },
@@ -2165,7 +2165,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "霜葬",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Catalyst_Everfrost.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Everfrost.png"
   },
@@ -2179,7 +2179,7 @@
     "mainStat": "物理伤害加成",
     "mainStatValue": "7.5%",
     "effectName": "霜葬",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Claymore_Dragonfell.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Dragonfell.png"
   },
@@ -2235,7 +2235,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "专注",
-    "source": "",
+    "source": "星辉商店",
     "icon": "UI_EquipIcon_Pole_Theocrat.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Theocrat.png"
   },
@@ -2389,7 +2389,7 @@
     "mainStat": "防御力",
     "mainStatValue": "11.3%",
     "effectName": "注能之锋",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Claymore_Exotic.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Exotic.png"
   },
@@ -2431,7 +2431,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "和弦",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Sword_Troupe.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Troupe.png"
   },
@@ -2445,7 +2445,7 @@
     "mainStat": "物理伤害加成",
     "mainStatValue": "15%",
     "effectName": "注能之矢",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Bow_Exotic.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Exotic.png"
   },
@@ -2459,7 +2459,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "速射弓斗",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Bow_Recluse.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Recluse.png"
   },
@@ -2487,7 +2487,7 @@
     "mainStat": "暴击伤害",
     "mainStatValue": "12%",
     "effectName": "乘胜追击",
-    "source": "商店兑换",
+    "source": "星辉商店",
     "icon": "UI_EquipIcon_Pole_Blackrock.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Blackrock.png"
   },
@@ -2501,7 +2501,7 @@
     "mainStat": "暴击伤害",
     "mainStatValue": "12%",
     "effectName": "乘胜追击",
-    "source": "商店兑换",
+    "source": "星辉商店",
     "icon": "UI_EquipIcon_Catalyst_Blackrock.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Blackrock.png"
   },
@@ -2515,7 +2515,7 @@
     "mainStat": "暴击伤害",
     "mainStatValue": "12%",
     "effectName": "乘胜追击",
-    "source": "商店兑换",
+    "source": "星辉商店",
     "icon": "UI_EquipIcon_Claymore_Blackrock.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Blackrock.png"
   },
@@ -2529,7 +2529,7 @@
     "mainStat": "暴击伤害",
     "mainStatValue": "8%",
     "effectName": "乘胜追击",
-    "source": "商店兑换",
+    "source": "星辉商店",
     "icon": "UI_EquipIcon_Bow_Blackrock.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Blackrock.png"
   },
@@ -2543,7 +2543,7 @@
     "mainStat": "暴击伤害",
     "mainStatValue": "8%",
     "effectName": "乘胜追击",
-    "source": "商店兑换",
+    "source": "星辉商店",
     "icon": "UI_EquipIcon_Sword_Blackrock.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Blackrock.png"
   },
@@ -2557,7 +2557,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "48",
     "effectName": "气定神闲",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Catalyst_Fossil.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Fossil.png"
   },
@@ -2571,7 +2571,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "6.7%",
     "effectName": "气定神闲",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Claymore_Fossil.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Fossil.png"
   },
@@ -2585,7 +2585,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "6.7%",
     "effectName": "气定神闲",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Bow_Fossil.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Fossil.png"
   },
@@ -2599,7 +2599,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "13.3%",
     "effectName": "气定神闲",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Sword_Fossil.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Fossil.png"
   },
@@ -2613,7 +2613,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "7.7%",
     "effectName": "降世",
-    "source": "",
+    "source": "平台限定",
     "icon": "UI_EquipIcon_Sword_Psalmus.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Psalmus.png"
   },
@@ -2641,7 +2641,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "36",
     "effectName": "无矢之歌",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Bow_Troupe.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Troupe.png"
   },
@@ -2655,7 +2655,7 @@
     "mainStat": "暴击伤害",
     "mainStatValue": "12%",
     "effectName": "登场乐",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Catalyst_Troupe.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Troupe.png"
   },
@@ -2669,7 +2669,7 @@
     "mainStat": "物理伤害加成",
     "mainStatValue": "7.5%",
     "effectName": "注能之针",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Pole_Exotic.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Exotic.png"
   },
@@ -2683,7 +2683,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "离簇不归",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Bow_Proto.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Proto.png"
   },
@@ -2697,7 +2697,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "粉碎",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Claymore_Proto.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Proto.png"
   },
@@ -2711,7 +2711,7 @@
     "mainStat": "生命值",
     "mainStatValue": "9%",
     "effectName": "炊金",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Catalyst_Proto.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Proto.png"
   },
@@ -2725,7 +2725,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "10%",
     "effectName": "嗜魔",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Pole_Proto.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Proto.png"
   },
@@ -2739,7 +2739,7 @@
     "mainStat": "物理伤害加成",
     "mainStatValue": "7.5%",
     "effectName": "碎石",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Sword_Proto.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Proto.png"
   },
@@ -2753,7 +2753,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "36",
     "effectName": "注能之刺",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Sword_Exotic.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Exotic.png"
   },
@@ -2767,7 +2767,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "24",
     "effectName": "注能之卷",
-    "source": "",
+    "source": "锻造",
     "icon": "UI_EquipIcon_Catalyst_Exotic.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Exotic.png"
   },
@@ -2781,7 +2781,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "13.3%",
     "effectName": "顺风而行",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Claymore_Zephyrus.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Zephyrus.png"
   },
@@ -2795,7 +2795,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "13.3%",
     "effectName": "顺风而行",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Sword_Zephyrus.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Zephyrus.png"
   },
@@ -2809,7 +2809,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "13.3%",
     "effectName": "顺风而行",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Bow_Zephyrus.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Zephyrus.png"
   },
@@ -2823,7 +2823,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "10%",
     "effectName": "顺风而行",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Catalyst_Zephyrus.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Zephyrus.png"
   },
@@ -2837,7 +2837,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "6.7%",
     "effectName": "顺风而行",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Pole_Zephyrus.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Zephyrus.png"
   },
@@ -2851,7 +2851,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "踏火息雷",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Sword_Rockkiller.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Rockkiller.png"
   },
@@ -2865,7 +2865,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "48",
     "effectName": "踏火止水",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Pole_Stardust.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Stardust.png"
   },
@@ -2893,7 +2893,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "36",
     "effectName": "止水息雷",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Claymore_Perdue.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Perdue.png"
   },
@@ -2907,7 +2907,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "12%",
     "effectName": "回响",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Catalyst_Truelens.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Truelens.png"
   },
@@ -2921,7 +2921,7 @@
     "mainStat": "生命值",
     "mainStatValue": "9%",
     "effectName": "叛逆的守护者",
-    "source": "",
+    "source": "常驻抽取",
     "icon": "UI_EquipIcon_Claymore_Troupe.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Troupe.png"
   },
@@ -2935,7 +2935,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "专注",
-    "source": "商店兑换",
+    "source": "星辉商店",
     "icon": "UI_EquipIcon_Claymore_Theocrat.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Theocrat.png"
   },
@@ -2949,7 +2949,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "6%",
     "effectName": "专注",
-    "source": "商店兑换",
+    "source": "星辉商店",
     "icon": "UI_EquipIcon_Catalyst_Theocrat.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Theocrat.png"
   },
@@ -2963,7 +2963,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "专注",
-    "source": "",
+    "source": "星辉商店",
     "icon": "UI_EquipIcon_Bow_Theocrat.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Theocrat.png"
   },
@@ -2977,7 +2977,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "9%",
     "effectName": "专注",
-    "source": "商店兑换",
+    "source": "星辉商店",
     "icon": "UI_EquipIcon_Sword_Theocrat.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Theocrat.png"
   },
@@ -2991,7 +2991,7 @@
     "mainStat": "元素精通",
     "mainStatValue": "31",
     "effectName": "过载",
-    "source": "常驻抽取",
+    "source": "开地图",
     "icon": "UI_EquipIcon_Sword_Darker.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Darker.png"
   },
@@ -3005,7 +3005,7 @@
     "mainStat": "防御力",
     "mainStatValue": "9.6%",
     "effectName": "收割",
-    "source": "常驻抽取",
+    "source": "开地图",
     "icon": "UI_EquipIcon_Claymore_Tin.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Tin.png"
   },
@@ -3019,7 +3019,7 @@
     "mainStat": "暴击率",
     "mainStatValue": "5.1%",
     "effectName": "锐利",
-    "source": "常驻抽取",
+    "source": "开地图",
     "icon": "UI_EquipIcon_Pole_Ruby.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Ruby.png"
   },
@@ -3033,7 +3033,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "7.7%",
     "effectName": "决",
-    "source": "常驻抽取",
+    "source": "开地图",
     "icon": "UI_EquipIcon_Sword_Sashimi.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Sashimi.png"
   },
@@ -3061,7 +3061,7 @@
     "mainStat": "生命值",
     "mainStatValue": "10.2%",
     "effectName": "收割",
-    "source": "常驻抽取",
+    "source": "开地图",
     "icon": "UI_EquipIcon_Bow_Curve.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Curve.png"
   },
@@ -3075,7 +3075,7 @@
     "mainStat": "物理伤害加成",
     "mainStatValue": "9.6%",
     "effectName": "勇气",
-    "source": "常驻抽取",
+    "source": "开地图",
     "icon": "UI_EquipIcon_Claymore_Mitsurugi.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Claymore_Mitsurugi.png"
   },
@@ -3131,7 +3131,7 @@
     "mainStat": "暴击率",
     "mainStatValue": "3.4%",
     "effectName": "奔袭战术",
-    "source": "常驻抽取",
+    "source": "开地图",
     "icon": "UI_EquipIcon_Catalyst_Phoney.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Phoney.png"
   },
@@ -3173,7 +3173,7 @@
     "mainStat": "防御力",
     "mainStatValue": "6.4%",
     "effectName": "旅程",
-    "source": "常驻抽取",
+    "source": "开地图",
     "icon": "UI_EquipIcon_Sword_Traveler.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Traveler.png"
   },
@@ -3257,7 +3257,7 @@
     "mainStat": "暴击伤害",
     "mainStatValue": "6.8%",
     "effectName": "飞矢传书",
-    "source": "常驻抽取",
+    "source": "开地图",
     "icon": "UI_EquipIcon_Bow_Msg.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Msg.png"
   },
@@ -3299,7 +3299,7 @@
     "mainStat": "元素充能效率",
     "mainStatValue": "8.5%",
     "effectName": "能量沐浴",
-    "source": "常驻抽取",
+    "source": "开地图",
     "icon": "UI_EquipIcon_Catalyst_Lightnov.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Lightnov.png"
   },
@@ -3313,7 +3313,7 @@
     "mainStat": "攻击力",
     "mainStatValue": "5.1%",
     "effectName": "沉重",
-    "source": "常驻抽取",
+    "source": "开地图",
     "icon": "UI_EquipIcon_Pole_Halberd.png",
     "iconUrl": "https://enka.network/ui/UI_EquipIcon_Pole_Halberd.png"
   },
