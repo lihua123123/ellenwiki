@@ -84,10 +84,25 @@ function iconImg(iconMap, label, cls = 'icon-18') {
   return src ? `<img class="${cls}" src="data:image/webp;base64,${src}" alt="${escapeHtml(label)}" />` : '';
 }
 
-/* 拍平角色数据并补上元素字段 */
-const ALL_CHARACTERS = elementIds.flatMap(el =>
-  (characters[el] || []).map(c => ({ ...c, element: el }))
-);
+/* 拍平角色数据并补上元素字段，再按实装版本倒序（新角色在前）；
+ * 版本来自 content/characters/<名>.json 的 version 字段（scripts/sync-character-versions.mjs 写入），
+ * 暂无版本的排在最后 */
+const versionParts = (v) => String(v || '').split('.').map(Number);
+function versionRank(name) {
+  const v = PROFILES[name]?.version;
+  if (!v) return [-1, -1];
+  const p = versionParts(v);
+  return [p[0] || 0, p[1] || 0];
+}
+const ALL_CHARACTERS = elementIds
+  .flatMap(el => (characters[el] || []).map(c => ({ ...c, element: el })))
+  .sort((a, b) => {
+    const [am, an] = versionRank(a.name);
+    const [bm, bn] = versionRank(b.name);
+    const ar = PROFILES[a.name]?.rarity || 0;
+    const br = PROFILES[b.name]?.rarity || 0;
+    return (bm - am) || (bn - an) || (br - ar) || a.name.localeCompare(b.name, 'zh');
+  });
 
 function findCharacter(name) {
   const decoded = decodeURIComponent(name || '');

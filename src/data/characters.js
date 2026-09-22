@@ -4739,7 +4739,7 @@ export const characters = {
       ]
     },
     {
-      "name": "雅柯达",
+      "name": "雅珂达",
       "weapon": "弓",
       "energy": "70",
       "skills": [

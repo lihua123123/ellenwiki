@@ -160,7 +160,8 @@ function buildSkill(id, type, talent) {
 /* 手动别名：本地名 → genshin-db 键（源数据错别字 / 旅行者按元素拆分） */
 const ALIASES = {
   '茜特拉莉': 'Citlali',          // 源 md 写作「茜特拉莉」，官方为「茜特菈莉」
-  '旅行者': 'Traveler (Cryo)',
+
+  '旅行者（冰）': 'Traveler (Cryo)',
   '旅行者（火）': 'Traveler (Pyro)',
   '旅行者（水）': 'Traveler (Hydro)',
   '旅行者（雷）': 'Traveler (Electro)',
@@ -169,7 +170,7 @@ const ALIASES = {
   '旅行者（草）': 'Traveler (Dendro)',
 };
 // 旅行者基础资料（称号/稀有度/简介）统一取自 Aether
-const INFO_ALIAS = { '旅行者': 'Aether' };
+const INFO_ALIAS = { '旅行者（冰）': 'Aether' };
 
 /* ---------- 主流程 ---------- */
 let ok = 0, missing = [], failed = [];

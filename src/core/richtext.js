@@ -22,7 +22,6 @@ export function renderRichText(text) {
   const blocks = [];
   let idx = 0;
   const ph = () => `\x00RICH${'y'.repeat(++idx)}\x00`;
-
   // 1) 块公式 $$…$$
   text = text.replace(/\$\$([\s\S]+?)\$\$/g, (_m, math) => {
     const key = ph();
@@ -80,4 +79,15 @@ export function renderRichText(text) {
     result = next;
   }
   return result;
+}
+
+/* 数值高亮 —— 把渲染结果文本节点里的百分比与带单位数值包成 .rt-num。
+ * 只在标签之外替换（按 `>` / `<` 切分），不会破坏已生成的标签与公式。
+ * 用于武器精炼效果、圣遗物套装效果这类「技能描述」文本。 */
+const NUM_RE = /\d+(?:\.\d+)?%|\d+(?:\.\d+)?(?=秒|点|层|次|倍|米|枚|段|个)/g;
+
+export function highlightNumbers(html) {
+  return String(html ?? '').replace(/(^|>)([^<]+)/g, (_m, lead, text) =>
+    lead + text.replace(NUM_RE, (num) => `<span class="rt-num">${num}</span>`)
+  );
 }

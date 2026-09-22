@@ -18,7 +18,8 @@ const localNames = elementIds.flatMap(el => (charData[el] || []).map(c => c.name
 
 const ALIASES = {
   '茜特拉莉': 'Citlali',
-  '旅行者': 'Traveler (Cryo)',
+
+  '旅行者（冰）': 'Traveler (Cryo)',
   '旅行者（火）': 'Traveler (Pyro)',
   '旅行者（水）': 'Traveler (Hydro)',
   '旅行者（雷）': 'Traveler (Electro)',

@@ -21,7 +21,7 @@ const ENKA_UI = 'https://enka.network/ui';
 
 /* 本地名 → { id: Snap.Metadata Avatar Id, snap: 元数据里的官方名 } */
 const TARGETS = [
-  { name: '雅柯达', id: 10000124, snap: '雅珂达' },   // md 用字与官方不同，沿用本地名
+  { name: '雅珂达', id: 10000124, snap: '雅珂达' },
 ];
 
 /* ---------- 与 generate-profiles 相同的清洗/拆分逻辑 ---------- */

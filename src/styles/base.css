@@ -340,6 +340,13 @@ mark {
 .table-wrap { max-width: 100%; overflow-x: auto; margin-bottom: 1.1rem; -webkit-overflow-scrolling: touch; }
 .table-wrap > table { margin-bottom: 0; }
 
+/* 描述文本中的数值高亮（武器精炼效果 / 圣遗物套装效果） */
+.rt-num {
+  color: var(--accent-light);
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(106, 163, 240, 0.35);
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -393,7 +400,6 @@ input::placeholder { color: var(--text-secondary); }
   margin: 1.5em 0;
   background: var(--bg-code);
   border: 1px solid var(--border-color);
-  border-left: 3px solid var(--accent);
   border-radius: var(--radius);
 }
 .katex-wrap:first-child { margin-top: 0; }

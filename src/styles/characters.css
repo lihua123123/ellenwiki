@@ -169,7 +169,6 @@
 }
 
 .char-hero {
-  border-left: 4px solid var(--el-color, var(--accent));
   margin-bottom: 1.4rem;
 }
 .char-hero h1 { margin: 0 0 0.5rem; }
@@ -575,16 +574,25 @@
 
 .constellation-panels .talent-card { max-width: none; }
 
-/* 固有天赋 / 命之座网格 */
+/* 固有天赋 / 命之座网格：铺满内容区，每行两个 */
 .talent-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.9rem;
+  width: 100%;
 }
 .talent-grid .talent-card { margin-bottom: 0; }
 
+/* 数量为奇数时，最后一张铺满整行，避免右侧留半格空白 */
+.talent-grid > :last-child:nth-child(odd) { grid-column: 1 / -1; }
+
 /* 带附着表的占位卡片纵向单列排布，表格撑满整行 */
 .talent-grid.stacked { grid-template-columns: 1fr; }
+
+@media (max-width: 900px) {
+  .talent-grid { grid-template-columns: 1fr; }
+  .talent-grid > :last-child:nth-child(odd) { grid-column: auto; }
+}
 
 @media (max-width: 860px) {
   .talent-top { flex-direction: column; }

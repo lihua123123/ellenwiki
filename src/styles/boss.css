@@ -289,14 +289,12 @@
 .block-text {
   background: var(--bg-code);
   border: 1px solid var(--border-color);
-  border-left: 3px solid var(--border-color);
   color: var(--text-main);
 }
 
 .block-title {
   background: rgba(74, 137, 220, 0.14);
   border: 1px solid rgba(74, 137, 220, 0.3);
-  border-left: 3px solid var(--accent);
   color: var(--text-heading);
   font-weight: 600;
   display: flex;
