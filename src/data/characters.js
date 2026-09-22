@@ -2867,6 +2867,84 @@ export const characters = {
           "poise": ""
         }
       ]
+    },
+    {
+      "name": "米提亚",
+      "weapon": "法器",
+      "energy": "60",
+      "skills": [
+        {
+          "name": "重击 变式",
+          "elementAmount": "弱雷",
+          "attachRule": "独立",
+          "particles": "",
+          "note": "递变聚爆，有过载炉心时",
+          "poise": ""
+        },
+        {
+          "name": "e",
+          "elementAmount": "弱雷",
+          "attachRule": "独立",
+          "particles": "",
+          "note": "创造稳态炉心",
+          "poise": ""
+        },
+        {
+          "name": "E",
+          "elementAmount": "弱雷",
+          "attachRule": "独立",
+          "particles": "",
+          "note": "创造过载炉心",
+          "poise": ""
+        },
+        {
+          "name": "Q",
+          "elementAmount": "弱雷",
+          "attachRule": "独立",
+          "particles": "",
+          "note": "",
+          "poise": ""
+        }
+      ]
+    },
+    {
+      "name": "瓦列里",
+      "weapon": "单手剑",
+      "energy": "60",
+      "skills": [
+        {
+          "name": "重击 变式",
+          "elementAmount": "弱雷",
+          "attachRule": "",
+          "particles": "",
+          "note": "臼炮直射·抵近轰击",
+          "poise": ""
+        },
+        {
+          "name": "E",
+          "elementAmount": "弱雷",
+          "attachRule": "独立",
+          "particles": "",
+          "note": "",
+          "poise": ""
+        },
+        {
+          "name": "Q 释放",
+          "elementAmount": "弱雷",
+          "attachRule": "",
+          "particles": "",
+          "note": "",
+          "poise": ""
+        },
+        {
+          "name": "Q 后续",
+          "elementAmount": "弱雷",
+          "attachRule": "",
+          "particles": "",
+          "note": "雷霰重弹",
+          "poise": ""
+        }
+      ]
     }
   ],
   "ice": [
@@ -4962,14 +5040,6 @@ export const characters = {
           "attachRule": "与「E 持续」共用附着 CD",
           "particles": "与「 E 」共用产球 CD",
           "note": "翔风剑 · 一阶，本体",
-          "poise": ""
-        },
-        {
-          "name": "E 变式一",
-          "elementAmount": "弱风",
-          "attachRule": "与「E 持续」共用附着 CD",
-          "particles": "与「 E 」共用产球 CD",
-          "note": "翔风剑 · 一阶，灵剑",
           "poise": ""
         },
         {

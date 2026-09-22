@@ -168,7 +168,7 @@ $$
 
 **反应<span class="lunar-bloom-dendro">月绽放</span>**：反应倍率为：<span class="dendro"> 绽放 </span> $2$ | <span class="dendro"> 超绽放 烈绽放 </span> $3$，精通系数为：$16$
 
->特定情况下，<span class="dendro">**草**</span>触及<span class="hydro">**水**</span>时，会生成<span class="dendro">草原核</span>，并为队伍提供「**草露**」，可被特定角色消耗
+>特定情况下，<span class="dendro">**草**</span>触及<span class="hydro">**水**</span>时，会生成<span class="dendro">草原核</span>，并为队伍提供「**草露**」，可被特定角色消耗，草露约每 $2s$ 获得一颗
 ><span class="dendro">草原核</span>伤害**不算**<span class="lunar-bloom-dendro">**月绽放**</span>**伤害**，<span class="lunar-bloom-dendro">月绽放</span>伤害**只包括直伤**
 ><span class="dendro">草原核</span>伤害仍为<span class="dendro">**绽放/烈绽放/超绽放伤害**</span>
 ><span class="dendro">草原核</span>无**最终伤害**计算
@@ -219,6 +219,7 @@ $$
 **反应星超导**：反应倍率：$0$ 且不消耗额外提升次数
 
 > 特定情况下，<span class="electro">**雷**</span>触及<span class="cryo">**冰**</span>时，会创造「星辉棱晶」，并将其附近的区域短暂变换为奇妙的「**极星辉域**」
+> 星辉棱晶在特定情况下会转化为**递变信标**，递变信标可以被消耗但不影响极星辉域的持续时间，此时极星辉域会跟随角色移动
 > 极星辉域会每 **4s** 记录领域内的<span class="electro">雷</span>/<span class="cryo">冰</span>元素**附着次数之和**，记录上限为12次，持续 **4s**，重复触发时刷新持续时间
 
 > 当记录次数为 $0/1/12$ 次时，会获得 $20\%/29\%/40\%$ 的<span class="electro">雷</span>/<span class="cryo">冰</span>元素增伤以及 $1/1.45/2.0$ 星超导系数
