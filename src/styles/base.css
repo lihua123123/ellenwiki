@@ -395,6 +395,8 @@ mark {
   appearance: none;
   display: block;
   width: 100%;
+  /* 浏览器给 range 的默认 margin 会让轨道与 .level-ticks 错开约 2px */
+  margin: 0;
   height: 6px;
   border-radius: 999px;
   background: linear-gradient(90deg,
@@ -442,8 +444,8 @@ mark {
   border: 0;
   background: none;
   transform: translateX(-50%);
-  cursor: pointer;
-  pointer-events: auto;
+  /* 节点本身不拦鼠标事件，否则滑块停在节点上时就拖不动了 */
+  pointer-events: none;
 }
 .level-tick-dot {
   width: 6px;
@@ -459,6 +461,9 @@ mark {
   color: var(--text-secondary);
   white-space: nowrap;
   transition: color 0.15s ease;
+  /* 只有数字是可点的（轨道与圆点留给滑块） */
+  pointer-events: auto;
+  cursor: pointer;
 }
 .level-tick:hover .level-tick-dot { transform: scale(1.35); }
 .level-tick:hover .level-tick-num { color: var(--text-main); }
