@@ -67,11 +67,9 @@ function buildLevels(attributes) {
     // 值模板：优先取含占位符的后续段，否则用首段
     let template = parts.slice(1).join('|');
     if (!template.includes('{param')) template = parts[0];
-    const labelText = (PARAM_RE.lastIndex = 0, parts[0].replace(PARAM_RE, '').trim());
-    // 模板中占位符以外的文字（如 "生命值上限"）并入 label
-    PARAM_RE.lastIndex = 0;
-    const extraText = template.replace(PARAM_RE, '').replace(/[:：\s]+/g, '');
-    const label = extraText && extraText !== labelText ? `${labelText}（${extraText}）` : labelText;
+    /* 标签只取「|」前的名字：单位/说明文字留在值里（如「持续时间 → 15.0秒」），
+     * 与 gachabase 来源的角色口径一致，也不重复出现两次 */
+    const label = (PARAM_RE.lastIndex = 0, parts[0].replace(PARAM_RE, '').trim());
 
     const values = Array.from({ length: 15 }, (_, lv) => {
       let missing = false;

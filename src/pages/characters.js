@@ -538,8 +538,9 @@ function markSkillRefs(html, refs) {
   }));
 }
 
+/* 角色逸闻：附录色斜体，纯展示不做悬停提示 */
 const loreHtml = (lore) => lore
-  ? `<br><span class="talent-lore" data-tip="角色逸闻 · 游戏内原文">${textHtml(lore)}</span>`
+  ? `<br><span class="talent-lore">${textHtml(lore)}</span>`
   : '';
 
 /* 页面加载后绑定等级选择器事件 */

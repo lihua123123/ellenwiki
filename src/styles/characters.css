@@ -425,14 +425,12 @@
   color: var(--text-main);
 }
 
-/* 角色逸闻：附录样式（弱化色 + 斜体），悬停显示说明 */
+/* 角色逸闻：附录样式（弱化色 + 斜体），纯展示不做悬停 */
 .talent-lore {
   font-size: 0.84rem;
   font-style: italic;
   color: var(--text-secondary);
   opacity: 0.85;
-  cursor: help;
-  border-bottom: 1px dashed rgba(106, 163, 240, 0.4);
 }
 
 /* 状态/术语内嵌悬停：主题色文字 + 虚线下划线，明显区别于正文 */

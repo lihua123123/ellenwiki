@@ -202,8 +202,30 @@ function applyStates(item, entries, glossary) {
   return changed;
 }
 
-/** 简单的并发池（对第三方接口保持克制：并发 4 + 每条之间 120ms） */
-async function runPool(items, limit, worker) {
+/**
+ * 逸闻（角色台词/旁白）：lunaris 把它放在正文的 <i>…</i> 斜体段里。
+ * genshin-db 的正文常常没有这段（新角色尤其明显），本地 lore 就是空的 —— 这里补上。
+ * 已存在且包含同样内容的就不动（保护手工文案）。
+ */
+function applyLore(item, raw) {
+  const italics = [...String(raw || '').matchAll(/<i>([\s\S]*?)<\/i>/g)]
+    .map((m) => cleanText(m[1]).trim())
+    .filter(Boolean);
+  if (!italics.length) return 0;
+  const text = italics.join('\n');
+  const probe = italics[0].slice(0, 12);
+  let changed = 0;
+  for (const holder of [item, item.buffs].filter(Boolean)) {
+    const have = String(holder.lore || '');
+    if (have && have.includes(probe)) continue;      // 已有（可能被 sync-buffs 改过措辞）
+    if (String(holder.description || '').includes(probe)) continue;
+    holder.lore = text;
+    changed++;
+  }
+  return changed;
+}
+
+/** 简单的并发池（对第三方接口保持克制：并发 4 + 每条之间 120ms） */async function runPool(items, limit, worker) {
   let next = 0;
   const runners = Array.from({ length: Math.min(limit, items.length) }, async () => {
     while (next < items.length) {
@@ -242,6 +264,7 @@ async function syncCharStates(ver) {
 
   const made = [];
   const filled = [];
+  const loreMissing = [];
   await runPool(targets, 4, async ({ name, id, file }) => {
     let dto;
     try {
@@ -274,8 +297,8 @@ async function syncCharStates(ver) {
       }
     }
 
-    /* 2) 状态说明词条：按正文里的 {LINK#N<id>} 标记同步 */
-    if (glossary.size) {
+    /* 2) 状态说明词条 + 逸闻：按正文里的 {LINK#N<id>} 标记与 <i> 斜体段同步 */
+    {
       /* lunaris 的条目按名字对应本地条目（技能 / 固有天赋 / 命之座） */
       const locals = new Map();
       for (const it of [...(profile.skills || []), ...(profile.passives || []), ...(profile.constellations || [])]) {
@@ -288,14 +311,22 @@ async function syncCharStates(ver) {
       ];
       const glossaryList = [...glossary.values()];
       let touched = 0;
+      let loreFilled = 0;
       for (const src of all) {
         const target = locals.get(cleanText(src?.name));
         if (!target) continue;
-        touched += applyStates(target, linkedEntries(src.description, glossary), glossaryList);
+        if (glossary.size) {
+          touched += applyStates(target, linkedEntries(src.description, glossary), glossaryList);
+        }
+        if (applyLore(target, src.description)) loreFilled++;
       }
-      if (touched) {
-        changed += touched;
-        console.log(`   ⟳ [角色] ${name}：同步状态说明词条 ${touched} 处${DRY ? '（dry）' : ''}`);
+      if (touched || loreFilled) {
+        changed += touched + loreFilled;
+        if (touched) console.log(`   ⟳ [角色] ${name}：同步状态说明词条 ${touched} 处${DRY ? '（dry）' : ''}`);
+        if (loreFilled) {
+          loreMissing.push(name);
+          console.log(`   + [角色] ${name}：补逸闻 ${loreFilled} 处${DRY ? '（dry）' : ''}`);
+        }
       }
     }
 
@@ -303,7 +334,7 @@ async function syncCharStates(ver) {
     writeJson(file, profile);
     made.push(`${name}（${changed}）`);
   });
-  console.log(`   角色清单 ${Object.keys(list).length} 条：基础属性补 ${filled.length} 个、状态说明同步 ${made.length} 个${unmatched.length ? `（${unmatched.length} 个名称未匹配：${unmatched.slice(0, 5).join('、')}…）` : ''}`);
+  console.log(`   角色清单 ${Object.keys(list).length} 条：基础属性补 ${filled.length} 个、状态说明/逸闻同步 ${made.length} 个${unmatched.length ? `（${unmatched.length} 个名称未匹配：${unmatched.slice(0, 5).join('、')}…）` : ''}`);
   return made;
 }
 

@@ -21,7 +21,8 @@
 ## 页面与数据约定
 
 - 数据源：`content/characters|weapons|artifacts/<名称>.json`（genshin-db 生成，新内容由 gachabase / lunaris 补齐），改完跑 `npm run data`。角色等级数值按 `label + values 数组`存，页面用步进器（− / ＋ / 滚轮）切换。
-- 描述文本：`\n\n` 分段；「标题+正文」段转悬停术语（虚线下划线 + 气泡）；结尾无机制词的段落判为**角色逸闻**（附录色斜体）。
+- 描述文本：`\n\n` 分段；「标题+正文」段转悬停术语（虚线下划线 + 气泡）；结尾无机制词的段落判为**角色逸闻**（附录色斜体，纯展示、不做悬停）。
+- **天赋等级表**：行标签只写名称（如 `基础持续时间`），单位跟着值走（`15.0秒`）—— 不再把单位塞进标签（genshin-db 的 `标签|值模板` 里模板自带单位，取「|」前部分做标签即可）。
 - **状态说明（悬停词条）**：存在条目的 `states`（`{ name, text }`）里，正文里出现该名字即自动包成虚线下划线 + 气泡；由 `generate-profiles.mjs` 从正文的「标题+正文」段解析，再由 `sync-lunaris.mjs` 按 lunaris 正文里的 `{LINK#N<id>}` 标记补词条（**只看 LINK 标记**，同名但未被链接的词不挂说明，如元素爆发里的「领唱」是领唱者而非叠层）。
 - **加强文本（金色 `.rt-buff`）**：gachabase 有 `buffed_description`（genshin-db 没有），`sync-buffs.mjs` 与基础描述做逐词 diff 后，**只把新增片段**包进 `buffs.description` 的 `<buff>…</buff>`（重叠文段保持正文色）。当前 14 名角色：七七 / 可莉 / 温迪 / 阿贝多 / 莫娜 / 砂糖 / 雷泽 / 菲谢尔 / 八重神子 / 北斗 / 迪奥娜 / 赛诺 / 莱欧斯利 / 梦见月瑞希。
 - **技能引用（淡紫 `.rt-skill`）**：天赋里提到技能时（`元素战技柔板·幻灵夜舞`、`突破天赋「落羽的裁择」`、`普通攻击·如水`）标出，与金色区分；武器 / 圣遗物不标。
@@ -112,6 +113,7 @@ node scripts/fetch-avatars2.mjs          # 可选：从 enka CDN 补缺失头像
 - **武器数值缺失**：测试服武器（gachabase）没有 lv1 数值与逐级曲线，跑一次 `npm run data:lunaris -- --kind=weapon` 补全（脚本识别 `beta` 且缺 `baseAtk`/`curve` 的条目并保留其突破材料与故事）。
 - **状态说明（悬浮词条）**：天赋正文里的「领唱」「重唱」这类词条在页面上悬停显示说明，数据存 `states`；由 `npm run data:lunaris -- --kind=char` 按 lunaris 正文的 `{LINK#N<id>}` 标记写入（只处理真正被链接的词条，同名未链接的不挂；可反复跑，会收回之前误挂的）。
 - **角色属性（生命值 / 攻击力 / 防御力 / 突破属性）**：`npm run data:profiles` 会给有 genshin-db 数据的角色写 `stats`；genshin-db 没有的角色（旅行者、未实装的沃雅妮莎 / 薇斯纳）由 `npm run data:lunaris -- --kind=char` 用 `info.attributes` 补（两套口径已交叉校验，突破节点差 ≤2 点）。
+- **角色逸闻**：lunaris 正文里的 `<i>…</i>` 斜体段，`npm run data:lunaris -- --kind=char` 会在本地缺逸闻时补上（genshin-db 的新角色正文常常没这段；已存在的不覆盖）。
 - **加 Boss 图片**：放 `content/boss/images/`，文件名与 md 里的 `images/xxx.webp` 一致。
 - **新增条目不必改页面代码**：列表页只读 `src/data/*-index.json`，详情页按名称懒加载 `content/*/<名称>.json`；图标默认走 enka CDN，跑过 `npm run data:equip:icons` 后自动优先用本地图标。
 
