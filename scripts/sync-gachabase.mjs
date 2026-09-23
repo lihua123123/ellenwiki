@@ -27,6 +27,7 @@
 import { writeFileSync, readFileSync, readdirSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { formatJson } from './lib/compact-json.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DIRS = {
@@ -197,7 +198,7 @@ const writeJson = (file, obj) => {
     console.log(`   [dry] 会写入 ${file.replace(ROOT, '.')}`);
     return;
   }
-  writeFileSync(file, JSON.stringify(obj, null, 2) + '\n', 'utf-8');
+  writeFileSync(file, formatJson(obj), 'utf-8');
 };
 
 async function download(url, file) {

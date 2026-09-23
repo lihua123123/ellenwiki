@@ -12,6 +12,7 @@
  */
 import '../styles/weapons.css';
 import { renderRichText, highlightNumbers } from '../core/richtext.js';
+import { levelSimHtml, bindLevelSim } from '../core/level-sim.js';
 import index from '../data/weapons-index.json';
 import { weaponIcons } from '../assets/icons.js';
 
@@ -160,88 +161,28 @@ function buildLevelPanel(weapon) {
   if (!curve) return '';
 
   const maxLevel = curve.maxLevel || weapon.maxLevel || 90;
-  const startLevel = maxLevel;
   const mainLabel = weapon.mainStat || '副属性';
-
-  return `
-    <div class="level-sim"
-         data-max="${maxLevel}"
-         data-percent="${weapon.mainStatPercent ? '1' : '0'}"
-         data-pre-attack='${escapeHtml(JSON.stringify(curve.preAttack || {}))}'
-         data-pre-main='${escapeHtml(JSON.stringify(curve.preSpecialized || {}))}'
-         data-attack='${escapeHtml(JSON.stringify(curve.attack || []))}'
-         data-main='${escapeHtml(JSON.stringify(curve.specialized || []))}'>
-      <div class="weapon-stat-row">
-        <div class="weapon-stat">
-          <span class="weapon-stat-label">基础攻击力</span>
-          <span class="weapon-stat-value" data-out="attack">—</span>
-        </div>
-        <div class="weapon-stat">
-          <span class="weapon-stat-label">${escapeHtml(mainLabel)}</span>
-          <span class="weapon-stat-value" data-out="main">—</span>
-        </div>
-      </div>
-
-      <div class="level-slider-head">
-        <span class="level-slider-label">等级</span>
-        <span class="level-current">${startLevel}</span>
-      </div>
-      <input type="range" class="level-range" min="1" max="${maxLevel}" step="1"
-             value="${startLevel}" aria-label="武器等级" />
-      <div class="level-slider-foot">
-        <label class="asc-toggle">
-          <input type="checkbox" class="asc-check" checked />
-          <span>已突破</span>
-        </label>
-        <span class="asc-hint">仅在 ${(curve.preAttack ? Object.keys(curve.preAttack) : []).join(' / ')} 级可切换</span>
-      </div>
-    </div>`;
+  return levelSimHtml({
+    maxLevel,
+    value: maxLevel,
+    cells: [
+      { key: 'attack', label: '基础攻击力' },
+      { key: 'specialized', label: mainLabel },
+    ],
+  });
 }
 
 /* 绑定滑块与突破勾选 */
-function bindLevelPanel(root) {
-  const panel = root.querySelector('.level-sim');
-  if (!panel) return;
-
-  const range = panel.querySelector('.level-range');
-  const ascCheck = panel.querySelector('.asc-check');
-  const current = panel.querySelector('.level-current');
-  const outAttack = panel.querySelector('[data-out="attack"]');
-  const outMain = panel.querySelector('[data-out="main"]');
-
-  let preAttack = {}, preMain = {}, attack = [], main = [];
-  try {
-    preAttack = JSON.parse(panel.dataset.preAttack || '{}');
-    preMain = JSON.parse(panel.dataset.preMain || '{}');
-    attack = JSON.parse(panel.dataset.attack || '[]');
-    main = JSON.parse(panel.dataset.main || '[]');
-  } catch { /* 数据异常时保持默认 */ }
-  const isPercent = panel.dataset.percent === '1';
-
-  const fmtMain = (v) => {
-    if (v === null || v === undefined) return '—';
-    return isPercent ? `${(v * 100).toFixed(1)}%` : String(Math.round(v));
-  };
-
-  function apply() {
-    const lv = Number(range.value);
-    const atCap = Object.prototype.hasOwnProperty.call(preAttack, String(lv));
-    ascCheck.disabled = !atCap;
-    // 非突破节点的等级必然已经突破过
-    if (!atCap) ascCheck.checked = true;
-
-    const usePre = atCap && !ascCheck.checked;
-    const atkVal = usePre ? preAttack[String(lv)] : attack[lv - 1];
-    const mainVal = usePre ? preMain[String(lv)] : main[lv - 1];
-
-    outAttack.textContent = atkVal ?? '—';
-    outMain.textContent = fmtMain(mainVal);
-    current.textContent = lv;
-  }
-
-  range.addEventListener('input', apply);
-  ascCheck.addEventListener('change', apply);
-  apply();
+function bindLevelPanel(root, weapon) {
+  const curve = weapon?.curve;
+  if (!curve) return;
+  const percent = weapon.mainStatPercent ? 'pct' : 'int';
+  bindLevelSim(root, {
+    series: { attack: curve.attack || [], specialized: curve.specialized || [] },
+    pre: { attack: curve.preAttack || {}, specialized: curve.preSpecialized || {} },
+    format: { attack: 'int', specialized: percent },
+    maxLevel: curve.maxLevel || weapon.maxLevel || 90,
+  });
 }
 
 /* 武器技能：精炼 1~5 切换 */
@@ -305,9 +246,9 @@ function renderDetail(root, weapon) {
             ${sourceTagHtml(weapon.source)}
             ${weapon.version ? `<span class="weapon-version-chip">v${escapeHtml(weapon.version)}</span>` : ''}
           </div>
-          ${buildLevelPanel(weapon) || `<div class="weapon-stat-row">
-            <div class="weapon-stat"><span class="weapon-stat-label">基础攻击力</span><span class="weapon-stat-value">${weapon.baseAtk ?? '—'}</span></div>
-            ${weapon.mainStat ? `<div class="weapon-stat"><span class="weapon-stat-label">${escapeHtml(weapon.mainStat)}</span><span class="weapon-stat-value">${escapeHtml(weapon.mainStatValue || '—')}</span></div>` : ''}
+          ${buildLevelPanel(weapon) || `<div class="stat-row">
+            <div class="stat-cell"><span class="stat-label">基础攻击力</span><span class="stat-value">${weapon.baseAtk ?? '—'}</span></div>
+            ${weapon.mainStat ? `<div class="stat-cell"><span class="stat-label">${escapeHtml(weapon.mainStat)}</span><span class="stat-value">${escapeHtml(weapon.mainStatValue || '—')}</span></div>` : ''}
           </div>`}
         </div>
       </header>
@@ -347,7 +288,7 @@ function renderDetail(root, weapon) {
     });
   }
 
-  bindLevelPanel(root);
+  bindLevelPanel(root, weapon);
   document.title = `${weapon.name} · 武器图鉴 · 艾莲的数据库`;
 }
 

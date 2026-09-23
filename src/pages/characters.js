@@ -11,6 +11,7 @@
 import '../styles/characters.css';
 import { renderMarkdown } from '../core/markdown.js';
 import { initTooltip } from '../core/tooltip.js';
+import { levelSimHtml, bindLevelSim } from '../core/level-sim.js';
 import { elementLabels, elementIds, weaponTypes, characters } from '../data/characters.js';
 import { elementIcons, weaponIcons } from '../assets/icons.js';
 import mdSource from '../../content/attachment/元素附着及产球.md?raw';
@@ -437,8 +438,11 @@ function levelSelector(skill) {
     </div>`;
 }
 
-/* 文本段落换行 */
-const textHtml = (text) => escapeHtml(text || '').replace(/\n/g, '<br>');
+/* 文本段落换行；<buff>…</buff> 标记（由 scripts/sync-buffs.mjs 写入）转成加强色 */
+const textHtml = (text) => escapeHtml(text || '')
+  .replace(/&lt;buff&gt;/g, '<span class="rt-buff">')
+  .replace(/&lt;\/buff&gt;/g, '</span>')
+  .replace(/\n/g, '<br>');
 
 /* 状态说明内嵌：在正文里找到状态名，包成虚线下划线 + 悬停说明（title）。
  * 正文里找不到的，追加在描述末尾。 */
@@ -471,12 +475,68 @@ function inlineStatesHtml(desc, states = []) {
   return html;
 }
 
-/* 描述整体渲染：正文（状态名内嵌悬停）+ 逸闻（附录色斜体，悬停说明） */
-const descHtml = (item) => {
-  const has = item.description || (item.states || []).length || item.lore;
+/* 描述整体渲染：正文（状态名内嵌悬停）+ 逸闻（附录色斜体，悬停说明）。
+ * 有 buffs.description（gachabase 加强版文本，只给新增片段包了 <buff>）时优先渲染它。 */
+const descHtml = (item, refs) => {
+  const desc = item.buffs?.description || item.description;
+  const states = item.buffs?.states || item.states;
+  const lore = item.buffs?.lore || item.lore;
+  const has = desc || (states || []).length || lore;
   if (!has) return '';
-  return `<p class="talent-desc">${inlineStatesHtml(item.description, item.states)}${loreHtml(item.lore)}</p>`;
+  const html = `${inlineStatesHtml(desc, states)}${loreHtml(lore)}`;
+  return `<p class="talent-desc">${markSkillRefs(html, refs)}</p>`;
 };
+
+/* ---------- 技能引用标记 ----------
+ * 天赋文本里提到具体技能时（元素战技柔板·幻灵夜舞 / 元素爆发「疾板·苍羽一梦」/ 突破天赋「落羽的裁择」），
+ * 用 .rt-skill 另标一色，与「加强文本」的 .rt-buff 区分。
+ * 名字来源：本角色的天赋 / 固有天赋 / 命座名 + 正文里的「…」引号名，
+ * 以及关键词后面「前置词·后置词」式的专门技能名（如特殊的元素战技柔板·破晓终奏）。 */
+const REF_KEYWORD = '突破天赋|固有天赋|命之座|普通攻击|下落攻击|瞄准射击|重击|元素战技|元素爆发|天赋';
+/* 未知名的截断规则：遇到这些接续词/标点就认为名字结束 */
+const REF_STOP_RE = /[，。；、：！？（）()「」\s]|后|时|的|将|会|中|内|以|与|和|及|或|等|获|进|造|命|施|召|使|为|能|可|按|每|若|当|在|并|则|也|还|而|被|向|从|至|到|由|因|于|落|地|持续|触发|造成|效果|技能|状态|解除|结束|提升|增加|命中|攻击|伤害|强化/;
+/* 名字尾部可能粘上的虚词/动词（截断后再清一遍，如「重击·冰凝无效」→「重击·冰凝」） */
+const REF_TAIL_RE = /[改无效应地时后中会能有造触得并也还而将期间]+$/;
+const escapeRegExp = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+function skillRefRegex(profile) {
+  const texts = [
+    ...(profile.skills || []).flatMap(s => [s.description, s.lore, ...(s.states || []).map(x => x.text)]),
+    ...(profile.passives || []).map(p => p.description),
+    ...(profile.constellations || []).map(c => c.description),
+  ].filter(Boolean).join('\n');
+
+  const known = new Set();
+  for (const list of [profile.skills, profile.passives, profile.constellations]) {
+    for (const it of list || []) if (it.name) known.add(it.name);
+  }
+  // 状态说明块的名字（如「踏云献瑞」）也会在正文里被关键词引用
+  for (const s of profile.skills || []) for (const st of s.states || []) if (st.name) known.add(st.name);
+  for (const m of texts.matchAll(/「[^」]{2,24}」/g)) known.add(m[0]);
+
+  const alt = [...known].filter(n => n.length >= 2).sort((a, b) => b.length - a.length).map(escapeRegExp);
+  const parts = [];
+  if (alt.length) parts.push(alt.join('|'));
+  parts.push('·?[\\u4e00-\\u9fa5]{1,4}·[\\u4e00-\\u9fa5]{1,8}');   // 前置词·后置词（如 柔板·破晓终奏）
+  parts.push('·[\\u4e00-\\u9fa5]{1,8}');                            // 关键词·名字（如 普通攻击·迅烈倾霜拳）
+  return { re: new RegExp(`(${REF_KEYWORD})(${parts.join('|')})`, 'g'), known };
+}
+
+/* 只在标签之外的文本节点里替换，不破坏已有的 span 结构 */
+function markSkillRefs(html, refs) {
+  if (!refs) return html;
+  const { re, known } = refs;
+  return String(html).replace(/(^|>)([^<]+)/g, (_m, lead, text) => lead + text.replace(re, (_full, kw, name) => {
+    let n = name;
+    if (!known.has(n) && !n.startsWith('「')) {
+      const i = n.search(REF_STOP_RE);
+      if (i > 0) n = n.slice(0, i);
+      n = n.replace(REF_TAIL_RE, '');
+    }
+    if (!n || n === '·') return kw + name;
+    return `<span class="rt-skill">${kw}${n}</span>` + name.slice(n.length);
+  }));
+}
 
 const loreHtml = (lore) => lore
   ? `<br><span class="talent-lore" data-tip="角色逸闻 · 游戏内原文">${textHtml(lore)}</span>`
@@ -608,9 +668,46 @@ function renderDetailPlain(root, char, meta) {
     </div>`;
 }
 
+/* 属性面板：生命值 / 攻击力 / 防御力 / 突破属性 + 等级滑块（与武器同一套组件） */
+function statsSection(profile, meta) {
+  const st = profile?.stats;
+  if (!st || !Array.isArray(st.hp)) return '';
+  return `
+      <section class="card char-stats" style="--el-color:${meta.color}">
+        <h2 style="margin-top:0">属性</h2>
+        ${levelSimHtml({
+          maxLevel: st.maxLevel || 90,
+          value: st.maxLevel || 90,
+          cells: [
+            { key: 'hp', label: '生命值' },
+            { key: 'attack', label: '攻击力' },
+            { key: 'defense', label: '防御力' },
+            { key: 'specialized', label: st.label || '突破属性' },
+          ],
+        })}
+      </section>`;
+}
+
+function bindStatsSection(root, profile) {
+  const st = profile?.stats;
+  if (!st || !Array.isArray(st.hp)) return;
+  bindLevelSim(root, {
+    series: { hp: st.hp, attack: st.attack, defense: st.defense, specialized: st.specialized },
+    pre: { hp: st.preHp, attack: st.preAttack, defense: st.preDefense, specialized: st.preSpecialized },
+    format: {
+      hp: 'int',
+      attack: 'int',
+      defense: 'int',
+      specialized: st.percent ? 'pct' : 'int',
+    },
+    maxLevel: st.maxLevel || 90,
+  });
+}
+
 /* 有本地资料的角色：左上天赋描述 + 右上等级选择 + 下方附着/产球表 */
 function renderDetailProfile(root, char, meta, profile) {
   const groups = groupAttachmentRows(char.skills);
+  const refs = skillRefRegex(profile);
 
   const skillCards = (profile.skills || []).map(sk => {
     const rows = groups[sk.id] || [];
@@ -623,7 +720,7 @@ function renderDetailProfile(root, char, meta, profile) {
               <span class="talent-type">${escapeHtml(sk.type || '')}</span>
               <h3 class="talent-name">${escapeHtml(sk.name || '')}</h3>
             </header>
-            ${descHtml(sk)}
+            ${descHtml(sk, refs)}
           </div>
           ${hasLevels ? levelSelector(sk) : ''}
         </div>
@@ -652,7 +749,7 @@ function renderDetailProfile(root, char, meta, profile) {
   const passiveCard = (t, rows = []) => `
     <article class="talent-card compact ${rows.length ? '' : 'dimmed'}">
       <header class="talent-head"><h3 class="talent-name">${escapeHtml(t.name)}</h3></header>
-      ${descHtml(t)}
+      ${descHtml(t, refs)}
       ${attachmentTable(rows)}
     </article>`;
 
@@ -660,7 +757,7 @@ function renderDetailProfile(root, char, meta, profile) {
     const rows = groups.constellations[c.level] || [];
     return `
       <article class="talent-card compact constellation-panel" data-constellation="${c.level}" ${c.level === 1 ? '' : 'hidden'}>
-        ${descHtml(c)}
+        ${descHtml(c, refs)}
         ${attachmentTable(rows)}
       </article>`;
   }).join('');
@@ -673,6 +770,8 @@ function renderDetailProfile(root, char, meta, profile) {
     <div class="char-detail scope-genshin">
       <a class="back-link" href="#/characters">← 返回角色图鉴</a>
       ${renderHero(char, meta, profile)}
+
+      ${statsSection(profile, meta)}
 
       <section class="talent-section">
         <h2>战斗天赋</h2>
@@ -710,6 +809,7 @@ function renderDetailProfile(root, char, meta, profile) {
     </div>`;
 
   bindLevelSelectors(root);
+  bindStatsSection(root, profile);
 }
 
 function renderDetail(root, char) {

@@ -5,13 +5,13 @@
     "rarity": 5,
     "type": "单手剑",
     "version": "7.1",
-    "baseAtk": null,
+    "baseAtk": 48,
     "mainStat": "暴击伤害",
-    "mainStatValue": "",
+    "mainStatValue": "9.6%",
     "effectName": "破茧的自由舞",
     "source": "",
-    "icon": "",
-    "iconUrl": "https://cdn.gachabase.net/gi/assets/5a0f794603c555ffe14f485c9d81cfb7.png"
+    "icon": "UI_EquipIcon_Sword_Samosvist.png",
+    "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Samosvist.png"
   },
   {
     "slug": "漩流颂歌",
@@ -19,13 +19,13 @@
     "rarity": 5,
     "type": "法器",
     "version": "7.1",
-    "baseAtk": null,
+    "baseAtk": 44,
     "mainStat": "生命值",
-    "mainStatValue": "",
+    "mainStatValue": "14.4%",
     "effectName": "沉眠的回旋曲",
     "source": "",
-    "icon": "",
-    "iconUrl": "https://cdn.gachabase.net/gi/assets/502270d86aaa2a79da718415c1eea7b8.png"
+    "icon": "UI_EquipIcon_Catalyst_Bludnye.png",
+    "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_Bludnye.png"
   },
   {
     "slug": "凝雪沉心",
@@ -33,13 +33,13 @@
     "rarity": 4,
     "type": "法器",
     "version": "7.1",
-    "baseAtk": null,
+    "baseAtk": 42,
     "mainStat": "暴击伤害",
-    "mainStatValue": "",
+    "mainStatValue": "12.0%",
     "effectName": "寒霜的遗秘",
     "source": "",
-    "icon": "",
-    "iconUrl": "https://cdn.gachabase.net/gi/assets/39d7ad17a1dac916cbd67b5c56529ea1.png"
+    "icon": "UI_EquipIcon_Catalyst_FrostScepter.png",
+    "iconUrl": "https://enka.network/ui/UI_EquipIcon_Catalyst_FrostScepter.png"
   },
   {
     "slug": "柔风游弦",
@@ -47,13 +47,13 @@
     "rarity": 4,
     "type": "弓",
     "version": "7.1",
-    "baseAtk": null,
+    "baseAtk": 42,
     "mainStat": "暴击率",
-    "mainStatValue": "",
+    "mainStatValue": "6.0%",
     "effectName": "蝰蛇的谣歌",
     "source": "",
-    "icon": "",
-    "iconUrl": "https://cdn.gachabase.net/gi/assets/6c662094dcaba2c59b6024646af690a8.png"
+    "icon": "UI_EquipIcon_Bow_Windtalker.png",
+    "iconUrl": "https://enka.network/ui/UI_EquipIcon_Bow_Windtalker.png"
   },
   {
     "slug": "新枝",
@@ -61,13 +61,13 @@
     "rarity": 4,
     "type": "单手剑",
     "version": "7.1",
-    "baseAtk": null,
+    "baseAtk": 42,
     "mainStat": "暴击伤害",
-    "mainStatValue": "",
+    "mainStatValue": "12.0%",
     "effectName": "叶脉蔓生",
     "source": "",
-    "icon": "",
-    "iconUrl": "https://cdn.gachabase.net/gi/assets/999cd5ea606e3a368d04e88d988cd21a.png"
+    "icon": "UI_EquipIcon_Sword_SpikedStake.png",
+    "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_SpikedStake.png"
   },
   {
     "slug": "银釭",
@@ -75,13 +75,13 @@
     "rarity": 4,
     "type": "单手剑",
     "version": "7.1",
-    "baseAtk": null,
+    "baseAtk": 42,
     "mainStat": "攻击力",
-    "mainStatValue": "",
+    "mainStatValue": "9.0%",
     "effectName": "翦霞照水",
     "source": "",
-    "icon": "",
-    "iconUrl": "https://cdn.gachabase.net/gi/assets/ecf2f2ad2596be1d3844595a796f93dd.png"
+    "icon": "UI_EquipIcon_Sword_Fajian.png",
+    "iconUrl": "https://enka.network/ui/UI_EquipIcon_Sword_Fajian.png"
   },
   {
     "slug": "白湖冬羽",

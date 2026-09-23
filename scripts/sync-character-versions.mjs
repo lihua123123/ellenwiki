@@ -10,6 +10,7 @@ import { createRequire } from 'module';
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { formatJson } from './lib/compact-json.mjs';
 
 const require = createRequire(import.meta.url);
 const GDB = require('genshin-db');
@@ -29,6 +30,12 @@ const ALIASES = {
   '旅行者（风）': 'Traveler (Anemo)',
   '旅行者（岩）': 'Traveler (Geo)',
   '旅行者（草）': 'Traveler (Dendro)',
+};
+
+/* genshin-db 版本号滞后的条目（手工维护，优先于数据源）：冰旅行者实装在 7.0，
+ * genshin-db 的 talents('Traveler (Cryo)').version 仍写作 5.6，会导致图鉴排序错位 */
+const VERSION_OVERRIDE = {
+  '旅行者（冰）': '7.0',
 };
 
 console.log('正在建立角色中英文映射…');
@@ -53,19 +60,22 @@ for (const file of readdirSync(DIR).filter(f => f.endsWith('.json'))) {
     // 旅行者的战斗天赋在 talents 文件夹，其余走 characters
     version = (zh.startsWith('旅行者') ? GDB.talents(en, LANG) : GDB.characters(en, LANG))?.version || '';
   }
+  version = VERSION_OVERRIDE[zh] || version;
 
   if (!version) { missing.push(zh); continue; }
   if (data.version === version) { unchanged++; continue; }
 
   // 保持键序稳定：version 紧跟在 rarity 之后
+  // （旧 version 键必须跳过，否则后面的循环会把刚写入的新值又覆盖回旧值）
   const out = {};
   for (const [k, v] of Object.entries(data)) {
+    if (k === 'version') continue;
     out[k] = v;
     if (k === 'rarity') out.version = version;
   }
   if (!Object.prototype.hasOwnProperty.call(out, 'version')) out.version = version;
 
-  writeFileSync(path, JSON.stringify(out, null, 2) + '\n', 'utf-8');
+  writeFileSync(path, formatJson(out), 'utf-8');
   updated++;
 }
 

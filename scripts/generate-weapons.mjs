@@ -16,6 +16,7 @@ import { createRequire } from 'module';
 import { writeFileSync, existsSync, mkdirSync, readdirSync, readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { compactNumberArrays, formatJson } from './lib/compact-json.mjs';
 
 const require = createRequire(import.meta.url);
 const GDB = require('genshin-db');
@@ -145,14 +146,6 @@ function buildCosts(weapon) {
   return costs;
 }
 
-/* 纯数值数组压成单行，避免逐级曲线把 JSON 撑成 90 倍的缩进行 */
-function compactNumberArrays(json) {
-  return json.replace(/\[[^[\]{}]*\]/g, (m) => {
-    if (!/^\s*\[\s*(?:-?\d+(?:\.\d+)?|null)(?:\s*,\s*(?:-?\d+(?:\.\d+)?|null))*\s*\]\s*$/.test(m)) return m;
-    return '[' + m.replace(/[[\]\s]/g, ' ').trim().split(/\s*,\s*/).join(', ') + ']';
-  });
-}
-
 /* 实装版本倒序（越新越靠前），同版本按星级、名称排 */
 const versionParts = (v) => String(v || '').split('.').map(Number);
 const byVersionDesc = (a, b) => {
@@ -261,7 +254,7 @@ async function main() {
     if (!out.source) delete out.source;
     if (!curve) delete out.curve;
 
-    writeFileSync(file, compactNumberArrays(JSON.stringify(out, null, 2)) + '\n', 'utf-8');
+    writeFileSync(file, formatJson(out), 'utf-8');
     written++;
 
     if (WITH_ICONS && iconUrl) {

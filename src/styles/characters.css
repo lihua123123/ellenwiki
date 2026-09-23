@@ -173,6 +173,12 @@
 }
 .char-hero h1 { margin: 0 0 0.5rem; }
 
+/* 属性面板：主题色跟随元素色（滑块 / 突破节点） */
+.char-stats {
+  margin-bottom: 1.6rem;
+  --rarity-color: var(--el-color, var(--accent));
+}
+
 .char-hero-main {
   display: flex;
   align-items: center;

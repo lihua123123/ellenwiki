@@ -18,64 +18,31 @@
 
 仅有深色主题。窄屏（≤900px）下侧边导航自动转为顶部横条。
 
-## 角色详情页说明
+## 页面与数据约定
 
-- 资料来源为 `content/characters/<角色名>.json`（仿 Snap.Hutao 的 Avatar/SkillDepot 模型：skills / passives / constellations）。
-- 等级数值按 `label + values 数组`存储，页面用步进器（− / ＋ / 鼠标滚轮）切换 1~max 级。
-- 描述文本约定：`\n\n` 分段；「标题+正文」段转为悬停术语（下划线 + 自定义气泡）；结尾无机制词的段落自动识别为**角色逸闻**，以附录色斜体显示。
-- 尚无资料的角色显示「等待补充」占位框架，已有的附着/产球表仍按技能归位；数据源更新后运行 `import-snap.mjs` 或 `npm run data:sync` 即可补齐。
-
-## 角色充能计算器
-
-工具页的充能计算器支持 **4 名角色**（队伍人数 = 显示的行数，可用 −/＋ 减到 1 人，最少 1 人），每行独立计算所需的元素充能效率。
-
-- 分母 = 前台（同色 ×3 + 无色 ×2 + 异色 ×1）+ 后台系数 ×（同色 ×3 + 无色 ×2 + 异色 ×1），结果 = 元素爆发能量 / 分母。
-- 系数来自公式页「元素充能计算」的吸收效率表：**前台** 同色 300% / 无色 200% / 异色 100%；**后台**（4 人配队）60% / 120% / 180%，（3 人配队）70% / 140% / 210%，（2 人配队）80% / 160% / 240%。因此后台系数随队伍人数变化：4 人 60%、3 人 70%、2 人 80%（单人无后台队友，沿用 60%）。
-- 输入角色名会自动填入元素爆发能量（数据来自 `src/data/characters.js`）。
-- 由圣遗物 / 武器 / 天赋 / 命座产生的**固定回能**不受元素充能效率与吸收效率影响，不计入本表。
-
-> 本表按**元素微粒**（基础回能值 1）折算；若面对的是怪物掉落的元素晶球（基础回能值 3），把球的个数除以 3 再填入即可。
-
-## 武器 / 圣遗物详情页说明
-
-- 资料来源为 `content/weapons/<名称>.json`（253 把）与 `content/artifacts/<名称>.json`（63 套），由 genshin-db 生成、新内容由 `sync-gachabase.mjs` 补齐，可手动微调文案。
-- **武器列表与角色图鉴同构**：图标墙（7 列，窄屏递减），卡片无底板、星级渐变描边，主题色只由星级决定（5★ 金 / 4★ 紫 / 3★ 蓝 / 2★ 绿 / 1★ 灰）。悬停只有上浮 + 星级光晕，**不显示额外属性**。
-- **圣遗物列表为长卡片**：每行两个，左侧星级描边图标、右侧名称 + 星级 + 2/4 件套效果全文（数值同样高亮）。件套标签与正文用 flex 排版，正文换行后自动与标签右侧对齐。两个列表都不使用悬停遮罩，卡片也不用左侧彩色描边。
-- 圣遗物详情的「部位资料」**不再用颜色区分部位**：生之花 / 死之羽 / 时之沙 / 空之杯 / 理之冠 的标签统一为 `--text-secondary`，图标底框统一为中性描边（原按部位上色的 `SLOT_COLOR` 已移除）。
-- **武器等级模拟**：滑块 1~max，配合「已突破」勾选。勾选仅在突破节点（20 / 40 / 50 / 60 / 70 / 80）可用 —— 同一等级下未突破与已突破的基础攻击力不同（如苍耀 20 级：133.3 / 164.4）。非节点等级会自动锁定为「已突破」。
-- 数据侧由 `curve` 字段支撑：`attack[lv-1]` / `specialized[lv-1]`（已突破值）与 `preAttack[cap]` / `preSpecialized[cap]`（未突破值）。1~2★ 武器上限为 70 级。
-- 武器详情顺序：基本信息 → 武器技能（精炼）→ 突破材料 → 武器故事；圣遗物套装效果按数据实际存在的 1/2/4 件套渲染。
-- 武器精炼效果与圣遗物套装效果中的百分比 / 带单位数值用 `highlightNumbers()`（`src/core/richtext.js`）包成 `.rt-num`，以主题蓝高亮。
-- **获取方式标签**：数据写在 `content/meta/weapons-meta.json`（可编辑），由生成脚本合并进 `source` 字段；未列出的按星级回退（5★→限定抽取、3★→常驻抽取、2★/1★→开地图），4★ 默认留空不显示（因为锻造 / 活动 / 纪行 / 商店 混杂，需逐把确认，详见该文件的 `_todo`）。
-- **不使用左侧彩色强调描边**：卡片与内容块统一为等宽 `1px var(--border-color)` 边框。已移除的包括 `.artifact-card` / `.artifact-hero` / `.set-effect` / `.piece-card` / `.weapon-hero` / `.char-hero` / `.katex-wrap`（公式框）与 Boss 页的 `.block-title` / `.block-text`。仍保留的是「非卡片」的竖向色条：章节标题 `.talent-section > h2`、引用块 `blockquote`、公式页目录的选中指示。
+- 数据源：`content/characters|weapons|artifacts/<名称>.json`（genshin-db 生成，新内容由 gachabase / lunaris 补齐），改完跑 `npm run data`。角色等级数值按 `label + values 数组`存，页面用步进器（− / ＋ / 滚轮）切换。
+- 描述文本：`\n\n` 分段；「标题+正文」段转悬停术语（虚线下划线 + 气泡）；结尾无机制词的段落判为**角色逸闻**（附录色斜体）。
+- **状态说明（悬停词条）**：存在条目的 `states`（`{ name, text }`）里，正文里出现该名字即自动包成虚线下划线 + 气泡；由 `generate-profiles.mjs` 从正文的「标题+正文」段解析，再由 `sync-lunaris.mjs` 按 lunaris 正文里的 `{LINK#N<id>}` 标记补词条（**只看 LINK 标记**，同名但未被链接的词不挂说明，如元素爆发里的「领唱」是领唱者而非叠层）。
+- **加强文本（金色 `.rt-buff`）**：gachabase 有 `buffed_description`（genshin-db 没有），`sync-buffs.mjs` 与基础描述做逐词 diff 后，**只把新增片段**包进 `buffs.description` 的 `<buff>…</buff>`（重叠文段保持正文色）。当前 14 名角色：七七 / 可莉 / 温迪 / 阿贝多 / 莫娜 / 砂糖 / 雷泽 / 菲谢尔 / 八重神子 / 北斗 / 迪奥娜 / 赛诺 / 莱欧斯利 / 梦见月瑞希。
+- **技能引用（淡紫 `.rt-skill`）**：天赋里提到技能时（`元素战技柔板·幻灵夜舞`、`突破天赋「落羽的裁择」`、`普通攻击·如水`）标出，与金色区分；武器 / 圣遗物不标。
+- **数值高亮（主题蓝 `.rt-num`）**：武器精炼、圣遗物套装、技能文本里的百分比 / 带单位数值。武器与圣遗物正文里的 `魔导·秘仪` / `月兆·满辉` / `辉映·星烁` 属于正文本身，**不上色**。
+- **武器等级模拟**：滑块 1~max + 「已突破」勾选（仅 20 / 40 / 50 / 60 / 70 / 80 可切），数据来自 `curve.attack[lv-1]`（已突破）/ `curve.preAttack[cap]`（未突破）；1~2★ 上限 70 级。武器详情顺序：基本信息 → 武器技能（精炼）→ 突破材料 → 武器故事。
+- **角色属性**：生命值 / 攻击力 / 防御力 / 突破属性四格 + 同一套等级滑块（1~90，突破节点同上），数据存 `stats`（`hp/attack/defense/specialized` 逐级 + `preHp/preAttack/preDefense/preSpecialized` 突破节点未突破值）；`specialized` 只存突破带来的增量（`percent` 标明是否百分比），界面显示「暴击伤害 38.4%」而不是含基础值的 88.4%。突破节点在轨道上按比例分布，点节点可直接跳级。
+- **排序**：三个图鉴都按实装版本（`version`）倒序，同版本再按星级 / 名称；测试服条目带 `"beta": true` 排最前。
+- **充能计算器**（`#/characters/tools`）：4 行独立计算，分母 = 前台(同色 ×3 + 无色 ×2 + 异色 ×1) + 后台系数 ×(同色 ×3 + 无色 ×2 + 异色 ×1)，结果 = 爆发能量 ÷ 分母；后台系数按队伍人数取 4 人 60% / 3 人 70% / 2 人 80%。按**元素微粒**折算，晶球（基础值 3）请把个数除以 3 再填。
+- **UI 约束**：卡片不加悬停遮罩、不加左侧彩色描边；圣遗物部位不用颜色区分；主题色只由星级决定。
 
 ## 目录结构
 
 ```
-content/                ← 唯一数据源（只改这里，然后重新生成）
-  formulas/             伤害公式 md（genshin / sr / zzz）
-  boss/                 幽境boss.md + images/（Boss 图片，webp）
-  attachment/           元素附着及产球.md（角色附着/产球总表）
-  characters/           每角色一份本地资料 JSON + images/（角色头像，<角色名>.png）
-  weapons/              每把武器一份 JSON + images/（可选本地图标，<官方图标名>.png）
-  artifacts/            每套圣遗物一份 JSON + images/（可选本地图标）
-  meta/                 colors.json（元素配色）+ characters-meta.json（角色武器/能量）+ weapons-meta.json（武器获取方式）
-scripts/
-  parse-boss.mjs        content/boss → src/data/bosses.json + public/images/
-  parse-attachment.mjs  content/attachment → src/data/characters.js（附着/产球数据）
-  generate-profiles.mjs genshin-db → content/characters/<名>.json（角色资料生成）
-  import-snap.mjs       Snap.Metadata（github）→ content/characters/<名>.json（新角色补齐）
-  fetch-avatars2.mjs    genshin-db + enka CDN → content/characters/images/（缺失头像补齐）
-  generate-weapons.mjs  genshin-db → content/weapons/*.json + src/data/weapons-index.json
-  generate-artifacts.mjs genshin-db → content/artifacts/*.json + src/data/artifacts-index.json
-  sync-character-versions.mjs  genshin-db → 给 content/characters/*.json 补 version（实装版本）字段
-  sync-gachabase.mjs    gachabase → 抓取最新（含测试服未实装）角色 / 武器 / 圣遗物，只补本地没有的条目
-src/
-  main.js               模块注册表 + hash 路由 + 侧边导航
-  core/                 统一渲染器（markdown.js / richtext.js / colors.js / tooltip.js）
-  pages/                characters.js / weapons.js / artifacts.js / formulas.js / boss.js
-  data/                 生成产物（characters.js / bosses.json / *-index.json），勿手改
-  styles/               base.css（设计系统）+ characters.css / weapons.css / artifacts.css / markdown.css / boss.css / formulas.css
+content/          唯一数据源：formulas / boss / attachment / characters / weapons / artifacts / meta
+scripts/          数据脚本 + lib/（描述解析 profile-text.mjs、角色属性 char-stats.mjs、lunaris 接口 lunaris.mjs、压行 compact-json.mjs）
+  data.mjs / esdata.mjs              交互式同步入口（npm run data / esdata）
+  parse-boss / parse-attachment      md → src/data
+  generate-profiles / -weapons / -artifacts   genshin-db → content/（角色 / 武器 / 圣遗物）
+  sync-gachabase / sync-buffs / sync-lunaris / sync-character-versions   外部数据源补齐
+  import-snap / fetch-avatars2       Snap.Metadata 补角色 / enka CDN 补头像
+src/              main.js（路由 + 侧边导航）· core/（渲染器 + level-sim.js 等级滑块组件）· pages/ · data/（生成产物，勿手改）· styles/
 ```
 
 ## 常用命令
@@ -83,63 +50,71 @@ src/
 ```bash
 npm run dev     # 解析数据 + 启动开发服务器（不联网）
 npm run build   # 解析数据 + 构建到 dist/（不联网）
-npm run data    # 拉取最新数据（含测试服）+ 重新解析全部数据
+npm run data    # 交互式：键入数字选数据源（1 genshin-db / 2 gachabase / 3 lunaris）后同步 + 重新解析
+npm run esdata  # 交互式：体验服（未实装）内容，1 gachabase / 2 lunaris，会重抓 beta 条目
 npm run deploy  # 构建 + 部署到 Cloudflare Workers（wrangler deploy）
 ```
 
-> `dev` / `build` / `deploy` 都不联网，保证断网或数据源抽风时仍能起服务、构建；只有 `npm run data` 会去 gachabase 抓最新内容。
+选中数据源后统一跑公共尾部（解析 Boss / 附着产球 → 重建武器与圣遗物索引 → 补实装版本 → 补「加强」文本 → lunaris 补旅行者天赋与新内容 + 武器数值 + 状态说明词条）：
 
-武器 / 圣遗物的补充命令（均会重新汇总 `src/data/*-index.json`）：
+| 选项 | 数据源 | 行为 |
+| --- | --- | --- |
+| 1 | genshin-db | 正式服（npm 包）：角色 / 武器 / 圣遗物**全量重刷**，会覆盖手工文案 |
+| 2 | gachabase | 最新（含测试服）：**只补本地缺口** |
+| 3 | lunaris | 第三方（CHS）：最新新增的武器 / 圣遗物 + 旅行者天赋 + 武器逐级数值 + 角色状态说明词条 |
+
+> gachabase 的测试服武器只有技能文本（`baseAtk: null`、无逐级曲线），公共尾部里的 lunaris 会按 `beta` 且缺数值自动重抓补全（保留突破材料表与武器故事）。
+
+`npm run esdata` 面向体验服：1) gachabase（`--force` 重抓 beta 修订）；2) lunaris（抓最新数据版本）。
+
+非交互：`npm run data -- 2`、`npm run esdata -- 1`、`DATA_SOURCE=2`（非 TTY 默认 data→2、esdata→1）；旧的非交互全量管道 = `npm run data:all`。
+
+常用单项命令（都只做一件事，可反复跑）：
+
+| 命令 | 作用 |
+| --- | --- |
+| `npm run data:sync` | gachabase 只补缺口（`--dry` 只看、`--force` 重抓测试服条目） |
+| `npm run data:buffs` | 从 gachabase 重算角色「加强」文本（`--dry` 输出对照明细） |
+| `npm run data:lunaris` | lunaris 补旅行者天赋 / 最新新增武器圣遗物 / 补全缺数值武器 / 补角色状态说明（`--kind=char\|weapon\|artifact`、`--ver=`、`--force`、`--dry`） |
+| `npm run data:profiles` / `data:equip:force` | genshin-db 全量重刷角色 / 武器与圣遗物（⚠️ 覆盖手工文案） |
+| `npm run data:equip:icons` | 顺带把武器 / 圣遗物图标下到 `content/*/images/`（离线可用） |
+| `node scripts/sync-character-versions.mjs` | 只补 / 更新角色实装版本 |
+
+## 数据源
+
+- [genshin-db](https://github.com/theBowja/genshin-db)（npm 包）— 角色 / 武器 / 圣遗物高精度数据（**仅正式服**，含逐级曲线与等级数值表，角色基础属性来自 `info.stats(level, ascension)`）。
+- [gachabase](https://gi.gachabase.net) — 最新（含测试服未实装）角色 / 武器 / 圣遗物；角色「加强」文本 `buffed_description` 只有它提供。
+- [lunaris.moe](https://lunaris.moe) — 第三方图鉴（**有 CHS 中文**）：旅行者固有天赋、最新新增的武器 / 圣遗物（含武器逐级数值）、角色状态说明词条（`hyperlinks` → `states`）、genshin-db 没有的角色基础属性（`info.attributes`）。清单里混有历史遗留（如未实装的旧套装），脚本只取「当前版本有、上一个 `X.Y.0` 快照没有」的条目；**缺**武器故事、圣遗物部位描述与故事（页面按空值兜底）。
+- [Snap.Metadata](https://github.com/SnapHutaoRemasteringProject/Snap.Metadata) — 新角色中文元数据（比 genshin-db 新）。
+- [enka.network](https://enka.network) — 头像 / 武器 / 圣遗物图标 CDN。
+
+新内容一律**只写本地没有的条目**（不覆盖 genshin-db 的高精度数据），带 `"beta": true` 与 `version` 参与排序；实装后跑 `npm run data:equip:force`（武器 / 圣遗物）或 `npm run data:profiles`（角色）即被正式服数据覆盖补全。
+
+## 正式服全量刷新（新版本上线后）
 
 ```bash
-npm run data:equip:force   # 从 genshin-db 全量重刷武器与圣遗物 JSON
-npm run data:equip:icons   # 额外把图标下载到 content/*/images/（离线可用）
-npm run data:sync          # 只从 gachabase 同步最新（含测试服）内容，不打索引
-node scripts/sync-character-versions.mjs   # 只补/更新角色实装版本（已含在 npm run data 中）
+npm install genshin-db@latest            # ① 升级数据包（数据跟着包走）
+npm run data -- 1                        # ② 全量重刷角色 / 武器 / 圣遗物 + 全部解析（= 下面两行）
+npm run data:equip:force && npm run data:profiles
+npm run data:equip:icons                 # 可选：图标下到 content/*/images/
+node scripts/fetch-avatars2.mjs          # 可选：从 enka CDN 补缺失头像
 ```
 
-新增命令说明：
-
-- `npm run data:sync` —— 从 [gachabase](https://gi.gachabase.net) 拓最新图鉴数据，**只补本地没有的条目**（已实装内容仍以 genshin-db 生成的高精度数据为准），新条目带 `"beta": true`。
-- `node scripts/sync-gachabase.mjs --dry` 只看抓取结果不写文件；`--force` 连之前同步过的测试服条目一起重抓（测试服数值会被后续 revision 调整）。
-- 新条目的 `version` 取 gachabase 当前 beta 修订号的下一版（如 `7.0.54` → `7.1`），因此会排在三个图鉴的最前面；需要手写时用 `$env:BETA_VERSION='7.2'; npm run data:sync` 覆盖。
-
-### 排序（实装顺序）
-
-三个图鉴都按 **实装版本倒序** 排列（越新越靠前，不区分星级），同版本再按星级、名称：
-
-- 武器 / 圣遗物：版本写在 `content/*/*.json` 的 `version`（genshin-db 提供，247/247、63/63 全覆盖），由生成脚本写进索引并排序。
-- 角色：`content/characters/*.json` 的 `version` 由 `sync-character-versions.mjs` 补全（125 个来自 genshin-db）。
-  测试服条目（`"beta": true`）的 `version` 由 `sync-gachabase.mjs` 写入（当前为下一版，如 `7.1`，因此排在最前）。
-  脚本只在版本变化时写文件，不会动其他字段，因此手工补的文案不会被覆盖。
-
-## 部署
-
-站点为纯静态产物，通过 Cloudflare Workers 静态资源（`assets`）托管，配置见 `wrangler.jsonc`：
-
-- `assets.directory: ./dist` —— 直接读取 Vite 构建产物
-- `assets.not_found_handling: single-page-application` —— 未知路径回落到 `index.html`，配合 hash 路由
-
-Cloudflare 构建环境（Workers Builds）会自动执行 `npm clean-install` → `npm run build` → `npx wrangler deploy`。
-本地手动部署需先 `npx wrangler login` 授权。
+> ⚠️ `generate-profiles.mjs` 与 `--force` 都是**无条件全量覆盖**，会吃掉手工补写的文案；重刷后记得补跑 `npm run data:buffs`（`buffs` 字段来自 gachabase，重建角色 JSON 时不会带上）。
 
 ## 维护方式
 
-- **改附着/产球数据**：只改 `content/attachment/元素附着及产球.md`，然后 `npm run data`（dev/build 自动执行）。时间/次数格式统一写作 `N hits / X s`（如 `3 hits / 2.5 s`）。
-- **加角色资料**：放入 `content/characters/<角色名>.json`（结构参照现有文件），头像放 `content/characters/images/<角色名>.png`；或用 `import-snap.mjs` / `generate-profiles.mjs` 从数据源生成。
-- **加武器 / 圣遗物资料**：改 `content/weapons/<名称>.json` 或 `content/artifacts/<名称>.json` 后跑 `npm run data`；也可直接编辑单份 JSON 微调文案。
-  - 数据来自 genshin-db：`node scripts/generate-weapons.mjs` / `node scripts/generate-artifacts.mjs`（增量，已存在的条目跳过；`--force` 全量重刷；`--icons` 顺带下图标）。
-  - 列表页只读 `src/data/weapons-index.json` / `artifacts-index.json`（体积小，随主包加载）；详情页按需懒加载对应的 `content/*/<名称>.json`，因此新增条目**不需要**改动页面代码。
-  - 图标默认引用官方 CDN（enka.network），未下载时站点体积不变；若要完全离线，跑 `npm run data:equip:icons`，页面会自动优先使用本地图标。
-  - **改武器获取方式**：只改 `content/meta/weapons-meta.json` 的 `sources`，然后跑 `node scripts/generate-weapons.mjs --force`（脚本会打印还有多少把未标注）。
-- **加 Boss 图片**：放入 `content/boss/images/`，文件名与 md 中 `images/xxx.webp` 一致。
-- **配色**：统一改 `content/meta/colors.json`。
-- **新角色数据缺失时**：先跑 `npm run data:sync`（从 gachabase 抓最新角色/武器/圣遗物）；genshin-db 收录后用 `generate-profiles.mjs`；仅 Snap.Metadata 收录时在 `import-snap.mjs` 的 `TARGETS` 中登记 `{ name, id, snap }` 后运行。
-- **同步测试服新内容**：跑 `npm run data`（已包含 `sync-gachabase.mjs`），或单独 `npm run data:sync`。测试服武器暂无 lv1 数值与逐级曲线（页面属性位显示 `—`），实装后跑 `npm run data:equip:force` 即可被 genshin-db 数据覆盖补全。
+- **改文案 / 数据**：直接编辑 `content/**` 下的 JSON 或 md，然后 `npm run data`（`dev` / `build` 也会自动跑解析）。附着/产球只改 `content/attachment/元素附着及产球.md`（时间格式 `N hits / X s`）；配色改 `content/meta/colors.json`。
+- **武器获取方式**：改 `content/meta/weapons-meta.json` 的 `sources`，再跑 `node scripts/generate-weapons.mjs --force`。
+- **改加强文本**：`npm run data:buffs` 重新生成；手改某条 `buffs.description` 时只在 `<buff>…</buff>` 里包新增片段（重跑会覆盖手改）。
+- **补新内容**：`npm run data -- 2`（gachabase）或 `-- 3`（lunaris）；新角色依次试 gachabase → `generate-profiles.mjs` → `import-snap.mjs`（需在脚本 `TARGETS` 里登记）。
+- **旅行者**：固有天赋「异邦的××」用 `npm run data:lunaris -- --kind=char` 补；冰旅行者实装版本 7.0 写在 `sync-character-versions.mjs` 的 `VERSION_OVERRIDE`。
+- **武器数值缺失**：测试服武器（gachabase）没有 lv1 数值与逐级曲线，跑一次 `npm run data:lunaris -- --kind=weapon` 补全（脚本识别 `beta` 且缺 `baseAtk`/`curve` 的条目并保留其突破材料与故事）。
+- **状态说明（悬浮词条）**：天赋正文里的「领唱」「重唱」这类词条在页面上悬停显示说明，数据存 `states`；由 `npm run data:lunaris -- --kind=char` 按 lunaris 正文的 `{LINK#N<id>}` 标记写入（只处理真正被链接的词条，同名未链接的不挂；可反复跑，会收回之前误挂的）。
+- **角色属性（生命值 / 攻击力 / 防御力 / 突破属性）**：`npm run data:profiles` 会给有 genshin-db 数据的角色写 `stats`；genshin-db 没有的角色（旅行者、未实装的沃雅妮莎 / 薇斯纳）由 `npm run data:lunaris -- --kind=char` 用 `info.attributes` 补（两套口径已交叉校验，突破节点差 ≤2 点）。
+- **加 Boss 图片**：放 `content/boss/images/`，文件名与 md 里的 `images/xxx.webp` 一致。
+- **新增条目不必改页面代码**：列表页只读 `src/data/*-index.json`，详情页按名称懒加载 `content/*/<名称>.json`；图标默认走 enka CDN，跑过 `npm run data:equip:icons` 后自动优先用本地图标。
 
-## 外部数据源
+## 部署
 
-- [genshin-db](https://github.com/theBowja/genshin-db) — 角色资料与头像文件名、武器与圣遗物资料
-- [gachabase](https://gi.gachabase.net) — 最新（含测试服未实装）的角色 / 武器 / 圣遗物，由 `sync-gachabase.mjs` 拓取（只补本地缺口）
-- [Snap.Metadata](https://github.com/SnapHutaoRemasteringProject/Snap.Metadata) — 新角色中文元数据（比 genshin-db 更新）
-- [enka.network](https://enka.network) — 角色头像、武器与圣遗物图标 CDN
+纯静态产物，由 Cloudflare Workers 静态资源托管（`wrangler.jsonc`：`assets.directory=./dist`、`not_found_handling=single-page-application` 回落 `index.html` 配合 hash 路由）。Workers Builds 自动执行 `npm clean-install` → `npm run build` → `npx wrangler deploy`；本地手动部署先 `npx wrangler login`。
