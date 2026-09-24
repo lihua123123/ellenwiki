@@ -3,6 +3,7 @@
  *
  * 解析 content/boss/幽境boss.md（每个 `## 版本号` 为一个版本块），
  * 生成 src/data/bosses.json，并把 content/boss/images/ 下的图片同步到 public/images/
+ * （Boss 图片统一使用 PNG，400×400、透明背景）
  * 供页面直接引用。
  *
  * 维护方式：修改 content/boss/ 下的 md 或图片后，运行 `npm run data` 即可。
@@ -36,7 +37,7 @@ function parseMarkdown(raw) {
       continue;
     }
 
-    // 图片行 ![短名](url 或 images/xxx.webp)
+    // 图片行 ![短名](url 或 images/xxx.png)
     const imgMatch = line.match(/^!\[([^\]]*)\]\(([^)]+)\)/);
     if (imgMatch) {
       current = {

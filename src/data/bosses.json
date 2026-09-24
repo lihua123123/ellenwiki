@@ -4,8 +4,8 @@
     "bosses": [
       {
         "shortName": "水形幻人",
-        "imgUrl": "images/水形幻人·极旋湍流.webp",
-        "imgLocal": "水形幻人·极旋湍流.webp",
+        "imgUrl": "images/水形幻人·极旋湍流.png",
+        "imgLocal": "水形幻人·极旋湍流.png",
         "imgMissing": false,
         "fullName": "水形幻人·极旋湍流",
         "hp": "N5 / N6：765,8830 / 1726,0004",
@@ -28,8 +28,8 @@
       },
       {
         "shortName": "熔岩辉龙像",
-        "imgUrl": "images/熔岩辉龙像·炽烈流焰.webp",
-        "imgLocal": "熔岩辉龙像·炽烈流焰.webp",
+        "imgUrl": "images/熔岩辉龙像·炽烈流焰.png",
+        "imgLocal": "熔岩辉龙像·炽烈流焰.png",
         "imgMissing": false,
         "fullName": "熔岩辉龙像·炽烈流焰",
         "hp": "N5 / N6：569,0636 / 1118,3933",
@@ -53,8 +53,8 @@
       },
       {
         "shortName": "秘源机兵统御械",
-        "imgUrl": "images/秘源机兵统御械·毁灭武装.webp",
-        "imgLocal": "秘源机兵统御械·毁灭武装.webp",
+        "imgUrl": "images/秘源机兵统御械·毁灭武装.png",
+        "imgLocal": "秘源机兵统御械·毁灭武装.png",
         "imgMissing": false,
         "fullName": "秘源机兵统御械·毁灭武装",
         "hp": "N5 / N6：760,6009 / 1491,6723",
@@ -83,8 +83,8 @@
     "bosses": [
       {
         "shortName": "深邃摹结株",
-        "imgUrl": "images/深邃摹结株·虚暗幻变.webp",
-        "imgLocal": "深邃摹结株·虚暗幻变.webp",
+        "imgUrl": "images/深邃摹结株·虚暗幻变.png",
+        "imgLocal": "深邃摹结株·虚暗幻变.png",
         "imgMissing": false,
         "fullName": "深邃摹结株·虚暗幻变",
         "hp": "N5 / N6：641,9728 / 1116,8065",
@@ -109,8 +109,8 @@
       },
       {
         "shortName": "历经百战的玳龟",
-        "imgUrl": "images/历经百战的玳龟·坚盾轰霆.webp",
-        "imgLocal": "历经百战的玳龟·坚盾轰霆.webp",
+        "imgUrl": "images/历经百战的玳龟·坚盾轰霆.png",
+        "imgLocal": "历经百战的玳龟·坚盾轰霆.png",
         "imgMissing": false,
         "fullName": "历经百战的玳龟·坚盾轰霆",
         "hp": "N5 / N6：635,0004 / 1328,3708",
@@ -130,8 +130,8 @@
       },
       {
         "shortName": "历经百战的皮皮潘偶像",
-        "imgUrl": "images/历经百战的皮皮潘偶像·百诈瞬变.webp",
-        "imgLocal": "历经百战的皮皮潘偶像·百诈瞬变.webp",
+        "imgUrl": "images/历经百战的皮皮潘偶像·百诈瞬变.png",
+        "imgLocal": "历经百战的皮皮潘偶像·百诈瞬变.png",
         "imgMissing": false,
         "fullName": "历经百战的皮皮潘偶像·百诈瞬变",
         "hp": "N5 / N6：625,4996 / 1020,0306",
@@ -158,8 +158,8 @@
     "bosses": [
       {
         "shortName": "兆载永劫龙兽",
-        "imgUrl": "images/兆载永劫龙兽·歼灭构型.webp",
-        "imgLocal": "兆载永劫龙兽·歼灭构型.webp",
+        "imgUrl": "images/兆载永劫龙兽·歼灭构型.png",
+        "imgLocal": "兆载永劫龙兽·歼灭构型.png",
         "imgMissing": false,
         "fullName": "兆载永劫龙兽·歼灭构型",
         "hp": "N5 / N6：600,4430 / 1390,9262",
@@ -182,8 +182,8 @@
       },
       {
         "shortName": "历经百战的岩居蟹",
-        "imgUrl": "images/历经百战的岩居蟹·百万爆轰.webp",
-        "imgLocal": "历经百战的岩居蟹·百万爆轰.webp",
+        "imgUrl": "images/历经百战的岩居蟹·百万爆轰.png",
+        "imgLocal": "历经百战的岩居蟹·百万爆轰.png",
         "imgMissing": false,
         "fullName": "历经百战的岩居蟹·百万爆轰",
         "hp": "N5 / N6：583,3715 / 1005,3990",
@@ -204,8 +204,8 @@
       },
       {
         "shortName": "历经百战的火刃突击队员",
-        "imgUrl": "images/历经百战的火刃突击队员·决死武装.webp",
-        "imgLocal": "历经百战的火刃突击队员·决死武装.webp",
+        "imgUrl": "images/历经百战的火刃突击队员·决死武装.png",
+        "imgLocal": "历经百战的火刃突击队员·决死武装.png",
         "imgMissing": false,
         "fullName": "历经百战的火刃突击队员·决死武装",
         "hp": "N5 / N6：923,2639 / 1719,5518",
@@ -234,8 +234,8 @@
     "bosses": [
       {
         "shortName": "霜夜巡天灵主",
-        "imgUrl": "images/霜夜巡天灵主·惊恨憎愤.webp",
-        "imgLocal": "霜夜巡天灵主·惊恨憎愤.webp",
+        "imgUrl": "images/霜夜巡天灵主·惊恨憎愤.png",
+        "imgLocal": "霜夜巡天灵主·惊恨憎愤.png",
         "imgMissing": false,
         "fullName": "霜夜巡天灵主·惊恨憎愤",
         "hp": "N5 / N6：799,6108 / 1271,8649",
@@ -254,8 +254,8 @@
       },
       {
         "shortName": "历经百战的执灯人",
-        "imgUrl": "images/历经百战的执灯人·哀恸回响.webp",
-        "imgLocal": "历经百战的执灯人·哀恸回响.webp",
+        "imgUrl": "images/历经百战的执灯人·哀恸回响.png",
+        "imgLocal": "历经百战的执灯人·哀恸回响.png",
         "imgMissing": false,
         "fullName": "历经百战的执灯人·哀恸回响",
         "hp": "N5 / N6：330,7214×2 / 810,9043×2",
@@ -278,8 +278,8 @@
       },
       {
         "shortName": "历经百战的霜役人",
-        "imgUrl": "images/历经百战的霜役人·涉血芒锋.webp",
-        "imgLocal": "历经百战的霜役人·涉血芒锋.webp",
+        "imgUrl": "images/历经百战的霜役人·涉血芒锋.png",
+        "imgLocal": "历经百战的霜役人·涉血芒锋.png",
         "imgMissing": false,
         "fullName": "历经百战的霜役人·涉血芒锋",
         "hp": "N5 / N6：713,5813 / 1396,9549",
@@ -304,8 +304,8 @@
     "bosses": [
       {
         "shortName": "深罪浸礼者",
-        "imgUrl": "images/深罪浸礼者·肃烈狂音.webp",
-        "imgLocal": "深罪浸礼者·肃烈狂音.webp",
+        "imgUrl": "images/深罪浸礼者·肃烈狂音.png",
+        "imgLocal": "深罪浸礼者·肃烈狂音.png",
         "imgMissing": false,
         "fullName": "深罪浸礼者·肃烈狂音",
         "hp": "N5 / N6：521,3725 / 1090,2915",
@@ -324,8 +324,8 @@
       },
       {
         "shortName": "历经百战的暝视龙",
-        "imgUrl": "images/历经百战的暝视龙·霜雪苛念.webp",
-        "imgLocal": "历经百战的暝视龙·霜雪苛念.webp",
+        "imgUrl": "images/历经百战的暝视龙·霜雪苛念.png",
+        "imgLocal": "历经百战的暝视龙·霜雪苛念.png",
         "imgMissing": false,
         "fullName": "历经百战的暝视龙·霜雪苛念",
         "hp": "N5 / N6：434,4257 / 797,2064",
@@ -350,8 +350,8 @@
       },
       {
         "shortName": "实验性场力发生装置",
-        "imgUrl": "images/实验性场力发生装置·极端势能.webp",
-        "imgLocal": "实验性场力发生装置·极端势能.webp",
+        "imgUrl": "images/实验性场力发生装置·极端势能.png",
+        "imgLocal": "实验性场力发生装置·极端势能.png",
         "imgMissing": false,
         "fullName": "实验性场力发生装置·极端势能",
         "hp": "N5 / N6：1323,1421 / 2302,0735",
@@ -378,8 +378,8 @@
     "bosses": [
       {
         "shortName": "深黯魇语之主",
-        "imgUrl": "images/深黯魇语之主·袭掠锋刃.webp",
-        "imgLocal": "深黯魇语之主·袭掠锋刃.webp",
+        "imgUrl": "images/深黯魇语之主·袭掠锋刃.png",
+        "imgLocal": "深黯魇语之主·袭掠锋刃.png",
         "imgMissing": false,
         "fullName": "深黯魇语之主·袭掠锋刃",
         "hp": "N5 / N6：1243,7830 / 2365,8108",
@@ -400,8 +400,8 @@
       },
       {
         "shortName": "历经百战的火刃突击队员",
-        "imgUrl": "images/历经百战的火刃突击队员·决死武装.webp",
-        "imgLocal": "历经百战的火刃突击队员·决死武装.webp",
+        "imgUrl": "images/历经百战的火刃突击队员·决死武装.png",
+        "imgLocal": "历经百战的火刃突击队员·决死武装.png",
         "imgMissing": false,
         "fullName": "历经百战的火刃突击队员·决死武装",
         "hp": "N5 / N6：923,2639 / 1719,5518",
@@ -425,8 +425,8 @@
       },
       {
         "shortName": "铁甲熔火帝皇",
-        "imgUrl": "images/铁甲熔火帝皇·敕命远征.webp",
-        "imgLocal": "铁甲熔火帝皇·敕命远征.webp",
+        "imgUrl": "images/铁甲熔火帝皇·敕命远征.png",
+        "imgLocal": "铁甲熔火帝皇·敕命远征.png",
         "imgMissing": false,
         "fullName": "铁甲熔火帝皇·敕命远征",
         "hp": "N5 / N6：855,2749 / 1404,2886",
@@ -454,8 +454,8 @@
     "bosses": [
       {
         "shortName": "历经百战的十六倍曼陀草",
-        "imgUrl": "images/历经百战的十六倍曼陀草·风滚狂蔓.webp",
-        "imgLocal": "历经百战的十六倍曼陀草·风滚狂蔓.webp",
+        "imgUrl": "images/历经百战的十六倍曼陀草·风滚狂蔓.png",
+        "imgLocal": "历经百战的十六倍曼陀草·风滚狂蔓.png",
         "imgMissing": false,
         "fullName": "历经百战的十六倍曼陀草·风滚狂蔓",
         "hp": "N5 / N6：645,9516 / 1189,6648",
@@ -478,8 +478,8 @@
       },
       {
         "shortName": "重拳出击鸭",
-        "imgUrl": "images/重拳出击鸭·重甲武库.webp",
-        "imgLocal": "重拳出击鸭·重甲武库.webp",
+        "imgUrl": "images/重拳出击鸭·重甲武库.png",
+        "imgLocal": "重拳出击鸭·重甲武库.png",
         "imgMissing": false,
         "fullName": "重拳出击鸭·重甲武库",
         "hp": "N5 / N6：1311,4773 / 2592,5712",
@@ -503,8 +503,8 @@
       },
       {
         "shortName": "秘源机兵统御械",
-        "imgUrl": "images/秘源机兵统御械·毁灭武装.webp",
-        "imgLocal": "秘源机兵统御械·毁灭武装.webp",
+        "imgUrl": "images/秘源机兵统御械·毁灭武装.png",
+        "imgLocal": "秘源机兵统御械·毁灭武装.png",
         "imgMissing": false,
         "fullName": "秘源机兵统御械·毁灭武装",
         "hp": "N5 / N6：760,6010 / 1474,3273",
@@ -533,8 +533,8 @@
     "bosses": [
       {
         "shortName": "蕴光月守宫",
-        "imgUrl": "images/蕴光月守宫·根牙磐错.webp",
-        "imgLocal": "蕴光月守宫·根牙磐错.webp",
+        "imgUrl": "images/蕴光月守宫·根牙磐错.png",
+        "imgLocal": "蕴光月守宫·根牙磐错.png",
         "imgMissing": false,
         "fullName": "蕴光月守宫·根牙磐错",
         "hp": "N5 / N6：1025,3198 / 2095,0071",
@@ -558,8 +558,8 @@
       },
       {
         "shortName": "深邃摹结株",
-        "imgUrl": "images/深邃摹结株·虚暗幻变.webp",
-        "imgLocal": "深邃摹结株·虚暗幻变.webp",
+        "imgUrl": "images/深邃摹结株·虚暗幻变.png",
+        "imgLocal": "深邃摹结株·虚暗幻变.png",
         "imgMissing": false,
         "fullName": "深邃摹结株·虚暗幻变",
         "hp": "N5 / N6：641,9728 / 1116,8065",
@@ -584,8 +584,8 @@
       },
       {
         "shortName": "霜夜巡天灵主",
-        "imgUrl": "images/霜夜巡天灵主·惊恨憎愤.webp",
-        "imgLocal": "霜夜巡天灵主·惊恨憎愤.webp",
+        "imgUrl": "images/霜夜巡天灵主·惊恨憎愤.png",
+        "imgLocal": "霜夜巡天灵主·惊恨憎愤.png",
         "imgMissing": false,
         "fullName": "霜夜巡天灵主·惊恨憎愤",
         "hp": "N5 / N6：749,6352 / 1285,5408",
@@ -609,8 +609,8 @@
     "bosses": [
       {
         "shortName": "历经百战的凛狼",
-        "imgUrl": "images/历经百战的凛狼·极寒冰魄.webp",
-        "imgLocal": "历经百战的凛狼·极寒冰魄.webp",
+        "imgUrl": "images/历经百战的凛狼·极寒冰魄.png",
+        "imgLocal": "历经百战的凛狼·极寒冰魄.png",
         "imgMissing": false,
         "fullName": "历经百战的凛狼·极寒冰魄",
         "hp": "N5 / N6：999,6869 / 2020,1855",
@@ -627,8 +627,8 @@
       },
       {
         "shortName": "水形幻人",
-        "imgUrl": "images/水形幻人·极漩涌流.webp",
-        "imgLocal": "水形幻人·极漩涌流.webp",
+        "imgUrl": "images/水形幻人·极漩涌流.png",
+        "imgLocal": "水形幻人·极漩涌流.png",
         "imgMissing": false,
         "fullName": "水形幻人·极漩涌流",
         "hp": "N5 / N6：765,8830 / 1726,0004",
@@ -651,8 +651,8 @@
       },
       {
         "shortName": "开眼者",
-        "imgUrl": "images/开眼者·傲然睥睨.webp",
-        "imgLocal": "开眼者·傲然睥睨.webp",
+        "imgUrl": "images/开眼者·傲然睥睨.png",
+        "imgLocal": "开眼者·傲然睥睨.png",
         "imgMissing": false,
         "fullName": "开眼者·傲然睥睨",
         "hp": "N5 / N6：1358,6195 / 2853,7363",
@@ -678,8 +678,8 @@
     "bosses": [
       {
         "shortName": "先驱秘源统辖阵列",
-        "imgUrl": "images/先驱秘源统辖阵列之影·蜂巢意志.webp",
-        "imgLocal": "先驱秘源统辖阵列之影·蜂巢意志.webp",
+        "imgUrl": "images/先驱秘源统辖阵列之影·蜂巢意志.png",
+        "imgLocal": "先驱秘源统辖阵列之影·蜂巢意志.png",
         "imgMissing": false,
         "fullName": "先驱秘源统辖阵列之影·蜂巢意志",
         "hp": "N5 / N6：826,8034 / 1674,3001",
@@ -702,8 +702,8 @@
       },
       {
         "shortName": "深黯魇语之主",
-        "imgUrl": "images/深黯魇语之主·袭掠锋刃.webp",
-        "imgLocal": "深黯魇语之主·袭掠锋刃.webp",
+        "imgUrl": "images/深黯魇语之主·袭掠锋刃.png",
+        "imgLocal": "深黯魇语之主·袭掠锋刃.png",
         "imgMissing": false,
         "fullName": "深黯魇语之主·袭掠锋刃",
         "hp": "N5 / N6：1243,7830 / 2365,8108",
@@ -724,8 +724,8 @@
       },
       {
         "shortName": "秘源机兵构型械",
-        "imgUrl": "images/秘源机兵构型械·裂解剪钳.webp",
-        "imgLocal": "秘源机兵构型械·裂解剪钳.webp",
+        "imgUrl": "images/秘源机兵构型械·裂解剪钳.png",
+        "imgLocal": "秘源机兵构型械·裂解剪钳.png",
         "imgMissing": false,
         "fullName": "秘源机兵构型械·裂解剪钳",
         "hp": "N5 / N6：812,1748 / 2311,4376",
@@ -751,8 +751,8 @@
     "bosses": [
       {
         "shortName": "嵌合翼骏狮",
-        "imgUrl": "images/嵌合翼骏狮·摧枯伟力.webp",
-        "imgLocal": "嵌合翼骏狮·摧枯伟力.webp",
+        "imgUrl": "images/嵌合翼骏狮·摧枯伟力.png",
+        "imgLocal": "嵌合翼骏狮·摧枯伟力.png",
         "imgMissing": false,
         "fullName": "嵌合翼骏狮·摧枯伟力",
         "hp": "N5 / N6：1074,8445 / 2334,9702",
@@ -773,8 +773,8 @@
       },
       {
         "shortName": "历经百战的风役人",
-        "imgUrl": "images/历经百战的风役人·诡道芒锋.webp",
-        "imgLocal": "历经百战的风役人·诡道芒锋.webp",
+        "imgUrl": "images/历经百战的风役人·诡道芒锋.png",
+        "imgLocal": "历经百战的风役人·诡道芒锋.png",
         "imgMissing": false,
         "fullName": "历经百战的风役人·诡道芒锋",
         "hp": "N5 / N6：806,8956 / 1750,6995",
@@ -796,8 +796,8 @@
       },
       {
         "shortName": "重拳出击鸭",
-        "imgUrl": "images/重拳出击鸭·重甲武库.webp",
-        "imgLocal": "重拳出击鸭·重甲武库.webp",
+        "imgUrl": "images/重拳出击鸭·重甲武库.png",
+        "imgLocal": "重拳出击鸭·重甲武库.png",
         "imgMissing": false,
         "fullName": "重拳出击鸭·重甲武库",
         "hp": "N5 / N6：1311,4773 / 2592,5712",
@@ -826,8 +826,8 @@
     "bosses": [
       {
         "shortName": "历经百战的锋灵刻师",
-        "imgUrl": "images/历经百战的矮灵雕刻师·运风成斤.webp",
-        "imgLocal": "历经百战的矮灵雕刻师·运风成斤.webp",
+        "imgUrl": "images/历经百战的矮灵雕刻师·运风成斤.png",
+        "imgLocal": "历经百战的矮灵雕刻师·运风成斤.png",
         "imgMissing": false,
         "fullName": "历经百战的矮灵刻师·运风成斤",
         "hp": "N5 / N6：1359,4413 / 3327,8383",
@@ -848,8 +848,8 @@
       },
       {
         "shortName": "秘源机兵统御械",
-        "imgUrl": "images/秘源机兵统御械·毁灭武装.webp",
-        "imgLocal": "秘源机兵统御械·毁灭武装.webp",
+        "imgUrl": "images/秘源机兵统御械·毁灭武装.png",
+        "imgLocal": "秘源机兵统御械·毁灭武装.png",
         "imgMissing": false,
         "fullName": "秘源机兵统御械·毁灭武装",
         "hp": "N5 / N6：760,6009 / 1491,6723",
@@ -877,8 +877,8 @@
       },
       {
         "shortName": "游猎的护刃",
-        "imgUrl": "images/游雪的护刃·不绝余音.webp",
-        "imgLocal": "游雪的护刃·不绝余音.webp",
+        "imgUrl": "images/游雪的护刃·不绝余音.png",
+        "imgLocal": "游雪的护刃·不绝余音.png",
         "imgMissing": false,
         "fullName": "游雪的护刃·不绝余音",
         "hp": "N5 / N6：1033,5048 / 2187,1500",
@@ -908,11 +908,11 @@
     "bosses": [
       {
         "shortName": "浪涛锚定者",
-        "imgUrl": "images/浪涛锚定者·狂飙突噬.webp",
-        "imgLocal": "浪涛锚定者·狂飙突噬.webp",
+        "imgUrl": "images/浪涛锚定者·狂飙突噬.png",
+        "imgLocal": "浪涛锚定者·狂飙突噬.png",
         "imgMissing": true,
         "fullName": "浪涛锚定者·狂飙突噬",
-        "hp": "N5 / N6：1506,0000 / 3352,0000",
+        "hp": "N5 / N6：1506,3255 / 3352,7377",
         "skills": [
           "基础抗性：<span class=\"electro\">**雷抗**</span>$-10\\%$，<span class=\"hydro\">**水抗**</span>$70\\%$",
           "入战$9s$后，以及之后每$16s$，强敌会掏出暖壶豪饮$2s$以累积「`豪胆值`」；豪饮时若处于`辉映·星烁`效果的影响之下，且身上没有<span class=\"cryo\">**冰元素**</span>附着，则只累积$95\\%$的「`豪胆值`」，否则必定积满",
@@ -933,8 +933,8 @@
       },
       {
         "shortName": "铁甲熔火帝皇",
-        "imgUrl": "images/铁甲熔火帝皇·敕命远征.webp",
-        "imgLocal": "铁甲熔火帝皇·敕命远征.webp",
+        "imgUrl": "images/铁甲熔火帝皇·敕命远征.png",
+        "imgLocal": "铁甲熔火帝皇·敕命远征.png",
         "imgMissing": false,
         "fullName": "铁甲熔火帝皇·敕命远征",
         "hp": "N5 / N6：855,2749 / 1404,2886",
@@ -957,8 +957,8 @@
       },
       {
         "shortName": "蕴光月守宫",
-        "imgUrl": "images/蕴光月守宫·根牙磐错.webp",
-        "imgLocal": "蕴光月守宫·根牙磐错.webp",
+        "imgUrl": "images/蕴光月守宫·根牙磐错.png",
+        "imgLocal": "蕴光月守宫·根牙磐错.png",
         "imgMissing": false,
         "fullName": "蕴光月守宫·根牙磐错",
         "hp": "N5 / N6：1025,3198 / 2095,0071",

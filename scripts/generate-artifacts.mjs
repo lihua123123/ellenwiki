@@ -1,48 +1,30 @@
 /**
- * generate-artifacts.mjs — 用 genshin-db 生成圣遗物图鉴数据。
+ * generate-artifacts.mjs — 用 genshin-db（正式服）生成圣遗物图鉴数据。
  *
  * 输出：
  *   content/artifacts/<中文名>.json   每套圣遗物一份资料（单一数据源，可手动微调）
- *   content/artifacts/images/*.png    仅在传入 --icons 时下载（否则页面直接引用官方 CDN）
+ *   src/data/artifacts-index.json     列表页用的轻量索引（每次运行都重建）
+ *   content/artifacts/images/*.png    仅在传入 --icons 时下载（否则页面引用官方 CDN）
+ *
+ * 字段映射在 lib/gdb.mjs（与数据源适配器 sources/genshin-db.mjs 共用同一套口径）。
  *
  * 用法:
  *   node scripts/generate-artifacts.mjs           # 增量生成（已存在的条目跳过）
- *   node scripts/generate-artifacts.mjs --force   # 全部重新生成
+ *   node scripts/generate-artifacts.mjs --force   # 全部重新生成（⚠️ 覆盖手工文案）
  *   node scripts/generate-artifacts.mjs --icons   # 同时把图标下载到本地（离线可用）
- *
- * 数据来源：genshin-db（https://github.com/theBowja/genshin-db）
  */
-import { createRequire } from 'module';
 import { writeFileSync, existsSync, mkdirSync, readdirSync, readFileSync } from 'fs';
-import { join, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { join } from 'path';
+import { GDB, LANG, buildArtifact, artifactNames, isPlaceholderName } from './lib/gdb.mjs';
+import { ROOT, DIRS, fileOf } from './lib/local-store.mjs';
+import { formatJson } from './lib/compact-json.mjs';
 
-const require = createRequire(import.meta.url);
-const GDB = require('genshin-db');
-
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
-const OUT_DIR = join(ROOT, 'content', 'artifacts');
+const OUT_DIR = DIRS.artifact;
 const IMG_DIR = join(OUT_DIR, 'images');
 const INDEX_FILE = join(ROOT, 'src', 'data', 'artifacts-index.json');
 
 const FORCE = process.argv.includes('--force');
 const WITH_ICONS = process.argv.includes('--icons');
-
-mkdirSync(OUT_DIR, { recursive: true });
-mkdirSync(IMG_DIR, { recursive: true });
-
-const ICON_BASE = 'https://enka.network/ui/';
-
-/* 五个部位，顺序与游戏内一致 */
-const SLOTS = [
-  { key: 'flower', text: '生之花' },
-  { key: 'plume', text: '死之羽' },
-  { key: 'sands', text: '时之沙' },
-  { key: 'goblet', text: '空之杯' },
-  { key: 'circlet', text: '理之冠' },
-];
-
-const sanitize = (name) => String(name).replace(/[\\/:*?"<>|]/g, '_').trim();
 
 /* 实装版本倒序（越新越靠前） */
 const versionParts = (v) => String(v || '').split('.').map(Number);
@@ -54,12 +36,21 @@ const byVersionDesc = (a, b) => {
     || String(a.name).localeCompare(String(b.name), 'zh');
 };
 
-/* 从 content/artifacts/*.json 汇总轻量索引，供列表页直接使用（详情页才懒加载完整文件） */
+/* 从 content/artifacts/*.json 汇总轻量索引，供列表页直接使用 */
 function writeIndex() {
   const entries = readdirSync(OUT_DIR)
-    .filter(f => f.endsWith('.json'))
-    .map(f => {
+    .filter((f) => f.endsWith('.json'))
+    .map((f) => {
       const d = JSON.parse(readFileSync(join(OUT_DIR, f), 'utf-8'));
+      /* 五个部位的图标与**部位名**（名字后缀在游戏数据里是乱序的，必须按部位取）
+         → 「我的角色」页用它把圣遗物名 / 图标对上：slotKey → iconUrl / name */
+      const pieceIcons = {};
+      const pieceNames = {};
+      for (const p of Array.isArray(d.pieces) ? d.pieces : []) {
+        if (!p.slot) continue;
+        if (p.iconUrl) pieceIcons[p.slot] = p.iconUrl;
+        if (p.name) pieceNames[p.slot] = p.name;
+      }
       return {
         slug: f.replace(/\.json$/, ''),
         name: d.name,
@@ -70,6 +61,8 @@ function writeIndex() {
         effect4Pc: d.effect4Pc || '',
         icon: d.icon,
         iconUrl: d.iconUrl,
+        pieceIcons,
+        pieceNames,
       };
     })
     .sort(byVersionDesc);
@@ -91,72 +84,44 @@ async function downloadIcon(file, url) {
 }
 
 async function main() {
+  mkdirSync(OUT_DIR, { recursive: true });
+  mkdirSync(IMG_DIR, { recursive: true });
+
   console.log('正在建立圣遗物中英文映射…');
-  const enNames = GDB.artifacts('names', { matchCategories: true });
   const sets = [];
   const seen = new Set();
-  for (const en of enNames) {
-    const info = GDB.artifacts(en, { resultLanguage: 'ChineseSimplified' });
-    if (!info?.name) continue;
-    if (seen.has(info.name)) continue;
+  for (const en of artifactNames()) {
+    const info = GDB.artifacts(en, LANG);
+    if (!info?.name || isPlaceholderName(info.name) || seen.has(info.name)) continue;
     seen.add(info.name);
     sets.push(info);
   }
   console.log(`共 ${sets.length} 套圣遗物`);
 
   let written = 0, skipped = 0, iconOk = 0, iconFail = 0;
-
   for (const s of sets) {
-    const file = join(OUT_DIR, `${sanitize(s.name)}.json`);
-    if (!FORCE && existsSync(file)) { skipped++; continue; }
-
-    const pieces = SLOTS.map(({ key, text }) => {
-      const p = s[key];
-      if (!p) return null;
-      const filename = s.images?.[`filename_${key}`] || '';
-      return {
-        slot: key,
-        slotText: p.relicText || text,
-        name: p.name || '',
-        description: p.description || '',
-        story: p.story || '',
-        icon: filename ? `${filename}.png` : '',
-        iconUrl: filename ? `${ICON_BASE}${filename}.png` : '',
-      };
-    }).filter(Boolean);
-
-    const cover = pieces[0] || { icon: '', iconUrl: '' };
-
-    const out = {
-      name: s.name,
-      id: s.id,
-      rarity: s.rarityList || [],
-      effect1Pc: s.effect1Pc || '',
-      effect2Pc: s.effect2Pc || '',
-      effect4Pc: s.effect4Pc || '',
-      pieces,
-      icon: cover.icon,
-      iconUrl: cover.iconUrl,
-      version: s.version || '',
-    };
-
-    writeFileSync(file, JSON.stringify(out, null, 2) + '\n', 'utf-8');
+    const file = fileOf('artifact', s.name);
+    if (!FORCE && existsSync(file)) {
+      skipped++;
+      continue;
+    }
+    const out = buildArtifact(s);
+    writeFileSync(file, formatJson(out), 'utf-8');
     written++;
 
     if (WITH_ICONS) {
-      for (const p of pieces) {
+      for (const p of out.pieces) {
         if (!p.iconUrl) continue;
         const ok = await downloadIcon(p.icon, p.iconUrl);
         ok ? iconOk++ : iconFail++;
         if (!ok) console.warn(`  ⚠️ 图标下载失败: ${s.name} · ${p.name}`);
-        await new Promise(r => setTimeout(r, 60));
+        await new Promise((r) => setTimeout(r, 60));
       }
     }
   }
 
   console.log(`✅ 圣遗物数据：新增/更新 ${written} 条，跳过已存在 ${skipped} 条 → ${OUT_DIR}`);
-  const indexed = writeIndex();
-  console.log(`✅ 索引：${indexed} 套 → ${INDEX_FILE}`);
+  console.log(`✅ 索引：${writeIndex()} 套 → ${INDEX_FILE}`);
   if (WITH_ICONS) console.log(`   图标：成功 ${iconOk}，失败 ${iconFail} → ${IMG_DIR}`);
   else console.log('   （未下载图标，页面将直接引用官方 CDN；如需离线可加 --icons）');
 }

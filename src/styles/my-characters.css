@@ -1,0 +1,479 @@
+/* my-characters.css — 「我的角色」页（UID 取数 / GOOD 导入 + 圣遗物副词条统计）
+   .card / .table-wrap / .page-subtitle 来自 base.css；本页不依赖 characters.css */
+
+.my-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+/* 抽屉是 fixed、不占排布空间，所以这里跟着 .app-main 铺满整宽（站点其它页面也不设上限）；
+   宽屏时右侧留出「抽屉收起宽度」，避免窄条压住内容 */
+.my-main { flex: 1 1 auto; min-width: 0; }
+@media (min-width: 901px) {
+  .my-main { padding-right: var(--rail-reserve, 0px); }
+}
+
+.record-card { margin-bottom: 1.4rem; }
+
+.record-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+}
+.record-head h2 { margin: 0; }
+/* 统计卡：标题与下方表格留出间距（否则标题会贴着表格） */
+#record-result-card .record-head { margin-bottom: 0.8rem; }
+
+.record-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.record-btn {
+  padding: 6px 14px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-heading);
+  font-size: 0.86rem;
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+}
+.record-btn:hover { border-color: var(--accent-light); color: var(--accent-light); }
+.record-btn.primary {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-light);
+}
+
+.record-hint {
+  margin: 0.4rem 0 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+.record-hint code {
+  padding: 0.05rem 0.3rem;
+  border-radius: 4px;
+  background: var(--bg-code);
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+.record-script-box { margin-top: 0.6rem; }
+.record-script-box > summary {
+  cursor: pointer;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+}
+.record-script {
+  max-height: 320px;
+  margin: 0.5rem 0 0;
+  padding: 0.7rem 0.8rem;
+  overflow: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: var(--bg-code);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.record-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin: 0.6rem 0 0.7rem;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+}
+.record-meta b { color: var(--text-heading); }
+
+.roll-table { width: 100%; }
+.roll-table th, .roll-table td { padding: 0.45rem 0.6rem; text-align: center; }
+.roll-table th:first-child, .roll-table td:first-child { text-align: left; }
+.roll-name { color: var(--text-heading); }
+.roll-value { font-weight: 700; color: var(--accent-light); }
+/* 属性行可点击：点中后整行金色加粗，并同步高亮卡片里的副词条 */
+.roll-row { cursor: pointer; transition: background var(--transition); }
+.roll-row:hover { background: var(--bg-hover); }
+.roll-row.active .roll-name,
+.roll-row.active .roll-value { color: var(--buff-color); font-weight: 700; }
+
+/* ===== 状态卡：两种取数方式并排 ===== */
+.mine-empty { padding: 0.4rem 0 0; }
+.mine-empty-title { margin: 0 0 0.9rem; font-size: 1.05rem; font-weight: 700; color: var(--text-heading); }
+.mine-empty .record-btn { padding: 8px 20px; }
+
+/* 两种方式：宽度够就并排，不够自动变一列 */
+.mine-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.mine-method {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 0.9rem 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+}
+.mine-method > b { color: var(--text-heading); font-size: 0.9rem; }
+.mine-method .record-hint { margin-top: 0.35rem; }
+/* 输入框 / 拖拽区统一贴到卡片底部，两张卡视觉齐平 */
+.mine-method .mine-uid,
+.mine-method .mine-drop { margin-top: auto; }
+
+/* UID 输入：输入框跟着宽度伸缩，「获取」永远在同一行 */
+.mine-uid {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 0.6rem;
+}
+.mine-input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 9px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: var(--input-bg);
+  color: var(--text-main);
+  font-size: 0.9rem;
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  letter-spacing: 0.5px;
+}
+.mine-input:focus { outline: none; border-color: var(--accent); }
+
+/* GOOD 拖拽导入 */
+.mine-drop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.6rem;
+  padding: 1.1rem 0.9rem;
+  border: 1px dashed var(--border-color);
+  border-radius: var(--radius);
+  background: var(--bg-code);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition);
+}
+.mine-drop:hover,
+.mine-drop.over { border-color: var(--accent); color: var(--accent-light); }
+
+.mine-privacy { margin-top: 1rem; }
+
+.mine-notice {
+  margin: 0.7rem 0 0;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: var(--bg-code);
+  font-size: 0.84rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  white-space: pre-line;
+}
+.mine-notice.ok { color: var(--accent-light); }
+.mine-notice.err { color: #e5707a; border-color: rgba(229, 112, 122, 0.35); }
+
+/* ===== 头像 / 图标通用：右上角数字徽标（命之座、精炼） ===== */
+.face-fallback {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  color: var(--text-secondary);
+}
+.cp-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 3px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  box-shadow: 0 0 0 1.5px rgba(12, 14, 18, 0.9);
+}
+
+/* 星级底色：5★ 金 / 4★ 紫 / 3★ 蓝 / 2★ 绿 / 1★ 灰（武器与圣遗物图标共用） */
+.rar-5 { background: linear-gradient(160deg, rgba(255, 190, 92, 0.55), rgba(255, 190, 92, 0.1)); border-color: rgba(255, 190, 92, 0.75) !important; }
+.rar-4 { background: linear-gradient(160deg, rgba(186, 130, 255, 0.5), rgba(186, 130, 255, 0.1)); border-color: rgba(186, 130, 255, 0.7) !important; }
+.rar-3 { background: linear-gradient(160deg, rgba(96, 165, 250, 0.5), rgba(96, 165, 250, 0.1)); border-color: rgba(96, 165, 250, 0.7) !important; }
+.rar-2 { background: linear-gradient(160deg, rgba(74, 222, 128, 0.45), rgba(74, 222, 128, 0.1)); border-color: rgba(74, 222, 128, 0.65) !important; }
+.rar-1 { background: linear-gradient(160deg, rgba(160, 170, 180, 0.4), rgba(160, 170, 180, 0.08)); border-color: rgba(160, 170, 180, 0.55) !important; }
+
+/* ===== 角色抽屉（右侧，浮在主体之上）=====
+   收起 = 一列窄条（最多 15 个头像）；展开 = 每列最多 15 个，超出横向多开几列 */
+.mine-rail {
+  position: fixed;
+  right: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 40;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  width: var(--rail-w, 60px);
+  max-height: calc(100vh - 1.5rem);
+  transition: width 0.16s ease;
+}
+/* display:flex 会盖掉浏览器默认的 [hidden]{display:none}，这里补回来 */
+.mine-rail[hidden],
+.mine-rail-toggle[hidden] { display: none !important; }
+.mine-rail-resizer {
+  position: absolute;
+  z-index: 2;              /* 面板的 backdrop-filter 会形成层叠上下文，这里要压回它上面 */
+  left: -5px;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  cursor: ew-resize;
+  border-radius: var(--radius);
+}
+.mine-rail-resizer:hover { background: rgba(255, 255, 255, 0.06); }
+.mine-rail-panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 8px;               /* 与 JS 的 RAIL_PAD(18 = 8×2 + 边框 2) 对应，保证格子刚好放下 */
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: var(--bg-code);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+}
+.mine-rail-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0 0 0.35rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 0.4rem;
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+}
+.mine-rail-head b { color: var(--text-heading); }
+.mine-rail[data-collapsed="true"] .mine-rail-head > span { display: none; }
+.mine-rail-list {
+  display: grid;
+  /* 固定格子尺寸（不用 1fr）：宽度算错时只会留白，不会把头像压瘦/剪裁 */
+  grid-template-columns: repeat(var(--rail-cols, 1), var(--rail-cell, 42px));
+  gap: 6px;
+  /* 行数已按角色数算好，正常不会溢出；极窄屏兜底 */
+  max-height: var(--rail-list-h, none);
+  overflow: auto;
+}
+/* 收起时是一列窄条：只露前面几个，不出现滚动条 */
+.mine-rail[data-collapsed="true"] .mine-rail-list { overflow: hidden; }
+.mine-rail-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--text-main);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition), color var(--transition);
+}
+.mine-rail-item:hover { border-color: var(--accent-light); }
+.mine-rail-item.active { border-color: var(--accent); background: var(--accent-soft); color: var(--text-heading); }
+.mine-rail-face { position: relative; flex: none; width: 34px; height: 34px; }
+.mine-rail-face img,
+.mine-rail-face .face-fallback {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.05);
+}
+.mine-rail-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 4px 6px;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: var(--bg-code);
+  color: var(--accent-light);
+  font-size: 0.78rem;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+.mine-rail-toggle:hover { border-color: var(--accent-light); }
+
+/* 窄屏：抽屉不再漂浮，变成内容上方的一块头像网格 */
+@media (max-width: 900px) {
+  .my-page { align-items: stretch; }
+  .mine-rail { order: -1; }
+  .mine-rail {
+    position: static;
+    transform: none;
+    width: auto;
+    max-height: none;
+    margin-bottom: 1rem;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+  .mine-rail-resizer { display: none; }
+  .mine-rail-list { grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); max-height: none; overflow: visible; }
+  .mine-rail-toggle { display: none; }
+}
+
+/* ===== 角色面板 ===== */
+.char-panel:empty { display: none; }
+.char-panel { margin-top: 0.9rem; }
+.cp-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.8rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.cp-avatar {
+  position: relative;
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius);
+  overflow: visible;
+}
+.cp-avatar img,
+.cp-avatar .face-fallback {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius);
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.05);
+}
+.cp-title { display: flex; flex-direction: column; min-width: 0; }
+.cp-title b { font-size: 1.05rem; color: var(--text-heading); }
+.cp-title span { font-size: 0.8rem; color: var(--text-secondary); }
+
+/* 属性铺满整行：auto-fit 保证每一项都显示，不会被挤掉 */
+.cp-attrs {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
+  gap: 0.45rem 0.8rem;
+}
+.cp-attr { display: flex; flex-direction: column; font-size: 0.74rem; color: var(--text-secondary); }
+.cp-attr b { color: var(--text-heading); font-size: 0.92rem; }
+
+.cp-block { margin-top: 0.9rem; container-type: inline-size; }
+
+/* 武器与圣遗物：完全同一种卡片，排在一个网格里（图标底纹 = 星级、右上角数字 = 精炼）
+   列数随宽度自适应，但一行最多 3 张；同行卡片等高对齐 */
+.cp-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 0.5rem;
+}
+/* 按内容区宽度（而不是窗口宽度）决定能否排 3 列 */
+@container (min-width: 1100px) {
+  .cp-items { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+.cp-item {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  background: var(--bg-code);
+}
+.cp-item-icon {
+  position: relative;
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+}
+.cp-item-icon img { width: 90%; height: 90%; object-fit: contain; }
+.cp-item-body { min-width: 0; flex: 1; }
+.cp-item-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.cp-item-head b { font-size: 0.86rem; color: var(--text-heading); }
+.cp-item-head span { font-size: 0.78rem; color: var(--text-secondary); }
+.cp-item-set { margin: 0.1rem 0 0.35rem; font-size: 0.76rem; color: var(--text-secondary); }
+.cp-item-stats { margin: 0.25rem 0 0; font-size: 0.78rem; color: var(--text-main); line-height: 1.6; }
+.cp-item-stats span { display: block; }
+/* 副词条：隐形表格（属性左对齐 / 词条数 / 数值右对齐，无边框） */
+.cp-item-subs { display: flex; flex-direction: column; gap: 0.2rem; }
+.cp-sub {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: baseline;
+  gap: 0.55rem;
+  font-size: 0.8rem;
+}
+.cp-sub i { font-style: normal; text-align: left; color: var(--text-secondary); }
+.cp-sub em {
+  font-style: normal;
+  text-align: right;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  opacity: 0.72;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.cp-sub b {
+  min-width: 4.2em;
+  text-align: right;
+  font-weight: 400;
+  color: var(--text-main);
+  font-variant-numeric: tabular-nums;
+}
+/* 被排序表点中的属性：金色 + 加粗 */
+.cp-sub.active i,
+.cp-sub.active em,
+.cp-sub.active b { color: var(--buff-color); font-weight: 700; opacity: 1; }
+
+/* 武器特效文本 */
+.cp-passive {
+  margin: 0;
+  padding-top: 0.4rem;
+  border-top: 1px dashed var(--border-color);
+  font-size: 0.78rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  white-space: pre-line;
+}
+

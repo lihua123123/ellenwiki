@@ -9,6 +9,7 @@
  *   #/artifacts/:name       圣遗物详情
  *   #/formulas/:game        伤害公式（genshin / sr / zzz）
  *   #/boss                  幽境 Boss 图鉴
+ *   #/my-characters         我的角色（UID 取数 / GOOD 导入 + 圣遗物副词条统计）
  */
 import './styles/base.css';
 import './core/colors.js';
@@ -17,6 +18,7 @@ import { initWeaponsPage } from './pages/weapons.js';
 import { initArtifactsPage } from './pages/artifacts.js';
 import { initFormulasPage } from './pages/formulas.js';
 import { initBossPage } from './pages/boss.js';
+import { initMyCharactersPage } from './pages/my-characters.js';
 
 const MODULES = [
   { id: 'characters', title: '角色图鉴', icon: '👤', group: '数据图鉴', render: initCharactersPage },
@@ -24,6 +26,7 @@ const MODULES = [
   { id: 'artifacts',  title: '圣遗物图鉴', icon: '🏵️', group: '数据图鉴', render: initArtifactsPage },
   { id: 'boss',       title: '幽境 Boss', icon: '👹', group: '数据图鉴', render: initBossPage },
   { id: 'formulas',   title: '伤害公式', icon: '∑',  group: '计算工具', render: initFormulasPage },
+  { id: 'my-characters', title: '我的角色', icon: '🎴', group: '计算工具', render: initMyCharactersPage },
 ];
 
 const mainEl = document.getElementById('app-main');
@@ -47,6 +50,8 @@ MODULES.forEach(mod => {
   navEl.appendChild(a);
   navLinks[mod.id] = a;
 });
+
+// ---- 导航完毕（账号入口已移除：取数改用 UID / GOOD 导入） ----
 
 function parseHash() {
   const parts = window.location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
