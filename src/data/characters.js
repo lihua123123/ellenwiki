@@ -74,7 +74,15 @@ export const characters = {
           "elementAmount": "弱火",
           "attachRule": "独立",
           "particles": "3 个",
-          "note": "",
+          "note": "两次攻击",
+          "poise": ""
+        },
+        {
+          "name": "E 变式",
+          "elementAmount": "弱火",
+          "attachRule": "独立",
+          "particles": "3 个",
+          "note": "三次攻击",
           "poise": ""
         },
         {
@@ -103,7 +111,7 @@ export const characters = {
         {
           "name": "普攻/重击",
           "elementAmount": "弱火",
-          "attachRule": "3 hits / 2.5 s",
+          "attachRule": "5 hits / 5 s",
           "particles": "",
           "note": "Q 后",
           "poise": ""
@@ -164,7 +172,7 @@ export const characters = {
           "poise": ""
         },
         {
-          "name": "E 变招一",
+          "name": "E 变式一",
           "elementAmount": "强火",
           "attachRule": "与「 E 」共用附着 CD",
           "particles": "",
@@ -172,7 +180,7 @@ export const characters = {
           "poise": ""
         },
         {
-          "name": "E 变招二",
+          "name": "E 变式二",
           "elementAmount": "弱火",
           "attachRule": "与「 E 」共用附着 CD",
           "particles": "",
@@ -629,7 +637,7 @@ export const characters = {
         {
           "name": "Q 后续",
           "elementAmount": "弱火",
-          "attachRule": "3 hits / 2.5 s",
+          "attachRule": "3 hits / 3 s",
           "particles": "",
           "note": "最多附着 2 次",
           "poise": ""
@@ -1801,7 +1809,7 @@ export const characters = {
         {
           "name": "Q 后续",
           "elementAmount": "弱水",
-          "attachRule": "3 sCD",
+          "attachRule": "3 hits / 2.5 s",
           "particles": "",
           "note": "",
           "poise": ""
@@ -1809,7 +1817,7 @@ export const characters = {
         {
           "name": "Q 后续",
           "elementAmount": "弱水",
-          "attachRule": "2.1 sCD",
+          "attachRule": "1.8 sCD",
           "particles": "",
           "note": "满辉",
           "poise": ""
@@ -2166,7 +2174,7 @@ export const characters = {
           "elementAmount": "弱雷",
           "attachRule": "3 hits / 2.5 s",
           "particles": "",
-          "note": "E 变招后，突破天赋 1",
+          "note": "E 变式后，突破天赋 1",
           "poise": ""
         },
         {
@@ -2178,7 +2186,7 @@ export const characters = {
           "poise": ""
         },
         {
-          "name": "E 变招",
+          "name": "E 变式",
           "elementAmount": "强雷",
           "attachRule": "3 hits / 2.5 s",
           "particles": "2~3 个（1:1）",
@@ -2186,7 +2194,7 @@ export const characters = {
           "poise": "0"
         },
         {
-          "name": "重击 变招",
+          "name": "重击 变式",
           "elementAmount": "强雷",
           "attachRule": "3 hits / 2.5 s",
           "particles": "2~3 个（1:1）",
@@ -2204,9 +2212,17 @@ export const characters = {
         {
           "name": "命座1",
           "elementAmount": "弱雷",
-          "attachRule": "与「E 变招」和「重击 变招」共用附着 CD",
+          "attachRule": "与「E 变式」和「重击 变式」共用附着 CD",
           "particles": "",
           "note": "出伤先于E",
+          "poise": ""
+        },
+        {
+          "name": "命座2",
+          "elementAmount": "",
+          "attachRule": "",
+          "particles": "0~1 个/5 s（1:1）",
+          "note": "普攻/重击命中雷附着敌人",
           "poise": ""
         }
       ]
@@ -2968,6 +2984,14 @@ export const characters = {
           "particles": "",
           "note": "",
           "poise": ""
+        },
+        {
+          "name": "突破天赋1",
+          "elementAmount": "",
+          "attachRule": "",
+          "particles": "1~2 个",
+          "note": "E 冻结两个及以上敌人时产2球",
+          "poise": ""
         }
       ]
     },
@@ -3386,7 +3410,7 @@ export const characters = {
         {
           "name": "E 后续",
           "elementAmount": "弱冰",
-          "attachRule": "7 hits / 3 s",
+          "attachRule": "8 hits / 3 s",
           "particles": "1~2 个/3 s（2:1）",
           "note": "",
           "poise": ""
@@ -3630,7 +3654,7 @@ export const characters = {
       ]
     },
     {
-      "name": "茜特拉莉",
+      "name": "茜特菈莉",
       "weapon": "法器",
       "energy": "60",
       "skills": [
@@ -4299,8 +4323,8 @@ export const characters = {
           "name": "E 结束",
           "elementAmount": "弱风，弱染色",
           "attachRule": "独立",
-          "particles": "",
-          "note": "",
+          "particles": "2 个",
+          "note": "风风轮舞踢",
           "poise": ""
         },
         {
@@ -4351,11 +4375,19 @@ export const characters = {
           "poise": ""
         },
         {
-          "name": "E 二蓄~三蓄",
+          "name": "E 二蓄",
           "elementAmount": "强风",
           "attachRule": "独立",
           "particles": "2~3 个（1:1）",
-          "note": "二~三层「变格」",
+          "note": "二层「变格」",
+          "poise": ""
+        },
+        {
+          "name": "E 三蓄",
+          "elementAmount": "强风",
+          "attachRule": "独立",
+          "particles": "2~3 个（1:1）",
+          "note": "三层「变格」",
           "poise": ""
         },
         {
@@ -4778,7 +4810,7 @@ export const characters = {
           "name": "普攻 变式",
           "elementAmount": "弱风",
           "attachRule": "2 hits / 12 s",
-          "particles": "4~5 个（2:1）",
+          "particles": "4~5 个（1:1）",
           "note": "E 后，援护射击",
           "poise": ""
         },
@@ -5111,7 +5143,7 @@ export const characters = {
           "name": "E",
           "elementAmount": "强岩",
           "attachRule": "3 hits / 2.5 s",
-          "particles": "3~4 个（1:1）",
+          "particles": "3~4 个（2:1）",
           "note": "",
           "poise": ""
         },
@@ -5682,7 +5714,7 @@ export const characters = {
           "name": "E",
           "elementAmount": "弱岩",
           "attachRule": "独立",
-          "particles": "4~5 个（1:2）",
+          "particles": "4~5 个（1:1）",
           "note": "",
           "poise": ""
         },
@@ -6191,7 +6223,7 @@ export const characters = {
         },
         {
           "name": "Q",
-          "elementAmount": "强草",
+          "elementAmount": "弱草",
           "attachRule": "3 hits / 2.5 s",
           "particles": "",
           "note": "",
@@ -6202,7 +6234,7 @@ export const characters = {
           "elementAmount": "弱草",
           "attachRule": "独立",
           "particles": "",
-          "note": "清醒香氛",
+          "note": "清露香氛",
           "poise": ""
         },
         {
