@@ -20,6 +20,26 @@ export const stripHtml = (s) => String(s || '')
 /** 攻击动作类小节标题：保持正文可见，不转悬停 */
 export const ACTION_TITLES = new Set(['普通攻击', '重击', '下落攻击', '点按', '长按', '瞄准射击', '瞄准', '蓄力', '冲刺', '元素战技', '元素爆发', '连携技', '终结技', '空中攻击']);
 
+/**
+ * 未公布名称的占位天赋（如雷电将军的「暂缺」）与数据源遗留的测试 / 已废弃条目：
+ * 名称本身就不是正式天赋名，任何数据源都不应把它们写进图鉴。
+ * gachabase 与 lunaris 共用此判据。
+ */
+export const isPlaceholderTalentName = (name) => {
+  const s = String(name || '').trim();
+  return /^(?:暂缺|待定|未知|未定|待补|TBD|TODO)$/i.test(s)
+    || /^[（(]?\s*test/i.test(s)
+    || /(?:已废弃|已移除|废弃|abandoned|deprecated|unused)/i.test(s);
+};
+
+/**
+ * 固有天赋分类：proud_skill_type_id=5 是新增的战斗天赋槽（「魔女的前夜礼」「辉映」类，
+ * 无升级解锁要求）；传统固有天赋（type=2）按 required_ascension 区分：
+ * 1 / 4 = 突破天赋，0 = 探索天赋。
+ */
+export const passiveCategoryOf = (p) =>
+  p?.proud_skill_type_id === 5 || Number(p?.required_ascension) > 0 ? 'ascension' : 'utility';
+
 /** 状态说明块正文特征 */
 export const STATE_BODY_RE = /状态|进入|解除|持续消耗|耗尽|存在期间|结束时|结束时/;
 

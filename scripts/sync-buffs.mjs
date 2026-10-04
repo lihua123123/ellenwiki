@@ -22,7 +22,7 @@
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { parseDescription } from './lib/profile-text.mjs';
+import { parseDescription, isPlaceholderTalentName, passiveCategoryOf } from './lib/profile-text.mjs';
 import { formatJson } from './lib/compact-json.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -38,6 +38,8 @@ const UA = {
 const NAME_ALIASES = { 茜特菈莉: '茜特拉莉' };
 /** 旅行者/空荧/人偶 多形态条目：gachabase 侧没有对应天赋文本，跳过 */
 const SKIP_NAME = /^旅行者/;
+/** 名称归一化：全角→半角、去日式引号与首尾空白（两端用字有出入时仍能对上，避免静默漏号） */
+const normName = (s) => String(s ?? '').normalize('NFKC').replace(/[「」『』]/g, '').trim();
 
 /* ---------- SvelteKit __data.json 解析（同 sync-gachabase.mjs） ---------- */
 function parseDataJson(text) {
@@ -198,10 +200,42 @@ async function main() {
     if (!dto?.name) { await sleep(250); continue; }
     scanned++;
 
-    /* --- 战斗天赋：按 id 尾数 1 / 2 / 5 对应 普攻 / 战技 / 爆发 --- */
+    let changed = false;
+    let added = 0;
+
+    /* --- 补全远端已公布、本地缺失的固有天赋（如新实装的「魔女的前夜礼」「辉映」类天赋槽） --- */
+    const localPassives = new Set((profile.passives || []).map((p) => normName(p.name)));
+    for (const p of dto.passives || []) {
+      const pn = textOf(p.name);
+      if (!pn || localPassives.has(normName(pn))) continue;
+      if (isPlaceholderTalentName(pn)) {
+        console.log(`   ⚠️ ${name}：跳过未定名/废弃固有天赋「${pn}」`);
+        continue;
+      }
+      const parsed = parseDescription(cleanText(textOf(p.description)));
+      if (!parsed.description) continue;
+      profile.passives = profile.passives || [];
+      profile.passives.push({
+        name: pn,
+        description: parsed.description,
+        lore: parsed.lore,
+        states: parsed.states,
+        category: passiveCategoryOf(p),
+      });
+      localPassives.add(normName(pn));
+      added++;
+      changed = true;
+    }
+
+    /* --- 战斗天赋：优先按名称对应。id 尾数在不同角色间并不统一
+     *     （七七爆发 …53、八重神子爆发 …85、夜兰爆发 …70，甚至有芭芭拉这种 0/1/2 整段错位），
+     *     只按 1 / 2 / 5 映射会漏号，故仅作兜底 --- */
     const KIND = { 1: 'attack', 2: 'skill', 5: 'burst' };
+    const talentByName = new Map();
     const talents = {};
     for (const t of dto.talents || []) {
+      const tn = normName(textOf(t.name));
+      if (tn) talentByName.set(tn, t);
       if (String(t.id).length !== 5) continue;
       const kind = KIND[Number(String(t.id).slice(-1))];
       if (kind && !talents[kind]) talents[kind] = t;
@@ -209,19 +243,19 @@ async function main() {
 
     const targets = [];
     for (const sk of profile.skills || []) {
-      const t = talents[sk.id];
+      const t = talentByName.get(normName(sk.name)) || talents[sk.id];
       if (t) targets.push({ item: sk, base: t.description, buffed: t.buffed_description });
+      else console.log(`   ⚠️ ${name}：战斗天赋未匹配「${sk.name}」，本次跳过`);
     }
     for (const p of profile.passives || []) {
-      const t = (dto.passives || []).find((x) => textOf(x.name) === p.name);
+      const t = (dto.passives || []).find((x) => normName(textOf(x.name)) === normName(p.name));
       if (t) targets.push({ item: p, base: t.description, buffed: t.buffed_description });
     }
     for (const c of profile.constellations || []) {
-      const t = (dto.constellations || []).find((x) => textOf(x.name) === c.name);
+      const t = (dto.constellations || []).find((x) => normName(textOf(x.name)) === normName(c.name));
       if (t) targets.push({ item: c, base: t.description, buffed: t.buffed_description });
     }
 
-    let changed = false;
     for (const { item, base, buffed } of targets) {
       const baseText = cleanText(textOf(base));
       const buffedText = cleanText(textOf(buffed));
@@ -241,11 +275,20 @@ async function main() {
 
       const buffs = { description: marked };
       if (loreChanged) buffs.lore = parsed.lore;
-      /* buffs.states 会被页面优先使用 —— 正文解析出的状态块之外，
-       * 还要保留 sync-lunaris 从 hyperlinks 补进来的额外词条 */
-      if (statesChanged) {
-        const extra = (item.states || []).filter((s) => !parsed.states.some((p) => p.name === s.name));
-        buffs.states = [...parsed.states, ...extra];
+      else if (item.buffs?.lore) buffs.lore = item.buffs.lore;
+      /* buffs.states 会被页面优先使用 —— 正文解析出的状态块之外，还要保留
+       * sync-lunaris 从 hyperlinks 补进来的额外词条（正文 states 与已写入 buffs.states 的都算），
+       * 否则单独重跑本脚本会把它们清掉 */
+      const carried = [...(item.states || []), ...(item.buffs?.states || [])];
+      if (statesChanged || carried.length) {
+        const seen = new Set(parsed.states.map((s) => s.name));
+        const merged = [...parsed.states];
+        for (const s of carried) {
+          if (seen.has(s.name)) continue;
+          seen.add(s.name);
+          merged.push(s);
+        }
+        if (merged.length) buffs.states = merged;
       }
       item.buffs = buffs;
       changed = true;
@@ -258,7 +301,7 @@ async function main() {
     if (changed) {
       touched++;
       if (!DRY) writeFileSync(file, formatJson(profile), 'utf-8');
-      console.log(`   + ${name}（加强条目 ${targets.filter((t) => t.item.buffs).length} 个）`);
+      console.log(`   + ${name}（加强条目 ${targets.filter((t) => t.item.buffs).length} 个${added ? `，补全固有天赋 ${added} 个` : ''}）`);
     }
     await sleep(200);
   }

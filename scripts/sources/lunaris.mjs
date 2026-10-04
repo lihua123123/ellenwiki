@@ -12,7 +12,7 @@
  * 清单里混有历史遗留（如 15004「冰之川与雪之砂」= 1.2 beta 残留），因此 list() 只取
  * 「当前版本清单有、上一个 X.Y.0 正式快照没有」的 id。
  */
-import { parseDescription } from '../lib/profile-text.mjs';
+import { parseDescription, isPlaceholderTalentName } from '../lib/profile-text.mjs';
 import { statsFromLunaris } from '../lib/char-stats.mjs';
 import { isPlaceholderName } from '../lib/local-store.mjs';
 import { API, fetchJson, cleanText, buildWeapon, buildArtifact } from '../lib/lunaris.mjs';
@@ -171,7 +171,7 @@ function enrichCharacter(local, dto) {
   const localNames = new Set([...(next.skills || []), ...(next.passives || []), ...(next.constellations || [])].map((x) => x.name));
   for (const src of Object.values(dto.passives || {})) {
     const name = cleanText(src?.name);
-    if (!name || localNames.has(name)) continue;
+    if (!name || localNames.has(name) || isPlaceholderTalentName(name)) continue;
     const { description, lore, states } = parseDescription(cleanText(src.description));
     next.passives = [...(next.passives || []), { name, description, lore, states, category: categoryOf(src) }];
     localNames.add(name);

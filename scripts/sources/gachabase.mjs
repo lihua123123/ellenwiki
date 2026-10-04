@@ -16,6 +16,7 @@
 import { existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { CONTENT, isPlaceholderName } from '../lib/local-store.mjs';
+import { isPlaceholderTalentName, passiveCategoryOf } from '../lib/profile-text.mjs';
 
 const BASE = 'https://gi.gachabase.net';
 const LANG = 'chs';
@@ -319,11 +320,13 @@ async function buildCharacterEntry(entry, { dry = false } = {}) {
       return { id: kind, type: TALENT_TYPE[kind], name: textOf(t.name), description: cleanText(textOf(t.description)), lore: '', states: [], levels };
     });
 
-  const passives = (dto.passives || []).map((p) => ({
-    name: textOf(p.name),
-    description: cleanText(textOf(p.description)),
-    category: Number(p.required_ascension) > 0 ? 'ascension' : 'utility',
-  }));
+  const passives = (dto.passives || [])
+    .filter((p) => !isPlaceholderTalentName(textOf(p.name)))
+    .map((p) => ({
+      name: textOf(p.name),
+      description: cleanText(textOf(p.description)),
+      category: passiveCategoryOf(p),
+    }));
 
   const constellations = (dto.constellations || []).map((c, i) => ({
     level: i + 1,

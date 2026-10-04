@@ -530,6 +530,13 @@
       "lore": "",
       "states": [],
       "category": "utility"
+    },
+    {
+      "name": "魔女的前夜礼·升华赞歌",
+      "description": "完成魔女的课业·此世之题后，杜林将成为魔导角色。队伍中编入至少2名魔导角色时，将获得魔导·秘仪效果，使魔导角色获得强化。\n\n魔导·秘仪\n除持续时间外，突破天赋「光灵遵神数显现」中的所有效果提升75%。",
+      "lore": "",
+      "states": [],
+      "category": "ascension"
     }
   ],
   "constellations": [
