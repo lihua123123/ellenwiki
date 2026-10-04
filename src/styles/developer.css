@@ -1,0 +1,97 @@
+/* developer.css — 开发者文档页（/developer）。保持中性配色，仅用基础变量。 */
+
+.dev-page { max-width: 1080px; }
+
+.dev-lead {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-top: 0.4rem;
+}
+
+.dev-card {
+  margin-bottom: 1.1rem;
+}
+
+.dev-card h2 {
+  font-size: 1.05rem;
+  margin: 0 0 0.8rem;
+}
+
+.dev-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.dev-card a { color: var(--accent-light); }
+
+/* 端点 / 数据集表格 */
+.dev-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.dev-table th,
+.dev-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dev-table th {
+  color: var(--text-secondary);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.dev-table td { color: var(--text-secondary); }
+.dev-table td:nth-child(2) { color: var(--text-primary, #e6e9ef); }
+
+.dev-method {
+  display: inline-block;
+  padding: 0.05rem 0.4rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg-code);
+  border: 1px solid var(--border-color);
+  color: var(--accent-light);
+  font-size: 0.8rem;
+}
+
+.dev-code {
+  background: var(--bg-code);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 0.85rem 1rem;
+  overflow-x: auto;
+  margin: 0.6rem 0;
+}
+
+.dev-code code {
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--text-primary, #e6e9ef);
+  white-space: pre;
+}
+
+.dev-note { margin-top: 0.7rem; font-size: 0.88rem; }
+
+.dev-list {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.dev-list code { color: var(--accent-light); }
+
+.dev-license { border-color: var(--border-color); }
+.dev-repo { margin-top: 0.5rem; }
+
+/* 行内 code 统一底色 */
+.dev-page code {
+  background: var(--bg-code);
+  border-radius: 4px;
+  padding: 0.05rem 0.35rem;
+  font-size: 0.88em;
+}

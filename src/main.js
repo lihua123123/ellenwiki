@@ -10,6 +10,7 @@
  *   #/formulas/:game        伤害公式（genshin / sr / zzz）
  *   #/boss                  幽境 Boss 图鉴
  *   #/my-characters         我的角色（UID 取数 / GOOD 导入 + 圣遗物副词条统计）
+ *   #/developer             开发者 · 数据 API（对外只读 JSON 接口说明）
  */
 import './styles/base.css';
 import './core/colors.js';
@@ -19,6 +20,7 @@ import { initArtifactsPage } from './pages/artifacts.js';
 import { initFormulasPage } from './pages/formulas.js';
 import { initBossPage } from './pages/boss.js';
 import { initMyCharactersPage } from './pages/my-characters.js';
+import { initDeveloperPage } from './pages/developer.js';
 
 const MODULES = [
   { id: 'characters', title: '角色图鉴', icon: '👤', group: '数据图鉴', render: initCharactersPage },
@@ -27,6 +29,7 @@ const MODULES = [
   { id: 'boss',       title: '幽境 Boss', icon: '👹', group: '数据图鉴', render: initBossPage },
   { id: 'formulas',   title: '伤害公式', icon: '∑',  group: '计算工具', render: initFormulasPage },
   { id: 'my-characters', title: '我的角色', icon: '🎴', group: '计算工具', render: initMyCharactersPage },
+  { id: 'developer',  title: '开发者 · 数据 API', icon: '🔌', group: '关于', render: initDeveloperPage },
 ];
 
 const mainEl = document.getElementById('app-main');

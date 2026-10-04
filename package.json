@@ -6,7 +6,8 @@
   "description": "艾莲的数据库 · 整合版：伤害计算公式 / 幽境Boss图鉴 / 产球及附着，统一 UI 框架",
   "scripts": {
     "dev": "npm run parse && vite",
-    "build": "npm run parse && vite build",
+    "build": "npm run parse && vite build && node scripts/build-api.mjs",
+    "api:build": "node scripts/build-api.mjs",
     "preview": "vite preview",
     "deploy": "npm run build && wrangler deploy",
     "data": "node scripts/data.mjs",

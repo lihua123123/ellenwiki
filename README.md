@@ -16,6 +16,7 @@
 | 伤害公式 | `#/formulas/genshin` `#/formulas/sr` `#/formulas/zzz` | 三游戏伤害公式，KaTeX 渲染 |
 | 幽境 Boss | `#/boss` | 版本珠链切换，卡片翻面查看机制 / 介绍 / 背景 |
 | 我的角色 | `#/my-characters` | **输入 UID** 直读展示柜角色（武器 + 圣遗物副词条），或**导入 GOODScanner 的 `GOODv3.json`** 拿到全部角色；按「词条数」降序列出当前角色的副词条；免登录、数据只存 `sessionStorage`，关闭标签页即清除 |
+| 开发者 · 数据 API | `#/developer` | 对外只读 JSON 接口（数据中转站）的文档：端点、字段、示例代码、来源与许可 |
 
 仅有深色主题。窄屏（≤900px）下侧边导航自动转为顶部横条。
 
@@ -24,9 +25,29 @@
 ```bash
 npm install
 npm run dev      # 解析 md → src/data，然后启动开发服务器（不联网）
-npm run build    # 解析 md → src/data，构建到 dist/
+npm run build    # 解析 md → src/data，构建到 dist/（并生成对外数据 API 到 dist/api）
 npm run deploy   # 构建 + 部署到 Cloudflare Workers
 ```
+
+## 数据 API（中转站）
+
+本站同时把自己整合后的数据以**只读 JSON API** 对外开放，其他开发者可以像我们抓 genshin-db / gachabase / lunaris 一样，直接 HTTP GET 本 API 的聚合结果（**无鉴权、带 CORS**）。文档页见 `#/developer`。
+
+- 构建时由 `scripts/build-api.mjs` 把 `content/**` 镜像到 `dist/api/`（`npm run build` / `npm run deploy` 会自动执行；也可单独 `npm run api:build`），由 `worker/index.js` 提供路由、CORS 与 JSON 404。
+
+| 端点 | 说明 |
+| --- | --- |
+| `GET /api` | 清单：数据集 / 数量 / 许可 / `generatedAt` |
+| `GET /api/characters` · `/api/characters/<名称>` | 角色列表 / 详情 |
+| `GET /api/weapons` · `/api/weapons/<名称>` | 武器列表 / 详情 |
+| `GET /api/artifacts` · `/api/artifacts/<名称>` | 圣遗物列表 / 详情 |
+| `GET /api/attachment` | 元素附着及产球（解析后） |
+| `GET /api/bosses` | 幽境 Boss |
+| `GET /api/formulas` · `/api/formulas/<game>` | 伤害公式目录 / 原文（`genshin` / `sr` / `zzz`） |
+
+路径不存在返回 JSON `404`（不是页面）；`<名称>` 用中文名（请 URL 编码）。响应带 `Cache-Control: public, max-age=300`，请尽量本地缓存、避免高频全量拉取。
+
+许可：整合整理成果可自由取用、请注明来源；游戏角色 / 武器 / 圣遗物等内容的著作权归米哈游所有。
 
 ## 数据源与更新方式
 
