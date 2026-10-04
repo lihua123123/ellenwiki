@@ -34,8 +34,8 @@ const UA = {
   'Accept-Language': 'zh-CN,zh;q=0.9',
 };
 
-/** gachabase 官方用字 → 本项目沿用的写法（与 sync-gachabase.mjs 保持一致） */
-const NAME_ALIASES = { 茜特菈莉: '茜特拉莉' };
+/** gachabase 官方用字 → 本项目沿用的写法（与 sync-gachabase.mjs 保持一致；目前两者用字已统一，留空备用） */
+const NAME_ALIASES = {};
 /** 旅行者/空荧/人偶 多形态条目：gachabase 侧没有对应天赋文本，跳过 */
 const SKIP_NAME = /^旅行者/;
 /** 名称归一化：全角→半角、去日式引号与首尾空白（两端用字有出入时仍能对上，避免静默漏号） */

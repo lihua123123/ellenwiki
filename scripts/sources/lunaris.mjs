@@ -30,8 +30,8 @@ const TRAVELERS = {
   '旅行者（冰）': '10000005_CRYO',
 };
 
-/** 本项目角色名 → lunaris 角色名（两边用字不同时） */
-const CHAR_ALIASES = { '茜特拉莉': '茜特菈莉' };
+/** 本项目角色名 → lunaris 角色名（两边用字不同时，目前两者用字已统一，留空备用） */
+const CHAR_ALIASES = {};
 /** lunaris 用字 → 本项目用字（反向） */
 const LOCAL_NAMES = Object.fromEntries(Object.entries(CHAR_ALIASES).map(([local, remote]) => [remote, local]));
 /** 多形态 / 非可玩条目：不参与角色清单与复查 */

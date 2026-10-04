@@ -36,8 +36,8 @@ const ALIAS_AVATARS = {
   10000017: '旅行者（冰）', 10000018: '旅行者（冰）',
 };
 
-/** 站内文件名 → genshin-db 里的正式写法（同音字不一致时用） */
-const NAME_ALIASES = { 茜特拉莉: '茜特菈莉' };
+/** 站内文件名 → genshin-db 里的正式写法（同音字不一致时用，目前两者用字已统一，留空备用） */
+const NAME_ALIASES = {};
 
 /** genshin-db 里还没有实装资料的新角色：直接写 avatarId（游戏内 id，只增不改） */
 const MANUAL_AVATAR_IDS = {

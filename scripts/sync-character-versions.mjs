@@ -21,8 +21,6 @@ const LANG = { resultLanguage: 'ChineseSimplified' };
 
 /* 与 generate-profiles 保持一致的手动别名 */
 const ALIASES = {
-  '茜特拉莉': 'Citlali',
-
   '旅行者（冰）': 'Traveler (Cryo)',
   '旅行者（火）': 'Traveler (Pyro)',
   '旅行者（水）': 'Traveler (Hydro)',

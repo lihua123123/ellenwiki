@@ -190,8 +190,8 @@ const ARTIFACT_SLOTS = [
 const TALENT_KIND = { 1: 'attack', 2: 'skill', 5: 'burst' };
 const TALENT_TYPE = { attack: '普通攻击', skill: '元素战技', burst: '元素爆发' };
 
-/** gachabase 官方用字 → 本项目沿用的写法 */
-const NAME_ALIASES = { 茜特菈莉: '茜特拉莉' };
+/** gachabase 官方用字 → 本项目沿用的写法（目前两者用字已统一，留空备用） */
+const NAME_ALIASES = {};
 /** 旅行者/空荧/人偶/奇偶 等多形态或测试用条目：资料由别的来源处理，这里跳过 */
 const SKIP_CHARACTER_SLUG = /^(aether|lumine|manekin|traveler)/;
 const SKIP_CHARACTER_NAME = /^(旅行者|空|荧|奇偶·)/;

@@ -291,8 +291,6 @@ function buildSkill(id, type, talent) {
 
 /* 手动别名：本地名 → genshin-db 键（源数据错别字 / 旅行者按元素拆分） */
 export const CHAR_ALIASES = {
-  '茜特拉莉': 'Citlali',              // 源 md 写作「茜特拉莉」，官方为「茜特菈莉」
-
   '旅行者（冰）': 'Traveler (Cryo)',
   '旅行者（火）': 'Traveler (Pyro)',
   '旅行者（水）': 'Traveler (Hydro)',

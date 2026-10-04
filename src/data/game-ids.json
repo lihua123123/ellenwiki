@@ -1,6 +1,6 @@
 {
  "note": "由 npm run game-ids 生成，勿手改。用途与生成规则见 scripts/generate-game-ids.mjs（GOOD 键统一小写）",
- "generatedAt": "2026-09-24",
+ "generatedAt": "2026-10-04",
  "avatars": {
   "10000002": {
    "name": "神里绫华",
@@ -407,8 +407,8 @@
    "slug": "玛薇卡"
   },
   "10000107": {
-   "name": "茜特拉莉",
-   "slug": "茜特拉莉"
+   "name": "茜特菈莉",
+   "slug": "茜特菈莉"
   },
   "10000108": {
    "name": "蓝砚",
@@ -2635,8 +2635,8 @@
    "slug": "芭芭拉"
   },
   "citlali": {
-   "name": "茜特拉莉",
-   "slug": "茜特拉莉"
+   "name": "茜特菈莉",
+   "slug": "茜特菈莉"
   },
   "aratakiitto": {
    "name": "荒泷一斗",
