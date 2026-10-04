@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_03.png"
     },
     {
       "id": "skill",
@@ -450,7 +451,8 @@
             "16.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Flins_01.png"
     },
     {
       "id": "burst",
@@ -620,7 +622,8 @@
             "30"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Flins_01_HD.png"
     }
   ],
   "passives": [
@@ -629,28 +632,32 @@
       "description": "依据队伍的月兆，菲林斯将获得对应的强化效果。\n\n月兆·满辉：菲林斯触发的月感电反应造成的伤害提升20%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Flins_05.png"
     },
     {
       "name": "幽焰的呢喃",
       "description": "菲林斯的元素精通提升，提升值相当于菲林斯的攻击力的8%。通过这种方式，至多使菲林斯的元素精通提升160点。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Flins_06.png"
     },
     {
       "name": "月兆祝赐·旧世潜藏",
       "description": "队伍中的角色触发感电反应时，将转为触发月感电反应，且基于菲林斯的攻击力，提升月感电反应的基础伤害：每100点攻击力都将提升0.7%基础伤害，至多通过这种方式提升14%伤害。\n\n此外，菲林斯在队伍中时，队伍的月兆将会上升一级。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Flins_07.png"
     },
     {
       "name": "掌灯暗行",
       "description": "在小地图上显示周围的挪德卡莱区域特产的位置。\n此外，菲林斯似乎能听懂狂猎的低语…",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Flins_08.png"
     }
   ],
   "constellations": [
@@ -659,35 +666,40 @@
       "name": "拨开雪翳之幕",
       "description": "特殊元素战技北国枪阵的基础冷却时间缩短为4秒。\n此外，队伍中的角色触发月感电反应时，还会为菲林斯恢复8点元素能量，该效果每5.5秒至多触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Flins_01.png"
     },
     {
       "level": 2,
       "name": "渡越魍魉之墙",
       "description": "施放特殊元素战技北国枪阵后的6秒内，菲林斯的下一次普通攻击命中敌人时，还会额外造成相当于菲林斯攻击力50%的雷元素范围伤害，该伤害视为月感电反应造成的伤害。\n月兆·满辉：菲林斯在场上时，菲林斯的元素类型为雷元素的攻击命中敌人后，该敌人的雷元素抗性降低25%，持续7秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Flins_02.png"
     },
     {
       "level": 3,
       "name": "夜访陌客之沼",
       "description": "元素爆发旧仪·夜客致访的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Flins_02.png"
     },
     {
       "level": 4,
       "name": "荒山嘶啭之夜",
       "description": "菲林斯的攻击力提升20%。\n此外，突破天赋「幽焰的呢喃」获得强化：菲林斯的元素精通提升，提升值相当于菲林斯的攻击力的10%。通过这种方式，至多使菲林斯的元素精通提升220点。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Flins_03.png"
     },
     {
       "level": 5,
       "name": "逐远避世之影",
       "description": "元素战技古律·孤灯遗秘的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Flins_01.png"
     },
     {
       "level": 6,
@@ -699,7 +711,8 @@
           "name": "擢升",
           "text": "特殊的伤害提升效果，与其他的伤害提升效果分别独立计算。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Flins_04.png"
     }
   ]
 }

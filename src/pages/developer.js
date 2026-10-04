@@ -19,7 +19,7 @@ const ENDPOINTS = [
 ];
 
 const DATASETS = [
-  ['characters', '角色', '单个文件：name / title / rarity / version / description / stats（hp·attack·defense·specialized 逐级数组 + preXxx 突破值）/ talents / passives / constellations / buffs / lore 等。'],
+  ['characters', '角色', '单个文件：name / title / rarity / version / description / stats（hp·attack·defense·specialized 逐级数组 + preXxx 突破值）/ skills / passives / constellations / buffs / lore 等；天赋与命之座条目内带 iconUrl 图标。'],
   ['weapons', '武器', '单个文件：name / id / rarity / type / baseAtk / mainStat / mainStatValue / maxLevel / source / effectName / refinements / curve（逐级基础攻击与副属性）/ costs / story 等。'],
   ['artifacts', '圣遗物', '单个文件：name / rarity / effect1Pc / effect2Pc / effect4Pc / iconUrl / pieceIcons / pieceNames 等。'],
   ['attachment', '元素附着及产球', '以元素分组：{ elementLabels, elementIds, weaponTypes, characters: { fire: [ { name, weapon, energy, skills: [ { name, elementAmount, attachRule, particles, note, poise } ] } ] } }。elementAmount=元素量（弱/强/超强 + 元素），attachRule=附着规则（独立 / N hits / M s 等，即 ICD），particles=产球。'],

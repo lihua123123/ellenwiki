@@ -215,7 +215,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_03.png"
     },
     {
       "id": "skill",
@@ -285,7 +286,8 @@
             "15.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Illuga_01.png"
     },
     {
       "id": "burst",
@@ -460,7 +462,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Illuga_01_HD.png"
     }
   ],
   "passives": [
@@ -469,7 +472,8 @@
       "description": "施放元素战技衔莺破晓或元素爆发鉴照无影后，队伍中附近的其他角色将获得持续20秒的「执灯之誓」效果：对敌人造成的岩元素伤害，暴击率提升5%，暴击伤害提升10%。\n\n月兆·满辉 \n处于「执灯之誓」效果影响下的角色，元素精通提升50点。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Illuga_05.png"
     },
     {
       "name": "狩魔者的黄昏",
@@ -481,21 +485,24 @@
           "text": "叶洛亚施放元素爆发鉴照无影后获得的效果，可以提升当前场上角色造成的岩元素伤害。"
         }
       ],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Illuga_06.png"
     },
     {
       "name": "月兆祝赐·凌冬不凋",
       "description": "叶洛亚在队伍中时，队伍的月兆将会上升一级。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Illuga_07.png"
     },
     {
       "name": "巡夜者的疾行",
       "description": "在夜间（18时至6时），队伍中自己的角色获得迅行效果：移动速度提高10%。\n该效果在秘境、征讨领域、深境螺旋中无效，迅行效果无法叠加。\n此外，叶洛亚似乎能听懂狂猎的低语…",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Illuga_08.png"
     }
   ],
   "constellations": [
@@ -504,7 +511,8 @@
       "name": "告警之雉",
       "description": "叶洛亚在场上触发岩元素相关反应后，将为叶洛亚恢复12点元素能量，该效果每15秒至多触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Illuga_01.png"
     },
     {
       "level": 2,
@@ -516,35 +524,40 @@
           "name": "「夜莺之歌」",
           "text": "叶洛亚施放元素爆发鉴照无影后获得的效果，可以提升当前场上角色造成的岩元素伤害。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Illuga_02.png"
     },
     {
       "level": 3,
       "name": "山吼之罴",
       "description": "元素爆发鉴照无影的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Illuga_01.png"
     },
     {
       "level": 4,
       "name": "逐日之狼",
       "description": "元素爆发鉴照无影中的「魇夜的莺歌」效果持续期间，队伍中附近的当前场上角色防御力提升200点。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Illuga_03.png"
     },
     {
       "level": 5,
       "name": "啸风之马",
       "description": "元素战技衔莺破晓的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Illuga_02.png"
     },
     {
       "level": 6,
       "name": "魇夜之莺",
       "description": "突破天赋铸灯者的盟约中「执灯之誓」的效果获得强化：对敌人造成的岩元素伤害，暴击率提升10%，暴击伤害提升30%。\n\n月兆·满辉 \n处于「执灯之誓」效果影响下的角色，元素精通提升80点。\n需要解锁突破天赋铸灯者的盟约。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Illuga_04.png"
     }
   ]
 }

@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -325,7 +326,8 @@
             "21.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Xingqiu_01.png"
     },
     {
       "id": "burst",
@@ -415,7 +417,8 @@
             "80"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Xingqiu_01_HD.png"
     }
   ],
   "passives": [
@@ -424,21 +427,24 @@
       "description": "雨帘剑受击破碎时或持续时间结束时，基于行秋最大生命值的6%，恢复当前角色的生命值。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xingqiu_05.png"
     },
     {
       "name": "虚实工笔",
       "description": "行秋获得20%水元素伤害加成。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xingqiu_06.png"
     },
     {
       "name": "灵光乍现",
       "description": "合成角色天赋素材时，有25%概率返还部分合成材料。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Combine_Talent.png"
     }
   ],
   "constellations": [
@@ -447,42 +453,48 @@
       "name": "重帘留香",
       "description": "雨帘剑的最大数量增加1柄。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xingqiu_01.png"
     },
     {
       "level": 2,
       "name": "天青现虹",
       "description": "古华剑·裁雨留虹的持续时间延长3秒；\n此外，受到剑雨攻击的敌人，水元素抗性降低15%，持续4秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xingqiu_02.png"
     },
     {
       "level": 3,
       "name": "织诗成锦",
       "description": "古华剑·裁雨留虹的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Xingqiu_01.png"
     },
     {
       "level": 4,
       "name": "孤舟斩蛟",
       "description": "在古华剑·裁雨留虹效果持续期间，古华剑·画雨笼山造成的伤害提升50%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xingqiu_03.png"
     },
     {
       "level": 5,
       "name": "雨深闭门",
       "description": "古华剑·画雨笼山的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Xingqiu_02.png"
     },
     {
       "level": 6,
       "name": "万文集此",
       "description": "古华剑·裁雨留虹每发动2次剑雨攻击，就大幅增强下一次剑雨攻击，并在命中敌人时为行秋恢复3点元素能量。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xingqiu_04.png"
     }
   ]
 }

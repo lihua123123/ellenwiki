@@ -215,7 +215,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_Catalyst_MD.png"
     },
     {
       "id": "skill",
@@ -305,7 +306,8 @@
             "16.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Lanyan_01.png"
     },
     {
       "id": "burst",
@@ -375,7 +377,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Lanyan_01_HD.png"
     }
   ],
   "passives": [
@@ -384,21 +387,24 @@
       "description": "元素战技凤缕随翦舞的突进命中目标时，如果接触了水元素/火元素/冰元素/雷元素，则会使凤缕护盾发生元素转化，转化后的护盾对于对应元素伤害有250%的吸收效果。\n此外，如果这次元素战技凤缕随翦舞使凤缕护盾发生了元素转化，蓝砚向敌人抛出的翦月环将附加原本50%对应元素伤害，该伤害视为元素战技伤害。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Lanyan_05.png"
     },
     {
       "name": "苍翎镇邪敕符",
       "description": "元素战技凤缕随翦舞与元素爆发鹍弦踏月出造成的伤害值提升，提升值分别相当于蓝砚元素精通的309%和774%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Lanyan_06.png"
     },
     {
       "name": "「心随芳兮意犹绵」",
       "description": "蓝砚在队伍中时，队伍中自己的角色接近晶蝶等部分生物时，不会惊动它们。\n有效对象可参考图鉴中「生物志 / 野生动物」的「其他」分类。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Sayu_07.png"
     }
   ],
   "constellations": [
@@ -407,42 +413,48 @@
       "name": "「若有人兮云之际」",
       "description": "触发突破天赋「四戈封刀灵卜」中的元素转化后，蓝砚在这次元素战技凤缕随翦舞中向敌人抛出翦月环时，将额外抛出一枚翦月环。\n需要解锁突破天赋「四戈封刀灵卜」。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Lanyan_01.png"
     },
     {
       "level": 2,
       "name": "「舞袂翩兮扬玉霓」",
       "description": "凤缕护盾存在期间，队伍中自己的当前场上角色的普通攻击造成伤害时，会恢复40%凤缕护盾的伤害吸收量，至多恢复至创造护盾时的伤害吸收量，该效果每2秒至多触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Lanyan_02.png"
     },
     {
       "level": 3,
       "name": "「乘白凤兮翦雾縠」",
       "description": "元素战技凤缕随翦舞的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Lanyan_01.png"
     },
     {
       "level": 4,
       "name": "「揽龙鹰兮结血珠」",
       "description": "施放元素爆发鹍弦踏月出之后的12秒内，队伍中附近所有角色的元素精通提升60点。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Lanyan_03.png"
     },
     {
       "level": 5,
       "name": "「既见君兮予所欢」",
       "description": "元素爆发鹍弦踏月出的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Lanyan_02.png"
     },
     {
       "level": 6,
       "name": "「愿随风兮鸣银鸾」",
       "description": "凤缕随翦舞的可使用次数增加1次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Lanyan_04.png"
     }
   ]
 }

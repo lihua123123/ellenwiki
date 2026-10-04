@@ -255,7 +255,8 @@
             "438%/547%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_03.png"
     },
     {
       "id": "skill",
@@ -305,7 +306,8 @@
             "10.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Xiao_01.png"
     },
     {
       "id": "burst",
@@ -415,7 +417,8 @@
             "70"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Xiao_01_HD.png"
     }
   ],
   "passives": [
@@ -424,21 +427,24 @@
       "description": "在靖妖傩舞状态下，魈造成的所有伤害提高5%。此后，在技能持续时间内，每经过3秒，造成的伤害再额外提高5%。\n至多获得25%伤害加成。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xiao_05.png"
     },
     {
       "name": "坏劫·国土碾尘",
       "description": "施放风轮两立会使之后7秒内的风轮两立造成的伤害提高15%。\n该效果持续7秒，最多叠加3次，叠加时刷新持续时间。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xiao_06.png"
     },
     {
       "name": "神通·空中自在法",
       "description": "队伍中自己的角色攀爬消耗的体力降低20%。\n无法与效果完全相同的固有天赋叠加。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Explosion_Climb.png"
     }
   ],
   "constellations": [
@@ -447,42 +453,48 @@
       "name": "坏劫·毁坏三界",
       "description": "风轮两立的可使用次数增加1次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xiao_01.png"
     },
     {
       "level": 2,
       "name": "空劫·虚空华开敷变",
       "description": "处于队伍后台时，魈自己的元素充能效率提高25%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xiao_02.png"
     },
     {
       "level": 3,
       "name": "降魔·忿怒显相",
       "description": "风轮两立的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Xiao_01.png"
     },
     {
       "level": 4,
       "name": "神通·诸苦灭尽",
       "description": "魈的生命值低于50%时，获得100%防御力提升。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xiao_03.png"
     },
     {
       "level": 5,
       "name": "成劫·无明增长",
       "description": "靖妖傩舞的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Xiao_02.png"
     },
     {
       "level": 6,
       "name": "降魔·护法夜叉",
       "description": "在靖妖傩舞状态下，下落攻击命中至少2个敌人时，风轮两立立刻获得1次可使用次数，并且在接下来1秒内，可以无视冷却时间施放风轮两立。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xiao_04.png"
     }
   ]
 }

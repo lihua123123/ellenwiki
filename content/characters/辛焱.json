@@ -255,7 +255,8 @@
             "399%/498%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_04.png"
     },
     {
       "id": "skill",
@@ -405,7 +406,8 @@
             "18.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Xinyan_01.png"
     },
     {
       "id": "burst",
@@ -515,7 +517,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Xinyan_01_HD.png"
     }
   ],
   "passives": [
@@ -524,21 +527,24 @@
       "description": "减少热情拂扫的护盾所需的命中敌人数量：\n·二级护盾·歌头节拍：命中一名敌人；\n·三级护盾·舞遍节拍：命中二名或更多敌人。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xinyan_05.png"
     },
     {
       "name": "「…这才是摇滚！」",
       "description": "处于热情拂扫的护盾保护下的角色造成的物理伤害提高15%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xinyan_06.png"
     },
     {
       "name": "摇滚的食谱",
       "description": "完美烹饪防御类食物时，有12%概率获得2倍产出。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Cook_Defense.png"
     }
   ],
   "constellations": [
@@ -547,42 +553,48 @@
       "name": "绝命的加速",
       "description": "辛焱造成暴击后的5秒内，普通攻击和重击的攻击速度提升12%。\n该效果每5秒只能触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xinyan_01.png"
     },
     {
       "level": 2,
       "name": "开场即兴段",
       "description": "叛逆刮弦造成的物理伤害暴击率提升100%，并会在施放时形成三级护盾·舞遍节拍。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xinyan_02.png"
     },
     {
       "level": 3,
       "name": "摭分的指法",
       "description": "热情拂扫的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Xinyan_01.png"
     },
     {
       "level": 4,
       "name": "节奏的传染",
       "description": "热情拂扫的挥舞伤害，会使敌人的物理抗性降低15%，持续12秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xinyan_03.png"
     },
     {
       "level": 5,
       "name": "返场的高呼",
       "description": "叛逆刮弦的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Xinyan_02.png"
     },
     {
       "level": 6,
       "name": "地狱里摇摆",
       "description": "辛焱的重击的体力消耗降低30%；此外，进行重击时，将基于防御力的50%获得攻击力加成。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xinyan_04.png"
     }
   ]
 }

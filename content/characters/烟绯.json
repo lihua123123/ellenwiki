@@ -235,7 +235,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_Catalyst_MD.png"
     },
     {
       "id": "skill",
@@ -285,7 +286,8 @@
             "9.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Feiyan_01.png"
     },
     {
       "id": "burst",
@@ -415,7 +417,8 @@
             "80"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Feiyan_01_HD.png"
     }
   ],
   "passives": [
@@ -424,21 +427,24 @@
       "description": "烟绯通过重击消耗丹火印时，每枚丹火印会提升烟绯5%的火元素伤害加成，持续6秒。在该效果的持续时间内再次施放重击时，会先移除原有的效果。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Feiyan_05.png"
     },
     {
       "name": "法兽灼眼",
       "description": "烟绯主动施放的重击对敌人造成暴击时，会额外造成一次80%攻击力的火元素范围伤害。该伤害视为重击伤害。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Feiyan_06.png"
     },
     {
       "name": "博闻强记",
       "description": "在小地图上显示周围的璃月区域特产的位置。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Collect_Local_Liyue.png"
     }
   ],
   "constellations": [
@@ -447,42 +453,48 @@
       "name": "占理不饶人",
       "description": "烟绯进行重击时，每持有一枚丹火印，都会提高烟绯在咏唱期间的抗打断能力，并额外降低本次重击10%的体力消耗。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Feiyan_01.png"
     },
     {
       "level": 2,
       "name": "最终解释权",
       "description": "烟绯的重击对于生命值低于50%的敌人，暴击率提高20%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Feiyan_02.png"
     },
     {
       "level": 3,
       "name": "真火炼宝印",
       "description": "丹书立约的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Feiyan_01.png"
     },
     {
       "level": 4,
       "name": "丹书金铁券",
       "description": "施放凭此结契时：\n生成一个伤害吸收量等于生命值上限45%的护盾，持续15秒。\n该护盾对火元素伤害有250%的吸收效果。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Feiyan_03.png"
     },
     {
       "level": 5,
       "name": "遵法切结书",
       "description": "凭此结契的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Feiyan_02.png"
     },
     {
       "level": 6,
       "name": "是额外条款",
       "description": "烟绯持有的丹火印最大数量增加一枚。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Feiyan_04.png"
     }
   ]
 }

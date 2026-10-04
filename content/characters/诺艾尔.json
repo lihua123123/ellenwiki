@@ -255,7 +255,8 @@
             "399%/498%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_04.png"
     },
     {
       "id": "skill",
@@ -385,7 +386,8 @@
             "24.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Noel_01.png"
     },
     {
       "id": "burst",
@@ -515,7 +517,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Noel_01_HD.png"
     }
   ],
   "passives": [
@@ -524,21 +527,24 @@
       "description": "诺艾尔处于队伍后台，且当前场上自己的角色的生命值低于30%时自动触发：\n为当前场上自己的角色生成一个伤害吸收量等同于诺艾尔防御力400%的护盾，持续20秒。\n·对所有元素伤害与物理伤害有150%的吸收效果。\n该效果60秒内只能触发一次。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Noel_05.png"
     },
     {
       "name": "干净利落",
       "description": "诺艾尔的普通攻击或重击累计命中敌人4次，会减少护心铠1秒的冷却。\n每0.1秒至多计数一次。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Noel_06.png"
     },
     {
       "name": "女仆的态度",
       "description": "完美烹饪防御类食物时，有12%概率获得2倍产出。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Cook_Defense.png"
     }
   ],
   "constellations": [
@@ -547,42 +553,48 @@
       "name": "支援就交给我吧",
       "description": "同时处于大扫除与护心铠状态时，护心铠的生命值回复效果触发几率提升至100%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Noel_01.png"
     },
     {
       "level": 2,
       "name": "旋风女仆",
       "description": "诺艾尔的重击的体力消耗降低20%，伤害提升15%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Noel_02.png"
     },
     {
       "level": 3,
       "name": "女仆不会受伤",
       "description": "护心铠的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Noel_01.png"
     },
     {
       "level": 4,
       "name": "之后会扫干净的",
       "description": "护心铠在效果结束时，或因伤害破碎时，会对周围的敌人造成400%攻击力的岩元素伤害。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Noel_03.png"
     },
     {
       "level": 5,
       "name": "骑士团扫除专家",
       "description": "大扫除的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Noel_02.png"
     },
     {
       "level": 6,
       "name": "要一尘不染才行",
       "description": "大扫除额外提高诺艾尔防御力50%的攻击力；\n此外，在技能持续时间内，每打倒1个敌人，其持续时间将延长1秒，最多不会超过10秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Noel_04.png"
     }
   ]
 }

@@ -174,7 +174,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/8089c83007738d70189c0d9d5fa353c6.png"
     },
     {
       "id": "skill",
@@ -364,7 +365,8 @@
             "16.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/cd4b7debff9058f06f2a21fa4a339435.png"
     },
     {
       "id": "burst",
@@ -454,14 +456,16 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/92ff0e500fa1c6d636431bc51f2ea2d8.png"
     }
   ],
   "passives": [
     {
       "name": "最后的塑诗者",
       "description": "施放元素战技宣叙·晨声纷流时，将使当前场上的星辉风旋转化为「流荡风旋」，且队伍中附近的角色在遥久之歌效果持续期间触发星扩散反应时，将取代星辉风旋创造流荡风旋。\n创造或引爆流荡风旋时，还会使附近敌人的风元素抗性降低35%，持续6秒。\n此外，遥久之歌持续期间，队伍中附近的角色进入辉映·星扩散状态时，辉映·星扩散的持续时间延长4秒。",
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/2f2d9cf216557c392d68b0552c51cd16.png"
     },
     {
       "name": "十二弦的泪歌",
@@ -476,44 +480,52 @@
           "name": "重唱",
           "text": "由队伍中后台角色或队伍中附近的其他角色（而非队伍中自己的当前场上角色）触发，效果与「领唱」一致。"
         }
-      ]
+      ],
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/d44028486829f448e9a6fc409d06baa5.png"
     },
     {
       "name": "余声绕冰湖",
       "description": "不处于战斗状态下时，长按元素战技，沃雅妮莎将显现出水妖的本貌，以消耗体力为代价，进行至多10秒的游动；因为是水妖，所以当然也可以在水面上移动。再次施放元素战技、持续时间结束或体力耗尽时，沃雅妮莎将不再维持水妖的本貌。\n此外，沃雅妮莎的游泳速度提升，但消耗体力的速度也更快。",
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/2a779788704d404952ed7854dd4afc59.png"
     },
     {
       "name": "无琴的诱音",
       "description": "身为科洛列夫茨基剧团首席女高音，沃雅妮莎在演奏乐器时，将改为亲自献唱。",
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/97ce522b0ae5c8eb77153a2806a181c8.png"
     }
   ],
   "constellations": [
     {
       "level": 1,
       "name": "聚光灯下的水华",
-      "description": "沃雅妮莎触发遥久之歌的治疗效果时，还会使队伍中附近的所有角色攻击力提升，提升值相当于沃雅妮莎生命值上限的0.8%，持续5秒。"
+      "description": "沃雅妮莎触发遥久之歌的治疗效果时，还会使队伍中附近的所有角色攻击力提升，提升值相当于沃雅妮莎生命值上限的0.8%，持续5秒。",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/32b4d8d428f897640c1e68da620110a8.png"
     },
     {
       "level": 2,
       "name": "穿彻风雪的余响",
-      "description": "元素战技宣叙·晨声纷流中的唤春角笛攻击敌人时，沃雅妮莎将获得「黑与白的双音」效果，使队伍中当前场上角色造成的水元素伤害与冰元素伤害的暴击伤害提升50%，持续5秒。\n若当前场上存在流荡风旋，或处于流荡风旋引爆后的5秒内，则改为使队伍中当前场上角色造成的星扩散反应伤害的暴击伤害提升60%，持续5秒。\n此外，元素战技宣叙·晨声纷流获得强化：遥久之歌效果的持续时间延长9秒。"
+      "description": "元素战技宣叙·晨声纷流中的唤春角笛攻击敌人时，沃雅妮莎将获得「黑与白的双音」效果，使队伍中当前场上角色造成的水元素伤害与冰元素伤害的暴击伤害提升50%，持续5秒。\n若当前场上存在流荡风旋，或处于流荡风旋引爆后的5秒内，则改为使队伍中当前场上角色造成的星扩散反应伤害的暴击伤害提升60%，持续5秒。\n此外，元素战技宣叙·晨声纷流获得强化：遥久之歌效果的持续时间延长9秒。",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/5caeb6c3335ca226fcab931f6273de15.png"
     },
     {
       "level": 3,
       "name": "空音犹响的春晨",
-      "description": "元素战技宣叙·晨声纷流的技能等级提高3级。\n至多提升至15级。"
+      "description": "元素战技宣叙·晨声纷流的技能等级提高3级。\n至多提升至15级。",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/cd4b7debff9058f06f2a21fa4a339435.png"
     },
     {
       "level": 4,
       "name": "柔波摇漾的低诉",
-      "description": "沃雅妮莎触发遥久之歌的治疗效果时，将基于受治疗角色的生命值，触发不同效果。若受治疗角色的生命值：\n·低于40%：本次治疗量提升50%；\n·不低于40%：沃雅妮莎的生命值上限提升20%，持续6秒，该效果至多叠加3层，每层独立计算持续时间。"
+      "description": "沃雅妮莎触发遥久之歌的治疗效果时，将基于受治疗角色的生命值，触发不同效果。若受治疗角色的生命值：\n·低于40%：本次治疗量提升50%；\n·不低于40%：沃雅妮莎的生命值上限提升20%，持续6秒，该效果至多叠加3层，每层独立计算持续时间。",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/aaa4c393a02d64686c43c0a8e32576be.png"
     },
     {
       "level": 5,
       "name": "沉往深湖的共沦",
-      "description": "元素爆发终奏·伴尔沉沦的技能等级提高3级。\n至多提升至15级。"
+      "description": "元素爆发终奏·伴尔沉沦的技能等级提高3级。\n至多提升至15级。",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/5b9d8befdd99a0845f2de80acb7301fe.png"
     },
     {
       "level": 6,
@@ -524,7 +536,8 @@
           "name": "擢升",
           "text": "特殊的伤害提升效果，与其他的伤害提升效果分别独立计算。"
         }
-      ]
+      ],
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/6afb691da772c8032e4c943702a676a3.png"
     }
   ],
   "beta": true,

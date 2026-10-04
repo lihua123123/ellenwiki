@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_03.png"
     },
     {
       "id": "skill",
@@ -385,7 +386,8 @@
             "15.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Shenhe_01.png"
     },
     {
       "id": "burst",
@@ -515,7 +517,8 @@
             "80"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Shenhe_01_HD.png"
     }
   ],
   "passives": [
@@ -524,21 +527,24 @@
       "description": "处于神女遣灵真诀的领域中的当前场上角色，冰元素伤害加成提高15%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shenhe_05.png"
     },
     {
       "name": "缚灵通真法印",
       "description": "申鹤施放仰灵威召将役咒后，将使附近的队伍中所有角色获得如下效果：\n·点按：元素战技和元素爆发造成的伤害提高15%，持续10秒；\n·长按：普通攻击、重击和下落攻击造成的伤害提高15%，持续15秒。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shenhe_06.png"
     },
     {
       "name": "来复知时",
       "description": "在璃月执行时长为20小时的探索派遣任务时，获得的奖励增加25%。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Expedition_Liyue.png"
     }
   ],
   "constellations": [
@@ -547,42 +553,48 @@
       "name": "心斋",
       "description": "仰灵威召将役咒的可使用次数增加1次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shenhe_02.png"
     },
     {
       "level": 2,
       "name": "定蒙",
       "description": "神女遣灵真诀的持续时间延长6秒。领域中的当前场上角色，冰元素伤害的暴击伤害提高15%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shenhe_01.png"
     },
     {
       "level": 3,
       "name": "潜虚",
       "description": "仰灵威召将役咒的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Shenhe_01.png"
     },
     {
       "level": 4,
       "name": "洞观",
       "description": "处于申鹤自己施加的「冰翎」状态下的角色，触发「冰翎」的伤害增加时，申鹤将获得一层「霜霄诀」：\n·申鹤施放仰灵威召将役咒时，将清除所有「霜霄诀」，并根据清除的层数，每层使本次仰灵威召将役咒造成的伤害提高5%；\n·该效果至多叠加50次，持续60秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shenhe_03.png"
     },
     {
       "level": 5,
       "name": "化神",
       "description": "神女遣灵真诀的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Shenhe_02.png"
     },
     {
       "level": 6,
       "name": "忘玄",
       "description": "角色通过普通攻击伤害与重击伤害触发「冰翎」的效果时，将不再会减少「冰翎」的生效次数。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shenhe_04.png"
     }
   ]
 }

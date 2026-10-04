@@ -195,7 +195,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_Catalyst_MD.png"
     },
     {
       "id": "skill",
@@ -285,7 +286,8 @@
             "20.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Klee_01.png"
     },
     {
       "id": "burst",
@@ -375,7 +377,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Klee_01_HD.png"
     }
   ],
   "passives": [
@@ -385,6 +388,7 @@
       "lore": "",
       "states": [],
       "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Klee_05.png",
       "buffs": {
         "description": "<buff>元素战技</buff>蹦蹦炸弹与普通攻击造成伤害时，有50%的几率赋予可莉一朵爆裂火花；施放<buff>元素战技蹦蹦炸弹与元素爆发轰轰火花时，也会赋予可莉一朵爆裂火花。可莉至多持有三朵爆裂火花。\n可莉持有爆裂火花并进行</buff>重击时，将消耗<buff>一朵</buff>爆裂火花，<buff>转而施放特殊的、</buff>不消耗体力<buff>的重击「嘭嘭轰击」</buff>，<buff>并使其</buff>造成的伤害提升50%。<buff>魔导·秘仪\n元素爆发轰轰火花的技能持续时间内，可莉的普通攻击连击段数不会重置；可莉持有爆裂火花并进行普通攻击时，第三段攻击将会消耗一朵爆裂火花，对敌人追加一次等同于「嘭嘭轰击」的攻击。</buff>"
       }
@@ -394,21 +398,24 @@
       "description": "可莉的重击造成暴击后，为队伍中所有角色恢复2点元素能量。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Klee_06.png"
     },
     {
       "name": "全是宝藏",
       "description": "在小地图上显示周围的蒙德区域特产的位置。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Collect_Local_Mengde.png"
     },
     {
       "name": "魔女的前夜礼·火花魔法",
       "description": "完成魔女的课业·火花叶之题后，可莉将成为魔导角色。队伍中编入至少2名魔导角色时，将获得魔导·秘仪效果，使魔导角色获得强化。\n\n魔导·秘仪\n可莉的普通攻击、元素战技或元素爆发造成伤害时，会获得一枚「轰轰勋章」，持续20秒，每种类别的攻击至多通过这种方式使可莉获得一枚「轰轰勋章」，通过不同类别的攻击获得的「轰轰勋章」独立存在。当可莉拥有1/2/3枚「轰轰勋章」时，特殊重击「嘭嘭轰击」将会造成原本115%/130%/150%的伤害。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/b9477a32cd768f3253e0558387c470db.png"
     }
   ],
   "constellations": [
@@ -418,6 +425,7 @@
       "description": "攻击与施放技能时，有几率召唤火花轰击敌人，造成相当于轰轰火花攻击伤害120%的伤害。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Klee_01.png",
       "buffs": {
         "description": "攻击与施放技能时，有几率召唤火花轰击敌人，造成相当于轰轰火花攻击伤害120%的伤害。<buff>触发上述效果后的12秒内，可莉的攻击力提升60%。</buff>"
       }
@@ -428,6 +436,7 @@
       "description": "蹦蹦炸弹的诡雷会使敌人的防御力降低23%，持续10秒。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Klee_02.png",
       "buffs": {
         "description": "<buff>可莉</buff>的<buff>元素战技命中敌人时，</buff>会使敌人的防御力降低23%，持续10秒。"
       }
@@ -437,7 +446,8 @@
       "name": "可莉特调",
       "description": "蹦蹦炸弹的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Klee_01.png"
     },
     {
       "level": 4,
@@ -445,6 +455,7 @@
       "description": "如果在轰轰火花持续期间内退场，会引发爆炸，造成555%攻击力的火元素范围伤害。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Klee_03.png",
       "buffs": {
         "description": "如果在轰轰火花持续期间内退场，<buff>或轰轰火花持续时间结束，</buff>会引发爆炸，造成555%攻击力的火元素范围伤害<buff>；触发上述效果时，如果可莉在场上，则造成的伤害提升100%</buff>。"
       }
@@ -454,7 +465,8 @@
       "name": "轰击之星",
       "description": "轰轰火花的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Klee_02.png"
     },
     {
       "level": 6,
@@ -462,6 +474,7 @@
       "description": "在轰轰火花的状态下，可莉每3秒会为队伍中所有角色（不包括可莉自己）恢复3点元素能量；\n施放轰轰火花后的25秒内，队伍中所有角色获得10%火元素伤害加成。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Klee_04.png",
       "buffs": {
         "description": "在轰轰火花的状态下，可莉每3秒会为队伍中所有角色（不包括可莉自己）恢复3点元素能量；\n施放轰轰火花后的25秒内，队伍中所有<buff>其他</buff>角色获得10%火元素伤害加成<buff>，可莉获得50%火元素伤害加成</buff>。",
         "states": [

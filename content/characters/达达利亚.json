@@ -315,7 +315,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_02.png"
     },
     {
       "id": "skill",
@@ -585,7 +586,8 @@
             "45.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Tartaglia_01.png"
     },
     {
       "id": "burst",
@@ -720,7 +722,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Tartaglia_01_HD.png"
     }
   ],
   "passives": [
@@ -729,21 +732,24 @@
       "description": "断流效果的持续时间延长8秒。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tartaglia_03.png"
     },
     {
       "name": "水形剑",
       "description": "处于魔王武装·狂澜的近战状态时，普通攻击与重击在造成暴击时，会为命中的敌人施加断流效果。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tartaglia_06.png"
     },
     {
       "name": "诸武精通",
       "description": "队伍中自己的角色普通攻击等级提高1级。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tartaglia_07.png"
     }
   ],
   "constellations": [
@@ -752,42 +758,48 @@
       "name": "魔王武装·遏浪",
       "description": "魔王武装·狂澜的冷却时间降低20%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tartaglia_01.png"
     },
     {
       "level": 2,
       "name": "魔王武装·暗流",
       "description": "处于断流效果影响下的敌人被击败时，为达达利亚恢复4点元素能量。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tartaglia_02.png"
     },
     {
       "level": 3,
       "name": "深渊之灾·纷争涡源",
       "description": "魔王武装·狂澜的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Tartaglia_01.png"
     },
     {
       "level": 4,
       "name": "深渊之灾·凝水盛放",
       "description": "每4秒，场上存在达达利亚自身施加的断流效果时，若达达利亚当前处于魔王武装·狂澜的近战状态，则触发断流·斩；否则，触发断流·闪。\n通过此命之座触发的断流·斩与断流·闪不受这两种断流各自的触发间隔限制，也不会影响其触发间隔。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tartaglia_05.png"
     },
     {
       "level": 5,
       "name": "极恶技·斩水斩雨",
       "description": "极恶技·尽灭闪的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Tartaglia_02.png"
     },
     {
       "level": 6,
       "name": "极恶技·天使灭尽",
       "description": "在近战状态下施放极恶技·尽灭闪时，清除魔王武装·狂澜的冷却时间。\n该效果会在回到远程状态后触发。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tartaglia_04.png"
     }
   ]
 }

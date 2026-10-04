@@ -255,7 +255,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_02.png"
     },
     {
       "id": "skill",
@@ -345,7 +346,8 @@
             "12.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Tighnari_01.png"
     },
     {
       "id": "burst",
@@ -435,7 +437,8 @@
             "40"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Tighnari_01_HD.png"
     }
   ],
   "passives": [
@@ -444,21 +447,24 @@
       "description": "提纳里发射花筥箭后，元素精通提升50点，持续4秒。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tighnari_05.png"
     },
     {
       "name": "诸叶辨通",
       "description": "提纳里的每点元素精通，都会使其重击与造生缠藤箭造成的伤害提升0.06%。\n通过这种方式，至多使上述攻击造成的伤害提升60%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tighnari_06.png"
     },
     {
       "name": "闳览博物",
       "description": "在小地图上显示周围的须弥区域特产的位置。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tighnari_07.png"
     }
   ],
   "constellations": [
@@ -467,42 +473,48 @@
       "name": "由根须断定肇始",
       "description": "提纳里重击的暴击率提高15%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tighnari_01.png"
     },
     {
       "level": 2,
       "name": "由茎干剖析来缘",
       "description": "当识果种雷的识蕴领域中存在敌人时，提纳里获得20%草元素伤害加成。\n识蕴领域持续时间结束或其中不存在敌人后，该效果至多持续6秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tighnari_02.png"
     },
     {
       "level": 3,
       "name": "由枝节知晓造化",
       "description": "造生缠藤箭的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Tighnari_01.png"
     },
     {
       "level": 4,
       "name": "由片叶管窥枯荣",
       "description": "施放造生缠藤箭时，队伍中附近的所有角色的元素精通提升60点，持续8秒。若造生缠藤箭触发了燃烧、绽放、月绽放、原激化或蔓激化反应，元素精通将进一步提升60点，并刷新该状态的持续时间。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tighnari_03.png"
     },
     {
       "level": 5,
       "name": "由繁花明了悟觉",
       "description": "识果种雷的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Tighnari_02.png"
     },
     {
       "level": 6,
       "name": "由硕实品论应果",
       "description": "花筥箭所需的蓄力时间减少0.9秒，并在命中后能产生1枚额外的藏蕴花矢，能造成提纳里攻击力150%的伤害。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tighnari_04.png"
     }
   ]
 }

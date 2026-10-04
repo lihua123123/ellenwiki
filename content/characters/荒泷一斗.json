@@ -275,7 +275,8 @@
             "438%/547%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_04.png"
     },
     {
       "id": "skill",
@@ -365,7 +366,8 @@
             "10.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Itto_01.png"
     },
     {
       "id": "burst",
@@ -475,7 +477,8 @@
             "70"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Itto_01_HD.png"
     }
   ],
   "passives": [
@@ -484,21 +487,24 @@
       "description": "荒泷一斗施展连续的「荒泷逆袈裟」时，获得以下效果：\n·每次斩击都将使接下来的斩击攻击速度提升10%，通过这种方法至多提升30%；\n·提升抗打断能力。",
       "lore": "这些效果将在连续施展结束时消失。",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Itto_05.png"
     },
     {
       "name": "赤鬼之血",
       "description": "「荒泷逆袈裟」造成的伤害提高，伤害提高值基于荒泷一斗防御力的35%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Itto_06.png"
     },
     {
       "name": "干裂枝碎",
       "description": "队伍中自己的角色通过攻击树木获取木材时，有25%的几率获得额外的木材。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Itto_07.png"
     }
   ],
   "constellations": [
@@ -507,42 +513,48 @@
       "name": "倘若不知，我讲你听",
       "description": "施放最恶鬼王·一斗轰临！！后，荒泷一斗获得2层「乱神之怪力」效果。1秒后，荒泷一斗每0.5秒再获得1层「乱神之怪力」效果，持续1.5秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Itto_01.png"
     },
     {
       "level": 2,
       "name": "纠集众人，斗倒御岳",
       "description": "施放最恶鬼王·一斗轰临！！后，队伍中每个元素类型为岩元素的角色，都将使其冷却时间减少1.5秒，使荒泷一斗的元素能量恢复6点。\n通过这种方式，至多减少4.5秒冷却时间，恢复18点元素能量。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Itto_02.png"
     },
     {
       "level": 3,
       "name": "水陆自在，牛王同行",
       "description": "魔杀绝技·赤牛发破！的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Itto_01.png"
     },
     {
       "level": 4,
       "name": "奉行牢狱，茶饭之所",
       "description": "最恶鬼王·一斗轰临！！施加的「怒目鬼王」状态结束后，附近的队伍中所有角色的防御力提升20%，攻击力提升20%，持续10秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Itto_03.png"
     },
     {
       "level": 5,
       "name": "十年花坂，皆知我名",
       "description": "最恶鬼王·一斗轰临！！的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Itto_02.png"
     },
     {
       "level": 6,
       "name": "在下荒泷一斗是也",
       "description": "荒泷一斗的重击的暴击伤害提高70%；此外，施展「荒泷逆袈裟」时，有50%的几率不消耗「乱神之怪力」。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Itto_04.png"
     }
   ]
 }

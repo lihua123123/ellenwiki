@@ -418,6 +418,16 @@
   white-space: nowrap;
 }
 
+/* 天赋 / 命之座图标（enka CDN，来自角色 JSON 的 iconUrl；缺失时不渲染） */
+.talent-icon {
+  flex: none;
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.talent-card.compact .talent-icon { width: 32px; height: 32px; }
+
 .talent-desc {
   margin: 0 0 0.6rem;
   font-size: 0.9rem;
@@ -426,12 +436,16 @@
 }
 
 /* 角色逸闻：附录样式（弱化色 + 斜体），纯展示不做悬停 */
-.talent-lore {
+.talent-lore,
+.talent-kind {
   font-size: 0.84rem;
   font-style: italic;
   color: var(--text-secondary);
   opacity: 0.85;
 }
+
+/* 天赋类型 / 命之座序号：跟在名称之后，不参与压缩 */
+.talent-kind { flex: none; white-space: nowrap; }
 
 /* 状态/术语内嵌悬停：主题色文字 + 虚线下划线，明显区别于正文 */
 .talent-term {
@@ -609,6 +623,11 @@
 }
 
 .constellation-panels .talent-card { max-width: none; }
+
+/* 命之座详情：图标与描述同一行，名称只在标签页上出现 */
+.constellation-body { display: flex; align-items: flex-start; gap: 0.7rem; }
+.constellation-text { flex: 1; min-width: 0; }
+.constellation-text .talent-desc { margin-bottom: 0; }
 
 /* 固有天赋 / 命之座网格：铺满内容区，每行两个 */
 .talent-grid {

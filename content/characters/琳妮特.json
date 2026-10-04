@@ -215,7 +215,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -365,7 +366,8 @@
             "12.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Linette_01.png"
     },
     {
       "id": "burst",
@@ -495,7 +497,8 @@
             "70"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Linette_01_HD.png"
     }
   ],
   "passives": [
@@ -504,21 +507,24 @@
       "description": "施放魔术·运变惊奇后的10秒内，队伍中分别存在1/2/3/4种元素类型的角色时，队伍中所有角色的攻击力分别提升8%/12%/16%/20%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linette_05.png"
     },
     {
       "name": "道具完备",
       "description": "魔术·运变惊奇召唤的惊奇猫猫盒发生了元素转化后，琳妮特元素爆发造成的伤害提升15%，效果持续至该惊奇猫猫盒持续时间结束。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linette_06.png"
     },
     {
       "name": "点位记忆法",
       "description": "在小地图上显示周围复苏水团的位置，并使接触复苏水团时恢复的水中耐力与生命值提升25%。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linette_07.png"
     }
   ],
   "constellations": [
@@ -527,42 +533,48 @@
       "name": "如影流露的冷刃",
       "description": "谜影障身法的谜影突刺命中带有刺影征标的敌人时，将在敌人的位置生成风涡，牵引附近的敌人。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linette_01.png"
     },
     {
       "level": 2,
       "name": "层见叠出的谜象",
       "description": "魔术·运变惊奇召唤的惊奇猫猫盒发射彩练术弹时，将额外发射一枚彩练术弹。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linette_02.png"
     },
     {
       "level": 3,
       "name": "倒错知能的视度",
       "description": "魔术·运变惊奇的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Linette_01.png"
     },
     {
       "level": 4,
       "name": "灵犀默应的配合",
       "description": "谜影障身法的可使用次数增加1次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linette_03.png"
     },
     {
       "level": 5,
       "name": "暗昧遮目的障法",
       "description": "谜影障身法的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Linette_02.png"
     },
     {
       "level": 6,
       "name": "示辨真意的眼",
       "description": "琳妮特施放谜影障身法的谜影突刺时，将获得风元素附魔，风元素伤害加成提升20%，持续6秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linette_04.png"
     }
   ]
 }

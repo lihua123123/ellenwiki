@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_03.png"
     },
     {
       "id": "skill",
@@ -345,7 +346,8 @@
             "10.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Shougun_01.png"
     },
     {
       "id": "burst",
@@ -680,7 +682,8 @@
             "90"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Shougun_01_HD.png"
     }
   ],
   "passives": [
@@ -689,21 +692,24 @@
       "description": "队伍中附近的角色获得元素晶球或元素微粒时，会为诸愿百眼之轮积攒2层愿力。\n该效果每3秒至多触发一次。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shougun_05.png"
     },
     {
       "name": "殊胜之御体",
       "description": "基于元素充能效率超过100%的部分，每1%使雷电将军获得下列效果：\n·梦想一心状态提供的元素能量恢复提高0.6%；\n·雷元素伤害加成提升0.4%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shougun_06.png"
     },
     {
       "name": "天下名物狩",
       "description": "突破单手剑和长柄武器时，消耗的摩拉数量减少50%。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shougun_07.png"
     }
   ],
   "constellations": [
@@ -712,42 +718,48 @@
       "name": "恶曜卜词",
       "description": "诸愿百眼之轮能更加迅速地积攒愿力。元素类型为雷元素的角色施放元素爆发后，积攒的愿力提升80%；其他元素类型的角色施放元素爆发后，积攒的愿力提升20%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shougun_01.png"
     },
     {
       "level": 2,
       "name": "斩铁断金",
       "description": "奥义·梦想真说的梦想一刀与梦想一心状态下的雷电将军的攻击将无视敌人60%的防御力。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shougun_03.png"
     },
     {
       "level": 3,
       "name": "真影旧事",
       "description": "奥义·梦想真说的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Shougun_02.png"
     },
     {
       "level": 4,
       "name": "誓奉常道",
       "description": "奥义·梦想真说施加的梦想一心状态结束后，附近的队伍中所有角色（不包括雷电将军自己）的攻击力提升30%，持续10秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shougun_02.png"
     },
     {
       "level": 5,
       "name": "凶将显形",
       "description": "神变·恶曜开眼的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Shougun_01.png"
     },
     {
       "level": 6,
       "name": "负愿前行",
       "description": "处于奥义·梦想真说施加的梦想一心状态下时，雷电将军的元素爆发伤害命中敌人时，使附近的队伍中所有角色（不包括雷电将军自己）元素爆发的冷却时间缩短1秒。\n该效果每1秒至多触发一次，在持续期间内至多触发5次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shougun_04.png"
     }
   ]
 }

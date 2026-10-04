@@ -275,7 +275,8 @@
             "433%/541%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_04.png"
     },
     {
       "id": "skill",
@@ -485,7 +486,8 @@
             "10.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Eula_01.png"
     },
     {
       "id": "burst",
@@ -615,7 +617,8 @@
             "80"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Eula_01_HD.png"
     }
   ],
   "passives": [
@@ -624,21 +627,24 @@
       "description": "长按施放冰潮的涡旋时，若一次性消耗了2层冷酷之心效果，则创造会立即爆发的残缺光降之剑，造成相当于凝浪之光剑的光降之剑基础伤害50%的物理伤害。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Eula_05.png"
     },
     {
       "name": "战欲涌现",
       "description": "施放凝浪之光剑时，重置冰潮的涡旋的冷却时间，并为优菈赋予一层冷酷之心效果。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Eula_06.png"
     },
     {
       "name": "贵族的自省",
       "description": "合成角色天赋素材时，有10%概率获得2倍产出。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Eula_Combine.png"
     }
   ],
   "constellations": [
@@ -647,42 +653,48 @@
       "name": "光潮的幻象",
       "description": "消耗冰潮的涡旋的冷酷之心效果后，优菈的物理伤害加成提高30%，持续6秒，\n每消耗一层冷酷之心，都会使这个效果的持续时间延长6秒，最多不会超过18秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Eula_02.png"
     },
     {
       "level": 2,
       "name": "海沫的少女",
       "description": "缩短冰潮的涡旋长按的冷却时间，使其降低至与点按的冷却时间相同。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Eula_01.png"
     },
     {
       "level": 3,
       "name": "劳伦斯的血脉",
       "description": "凝浪之光剑的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Eula_01.png"
     },
     {
       "level": 4,
       "name": "自卑者的逞强",
       "description": "对生命值低于50%的敌人，光降之剑造成的伤害提高25%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Eula_03.png"
     },
     {
       "level": 5,
       "name": "骑士的素质",
       "description": "冰潮的涡旋的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Eula_02.png"
     },
     {
       "level": 6,
       "name": "高贵者的义务",
       "description": "凝浪之光剑创造的光降之剑立即获得5层能量。普通攻击、元素战技或元素爆发造成伤害使其积蓄能量层数时，有50%的概率额外获得一层。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Eula_04.png"
     }
   ]
 }

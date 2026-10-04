@@ -215,7 +215,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_02.png"
     },
     {
       "id": "skill",
@@ -385,7 +386,8 @@
             "20.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Aloy_01.png"
     },
     {
       "id": "burst",
@@ -455,7 +457,8 @@
             "40"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Aloy_01_HD.png"
     }
   ],
   "passives": [
@@ -464,21 +467,24 @@
       "description": "埃洛伊获得冰尘雪野的线圈效果时，埃洛伊的攻击力提升16%，队伍中附近的其他角色的攻击力提升8%，持续10秒。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Aloy_05.png"
     },
     {
       "name": "强力攻击",
       "description": "埃洛伊处于冰尘雪野的冰驰状态下时，每1秒提升3.5%冰元素伤害加成，通过这种方式至多获得35%冰元素伤害加成。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Aloy_06.png"
     },
     {
       "name": "荒野猎手",
       "description": "埃洛伊在队伍中时，队伍中自己的角色接近产出禽肉、兽肉与冷鲜肉的小动物时，不会轻易惊动它们。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Aloy_07.png"
     }
   ],
   "constellations": [
@@ -487,42 +493,48 @@
       "name": "异界之星",
       "description": "点亮此人一方星空之刻尚未到来。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Aloy_Lock.png"
     },
     {
       "level": 2,
       "name": "异界之星",
       "description": "点亮此人一方星空之刻尚未到来。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Aloy_Lock.png"
     },
     {
       "level": 3,
       "name": "异界之星",
       "description": "点亮此人一方星空之刻尚未到来。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Aloy_Lock.png"
     },
     {
       "level": 4,
       "name": "异界之星",
       "description": "点亮此人一方星空之刻尚未到来。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Aloy_Lock.png"
     },
     {
       "level": 5,
       "name": "异界之星",
       "description": "点亮此人一方星空之刻尚未到来。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Aloy_Lock.png"
     },
     {
       "level": 6,
       "name": "异界之星",
       "description": "点亮此人一方星空之刻尚未到来。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Aloy_Lock.png"
     }
   ]
 }

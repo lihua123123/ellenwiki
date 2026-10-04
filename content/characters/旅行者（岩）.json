@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -305,7 +306,8 @@
             "8.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_PlayerRock_01.png"
     },
     {
       "id": "burst",
@@ -395,7 +397,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_PlayerRock_01_HD.png"
     }
   ],
   "passives": [
@@ -404,21 +407,24 @@
       "description": "星陨剑的冷却时间减少2秒。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerRock_05.png"
     },
     {
       "name": "狂乱的崩岩",
       "description": "普通攻击的最后一击会附带崩毁，对范围内的敌人造成60%攻击力的岩元素伤害。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerRock_06.png"
     },
     {
       "name": "异邦的坚岩",
       "description": "从过往的旅途中，汲取全新的力量。每与一种元素进行过共鸣，便会获得额外的强化效果。\n\n此外，队伍中附近的角色进入护盾庇护下时、护盾因任何原因被替换时，或生成岩元素创造物时，旅行者将获得1层「古岩之刃」，至多叠加3层，每1秒至多通过这种方式使旅行者获得1层「古岩之刃」。拥有3层「古岩之刃」时进行重击，会消耗所有的「古岩之刃」，转为进行特殊的重击·岩坠。\n\n重击·岩坠\n·每段重击将造成伤害更高的岩元素伤害，伤害提升相当于旅行者攻击力的120%；\n·命中敌人后的15秒内，队伍中附近的角色护盾强效提升20%；\n·每15秒至多进行一次重击·岩坠。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerRock_07.png"
     }
   ],
   "constellations": [
@@ -427,42 +433,48 @@
       "name": "巍然的青岩",
       "description": "队伍中角色处于岩潮叠嶂的岩嶂包围中时，暴击率提升10%，并提高抗打断能力。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerRock_01.png"
     },
     {
       "level": 2,
       "name": "不稳的熔岩",
       "description": "星陨剑的荒星被摧毁时会再度发生爆炸，造成等同于星陨剑伤害的额外岩元素范围伤害。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerRock_02.png"
     },
     {
       "level": 3,
       "name": "八方之岩",
       "description": "岩潮叠嶂的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_PlayerRock_02.png"
     },
     {
       "level": 4,
       "name": "险峻的重岩",
       "description": "岩潮叠嶂引发的震荡波每击中一个敌人，都会恢复5点元素能量。\n通过这种方式，一次至多恢复25点元素能量。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerRock_03.png"
     },
     {
       "level": 5,
       "name": "天坠之岩",
       "description": "星陨剑的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_PlayerRock_01.png"
     },
     {
       "level": 6,
       "name": "永世的磐岩",
       "description": "岩潮叠嶂的岩嶂持续时间延长5秒；\n星陨剑的荒星持续时间延长10秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerRock_04.png"
     }
   ]
 }

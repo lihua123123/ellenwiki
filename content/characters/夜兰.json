@@ -240,7 +240,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_02.png"
     },
     {
       "id": "skill",
@@ -310,7 +311,8 @@
             "10.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Yelan_01.png"
     },
     {
       "id": "burst",
@@ -420,7 +422,8 @@
             "70"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Yelan_01_HD.png"
     }
   ],
   "passives": [
@@ -429,21 +432,24 @@
       "description": "队伍存在1/2/3/4种元素类型的角色时，夜兰的生命值上限提升6%/12%/18%/30%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Yelan_05.png"
     },
     {
       "name": "妙转随心",
       "description": "「玄掷玲珑」存在期间，能使队伍中自己的当前场上角色造成的伤害提高1%，并且每1秒进一步提高3.5%，至多使角色造成的伤害提高50%。\n效果存在期间重新施放渊图玲珑骰，将移除原有的上述效果。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Yelan_06.png"
     },
     {
       "name": "长考一着",
       "description": "在璃月执行时长为20小时的探索派遣任务时，获得的奖励增加25%。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Expedition_Liyue.png"
     }
   ],
   "constellations": [
@@ -452,42 +458,48 @@
       "name": "与谋者，以局入局",
       "description": "萦络纵命索的可使用次数增加1次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Yelan_01.png"
     },
     {
       "level": 2,
       "name": "入彀者，多多益善",
       "description": "「玄掷玲珑」协同攻击时，会发射一枚额外的水箭，造成相当于夜兰生命值上限14%的水元素伤害。\n该效果每1.8秒至多触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Yelan_02.png"
     },
     {
       "level": 3,
       "name": "晃盅者，琼畟药骰",
       "description": "渊图玲珑骰的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Yelan_01.png"
     },
     {
       "level": 4,
       "name": "诓惑者，接树移花",
       "description": "依照「络命丝」标记敌人的数量，每次标记将在爆发时使队伍中所有角色的生命值上限提升10%，持续25秒。通过这种方式，生命值上限至多获得40%提升。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Yelan_03.png"
     },
     {
       "level": 5,
       "name": "坐庄者，三仙戏法",
       "description": "萦络纵命索的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Yelan_02.png"
     },
     {
       "level": 6,
       "name": "取胜者，大小通吃",
       "description": "施放渊图玲珑骰后，夜兰将进入「运筹帷幄」状态：\n夜兰的普通攻击将转为发射特殊的「破局矢」。这种箭矢具有与破局矢近似的特性，造成的伤害视为重击伤害，能造成破局矢156%的伤害。\n\n「运筹帷幄」状态至多持续20秒，将在夜兰发射5枚箭矢后移除。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Yelan_04.png"
     }
   ]
 }

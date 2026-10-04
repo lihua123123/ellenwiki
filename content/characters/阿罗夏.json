@@ -220,7 +220,8 @@
             "341.9%/427.0%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_03.png"
     },
     {
       "id": "skill",
@@ -355,7 +356,8 @@
             "15.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Alyosha_01.png"
     },
     {
       "id": "burst",
@@ -465,7 +467,8 @@
             "70"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Alyosha_01_HD.png"
     }
   ],
   "passives": [
@@ -479,14 +482,16 @@
           "text": "深受阿罗夏信赖的猎犬伙伴，可以通过施放元素爆发守猎进踞召唤至场上，会间歇性快速移动至一名敌人附近，对其进行撕咬攻击，并激活已有的弋猎印记。"
         }
       ],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Alyosha_05.png"
     },
     {
       "name": "告别冬麦与残叶",
       "description": "基于阿罗夏的元素充能效率，提升阿罗夏的元素战技与元素爆发造成的伤害：每1%元素充能效率都会使上述伤害提升0.35%，至多提升至70%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Alyosha_06.png"
     },
     {
       "name": "星赴险域",
@@ -502,14 +507,16 @@
           "text": "阿罗夏向敌人施加的特殊效果。\n对已经处于弋猎印记影响下的敌人再次施加该效果时，将会改为激活弋猎印记：移除该印记，并使队伍中附近的所有角色获得猎者之准效果：处于场上时，攻击力提升。"
         }
       ],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Alyosha_07.png"
     },
     {
       "name": "树梢察伺",
       "description": "在小地图上显示周围的至冬区域特产的位置。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Alyosha_08.png"
     }
   ],
   "constellations": [
@@ -518,7 +525,8 @@
       "name": "寒谷轰雷",
       "description": "队伍中附近的角色对敌人触发雷元素相关反应后，将为阿罗夏恢复15点元素能量，该效果每18秒至多触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Alyosha_01.png"
     },
     {
       "level": 2,
@@ -534,14 +542,16 @@
           "name": "弋猎印记",
           "text": "阿罗夏向敌人施加的特殊效果。\n对已经处于弋猎印记影响下的敌人再次施加该效果时，将会改为激活弋猎印记：移除该印记，并使队伍中附近的所有角色获得猎者之准效果：处于场上时，攻击力提升。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Alyosha_02.png"
     },
     {
       "level": 3,
       "name": "僚朋相唤",
       "description": "元素战技伏袭霆击的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Alyosha_01.png"
     },
     {
       "level": 4,
@@ -553,14 +563,16 @@
           "name": "图加林",
           "text": "深受阿罗夏信赖的猎犬伙伴，可以通过施放元素爆发守猎进踞召唤至场上，会间歇性快速移动至一名敌人附近，对其进行撕咬攻击，并激活已有的弋猎印记。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Alyosha_03.png"
     },
     {
       "level": 5,
       "name": "莺啼止时",
       "description": "元素爆发守猎进踞的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Alyosha_02.png"
     },
     {
       "level": 6,
@@ -572,7 +584,8 @@
           "name": "弋猎印记",
           "text": "阿罗夏向敌人施加的特殊效果。\n对已经处于弋猎印记影响下的敌人再次施加该效果时，将会改为激活弋猎印记：移除该印记，并使队伍中附近的所有角色获得猎者之准效果：处于场上时，攻击力提升。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Alyosha_04.png"
     }
   ]
 }

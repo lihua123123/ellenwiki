@@ -254,11 +254,14 @@ function fmtValue(val, code) {
 
 const PARAM_RE = /\{param(\d+):([A-Z0-9]+)\}/g;
 
-/* 由 attributes { labels, parameters } 计算 1~15 级数值行 */
+/* 由 attributes { labels, parameters } 计算逐级数值行。
+ * 级数取源数据里最长的参数数组：可升级天赋为 1~15 级，
+ * 固定值天赋（如「替代冲刺」）只有 1 级，不补 15 行空值。 */
 function buildLevels(attributes) {
   if (!attributes || !Array.isArray(attributes.labels) || !attributes.labels.length) return [];
   const params = attributes.parameters || {};
-  const maxLevel = Math.max(15, ...Object.values(params).map((a) => a?.length || 0));
+  const maxLevel = Math.max(0, ...Object.values(params).map((a) => a?.length || 0));
+  if (!maxLevel) return [];
 
   const rows = attributes.labels.map((rawLabel) => {
     const parts = String(rawLabel).split('|');
@@ -269,7 +272,7 @@ function buildLevels(attributes) {
      * 与 gachabase 来源的角色口径一致，也不重复出现两次 */
     const label = (PARAM_RE.lastIndex = 0, parts[0].replace(PARAM_RE, '').trim());
 
-    const values = Array.from({ length: 15 }, (_, lv) => {
+    const values = Array.from({ length: maxLevel }, (_, lv) => {
       let missing = false;
       const str = template.replace(PARAM_RE, (_, n, code) => {
         const arr = params[`param${n}`];
@@ -283,10 +286,13 @@ function buildLevels(attributes) {
   return rows.filter((r) => r.label || r.values.some((v) => v !== '-'));
 }
 
-function buildSkill(id, type, talent) {
+/* enka CDN 图标：genshin-db 只给文件名（如 Skill_S_Mona_01），页面按 ICON_BASE 取图 */
+const iconUrlOf = (filename) => (filename ? `${ICON_BASE}${filename}.png` : '');
+
+function buildSkill(id, type, talent, icon) {
   if (!talent || !talent.name) return null;
   const { description, lore, states } = parseDescription(talent.descriptionRaw || talent.description);
-  return { id, type, name: talent.name, description, lore, states, levels: buildLevels(talent.attributes) };
+  return { id, type, name: talent.name, description, lore, states, levels: buildLevels(talent.attributes), iconUrl: iconUrlOf(icon) };
 }
 
 /* 手动别名：本地名 → genshin-db 键（源数据错别字 / 旅行者按元素拆分） */
@@ -342,10 +348,15 @@ export function buildCharacter(name, { zhToEn = charZhToEn() } = {}) {
   const consts = GDB.constellations(en, LANG) || {};
   if (!info?.name && !talents?.combat1) return null;
 
+  const talentImages = talents.images || {};
+  const constImages = consts.images || {};
+
   const skills = [
-    buildSkill('attack', '普通攻击', talents.combat1),
-    buildSkill('skill', '元素战技', talents.combat2),
-    buildSkill('burst', '元素爆发', talents.combat3),
+    buildSkill('attack', '普通攻击', talents.combat1, talentImages.filename_combat1),
+    buildSkill('skill', '元素战技', talents.combat2, talentImages.filename_combat2),
+    buildSkill('burst', '元素爆发', talents.combat3, talentImages.filename_combat3),
+    // 替代冲刺（莫娜·虚实流动 / 神里绫华·神里流·霰步）：固定数值，不随天赋等级成长
+    buildSkill('sprint', '替代冲刺', talents.combatsp, talentImages.filename_combatsp),
   ].filter(Boolean);
 
   // 战斗被动（突破天赋）passive1/2 + 生活被动（固有天赋）passive3
@@ -355,7 +366,7 @@ export function buildCharacter(name, { zhToEn = charZhToEn() } = {}) {
     if (!p || !p.name) continue;
     const idx = parseInt(key.replace('passive', ''), 10);
     const { description, lore, states } = parseDescription(p.descriptionRaw || p.description);
-    passives.push({ name: p.name, description, lore, states, category: idx <= 2 ? 'ascension' : 'utility' });
+    passives.push({ name: p.name, description, lore, states, category: idx <= 2 ? 'ascension' : 'utility', iconUrl: iconUrlOf(talentImages[`filename_${key}`]) });
   }
 
   const constellations = [];
@@ -363,7 +374,8 @@ export function buildCharacter(name, { zhToEn = charZhToEn() } = {}) {
     const c = consts[key];
     if (!c || !c.name) continue;
     const { description, lore, states } = parseDescription(c.descriptionRaw || c.description);
-    constellations.push({ level: parseInt(key.slice(1), 10), name: c.name, description, lore, states });
+    const level = parseInt(key.slice(1), 10);
+    constellations.push({ level, name: c.name, description, lore, states, iconUrl: iconUrlOf(constImages[`filename_c${level}`]) });
   }
 
   const stats = statsFromGenshin(info);

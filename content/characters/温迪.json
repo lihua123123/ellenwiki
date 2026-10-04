@@ -276,6 +276,7 @@
           ]
         }
       ],
+      "iconUrl": "https://enka.network/ui/Skill_A_02.png",
       "buffs": {
         "description": "普通攻击\n进行至多六段的连续弓箭射击。\n\n重击\n进行伤害更高、更为精准的瞄准射击。\n瞄准时，眷顾天地的风会在箭矢上持续积聚。聚满了风之力的箭矢会造成风元素伤害。\n\n下落攻击\n从空中射出箭雨，并迅速下坠冲击地面，在落地时造成范围伤害。",
         "states": [
@@ -374,7 +375,8 @@
             "15.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Venti_01.png"
     },
     {
       "id": "burst",
@@ -484,7 +486,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Venti_01_HD.png"
     }
   ],
   "passives": [
@@ -493,21 +496,24 @@
       "description": "长按高天之歌后，会产生上升气流，持续20秒。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Venti_05.png"
     },
     {
       "name": "暴风之眼",
       "description": "风神之诗效果结束后，会为温迪恢复15点元素能量；\n若产生了元素转化，则同样为队伍中所有对应元素的角色恢复15点元素能量。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Venti_06.png"
     },
     {
       "name": "恒风随行",
       "description": "队伍中自己的角色滑翔消耗的体力降低20%。\n无法与效果完全相同的固有天赋叠加。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Explosion_Glide.png"
     },
     {
       "name": "魔女的前夜礼·颂时风若",
@@ -519,7 +525,8 @@
           "text": "元素爆发风神之诗创造的暴风之眼存在期间，附近的当前场上角色触发扩散或星扩散反应后的4秒内，该角色造成的伤害提升50%，并使温迪自己的暴风之眼造成原本135%的伤害。"
         }
       ],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/e7cf579d9cbf2a06306b096260fc3fcb.png"
     }
   ],
   "constellations": [
@@ -529,6 +536,7 @@
       "description": "瞄准射击会额外发射两枚分裂箭，分别造成原本33%的伤害。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Venti_01.png",
       "buffs": {
         "description": "瞄准射击会额外发射两枚分裂箭，分别造成原本33%的伤害。<buff>此外，飓风箭也会额外发射两枚能追踪敌人的箭矢，分别造成原本20%的伤害，该效果每0.25秒至多触发一次。</buff>"
       }
@@ -539,6 +547,7 @@
       "description": "高天之歌会使敌人的风元素抗性与物理抗性降低12%，持续10秒。\n被高天之歌击飞的敌人在落地前，风元素抗性与物理抗性额外降低12%。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Venti_02.png",
       "buffs": {
         "description": "高天之歌会使敌人的风元素抗性与物理抗性降低<buff>24%</buff>，持续10秒。\n<buff>此外，施放元素爆发风神之诗后，温迪将获得风起之时效果，并刷新元素战技</buff>高天之歌的<buff>冷却时间；飓风箭命中</buff>敌人<buff>后</buff>，<buff>也会有25%概率使温迪获得</buff>风<buff>起之时效果。\n\n风起之时\n点按施放</buff>元素<buff>战技高天之歌时，将造成原本300%的伤害</buff>。<buff>该效果持续15秒，并将在温迪点按施放元素战技高天之歌后移除。</buff>"
       }
@@ -548,7 +557,8 @@
       "name": "千风的诗篇",
       "description": "风神之诗的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Venti_02.png"
     },
     {
       "level": 4,
@@ -556,6 +566,7 @@
       "description": "温迪获取元素晶球或元素微粒后，获得25%风元素伤害加成，持续10秒。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Venti_03.png",
       "buffs": {
         "description": "温迪<buff>施放</buff>元素<buff>战技高天之歌</buff>或元素<buff>爆发风神之诗</buff>后，<buff>温迪与队伍中自己的当前场上其他角色</buff>获得25%风元素伤害加成，持续10秒。"
       }
@@ -565,7 +576,8 @@
       "name": "高天的协奏",
       "description": "高天之歌的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Venti_01.png"
     },
     {
       "level": 6,
@@ -573,6 +585,7 @@
       "description": "受风神之诗伤害的敌人，风元素抗性降低20%；\n若产生了元素转化，则使转换的元素抗性也降低20%。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Venti_04.png",
       "buffs": {
         "description": "受风神之诗伤害的敌人，风元素抗性降低20%；\n若产生了元素转化，则使转换的元素抗性也降低20%。<buff>此外，温迪对这些敌人造成的伤害，还会获得100%暴击伤害加成。</buff>"
       }

@@ -214,7 +214,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/1fcb7b09b82b0fd3eb99b690dd5fea05.png"
     },
     {
       "id": "skill",
@@ -481,7 +482,8 @@
             "18.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/2cdd6539f4c559d83f9183a3c90ccf90.png"
     },
     {
       "id": "burst",
@@ -580,7 +582,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/8233603cc0d5cc61ed9b79b0a09320da.png"
     }
   ],
   "passives": [
@@ -597,22 +600,26 @@
           "name": "灵剑",
           "text": "薇斯纳召唤出的灵体武器，会协同薇斯纳对敌人进行攻击，造成风元素伤害。\n薇斯纳可以通过以下方式召唤出灵剑：\n·施放境界提升的特殊元素战技翔风剑；\n·施放元素爆发致礼·献予女皇陛下；\n·施放命之座「不移的赤忱」中的翔风剑·变移。\n\n辉映·星扩散：灵剑转为造成视为星扩散反应伤害的风元素伤害。"
         }
-      ]
+      ],
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/9d4180c665bad309a5a0ce2a01c73d1f.png"
     },
     {
       "name": "理典·冬之凯风",
       "description": "辉映·星扩散：依据队伍中角色的元素类型，薇斯纳将获得对应效果。当前队伍中：\n·每有一位元素类型为冰元素或风元素的角色：薇斯纳的攻击力提升6%；\n·每有一位不为上述元素类型的角色：薇斯纳的元素精通提升25点。",
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/68ea0bb0245ecce8c73d04aed2b269bb.png"
     },
     {
       "name": "星耀祝礼·散华序饰",
       "description": "队伍中的角色触发冰元素扩散反应时，将转为触发星扩散反应，且基于薇斯纳的攻击力，提升队伍中角色造成的星扩散反应的基础伤害：每100点攻击力都将提升0.7%星扩散反应的基础伤害，至多通过这种方式提升14%伤害。\n队伍中的角色在附近触发星扩散反应后的8秒内，薇斯纳将会进入辉映·星扩散状态。",
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/be220768f77f0e021691e9eaea8f8e8c.png"
     },
     {
       "name": "宝魄巡行",
       "description": "不处于战斗状态下时，薇斯纳可以通过长按冲刺或跳跃进入「巡游」状态。\n\n巡游\n持续消耗体力，维持悬浮状态；进行冲刺或点按跳跃抬升高度时，将额外消耗体力。包括长按跳跃进入巡游状态在内，每次巡游至多抬升三次高度。\n\n此外，在至冬地区（挪德卡莱除外），不处于战斗状态下时，队伍中的当前场上角色位于空中时，切换薇斯纳登场时，薇斯纳将直接进入巡游状态，并恢复50点体力；该效果每10秒至多触发一次，且该效果在秘境、征讨领域、深境螺旋中无效。",
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/adf29e8e26623de3dc077b9e9f280964.png"
     }
   ],
   "constellations": [
@@ -633,7 +640,8 @@
           "name": "剑气",
           "text": "用于在巡风列装模式下施放特殊元素战技翔风剑的能量。\n薇斯纳可以通过以下方式积攒剑气：\n·在巡风列装模式下，进行普通攻击、重击、下落攻击，或施放命之座「不移的赤忱」中的翔风剑·变移；\n·施放元素战技操典·制胜有道；\n·施放元素爆发致礼·献予女皇陛下。"
         }
-      ]
+      ],
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/9948dad2087bdaf85f377fb985fcc079.png"
     },
     {
       "level": 2,
@@ -644,22 +652,26 @@
           "name": "巡风列装",
           "text": "施放元素战技操典·制胜有道后，薇斯纳将切换至该模式。该模式至多持续15秒，并具有如下特性：\n·提升薇斯纳的抗打断能力。\n·薇斯纳进行普通攻击、重击与下落攻击时，将转为造成无法被附魔覆盖的风元素伤害，并唤出风翎协同攻击敌人，造成额外的风元素伤害；每次唤出风翎时，都会为薇斯纳恢复一定的剑气。\n·薇斯纳可以消耗剑气，施放特殊的元素战技翔风剑，对敌人造成风元素伤害。\n·持续时间结束时，或施放三次最高境界的翔风剑后，薇斯纳将退出该模式，并清除所有剑气。"
         }
-      ]
+      ],
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/ef0bb40c51bbc3d8fff8fdd1243d4699.png"
     },
     {
       "level": 3,
       "name": "燔燎的献礼",
-      "description": "元素战技操典·制胜有道的技能等级提高3级。\n至多提升至15级。"
+      "description": "元素战技操典·制胜有道的技能等级提高3级。\n至多提升至15级。",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/2cdd6539f4c559d83f9183a3c90ccf90.png"
     },
     {
       "level": 4,
       "name": "先代的荣膺",
-      "description": "突破天赋「理典·冬之凯风」获得强化：攻击力提升与元素精通提升的效果改为原本的三倍。"
+      "description": "突破天赋「理典·冬之凯风」获得强化：攻击力提升与元素精通提升的效果改为原本的三倍。",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/d8e306a265fb2e08bc1291b310aa5507.png"
     },
     {
       "level": 5,
       "name": "贵种的职守",
-      "description": "元素爆发致礼·献予女皇陛下的技能等级提高3级。\n至多提升至15级。"
+      "description": "元素爆发致礼·献予女皇陛下的技能等级提高3级。\n至多提升至15级。",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/33801b3cbbfb617dba22ca74c5c7147b.png"
     },
     {
       "level": 6,
@@ -682,7 +694,8 @@
           "name": "擢升",
           "text": "特殊的伤害提升效果，与其他的伤害提升效果分别独立计算。"
         }
-      ]
+      ],
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/d94ded0867efabbb26b2851501238a0c.png"
     }
   ],
   "beta": true,

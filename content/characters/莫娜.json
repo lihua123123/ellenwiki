@@ -215,7 +215,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_Catalyst_MD.png"
     },
     {
       "id": "skill",
@@ -290,7 +291,8 @@
             "12.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Mona_01.png"
     },
     {
       "id": "burst",
@@ -425,7 +427,31 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Mona_01_HD.png"
+    },
+    {
+      "id": "sprint",
+      "type": "替代冲刺",
+      "name": "虚实流动",
+      "description": "替代冲刺\n隐入流水，以消耗体力为代价，化为激流快速移动。\n\n在虚实流动状态下，莫娜可以在水面上高速移动。\n结束虚实流动现身时，对周围的敌人施加潮湿状态。\n\n这是莫娜能办到，她老师却办不到的事情。无关水元素神之眼，毕竟她老师又不会被追着教育。",
+      "lore": "",
+      "states": [],
+      "levels": [
+        {
+          "label": "启动体力消耗",
+          "values": [
+            "10.00点"
+          ]
+        },
+        {
+          "label": "持续体力消耗",
+          "values": [
+            "每秒15.00点"
+          ]
+        }
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Mona_02.png"
     }
   ],
   "passives": [
@@ -434,21 +460,24 @@
       "description": "进入虚实流动状态2秒后，如果周围存在敌人，则自动凝聚一个虚影。\n通过这种方式产生的虚影持续2秒，造成的破裂伤害相当于水中幻愿伤害的50%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Mona_05.png"
     },
     {
       "name": "「托付于命运吧！」",
       "description": "莫娜的水元素伤害加成获得额外提升，提升程度相当于她的元素充能效率的20%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Mona_06.png"
     },
     {
       "name": "运行原理",
       "description": "合成武器突破素材时，有25%概率返还部分合成材料。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Combine_Weapon.png"
     },
     {
       "name": "魔女的前夜礼·天步真原",
@@ -460,7 +489,8 @@
           "text": "莫娜的普通攻击或重击命中敌人时，将获得一层「水星天的辉光」，该效果持续8秒，至多叠加3层；每0.1秒至多通过这种方式获得一层「水星天的辉光」。队伍中自己的其他角色对敌人触发蒸发反应时，将消耗所有的「水星天的辉光」，每消耗一层都会使本次蒸发反应造成的伤害提升5%。\n此外，莫娜的普通攻击或重击命中敌人时，还会使敌人的星异状态延长2秒；该效果每0.5秒至多触发一次，至多通过这种方式使敌人的星异状态延长8秒。"
         }
       ],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/4c07324daa68aa8bebae59afaf31c255.png"
     }
   ],
   "constellations": [
@@ -470,6 +500,7 @@
       "description": "队伍中自己的角色攻击命中处于星异状态下的敌人后的8秒内，水元素相关反应的效果提升：\n·感电反应造成的伤害提升15%，月感电反应造成的伤害提升15%，蒸发反应造成的伤害提升15%，水元素扩散反应造成的伤害提升15%，月结晶反应造成的伤害提升15%；\n·冻结反应的持续时间延长15%。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Mona_01.png",
       "buffs": {
         "description": "队伍中自己的角色攻击命中处于星异状态下的敌人后的8秒内，水元素相关反应的效果提升：\n·感电反应造成的伤害提升15%，月感电反应造成的伤害提升15%，蒸发反应造成的伤害提升15%，水元素扩散反应造成的伤害提升15%，月结晶反应造成的伤害提升15%；\n·冻结反应的持续时间延长15%。<buff>此外，队伍中处于后台的角色触发上述效果时，伤害提升效果还会提升至原本的160%。</buff>"
       }
@@ -480,6 +511,7 @@
       "description": "普通攻击命中时，有20%的几率自动施放一次重击。\n该效果每5秒只能触发一次。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Mona_02.png",
       "buffs": {
         "description": "普通攻击命中时，有20%的几率自动施放一次重击。<buff>此外，莫娜施放元素爆发星命定轨后的5秒内，下一次进行的普通攻击命中时，必定自动施放一次重击。上述自动施放重击的</buff>效果每5秒只能触发一次。<buff>莫娜的重击命中敌人时，还会使队伍中附近的所有角色的元素精通提升80点，持续12秒。</buff>"
       }
@@ -489,7 +521,8 @@
       "name": "不休的天象",
       "description": "星命定轨的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Mona_01.png"
     },
     {
       "level": 4,
@@ -497,6 +530,7 @@
       "description": "队伍中所有角色攻击处于星异状态下的敌人时，暴击率提升15%。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Mona_03.png",
       "buffs": {
         "description": "队伍中所有角色攻击处于星异状态下的敌人时，暴击率提升15%。<buff>队伍中所有魔导角色攻击处于星异状态下的敌人时，暴击伤害提升15%。</buff>"
       }
@@ -506,7 +540,8 @@
       "name": "命运的嘲弄",
       "description": "水中幻愿的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Mona_02.png"
     },
     {
       "level": 6,
@@ -514,6 +549,7 @@
       "description": "进入虚实流动状态后，每移动1秒，莫娜的下一次重击伤害就增加60%，\n通过这种方式至多可以获得180%重击伤害加成，该效果至多持续8秒。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Mona_04.png",
       "buffs": {
         "description": "<buff>莫娜在当前场上，处于</buff>虚实流动状态<buff>或附近存在处于星异状态下的敌人时</buff>，每1秒，莫娜的下一次重击伤害就增加60%，通过这种方式至多可以获得180%重击伤害加成，该效果至多持续8秒。<buff>此外，对处于星异状态下的敌人，莫娜的重击将会造成原本200%的伤害。</buff>"
       }

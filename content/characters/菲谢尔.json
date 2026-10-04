@@ -235,7 +235,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_02.png"
     },
     {
       "id": "skill",
@@ -325,7 +326,8 @@
             "25.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Fischl_01.png"
     },
     {
       "id": "burst",
@@ -395,7 +397,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Fischl_01_HD.png"
     }
   ],
   "passives": [
@@ -404,28 +407,32 @@
       "description": "菲谢尔以蓄力完成的瞄准射击命中奥兹时，奥兹会对附近敌人降下圣裁之雷，造成等同射击伤害152.7%的雷元素范围伤害。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Fischl_05.png"
     },
     {
       "name": "断罪雷影",
       "description": "奥兹在场时，若当前场上自己的角色攻击敌人时触发了雷元素相关反应，则会对敌人降下圣裁之雷，造成菲谢尔80%攻击力的雷元素伤害。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Fischl_06.png"
     },
     {
       "name": "吾之后花园",
       "description": "在蒙德执行探索派遣任务时，消耗的时间缩短25%。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Expedition_Mengde.png"
     },
     {
       "name": "魔女的前夜礼·宵世幻奏",
       "description": "完成魔女的课业·意外之题后，菲谢尔将成为魔导角色。队伍中编入至少2名魔导角色时，将获得魔导·秘仪效果，使魔导角色获得强化。\n\n魔导·秘仪\n见证无数世界沦入寂灭的夜鸦亲王奥兹华尔多·赫芙那梵茵斯呀，颂唱献给皇女的幽夜七重奏吧，此即为汇聚于因果终结地的灵魂裁灭命运漆黑的深罪之刻——\n此外，奥兹在场上时，队伍中的角色还会获得额外的强化效果：\n·队伍中附近的角色触发超载反应后的10秒内，菲谢尔与队伍中附近的当前场上其他角色的攻击力提升22.5%；\n·队伍中附近的角色触发感电或月感电反应后的10秒内，菲谢尔与队伍中附近的当前场上其他角色元素精通提升90点。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/3afb6ad43d23edcc0961c088cdb6b300.png"
     }
   ],
   "constellations": [
@@ -434,35 +441,40 @@
       "name": "幽邃鸦眼",
       "description": "奥兹不在战场上时，也会透过鸦眼守望菲谢尔。在菲谢尔对敌人进行普通攻击时，奥兹会通过鸦眼协同攻击，造成22%攻击力的伤害。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Fischl_01.png"
     },
     {
       "level": 2,
       "name": "圣裁影羽",
       "description": "施放夜巡影翼时，能额外造成200%攻击力的伤害，并使影响范围扩大50%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Fischl_02.png"
     },
     {
       "level": 3,
       "name": "渊色黑翼",
       "description": "夜巡影翼的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Fischl_01.png"
     },
     {
       "level": 4,
       "name": "皇女幻绮谭",
       "description": "施放至夜幻现时，会对周围的敌人造成222%攻击力的雷元素伤害；\n技能效果结束时，会为菲谢尔恢复20%生命值。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Fischl_03.png"
     },
     {
       "level": 5,
       "name": "至夜默示录",
       "description": "至夜幻现的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Fischl_02.png"
     },
     {
       "level": 6,
@@ -470,6 +482,7 @@
       "description": "奥兹的存在时间延长2秒。此外，奥兹会协同当前场上自己的角色一起攻击，造成菲谢尔30%攻击力的雷元素伤害。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Fischl_04.png",
       "buffs": {
         "description": "奥兹的存在时间延长2秒。此外，奥兹会协同当前场上自己的角色一起攻击，造成菲谢尔30%攻击力的雷元素伤害。<buff>奥兹进行协同攻击后，魔女的前夜礼·宵世幻奏中提升攻击力与元素精通的效果提高100%，持续10秒。</buff>"
       }

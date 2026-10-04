@@ -195,7 +195,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_Catalyst_MD.png"
     },
     {
       "id": "skill",
@@ -285,7 +286,8 @@
             "20.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Kokomi_01.png"
     },
     {
       "id": "burst",
@@ -455,7 +457,8 @@
             "70"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Kokomi_01_HD.png"
     }
   ],
   "passives": [
@@ -464,28 +467,32 @@
       "description": "施放海人化羽时，若场上有珊瑚宫心海自己的化海月，则重置化海月的存在时间。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kokomi_05.png"
     },
     {
       "name": "真珠御呗",
       "description": "处于海人化羽的仪来羽衣状态下时，珊瑚宫心海的普通攻击与重击基于生命值上限造成的伤害获得额外提升，提升程度相当于她的治疗加成的15%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kokomi_06.png"
     },
     {
       "name": "海祇姬君",
       "description": "队伍中自己的角色游泳消耗的体力降低20%。\n无法与效果完全相同的固有天赋叠加。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Explosion_Swim.png"
     },
     {
       "name": "庙算无遗",
       "description": "珊瑚宫心海的治疗加成提升25%，暴击率降低100%。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kokomi_07.png"
     }
   ],
   "constellations": [
@@ -494,42 +501,48 @@
       "name": "决水于溪",
       "description": "处于海人化羽的仪来羽衣状态下时，珊瑚宫心海普通攻击的最后一击会额外释放一只游鱼，造成相当于珊瑚宫心海生命值上限30%的水元素伤害。\n该伤害不被视为普通攻击伤害。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kokomi_01.png"
     },
     {
       "level": 2,
       "name": "波起云海",
       "description": "基于珊瑚宫心海的生命值上限，珊瑚宫心海对生命值低于或等于50%的角色，通过以下途径进行治疗的回复量获得提升：\n·海月之誓的化海月：生命值上限的4.5%\n·海人化羽的普通攻击与重击：生命值上限的0.6%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kokomi_02.png"
     },
     {
       "level": 3,
       "name": "海渚月舟",
       "description": "海人化羽的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Kokomi_02.png"
     },
     {
       "level": 4,
       "name": "月摄千川",
       "description": "处于海人化羽的仪来羽衣状态下时，珊瑚宫心海普通攻击的攻击速度提升10%，并会在普通攻击命中敌人时，恢复0.8点元素能量。\n该效果每0.2秒至多触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kokomi_03.png"
     },
     {
       "level": 5,
       "name": "百川集海",
       "description": "海月之誓的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Kokomi_01.png"
     },
     {
       "level": 6,
       "name": "珊瑚一心",
       "description": "处于海人化羽的仪来羽衣状态下时，珊瑚宫心海的普通攻击和重击对生命值高于或等于80%的角色进行治疗时，将获得40%水元素伤害加成，持续4秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kokomi_04.png"
     }
   ]
 }

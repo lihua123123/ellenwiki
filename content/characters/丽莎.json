@@ -215,7 +215,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_Catalyst_MD.png"
     },
     {
       "id": "skill",
@@ -365,7 +366,8 @@
             "16.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Lisa_01.png"
     },
     {
       "id": "burst",
@@ -455,7 +457,8 @@
             "80"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Lisa_01_HD.png"
     }
   ],
   "passives": [
@@ -464,21 +467,24 @@
       "description": "重击命中时，会为敌人附加苍雷的引雷效果。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Lisa_05.png"
     },
     {
       "name": "静电场力",
       "description": "敌人受到蔷薇的雷光攻击后，降低15%防御力，持续10秒。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Lisa_06.png"
     },
     {
       "name": "药剂通识",
       "description": "合成药剂时，有20%概率返还部分合成材料。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Combine_Potion.png"
     }
   ],
   "constellations": [
@@ -487,42 +493,48 @@
       "name": "无限的电回路",
       "description": "苍雷长按时，每个命中的敌人都会为丽莎恢复2点元素能量。\n通过这种方式，一次至多回复10点元素能量。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Lisa_01.png"
     },
     {
       "level": 2,
       "name": "空间电势结界",
       "description": "苍雷长按时，具有如下效果：\n·防御力提升25%；\n·提高丽莎的抗打断能力。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Lisa_02.png"
     },
     {
       "level": 3,
       "name": "谐振的雷光",
       "description": "蔷薇的雷光的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Lisa_02.png"
     },
     {
       "level": 4,
       "name": "如雨的电浆",
       "description": "蔷薇的雷光攻击时，放出的闪电增加至1~3道。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Lisa_03.png"
     },
     {
       "level": 5,
       "name": "等离态的落雷",
       "description": "苍雷的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Lisa_01.png"
     },
     {
       "level": 6,
       "name": "脉冲的魔女",
       "description": "丽莎登场时，对附近的敌人施加3层苍雷的引雷效果。\n该效果每5秒只能触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Lisa_04.png"
     }
   ]
 }

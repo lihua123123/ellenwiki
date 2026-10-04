@@ -255,7 +255,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_02.png"
     },
     {
       "id": "skill",
@@ -325,7 +326,8 @@
             "18.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Yoimiya_01.png"
     },
     {
       "id": "burst",
@@ -435,7 +437,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Yoimiya_01_HD.png"
     }
   ],
   "passives": [
@@ -444,21 +447,24 @@
       "description": "在焰硝庭火舞的持续期间内，宵宫的普通攻击命中后，将为宵宫提供2%火元素伤害加成。该效果持续3秒，至多叠加10次。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Yoimiya_05.png"
     },
     {
       "name": "炎昼风物诗",
       "description": "施放琉金云间草后的15秒内，附近的队伍中所有其他角色（不包括宵宫自己）攻击力提高10%。此外，依据宵宫自己施放琉金云间草时突破天赋「袖火百景图」的叠加层数，将额外提升上述的攻击力效果，每层提升1%攻击力。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Yoimiya_06.png"
     },
     {
       "name": "炎色配比法",
       "description": "制作装潢、摆件、景观类摆设时，有100%概率返还部分材料。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Yoimiya_07.png"
     }
   ],
   "constellations": [
@@ -467,42 +473,48 @@
       "name": "赤玉琉金",
       "description": "琉金云间草的琉金火光持续时间延长4秒。\n此外，处于宵宫自己的琉金火光影响下的敌人在持续期间内被击败时，宵宫的攻击力提高20%，持续20秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Yoimiya_01.png"
     },
     {
       "level": 2,
       "name": "万灯送火",
       "description": "宵宫的火元素伤害造成暴击后的6秒内，宵宫获得25%火元素伤害加成。\n宵宫处于队伍后台时，同样能获得该效果。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Yoimiya_02.png"
     },
     {
       "level": 3,
       "name": "鼠火戏法",
       "description": "焰硝庭火舞的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Yoimiya_01.png"
     },
     {
       "level": 4,
       "name": "花火职人心得",
       "description": "宵宫自己的琉金火光发生爆炸时，焰硝庭火舞的冷却时间减少1.2秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Yoimiya_03.png"
     },
     {
       "level": 5,
       "name": "真夏宵祭锦绘",
       "description": "琉金云间草的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Yoimiya_02.png"
     },
     {
       "level": 6,
       "name": "长野原龙势流星群",
       "description": "在焰硝庭火舞的持续期间内，宵宫主动进行普通攻击时，有50%几率发射一枚额外的炽焰箭，造成原本60%的伤害。该伤害视为普通攻击伤害。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Yoimiya_04.png"
     }
   ]
 }

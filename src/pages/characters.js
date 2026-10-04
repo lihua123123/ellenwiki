@@ -95,6 +95,13 @@ function iconImg(iconMap, label, cls = 'icon-18') {
   return src ? `<img class="${cls}" src="data:image/webp;base64,${src}" alt="${escapeHtml(label)}" />` : '';
 }
 
+/* 天赋 / 命之座图标（enka CDN；缺 iconUrl 的角色——如体验服新增——自然不显示） */
+function talentIconHtml(item, cls = 'talent-icon') {
+  return item?.iconUrl
+    ? `<img class="${cls}" src="${escapeHtml(item.iconUrl)}" alt="" loading="lazy" />`
+    : '';
+}
+
 /* 拍平角色数据并补上元素字段，再按实装版本倒序（新角色在前）；
  * 版本来自 content/characters/<名>.json 的 version 字段（scripts/sync-character-versions.mjs 写入），
  * 暂无版本的排在最后 */
@@ -383,10 +390,10 @@ const ATTACHMENT_TABLE_HEAD = `
   <colgroup><col style="width:15%"><col style="width:11%"><col style="width:20%"><col style="width:11%"><col style="width:31%"><col style="width:12%"></colgroup>
   <thead><tr><th>技能</th><th>元素量</th><th>附着规则</th><th>产球</th><th>备注</th><th>抗打断</th></tr></thead>`;
 
-/* 把产球/附着行按名称归入天赋分组：普攻/重击→attack，E→skill，Q→burst，
+/* 把产球/附着行按名称归入天赋分组：普攻/重击→attack，E→skill，Q→burst，冲刺→sprint，
  * 命座N→constellation N，突破/固有天赋N→passive N（归入突破天赋卡片） */
 function groupAttachmentRows(rows) {
-  const groups = { attack: [], skill: [], burst: [], other: [], passives: [] };
+  const groups = { attack: [], skill: [], burst: [], sprint: [], other: [], passives: [] };
   const constellations = {};
   rows.forEach(s => {
     const n = (s.name || '').trim();
@@ -402,6 +409,8 @@ function groupAttachmentRows(rows) {
       groups.burst.push(s);
     } else if (n.includes('普攻') || n.includes('重击') || n.includes('下落') || n.includes('瞄准') || n.includes('蓄力')) {
       groups.attack.push(s);
+    } else if (n.includes('冲刺')) {
+      groups.sprint.push(s);
     } else {
       groups.other.push(s);
     }
@@ -429,6 +438,14 @@ function levelSelector(skill) {
       <span class="level-row-label">${escapeHtml(l.label)}</span>
       <span class="level-row-value" data-values='${escapeHtml(JSON.stringify(l.values || []))}'>${escapeHtml(l.values?.[defaultLevel - 1] ?? '-')}</span>
     </div>`).join('');
+  /* 固定值天赋（如「替代冲刺」）只有 1 级：只列数值，不上无法使用的等级步进器 */
+  if (maxLevel <= 1) {
+    return `
+    <div class="level-panel fixed" data-max="1">
+      <div class="level-select-label"><span>天赋数值</span></div>
+      <div class="level-rows">${rows}</div>
+    </div>`;
+  }
   return `
     <div class="level-panel" data-level="${defaultLevel}" data-max="${maxLevel}">
       <div class="level-select-label"><span>天赋等级</span>
@@ -547,10 +564,16 @@ const loreHtml = (lore) => lore
   ? `<br><span class="talent-lore">${textHtml(lore)}</span>`
   : '';
 
+/* 天赋类型 / 命之座序号：跟在名称后面，用与逸闻同款的小字斜体样式 */
+const talentKindHtml = (text) => text
+  ? `<span class="talent-kind">${escapeHtml(text)}</span>`
+  : '';
+
 /* 页面加载后绑定等级选择器事件 */
 function bindLevelSelectors(root) {
   root.querySelectorAll('.level-panel').forEach(panel => {
     const current = panel.querySelector('.level-current');
+    if (!current) return;   /* 固定值天赋没有等级步进器 */
     const apply = () => {
       const lv = parseInt(panel.dataset.level, 10) - 1;
       panel.querySelectorAll('.level-row-value').forEach(el => {
@@ -635,6 +658,7 @@ const pendingCard = (type, name, rows = [], showTag = true) => `
 function renderDetailPlain(root, char, meta) {
   const groups = groupAttachmentRows(char.skills);
   const restRows = [
+    ...groups.sprint,
     ...groups.other,
     ...Object.values(groups.constellations).flat(),
     ...groups.passives.map(p => p.skill),
@@ -722,8 +746,9 @@ function renderDetailProfile(root, char, meta, profile) {
         <div class="talent-top">
           <div class="talent-left">
             <header class="talent-head">
-              <span class="talent-type">${escapeHtml(sk.type || '')}</span>
+              ${talentIconHtml(sk)}
               <h3 class="talent-name">${escapeHtml(sk.name || '')}</h3>
+              ${talentKindHtml(sk.type || '')}
             </header>
             ${descHtml(sk, refs)}
           </div>
@@ -732,6 +757,9 @@ function renderDetailProfile(root, char, meta, profile) {
         ${attachmentTable(rows)}
       </article>`;
   }).join('');
+
+  /* 没有「替代冲刺」天赋的角色：其附着行仍归入「其他」，不因分组而丢行 */
+  if (!(profile.skills || []).some(sk => sk.id === 'sprint') && groups.sprint.length) groups.other.push(...groups.sprint);
 
   const passives = profile.passives?.length
     ? profile.passives
@@ -753,7 +781,7 @@ function renderDetailProfile(root, char, meta, profile) {
 
   const passiveCard = (t, rows = []) => `
     <article class="talent-card compact ${rows.length ? '' : 'dimmed'}">
-      <header class="talent-head"><h3 class="talent-name">${escapeHtml(t.name)}</h3></header>
+      <header class="talent-head">${talentIconHtml(t)}<h3 class="talent-name">${escapeHtml(t.name)}</h3></header>
       ${descHtml(t, refs)}
       ${attachmentTable(rows)}
     </article>`;
@@ -762,7 +790,10 @@ function renderDetailProfile(root, char, meta, profile) {
     const rows = groups.constellations[c.level] || [];
     return `
       <article class="talent-card compact constellation-panel" data-constellation="${c.level}" ${c.level === 1 ? '' : 'hidden'}>
-        ${descHtml(c, refs)}
+        <div class="constellation-body">
+          ${talentIconHtml(c)}
+          <div class="constellation-text">${descHtml(c, refs)}</div>
+        </div>
         ${attachmentTable(rows)}
       </article>`;
   }).join('');

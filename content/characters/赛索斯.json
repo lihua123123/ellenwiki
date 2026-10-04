@@ -215,7 +215,8 @@
             "303.9%/379.6%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_02.png"
     },
     {
       "id": "skill",
@@ -285,7 +286,8 @@
             "8.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Sethos_01.png"
     },
     {
       "id": "burst",
@@ -375,7 +377,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Sethos_01_HD.png"
     }
   ],
   "passives": [
@@ -384,21 +387,24 @@
       "description": "瞄准射击时，赛索斯每1点当前元素能量都将使蓄力时间减少0.285秒，通过这种方式，至多使蓄力时间降低至0.3秒并计入20点元素能量；发射时，若发射的是贯影箭，将消耗计入的元素能量；如果发射的是一段蓄力的箭矢，则消耗计入元素能量的50%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Sethos_05.png"
     },
     {
       "name": "砂王的赐礼",
       "description": "赛索斯获得「热砂炫影」效果，使贯影箭造成的伤害值提升，提升值相当于赛索斯的元素精通的700%。\n热砂炫影期间满足以下任意条件时效果将被移除：\n·贯影箭首次命中敌人5秒后；\n·4枚贯影箭命中敌人后。\n\n热砂炫影效果下的贯影箭首次命中敌人15秒后将重新获得热砂炫影效果。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Sethos_06.png"
     },
     {
       "name": "猿月的显迹",
       "description": "在小地图上显示周围的须弥区域特产的位置。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Tighnari_07.png"
     }
   ],
   "constellations": [
@@ -407,42 +413,48 @@
       "name": "封龛谒灵歌",
       "description": "贯影箭的暴击率提升15%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Sethos_01.png"
     },
     {
       "level": 2,
       "name": "寂秘纸草经",
       "description": "满足以下任意一项条件时，赛索斯的雷元素伤害加成提升15%，持续10秒，至多叠加2层，每层独立计时：\n·通过瞄准射击消耗元素能量，此条件需要解锁突破天赋「黑鸢的密喻」；\n·通过古仪·鸣砂掣雷触发元素反应恢复元素能量；\n·施放秘仪·瞑光贯影。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Sethos_02.png"
     },
     {
       "level": 3,
       "name": "月升哲贤颂",
       "description": "普通攻击·王家苇箭术的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Sethos_01.png"
     },
     {
       "level": 4,
       "name": "真念鸵羽集",
       "description": "贯影箭或瞑弦矢命中2名及以上的敌人时，队伍中附近的所有角色的元素精通提升80点，持续10秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Sethos_03.png"
     },
     {
       "level": 5,
       "name": "荒神烈沙录",
       "description": "秘仪·瞑光贯影的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Sethos_02.png"
     },
     {
       "level": 6,
       "name": "巡日塔门书",
       "description": "贯影箭命中敌人后，将返还因突破天赋「黑鸢的密喻」消耗的元素能量，此效果每15秒至多触发一次，需要解锁突破天赋「黑鸢的密喻」。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Sethos_04.png"
     }
   ]
 }

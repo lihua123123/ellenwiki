@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -285,7 +286,8 @@
             "6.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Kaeya_01.png"
     },
     {
       "id": "burst",
@@ -375,7 +377,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Kaeya_01_HD.png"
     }
   ],
   "passives": [
@@ -384,21 +387,24 @@
       "description": "霜袭每击中一个单位，便为凯亚恢复等同于攻击力15%的生命值。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kaeya_05.png"
     },
     {
       "name": "冰渊之心",
       "description": "霜袭使敌人冻结时，被冻结的敌人会掉落额外的元素微粒。\n一次霜袭至多因此产生2个额外元素微粒。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kaeya_06.png"
     },
     {
       "name": "隐藏的实力",
       "description": "队伍中自己的角色冲刺消耗的体力降低20%。\n无法与效果完全相同的固有天赋叠加。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Explosion_Sprint.png"
     }
   ],
   "constellations": [
@@ -407,42 +413,48 @@
       "name": "卓越的血脉",
       "description": "对受到冰元素影响的敌人，凯亚的普通攻击与重击暴击率提升15%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kaeya_01.png"
     },
     {
       "level": 2,
       "name": "无尽的霜舞",
       "description": "在凛冽轮舞的持续时间内击败敌人时，持续时间延长2.5秒，最多不会超过15秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kaeya_02.png"
     },
     {
       "level": 3,
       "name": "凛冽的冰戏",
       "description": "霜袭的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Kaeya_01.png"
     },
     {
       "level": 4,
       "name": "极寒的轻吻",
       "description": "凯亚的生命值低于20%时自动触发：\n生成一个伤害吸收量等于生命值上限30%的护盾，持续20秒。\n该护盾对冰元素伤害有250%的吸收效果。\n该效果每60秒只能触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kaeya_03.png"
     },
     {
       "level": 5,
       "name": "至冷的拥抱",
       "description": "凛冽轮舞的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Kaeya_02.png"
     },
     {
       "level": 6,
       "name": "轮旋的冰凌",
       "description": "凛冽轮舞会产生一个额外的寒冰之棱，并在施放时返还15点元素能量。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kaeya_04.png"
     }
   ]
 }

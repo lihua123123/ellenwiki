@@ -215,7 +215,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_03.png"
     },
     {
       "id": "skill",
@@ -325,7 +326,8 @@
             "9.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Candace_01.png"
     },
     {
       "id": "burst",
@@ -480,7 +482,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Candace_01_HD.png"
     }
   ],
   "passives": [
@@ -489,21 +492,24 @@
       "description": "若坎蒂丝在圣仪·苍鹭庇卫长按期间受到攻击，会立即完成蓄力。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Candace_05.png"
     },
     {
       "name": "漫沙陨穹",
       "description": "处于圣仪·灰鸰衒潮的赤冕祝祷状态下的角色，普通攻击对敌人造成元素伤害时，坎蒂丝每1000点生命值上限会使这次伤害提高0.5%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Candace_06.png"
     },
     {
       "name": "向拂晓的初光",
       "description": "队伍中自己的角色攀爬消耗的体力降低20%。\n无法与效果完全相同的固有天赋叠加。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Explosion_Climb.png"
     }
   ],
   "constellations": [
@@ -512,42 +518,48 @@
       "name": "赤沙的归嗣",
       "description": "圣仪·灰鸰衒潮的赤冕祝祷状态持续时间延长3秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Candace_01.png"
     },
     {
       "level": 2,
       "name": "贯月的耀锋",
       "description": "圣仪·苍鹭庇卫命中敌人时，坎蒂丝的生命值上限提升20%，持续15秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Candace_02.png"
     },
     {
       "level": 3,
       "name": "织狩的奉祀",
       "description": "圣仪·灰鸰衒潮的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Candace_01.png"
     },
     {
       "level": 4,
       "name": "守戍的誓命",
       "description": "缩短圣仪·苍鹭庇卫长按的冷却时间，使其降低至与点按的冷却时间相同。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Candace_03.png"
     },
     {
       "level": 5,
       "name": "萦金的苍瞳",
       "description": "圣仪·苍鹭庇卫的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Candace_02.png"
     },
     {
       "level": 6,
       "name": "衍溢的汐潮",
       "description": "处于圣仪·灰鸰衒潮的赤冕祝祷状态下的当前场上角色（不包括坎蒂丝自己），在普通攻击对敌人造成元素伤害时，将释放衍潮冲击，造成相当于坎蒂丝生命值上限15%水元素范围伤害。\n该效果每2.3秒至多触发一次，造成的伤害视为元素爆发伤害。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Candace_04.png"
     }
   ]
 }

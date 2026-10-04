@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -450,7 +451,8 @@
             "15.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Odette_01.png"
     },
     {
       "id": "burst",
@@ -609,7 +611,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Odette_01_HD.png"
     }
   ],
   "passives": [
@@ -627,14 +630,16 @@
           "text": "解锁突破天赋「获选者的春祭」后，奥黛塔召唤独舞倒影时将会获得的特殊效果。\n每层华彩都会使角色造成的星烁反应伤害提升15%，持续至独舞倒影退场或重新召唤独舞倒影。\n当奥黛塔处于队伍后台时，奥黛塔每秒会清除1层华彩，并使队伍中附近的其他角色获得对应层数的华彩。"
         }
       ],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Odette_05.png"
     },
     {
       "name": "赤忱者的悲歌",
       "description": "基于奥黛塔攻击力超过1000点的部分，每100点攻击力都将使奥黛塔造成的星烁反应伤害额外造成原本1.5%的伤害，至多通过这种方式额外造成原本30%的伤害。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Odette_06.png"
     },
     {
       "name": "星耀祝礼·银晓之舞",
@@ -646,14 +651,16 @@
           "text": "触发星超导反应时，附近的区域会短暂变化为极星辉域；处于极星辉域中时，特定角色将会进入辉映·星超导状态，使其不同技能分别获得对应的强化效果。"
         }
       ],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Odette_07.png"
     },
     {
       "name": "回响中的冬梦",
       "description": "在小地图上显示周围的至冬区域特产的位置。\n在闲暇时练习舞蹈，或许还会触发其他的效果…",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Odette_08.png"
     }
   ],
   "constellations": [
@@ -675,7 +682,8 @@
           "name": "华彩",
           "text": "解锁突破天赋「获选者的春祭」后，奥黛塔召唤独舞倒影时将会获得的特殊效果。\n每层华彩都会使角色造成的星烁反应伤害提升15%，持续至独舞倒影退场或重新召唤独舞倒影。\n当奥黛塔处于队伍后台时，奥黛塔每秒会清除1层华彩，并使队伍中附近的其他角色获得对应层数的华彩。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Odette_01.png"
     },
     {
       "level": 2,
@@ -695,28 +703,32 @@
           "name": "辉映·星烁",
           "text": "辉映·星超导与辉映·星扩散统称为辉映·星烁状态。\n角色同时只能受到一种辉映状态影响，且优先被辉映·星超导影响。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Odette_02.png"
     },
     {
       "level": 3,
       "name": "「我要追逐呼啸的风，向上独行」",
       "description": "元素战技柔板·幻灵夜舞的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Odette_01.png"
     },
     {
       "level": 4,
       "name": "「向上，坠往恍惚、燃烧的蓝空」",
       "description": "元素爆发疾板·苍羽一梦获得强化：奥黛塔获得雪鹄之梦时，还会使队伍中附近的其他角色造成的星烁反应伤害提升，提升值相当于雪鹄之梦效果的50%。\n\n此外，队伍中的角色对敌人造成星烁反应伤害时，奥黛塔还会对敌人进行一次协同攻击，造成一次冰元素范围伤害，每3.5秒至多触发一次，该伤害视为：\n·辉映·星超导或不处于辉映状态：相当于奥黛塔攻击力66%的星超导反应伤害；\n·辉映·星扩散：相当于奥黛塔攻击力99%的星扩散反应伤害。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Odette_03.png"
     },
     {
       "level": 5,
       "name": "「看呀，我已告别尘与土的苦痛」",
       "description": "元素爆发疾板·苍羽一梦的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Odette_02.png"
     },
     {
       "level": 6,
@@ -732,7 +744,8 @@
           "name": "擢升",
           "text": "特殊的伤害提升效果，与其他的伤害提升效果分别独立计算。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Odette_04.png"
     }
   ]
 }

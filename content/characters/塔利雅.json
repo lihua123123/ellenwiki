@@ -215,7 +215,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -265,7 +266,8 @@
             "9.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Dahlia_01.png"
     },
     {
       "id": "burst",
@@ -375,7 +377,8 @@
             "15.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Dahlia_01_HD.png"
     }
   ],
   "passives": [
@@ -384,21 +387,24 @@
       "description": "处于元素爆发纯耀的祷咏中的「西风之眷」效果影响下的角色对敌人触发冻结反应时，将会为塔利雅赋予2层「祝颂」效果，该效果8秒内至多触发一次。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Dahlia_05.png"
     },
     {
       "name": "黠巧欢愉的祈颂",
       "description": "队伍中自己的当前场上角色处于元素爆发纯耀的祷咏中的「西风之眷」效果影响下时，攻击速度将获得提升，提升值基于塔利雅的生命值上限：每1000点生命值上限都将提升0.5%攻击速度，至多通过这种方式提升至20%攻击速度。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Dahlia_06.png"
     },
     {
       "name": "归风相随的巡礼",
       "description": "在白天（6时至18时），队伍中自己的角色获得迅行效果：移动速度提高10%。\n该效果在秘境、征讨领域、深境螺旋中无效，迅行效果无法叠加。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Dehya_07.png"
     }
   ],
   "constellations": [
@@ -407,42 +413,48 @@
       "name": "无瑕之引",
       "description": "塔利雅每获得一层元素爆发纯耀的祷咏中的「祝颂」效果，都将恢复2.5点元素能量。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Dahlia_01.png"
     },
     {
       "level": 2,
       "name": "眷怜启应",
       "description": "塔利雅消耗元素爆发纯耀的祷咏中的「祝颂」效果唤出圣眷护盾后，处于圣眷护盾庇护下的角色，护盾强效提升25%，持续12秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Dahlia_02.png"
     },
     {
       "level": 3,
       "name": "风花之奉",
       "description": "元素爆发纯耀的祷咏的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Dahlia_01.png"
     },
     {
       "level": 4,
       "name": "众愿的集祷",
       "description": "元素爆发纯耀的祷咏中的「西风之眷」效果的持续时间延长3秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Dahlia_03.png"
     },
     {
       "level": 5,
       "name": "遂成的狡意",
       "description": "元素战技圣浸的礼典的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Dahlia_02.png"
     },
     {
       "level": 6,
       "name": "愿一切欢睦陪伴你",
       "description": "处于元素爆发纯耀的祷咏中的「西风之眷」效果影响下的当前场上角色的攻击速度提升10%。\n此外，处于西风之眷效果影响下的当前场上角色倒下时，则立即：\n·复苏该角色；\n·将该角色生命值恢复至100%。\n该效果每15分钟只能触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Dahlia_04.png"
     }
   ]
 }

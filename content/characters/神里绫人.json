@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -410,7 +411,8 @@
             "12.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Ayato_01.png"
     },
     {
       "id": "burst",
@@ -520,7 +522,8 @@
             "80"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Ayato_01_HD.png"
     }
   ],
   "passives": [
@@ -529,21 +532,24 @@
       "description": "神里流·镜花具有如下效果：\n·施放后，神里绫人会获得2层浪闪效果；\n·水影破裂后，神里绫人将获得等同于叠加上限层数的浪闪效果。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ayato_05.png"
     },
     {
       "name": "神里流·破月渐盈",
       "description": "神里绫人处于队伍后台时，若元素能量低于40点，每1秒为自己恢复2点元素能量。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ayato_06.png"
     },
     {
       "name": "神里流·日常茶饭",
       "description": "完美烹饪食物时，有18%概率额外获得一个「奇怪的」品质的同种料理。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ayato_07.png"
     }
   ],
   "constellations": [
@@ -552,42 +558,48 @@
       "name": "镜华风姿",
       "description": "对于生命值低于或等于50%的敌人，瞬水剑造成的伤害提升40%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ayato_01.png"
     },
     {
       "level": 2,
       "name": "世有源泉",
       "description": "浪闪叠加上限提升至5层；神里绫人处于至少3层浪闪状态下时，将提升50%生命值上限。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ayato_02.png"
     },
     {
       "level": 3,
       "name": "无意弄花",
       "description": "神里流·镜花的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Ayato_02.png"
     },
     {
       "level": 4,
       "name": "不厌细流",
       "description": "施放神里流·水囿后，队伍中附近的角色普通攻击的攻击速度提升15%，持续15秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ayato_03.png"
     },
     {
       "level": 5,
       "name": "万水一露",
       "description": "神里流·水囿的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Ayato_01.png"
     },
     {
       "level": 6,
       "name": "滥觞无底",
       "description": "施放神里流·镜花之后，神里绫人的下一次瞬水剑攻击命中敌人时，将进行2次额外的瞬水剑攻击，各自能造成神里绫人攻击力450%的伤害。\n此两次瞬水剑攻击不会受到浪闪的增益。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ayato_04.png"
     }
   ]
 }

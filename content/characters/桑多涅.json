@@ -268,7 +268,8 @@
             "399%/498%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_04.png"
     },
     {
       "id": "skill",
@@ -367,7 +368,8 @@
             "4.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_MarionetteNew_01.png"
     },
     {
       "id": "burst",
@@ -502,7 +504,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_MarionetteNew_01_HD.png"
     }
   ],
   "passives": [
@@ -520,14 +523,16 @@
           "text": "处于解算模式下时，法洁欧的解算功率会不断上升；解算功率达到上限时，将无法维持或重新进入解算模式。"
         }
       ],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_MarionetteNew_05.png"
     },
     {
       "name": "淑女的行事准则",
       "description": "基于桑多涅的攻击力，提升其元素精通：每100点攻击力都将使桑多涅的元素精通提升8点，至多通过这种方式提升160点元素精通。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_MarionetteNew_06.png"
     },
     {
       "name": "星耀祝礼·唯理为光",
@@ -539,14 +544,16 @@
           "text": "触发星超导反应时，附近的区域会短暂变化为极星辉域；处于极星辉域中时，特定角色将会进入辉映·星超导状态，使其不同技能分别获得对应的强化效果。"
         }
       ],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_MarionetteNew_07.png"
     },
     {
       "name": "茶会的序曲与长长的故事",
       "description": "桑多涅处于队伍中时，向凯瑟琳交付每日委托任务后，会获得额外的茶点奖励。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_MarionetteNew_08.png"
     }
   ],
   "constellations": [
@@ -564,7 +571,8 @@
           "name": "解算功率",
           "text": "处于解算模式下时，法洁欧的解算功率会不断上升；解算功率达到上限时，将无法维持或重新进入解算模式。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_MarionetteNew_01.png"
     },
     {
       "level": 2,
@@ -576,28 +584,32 @@
           "name": "解算",
           "text": "进行重击时，法洁欧将会切换至该模式。\n处于该模式下时，法洁欧会对前方的敌人进行扫射攻击，并周期性发射冷凝射线，造成冰元素范围伤害。\n辉映·星烁：冷凝射线转为造成视为对应星烁反应伤害的冰元素范围伤害。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_MarionetteNew_02.png"
     },
     {
       "level": 3,
       "name": "不叹日落，不羡月升",
       "description": "普通攻击事象数式·自明演绎的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_MarionetteNew_01.png"
     },
     {
       "level": 4,
       "name": "世事皆数，昼来夜往",
       "description": "桑多涅的星超导/星扩散反应伤害命中敌人时，还会额外召唤一台棱晶谐振炮进行协同攻击，对敌人造成一次相当于桑多涅攻击力125%/187.5%的冰元素伤害，该伤害视为对应星烁反应造成的伤害。该效果每4秒至多触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_MarionetteNew_03.png"
     },
     {
       "level": 5,
       "name": "万象皆灰，唯理明畅",
       "description": "元素爆发事象数式·万理证毕的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_MarionetteNew_02.png"
     },
     {
       "level": 6,
@@ -613,7 +625,8 @@
           "name": "擢升",
           "text": "特殊的伤害提升效果，与其他的伤害提升效果分别独立计算。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_MarionetteNew_04.png"
     }
   ]
 }

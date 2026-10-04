@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -345,7 +346,8 @@
             "5.0/7.5/10.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Bennett_01.png"
     },
     {
       "id": "burst",
@@ -475,7 +477,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Bennett_01_HD.png"
     }
   ],
   "passives": [
@@ -484,21 +487,24 @@
       "description": "热情过载的冷却时间减少20%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Bennett_05.png"
     },
     {
       "name": "无畏的热血",
       "description": "在美妙旅程领域内，热情过载具有如下效果：\n·冷却时间减少50%；\n·二段蓄力不会将班尼特自身击飞。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Bennett_06.png"
     },
     {
       "name": "应该安全",
       "description": "在蒙德执行探索派遣任务时，消耗的时间缩短25%。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Expedition_Mengde.png"
     }
   ],
   "constellations": [
@@ -507,42 +513,48 @@
       "name": "冒险憧憬",
       "description": "美妙旅程的攻击力提升效果不再有生命值限制，数值上追加班尼特基础攻击力的20%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Bennett_01.png"
     },
     {
       "level": 2,
       "name": "踏破绝境",
       "description": "班尼特的生命值低于70%时，元素充能效率提高30%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Bennett_02.png"
     },
     {
       "level": 3,
       "name": "火热激情",
       "description": "热情过载的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Bennett_01.png"
     },
     {
       "level": 4,
       "name": "热情不灭",
       "description": "施放一段蓄力的热情过载时，在技能第二段攻击中进行普通攻击，可以施放额外的追击。\n追击的伤害等同于第二段攻击的135%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Bennett_03.png"
     },
     {
       "level": 5,
       "name": "开拓的心魂",
       "description": "美妙旅程的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Bennett_02.png"
     },
     {
       "level": 6,
       "name": "烈火与勇气",
       "description": "处在美妙旅程领域内的队伍中当前场上单手剑、双手剑、长柄武器角色获得15%火元素伤害加成，并获得火元素附魔。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Bennett_04.png"
     }
   ]
 }

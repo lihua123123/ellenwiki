@@ -317,7 +317,7 @@ async function buildCharacterEntry(entry, { dry = false } = {}) {
           values: (t.levels || []).map((lv) => renderTemplate(textOf(lv.descriptions?.[i]?.text), lv.parameters)),
         });
       });
-      return { id: kind, type: TALENT_TYPE[kind], name: textOf(t.name), description: cleanText(textOf(t.description)), lore: '', states: [], levels };
+      return { id: kind, type: TALENT_TYPE[kind], name: textOf(t.name), description: cleanText(textOf(t.description)), lore: '', states: [], levels, iconUrl: refs.assets?.[t.icon_path_hash]?.url || '' };
     });
 
   const passives = (dto.passives || [])
@@ -326,12 +326,14 @@ async function buildCharacterEntry(entry, { dry = false } = {}) {
       name: textOf(p.name),
       description: cleanText(textOf(p.description)),
       category: passiveCategoryOf(p),
+      iconUrl: refs.assets?.[p.icon_path_hash]?.url || '',
     }));
 
   const constellations = (dto.constellations || []).map((c, i) => ({
     level: i + 1,
     name: textOf(c.name),
     description: cleanText(textOf(c.description)),
+    iconUrl: refs.assets?.[c.icon_path_hash]?.url || '',
   }));
 
   /* 头像（方形立绘）：仅新增时下载 */

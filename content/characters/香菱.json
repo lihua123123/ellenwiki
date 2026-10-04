@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_03.png"
     },
     {
       "id": "skill",
@@ -285,7 +286,8 @@
             "12.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Xiangling_01.png"
     },
     {
       "id": "burst",
@@ -435,7 +437,8 @@
             "80"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Xiangling_01_HD.png"
     }
   ],
   "passives": [
@@ -444,21 +447,24 @@
       "description": "锅巴的喷火距离提高20%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xiangling_05.png"
     },
     {
       "name": "绝云朝天椒",
       "description": "锅巴出击效果结束时，锅巴会在消失的位置留下辣椒。拾取辣椒会提高10%攻击力，持续10秒。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xiangling_06.png"
     },
     {
       "name": "万民堂大厨",
       "description": "完美烹饪攻击类食物时，有12%概率获得2倍产出。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Cook_Attack.png"
     }
   ],
   "constellations": [
@@ -467,42 +473,48 @@
       "name": "外酥里嫩",
       "description": "受到锅巴攻击的敌人，火元素抗性降低15%，持续6秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xiangling_01.png"
     },
     {
       "level": 2,
       "name": "大火宽油",
       "description": "普通攻击的最后一击会对敌人施加持续2秒的内爆效果，持续时间结束时会发生爆炸，造成75%攻击力的火元素范围伤害。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xiangling_02.png"
     },
     {
       "level": 3,
       "name": "武火急烹",
       "description": "旋火轮的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Xiangling_02.png"
     },
     {
       "level": 4,
       "name": "文火慢煨",
       "description": "旋火轮的持续时间延长40%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xiangling_03.png"
     },
     {
       "level": 5,
       "name": "锅巴凶猛",
       "description": "锅巴出击的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Xiangling_01.png"
     },
     {
       "level": 6,
       "name": "大龙卷旋火轮",
       "description": "旋火轮持续期间，队伍中所有角色获得15%火元素伤害加成。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Xiangling_04.png"
     }
   ]
 }

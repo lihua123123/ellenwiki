@@ -195,7 +195,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_02.png"
     },
     {
       "id": "skill",
@@ -305,7 +306,8 @@
             "18.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Linnea_01.png"
     },
     {
       "id": "burst",
@@ -415,7 +417,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Linnea_01_HD.png"
     }
   ],
   "passives": [
@@ -424,28 +427,32 @@
       "description": "露米在场上时，露米附近敌人的岩元素抗性会降低15%。\n\n月兆·满辉：莉奈娅的元素战技对策·露米呀吼吼！和元素爆发备忘·绝境生存指南获得强化，呼唤露米上场后，露米附近敌人的岩元素抗性还会进一步降低15%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linnea_05.png"
     },
     {
       "name": "万类博物图鉴",
       "description": "依据队伍中自己的当前场上角色，莉奈娅会提升队伍中特定角色的元素精通，提升值基于莉奈娅防御力的5%。若队伍中自己的当前场上角色：\n·为月兆角色：提升该角色的元素精通；\n·不为月兆角色：提升莉奈娅自己的元素精通。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linnea_06.png"
     },
     {
       "name": "月兆祝赐·栖地考察",
       "description": "队伍中的角色触发水元素结晶反应时，将转为触发月结晶反应，且基于莉奈娅的防御力，提升队伍中角色造成的月结晶反应的基础伤害：每100点防御力都将提升0.7%月结晶反应的基础伤害，至多通过这种方式提升14%伤害。\n\n此外，莉奈娅在队伍中时，队伍的月兆将会上升一级。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linnea_07.png"
     },
     {
       "name": "大师级的冒险者",
       "description": "不处于战斗状态下时，莉奈娅进行瞄准射击所需的蓄力时间大幅减少，并会转为射出特制的超便利快捷矢，依据命中的目标，产生不同的效果。若命中的目标为：\n·特定动物：超便利快捷矢会转化为特殊的「网」，可以拘出小动物的神形，并以其为媒介，再次化出小动物的形体；每周可使用的「网」数量有限。\n·锻造用矿石的矿脉：莉奈娅会派出露米，快速破坏被超便利快捷矢标记的矿体，并收集掉落的矿石。若露米不在场上，则会短暂呼唤出露米，帮助莉奈娅获取矿石。\n\n超便利快捷矢对敌人造成的伤害降低为原本的20%。此外，短时间内发射一定数量的超便利快捷矢后，莉奈娅需要进行短暂的休息，才能继续发射。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linnea_08.png"
     }
   ],
   "constellations": [
@@ -454,35 +461,40 @@
       "name": "未完成的分类",
       "description": "施放元素战技对策·露米呀吼吼！时，或触发月笼谐奏时，莉奈娅将获得6层「历览编录」效果，该效果持续10秒，至多叠加18层。队伍中附近的角色造成月结晶反应伤害时，将消耗一层「历览编录」，提升造成的伤害，提升值相当于莉奈娅防御力的75%。\n此外，露米在究极厉害形态下使用百万吨重锤时，莉奈娅可以消耗至多5层「历览编录」，每层都会使造成的伤害提升，提升值相当于莉奈娅防御力的150%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linnea_01.png"
     },
     {
       "level": 2,
       "name": "喜或悲的谕告",
       "description": "触发月笼谐奏后的8秒内，队伍中所有元素类型为水元素与岩元素的角色的暴击伤害提升40%，且露米在究极厉害形态下使用百万吨重锤的暴击伤害额外提升150%。\n\n月兆·满辉：露米在超厉害形态下使用加力重锤时，或在究极厉害形态下使用百万吨重锤时，会触发一次月笼谐奏，且本次月笼谐奏视为队伍中所有元素类型为水元素与岩元素的角色均在反应中施加了元素。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linnea_02.png"
     },
     {
       "level": 3,
       "name": "热闹的记录页",
       "description": "元素战技对策·露米呀吼吼！的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Linnea_01.png"
     },
     {
       "level": 4,
       "name": "专家的直感觉",
       "description": "触发月笼谐奏后的5秒内，莉奈娅与队伍中自己的当前场上角色的防御力分别提升25%。莉奈娅在场上时，上述防御力提升效果可叠加。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linnea_03.png"
     },
     {
       "level": 5,
       "name": "仙乡的赠别礼",
       "description": "元素爆发备忘·绝境生存指南的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Linnea_02.png"
     },
     {
       "level": 6,
@@ -494,7 +506,8 @@
           "name": "擢升",
           "text": "特殊的伤害提升效果，与其他的伤害提升效果分别独立计算。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Linnea_04.png"
     }
   ]
 }

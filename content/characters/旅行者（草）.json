@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -285,7 +286,8 @@
             "8.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_PlayerGrass_01.png"
     },
     {
       "id": "burst",
@@ -400,7 +402,8 @@
             "80"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_PlayerGrass_01_HD.png"
     }
   ],
   "passives": [
@@ -409,21 +412,24 @@
       "description": "草灯莲将在其存在期间每秒获得一层莲光遍照效果，使其领域内的当前场上角色的元素精通提升6点。草灯莲的莲光遍照效果至多叠加10层。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_PlayerGrass_01.png"
     },
     {
       "name": "繁庑的丛草",
       "description": "旅行者自己的每点元素精通，能使草缘剑造成的伤害提升0.15%，偃草若化造成的伤害提升0.1%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_PlayerGrass_02.png"
     },
     {
       "name": "异邦的蕙草",
       "description": "从过往的旅途中，汲取全新的力量。每与一种元素进行过共鸣，便会获得额外的强化效果。\n\n此外，附近场上产生草原核（包括丰穰之核、诳言之核）时，或队伍获得草露时，旅行者将获得一层「兰草之刃」，上述两种方式每4秒分别至多使旅行者获得1层「兰草之刃」，至多叠加3层。拥有3层「兰草之刃」时进行重击，会消耗所有的「兰草之刃」，转为进行特殊的重击·草惠。\n\n重击·草惠\n·每段重击将造成伤害更高的草元素伤害，伤害提升相当于旅行者攻击力的80%，并在原地创造两枚蔓草莲台，分别在4/8秒后爆炸，造成相当于旅行者攻击力120%的草元素伤害，该伤害视为重击伤害；\n·每15秒至多进行一次重击·草惠。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_PlayerGrass_03.png"
     }
   ],
   "constellations": [
@@ -432,42 +438,48 @@
       "name": "寄身的倚草",
       "description": "草缘剑命中敌人后，将为旅行者恢复3.5点元素能量。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerGrass_01.png"
     },
     {
       "level": 2,
       "name": "健韧的劲草",
       "description": "草灯莲的存在时间延长3秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerGrass_02.png"
     },
     {
       "level": 3,
       "name": "婆娑的瑶草",
       "description": "草缘剑的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerGrass_03.png"
     },
     {
       "level": 4,
       "name": "如饴的蜜草",
       "description": "草灯莲发生莲光幻变转化后，将获得5层突破天赋「蔓生的埜草」的莲光遍照效果。\n需要解锁突破天赋「蔓生的埜草」。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerGrass_04.png"
     },
     {
       "level": 5,
       "name": "迅生的丰草",
       "description": "偃草若化的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerGrass_05.png"
     },
     {
       "level": 6,
       "name": "蕴思的霜草",
       "description": "处于草灯莲的莲光遍照效果影响下的角色获得12%草元素伤害加成；若草灯莲发生过莲光幻变转化，还将获得12%对应元素伤害加成。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerGrass_06.png"
     }
   ]
 }

@@ -215,7 +215,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_Catalyst_MD.png"
     },
     {
       "id": "skill",
@@ -370,7 +371,8 @@
             "6.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Nahida_01.png"
     },
     {
       "id": "burst",
@@ -560,7 +562,8 @@
             "50"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Nahida_01_HD.png"
     }
   ],
   "passives": [
@@ -569,21 +572,24 @@
       "description": "施放心景幻成时，摩耶之殿将获得以下效果：\n依据队伍中元素精通最高的角色的元素精通数值的25%，提高领域内当前场上角色的元素精通。\n通过这种方式，至多提升250点元素精通。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nahida_05.png"
     },
     {
       "name": "慧明缘觉智论",
       "description": "基于纳西妲元素精通超过200点的部分，每1点元素精通能使所闻遍计的灭净三业造成的伤害提升0.1%，暴击率提升0.03%。\n通过这种方式，至多使灭净三业造成的伤害提升80%，暴击率提升24%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nahida_06.png"
     },
     {
       "name": "诸相随念净行",
       "description": "纳西妲能够通过所闻遍计，与一定范围内的部分采集物进行交互。\n或许还有其他的效果…",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nahida_07.png"
     }
   ],
   "constellations": [
@@ -592,42 +598,48 @@
       "name": "心识蕴藏之种",
       "description": "展开摩耶之殿计算队伍中特定元素类型的角色数量时，额外计入火元素、雷元素、水元素的角色各1名。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nahida_01.png"
     },
     {
       "level": 2,
       "name": "正等善见之根",
       "description": "处于纳西妲自身施加的蕴种印状态下的敌人，将受到以下效果影响：\n·受到的燃烧、绽放、超绽放、烈绽放反应伤害能够造成暴击，暴击率固定为20%，暴击伤害固定为100%，该效果提供的暴击率可以与使对应元素反应能够造成暴击的同类效果提供的暴击率叠加；\n·受到原激化、超激化、蔓激化反应影响后的8秒内，防御力降低30%；\n·受到月绽放反应伤害的暴击率提升10%，暴击伤害提升20%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nahida_02.png"
     },
     {
       "level": 3,
       "name": "熏习成就之芽",
       "description": "所闻遍计的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Nahida_01.png"
     },
     {
       "level": 4,
       "name": "比量现行之茎",
       "description": "附近处于所闻遍计的蕴种印状态下的敌人数量为1/2/3/4或更多时，纳西妲的元素精通提升100/120/140/160点。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nahida_03.png"
     },
     {
       "level": 5,
       "name": "妙谛破愚之叶",
       "description": "心景幻成的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Nahida_02.png"
     },
     {
       "level": 6,
       "name": "大辨圆成之实",
       "description": "施放心景幻成后，纳西妲的普通攻击或重击命中处于所闻遍计的蕴种印状态下的敌人时，将对该敌人及其所处连结中的所有敌人释放灭净三业·业障除，基于纳西妲攻击力的200%与元素精通的400%，造成草元素伤害。\n灭净三业·业障除造成的伤害视为元素战技伤害，每0.2秒至多触发一次。\n该效果至多持续10秒，将在纳西妲释放6次灭净三业·业障除后移除。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nahida_04.png"
     }
   ]
 }

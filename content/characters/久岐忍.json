@@ -215,7 +215,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -345,7 +346,8 @@
             "15.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Shinobu_01.png"
     },
     {
       "id": "burst",
@@ -455,7 +457,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Shinobu_01_HD.png"
     }
   ],
   "passives": [
@@ -464,21 +467,24 @@
       "description": "久岐忍的生命值不高于50%时，治疗加成提升15%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shinobu_05.png"
     },
     {
       "name": "安心之所",
       "description": "基于久岐忍的元素精通，越祓雷草之轮获得以下提升：\n·治疗量提升值：元素精通的75%；\n·伤害提升值：元素精通的25%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shinobu_06.png"
     },
     {
       "name": "久时的祝祷",
       "description": "在稻妻执行时长为20小时的探索派遣任务时，获得的奖励增加25%。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shinobu_07.png"
     }
   ],
   "constellations": [
@@ -487,42 +493,48 @@
       "name": "割舍怜悯之心",
       "description": "御咏鸣神刈山祭的影响范围提升50%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shinobu_01.png"
     },
     {
       "level": 2,
       "name": "割舍侥幸之心",
       "description": "越祓草轮的持续时间延长3秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shinobu_02.png"
     },
     {
       "level": 3,
       "name": "割舍痛苦之心",
       "description": "越祓雷草之轮的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Shinobu_01.png"
     },
     {
       "level": 4,
       "name": "割舍封闭之心",
       "description": "处于久岐忍自己的越祓草轮状态下的角色，在普通攻击、重击或下落攻击命中敌人时，雷草标将落在敌人所在的位置，基于久岐忍生命值上限的9.7%，造成雷元素范围伤害。\n该效果每5秒至多触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shinobu_03.png"
     },
     {
       "level": 5,
       "name": "割舍逢迎之心",
       "description": "御咏鸣神刈山祭的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Shinobu_02.png"
     },
     {
       "level": 6,
       "name": "割舍软弱之心",
       "description": "久岐忍承受足以使她倒下的伤害时，此次伤害不会使她倒下，这个效果在久岐忍生命值为1时会自动触发，该效果每60秒只能触发一次。\n久岐忍生命值降至25%以下时，会提升自身150点精通，持续15秒，该效果每60秒只能触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Shinobu_04.png"
     }
   ]
 }

@@ -195,7 +195,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_02.png"
     },
     {
       "id": "skill",
@@ -245,7 +246,8 @@
             "15.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Olorun_01.png"
     },
     {
       "id": "burst",
@@ -355,7 +357,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Olorun_01_HD.png"
     }
   ],
   "passives": [
@@ -369,28 +372,32 @@
           "text": "欧洛伦的夜魂加持状态持续至多6秒。"
         }
       ],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Olorun_05.png"
     },
     {
       "name": "灵相的触媒",
       "description": "元素战技暝色缒索中的宿灵球命中敌人后，欧洛伦将获得「灵相之印」效果，持续15秒。\n\n灵相之印\n队伍中附近的当前场上角色普攻、重击或下落攻击命中敌人后，将为该角色恢复3点元素能量；若欧洛伦处于队伍后台，还会为欧洛伦恢复3点元素能量。该效果每1秒至多触发一次，在持续期间内至多触发3次。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Olorun_06.png"
     },
     {
       "name": "夜域赐礼·流雾跃影",
       "description": "在纳塔存在燃素机制的区域时，能够进行夜魂传递·欧洛伦。当前场上角色位于空中时，切换欧洛伦登场时触发：欧洛伦将高高腾跃而起。自己的队伍每10秒可以触发一次夜魂传递。\n\n长按瞄准时，欧洛伦会进入「灵觉」状态，处于这种状态下时，欧洛伦可以与「灵谜涂鸦」和「灵谜纹」交互，提取其中的信息与力量，这些物件的交互规则沿袭暝视龙的交互规则。\n\n此外，长按跳跃时，欧洛伦将消耗75点体力腾跃而起；在纳塔存在燃素机制的区域时，欧洛伦会优先消耗5点燃素，腾跃至更高的高度。\n位于空中时，欧洛伦可以长按普通攻击，消耗燃素或体力进行瞄准。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Olorun_07.png"
     },
     {
       "name": "皮行的巧技",
       "description": "队伍中自己的角色滑翔时移动速度提高15%。\n无法与效果完全相同的固有天赋叠加。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Olorun_08.png"
     }
   ],
   "constellations": [
@@ -399,42 +406,48 @@
       "name": "林雾间的行迹",
       "description": "元素战技暝色缒索中的宿灵球能额外弹跳2次。\n此外，宿灵球命中敌人后，将为该敌人施加「夜暝」效果，持续12秒；对处于「夜暝」效果的影响下的敌人，突破天赋「夜翳的通感」触发的「显象超感」造成的伤害提升50%，该效果需要解锁突破天赋「夜翳的通感」。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Olorun_01.png"
     },
     {
       "level": 2,
       "name": "藏蜜酒的王蜂",
       "description": "施放元素爆发黯声回响后，欧洛伦将获得「灵式超感」效果，持续9秒。\n\n灵式超感\n获得8%雷元素伤害加成；\n此外，持续期间，元素爆发黯声回响或超音灵眼每额外命中一名敌人，都将进一步使欧洛伦获得8%雷元素伤害加成，至多通过这种方式获得32%雷元素伤害加成。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Olorun_02.png"
     },
     {
       "level": 3,
       "name": "栖地蝠的灵笼",
       "description": "元素爆发黯声回响的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Olorun_01.png"
     },
     {
       "level": 4,
       "name": "如夜风的谜烟",
       "description": "元素爆发黯声回响召唤的超音灵眼的旋转速度提升25%。\n此外，施放黯声回响后，为欧洛伦自己恢复8点元素能量。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Olorun_03.png"
     },
     {
       "level": 5,
       "name": "为心魂的献礼",
       "description": "元素战技暝色缒索的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Olorun_02.png"
     },
     {
       "level": 6,
       "name": "致深泉的颂赞",
       "description": "触发突破天赋「夜翳的通感」的「显象超感」后，会使队伍中自己的当前场上角色的攻击力提升10%，持续9秒。该效果至多叠加3层，每层独立计算持续时间。\n此外，施放元素爆发黯声回响时，将触发一次等同于「显象超感」的效果，造成原本200%的伤害。\n该效果需要解锁突破天赋「夜翳的通感」。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Olorun_04.png"
     }
   ]
 }

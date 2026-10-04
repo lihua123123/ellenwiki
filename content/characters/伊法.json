@@ -195,7 +195,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_Catalyst_MD.png"
     },
     {
       "id": "skill",
@@ -290,7 +291,8 @@
             "7.5秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Ifa_01.png"
     },
     {
       "id": "burst",
@@ -385,7 +387,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Ifa_01_HD.png"
     }
   ],
   "passives": [
@@ -399,28 +402,32 @@
           "text": "上限为150点。基于伊法持有的救援要义，每1点救援要义会使队伍中附近的角色触发的扩散反应与感电反应造成的伤害提升1.5%，月感电反应造成的伤害提升0.2%，星扩散反应造成的伤害提升0.2%。救援要义将在伊法的夜魂加持结束时被移除。"
         }
       ],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ifa_05.png"
     },
     {
       "name": "互助救援协议",
       "description": "队伍中的附近的角色触发「夜魂迸发」时，伊法的元素精通提升80点，持续10秒。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ifa_06.png"
     },
     {
       "name": "夜域赐礼·集念急救",
       "description": "在夜魂值耗竭后，伊法将会转而消耗燃素来维持夜魂加持。\n在纳塔存在燃素机制的区域时，能够进行夜魂传递·伊法。当前场上角色位于一定高度的空中时，切换伊法登场时触发：伊法将进入夜魂加持状态，并获得32点夜魂值。自己的队伍每10秒可以触发一次夜魂传递。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ifa_07.png"
     },
     {
       "name": "温敷战术包扎",
       "description": "在纳塔存在燃素机制的区域时，队伍中自己的当前场上角色或受魂附的龙生命值低于40%时，伊法将消耗10点燃素为其恢复40%生命值。该效果每10秒至多触发一次，在秘境、征讨领域、深境螺旋中无效。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ifa_08.png"
     }
   ],
   "constellations": [
@@ -434,7 +441,8 @@
           "name": "援护射击",
           "text": "在夜魂加持状态下，伊法的普通攻击将会转为进行援护射击。\n点按\n发射秘药弹。\n长按\n持续发射秘药弹。\n秘药弹\n造成具有夜魂性质的风元素伤害，并在命中敌人时为队伍中附近的所有角色恢复生命值，回复量受益于伊法自己的元素精通。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ifa_01.png"
     },
     {
       "level": 2,
@@ -446,28 +454,32 @@
           "name": "救援要义",
           "text": "上限为150点。基于伊法持有的救援要义，每1点救援要义会使队伍中附近的角色触发的扩散反应与感电反应造成的伤害提升1.5%，月感电反应造成的伤害提升0.2%，星扩散反应造成的伤害提升0.2%。救援要义将在伊法的夜魂加持结束时被移除。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ifa_02.png"
     },
     {
       "level": 3,
       "name": "与夜谈判的驳词",
       "description": "元素战技空天疾护的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Ifa_01.png"
     },
     {
       "level": 4,
       "name": "糜烂应体的置换",
       "description": "元素爆发复合镇静域产生的固缚风场的持续时间延长至3秒。\n此外，施放元素爆发复合镇静域后，伊法的元素精通提升100点，持续15秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ifa_03.png"
     },
     {
       "level": 5,
       "name": "万物同生的共誓",
       "description": "元素爆发复合镇静域的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Ifa_02.png"
     },
     {
       "level": 6,
@@ -479,7 +491,8 @@
           "name": "援护射击",
           "text": "在夜魂加持状态下，伊法的普通攻击将会转为进行援护射击。\n点按\n发射秘药弹。\n长按\n持续发射秘药弹。\n秘药弹\n造成具有夜魂性质的风元素伤害，并在命中敌人时为队伍中附近的所有角色恢复生命值，回复量受益于伊法自己的元素精通。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ifa_04.png"
     }
   ]
 }

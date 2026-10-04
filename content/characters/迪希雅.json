@@ -255,7 +255,8 @@
             "399%/498%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_04.png"
     },
     {
       "id": "skill",
@@ -405,7 +406,8 @@
             "20.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Dehya_01.png"
     },
     {
       "id": "burst",
@@ -515,7 +517,8 @@
             "70"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Dehya_01_HD.png"
     }
   ],
   "passives": [
@@ -524,21 +527,24 @@
       "description": "迪希雅通过熔铁流狱·剑域炽焰或炎啸狮子咬回收净焰剑狱后的6秒内，迪希雅承担来自赤鬃之血的伤害时，受到的伤害降低60%。该效果每2秒至多触发一次。\n此外，迪希雅施放熔铁流狱·净焰昂藏后的9秒内，将为队伍中所有角色赋予「熔金铸躯」状态。处于熔金铸躯状态下的角色处于净焰剑狱领域中时，将获得额外的抗打断能力。每18秒至多产生一次熔金铸躯状态。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Dehya_05.png"
     },
     {
       "name": "崇诚之真",
       "description": "生命值低于40%时，迪希雅将基于生命值上限的20%恢复生命值，并在接下来的10秒内，每2秒基于生命值上限的6%为迪希雅恢复生命值。该效果每20秒至多触发一次。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Dehya_06.png"
     },
     {
       "name": "日照的正途",
       "description": "在白天（6时至18时），队伍中自己的角色获得迅行效果：移动速度提高10%。\n该效果在秘境、征讨领域、深境螺旋中无效，迅行效果无法叠加。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Dehya_07.png"
     }
   ],
   "constellations": [
@@ -547,42 +553,48 @@
       "name": "皎洁之火铓辉灿漫",
       "description": "迪希雅的生命值上限提升20%；此外，基于生命值上限，迪希雅的以下攻击造成的伤害提高：\n·熔铁流狱伤害提高值：生命值上限的3.6%；\n·炎啸狮子咬伤害提高值：生命值上限的6%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Dehya_01.png"
     },
     {
       "level": 2,
       "name": "净沙利刃明映万乘",
       "description": "施放熔铁流狱·剑域炽焰时，重新产生的净焰剑狱领域持续时间将延长6秒。\n此外，场上存在净焰剑狱领域时，领域内的当前场上角色受到攻击时，将使净焰剑狱下次协同攻击造成的伤害提升50%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Dehya_02.png"
     },
     {
       "level": 3,
       "name": "怒势疾迅如焚掠地",
       "description": "炎啸狮子咬的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Dehya_01.png"
     },
     {
       "level": 4,
       "name": "服膺誓禁恪守无失",
       "description": "炎啸狮子咬的炽鬃拳与焚落踢命中敌人时，将为迪希雅恢复1.5点元素能量，并基于生命值上限的2.5%，为迪希雅恢复生命值。该效果每0.2秒至多触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Dehya_03.png"
     },
     {
       "level": 5,
       "name": "猎兽魁首卓荦不羁",
       "description": "熔铁流狱的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Dehya_02.png"
     },
     {
       "level": 6,
       "name": "燎燃利爪裂帛斫金",
       "description": "炎啸狮子咬的暴击率提升10%。\n此外，在一次炽炎狮子的持续期间，炽鬃拳命中敌人并造成暴击后，将使持续期间内炎啸狮子咬的暴击伤害提升15%，炽炎狮子的持续时间延长0.5秒。该效果每0.2秒至多触发一次，至多通过这种方式使持续时间延长2秒，暴击伤害提升60%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Dehya_04.png"
     }
   ]
 }

@@ -360,7 +360,8 @@
             "6.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_02.png"
     },
     {
       "id": "skill",
@@ -450,7 +451,8 @@
             "15.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Liney_01.png"
     },
     {
       "id": "burst",
@@ -560,7 +562,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Liney_01_HD.png"
     }
   ],
   "passives": [
@@ -569,21 +572,24 @@
       "description": "如果林尼通过发射隐具魔术箭消耗了生命值，该隐具魔术箭召唤的怪笑猫猫帽命中敌人时会为林尼恢复3点元素能量，并且基于攻击力的80%提高造成的伤害。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Liney_05.png"
     },
     {
       "name": "完场喝彩",
       "description": "林尼对处于火元素影响下的敌人造成的伤害，将以以下方式提升：\n·基础提升60%；\n·队伍中林尼以外每个元素类型为火元素的角色，提升20%。\n通过上述方式，至多使林尼对处于火元素影响下的敌人造成的伤害提升100%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Liney_06.png"
     },
     {
       "name": "琐碎观察术",
       "description": "在小地图上显示周围的枫丹区域特产的位置。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Liney_07.png"
     }
   ],
   "constellations": [
@@ -592,42 +598,48 @@
       "name": "空取奇思的手艺",
       "description": "怪笑猫猫帽至多可以同时存在2顶。\n此外，隐具魔术箭将在命中时召唤2顶怪笑猫猫帽，并额外积累1层「隐具余数」，该效果每15秒至多触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Liney_01.png"
     },
     {
       "level": 2,
       "name": "巧言贴耳的诱引",
       "description": "林尼在场上时，每2秒将获得一层「集意专注」效果，使林尼的暴击伤害提升20%。此效果至多叠加3层，将在林尼退场时解除。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Liney_03.png"
     },
     {
       "level": 3,
       "name": "玄迷灵敏的指法",
       "description": "普通攻击·迫牌易位式的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Liney_01.png"
     },
     {
       "level": 4,
       "name": "熟稔习练的筹谋",
       "description": "林尼的元素类型为火元素的重击攻击命中敌人后，该敌人的火元素抗性降低20%，持续6秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Liney_02.png"
     },
     {
       "level": 5,
       "name": "穿越隐秘的通术",
       "description": "大魔术·灵迹巡游的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Liney_02.png"
     },
     {
       "level": 6,
       "name": "违心的笑",
       "description": "林尼发射隐具魔术箭时，将发射一枚礼花术弹·重奏，造成礼花术弹80%的伤害。该伤害视为重击伤害。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Liney_04.png"
     }
   ]
 }

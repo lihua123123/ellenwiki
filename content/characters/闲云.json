@@ -215,7 +215,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_Catalyst_MD.png"
     },
     {
       "id": "skill",
@@ -290,7 +291,8 @@
             "12.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Liuyun_01.png"
     },
     {
       "id": "burst",
@@ -440,7 +442,8 @@
             "70"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Liuyun_01_HD.png"
     }
   ],
   "passives": [
@@ -449,21 +452,24 @@
       "description": "朝起鹤云的闲云冲击波每命中一个敌人，都将为队伍中附近的所有角色产生一层持续20秒，至多叠加4层的「风翎」效果，使角色的下落攻击的暴击率提升4%/6%/8%/10%。\n每次命中敌人产生的「风翎」的持续时间独立计算。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Liuyun_05.png"
     },
     {
       "name": "细想应是洞中仙",
       "description": "暮集竹星的竹星拥有仙力助推时，附近的当前场上角色的下落攻击坠地冲击造成的伤害提升，提升值相当于闲云的攻击力的200%。通过这种方式，至多使附近的当前场上角色的下落攻击坠地冲击伤害提升9000。\n一次下落攻击坠地冲击伤害中，只会对一名敌人造成上述伤害提升效果，每个角色每0.4秒至多触发一次。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Liuyun_06.png"
     },
     {
       "name": "身形如鹤",
       "description": "队伍中自己的角色滑翔时移动速度提高15%。\n无法与效果完全相同的固有天赋叠加。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Liuyun_07.png"
     }
   ],
   "constellations": [
@@ -472,42 +478,48 @@
       "name": "借风洗尘缘",
       "description": "朝起鹤云的可用次数增加1次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Liuyun_01.png"
     },
     {
       "level": 2,
       "name": "鹤唳远人间",
       "description": "施放朝起鹤云的步天梯后，闲云的攻击力提升20%，持续15秒。\n此外，突破天赋「细想应是洞中仙」的效果获得提升：暮集竹星的竹星拥有仙力助推时，附近的当前场上角色的下落攻击坠地冲击造成的伤害提升，提升值相当于闲云的攻击力的400%。通过这种方式，至多使附近的当前场上角色的下落攻击坠地冲击伤害提升18000。\n一次下落攻击坠地冲击伤害中，只会对一名敌人造成上述伤害提升效果，每个角色每0.4秒至多触发一次。\n该效果需要解锁突破天赋「细想应是洞中仙」。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Liuyun_02.png"
     },
     {
       "level": 3,
       "name": "造化有星月",
       "description": "暮集竹星的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Liuyun_02.png"
     },
     {
       "level": 4,
       "name": "奥妙烹黍珠",
       "description": "在一次朝起鹤云的鹤云幻化期间施展了1/2/3次步天梯后，该次鹤云幻化期间的闲云冲击波命中敌人时，将为队伍中附近的所有角色恢复生命值，回复量相当于闲云攻击力的50%/80%/150%。该效果每5秒至多触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Liuyun_03.png"
     },
     {
       "level": 5,
       "name": "旋步霞蔚上",
       "description": "朝起鹤云的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Liuyun_01.png"
     },
     {
       "level": 6,
       "name": "知是留云僊",
       "description": "在一次朝起鹤云的鹤云幻化期间施放了1/2/3次步天梯后，该次鹤云幻化期间的闲云冲击波的暴击伤害提升15%/35%/70%。\n闲云施放暮集竹星后的16秒内，朝起鹤云将不再进入冷却，该效果将在闲云施放8次朝起鹤云后移除。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Liuyun_04.png"
     }
   ]
 }

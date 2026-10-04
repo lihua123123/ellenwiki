@@ -235,7 +235,8 @@
             "438%/547%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -325,7 +326,8 @@
             "9.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Kazuha_01.png"
     },
     {
       "id": "burst",
@@ -455,7 +457,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Kazuha_01_HD.png"
     }
   ],
   "passives": [
@@ -464,21 +467,24 @@
       "description": "千早振在施放时，如果接触了水元素/火元素/冰元素/雷元素，则会使这次千早振的下落攻击·乱岚拨止，发生元素转化，将附加200%攻击力的对应元素伤害，该伤害视为下落攻击伤害。每次千早振的技能效果中，元素转化仅会发生一次。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kazuha_05.png"
     },
     {
       "name": "风物之诗咏",
       "description": "枫原万叶触发扩散或星扩散反应后，枫原万叶的每点元素精通，会为队伍中所有角色提供0.04%对应元素伤害加成，持续8秒。通过这种方式获得的不同元素伤害加成可以共存。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kazuha_06.png"
     },
     {
       "name": "松风霞立",
       "description": "队伍中自己的角色冲刺消耗的体力降低20%。\n无法与效果完全相同的固有天赋叠加。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Explosion_Sprint.png"
     }
   ],
   "constellations": [
@@ -487,42 +493,48 @@
       "name": "千山红遍",
       "description": "千早振的冷却时间减少10%。\n施放万叶之一刀时，重置千早振的冷却时间。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kazuha_01.png"
     },
     {
       "level": 2,
       "name": "山岚残芯",
       "description": "万叶之一刀的流风秋野具有以下效果：\n·持续期间内，枫原万叶自己的元素精通提升200点；\n·其中的场上角色的元素精通提升200点。\n\n该命之座提供的元素精通提升效果无法叠加。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kazuha_02.png"
     },
     {
       "level": 3,
       "name": "枫袖奇谭",
       "description": "千早振的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Kazuha_01.png"
     },
     {
       "level": 4,
       "name": "大空幻法",
       "description": "当枫原万叶的元素能量低于45点时，具有如下效果：\n·点按、长按施放千早振时，将分别为枫原万叶恢复3、4点元素能量；\n·处于滑翔状态下时，每秒为枫原万叶恢复2点元素能量。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kazuha_03.png"
     },
     {
       "level": 5,
       "name": "万世之集",
       "description": "万叶之一刀的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Kazuha_02.png"
     },
     {
       "level": 6,
       "name": "血赤叶红",
       "description": "枫原万叶施放千早振或万叶之一刀后的5秒内，获得风元素附魔，并且枫原万叶的每点元素精通，都会使他的普通攻击、重击、下落攻击造成的伤害提高0.2%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Kazuha_04.png"
     }
   ]
 }

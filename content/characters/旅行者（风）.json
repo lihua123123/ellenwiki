@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -365,7 +366,8 @@
             "8.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_PlayerWind_01.png"
     },
     {
       "id": "burst",
@@ -475,7 +477,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_PlayerWind_01_HD.png"
     }
   ],
   "passives": [
@@ -484,21 +487,24 @@
       "description": "普通攻击的最后一击会打出一道风刃，对沿途敌人造成60%攻击力的风元素伤害。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerWind_05.png"
     },
     {
       "name": "复苏之风",
       "description": "用风涡剑打败敌人后的5秒内，每秒恢复2%生命值。\n该效果每5秒只能触发一次。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerWind_06.png"
     },
     {
       "name": "异邦的烈风",
       "description": "从过往的旅途中，汲取全新的力量。每与一种元素进行过共鸣，便会获得额外的强化效果。\n\n此外，队伍中附近的角色元素类型为火元素、水元素、冰元素或雷元素的攻击命中敌人时，旅行者将获得1层对应元素类型的「晨风之刃」，每种元素类型的「晨风之刃」至多叠加1层。拥有至少2层「晨风之刃」时进行重击，会消耗所有的「晨风之刃」，转为进行特殊的重击·风旋。\n\n重击·风旋\n·每段重击将造成伤害更高的风元素伤害，伤害提升相当于旅行者攻击力的60%；\n·每消耗一种元素类型的「晨风之刃」，便会卷起一阵对应元素类型的剑风，造成相当于旅行者攻击力50%的对应元素伤害，该伤害视为重击伤害；\n·每15秒至多进行一次重击·风旋；\n·进行重击·风旋期间，不会获得「晨风之刃」。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerWind_07.png"
     }
   ],
   "constellations": [
@@ -507,42 +513,48 @@
       "name": "回转的怒风",
       "description": "风涡剑可将周围5米内的敌人与物体缓慢牵引到角色面前。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerWind_01.png"
     },
     {
       "level": 2,
       "name": "革新的旋风",
       "description": "元素充能效率提升16%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerWind_02.png"
     },
     {
       "level": 3,
       "name": "天地的刚风",
       "description": "风息激荡的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_PlayerWind_02.png"
     },
     {
       "level": 4,
       "name": "眷护的和风",
       "description": "风涡剑持续期间，受到的伤害降低10%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerWind_03.png"
     },
     {
       "level": 5,
       "name": "群星的涡风",
       "description": "风涡剑的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_PlayerWind_01.png"
     },
     {
       "level": 6,
       "name": "纠缠的信风",
       "description": "受到风息激荡伤害的目标，风元素抗性下降20%。\n如果产生了元素转化，那么对应元素抗性也下降20%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerWind_04.png"
     }
   ]
 }

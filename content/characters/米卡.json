@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_03.png"
     },
     {
       "id": "skill",
@@ -365,7 +366,8 @@
             "15.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Mika_01.png"
     },
     {
       "id": "burst",
@@ -500,7 +502,8 @@
             "70"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Mika_01_HD.png"
     }
   ],
   "passives": [
@@ -509,21 +512,24 @@
       "description": "在下列情况下，星霜的流旋的灵风状态将获得侦明效果强化，使角色处于场上时，造成的物理伤害提升10%：\n·霜流矢命中超过1名敌人时，每额外命中1名敌人就产生1层侦明效果；\n·冰星破片命中敌人时，将产生1层侦明效果。每枚冰星破片只能触发1次。\n\n灵风状态的侦明效果至多叠加3层，在持续期间内重复施放星霜的流旋时，将移除原有的灵风状态与其侦明效果。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Mika_05.png"
     },
     {
       "name": "地貌测绘",
       "description": "同时处于苍翎的颂愿的鹰翎状态与星霜的流旋的灵风状态下的当前场上角色，在攻击造成暴击时，灵风状态将产生1层突破天赋「速射牵制」的侦明效果。在一次灵风状态的持续期间内，通过这种方式至多产生1层侦明效果。\n此外，灵风状态下侦明效果叠加层数上限提升1层。\n需要解锁突破天赋「速射牵制」。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Mika_06.png"
     },
     {
       "name": "勘界定标",
       "description": "在小地图上显示周围的蒙德区域特产的位置。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Collect_Local_Mengde.png"
     }
   ],
   "constellations": [
@@ -532,42 +538,48 @@
       "name": "遇合的因缘",
       "description": "星霜的流旋产生的灵风状态能使苍翎的颂愿的鹰翎状态恢复生命值的间隔降低，降低比例等同于灵风状态提供的攻击速度提升比例。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Mika_01.png"
     },
     {
       "level": 2,
       "name": "伴行的旅路",
       "description": "星霜的流旋的霜流矢首次命中敌人时，或是冰星信标命中敌人时，将产生1层突破天赋「速射牵制」的侦明效果。\n需要解锁突破天赋「速射牵制」。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Mika_02.png"
     },
     {
       "level": 3,
       "name": "游击的心得",
       "description": "苍翎的颂愿的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Mika_01.png"
     },
     {
       "level": 4,
       "name": "晴霜的祝念",
       "description": "米卡自己的苍翎的颂愿的鹰翎状态为队伍中的角色进行治疗时，将为米卡恢复3点元素能量。通过一次施放苍翎的颂愿产生的鹰翎状态，至多恢复5次元素能量。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Mika_03.png"
     },
     {
       "level": 5,
       "name": "引示的铃箭",
       "description": "星霜的流旋的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Mika_02.png"
     },
     {
       "level": 6,
       "name": "依随的策援",
       "description": "星霜的流旋灵风状态下的侦明效果叠加层数上限提升1层。需要解锁突破天赋「速射牵制」。\n此外，处于灵风状态下的当前场上角色，其物理伤害的暴击伤害提高60%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Mika_04.png"
     }
   ]
 }

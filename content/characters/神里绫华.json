@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -285,7 +286,8 @@
             "10.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Ayaka_01.png"
     },
     {
       "id": "burst",
@@ -400,7 +402,37 @@
             "80"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Ayaka_HD.png"
+    },
+    {
+      "id": "sprint",
+      "type": "替代冲刺",
+      "name": "神里流·霰步",
+      "description": "替代冲刺\n隐入碎冰，以消耗体力为代价，化为激流快速移动。\n\n在霰步状态下，神里绫华可以在水面上高速移动。\n结束霰步现身时，将产生如下效果：\n·释放寒冰的力量，对周围的敌人施加冰元素附着；\n·将寒气凝聚在剑上，使神里绫华在短时间内获得冰元素附魔。",
+      "lore": "「滴雫濡羽瞬消无，白鹭踏水何可怨？」",
+      "states": [],
+      "levels": [
+        {
+          "label": "启动体力消耗",
+          "values": [
+            "10.0点"
+          ]
+        },
+        {
+          "label": "持续体力消耗",
+          "values": [
+            "每秒15.0点"
+          ]
+        },
+        {
+          "label": "附魔持续时间",
+          "values": [
+            "5.0秒"
+          ]
+        }
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Ayaka_02.png"
     }
   ],
   "passives": [
@@ -409,21 +441,24 @@
       "description": "施放神里流·冰华后的6秒内，神里绫华的普通攻击与重击造成的伤害提升30%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ayaka_05.png"
     },
     {
       "name": "寒天宣命祝词",
       "description": "神里流·霰步结束时释放的寒冰命中了敌人时，神里绫华将获得如下效果：\n·恢复10点体力；\n·获得18%冰元素伤害加成，持续10秒。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ayaka_06.png"
     },
     {
       "name": "鉴查心得",
       "description": "合成武器突破素材时，有10%概率获得2倍产出。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Combine_Weapon_Double.png"
     }
   ],
   "constellations": [
@@ -432,42 +467,48 @@
       "name": "霜杀墨染樱",
       "description": "神里绫华的普通攻击或重击对敌人造成冰元素伤害时，有50%的几率使神里流·冰华的冷却时间缩减0.3秒。该效果每0.1秒只能触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ayaka_01.png"
     },
     {
       "level": 2,
       "name": "三重雪关扉",
       "description": "施放神里流·霜灭时，会额外释放两股规模较小的霜见雪关扉，各自能造成原本20%的伤害。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ayaka_02.png"
     },
     {
       "level": 3,
       "name": "花白锦画纸吹雪",
       "description": "神里流·霜灭的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Ayaka_02.png"
     },
     {
       "level": 4,
       "name": "盈缺流返",
       "description": "敌人受到神里流·霜灭的霜见雪关扉造成的伤害后，防御力降低30%，持续6秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ayaka_03.png"
     },
     {
       "level": 5,
       "name": "花云钟入月",
       "description": "神里流·冰华的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Ayaka_01.png"
     },
     {
       "level": 6,
       "name": "间水月",
       "description": "每过10秒，神里绫华会获得「薄冰舞踏」，使重击造成的伤害提高298%。薄冰舞踏效果将在重击命中敌人的0.5秒后清除，并重新开始计算时间。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Ayaka_04.png"
     }
   ]
 }

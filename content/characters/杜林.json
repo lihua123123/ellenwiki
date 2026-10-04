@@ -215,7 +215,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -318,7 +319,8 @@
             "12.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Durin_01.png"
     },
     {
       "id": "burst",
@@ -501,7 +503,8 @@
             "70"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Durin_01_HD.png"
     }
   ],
   "passives": [
@@ -515,28 +518,32 @@
           "text": "队伍中附近的角色对敌人触发燃烧、超载、火元素扩散、火元素结晶反应后，或对处于燃烧状态下的敌人造成火元素伤害或草元素伤害时，该敌人的火元素抗性与参与反应的对应元素抗性降低20%，持续6秒。"
         }
       ],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Durin_01.png"
     },
     {
       "name": "混沌如黑夜构成",
       "description": "施放元素爆发后的20秒内，杜林将获得「肇象熔炼」效果：持续期间，杜林将获得10层「肇象」，白焰之龙与黑蚀之龙的间歇性攻击造成伤害时，将消耗1层「肇象」，提升造成的伤害，每100点攻击力都将额外造成相当于原本3%的伤害，至多通过这种方式额外造成相当于原本75%的伤害。一次白焰之龙与黑蚀之龙同时命中多名敌人时，只会消耗一层「肇象」。\n再次施放元素爆发时，「肇象」的层数将会刷新。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Durin_02.png"
     },
     {
       "name": "地涌的回音",
       "description": "在蒙德执行时长为20小时的探索派遣任务时，获得的奖励增加25%。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Durin_07.png"
     },
     {
       "name": "魔女的前夜礼·升华赞歌",
       "description": "完成魔女的课业·此世之题后，杜林将成为魔导角色。队伍中编入至少2名魔导角色时，将获得魔导·秘仪效果，使魔导角色获得强化。\n\n魔导·秘仪\n除持续时间外，突破天赋「光灵遵神数显现」中的所有效果提升75%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/bca9a4632b8eb43a1d73f1ef3850b8a5.png"
     }
   ],
   "constellations": [
@@ -545,42 +552,48 @@
       "name": "红土之逆",
       "description": "施放元素爆发后，依据杜林施放的元素爆发，会分别造成不同的效果：\n·白化法·如光流变：队伍中附近的所有其他角色获得20层「轮变启迪」，持续20秒。拥有「轮变启迪」的当前场上角色的普通攻击、重击、下落攻击、元素战技或元素爆发造成伤害时，将消耗1层「轮变启迪」，提升造成的伤害，提升值相当于杜林攻击力的60%。队伍中拥有「轮变启迪」的角色，其生效次数单独计算。\n·黑度法·如星阴燃：杜林获得20层「轮变启迪」，持续20秒。杜林造成元素爆发伤害时，将消耗2层「轮变启迪」，提升造成的伤害，提升值相当于杜林攻击力的150%。\n\n施放元素爆发时，「轮变启迪」的层数将会刷新。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Durin_03.png"
     },
     {
       "level": 2,
       "name": "无底之想",
       "description": "杜林施放元素爆发后的20秒内，队伍中附近的角色对敌人触发蒸发、融化、燃烧、超载、火元素扩散或火元素结晶反应后，或对处于燃烧状态下的敌人造成火元素伤害或草元素伤害时，队伍中附近的角色造成的火元素伤害与参与反应的对应元素伤害提升50%，持续6秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Durin_04.png"
     },
     {
       "level": 3,
       "name": "焰镜之显",
       "description": "元素爆发白化法·如光流变的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Durin_01.png"
     },
     {
       "level": 4,
       "name": "流溢之原",
       "description": "杜林造成的元素爆发伤害提升40%。此外，触发命之座「红土之逆」中消耗「轮变启迪」的效果时，有30%几率不会消耗「轮变启迪」。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Durin_05.png"
     },
     {
       "level": 5,
       "name": "苦火之裂",
       "description": "元素战技二元式·聚分熔炼的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Durin_02.png"
     },
     {
       "level": 6,
       "name": "双重诞生",
       "description": "杜林造成的元素爆发伤害将无视敌人30%的防御力。\n此外，杜林的元素爆发白化法·如光流变与黑度法·如星阴燃分别获得强化：\n·元素爆发白化法·如光流变与「白焰之龙」命中敌人时，该敌人的防御力降低30%，持续6秒；\n·元素爆发黑度法·如星阴燃与「黑蚀之龙」造成的伤害将额外无视敌人40%的防御力。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Durin_06.png"
     }
   ]
 }

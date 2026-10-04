@@ -215,7 +215,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_03.png"
     },
     {
       "id": "skill",
@@ -370,7 +371,8 @@
             "14.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Emilie_01.png"
     },
     {
       "id": "burst",
@@ -460,7 +462,8 @@
             "50"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Emilie_01_HD.png"
     }
   ],
   "passives": [
@@ -469,21 +472,24 @@
       "description": "每萃集两枚香韵，柔灯之匣·二阶将消耗香韵，并浸析出「清露香氛」，对敌人造成相当于艾梅莉埃攻击力600%的草元素范围伤害。该伤害不被视为元素战技伤害。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Emilie_05.png"
     },
     {
       "name": "精馏",
       "description": "基于艾梅莉埃的攻击力，提升艾梅莉埃对处于燃烧状态下的敌人造成的伤害：每1000点攻击力都将提升15%伤害，至多通过这种方式提升36%伤害。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Emilie_06.png"
     },
     {
       "name": "顶空集香",
       "description": "场上存在艾梅莉埃自己创造的柔灯之匣时，队伍中附近的所有角色对燃烧伤害的火元素抗性提升85%。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Emilie_07.png"
     }
   ],
   "constellations": [
@@ -492,42 +498,48 @@
       "name": "淡香浸析",
       "description": "撷萃调香与突破天赋「余薰」的清露香氛造成的伤害提升20%，后者需要解锁突破天赋「余薰」。\n此外，队伍中附近的角色对敌人触发燃烧反应或对处于燃烧状态下的敌人造成草元素伤害时，会额外生成一枚香韵。此效果每2.9秒至多触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Emilie_01.png"
     },
     {
       "level": 2,
       "name": "湖光顶调",
       "description": "撷萃调香、香氛演绎或突破天赋「余薰」的清露香氛（需解锁该突破天赋）命中敌人时，该敌人的草元素抗性降低30%，持续10秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Emilie_02.png"
     },
     {
       "level": 3,
       "name": "郁馥臻萃",
       "description": "撷萃调香的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Emilie_01.png"
     },
     {
       "level": 4,
       "name": "柔灯心韵",
       "description": "香氛演绎的持续时间延长2秒，且每名敌人被香露选为目标的间隔降低0.3秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Emilie_03.png"
     },
     {
       "level": 5,
       "name": "纯露凝芳",
       "description": "香氛演绎的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Emilie_02.png"
     },
     {
       "level": 6,
       "name": "茉洁香迹",
       "description": "施放撷萃调香或香氛演绎时，艾梅莉埃将获得「香迹留驻」，持续5秒。\n持续期间，艾梅莉埃进行普通攻击或重击后，将会产生一枚香韵，且艾梅莉埃的普通攻击与重击将转为无法被附魔覆盖的草元素伤害，并提升造成的伤害，提升值相当于艾梅莉埃攻击力的300%。\n\n「香迹留驻」效果将在通过这种方式产生4枚香韵或持续时间结束时解除。每12秒至多获得一次「香迹留驻」效果。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Emilie_04.png"
     }
   ]
 }

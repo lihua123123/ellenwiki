@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -330,7 +331,8 @@
             "15.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_PlayerIce_01.png"
     },
     {
       "id": "burst",
@@ -549,7 +551,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_PlayerIce_01_HD.png"
     }
   ],
   "passives": [
@@ -558,14 +561,16 @@
       "description": "辉映·星超导：栗烈寒星存在期间，旅行者的普通攻击、重击、下落攻击将转为造成无法被附魔覆盖的冰元素伤害，且造成的伤害提升，提升值相当于旅行者攻击力的80%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerIce_05.png"
     },
     {
       "name": "通明的冽冰",
       "description": "旅行者的元素精通提升，提升值相当于旅行者攻击力的8%。通过这种方式，至多使旅行者的元素精通提升160点。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerIce_06.png"
     },
     {
       "name": "星耀祝礼·幻变冰镜",
@@ -577,7 +582,8 @@
           "text": "触发星超导反应时，附近的区域会短暂变化为极星辉域；处于极星辉域中时，特定角色将会进入辉映·星超导状态，使其不同技能分别获得对应的强化效果。"
         }
       ],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerIce_07.png"
     },
     {
       "name": "异邦的层冰",
@@ -593,7 +599,8 @@
           "text": "辉映·星超导与辉映·星扩散统称为辉映·星烁状态。\n角色同时只能受到一种辉映状态影响，且优先被辉映·星超导影响。"
         }
       ],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerIce_08.png"
     }
   ],
   "constellations": [
@@ -602,35 +609,40 @@
       "name": "渐肃的凝冰",
       "description": "旅行者造成了星烁反应伤害时，将为自身恢复5点元素能量，此效果至多每0.5秒触发1次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerIce_01.png"
     },
     {
       "level": 2,
       "name": "嗡鸣的陨冰",
       "description": "元素战技冰雾剑发射的冰晶命中敌人后，还会使当前场上角色的元素精通提升60点，持续5秒。\n此外，若受到上述效果影响的角色触发了星烁反应，或造成了星烁反应伤害，则持续时间内，上述效果改为提升120点元素精通。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerIce_02.png"
     },
     {
       "level": 3,
       "name": "断金的锐冰",
       "description": "元素爆发聚冰成锋的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_PlayerIce_01.png"
     },
     {
       "level": 4,
       "name": "不化的顽冰",
       "description": "元素战技冰雾剑创造的栗烈寒星存在时间延长25%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerIce_03.png"
     },
     {
       "level": 5,
       "name": "深寒的雾冰",
       "description": "元素战技冰雾剑的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_PlayerIce_02.png"
     },
     {
       "level": 6,
@@ -642,7 +654,8 @@
           "name": "寒辉",
           "text": "旅行者凝结的栗烈寒星发射冰晶命中敌人时，或解锁天赋异邦的层冰后进行重击·冰凝后，将会获得的特殊效果。该效果至多叠加8层。\n施放元素爆发聚冰成锋时，旅行者会消耗所有的寒辉层数，提升本次元素爆发造成的伤害。若消耗层数为8层，则还会提升本次元素爆发造成伤害的段数。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerIce_04.png"
     }
   ]
 }

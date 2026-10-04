@@ -215,7 +215,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_Catalyst_MD.png"
     },
     {
       "id": "skill",
@@ -265,7 +266,8 @@
             "15.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Sucrose_01.png"
     },
     {
       "id": "burst",
@@ -375,7 +377,8 @@
             "80"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Sucrose_01_HD.png"
     }
   ],
   "passives": [
@@ -384,28 +387,32 @@
       "description": "砂糖触发扩散、星扩散反应时，使队伍中所有对应元素类型的角色（不包括砂糖自己）元素精通提升50，持续8秒。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Sucrose_05.png"
     },
     {
       "name": "小小的慧风",
       "description": "风灵作成·陆叁零捌或禁·风灵作成·柒伍同构贰型命中敌人时，基于砂糖元素精通的20%，为队伍中所有角色（不包括砂糖自己）提供元素精通加成，持续8秒。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Sucrose_06.png"
     },
     {
       "name": "不稳定发现",
       "description": "合成角色与武器培养素材时，有10%概率获得2倍产出。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Combine_Material.png"
     },
     {
       "name": "魔女的前夜礼·七循之理",
       "description": "完成魔女的课业·仙境花之题后，砂糖将成为魔导角色。队伍中编入至少2名魔导角色时，将获得魔导·秘仪效果，使魔导角色获得强化。\n\n魔导·秘仪\n·召唤小型风灵后的15秒内，队伍中附近的角色的普通攻击、重击、下落攻击、元素战技和元素爆发造成的伤害提升5.71428%。\n·召唤大型风灵后的20秒内，队伍中附近的魔导角色的普通攻击、重击、下落攻击、元素战技和元素爆发造成的伤害提升7.14285%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/793231b5a3a42cc0f4d19c4bf69cf759.png"
     }
   ],
   "constellations": [
@@ -414,35 +421,40 @@
       "name": "堆叠真空域",
       "description": "风灵作成·陆叁零捌的可使用次数增加1次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Sucrose_01.png"
     },
     {
       "level": 2,
       "name": "不羁型贝特",
       "description": "禁·风灵作成·柒伍同构贰型的技能持续时间延长2秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Sucrose_02.png"
     },
     {
       "level": 3,
       "name": "零失误少女",
       "description": "风灵作成·陆叁零捌的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Sucrose_01.png"
     },
     {
       "level": 4,
       "name": "炼金的偏执",
       "description": "砂糖的普通攻击或者重击累计命中敌人7次，风灵作成·陆叁零捌的冷却时间就会随机减少1-7秒。\n每0.1秒至多计数一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Sucrose_03.png"
     },
     {
       "level": 5,
       "name": "认真普通瓶",
       "description": "禁·风灵作成·柒伍同构贰型的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Sucrose_02.png"
     },
     {
       "level": 6,
@@ -450,6 +462,7 @@
       "description": "禁·风灵作成·柒伍同构贰型如果发生了元素转化，则使队伍中所有角色在技能持续时间内获得20%的对应元素伤害加成。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Sucrose_04.png",
       "buffs": {
         "description": "禁·风灵作成·柒伍同构贰型如果发生了元素转化，则使队伍中所有角色在技能持续时间内获得20%的对应元素伤害加成<buff>，并使队伍中附近的魔导角色额外获得8.57142%的对应元素伤害加成</buff>。"
       }

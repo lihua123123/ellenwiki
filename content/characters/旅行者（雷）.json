@@ -235,7 +235,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_01.png"
     },
     {
       "id": "skill",
@@ -365,7 +366,8 @@
             "13.5秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_PlayerElectric_01.png"
     },
     {
       "id": "burst",
@@ -495,7 +497,8 @@
             "80"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_PlayerElectric_01_HD.png"
     }
   ],
   "passives": [
@@ -504,21 +507,24 @@
       "description": "队伍中附近的其他角色获取雷影剑产生的丰穰勾玉时，雷影剑的冷却时间减少1.5秒。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerElectric_05.png"
     },
     {
       "name": "回响的轰雷",
       "description": "基于旅行者自己元素充能效率的10%，提升雷影剑的丰穰勾玉提供的元素充能效率。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerElectric_06.png"
     },
     {
       "name": "异邦的远雷",
       "description": "从过往的旅途中，汲取全新的力量。每与一种元素进行过共鸣，便会获得额外的强化效果。\n\n此外，队伍中附近的角色施放元素爆发时，旅行者将获得1层「万雷之刃」，至多叠加3层。拥有3层「万雷之刃」时进行重击，会消耗所有的「万雷之刃」，转为进行特殊的重击·雷岚。\n\n重击·雷岚\n·每段重击将造成伤害更高的雷元素伤害，伤害提升相当于旅行者攻击力的100%；\n·命中敌人的3秒后，还会额外引发一次落雷，造成相当于旅行者攻击力200%的雷元素伤害，并产生一枚丰穰勾玉，该伤害视为重击伤害；\n·每15秒至多进行一次重击·雷岚。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerElectric_07.png"
     }
   ],
   "constellations": [
@@ -527,42 +533,48 @@
       "name": "丰穰的春雷",
       "description": "施放雷影剑能产生的丰穰勾玉数量提升至3枚。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerElectric_01.png"
     },
     {
       "level": 2,
       "name": "震怒的苍雷",
       "description": "雷轰电转的威光落雷命中敌人后，会使敌人的雷元素抗性降低15%，持续8秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerElectric_02.png"
     },
     {
       "level": 3,
       "name": "连延的远雷",
       "description": "雷轰电转的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_PlayerElectric_01.png"
     },
     {
       "level": 4,
       "name": "难测的云雷",
       "description": "角色获取雷影剑产生的丰穰勾玉时，若该角色的当前元素能量低于35%，丰穰勾玉恢复的元素能量提高100%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerElectric_03.png"
     },
     {
       "level": 5,
       "name": "荒野的霆雷",
       "description": "雷影剑的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_PlayerElectric_02.png"
     },
     {
       "level": 6,
       "name": "撼世的神雷",
       "description": "雷轰电转每引发2次威光落雷，则大幅增强下一次威光落雷，造成原本200%的伤害，并为当前角色额外恢复1点元素能量。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_PlayerElectric_04.png"
     }
   ]
 }

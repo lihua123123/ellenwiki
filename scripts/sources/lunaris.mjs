@@ -19,6 +19,9 @@ import { API, fetchJson, cleanText, buildWeapon, buildArtifact } from '../lib/lu
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+/** 图标 CDN（与 lib/gdb.mjs 的 ICON_BASE 同源；这里避免为取一个常量引入 genshin-db） */
+const ENKA_UI = 'https://enka.network/ui/';
+
 /** 本项目角色名 → lunaris 角色 id（旅行者按元素拆开，文案与男女无关，统一取男主角） */
 const TRAVELERS = {
   '旅行者（风）': '10000005_ANEMO',
@@ -178,7 +181,23 @@ function enrichCharacter(local, dto) {
     notes.push(`固有天赋「${name}」`);
   }
 
-  /* 3) 状态说明词条 + 逸闻：按正文里的 {LINK#N<id>} 标记与 <i> 斜体段同步 */
+  /* 3) 图标：lunaris 给文件名（如 UI_Talent_S_PlayerIce_08），转成 enka CDN 地址；
+   *    genshin-db / gachabase 给不出图标的条目（如旅行者的「异邦的××」）在这里补上，已有的一律不动 */
+  const iconByName = new Map();
+  for (const src of [...Object.values(dto.skills || {}), ...Object.values(dto.passives || {}), ...Object.values(dto.constellations || {})]) {
+    const n = cleanText(src?.name);
+    const icon = String(src?.icon || src?.iconName || src?.iconPath || '');
+    if (n && icon) iconByName.set(n, `${ENKA_UI}${icon}.png`);
+  }
+  let icons = 0;
+  for (const it of [...(next.skills || []), ...(next.passives || []), ...(next.constellations || [])]) {
+    if (it.iconUrl || !it.name) continue;
+    const url = iconByName.get(it.name);
+    if (url) { it.iconUrl = url; icons++; }
+  }
+  if (icons) notes.push(`图标 ${icons} 处`);
+
+  /* 4) 状态说明词条 + 逸闻：按正文里的 {LINK#N<id>} 标记与 <i> 斜体段同步 */
   const glossary = new Map();
   for (const h of dto.hyperlinks || []) {
     const gName = cleanText(h.name);

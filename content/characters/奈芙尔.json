@@ -260,7 +260,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_Catalyst_MD.png"
     },
     {
       "id": "skill",
@@ -463,7 +464,8 @@
             "9.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Nefer_01.png"
     },
     {
       "id": "burst",
@@ -578,7 +580,8 @@
             "60"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Nefer_01_HD.png"
     }
   ],
   "passives": [
@@ -596,7 +599,8 @@
           "text": "奈芙尔通过突破天赋「月下的豪赌」吸收诳言之核后获得的效果，可以提升幻戏造成的伤害。\n每层「伪秘之帷」都会使奈芙尔施放的幻戏造成比原本高8.0%的伤害，初始至多叠加3层，持续9秒，每层独立计算持续时间。"
         }
       ],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nefer_05.png"
     },
     {
       "name": "尘沙的女儿",
@@ -612,21 +616,24 @@
           "text": "队伍中的角色触发月绽放反应后，会为队伍提供的资源。\n触发月绽放反应后的2.5秒内，每2.5秒便会为队伍提供一枚草露，草露上限为三枚。持续期间，再次触发月绽放反应时，将刷新上述效果的持续时间。"
         }
       ],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nefer_06.png"
     },
     {
       "name": "月兆祝赐·廊下暮影",
       "description": "队伍中的角色触发绽放反应时，将转为触发月绽放反应，且基于奈芙尔的元素精通，提升队伍中角色造成的月绽放反应的基础伤害：每点元素精通都将提升0.0175%月绽放反应的基础伤害，至多通过这种方式提升14%伤害。\n\n此外，奈芙尔在队伍中时，队伍的月兆将会上升一级。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nefer_07.png"
     },
     {
       "name": "金室的密谋",
       "description": "在挪德卡莱执行时长为20小时的探索派遣任务时，获得的奖励增加25%。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nefer_08.png"
     }
   ],
   "constellations": [
@@ -644,7 +651,8 @@
           "name": "伪秘之帷",
           "text": "奈芙尔通过突破天赋「月下的豪赌」吸收诳言之核后获得的效果，可以提升幻戏造成的伤害。\n每层「伪秘之帷」都会使奈芙尔施放的幻戏造成比原本高8.0%的伤害，初始至多叠加3层，持续9秒，每层独立计算持续时间。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nefer_01.png"
     },
     {
       "level": 2,
@@ -660,14 +668,16 @@
           "name": "幻戏",
           "text": "处于元素战技弈术·千夜一舞造成的「影舞」状态下时，若拥有至少1枚草露，奈芙尔施放的重击将会被替换为特殊的、不消耗体力的重击「幻戏」。\n奈芙尔召唤出自身的虚影，对敌人发起协同攻击，自身与虚影分别依次造成2/3段草元素范围伤害。虚影造成的伤害视为月绽放反应伤害，每次施放幻戏后首次召唤虚影时，将消耗一枚草露。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nefer_02.png"
     },
     {
       "level": 3,
       "name": "诳言掩虚实之迹",
       "description": "元素战技弈术·千夜一舞的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Nefer_01.png"
     },
     {
       "level": 4,
@@ -679,14 +689,16 @@
           "name": "影舞",
           "text": "施放元素战技弈术·千夜一舞后，奈芙尔将会进入该状态。\n处于「影舞」状态下时，若拥有至少1枚草露，奈芙尔施放的重击将会被替换为特殊的重击「幻戏」。\n「影舞」状态将在奈芙尔施放3次幻戏或持续时间结束时解除。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nefer_03.png"
     },
     {
       "level": 5,
       "name": "见机在忽微之间",
       "description": "元素爆发圣约·真眸幻戏的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Nefer_02.png"
     },
     {
       "level": 6,
@@ -702,7 +714,8 @@
           "name": "擢升",
           "text": "特殊的伤害提升效果，与其他的伤害提升效果分别独立计算。"
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Nefer_04.png"
     }
   ]
 }

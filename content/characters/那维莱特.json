@@ -264,7 +264,8 @@
             "304%/380%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_Catalyst_MD.png"
     },
     {
       "id": "skill",
@@ -374,7 +375,8 @@
             "12.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Neuvillette_01.png"
     },
     {
       "id": "burst",
@@ -464,7 +466,8 @@
             "70"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Neuvillette_01_HD.png"
     }
   ],
   "passives": [
@@ -473,21 +476,24 @@
       "description": "队伍中的角色对敌人触发蒸发、冻结、感电、月感电、绽放、月绽放、水元素扩散、水元素结晶或月结晶反应时，将为那维莱特产生持续30秒，至多叠加3层的「遗龙之荣」效果，使重击·衡平推裁造成原本110%/125%/160%的伤害。\n每种元素反应产生的「遗龙之荣」分别独立存在。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Neuvillette_05.png"
     },
     {
       "name": "至高仲裁的纪律",
       "description": "基于当前生命值超出生命值上限30%的部分，每1%使那维莱特获得0.6%水元素伤害加成，通过这种方式，至多提升30%。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Neuvillette_06.png"
     },
     {
       "name": "汇聚如浪潮一般",
       "description": "队伍中自己的角色进行水下冲刺时，移动速度提升15%。\n无法与效果完全相同的固有天赋叠加。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Neuvillette_07.png"
     }
   ],
   "constellations": [
@@ -496,42 +502,48 @@
       "name": "尊荣的创定",
       "description": "那维莱特登场时，获得一层突破天赋「古海孑遗的权柄」的「遗龙之荣」。需要解锁突破天赋「古海孑遗的权柄」。\n此外，进行重击蓄力·诉论心证与重击·衡平推裁时，提高那维莱特的抗打断能力。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Neuvillette_01.png"
     },
     {
       "level": 2,
       "name": "律法的命诫",
       "description": "突破天赋「古海孑遗的权柄」获得强化：每存在一层「遗龙之荣」，就使重击·衡平推裁的暴击伤害提升14%，至多通过这种方式提升42%。\n需要解锁突破天赋「古海孑遗的权柄」。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Neuvillette_02.png"
     },
     {
       "level": 3,
       "name": "溯古的拟制",
       "description": "普通攻击·如水从平的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Neuvillette_01.png"
     },
     {
       "level": 4,
       "name": "悲悯的冠冕",
       "description": "那维莱特处于当前场上并受到治疗时，将产生1枚源水之滴。此效果每4秒至多触发一次。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Neuvillette_03.png"
     },
     {
       "level": 5,
       "name": "公理的决裁",
       "description": "潮水啊，我已归来的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Neuvillette_02.png"
     },
     {
       "level": 6,
       "name": "忿怒的报偿",
       "description": "施放重击·衡平推裁时，那维莱特可以吸收附近一定范围内的源水之滴，每吸收一枚源水之滴，都将使重击·衡平推裁的持续时间延长1秒。\n此外，重击·衡平推裁命中敌人时，每2秒，将额外释放两道洪流，每道洪流造成相当于那维莱特生命值上限10%的水元素伤害。通过这种方式造成的伤害视为重击·衡平推裁造成的伤害。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Neuvillette_04.png"
     }
   ]
 }

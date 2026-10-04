@@ -275,7 +275,8 @@
             "399%/498%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_04.png"
     },
     {
       "id": "skill",
@@ -365,7 +366,8 @@
             "7.5秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Beidou_01.png"
     },
     {
       "id": "burst",
@@ -495,7 +497,8 @@
             "80"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Beidou_01_HD.png"
     }
   ],
   "passives": [
@@ -504,21 +507,24 @@
       "description": "在被攻击瞬间施放的捉浪反击，拥有最高伤害加成。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Beidou_05.png"
     },
     {
       "name": "霹雳连霄",
       "description": "施放拥有最高伤害加成的捉浪后的10秒内，获得如下效果：\n·普通攻击与重击造成的伤害提高15%，攻击速度提高15%；\n·大幅减少重击需要的准备时间。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Beidou_06.png"
     },
     {
       "name": "拥涛踏潮",
       "description": "队伍中自己的角色游泳消耗的体力降低20%。\n无法与效果完全相同的固有天赋叠加。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Explosion_Swim.png"
     },
     {
       "name": "引路明星",
@@ -530,7 +536,8 @@
           "text": "触发星超导反应时，附近的区域会短暂变化为极星辉域；处于极星辉域中时，特定角色将会进入辉映·星超导状态，使其不同技能分别获得对应的强化效果。"
         }
       ],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://cdn.gachabase.net/gi/assets/acac5c40eda5fe04d2f3ab9d0b78ede0.png"
     }
   ],
   "constellations": [
@@ -539,35 +546,40 @@
       "name": "鱼龙沉四方",
       "description": "施放斫雷时：\n生成一个伤害吸收量等于生命值上限16%的护盾，持续15秒。\n该护盾对雷元素伤害有250%的吸收效果。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Beidou_02.png"
     },
     {
       "level": 2,
       "name": "赫赫雷涌起",
       "description": "斫雷的闪雷能额外弹跳2个敌人。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Beidou_01.png"
     },
     {
       "level": 3,
       "name": "潮奔蓦引电",
       "description": "捉浪的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Beidou_01.png"
     },
     {
       "level": 4,
       "name": "牵星觅乡岸",
       "description": "受到攻击后的10秒内，北斗的普通攻击附带20%额外雷元素伤害。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Beidou_03.png"
     },
     {
       "level": 5,
       "name": "踏浪霞连阶",
       "description": "斫雷的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Beidou_02.png"
     },
     {
       "level": 6,
@@ -575,6 +587,7 @@
       "description": "斫雷持续期间，周围敌人的雷元素抗性降低15%。",
       "lore": "",
       "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Beidou_04.png",
       "buffs": {
         "description": "斫雷持续期间，周围敌人的雷元素抗性降低15%。<buff>辉映·星超导：斫雷持续期间，附近敌人的冰元素抗性还会降低15%，且当前场上角色元素精通提升200点。</buff>"
       }

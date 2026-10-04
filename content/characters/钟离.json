@@ -255,7 +255,8 @@
             "342%/427%"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_A_03.png"
     },
     {
       "id": "skill",
@@ -410,7 +411,8 @@
             "12.0秒"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_S_Zhongli_01.png"
     },
     {
       "id": "burst",
@@ -505,7 +507,8 @@
             "40"
           ]
         }
-      ]
+      ],
+      "iconUrl": "https://enka.network/ui/Skill_E_Zhongli_01_HD.png"
     }
   ],
   "passives": [
@@ -514,21 +517,24 @@
       "description": "玉璋护盾受到伤害时，会产生坚璧效果：\n·处于玉璋护盾庇护下的角色，护盾强效提升5%；\n·该效果至多叠加5次，持续直到玉璋护盾消失。",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Zhongli_05.png"
     },
     {
       "name": "炊金馔玉",
       "description": "基于生命值上限，钟离的以下攻击造成的伤害提高：\n·普通攻击、重击与下落攻击伤害提高值：生命值上限的1.39%\n·地心的岩脊、共鸣伤害与长按伤害提高值：生命值上限的1.9%\n·天星伤害提高值：生命值上限的33%",
       "lore": "",
       "states": [],
-      "category": "ascension"
+      "category": "ascension",
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Zhongli_06.png"
     },
     {
       "name": "晶石命理",
       "description": "锻造长柄武器时，返还15%消耗的矿石。",
       "lore": "",
       "states": [],
-      "category": "utility"
+      "category": "utility",
+      "iconUrl": "https://enka.network/ui/UI_Talent_Forge_Pole.png"
     }
   ],
   "constellations": [
@@ -537,42 +543,48 @@
       "name": "岩者，六合引之为骨",
       "description": "地心创造的岩脊至多可以同时存在2个。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Zhongli_01.png"
     },
     {
       "level": 2,
       "name": "石者，八荒韫玉而明",
       "description": "天星陨落时，会为附近的当前场上角色赋予玉璋护盾。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Zhongli_02.png"
     },
     {
       "level": 3,
       "name": "圭璋，暝仍不移其晖",
       "description": "地心的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Zhongli_01.png"
     },
     {
       "level": 4,
       "name": "黄琮，破而不夺其坚",
       "description": "天星的影响范围扩大20%。\n此外，天星的石化效果持续时间延长2秒。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Zhongli_03.png"
     },
     {
       "level": 5,
       "name": "苍璧，驱之长昭天理",
       "description": "天星的技能等级提高3级。\n至多提升至15级。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_U_Zhongli_02.png"
     },
     {
       "level": 6,
       "name": "金玉，礼予天地四方",
       "description": "玉璋护盾受到伤害时，将为当前角色恢复生命值，回复量为伤害的40%。\n单次回复量不超过当前角色最大生命值的8%。",
       "lore": "",
-      "states": []
+      "states": [],
+      "iconUrl": "https://enka.network/ui/UI_Talent_S_Zhongli_04.png"
     }
   ]
 }
