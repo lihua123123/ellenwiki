@@ -32,3 +32,6 @@ Thumbs.db
 .wrangler/
 .wrangler-dry/
 .dev.vars
+
+# Temp / scratch
+.tmp-*
