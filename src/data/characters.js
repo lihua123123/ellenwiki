@@ -111,7 +111,7 @@ export const characters = {
         {
           "name": "普攻/重击",
           "elementAmount": "弱火",
-          "attachRule": "5 hits / 5 s",
+          "attachRule": "3 hits / 2.5 s",
           "particles": "",
           "note": "Q 后",
           "poise": ""
@@ -127,7 +127,7 @@ export const characters = {
         {
           "name": "Q",
           "elementAmount": "强火",
-          "attachRule": "5 hits / 2.5 s",
+          "attachRule": "5 hits / 5 s",
           "particles": "",
           "note": "",
           "poise": ""
