@@ -49,7 +49,12 @@ async function main() {
     console.error('❌ 未找到 dist/，请先 `vite build`（或 `npm run build`）');
     process.exit(1);
   }
-  rmSync(API, { recursive: true, force: true });
+  // 受限环境（沙箱/批量删除保护）下删除会被拒绝，退化为覆盖写入即可
+  try {
+    rmSync(API, { recursive: true, force: true });
+  } catch {
+    console.warn('⚠️ dist/api 无法清空，改为覆盖写入');
+  }
   mkdirSync(API, { recursive: true });
 
   const counts = {};
