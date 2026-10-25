@@ -14,6 +14,7 @@
     "esdata": "node scripts/esdata.mjs",
     "api": "wrangler dev --port 8787",
     "parse": "node scripts/parse-boss.mjs && node scripts/parse-attachment.mjs",
+    "test:charge": "node scripts/test-charge-config.mjs",
     "index": "node scripts/generate-weapons.mjs && node scripts/generate-artifacts.mjs && node scripts/generate-game-ids.mjs",
     "refresh": "node scripts/generate-profiles.mjs && node scripts/generate-weapons.mjs --force && node scripts/generate-artifacts.mjs --force && npm run parse && node scripts/sync-character-versions.mjs && node scripts/sync-buffs.mjs",
     "refresh:characters": "node scripts/generate-profiles.mjs",

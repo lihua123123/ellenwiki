@@ -236,63 +236,9 @@
 }
 
 /* ===== 工具页 ===== */
-.tools-intro { margin-bottom: 1.4rem; }
+/* ===== 工具页（充能时间轴样式见 charge-timeline.css） ===== */
 
-.energy-card { margin-bottom: 1.4rem; }
-
-.energy-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.6rem 1rem;
-}
-.energy-head h2 { margin: 0; }
-
-.energy-party {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-  font-size: 0.86rem;
-  color: var(--text-secondary);
-}
-.party-btn {
-  width: 26px;
-  height: 26px;
-  line-height: 1;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  background: transparent;
-  color: var(--text-heading);
-  font-size: 0.95rem;
-  cursor: pointer;
-}
-.party-btn:hover:not(:disabled) { border-color: var(--accent-light); color: var(--accent-light); }
-.party-btn:disabled { opacity: 0.4; cursor: not-allowed; }
-.party-count { font-weight: 700; color: var(--text-heading); min-width: 1em; text-align: center; }
-.party-note strong { color: var(--accent-light); }
-
-#energy-calc-table input[type="text"] {
-  width: 100%;
-  max-width: 90px;
-  padding: 6px 8px;
-  text-align: center;
-  font-size: 0.9rem;
-}
-#energy-calc-table input[type="text"]::placeholder { font-size: 0.78rem; }
-
-.calc-result {
-  font-weight: 700;
-  color: var(--accent-light);
-  font-size: 1.02rem;
-}
-
-.calc-hint {
-  margin: 0.4rem 0 0;
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-}
-
+.changelog { margin-top: 3rem; }
 .changelog summary {
   cursor: pointer;
   font-weight: 700;

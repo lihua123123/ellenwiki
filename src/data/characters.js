@@ -5558,7 +5558,7 @@ export const characters = {
           "name": "E 后续",
           "elementAmount": "弱岩",
           "attachRule": "与「E 释放」共用附着 CD",
-          "particles": "1~2 个",
+          "particles": "1~2 个（4:1）",
           "note": "袖",
           "poise": ""
         },
