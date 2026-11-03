@@ -93,7 +93,7 @@
   box-shadow: 0 8px 22px color-mix(in srgb, var(--rarity-color, var(--accent)) 32%, transparent);
 }
 .artifact-thumb .artifact-icon {
-  background: color-mix(in srgb, var(--rarity-color, var(--accent)) 12%, #10131a);
+  background: color-mix(in srgb, var(--rarity-color, var(--accent)) 12%, var(--bg-body));
   padding: 7px;
   border-radius: 14px;
 }
@@ -138,7 +138,7 @@
   font-weight: 600;
   color: var(--accent-light);
   background: var(--accent-soft);
-  border: 1px solid rgba(106, 163, 240, 0.25);
+  border: 1px solid color-mix(in srgb, var(--accent-light) 25%, transparent);
 }
 
 /* ===== 详情 ===== */

@@ -1,0 +1,117 @@
+{
+ "name": "遗迹龙兽·空巡",
+ "nameEn": "Ruin Drake: Skywatch",
+ "subtitle": "",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 67.92,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "链型机枪",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "空巡龙兽使用两翼各朝前施放一排的子弹，造成<c=#b9b9b9>60%,18%,6%</c>伤害。"
+  },
+  {
+   "name": "禁法制导",
+   "type": "追踪",
+   "icon": "skill-2.webp",
+   "description": "空巡龙兽瞄准玩家，暴露腹部弱点，两翼后侧各施放5个追踪弹，造成<c=#b9b9b9>60%,18%,6%</c>伤害。"
+  },
+  {
+   "name": "近身齿刽",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "靠近空巡龙兽时，空巡龙兽向前翻滚一圈，使用尾部齿轮造成<c=#b9b9b9>80%</c>伤害。"
+  },
+  {
+   "name": "散落洪流",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "空巡龙兽暴露头部弱点，使用两翼汲取元素力，向空中抛出13枚散弹，造成<c=#bfbfff>100%,30%,10%</c>对应元素伤害并清空元素螺栓。"
+  },
+  {
+   "name": "能量再造",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "空巡龙兽施放「散落洪流」后，会立即吸收元素填充`元素螺栓`，使下一次「散洪流落」技能附上元素伤害。瘫痪龙兽清空元素螺栓及提升的抗性。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "元素螺栓",
+   "desc": "储存元素力。以<c=#ffebbf>上一次清空</c><c=#ffedbf>螺栓</c><c=#ffebbf>开始</c>所受到的<c=#ff9999>总和最高</c>的<c=#ffebbf>伤害属性</c>为准，<c=#99ffcc>不吸收挂着的元素</c>，吸收完毕后该元素抗性<c=#ff9999>+40%</c>。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_3302",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 277300,
+   "atk": 12311,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "ruin-drake-skywatch",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

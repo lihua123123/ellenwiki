@@ -1,0 +1,164 @@
+{
+ "name": "盗宝团·大姐头",
+ "nameEn": "Treasure Hoarder: Boss",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  },
+  {
+   "name": "士气",
+   "pyro": 70,
+   "hydro": 70,
+   "anemo": 70,
+   "electro": 70,
+   "dendro": 70,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 60
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "锈斧敲击",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "(旧)大姐头用斧砍，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "俎肉劈柴",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "(旧)大姐头用斧进行至多3段的普攻，每段分别造成<c=#b9b9b9>100%,100%,125%</c>伤害。"
+  },
+  {
+   "name": "斫金之势",
+   "type": "控制",
+   "icon": "skill-3.webp",
+   "description": "(旧)大姐头跳起，使用斧头下劈，造成<c=#b9b9b9>150%</c>伤害。"
+  },
+  {
+   "name": "落斧孤田",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "(旧)距离较远时，大姐头扔出她的斧头，造成<c=#b9b9b9>75%</c>伤害。"
+  },
+  {
+   "name": "斩铁之势",
+   "type": "控制",
+   "icon": "skill-5.webp",
+   "description": "(新)大姐头跳起，使用斧头下劈，造成<c=#b9b9b9>75%</c>伤害。"
+  },
+  {
+   "name": "抽筋剔骨",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "(新)大姐头用斧进行至多3段的普攻，每段分别造成<c=#b9b9b9>50%,50%,75%</c>伤害。"
+  },
+  {
+   "name": "遗斧芜野",
+   "type": "远程",
+   "icon": "skill-7.webp",
+   "description": "(新)距离较远时，大姐头扔出她的斧头，造成<c=#b9b9b9>60%</c>伤害。"
+  },
+  {
+   "name": "士气鼓舞",
+   "type": "强化",
+   "icon": "skill-8.webp",
+   "description": "(新)大姐头发怒，进入士气强化状态，该状态可使用<c=#ffff72>「避邪爆竹」</c>破除并使其瘫痪。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "WP[75,50,25,0x2](旧) WP[66x2,33x2],WO[0](新)",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通-旧模",
+   "level": 100,
+   "hp": 88236,
+   "atk": 4924,
+   "weight": 70,
+   "tenacity": 50
+  },
+  {
+   "label": "普通-2.4海灯节新模",
+   "level": 100,
+   "hp": 388220,
+   "atk": 7387,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "treasure-hoarder-boss",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

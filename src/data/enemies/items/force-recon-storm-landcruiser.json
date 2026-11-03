@@ -1,0 +1,94 @@
+{
+ "name": "巡陆艇·强侦攻坚型",
+ "nameEn": "Force Recon Storm Landcruiser",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 27.632000000000005,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 120,
+ "skills": [
+  {
+   "name": "光叶弹林",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "巡陆艇顶端机枪开火，发射数十发子弹后停止，持续造成<c=#99ff85>50%,40%,30%,20%,\n10%,5%</c>伤害。"
+  },
+  {
+   "name": "翠络连霖",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "巡陆艇激活顶端炮塔进入`附魔状态`，持续开火长达10s，持续造成<c=#99ff85>50%,40%,\n30%,20%,10%,5%</c>伤害，且每3秒发射1枚导弹，造成<c=#99ff85>100%</c>伤害，总共发射3枚。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "附魔状态",
+   "desc": "巡陆艇的武器进行附魔,此时<c=#ffdfbf>直接利用月矩力</c>可中断技能。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 110920,
+   "atk": 5417,
+   "weight": 120,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "force-recon-storm-landcruiser",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

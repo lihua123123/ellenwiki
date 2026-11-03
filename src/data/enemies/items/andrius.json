@@ -1,0 +1,168 @@
+{
+ "name": "安德留斯",
+ "nameEn": "Andrius",
+ "subtitle": "奔狼的领主",
+ "category": "EnemyOfNote",
+ "categoryLabel": "值得铭记的强敌",
+ "tier": "Boss",
+ "defaultLevel": 104,
+ "baseStats": {
+  "hp": {
+   "Value": 244.512,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 90.432,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": "IMM",
+   "electro": 10,
+   "dendro": 10,
+   "cryo": "IMM",
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "坚爪涛寒",
+   "type": "输出 一阶段",
+   "icon": "skill-1.webp",
+   "description": "安德留斯使用左或右爪迅速划击，造成<span class=\"cryo\">**58.3%**</span>伤害。"
+  },
+  {
+   "name": "御阵凕风",
+   "type": "输出 一阶段",
+   "icon": "skill-2.webp",
+   "description": "安德留斯在自身位置产生霜气，随后旋转身迅速划击，造成<span class=\"cryo\">**83.3%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>，并产生一个<span class=\"cryo\">**冰元素晶球**</span>。"
+  },
+  {
+   "name": "御阵流冰",
+   "type": "位移 一阶段",
+   "icon": "skill-3.webp",
+   "description": "安德留斯在落地的位置产生寒气，随后跳跃至此，造成<span class=\"cryo\">**83.3%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>，并产生一个<span class=\"cryo\">**冰元素晶球**</span>。"
+  },
+  {
+   "name": "晶雪重星",
+   "type": "远程 一阶段",
+   "icon": "skill-4.webp",
+   "description": "安德留斯甩尾，扔出5个冰锥，命中造成<span class=\"cryo\">**25%**</span>伤害，同时在命中点产生一个冰簇，片刻后爆炸造成<span class=\"cryo\">**58.3%**</span>伤害，留下一个<span class=\"cryo\">**冰元素晶球**</span>。"
+  },
+  {
+   "name": "驰间疾袭",
+   "type": "位移 一阶段",
+   "icon": "skill-5.webp",
+   "description": "安德留斯突然朝前方进行一次疾冲，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "陨息冻雨",
+   "type": "妨害 二阶段",
+   "icon": "skill-6.webp",
+   "description": "安德留斯在原地晃动全身，凝聚空气中的水汽，不断产生冰锥下坠，造成<span class=\"cryo\">**25%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>，持续30s。"
+  },
+  {
+   "name": "雾隐遄行",
+   "type": "位移 一阶段",
+   "icon": "skill-7.webp",
+   "description": "低于<c=#ffbfbf>55%生命值</c>或拖太长时间，安德留斯绕场地边缘跑动，跑3圈，前两圈跑完3/4圈直接冲撞，最后一圈跑完起跳下落。被场地边缘跑动的安德留斯撞到造成<span class=\"cryo\">**100%**</span>伤害，周围的冰霜地面持续造成<span class=\"cryo\">**16.6%**</span>伤害，且减速<c=#ffcdbf>12%</c>。"
+  },
+  {
+   "name": "冬晶矗石",
+   "type": "召唤 二阶段",
+   "icon": "skill-8.webp",
+   "description": "二阶段时，6个`寒石柱`出现在场地边缘，若其被安德留斯的<c=#99ffcc>风元素技能</c>命中则会延时5s后爆炸，造成<span class=\"cryo\">**66.6%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>，并产生1-5个<span class=\"cryo\">**冰元素晶球**</span>；寒石周围的冰霜持续造成<span class=\"cryo\">**4.16%**</span>伤害并减速<c=#ffcdbf>12%</c>。"
+  },
+  {
+   "name": "风斫千锷",
+   "type": "输出 二阶段",
+   "icon": "skill-9.webp",
+   "description": "安德留斯抬起身子放出3道风刃，各造成<span class=\"anemo\">**41.6%**</span>伤害。"
+  },
+  {
+   "name": "阴雪纷尘",
+   "type": "防卫 二阶段",
+   "icon": "skill-10.webp",
+   "description": "处在安德留斯身后时，安德留斯甩动尾部，造成<span class=\"cryo\">**58.3%**</span>伤害。"
+  },
+  {
+   "name": "白草凇花",
+   "type": "妨害 二阶段",
+   "icon": "skill-11.webp",
+   "description": "安德留斯抬起身子在途经上产生霜面，走在霜面上减速<c=#ffcdbf>30%</c>，并附着冰元素，随后霜面开始起爆，造成<span class=\"cryo\">**41.6%**</span>伤害。"
+  },
+  {
+   "name": "锋爪翠浪",
+   "type": "输出 二阶段",
+   "icon": "skill-12.webp",
+   "description": "安德留斯使用左或右爪迅速划击，造成<span class=\"anemo\">**58.3%**</span>伤害。"
+  },
+  {
+   "name": "魂生凛狼",
+   "type": "召唤 二阶段",
+   "icon": "skill-13.webp",
+   "description": "生命值低于<c=#ffcebf>15%</c>或耗时太久时，安德留斯在玩家附近不断召唤小狼幻影攻击玩家，造成<span class=\"cryo\">**25%**</span>伤害。"
+  },
+  {
+   "name": "荡啸穹帷",
+   "type": "爆发 二阶段",
+   "icon": "skill-14.webp",
+   "description": "安德留斯仰起头朝空中咆哮，在全场产生持续性风暴，造成<span class=\"anemo\">**0.416%**</span>至<span class=\"anemo\">**8.716%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>，离安德留斯越远伤害越高(<span class=\"anemo\">**0.166%x距离+0.416%**</span>)。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "寒石柱",
+   "desc": "<span class=\"cryo\">**4冻**</span>盾，可破坏，但是可再生，受安德留斯风元素技能攻击会进入5s的引信时间，随后爆炸，并清除附近的冰地面。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "寒石柱",
+   "description": "<span class=\"cryo\">**4冻**</span>盾，可破坏，但是可再生，受安德留斯风元素技能攻击会进入5s的引信时间，随后爆炸，并清除附近的冰地面。",
+   "elementType": "Frozen",
+   "duration": 5
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "大世界周本",
+   "level": 104,
+   "hp": 725908,
+   "atk": 19145,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "andrius",
+ "icon": "avatar.webp",
+ "tags": [
+  "值得铭记的强敌"
+ ]
+}

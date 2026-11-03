@@ -1,0 +1,144 @@
+{
+ "name": "无相之风",
+ "nameEn": "Anemo Hypostasis",
+ "subtitle": "「贝特」",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": "IMM",
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "气蓄空爆",
+   "type": "牵引",
+   "icon": "skill-1.webp",
+   "description": "无相之风脱去外壳暴露核心，在周围产生真空场牵引玩家，持续造成<span class=\"anemo\">**25%**</span>伤害，之后产生剧烈爆炸，造成<span class=\"anemo\">**150%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "翠星一煜",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "无相之风开阵，8个风立方外壳围一圈暴露核心，发射3个风弹，每个风弹造成<span class=\"anemo\">**75%**</span>伤害。"
+  },
+  {
+   "name": "蝶振微风",
+   "type": "控制",
+   "icon": "skill-3.webp",
+   "description": "无相之风化成风晶蝶，在其前方吹飞玩家，造成<span class=\"anemo\">**75%**</span>伤害，之后施放十字斩击，造成<span class=\"anemo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "墙封·疾巡",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "无相之风将外壳化为成两面墙，随后夹击，造成<span class=\"anemo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "飓风临陆",
+   "type": "辅助",
+   "icon": "skill-5.webp",
+   "description": "无相之风盘旋升空，于空中向地面注入风元素气旋，持续造成<span class=\"anemo\">**25%**</span>伤害，同时场地出现8个游离的龙卷风，龙卷风可被<c=#ff9999>火</c>/<c=#7fbfff>水</c>/<c=#ffacff>雷</c>/<span class=\"cryo\">**冰**</span>染色，接触造成<c=#ffeebf>对应元素</c>的<c=#ffdfbf>75%</c>伤害，最终形成对应`元素之微粒`。"
+  },
+  {
+   "name": "覆地残流",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "无相之风在地面高速旋转，在其周围持续造成<span class=\"anemo\">**10%**</span>伤害，并开始吸收元素之微粒，产生大范围冲击波，造成对应元素的<c=#ffdfbf>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，吸收3个微粒后停止攻击，暴露核心。"
+  },
+  {
+   "name": "天坠风渠",
+   "type": "辅助",
+   "icon": "skill-7.webp",
+   "description": "无相之风蜕去外壳，将风立方从空中坠下，风立方落地产生风场，每个造成<span class=\"anemo\">**100%**</span>伤害，共计下落3个风立方。"
+  },
+  {
+   "name": "濒亡·气集",
+   "type": "复苏",
+   "icon": "skill-8.webp",
+   "description": "生命值低于5%时，无相之风召唤4个`复苏风晶球`，周围产生4个风场，复苏持续15s，每个风之晶球恢复无相之风<span class=\"anemo\">**12.5%**</span>生命值，无晶球时恢复<c=#72ffdc>5%</c>生命值。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "元素之微粒",
+   "desc": "触碰产生6个对应元素微粒。"
+  },
+  {
+   "text": "复苏风晶球",
+   "desc": "触碰产生3个风元素微粒。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 275905,
+   "atk": 15665,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "anemo-hypostasis",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

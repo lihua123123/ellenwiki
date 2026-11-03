@@ -1,0 +1,101 @@
+{
+ "name": "雷弹丘丘人",
+ "nameEn": "Electro Hilichurl Grenadier",
+ "subtitle": "",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 22.608,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "炸雷布丁",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "雷弹丘丘人从地里挖出`雷史莱姆`，扔出爆炸造成<c=#ffacff>100%</c>伤害，史莱姆可被打落，一段时间爆炸也造成相同伤害。\n在水里挖出的也是正常的雷史莱姆。"
+  },
+  {
+   "name": "掌掴子搭",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "史莱姆被打落后，雷弹丘丘人挥手抓玩家，造成<c=#b8b8b8>75%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "雷史莱姆",
+   "desc": "<c=#ffacff>1.2雷</c>盾，耗尽后仍造成雷元素伤害。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "雷史莱姆",
+   "description": "<c=#ffacff>1.2雷</c>盾，耗尽后仍造成雷元素伤害。",
+   "elementType": "Electric",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 36765,
+   "atk": 4432,
+   "weight": 75,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "electro-hilichurl-grenadier",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

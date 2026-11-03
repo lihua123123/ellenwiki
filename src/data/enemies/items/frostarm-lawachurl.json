@@ -1,0 +1,141 @@
+{
+ "name": "丘丘霜铠王",
+ "nameEn": "Frostarm Lawachurl",
+ "subtitle": "冰霜刻印的丘丘王者",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 122.256,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 150.72,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 70,
+   "geo": 10,
+   "physical": 50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "黑虎掏",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "冰丘丘王进行勾拳、捶地2段的普通攻击，分别造成<c=#b9b9b9>37.5%,40%</c>伤害。"
+  },
+  {
+   "name": "冰霜嵌",
+   "type": "强化",
+   "icon": "skill-2.webp",
+   "description": "冰丘丘王进行扩胸运动，全身变冰霜发亮，进入<c=#4cffff>魔化状态</c>，并附属`冰铠`。"
+  },
+  {
+   "name": "鹤捕虾",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "(魔化)冰丘丘王蓄力冲过来，造成<c=#b9b9b9>50%</c>伤害，并在其路径上留下6个冰簇，冰簇接触爆炸造成<c=#b9b9b9>25%</c>伤害。"
+  },
+  {
+   "name": "掌掴蝇",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "(魔化)冰丘丘王左手蓄力一挥，造成<c=#b9b9b9>37.5%</c>伤害，并留下冰晶，冰晶迸裂造成<span class=\"cryo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "乌鸦坐",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "(魔化)冰丘丘王侧身蓄力起跳，重重下落造成<c=#b9b9b9>100%</c>伤害，并留下结冰地面，接触造成<span class=\"cryo\">**15%**</span>伤害。"
+  },
+  {
+   "name": "地震拳",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "冰丘丘王进行1-2次的双手锤击地面攻击，两次分别造成<c=#b9b9b9>50%,62.5%</c>伤害，第二次锤击的范围更大。"
+  },
+  {
+   "name": "布丁飞",
+   "type": "远程",
+   "icon": "skill-7.webp",
+   "description": "冰丘丘王从地上挖并抛出3只冰史莱姆，每个造成<span class=\"cryo\">**50%**</span>伤害。\n<c=#00ffff>魔化状态：</c>抛出一只大冰史莱姆，造成<span class=\"cryo\">**62.5%**</span>伤害；"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冰铠",
+   "desc": "<span class=\"cryo\">**30冻**</span>盾，持续90s。该状态下，抗打断0，免疫风场力，且获得80%的减伤。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "冰铠",
+   "description": "<span class=\"cryo\">**30冻**</span>盾，持续90s。该状态下，抗打断0，免疫风场力，且获得80%的减伤。",
+   "elementType": "Frozen",
+   "duration": 90
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "WP[75x3,50x3,25x3,0x3], WO[75,50,25,0]",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 3,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 3,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 3,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 330886,
+   "atk": 29547,
+   "weight": 150,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "frostarm-lawachurl",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

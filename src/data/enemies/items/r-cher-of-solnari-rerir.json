@@ -1,0 +1,174 @@
+{
+ "name": "渎死之罪·雷利尔",
+ "nameEn": "Rächer of Solnari: Rerir",
+ "subtitle": "渎死之罪",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 102,
+ "baseStats": {
+  "hp": {
+   "Value": 1956.096,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 52.752,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [
+  {
+   "name": "伏于日月影处",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "雷利尔飞速地进行至多6段的普通攻击，依次造成<c=#b8b8b8>5%,20%,25%,5%,5%,25%</c>伤害，若目标距离较远，则第三段普攻后闪现至目标侧位继续攻击或后接技能。\n「血雾隐匿」下只施放后三段攻击。"
+  },
+  {
+   "name": "愆月倒映之罅",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "雷利尔原地掷击地面，造成<c=#b8b8b8>30%</c>伤害，并召唤4枚月影，依次朝玩家发射光束，均造成<c=#b8b8b8>10%</c>伤害。\n「血雾隐匿」下不出现月影；瘫痪恢复后连续施放3次，第三次召唤月影。"
+  },
+  {
+   "name": "庭前僭行之礼",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "雷利尔从远处伏爪冲击而来，造成<c=#b8b8b8>50%</c>伤害。"
+  },
+  {
+   "name": "阴怨未曾消逝",
+   "type": "反击",
+   "icon": "skill-4.webp",
+   "description": "近距离攻击闲逛的雷利尔时，受击3次后触发格挡，立即造成<c=#b8b8b8>10%</c>伤害。"
+  },
+  {
+   "name": "自异界的注视",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "雷利尔闲逛时，其周围会出现2枚月影，对玩家发射黑矢，造成<c=#b8b8b8>5%</c>伤害。"
+  },
+  {
+   "name": "行过死月之荫",
+   "type": "妨害",
+   "icon": "skill-6.webp",
+   "description": "战斗进行一段时间后，雷利尔扬起血雾，进入「血雾隐匿」状态，交替施放技能；期间全队流血：每2s损失当前<c=#ffbfbf>1.5%生命值</c>，不致死。"
+  },
+  {
+   "name": "斩阵狂殄八方",
+   "type": "猛攻",
+   "icon": "skill-7.webp",
+   "description": "雷利尔突然跃来，朝地猛击，并引发爆裂，依次造成<c=#b8b8b8>30%,40%</c>伤害，为绝大部分技能的后接技。"
+  },
+  {
+   "name": "殁于恒月之上",
+   "type": "输出",
+   "icon": "skill-8.webp",
+   "description": "雷利尔进行戳、挑、猛戳至多3段的普通攻击，依次造成<c=#b8b8b8>15%,20%,20%</c>伤害，可后接技能「将那黑日谖忘」。"
+  },
+  {
+   "name": "殒于虹月之外",
+   "type": "输出",
+   "icon": "skill-9.webp",
+   "description": "雷利尔进行转、转圈、猛戳至多3段的普通攻击，依次造成<c=#b8b8b8>20%,25%x2,25%</c>伤害，可后接技能「斩阵狂殄八方」。"
+  },
+  {
+   "name": "殉于霜月之下",
+   "type": "输出",
+   "icon": "skill-10.webp",
+   "description": "雷利尔立即进行数圈的旋转攻击，持续造成<c=#b8b8b8>30%</c>伤害。"
+  },
+  {
+   "name": "猎逐灭朽不留",
+   "type": "输出",
+   "icon": "skill-11.webp",
+   "description": "雷利尔立即进行数圈的旋转攻击，持续造成<c=#b8b8b8>30%</c>伤害，旋转结束后立即后接技能「斩阵狂殄八方」。"
+  },
+  {
+   "name": "待回首再深恸",
+   "type": "防御",
+   "icon": "skill-12.webp",
+   "description": "处于雷利尔后侧时，雷利尔扔出5枚暗刻之刺，每枚造成<c=#b8b8b8>10%</c>伤害，并立即后接技能「斩阵狂殄八方」。"
+  },
+  {
+   "name": "将那黑日谖忘",
+   "type": "输出",
+   "icon": "skill-13.webp",
+   "description": "雷利尔划出一道裂缝，飞出4枚虚星，每枚造成<c=#b8b8b8>10%</c>伤害，并立即朝玩家处回斩，造成<c=#b8b8b8>50%</c>伤害。"
+  },
+  {
+   "name": "银月终将毁伤",
+   "type": "爆发",
+   "icon": "skill-14.webp",
+   "description": "战斗进行一段时间后，雷利尔起飞至空中蓄力，展开结界，在场地内持续随机生成虚棘和`月矩粒`，造成<c=#b8b8b8>15%</c>伤害；25s后灾劫降下，<c=#ffbfbf>秒杀</c>不处于`护罩`下的角色，对处于护罩下的角色造成<c=#ffdfbf>20%生命值</c>的伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "血雾隐匿",
+   "desc": "该状态下交替施放技能，根据菈乌玛的指示可以寻得雷利尔位置，使用菲林斯提供的特殊技能[T]击中雷利尔幻影以中断，累计2次后退出状态，并恢复全队元素能量与特殊能量。"
+  },
+  {
+   "text": "月矩粒",
+   "desc": "恢复25%生命值和40元素能量，在雷利尔大招期间，吸收3枚可形成护罩。"
+  },
+  {
+   "text": "护罩",
+   "desc": "抵挡雷利尔的所有伤害，处于护罩内可避免流失元素能量；大招结束后恢复全队元素能量与特殊能量。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "护罩",
+   "description": "抵挡雷利尔的所有伤害，处于护罩内可避免流失元素能量；大招结束后恢复全队元素能量与特殊能量。",
+   "elementType": "",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "剧情首领",
+   "level": 102,
+   "hp": 8505024,
+   "atk": 10718
+  }
+ ],
+ "leyline": null,
+ "id": "r-cher-of-solnari-rerir",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

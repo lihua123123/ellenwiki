@@ -1,0 +1,151 @@
+{
+ "name": "欢腾之火",
+ "nameEn": "Kindlejoy",
+ "subtitle": "",
+ "category": "Others",
+ "categoryLabel": "其他",
+ "tier": "Common",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 36.6768,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 54.25920000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 20,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 20,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "灼热震波",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "旋转火蕈兽在周围施放一团热焰，造成<c=#ff9999>78%</c>伤害。"
+  },
+  {
+   "name": "烧灼禁区",
+   "type": "防御",
+   "icon": "skill-2.webp",
+   "description": "旋转火蕈兽在自身周围产生2个不断旋转的火花，持续造成<c=#ff9999>10.9%</c>伤害，并且自身<c=#cc99ff>防御力提升200%</c>。"
+  },
+  {
+   "name": "熔融爆轰",
+   "type": "战技",
+   "icon": "skill-3.webp",
+   "description": "旋转火蕈兽聚集附近的敌人，在产生一个大爆炸，造成<c=#ff9999>512%</c>伤害，被命中的敌人<c=#ffe599>降低15%所有抗性</c>。"
+  },
+  {
+   "name": "灼热激波",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "旋转火蕈兽在周围施放一团热焰，造成<c=#ff9999>300%</c>伤害。"
+  },
+  {
+   "name": "高温压制",
+   "type": "妨害",
+   "icon": "skill-5.webp",
+   "description": "旋转火蕈兽的攻击命中目标时，将<c=#cc99ff>降低目标40%防御力</c>。"
+  },
+  {
+   "name": "焚烧扇区",
+   "type": "战技",
+   "icon": "skill-6.webp",
+   "description": "旋转火蕈兽凝聚火元素环，接触该环持续造成<c=#ff9999>167%</c>伤害，火环存在期间不能进行其他攻击。"
+  },
+  {
+   "name": "灼热震波",
+   "type": "输出",
+   "icon": "skill-7.webp",
+   "description": "旋转火蕈兽在周围施放一团热焰，造成<c=#ff9999>300%</c>伤害。"
+  },
+  {
+   "name": "高温助燃",
+   "type": "防御",
+   "icon": "skill-8.webp",
+   "description": "焚烧扇区持续时间内，提升<c=#ffe599>自身70%所有抗性</c>。"
+  },
+  {
+   "name": "焚烧扇区",
+   "type": "战技",
+   "icon": "skill-9.webp",
+   "description": "旋转火蕈兽凝聚火元素环，接触该环持续造成<c=#ff9999>90%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "3.5 灵蕈棋阵",
+   "desc": "150元素精通。"
+  },
+  {
+   "text": "4.2 小小灵蕈大幻戏",
+   "desc": "100元素精通，剧变反应系数1.5。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "友方-3.2智巧灵蕈",
+   "level": 90
+  },
+  {
+   "label": "普通敌方-3.2智巧灵蕈",
+   "level": 90,
+   "hp": 83105,
+   "atk": 6577,
+   "weight": 75,
+   "tenacity": 600
+  },
+  {
+   "label": "友方-3.5塔防灵蕈",
+   "level": 90
+  },
+  {
+   "label": "友方-4.2幻戏灵蕈",
+   "level": 90,
+   "hp": 116866,
+   "atk": 8222,
+   "weight": 75,
+   "tenacity": 600
+  }
+ ],
+ "leyline": null,
+ "id": "kindlejoy",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他"
+ ]
+}

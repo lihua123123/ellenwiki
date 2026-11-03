@@ -1,0 +1,278 @@
+{
+ "name": "熔岩辉龙像",
+ "nameEn": "Lava Dragon Statue",
+ "subtitle": "石心流焰的终型",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 366.768,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "常态",
+   "pyro": 70,
+   "hydro": 70,
+   "anemo": 70,
+   "electro": 70,
+   "dendro": 70,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 70
+  },
+  {
+   "name": "熔焰",
+   "pyro": 70,
+   "hydro": -30,
+   "anemo": -30,
+   "electro": -30,
+   "dendro": -30,
+   "cryo": -30,
+   "geo": -30,
+   "physical": -30
+  },
+  {
+   "name": "瘫痪",
+   "pyro": -60,
+   "hydro": -60,
+   "anemo": -60,
+   "electro": -60,
+   "dendro": -60,
+   "cryo": -60,
+   "geo": -60,
+   "physical": -60
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "煨炙羹饮",
+   "type": "输出 岩之人",
+   "icon": "skill-1.webp",
+   "description": "辉龙至多进行2段攻击：身转一周，造成<c=#b8b8b8>40%</c>伤害，而后顺带将碗内的浓汤倒出，造成<c=#ff9999>50%</c>伤害，洒在地上留下的浓汤将持续一段时间，并造成<c=#ff9999>30%</c>伤害。"
+  },
+  {
+   "name": "燠汤氽元",
+   "type": "远程 岩之人",
+   "icon": "skill-2.webp",
+   "description": "距离较远时，辉龙装弹，准备进行迫击：抛出4-5颗汤圆，均造成<c=#ff9999>30%,\n4.5%</c>伤害。"
+  },
+  {
+   "name": "铿晶戛岩",
+   "type": "输出 岩之人",
+   "icon": "skill-3.webp",
+   "description": "辉龙用力重击，造成<c=#b8b8b8>30%</c>伤害，随后借力跃起至玩家上方，然后重重下落，造成<c=#b8b8b8>70%</c>伤害。"
+  },
+  {
+   "name": "捲尘浮灰",
+   "type": "位移 岩之人",
+   "icon": "skill-4.webp",
+   "description": "辉龙挥舞双爪不断进行旋转突进，持续造成<c=#b8b8b8>30%</c>伤害。"
+  },
+  {
+   "name": "气燔焦涌",
+   "type": "猛攻 熔焰之龙",
+   "icon": "skill-5.webp",
+   "description": "辉龙进行3段攻击：分别使用左右岩壳进行攻击，依次造成<c=#ff9999>40%,60%</c>伤害，最后使岩泉横流，造成<c=#ff9999>100%</c>伤害。"
+  },
+  {
+   "name": "流脉横丝",
+   "type": "输出 熔焰之龙",
+   "icon": "skill-6.webp",
+   "description": "辉龙进行蓄力，而后喷吐燃素熔流，顺时针自转一圈，造成<c=#ff9999>70%</c>伤害。"
+  },
+  {
+   "name": "烬底游犁",
+   "type": "位移 熔焰之龙",
+   "icon": "skill-7.webp",
+   "description": "距离较远时，辉龙搓着岩壳朝玩家方向推进，接触造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "溢于岩表",
+   "type": "天赋",
+   "icon": "skill-8.webp",
+   "description": "辉龙具有2种状态：「岩之人」和「熔焰之龙」；两个状态可互相转化，且受到<c=#ff9999>火元素</c>伤害均会累积热量，但后者受到<span class=\"cryo\">**冰元素**</span>或<c=#7fbfff>水元素</c>伤害时会失去大量热量，直至回退「岩之人」状态。「熔焰之龙」状态下累积热量达50%和100%时，均会损失当前<c=#ffbfbf>15%</c>生命值，而后者将瘫痪13s，苏醒后回退至「岩之人」。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "深渊抗性",
+   "desc": "正常150%，熔焰状态火150% / 其他45%，瘫痪10%。"
+  },
+  {
+   "text": "热量",
+   "desc": "「岩之人」状态下350点；「熔焰之龙」状态下800点，且初始拥有12.5%(100)的热量，自身常驻火元素。\n「岩之人」状态下受到火元素攻击后，会根据火元素的量积攒6.786n%(23.75n)或2%(7)热量，攒满后进入「熔焰之龙」状态；\n「熔焰之龙」状态下受到火元素攻击后，会根据火元素的量积攒2.969n%(23.75n)或0.875%(7)热量，该状态下一旦受冰元素或水元素攻击时，会立即失去18.75%(150)热量，热量不足会退回「岩之人」状态。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [
+  {
+   "Name": "热量",
+   "Description": "「岩之人」状态下350点；「熔焰之龙」状态下800点，且初始拥有12.5%(100)的热量，自身常驻火元素。\n「岩之人」状态下受到火元素攻击后，会根据火元素的量积攒6.786n%(23.75n)或2%(7)热量，攒满后进入「熔焰之龙」状态；\n「熔焰之龙」状态下受到火元素攻击后，会根据火元素的量积攒2.969n%(23.75n)或0.875%(7)热量，该状态下一旦受冰元素或水元素攻击时，会立即失去18.75%(150)热量，热量不足会退回「岩之人」状态。",
+   "IconPath": "",
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "「岩之人」状态下350点；「熔焰之龙」状态下800点，且初始拥有12.5%(100)的热量，自身常驻火元素。\n「岩之人」状态下受到火元素攻击后，会根据火元素的量积攒6.786n%(23.75n)或2%(7)热量，攒满后进入「熔焰之龙」状态；\n「熔焰之龙」状态下受到火元素攻击后，会根据火元素的量积攒2.969n%(23.75n)或0.875%(7)热量，该状态下一旦受冰元素或水元素攻击时，会立即失去18.75%(150)热量，热量不足会退回「岩之人」状态。"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:A_3302",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1645248,
+   "atk": 20886,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": {
+  "name": "熔岩辉龙像·炽烈流焰",
+  "nameEn": "Lava Dragon Statue: Blazing Flame",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 897874,
+    "atk": 15225,
+    "multiplier": 1.2,
+    "advantage": "Pyro Adv."
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 4474008,
+    "atk": 19698,
+    "multiplier": 4.0,
+    "advantage": "Dendro Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 5690636,
+    "atk": 21681,
+    "multiplier": 4.4,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 11325501,
+    "atk": 23222,
+    "multiplier": 8.0,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "岩石",
+    "diffNote": "N5",
+    "pyro": 200,
+    "hydro": 200,
+    "anemo": 200,
+    "electro": 200,
+    "dendro": 200,
+    "cryo": 200,
+    "geo": 200,
+    "physical": 200
+   },
+   {
+    "name": "熔焰",
+    "diffNote": "N5",
+    "pyro": 200,
+    "hydro": 45,
+    "anemo": 45,
+    "electro": 45,
+    "dendro": 45,
+    "cryo": 45,
+    "geo": 45,
+    "physical": 45
+   },
+   {
+    "name": "瘫痪",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   }
+  ],
+  "skills": [
+   {
+    "name": "浮溢坚岩",
+    "type": "天赋 (N5)",
+    "icon": "leyline-skill-1.webp",
+    "description": "辉龙具有2种状态：「岩之人」和「熔焰之龙」；两个状态可互相转化，且受到<c=#ff9999>火元素</c>伤害均会累积热量，且热效率相对于正常难度有所下降；\n「岩之人」状态下<c=#ffdfbf>350</c>点；「熔焰之龙」状态下<c=#ffdfbf>800</c>点，且初始拥有<c=#ffdfbf>12.5%</c>(100)的热量，自身常驻<c=#ff9999>火元素</c>。\n「岩之人」状态下积攒热量，攒满后进入「熔焰之龙」状态；\n「熔焰之龙」状态下攒满热量后辉龙像将直接瘫痪13s，此状态下一旦受<span class=\"cryo\">**冰元素**</span>或<c=#7fbfff>水元素</c>攻击时，会立即失去<c=#ffdfbf>18.75%</c>(150)热量。\n「熔焰之龙」状态下累积热量达50%和100%时，均会损失当前<c=#ffbfbf>15%</c>生命值；瘫痪结束后，或热量不足会退回「岩之人」状态。\n<c=#ffbfff>(N6) </c>存在<c=#ff9999>最大扣血伤害</c>1500000点；"
+   }
+  ],
+  "notes": [
+   {
+    "text": "热效率",
+    "desc": "影响<c=#ff9999>火元素</c>提供热量的系数，不影响无附着火攻击提供的热量。\n熔岩辉龙像的热效率为95%。\n热量条的积攒=<c=#ffdfbf>热效率×元素量×25</c>。\n「岩之人」状态下受到<c=#ff9999>火元素</c>攻击后，会根据此次攻击的元素量n，在当n>0或n=0时积攒<c=#ffdfbf>6.786n%</c>(23.75n)或<c=#ffdfbf>2%</c>(7)热量；「熔焰之龙」状态时则积攒<c=#ffdfbf>2.969n%</c>(23.75n)或<c=#ffdfbf>0.875%</c>(7)热量。\n<c=#ffbfbf>(N5) </c>热效率变为45%；当元素量n>0时，「岩之人」状态下积攒的热量降为<c=#ffdfbf>3.214n%</c>(11.25n)热量；「熔焰之龙」状态则为积攒<c=#ffdfbf>1.406n%</c>(11.25n)热量。\n多人模式下的热效率亦存在衰减：1/2/3/4人，热效率为<c=#ffdfbf>95%</c>/<c=#ffdfbf>76%</c>/\n<c=#ffdfbf>67.857%</c>/<c=#ffdfbf>63.33%</c>。<c=#ffbfbf>(N5) </c>热效率为<c=#ffdfbf>45%</c>/<c=#ffdfbf>36%</c>/<c=#ffdfbf>32.1%</c>/<c=#ffdfbf>30%</c>。"
+   },
+   {
+    "text": "(N3) 抗性",
+    "desc": "岩石70%，熔焰火70% / 其他-30%，瘫痪-60%。"
+   },
+   {
+    "text": "(N4) 抗性",
+    "desc": "岩石150%，熔焰火150% / 其他45%，瘫痪10%。"
+   }
+  ],
+  "shields": []
+ },
+ "id": "lava-dragon-statue",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽",
+  "幽境危战"
+ ]
+}

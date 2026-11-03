@@ -1,0 +1,107 @@
+{
+ "name": "流灰之城的魔龙",
+ "nameEn": "Dragon of the City of Flowing Ash",
+ "subtitle": "受垢者",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 101,
+ "baseStats": {
+  "hp": {
+   "Value": 163.00799999999998,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "拂以蔑炎",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "魔龙进行右划攻击，其分别造成<c=#ff9999>40%</c>伤害。"
+  },
+  {
+   "name": "烬星飞火",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "魔龙连续发射4枚火球，每枚造成<c=#ff9999>50%</c>伤害。"
+  },
+  {
+   "name": "燔武不疾",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "处于魔龙侧方或后方时， 魔龙自身转一圈，造成<c=#ff9999>50%</c>伤害。"
+  },
+  {
+   "name": "焚风贤火",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "魔龙朝前方扇形区域喷吐怨流焚火，持续造成<c=#ff9999>60%</c>伤害。"
+  },
+  {
+   "name": "秽炎凝露",
+   "type": "蓄力",
+   "icon": "skill-5.webp",
+   "description": "魔龙伏地进行蓄力，在其周围产生3枚凝露，此时其身覆有`虚界护罩`；10s后吸收凝露并发动震地攻击，造成<c=#ff9999>80%</c>伤害，爆炸还将扩散到凝露所在的位置。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "凝露",
+   "desc": "魔龙吸收后恢复150点虚界护罩。拾取后角色将获得光环。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "剧情",
+   "level": 101,
+   "hp": 686784,
+   "atk": 11446,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "dragon-of-the-city-of-flowing-ash",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

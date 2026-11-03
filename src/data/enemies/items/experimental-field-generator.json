@@ -1,0 +1,222 @@
+{
+ "name": "实验性场力发生装置",
+ "nameEn": "Experimental Field Generator",
+ "subtitle": "布雷阁原型机器",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 213.26879999999997,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 113.04,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 70,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "飞岩爿幕",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "实验场力装置瞄准远处目标，连续投射15发岩片子弹，造成<c=#b8b8b8>50%,25%,12.5%,\n5%</c>伤害。"
+  },
+  {
+   "name": "轴转二劫",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "实验场力装置发射两束激光，激光从内向外慢慢旋转，接触造成<c=#b8b8b8>50%,25%,\n12.5%,5%</c>伤害。"
+  },
+  {
+   "name": "天云砂雨",
+   "type": "接近",
+   "icon": "skill-3.webp",
+   "description": "实验场力装置从远处接近目标，并持续下落，造成<c=#b8b8b8>50%,25%,12.5%,5%</c>伤害，\n最后下坠，造成<c=#b8b8b8>60%</c>伤害。"
+  },
+  {
+   "name": "锋针及地",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "实验场力装置直接在目标上方进行下砸，造成<c=#b8b8b8>60%</c>伤害。"
+  },
+  {
+   "name": "初场力潮",
+   "type": "跳跃提升",
+   "icon": "skill-5.webp",
+   "description": "低于<c=#ffbfbf>70%</c>生命值或半分钟后，实验场力装置移至场地中央，暴露<c=#b299ff>`荒性发条`</c>，展开`重力场`，以30m为半径的场地上的重力将削减(实际上就是提供与魈相同的跳跃提升效果)。\n跳跃提升效果可以用于躲避某些伤害。"
+  },
+  {
+   "name": "引力涟漪",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "实验场力装置将蓄能，产生振荡地面的晶岩浪潮，碰到造成<c=#ffe599>100%,50%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，力场开始施放慢三连，结束时施放慢三连与快三连。"
+  },
+  {
+   "name": "炊岩崩玉",
+   "type": "追踪",
+   "icon": "skill-7.webp",
+   "description": "实验场力装置唤起7根残缺石柱，依次朝目标发射，造成<c=#ffe599>80%,16%,8%</c>伤害。"
+  },
+  {
+   "name": "断峡碛升",
+   "type": "强攻",
+   "icon": "skill-8.webp",
+   "description": "实验场力装置将在场地内持续产生不断长大的裂隙，石砂从其间迸出，造成<c=#ffe599>80%</c>伤害，技能持续较久。"
+  },
+  {
+   "name": "斫地凿心",
+   "type": "输出",
+   "icon": "skill-9.webp",
+   "description": "实验场力装置蓄能，在其周围区域产生振荡，造成<c=#ffe599>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "荒性发条",
+   "desc": "累计受到3次芒性攻击方可打断重力场，强迫退出减重模式。"
+  },
+  {
+   "text": "重力削减力场",
+   "desc": "跳跃能力提高。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_3303",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 956681,
+   "atk": 23497,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": {
+  "name": "实验性场力发生装置·极端势能",
+  "nameEn": "Experimental Field Generator: Extreme Potential",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 966919,
+    "atk": 13322,
+    "multiplier": 1.2,
+    "advantage": ""
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 4818053,
+    "atk": 17235,
+    "multiplier": 4.0,
+    "advantage": "Plunging Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 13231421,
+    "atk": 18971,
+    "multiplier": 9.5,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 23020735,
+    "atk": 20319,
+    "multiplier": 15.1,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "正常",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 70,
+    "physical": 10
+   }
+  ],
+  "skills": [
+   {
+    "name": "引力涟漪",
+    "type": "爆发",
+    "icon": "leyline-skill-1.webp",
+    "description": "实验场力装置将蓄能，产生振荡地面的晶岩浪潮，碰到造成<c=#ffe599>100%,50%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，施放完毕后结束`重力场`。\n<c=#ffbfbf>(N5)</c> 根据自身`算势`层数，持续施放强震波，以慢三连开头，之后以快三连形式持续施放，造成<c=#ffe599>120%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，最多重复5次。"
+   }
+  ],
+  "notes": [
+   {
+    "text": "重力场",
+    "desc": "力场发生器入战即开启重力场，此时角色的跳跃能力增强，荒性发条生效，<c=#ffdfbf>3次芒性攻击</c>会提前结束重力场；\n<c=#ffbfbf>(N5)</c> 湮灭荒性发条只会打断力场发生器，使其更早施放引力涟漪结束重力场；\n<c=#ffbfbf>(N5) </c>当角色超过一定高度时将获得极短时间的攻击力加成，限高2m，角色获得<c=#ffbfbf>600%攻击力</c>加成，持续<c=#ffdfbf>1.5s</c>；某些特殊模型移动无法触发，如菲林斯雷霆交响(首段，二段可Q后立即起跳吃到)、玛薇卡坠日斩等。"
+   },
+   {
+    "text": "(N5) 算势",
+    "desc": "力场发生器开启重力场时叠加的强化，每5s叠加一层算势，受到下落攻击移除一层算势，最多可持有5层算势，算势数会决定最后引力涟漪快三连的数量。"
+   }
+  ],
+  "shields": []
+ },
+ "id": "experimental-field-generator",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关",
+  "幽境危战"
+ ]
+}

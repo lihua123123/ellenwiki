@@ -1,0 +1,94 @@
+{
+ "name": "千岩军士兵",
+ "nameEn": "Millelith Soldier",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 21.7344,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 20.096000000000004,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "白缨枪狩",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "千岩军士兵使用白缨枪进行上挑攻击，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "染血红缨",
+   "type": "猛攻",
+   "icon": "skill-2.webp",
+   "description": "千岩军士兵使用白缨枪进行冲刺攻击，造成<c=#b9b9b9>100%</c>伤害，若接收了千岩军教头的命令则连续冲刺3次。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_1102",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 58824,
+   "atk": 3940,
+   "weight": 75,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "millelith-soldier",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

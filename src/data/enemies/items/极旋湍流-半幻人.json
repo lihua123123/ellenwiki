@@ -1,0 +1,39 @@
+{
+ "name": "极旋湍流·半幻人",
+ "nameEn": "",
+ "subtitle": "驱侵之役",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 35,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "id": "极旋湍流-半幻人",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

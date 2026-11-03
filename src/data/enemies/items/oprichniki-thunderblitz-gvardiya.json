@@ -1,0 +1,106 @@
+{
+ "name": "愚人众特辖队·雷霰近卫军",
+ "nameEn": "Oprichniki: Thunderblitz Gvardiya",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 54.336,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "巡夜贯星",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "雷枪使用武器进行2次枪击和一次扇形扫射，造成<c=#ffacff>50%,5%</c>伤害。"
+  },
+  {
+   "name": "蛰暗明光",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "雷枪突然跃起，发射一团子弹，造成<c=#ffacff>100%</c>伤害。"
+  },
+  {
+   "name": "紫棘鸣空",
+   "type": "定点",
+   "icon": "skill-3.webp",
+   "description": "雷枪朝空中开枪，集火地面，连续造成<c=#ffacff>70%,13.5%,7%</c>伤害。"
+  },
+  {
+   "name": "罪剿长夜",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "雷枪启动武器，进行持续7s的枪击，连续造成<c=#ffacff>80%,16%,8%</c>伤害。武器属「单极」物件，可被`月`<c=#cdbfff>矩</c><c=#edbfff>力</c>干扰。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:A_1101",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 221840,
+   "atk": 9849,
+   "weight": 150,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "oprichniki-thunderblitz-gvardiya",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

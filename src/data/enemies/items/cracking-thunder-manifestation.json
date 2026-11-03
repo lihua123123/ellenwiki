@@ -1,0 +1,189 @@
+{
+ "name": "雷音权现·裂鸣",
+ "nameEn": "Cracking Thunder Manifestation",
+ "subtitle": "霆雷的忿恨意志",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 244.512,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 90.432,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": "IMM",
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "雷霆探针",
+   "type": "妨害 未怒",
+   "icon": "skill-1.webp",
+   "description": "雷音权现首先放出3个`雷霆探针`，每个探针击中造成<c=#ffacff>16.6%</c>伤害。探针检测自身半径8m、高3m圆柱内的玩家，满即标记。"
+  },
+  {
+   "name": "离雷标记",
+   "type": "探测 未怒",
+   "icon": "skill-2.webp",
+   "description": "距离雷音权现很近时，雷音权现在自身处产生一次雷暴轰击，造成<c=#ffacff>83.3%</c>伤害，其会<c=#99ff99>标记玩家</c>。"
+  },
+  {
+   "name": "啸雷八方",
+   "type": "输出 未怒",
+   "icon": "skill-3.webp",
+   "description": "雷音权现升空，施放8道落雷，总计施放2轮，每道造成<c=#ffacff>43.3%</c>伤害，其会<c=#99ff99>标记玩家</c>，8道落雷的位置与玩家共圆，并且不会出现在中心。"
+  },
+  {
+   "name": "围嶂四合",
+   "type": "包围 未怒",
+   "icon": "skill-4.webp",
+   "description": "雷音权现在场地的四周处召唤相对的2组雷墙，其慢慢朝中间移动，触碰持续造成<c=#ffacff>100%,70%,50%,25%,10%</c>伤害，其会<c=#99ff99>标记玩家</c>。"
+  },
+  {
+   "name": "丙影肆旋",
+   "type": "输出 未怒",
+   "icon": "skill-5.webp",
+   "description": "距离雷音权现较近时，雷音权现在周围<c=#bfffed>召唤3个幻影</c>，同时进行攻击：旋转自身，施放短程旋转造成<c=#ffacff>27.7%,13.85%,\n6.925%,2.77%</c>伤害，其会<c=#99ff99>标记玩家</c>。"
+  },
+  {
+   "name": "笼治四方",
+   "type": "限制 未怒",
+   "icon": "skill-6.webp",
+   "description": "雷音权现在场地边缘处召唤4个随机游走的电笼，不会追踪，持续20s，接触持续造成<c=#ffacff>27.7%</c>伤害，其会<c=#99ff99>标记玩家</c>。"
+  },
+  {
+   "name": "忿雷具现",
+   "type": "转换 已怒",
+   "icon": "skill-7.webp",
+   "description": "当雷音权现成功标记到玩家时，随即进行一次高声怒喝，同时施放12道落雷，每道可造成1至2段的<c=#ffacff>50%</c>伤害，同时摧毁所有探针，造成<c=#ffacff>27.7%</c>伤害。"
+  },
+  {
+   "name": "焦雷之记",
+   "type": "持续 已怒",
+   "icon": "skill-8.webp",
+   "description": "雷音权现标记玩家后，被标记的玩家每秒受到<c=#ffacff>125%×E</c>伤害。"
+  },
+  {
+   "name": "循声躁动",
+   "type": "防卫 已怒",
+   "icon": "skill-9.webp",
+   "description": "处在雷音权现后方时，雷音权现挥动左或右翼造成<c=#ffacff>55.5%</c>伤害。"
+  },
+  {
+   "name": "裂嶂相并",
+   "type": "输出 已怒",
+   "icon": "skill-10.webp",
+   "description": "雷音权现召唤两面相对的雷墙，雷墙缓慢向中间合拢，消失，触碰持续造成<c=#ffacff>100%,70%,50%,25%,10%</c>伤害；有时也可能召唤两道平行同向的雷墙。"
+  },
+  {
+   "name": "交相映影",
+   "type": "输出 已怒",
+   "icon": "skill-11.webp",
+   "description": "雷音权现<c=#bfffed>召唤2个幻影</c>，同时进行攻击，从左到右依次发射5个雷球，均造成<c=#ffacff>28.8%,14.4%,7.7%,2.88%</c>伤害。"
+  },
+  {
+   "name": "循位电笼",
+   "type": "追踪 已怒",
+   "icon": "skill-12.webp",
+   "description": "雷音权现在已标记的玩家处召唤一个追踪玩家的长方形电笼，接触持续造成<c=#ffacff>27.7%</c>伤害，持续7s。"
+  },
+  {
+   "name": "怒刈空原",
+   "type": "输出 已怒",
+   "icon": "skill-13.webp",
+   "description": "雷音权现俯下朝玩家冲刺，共冲刺2次，每次均造成<c=#ffacff>83.3%</c>伤害。"
+  },
+  {
+   "name": "声震浮尘",
+   "type": "输出",
+   "icon": "skill-14.webp",
+   "description": "靠近雷音权现时，雷音权现<c=#bfffed>召唤2个幻影</c>，同时进行攻击，旋转自身，施放长程旋转造成<c=#ffacff>27.7%,13.85%,6.925%,\n2.77%</c>伤害。"
+  },
+  {
+   "name": "天云之怒",
+   "type": "输出 已怒",
+   "icon": "skill-15.webp",
+   "description": "雷音权现升空，在所有已标记玩家处召唤3道落雷，持续3轮，每道落雷造成<c=#ffacff>43.3%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "雷霆探针",
+   "desc": "<c=#ffacff>1雷</c>盾(极限<c=#ffacff>3雷</c>盾)，可击破。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "雷霆探针",
+   "description": "<c=#ffacff>1雷</c>盾(极限<c=#ffacff>3雷</c>盾)，可击破。",
+   "elementType": "Electric",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1096832,
+   "atk": 18798,
+   "weight": 150,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "cracking-thunder-manifestation",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

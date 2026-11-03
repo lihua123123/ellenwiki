@@ -1,0 +1,83 @@
+{
+ "name": "玉磺古龟",
+ "nameEn": "Jade Giant Tortoise",
+ "subtitle": "",
+ "category": "Animals",
+ "categoryLabel": "动物",
+ "tier": "Animal",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "1k",
+   "pyro": "IMM",
+   "hydro": "IMM",
+   "anemo": "IMM",
+   "electro": "IMM",
+   "dendro": "IMM",
+   "cryo": "IMM",
+   "geo": "IMM",
+   "physical": "IMM"
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [],
+ "notes": [
+  {
+   "text": "清水玉",
+   "desc": "<c=#ffe599>4岩</c>盾，击破可获得相应特产。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "清水玉",
+   "description": "<c=#ffe599>4岩</c>盾，击破可获得相应特产。",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "动物",
+   "level": 100,
+   "hp": 55460,
+   "atk": 4924,
+   "weight": 80,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "jade-giant-tortoise",
+ "icon": "avatar.webp",
+ "tags": [
+  "动物"
+ ]
+}

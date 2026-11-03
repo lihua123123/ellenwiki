@@ -1,0 +1,116 @@
+{
+ "name": "太郎丸",
+ "nameEn": "Taroumaru",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 110,
+ "skills": [
+  {
+   "name": "纵横交错",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "太郎丸进行横、纵、旋3段攻击，横纵攻击均造成<c=#b9b9b9>50%</c>伤害，旋转造成4段<c=#b9b9b9>35%</c>伤害。"
+  },
+  {
+   "name": "奔行刃尖",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "太郎丸进行冲刺攻击，持续均造成<c=#b9b9b9>50%</c>伤害，冲刺命中角色即停止，接着进行旋转，造成<c=#b9b9b9>100%</c>伤害，该技能即为砻炼剑技，反击可导致其眩晕。"
+  },
+  {
+   "name": "雷光迹流",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "太郎丸使用尾部抓住刀汇聚雷光，转身放出3道雷刃造成<c=#ffacff>60%,15%,6%</c>伤害，该雷刃可被反击。"
+  },
+  {
+   "name": "刀尖雳雷",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "太郎丸传送至玩家处，翻身使用刀刃插入地面引起落雷，造成<c=#ffacff>100%</c>伤害。"
+  },
+  {
+   "name": "土制伪身",
+   "type": "妨害",
+   "icon": "skill-5.webp",
+   "description": "太郎丸在原地留下一个石质炸药，利用帽子迅速撤离，炸药3s后爆炸，造成<c=#ff9999>75%</c>伤害。"
+  },
+  {
+   "name": "防身衔守",
+   "type": "格挡",
+   "icon": "skill-6.webp",
+   "description": "太郎丸在闲置时，总会格挡近战伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通-2.6振刀",
+   "level": 90,
+   "hp": 259702,
+   "atk": 3806,
+   "weight": 110,
+   "tenacity": 210
+  },
+  {
+   "label": "普通-3.4振刀",
+   "level": 90,
+   "hp": 321295,
+   "atk": 3806,
+   "weight": 110,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "taroumaru",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

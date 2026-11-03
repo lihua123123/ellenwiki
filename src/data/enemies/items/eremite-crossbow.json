@@ -1,0 +1,95 @@
+{
+ "name": "镀金旅团·机弩兵",
+ "nameEn": "Eremite: Crossbow",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 16.3008,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "木弩一箭",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "机弩兵使用弩发射弩箭，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "连索快箭",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "机弩兵使用弩连续发射1-6枚弩箭，每枚均造成<c=#b9b9b9>65%</c>伤害。"
+  },
+  {
+   "name": "狂蔓棘矢",
+   "type": "妨害",
+   "icon": "skill-3.webp",
+   "description": "机弩兵使用毒素附魔弩箭，上抛发射，击中造成<c=#99ff87>70%</c>伤害，留下一片毒雾区域，持续造成<c=#99ff87>20%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 66552,
+   "atk": 4924,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "eremite-crossbow",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

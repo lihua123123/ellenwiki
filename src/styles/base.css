@@ -13,34 +13,9 @@
   --sidebar-width: 224px;
   --content-max-width: 1240px;
 
-  /* 深色主题（默认） */
-  --bg-body: #0e1014;
-  --bg-elev: #15181f;
-  --bg-card: #171b23;
-  --bg-code: rgba(255, 255, 255, 0.06);
-  --bg-hover: rgba(74, 137, 220, 0.08);
-  --text-main: #dde1e8;
-  --text-secondary: #9aa3b2;
-  --text-heading: #f4f6fa;
-  --border-color: rgba(255, 255, 255, 0.08);
-  --accent: #4a89dc;
-  --accent-light: #6aa3f0;
-  --accent-soft: rgba(74, 137, 220, 0.14);
-  --buff-color: #ffcf6b;
-  --skill-color: #b3a1ff;
-  --link-color: #6aa3f0;
-  --nav-bg: rgba(14, 16, 20, 0.85);
-  --mark-bg: #4a89dc;
-  --mark-text: #fff;
-  --input-bg: rgba(255, 255, 255, 0.06);
-
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.35);
-  --shadow-lg: 0 14px 36px rgba(0, 0, 0, 0.45);
-  --card-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  --card-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.008) 100%), #171b23;
-  --accent-gradient: linear-gradient(135deg, #4a89dc, #6aa3f0);
+  /* 颜色令牌全部来自 src/styles/tokens.css（由 src/data/palette.json 生成），此处不再重复定义 */
 }
+
 
 /** ===== Base ===== */
 * { box-sizing: border-box; }
@@ -72,8 +47,8 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 900px 500px at 85% -10%, rgba(74, 137, 220, 0.1) 0%, rgba(0, 0, 0, 0) 60%),
-    radial-gradient(ellipse 700px 500px at -10% 100%, rgba(74, 137, 220, 0.06) 0%, rgba(0, 0, 0, 0) 60%);
+    radial-gradient(ellipse 900px 500px at 85% -10%, color-mix(in srgb, var(--accent) 10%, transparent) 0%, rgba(0, 0, 0, 0) 60%),
+    radial-gradient(ellipse 700px 500px at -10% 100%, color-mix(in srgb, var(--accent) 6%, transparent) 0%, rgba(0, 0, 0, 0) 60%);
 }
 
 img { max-width: 100%; }
@@ -113,11 +88,11 @@ mark {
   border-radius: 4px;
 }
 
-::selection { background: var(--accent); color: #fff; }
+::selection { background: var(--accent); color: var(--text-on-accent); }
 
 ::-webkit-scrollbar { width: 8px; height: 8px; }
-::-webkit-scrollbar-thumb { background: rgba(127, 127, 127, 0.25); border-radius: 4px; }
-::-webkit-scrollbar-thumb:active { background: rgba(127, 127, 127, 0.45); }
+::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--text-muted) 25%, transparent); border-radius: 4px; }
+::-webkit-scrollbar-thumb:active { background: color-mix(in srgb, var(--text-muted) 45%, transparent); }
 ::-webkit-scrollbar-track { background: transparent; }
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
@@ -164,9 +139,9 @@ mark {
   height: 2rem;
   border-radius: 8px;
   background: var(--accent-gradient);
-  color: #fff;
+  color: var(--text-on-accent);
   font-size: 1.05rem;
-  box-shadow: 0 2px 8px rgba(74, 137, 220, 0.4);
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--accent) 40%, transparent);
   flex: none;
 }
 
@@ -199,7 +174,7 @@ mark {
   color: var(--text-heading);
 }
 .side-nav a.active {
-  background: linear-gradient(90deg, var(--accent-soft), rgba(74, 137, 220, 0.03));
+  background: linear-gradient(90deg, var(--accent-soft), color-mix(in srgb, var(--accent) 3%, transparent));
   color: var(--accent-light);
   font-weight: 600;
 }
@@ -283,8 +258,8 @@ mark {
 .subnav-tabs a:hover { color: var(--accent-light); background: var(--bg-hover); }
 .subnav-tabs a.active {
   background: var(--accent-gradient);
-  color: #fff;
-  box-shadow: 0 3px 10px rgba(74, 137, 220, 0.35);
+  color: var(--text-on-accent);
+  box-shadow: 0 3px 10px color-mix(in srgb, var(--accent) 35%, transparent);
 }
 
 /** ===== 通用组件 ===== */
@@ -299,7 +274,7 @@ mark {
 .card.hoverable:hover {
   box-shadow: var(--shadow-md), var(--card-highlight);
   transform: translateY(-2px);
-  border-color: rgba(106, 163, 240, 0.4);
+  border-color: color-mix(in srgb, var(--accent-light) 40%, transparent);
 }
 
 .chip {
@@ -311,10 +286,61 @@ mark {
   font-size: 0.8rem;
   background: var(--accent-soft);
   color: var(--accent-light);
-  border: 1px solid rgba(106, 163, 240, 0.25);
+  border: 1px solid color-mix(in srgb, var(--accent-light) 25%, transparent);
   white-space: nowrap;
 }
 .chip img, .chip svg { width: 16px; height: 16px; object-fit: contain; }
+
+/* 文字型筛选胶囊（敌人分类 / 武器星级共用）：文字不折行，换行交给整颗胶囊 */
+.fbtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  cursor: pointer;
+  opacity: 0.65;
+  white-space: nowrap;
+  transition: opacity 0.16s ease, background 0.16s ease, border-color 0.16s ease, color 0.16s ease;
+}
+.fbtn:hover { opacity: 1; color: var(--text-main); }
+.fbtn.active {
+  opacity: 1;
+  color: var(--text-heading);
+  background: color-mix(in srgb, var(--accent) 16%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+/* 图标型筛选按钮（角色元素/武器、武器类型共用）：未选中暗淡，选中点亮并发光。
+ * 与文字胶囊 .fbtn 区分开，避免 62×62 尺寸泄漏到敌人页的分类胶囊。 */
+.fbtn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  opacity: 0.4;
+  filter: grayscale(0.7);
+  transition: opacity 0.16s ease, filter 0.16s ease, background 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+}
+.fbtn-icon img { width: 38px; height: 38px; pointer-events: none; }
+.fbtn-icon:hover { opacity: 0.85; filter: none; }
+.fbtn-icon.active {
+  opacity: 1;
+  filter: none;
+  background: color-mix(in srgb, var(--el-color, var(--accent)) 16%, transparent);
+  border-color: color-mix(in srgb, var(--el-color, var(--accent)) 45%, transparent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--el-color, var(--accent)) 35%, transparent);
+}
 
 .btn {
   display: inline-flex;
@@ -333,10 +359,10 @@ mark {
 .btn-primary {
   background: var(--accent-gradient);
   border-color: transparent;
-  color: #fff;
-  box-shadow: 0 3px 10px rgba(74, 137, 220, 0.35);
+  color: var(--text-on-accent);
+  box-shadow: 0 3px 10px color-mix(in srgb, var(--accent) 35%, transparent);
 }
-.btn-primary:hover { color: #fff; filter: brightness(1.1); }
+.btn-primary:hover { color: var(--text-on-accent); filter: brightness(1.1); }
 
 /* 宽表格横向滚动包裹 */
 .table-wrap { max-width: 100%; overflow-x: auto; margin-bottom: 1.1rem; -webkit-overflow-scrolling: touch; }
@@ -346,7 +372,7 @@ mark {
 .rt-num {
   color: var(--accent-light);
   font-weight: 700;
-  text-shadow: 0 0 10px rgba(106, 163, 240, 0.35);
+  text-shadow: 0 0 10px color-mix(in srgb, var(--accent-light) 35%, transparent);
 }
 
 /** ===== 等级模拟面板（角色属性 / 武器属性共用） ===== */
@@ -412,7 +438,7 @@ mark {
   height: 18px;
   border-radius: 50%;
   background: var(--rarity-color, var(--accent));
-  border: 2px solid #12151c;
+  border: 2px solid var(--bg-body);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--rarity-color, var(--accent)) 28%, transparent);
   transition: transform 0.15s ease;
 }
@@ -422,7 +448,7 @@ mark {
   height: 16px;
   border-radius: 50%;
   background: var(--rarity-color, var(--accent));
-  border: 2px solid #12151c;
+  border: 2px solid var(--bg-body);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--rarity-color, var(--accent)) 28%, transparent);
 }
 .level-range:focus-visible { box-shadow: 0 0 0 3px var(--accent-soft); }
@@ -451,7 +477,7 @@ mark {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: color-mix(in srgb, var(--rarity-color, var(--accent)) 75%, #0d1016);
+  background: color-mix(in srgb, var(--rarity-color, var(--accent)) 75%, var(--bg-body));
   border: 1px solid rgba(255, 255, 255, 0.35);
   transition: transform 0.15s ease, background 0.15s ease;
 }
@@ -531,7 +557,7 @@ th {
   white-space: nowrap;
 }
 
-tr:nth-child(2n) { background: rgba(127, 127, 127, 0.04); }
+tr:nth-child(2n) { background: color-mix(in srgb, var(--text-muted) 4%, transparent); }
 tr:hover { background: var(--bg-hover); }
 
 /* 表单输入 */
@@ -581,11 +607,11 @@ input::placeholder { color: var(--text-secondary); }
 }
 
 .katex-error {
-  background: #3a1f2e;
-  border: 1px solid #7a3a4a;
+  background: color-mix(in srgb, var(--state-danger) 16%, var(--bg-card));
+  border: 1px solid color-mix(in srgb, var(--state-danger) 45%, transparent);
   border-radius: 4px;
   padding: 0 4px;
-  color: #ff9aa8;
+  color: var(--state-danger);
   font-family: var(--font-mono);
 }
 
@@ -615,3 +641,14 @@ input::placeholder { color: var(--text-secondary); }
   .side-nav a { white-space: nowrap; padding: 0.35rem 0.7rem; }
   .app-main { padding: 1.2rem 1rem 2.5rem; }
 }
+
+/* 路由级懒加载时的占位 / 错误态 */
+.route-loading,
+.route-error {
+  margin: 3rem auto;
+  max-width: 40rem;
+  text-align: center;
+  color: var(--text-muted, var(--text-secondary));
+  font-size: 0.95rem;
+}
+.route-error { color: var(--state-danger); }

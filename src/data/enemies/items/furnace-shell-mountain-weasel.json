@@ -1,0 +1,122 @@
+{
+ "name": "炉壳山鼬",
+ "nameEn": "Furnace Shell Mountain Weasel",
+ "subtitle": "远古圣山的巡猎者",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 149.424,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 82.896,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 50,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "茹炙弥身",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "山鼬进行抓划、尾扫、纵尾至多3段的攻击，依次造成<c=#ff9999>45%,60%,75%</c>伤害。"
+  },
+  {
+   "name": "圣山碎阳",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "距离较远时，山鼬蜷尾迅速翻滚而来，触碰持续造成<c=#ff9999>10%</c>伤害；抵达玩家处或超时后接甩尾，造成<c=#ff9999>100%</c>伤害。\n<c=#ffe599>可被「突角龙」的能力打断而不受伤。</c>"
+  },
+  {
+   "name": "镌纹金束",
+   "type": "定点",
+   "icon": "skill-3.webp",
+   "description": "距离较远时，山鼬利用尾部的秘源机核发射激光，造成<c=#ff9999>100%</c>伤害。"
+  },
+  {
+   "name": "灼械之下",
+   "type": "防御",
+   "icon": "skill-4.webp",
+   "description": "山鼬钻入地下，原地留下`秘源机核`保护，其持续施放秘源金浪，造成<c=#ff9999>80%</c>伤害，最多重复<c=#ffdfbf>4</c>/<c=#ffdfbf>6(深渊)</c>回后钻出地面。\n实际上就是开了个盾。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "秘源机核",
+   "desc": "继承山鼬<c=#ffdfbf>100%生命值</c>的白盾，受到一次下落攻击后<c=#ffccbf>-25%</c>护盾，击破后瘫痪山鼬7s，并且最多损失<c=#ffccbf>15%</c>生命值，若受到下落攻击的伤害，则基于此伤害额外追加160%的所受下落攻击总伤害；最终破盾伤害不超过<c=#ffbfbf>90%</c>/<c=#ffbfbf>50%(深渊)</c>生命值。"
+  },
+  {
+   "text": "破盾伤害约为",
+   "desc": "15%炉壳山鼬生命值上限×(非下落攻击伤害/总盾值)×(1-0.25×下落攻击次数)+下落攻击伤害×1.6"
+  }
+ ],
+ "shields": [
+  {
+   "name": "破盾伤害约为",
+   "description": "15%炉壳山鼬生命值上限×(非下落攻击伤害/总盾值)×(1-0.25×下落攻击次数)+下落攻击伤害×1.6",
+   "elementType": "",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 610060,
+   "atk": 16251,
+   "weight": 150,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "furnace-shell-mountain-weasel",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

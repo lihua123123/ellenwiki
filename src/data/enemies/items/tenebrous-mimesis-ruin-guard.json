@@ -1,0 +1,117 @@
+{
+ "name": "深邃拟态·遗迹守卫",
+ "nameEn": "Tenebrous Mimesis： Ruin Guard",
+ "subtitle": "虚界浮灭气泡",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 65.2032,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "身旋机坠",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "遗迹守卫进行3段普通攻击：右拳挥、转身挥、落地，其依次造成<c=#b9b9b9>50%,75%,\n100%</c>伤害。"
+  },
+  {
+   "name": "占位并掌",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "遗迹守卫进行至多2段的攻击：跺脚、拍击，其依次造成<c=#b8b8b8>62.5%,87.5%</c>伤害。\n强化版本命中将施加<c=#ccffbf>15</c>级「蚀破」。"
+  },
+  {
+   "name": "古法制导",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "处在较远处时，遗迹守卫转身，瞄准玩家发射6枚导弹，均造成<c=#b8b8b8>31.25%</c>伤害。\n强化版本命中将施加<c=#ccffbf>4</c>级「蚀破」。"
+  },
+  {
+   "name": "耕土犁地",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "遗迹守卫旋转上半身，不断朝玩家走来，触碰高频造成<c=#b8b8b8>75%</c>伤害。"
+  },
+  {
+   "name": "虚魂之偃",
+   "type": "强化",
+   "icon": "skill-5.webp",
+   "description": "拟态遗迹守卫将进行一次闪现，显形时立即无视条件施放以下2个技能的随机一个强化版本：「占位并掌」/「古法制导」。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1113",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 266208,
+   "atk": 12311,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "tenebrous-mimesis-ruin-guard",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

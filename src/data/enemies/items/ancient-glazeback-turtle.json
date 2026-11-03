@@ -1,0 +1,78 @@
+{
+ "name": "琉背古彩龟",
+ "nameEn": "Ancient Glazeback Turtle",
+ "subtitle": "",
+ "category": "Animals",
+ "categoryLabel": "动物",
+ "tier": "Animal",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "1k",
+   "pyro": "IMM",
+   "hydro": "IMM",
+   "anemo": "IMM",
+   "electro": "IMM",
+   "dendro": "IMM",
+   "cryo": "IMM",
+   "geo": "IMM",
+   "physical": "IMM"
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "古壳热尖",
+   "type": "防御",
+   "icon": "skill-1.webp",
+   "description": "彩龟受到攻击后将一直旋转，接触造成<c=#ff9999>100%,50%,20%,10%</c>伤害，并持续产生燃素晶球；与玳龟一样永久锁血。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "动物",
+   "level": 100,
+   "hp": 55460,
+   "atk": 4924,
+   "weight": 80,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "ancient-glazeback-turtle",
+ "icon": "avatar.webp",
+ "tags": [
+  "动物"
+ ]
+}

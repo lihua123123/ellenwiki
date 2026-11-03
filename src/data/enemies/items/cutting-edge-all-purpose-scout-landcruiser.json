@@ -1,0 +1,129 @@
+{
+ "name": "巡陆艇·尖端全能斥候型",
+ "nameEn": "Cutting Edge All-Purpose Scout Landcruiser",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 108.672,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "朝露弹林",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "巡陆艇顶端机枪开火，发射数十发子弹后停止，持续造成<c=#7fbfff>20%,16%,12%,8%,\n4%,2%</c>伤害。"
+  },
+  {
+   "name": "长夜连霖",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "巡陆艇激活顶端炮塔进入`附魔状态`，持续开火长达10s，持续造成<c=#7fbfff>20%,16%,\n12%,8%,4%,2%</c>伤害，且每3秒发射1枚导弹，造成<c=#7fbfff>80%</c>伤害，总共发射3枚。"
+  },
+  {
+   "name": "遽以水色",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "巡陆艇使用锯片进行一段攻击，造成<c=#7fbfff>75%</c>伤害。"
+  },
+  {
+   "name": "泵压涤洁",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "巡陆艇使用水枪，朝前方扇形区域喷洒，造成<c=#7fbfff>60%</c>伤害。"
+  },
+  {
+   "name": "斥防协议",
+   "type": "防御",
+   "icon": "skill-5.webp",
+   "description": "周围存在地面单位时，巡陆艇激活力场盾，进入`附魔状态`，持续保护地面单位，盾面属「单极」物件，可被`月`<c=#ccbfff>矩</c><c=#ebbfff>力</c>干扰；期间会施放「长夜连霖」。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "附魔状态",
+   "desc": "巡陆艇的武器进行附魔且顶部出现一充能条，此时<c=#ffdfbf>触发6次(月)感电</c>或<c=#ffdfbf>直接利用月矩力</c>可中断技能。\n仅在周围存在地面单位时才能进入附魔状态。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [
+  {
+   "Name": "附魔状态",
+   "Description": "巡陆艇的武器进行附魔且顶部出现一充能条，此时<color=#ffdfbf>触发6次(月)感电</color>或<color=#ffdfbf>直接利用月矩力</color>可中断技能。\n仅在周围存在地面单位时才能进入附魔状态。",
+   "IconPath": "",
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "巡陆艇的武器进行附魔且顶部出现一充能条，此时触发6次(月)感电或直接利用月矩力可中断技能。\n仅在周围存在地面单位时才能进入附魔状态。"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_1101",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 443680,
+   "atk": 12311,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "cutting-edge-all-purpose-scout-landcruiser",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

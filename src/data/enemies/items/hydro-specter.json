@@ -1,0 +1,107 @@
+{
+ "name": "水飘浮灵",
+ "nameEn": "Hydro Specter",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 21.7344,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 21.98,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": "IMM",
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "清虹水珠",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "水飘浮灵喷出1个弱追踪性的水弹，移动速度较慢，造成<c=#7fbfff>80%</c>伤害。"
+  },
+  {
+   "name": "饱水臌溅",
+   "type": "猛攻",
+   "icon": "skill-2.webp",
+   "description": "(满怒施放)水飘浮灵拉长身子，挤压产生水爆，造成<c=#7fbfff>100%</c>伤害。"
+  },
+  {
+   "name": "激澈华波",
+   "type": "回复",
+   "icon": "skill-3.webp",
+   "description": "水飘浮灵旋转，在玩家处产生水喷，造成<c=#7fbfff>80%</c>伤害，处于该范围的任意原魔会<span class=\"cryo\">**恢复40%生命值**</span>。"
+  },
+  {
+   "name": "迸裂馥潮",
+   "type": "亡语",
+   "icon": "skill-4.webp",
+   "description": "水飘浮灵死亡。\n<c=#9fccff>未满怒：</c>直接爆炸，造成<c=#7fbfff>100%</c>伤害；\n<c=#9fccff>满怒：</c>蓄力爆炸，造成<c=#7fbfff>120%</c>伤害，若周围20m内存在其他飘浮灵，则产生对应数量的水泡，<span class=\"cryo\">**恢复其20%生命值**</span>。"
+  },
+  {
+   "name": "怒气积攒",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "飘浮灵在受到超过自身生命值上限一定比例的单次伤害时，会积攒「怒气」。\n满怒状态下，免疫风场力、击飞，重量翻3倍。所受单次伤害与自身生命上限的区间关系如右侧："
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 88736,
+   "atk": 4309,
+   "weight": 80,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "hydro-specter",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

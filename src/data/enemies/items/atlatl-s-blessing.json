@@ -1,0 +1,111 @@
+{
+ "name": "阿特拉托的佑助",
+ "nameEn": "Atlatl’s Blessing",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 298.848,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 50,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "晶丛玉冗",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "「佑助」释放4道葬峡晶浪，造成<c=#ffe599>50%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，之后再在前方放出繁生玉簇，造成<c=#ffe599>70%</c>伤害，均不可弹反。"
+  },
+  {
+   "name": "声羽流尘",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "「佑助」飞快使用自身翼片旋转，造成<c=#b8b8b8>20%x3</c>伤害，可完美弹反。"
+  },
+  {
+   "name": "秘符惊峦",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "「佑助」使出秘法，在前方5片区域震岩造成<c=#b8b8b8>70%</c>伤害，可完美弹反。"
+  },
+  {
+   "name": "镌砂铸岩",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "「佑助」朝玩家方向蓄力，持续发射11枚岩粒弹，造成<c=#ffe599>40%,8%</c>伤害，可被弹回造成伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "夜魂试炼",
+   "level": 103,
+   "hp": 1340572,
+   "atk": 15665,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "atlatl-s-blessing",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

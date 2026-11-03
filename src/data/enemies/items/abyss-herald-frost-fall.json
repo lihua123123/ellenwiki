@@ -1,0 +1,136 @@
+{
+ "name": "深渊使徒·霜落",
+ "nameEn": "Abyss Herald: Frost Fall",
+ "subtitle": "锋刃凝冰的守密敕使",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 108.672,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 56.52,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "凝冰裁刃",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "霜落使用冰刀进行2至4段普通攻击，全4段依次造成<span class=\"cryo\">**66%,55%,55%,75%**</span>伤害。\n总计有3种施放方式：\n23段(<c=#9fe4ff>阶段1-3</c>)，前3(<c=#9fe4ff>阶段1-2</c>)，\n全4(<c=#9fe4ff>阶段2-3</c>)。可附魔<c=#7fffff>「渊冰」</c>。"
+  },
+  {
+   "name": "寒铓铡斩",
+   "type": "追击",
+   "icon": "skill-2.webp",
+   "description": "距离玩家较远时，霜落冲击过来划一刀，造成<span class=\"cryo\">**70%**</span>伤害，若已开盾，则另增加一段翻卷戳地，造成<span class=\"cryo\">**86%**</span>伤害。可附魔<c=#7fffff>「渊冰」</c>。"
+  },
+  {
+   "name": "皎锷居合",
+   "type": "猛攻",
+   "icon": "skill-3.webp",
+   "description": "霜落原地蓄力，刀尖闪光，飞快转身造成<span class=\"cryo\">**90%**</span>伤害，若已开盾，则伤害提升，造成<span class=\"cryo\">**100%**</span>伤害。可附魔<c=#7fffff>「渊冰」</c>。"
+  },
+  {
+   "name": "渊冰晶片",
+   "type": "妨害",
+   "icon": "skill-4.webp",
+   "description": "距离玩家较远时，霜落用转身扔出一根黯色的冰锥，造成<span class=\"cryo\">**78%**</span>伤害，<c=#ffb299>必定</c>附魔<c=#7fffff>「渊冰」</c>。"
+  },
+  {
+   "name": "硺渊之冰",
+   "type": "防护",
+   "icon": "skill-5.webp",
+   "description": "当霜落的生命值<c=#ffbfbf>低于20%</c>时，立即跳起用冰刀下落攻击，造成<span class=\"cryo\">**200%**</span>伤害，并且附属<span class=\"cryo\">**`晶寒加护`**</span>，使用<c=#ff9999>火</c>破盾最高效，盾破后霜落立即死亡。"
+  },
+  {
+   "name": "霜垂九陔",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "霜落腾空，迅速朝地面发射2批锥冰刀片，第一批4个第二批5个，每个造成<span class=\"cryo\">**66%,33%**</span>伤害。<c=#ffb299>必定</c>附魔<c=#7fffff>「渊冰」</c>。"
+  },
+  {
+   "name": "碛渊黯冰",
+   "type": "天赋",
+   "icon": "skill-7.webp",
+   "description": "未被护盾有效庇护的玩家被附魔有<c=#7fffff>「渊冰」</c>的攻击命中时，首次扣除<c=#99ffe5>50体力</c>，3s内若再次命中则扣除<c=#99ffe5>20体力</c>。\n每一次进行<span class=\"cryo\">**附魔**</span>的攻击前，都有20%(没盾)/27%(开盾)概率获得附魔，成功附魔后清零；当施放<c=#44ebf2>「渊冰晶片」</c>后，下一次获得附魔的概率下降61%，若为施放<c=#44ebf2>「肆锋舞冽」</c>后，则下次必无附魔。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "晶寒加护",
+   "desc": "<span class=\"cryo\">**56冻**</span>盾，击破后霜落立即死亡，可伤害转化。该状态下，抗打断0，免疫风场力。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "晶寒加护",
+   "description": "<span class=\"cryo\">**56冻**</span>盾，击破后霜落立即死亡，可伤害转化。该状态下，抗打断0，免疫风场力。",
+   "elementType": "Frozen",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:A_3302",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 294121,
+   "atk": 11080,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "abyss-herald-frost-fall",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

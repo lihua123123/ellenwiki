@@ -1,0 +1,139 @@
+{
+ "name": "守望者·忧郁",
+ "nameEn": "Watcher: Melancholy",
+ "subtitle": "世界望楼之守望",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Common",
+ "defaultLevel": 101,
+ "baseStats": {
+  "hp": {
+   "Value": 1901.76,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "安守之规戒",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "梅兰塔进行2段左右划攻击，依次造成<c=#ffe599>32%,34%</c>伤害。"
+  },
+  {
+   "name": "神仪之断罚",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "梅兰塔持矛立即进行破击，造成<c=#ffe599>41%</c>伤害，随后翻身，驾驭着长矛继续冲击，造成<c=#ffe599>47%</c>伤害，最多可连续冲击3次。"
+  },
+  {
+   "name": "蠲除之负槊",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "梅兰塔将长矛朝前方丢出，长矛经过将造成<c=#ffe599>60%</c>伤害。"
+  },
+  {
+   "name": "笼间之决示",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "梅兰塔抬起长矛，朝前方的地上猛击，造成<c=#ffe599>60%</c>伤害。"
+  },
+  {
+   "name": "方广之权现",
+   "type": "控制",
+   "icon": "skill-5.webp",
+   "description": "距离较远时，梅兰塔动用空之权能，将<c=#ffffbf>玩家拉至自身面前</c><c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "诤妄之天谴",
+   "type": "位移",
+   "icon": "skill-6.webp",
+   "description": "距离较远时，梅兰塔扔起长矛，纵身一跃，在玩家处落下，造成<c=#ffe599>60%</c>伤害。"
+  },
+  {
+   "name": "现象之诳乱",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "梅兰塔移至场地中央，并立即召唤2枚天矛，先后造成2次<c=#ffe599>100%</c>伤害。"
+  },
+  {
+   "name": "真扉之思无",
+   "type": "爆发",
+   "icon": "skill-8.webp",
+   "description": "梅兰塔升至空中，展开1或2扇无思之扉，同时开始蓄力，16s后，将直接<c=#ffbfbf>秒杀</c>当前角色。使用「小右」控制来避免。\n展开窗子的数量为<c=#ffdfbf>1</c>/<c=#ffdfbf>2</c>时，被击落后梅兰塔将失去<c=#ffdfbf>10%</c>/<c=#ffdfbf>15%</c>生命值。"
+  },
+  {
+   "name": "百界之倾毁",
+   "type": "爆发",
+   "icon": "skill-9.webp",
+   "description": "梅兰塔升至空中，展开4扇无思之扉，同时开始蓄力，16s后，将直接<c=#ffbfbf>秒杀全队</c>角色。使用「小右」控制来避免。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "权限",
+   "desc": "机制盾，共4层，破坏后直接秒杀梅兰塔。\n部分技能期间，抗打断80。"
+  },
+  {
+   "text": "梅兰塔",
+   "desc": "一阶段生命值为二阶段的15%。"
+  },
+  {
+   "text": "权限的攫取",
+   "desc": "使用「小右」可从无思之扉获取能量，当获取到所有无思之扉的能量后，方可击落梅兰塔，在<c=#ffdfbf>4扇窗的蓄力中</c>击落梅兰塔时，会开始`权限`的攫取，将其击碎后即可直接秒杀梅兰塔。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "剧情-梅兰塔",
+   "level": 101,
+   "hp": 8012479,
+   "atk": 9984,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "watcher-melancholy",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

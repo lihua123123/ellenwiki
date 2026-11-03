@@ -1,0 +1,140 @@
+{
+ "name": "恒常机关阵列",
+ "nameEn": "Perpetual Mechanical Array",
+ "subtitle": "永续谐振·SI/Ald",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 217.344,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 90.432,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 70
+  },
+  {
+   "name": "虚弱",
+   "pyro": -40,
+   "hydro": -40,
+   "anemo": -40,
+   "electro": -40,
+   "dendro": -40,
+   "cryo": -40,
+   "geo": -40,
+   "physical": 20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "引阵迫击",
+   "type": "瞄准",
+   "icon": "skill-1.webp",
+   "description": "机关阵列瞄准玩家，发射激光轰击地面，造成<c=#bababa>100%</c>伤害。"
+  },
+  {
+   "name": "烈光日烁",
+   "type": "瞄准",
+   "icon": "skill-2.webp",
+   "description": "机关阵列展开自身，从核心处持续发射激光，持续造成<c=#b8b8b8>33.3%</c>伤害。跑太远或绕后都会使其停止。"
+  },
+  {
+   "name": "陨灭之坠",
+   "type": "控制",
+   "icon": "skill-3.webp",
+   "description": "机关阵列化成火箭升空，随后瞄准，重重坠落，造成<c=#bababa>91.6%</c>伤害。"
+  },
+  {
+   "name": "剑燊袭时",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "机关阵列化作一把大剑，扫向玩家，造成<c=#bababa>75%</c>伤害。"
+  },
+  {
+   "name": "片芒掠影",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "机关阵列化作一个旋转的锯片，倏的切向玩家，造成<c=#bababa>58.3%</c>伤害。"
+  },
+  {
+   "name": "坚阵立方",
+   "type": "碾压",
+   "icon": "skill-6.webp",
+   "description": "机关阵列化作一个巨大正方体，不断滚向玩家，滚动不造成伤害，到达玩家处猛烈爆炸，造成<c=#bababa>75%</c>伤害，若滚动时间耗尽，同样爆炸，但造成<c=#bababa>91.6%</c>伤害。"
+  },
+  {
+   "name": "绝对防御",
+   "type": "防御",
+   "icon": "skill-7.webp",
+   "description": "生命值达30%时或耗时较久后，机关阵列用自己的立方分裂出去召唤`遗迹机兵`，自己则处于无敌状态，击败被高亮的遗迹机兵以使其虚弱20s。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "遗迹机兵",
+   "desc": "只有被高亮的能击败，其他锁血；遗迹机兵在机关阵列虚弱后假死，机关阵列死亡后才真正死亡并产球。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_3303",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 974962,
+   "atk": 18798,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "perpetual-mechanical-array",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

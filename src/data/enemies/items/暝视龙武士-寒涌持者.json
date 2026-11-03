@@ -1,0 +1,100 @@
+{
+ "name": "暝视龙武士·寒涌持者",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 54.336,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 45.216,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "破冰好手",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "寒涌持者使用飞锯进行纵、横、切至多3段的攻击，分别造成<c=#b8b8b8>60%,90%,70%</c>伤害，第三段留在地上的锯子额外造成多段<c=#b8b8b8>5%</c>伤害。"
+  },
+  {
+   "name": "碎镜棱花",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "寒涌持者旋转冰锯扔出一枚锯片，造成<span class=\"cryo\">**80%**</span>伤害，同时近身旋转的锯片也会造成<span class=\"cryo\">**75%**</span>伤害，两者造成的伤害存在(1,0.5)的衰减。"
+  },
+  {
+   "name": "皑寒倾咒",
+   "type": "强化",
+   "icon": "skill-3.webp",
+   "description": "寒涌持者驱使灵力将飞锯附魔，攻击力提升<c=#ffbfbf>20%</c>，随后产生一次冰雾震，造成<span class=\"cryo\">**60%**</span>伤害，仅施放一次。\n施放后，寒涌持者之后施放的普攻将造成<span class=\"cryo\">**冰元素**</span>伤害，且第三段普攻将产生向前切的冰锯。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:A_1102",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 221840,
+   "atk": 8864,
+   "weight": 100,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "暝视龙武士-寒涌持者",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

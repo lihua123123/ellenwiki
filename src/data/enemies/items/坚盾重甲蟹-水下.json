@@ -1,0 +1,133 @@
+{
+ "name": "坚盾重甲蟹·水下",
+ "nameEn": "Sternshield Crab",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 64.9378,
+   "Curve": "HP_3"
+  },
+  "atk": {
+   "Value": 59.99999999999999,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "带盾",
+   "pyro": 70,
+   "hydro": 70,
+   "anemo": 70,
+   "electro": 70,
+   "dendro": 70,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 70
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 125,
+ "skills": [
+  {
+   "name": "热焰天来",
+   "type": "妨害",
+   "icon": "skill-1.webp",
+   "description": "(仅盾)坚盾重甲蟹使用`蟹壳烧`的火元素力量，发射2-3枚火焰弹，均造成<c=#ff9999>75%</c>伤害。"
+  },
+  {
+   "name": "蟹壳坠击",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "(仅盾)坚盾重甲蟹用力起跳，重重下落，均造成<c=#b8b8b8>75%</c>伤害。"
+  },
+  {
+   "name": "左右兜爪",
+   "type": "近战",
+   "icon": "skill-3.webp",
+   "description": "坚盾重甲蟹进行左右抓划攻击，均造成<c=#b8b8b8>50%</c>伤害。"
+  },
+  {
+   "name": "激浪回旋",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "(仅水下)坚盾重甲蟹蓄力，进行持续回旋，接触造成<c=#b9b9b9>100%,20%,5%</c>伤害。"
+  },
+  {
+   "name": "瑶琰翳煠",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "(固有天赋)坚盾重甲蟹处于陆地上时，会打开元素护甲使用元素力，而进入水下则会暂时关闭护甲，保留关前盾量。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "蟹壳烧",
+   "desc": "<c=#ff9999>10.8火</c>盾，击破后将不会使用部分技能，不恢复。该状态下，抗打断0.7。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "蟹壳烧",
+   "description": "<c=#ff9999>10.8火</c>盾，击破后将不会使用部分技能，不恢复。该状态下，抗打断0.7。",
+   "elementType": "Fire",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:E_0003",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通-陆地",
+   "level": 100,
+   "hp": 108758,
+   "atk": 11762,
+   "weight": 125,
+   "tenacity": 210
+  },
+  {
+   "label": "普通-水下",
+   "level": 100,
+   "hp": 144196,
+   "atk": 11762,
+   "weight": 125,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "坚盾重甲蟹-水下",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

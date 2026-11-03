@@ -1,0 +1,94 @@
+{
+ "name": "养育的增殖生命体",
+ "nameEn": "Provender Proliferating Organism",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Common",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 43.4688,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 12.56,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 50,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "9.9k",
+   "pyro": "IMM",
+   "hydro": "IMM",
+   "anemo": "IMM",
+   "electro": "IMM",
+   "dendro": "IMM",
+   "cryo": "IMM",
+   "geo": "IMM",
+   "physical": "IMM"
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "强攻硕形",
+   "type": "僵化",
+   "icon": "skill-1.webp",
+   "description": "养育型连接最近3个的基础型，并给予其辅助能力，此时自身<c=#ffffbf>抗性大幅提升。\n</c>每清除一个已连接的基础型，自身都会扣除<c=#ffebbf>40%生命值</c>，可致死。\n被辅助的基础型的质量翻150倍，抗打断0.01。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "核心守塔机制",
+   "desc": "击败养育型推进<c=#bfffbf>11%</c>(220)进度，恢复全队20能量。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "其他-守望者二阶段衍生物",
+   "level": 90,
+   "hp": 118721,
+   "atk": 1903,
+   "weight": 300,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "provender-proliferating-organism",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

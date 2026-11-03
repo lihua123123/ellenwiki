@@ -1,0 +1,123 @@
+{
+ "name": "巡陆艇·尖端火力地效型",
+ "nameEn": "Cutting Edge Fire Support Ground Effect Landcruiser",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 81.50399999999999,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "星火弹林",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "巡陆艇顶端机枪开火，发射数十发子弹后停止，持续造成<c=#ff9999>20%,16%,12%,8%,\n4%,2%</c>伤害。"
+  },
+  {
+   "name": "熔灭连霖",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "巡陆艇激活顶端炮塔进入`附魔状态`，持续开火长达10s，持续造成<c=#ff9999>20%,16%,\n12%,8%,4%,2%</c>伤害，且每3秒发射1枚导弹，造成<c=#ff9999>80%</c>伤害，总共发射3枚。"
+  },
+  {
+   "name": "流煜空行",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "巡陆艇积蓄动力，朝前方猛冲一段距离，接触造成<c=#ff9999>100%</c>伤害。"
+  },
+  {
+   "name": "积气轰擎",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "巡陆艇朝下方喷出高热气流，造成<c=#ff9999>85%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "附魔状态",
+   "desc": "巡陆艇的武器进行附魔且顶部出现一充能条，此时<c=#ffdfbf>触发4次(月)感电</c>或<c=#ffdfbf>直接利用月矩力</c>可中断技能。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [
+  {
+   "Name": "附魔状态",
+   "Description": "巡陆艇的武器进行附魔且顶部出现一充能条，此时<color=#ffdfbf>触发4次(月)感电</color>或<color=#ffdfbf>直接利用月矩力</color>可中断技能。",
+   "IconPath": "",
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "巡陆艇的武器进行附魔且顶部出现一充能条，此时触发4次(月)感电或直接利用月矩力可中断技能。"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_1101",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 332760,
+   "atk": 14773,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "cutting-edge-fire-support-ground-effect-landcruiser",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

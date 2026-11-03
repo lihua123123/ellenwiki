@@ -1,0 +1,172 @@
+{
+ "name": "若娜瓦",
+ "nameEn": "Ronova",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Quest",
+ "defaultLevel": 110,
+ "baseStats": {
+  "hp": {
+   "Value": 3803.52,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 22.6,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 50,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "折天惊魄处",
+   "type": "猛攻",
+   "icon": "skill-1.webp",
+   "description": "若娜瓦入场，扬起血浪，并产生沿八个方向扩散的数个地喷，均造成<c=#ff9999>60%</c>伤害。"
+  },
+  {
+   "name": "魂止生息渡",
+   "type": "妨害",
+   "icon": "skill-2.webp",
+   "description": "若娜瓦窃取角色的灵魂，并使队伍进入「裂魂」状态，同时抽走<c=#ffdfbf>60%</c>的`「性命」`。"
+  },
+  {
+   "name": "赤瞳斜月影",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "若娜瓦展开蕴含赤月之力的眼翼，并发射6枚血弹，均造成<c=#ff9999>25%</c>伤害；"
+  },
+  {
+   "name": "朱羽汇玄阴",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "若娜瓦施放交叉状的朱赤羽击，均造成<c=#ff9999>50%</c>伤害。该朱赤羽击还会在角色陷入「裂魂」状态下周期性出现。"
+  },
+  {
+   "name": "灼目将离望",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "若娜瓦召唤数个呈直线方向扩散的地喷，均造成<c=#ff9999>60%</c>伤害。"
+  },
+  {
+   "name": "苦土逢凶蕊",
+   "type": "定点",
+   "icon": "skill-6.webp",
+   "description": "若娜瓦在角色处召出死花，随后在圆形范围内盛开，造成<c=#ff9999>100%</c>伤害。"
+  },
+  {
+   "name": "昏寂漫灰朽",
+   "type": "防御",
+   "icon": "skill-7.webp",
+   "description": "靠近若娜瓦时，会触发近身血浪，造成<c=#ff9999>100%</c>伤害。"
+  },
+  {
+   "name": "灵空躯长留",
+   "type": "控制",
+   "icon": "skill-8.webp",
+   "description": "当某一角色的「性命」降至2%时，若娜瓦迅速抓起该角色，并将其生命值消耗至<c=#ffbfbf>6%</c>，之后的消耗过程将被戴因截断。"
+  },
+  {
+   "name": "权当视生死",
+   "type": "爆发",
+   "icon": "skill-9.webp",
+   "description": "若娜瓦升至空中，使用「死之权能」，将在场角色送入死后世界。"
+  },
+  {
+   "name": "命辞墨翎啼",
+   "type": "召唤 降格",
+   "icon": "",
+   "description": "若娜瓦在周身处召唤3只环绕自身的黑鸦，并产生血浪，造成<c=#ff9999>50%</c>伤害。黑鸦会在若娜瓦每次翻身时释放追踪玩家，每只造成<c=#ff9999>66%</c>伤害；黑鸦<c=#ffdfbf>2.5s</c>后消失。"
+  },
+  {
+   "name": "虹目濒赐亡",
+   "type": "猛攻 降格",
+   "icon": "",
+   "description": "若娜瓦召唤数个呈直线方向扩散的大型地喷，均造成<c=#ff9999>60%</c>伤害，同时每个地喷都会留下灾厄之眼，触碰持续造成<c=#ff9999>20%</c>伤害。"
+  },
+  {
+   "name": "冥殁葬血芳",
+   "type": "输出 降格",
+   "icon": "",
+   "description": "若娜瓦在角色处召出死花，随后在圆形范围内盛开，造成<c=#ff9999>100%</c>伤害，盛开产生的残烟形成火龙卷，触碰持续造成<c=#ff9999>10%</c>伤害，火龙卷会缓缓向玩家位置移动。"
+  },
+  {
+   "name": "烬风卷黑翳",
+   "type": "远程 降格",
+   "icon": "",
+   "description": "处于若娜瓦后方时，若娜瓦挥手发射一群平飞的黑鸦，造成<c=#ff9999>66%</c>伤害。"
+  },
+  {
+   "name": "孤翼送妄徒",
+   "type": "猛攻 降格",
+   "icon": "",
+   "description": "若娜瓦召唤死之鸦，令其重重坠地，造成<c=#ff9999>100%</c>伤害。"
+  },
+  {
+   "name": "却离攫手驻",
+   "type": "控制 降格",
+   "icon": "",
+   "description": "若娜瓦持续将玩家牵引至面前，随后发动气爆，造成<c=#ff9999>70%</c>伤害。"
+  },
+  {
+   "name": "黑怖浓尘至",
+   "type": "输出 降格",
+   "icon": "",
+   "description": "若娜瓦摧毁场地上所有的灾厄之眼和火龙卷，分别造成<c=#ff9999>60%</c>与<c=#ff9999>80%</c>伤害，同时释放所有的随身黑鸦。"
+  },
+  {
+   "name": "裂魄散烟林",
+   "type": "控制",
+   "icon": "",
+   "description": "若娜瓦将角色传至面前，施放「死之洪流」，将该角色<c=#ffbfbf>(除主角外)</c>的灵魂裂分为3个「生命」，同时使队伍进入「裂魂」状态：队伍的血条替换为特殊的<c=#ffdfbf>「性命」条</c>，并重置为50%；朱赤羽击将不断出现在玩家附近，且玩家<c=#ffdfbf>不能够切换角色</c>；<c=#ffcdbf>20s</c>后结束「裂魂」状态。\n主角免疫「裂魂」效果。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "「性命」",
+   "desc": "初始被若娜瓦重置为<c=#ffdfbf>50%</c>，「裂魂」状态下每秒流失<c=#ffdfbf>3%</c>，受到若娜瓦攻击<c=#ffdfbf>-15%</c>，获得灵魂「生命」时<c=#ffdfbf>+20%</c>，「魂止生息渡」技能<c=#ffdfbf>-60%</c>。当该值降至2%时会被若娜瓦抓住，并被抽走真正的生命值。"
+  },
+  {
+   "text": "降格",
+   "desc": "若娜瓦被没收死之权能后的技能。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [
+  {
+   "label": "剧情首领",
+   "level": 110,
+   "hp": 19654804,
+   "atk": 5224,
+   "weight": 150,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "ronova",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

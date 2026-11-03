@@ -1,0 +1,134 @@
+{
+ "name": "圣骸牙兽",
+ "nameEn": "Consecrated Fanged Beast",
+ "subtitle": "啃噬伟大生命的草之兽",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "噬骸",
+   "pyro": 40,
+   "hydro": 40,
+   "anemo": 40,
+   "electro": 40,
+   "dendro": 70,
+   "cryo": 40,
+   "geo": 40,
+   "physical": 40
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "虎爪突",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "圣骸牙兽进行突抓、右挠、左划三段攻击，分别造成<c=#99ff87>30%x3,50%,70%</c>伤害。"
+  },
+  {
+   "name": "返勾翘",
+   "type": "妨害",
+   "icon": "skill-2.webp",
+   "description": "圣骸牙兽进行右抓、左挠、尾翘三段攻击，分别造成<c=#99ff87>60%,70%,90%</c>伤害，其中尾翘产生3道直线移动的棘藤，接触造成<c=#99ff87>80%,40%,20%,8%</c>伤害。"
+  },
+  {
+   "name": "刺猬卷",
+   "type": "碾压",
+   "icon": "skill-3.webp",
+   "description": "距离玩家较远时，圣骸牙兽卷成球朝玩家滚动，期间接触造成<c=#99ff87>10%</c>伤害，滚动结束后挥扫一下，造成<c=#99ff87>80%</c>伤害。"
+  },
+  {
+   "name": "犀牛甩",
+   "type": "追击",
+   "icon": "skill-4.webp",
+   "description": "距离玩家较远时，圣骸牙兽冲过来，用尖锐的尾部用力横扫，造成<c=#99ff87>100%</c>伤害，同时产生一道草刃剑气，造成<c=#99ff87>100%</c>伤害。"
+  },
+  {
+   "name": "虎下山",
+   "type": "噬骸爆发",
+   "icon": "",
+   "description": "每45s-60s，圣骸牙兽扫出一片绿色迷雾，隐蔽消失，顷刻突然出现在玩家上方并落地，造成<c=#99ff87>80%</c>伤害，形成荆棘区，其会二次爆炸造成<c=#99ff87>100%</c>伤害，并形成<c=#00bd2c>「</c><c=#00bd2c>`噬骸能量块·草`</c><c=#00bd2c>」</c>；此时牙兽失去强化，6s后则会被牙兽吸收恢复强化。"
+  },
+  {
+   "name": "老虎吃草",
+   "type": "天赋",
+   "icon": "skill-6.webp",
+   "description": "圣骸牙兽从开局、瘫痪恢复后或者吸收<c=#00bd2c>「噬骸能量块·草」</c>之后，将进行抗性强化：<c=#00ea52>草抗+60%，其他抗性+30%</c>，并且全身变亮；该效果持续到其施放<c=#00bd2c>「虎下山」</c>技能后，或被携带有<c=#00bd2c>「噬骸能量块·草」</c>的玩家命中后失效。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "噬骸能量块·草",
+   "desc": "1次<c=#99ff87>草元素</c>攻击，或6次其他元素攻击可拾取，命中可瘫痪圣骸牙兽。其存在6s，超时则会被圣骸牙兽夺取。\n持有噬骸能量块·草时命中圣骸牙兽则会令其强制瘫痪10s，并移除抗性提升，同时扣除<c=#ffdfbf>15%</c>生命值；噬骸能量块携带时，会反噬全队：每秒损失<c=#ffdfbf>2%</c>生命值，持续10s，穿盾不致死。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 388220,
+   "atk": 14773,
+   "weight": 150,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "consecrated-fanged-beast",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

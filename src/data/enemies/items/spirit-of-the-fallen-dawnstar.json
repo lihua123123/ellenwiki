@@ -1,0 +1,139 @@
+{
+ "name": "陨落的晨星之灵",
+ "nameEn": "Spirit of the Fallen Dawnstar",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1227.9936,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 87.92,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 50,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 110,
+ "skills": [
+  {
+   "name": "尘芒冰阵",
+   "type": "定点",
+   "icon": "skill-1.webp",
+   "description": "晨星之灵在地上生成4处烙印，均造成<span class=\"cryo\">**100%,10%**</span>伤害。"
+  },
+  {
+   "name": "高瞻远睹",
+   "type": "灵动",
+   "icon": "skill-2.webp",
+   "description": "晨星之灵振翼，立即悬浮至空中，施放一次后，缓缓落地。"
+  },
+  {
+   "name": "孤音荡魄",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "晨星之灵发射2枚共寒音爆，均造成<span class=\"cryo\">**75%,7.5%**</span>伤害，可在空中施放。"
+  },
+  {
+   "name": "雾屿谜光",
+   "type": "辅助",
+   "icon": "skill-4.webp",
+   "description": "场地内存在「`祭祀火盆`」，靠近其会持续给予玩家增益，攻击造成额外的<c=#ff9999>火元素</c>伤害(200%)，增益的同时为玩家施加持续火元素附着。\n被冻结时会出现「灵谜涂鸦」。"
+  },
+  {
+   "name": "暝曜飞雪",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "低于<c=#ffbfbf>70%</c>生命值时，晨星之灵升空，为自己施加「`落星加护`」，冻结所有「祭祀火盆」并在场地内生成6个随机游走的冰龙卷，接触将持续造成<span class=\"cryo\">**20%**</span>伤害；8s后，龙卷风消失，晨星之灵转为施放「曜石风暴」：强力的冰风暴席卷全场，持续造成<span class=\"cryo\">**40%**</span>伤害，10s后爆发，造成<span class=\"cryo\">**300%**</span>伤害。\n「曜石风暴」的伤害均<c=#ffbfbf>无法使用闪避帧躲避</c>。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "落星加护",
+   "desc": "10冻盾，击破后打断并扣除15%生命值。"
+  },
+  {
+   "text": "祭祀火盆",
+   "desc": "被冻结时附加20冻盾，击破后可重新获得增益。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "落星加护",
+   "description": "10冻盾，击破后打断并扣除15%生命值。",
+   "elementType": "Frozen",
+   "duration": 8
+  },
+  {
+   "name": "祭祀火盆",
+   "description": "被冻结时附加20冻盾，击破后可重新获得增益。",
+   "elementType": "Frozen",
+   "duration": 8
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "夜魂试炼",
+   "level": 103,
+   "hp": 5508534,
+   "atk": 18275,
+   "weight": 110,
+   "tenacity": 120
+  }
+ ],
+ "leyline": null,
+ "id": "spirit-of-the-fallen-dawnstar",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

@@ -1,0 +1,122 @@
+{
+ "name": "深黯钓客·召唤",
+ "nameEn": "Fisher of Hidden Depths",
+ "subtitle": "异界栖兽",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 66.01824,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "颉以盔翎",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "钓客进行一段爪击，造成<c=#ffacff>40%</c>伤害。\n增幅后，强化为颃以辉翼，进行一段爪击与一段敲击，依次造成<c=#ffacff>50%,70%</c>伤害。"
+  },
+  {
+   "name": "长喙微光",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "钓客发射长程激光，持续造成<c=#ffacff>60%,18%,\n6%</c>伤害。\n增幅后，强化为恒晦危光，并可发射两次，第一次造成<c=#ffacff>75%,22.5%,7.5%</c>伤害，第二次造成<c=#ffacff>90%,27%,9%</c>伤害。"
+  },
+  {
+   "name": "自绐之行",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "钓客进行一段冲刺，造成<c=#ffacff>80%</c>伤害。\n强化为衍妄之羁，冲刺距离加长，造成<c=#ffacff>100%</c>伤害；非强化状态下为罕见技。"
+  },
+  {
+   "name": "隙中谵呓",
+   "type": "天赋",
+   "icon": "skill-4.webp",
+   "description": "钓客会一同展开「深黯护盾」，该护盾为生命盾，并且只接受元素伤害，免疫物理伤害；月曜伤害将造成原来<c=#ffdfbf>300%</c>的伤害。在场钓客少于2个时不能开启护盾，且进攻性下降；\n非深渊特化的个体，第二次及之后展开护盾，盾量只有原来的<c=#ffdfbf>1/4</c>。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "深黯护盾",
+   "desc": "200%生命值盾，击破后同时清除其他「深黯钓客」的护盾，开盾间隔约15s。"
+  },
+  {
+   "text": "黯主召唤深黯钓客(103级)",
+   "desc": "特殊的钓客，生命值296145(4.86F)，攻击力7832(3.0B2)，无护盾，只会发射激光。\n获得护盾时，抗打断0.05，重量-50%，质量翻10倍。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "深黯护盾",
+   "description": "200%生命值盾，击破后同时清除其他「深黯钓客」的护盾，开盾间隔约15s。",
+   "elementType": "Abyss",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_1101",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 166380,
+   "atk": 7386,
+   "weight": 75,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "fisher-of-hidden-depths",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

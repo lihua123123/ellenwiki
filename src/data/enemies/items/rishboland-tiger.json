@@ -1,0 +1,84 @@
+{
+ "name": "长鬓虎",
+ "nameEn": "Rishboland Tiger",
+ "subtitle": "",
+ "category": "Animals",
+ "categoryLabel": "动物",
+ "tier": "Animal",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 10.8672,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 15.072,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "利爪扯撕",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "长鬓虎左右爪各进行一次抓划，分别造成<c=#b8b8b8>40%,60%</c>伤害。"
+  },
+  {
+   "name": "怒啸扑墙",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "长鬓虎张压低身子，朝前一扑，造成<c=#b8b8b8>80%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "动物",
+   "level": 100,
+   "hp": 29412,
+   "atk": 2955,
+   "weight": 80,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "rishboland-tiger",
+ "icon": "avatar.webp",
+ "tags": [
+  "动物"
+ ]
+}

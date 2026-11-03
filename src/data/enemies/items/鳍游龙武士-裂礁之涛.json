@@ -1,0 +1,106 @@
+{
+ "name": "鳍游龙武士·裂礁之涛",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 54.336,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 45.216,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "质量过硬",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "裂礁之涛拿着炮筒进行划、砸2段攻击，分别造成<c=#b8b8b8>50%,70%</c>伤害。"
+  },
+  {
+   "name": "如雨珠涟",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "裂礁之涛打滚，后立即使用炮筒连续发射12枚水弹，每发水弹造成<c=#7fbfff>10%</c>伤害。"
+  },
+  {
+   "name": "润凝礼弹",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "距离较远时，裂礁之涛将装弹炮筒，发射3枚迫击水球，均造成<c=#7fbfff>80%</c>伤害。"
+  },
+  {
+   "name": "溯沙之浪",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "裂礁之涛驱使灵力，驾驶炮筒进行冲浪，到处乱跑，接触造成<c=#7fbfff>70%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:A_1102",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 221840,
+   "atk": 8864,
+   "weight": 100,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "鳍游龙武士-裂礁之涛",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "name": "影",
+ "nameEn": "Ei",
+ "subtitle": "一心净土的主人",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 543.36,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 113.04,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": "IMM",
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "夙念如决",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "影使用手上的梦想一心，进行至多5段的普通攻击，第4段具有突进和收回两个过程；5段普攻依次造成<c=#ffacff>33.3%,33.3%,\n33.3%,33.3%+16.6%,50%</c>伤害。"
+  },
+  {
+   "name": "寂物刈斩",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "影使用手上的梦想一心，进行至多3段的范围横劈攻击，3段普攻依次造成<c=#ffacff>16.6%,\n16.6%,50%</c>伤害，"
+  },
+  {
+   "name": "刀光紫影",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "离影较远时，影收起梦想一心迅速朝玩家冲击，并施放两段斩击，冲击造成<c=#ffacff>8.3%</c>伤害，两段斩击分别造成<c=#ffacff>8.3%,\n66.6%</c>伤害。"
+  },
+  {
+   "name": "光转爿轮",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "影依次斩出3个雷轮，每个雷轮造成<c=#ffacff>33.3%</c>伤害，最后水平劈出一道雷刃，造成<c=#ffacff>50%</c>伤害。"
+  },
+  {
+   "name": "霆震裁决",
+   "type": "防卫",
+   "icon": "skill-5.webp",
+   "description": "处于影身后时，影立即转身斩击，造成<c=#ffacff>66.6%</c>伤害。"
+  },
+  {
+   "name": "烁光电络",
+   "type": "定点",
+   "icon": "skill-6.webp",
+   "description": "影作刀势，在场地上依次召唤1-3个闪烁的雷眼，接触造成4段<c=#ffacff>5.6%</c>伤害。"
+  },
+  {
+   "name": "四海归寂",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "影用梦想一心画圈后将其举向天空，召唤9个雷球在场地边缘以顺时针顺序下落，雷球下落造成<c=#ffacff>66.6%</c>伤害，留下雷痕持续造成<c=#ffacff>12.5%</c>伤害；雷球全落下后影在场地中间施放次元斩，造成4段<c=#ffacff>33.3%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，最后碎屏斩造成<c=#ffacff>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "尘世如影",
+   "type": "输出",
+   "icon": "skill-8.webp",
+   "description": "影进行旋斩、冲击、旋斩最多3段的普通攻击，3段攻击依次造成<c=#ffacff>16.6%x2,\n16.6%,58.3%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领-梦想一心形态",
+   "level": 90,
+   "hp": 2218401,
+   "atk": 22160,
+   "weight": 150,
+   "tenacity": 500
+  }
+ ],
+ "leyline": null,
+ "id": "ei",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "name": "钝角犀·红",
+ "nameEn": "Blunthorn Rhino",
+ "subtitle": "",
+ "category": "Animals",
+ "categoryLabel": "动物",
+ "tier": "Animal",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 0.14,
+   "Curve": "HP_0"
+  },
+  "atk": {
+   "Value": 12.56,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 0,
+   "hydro": 0,
+   "anemo": 0,
+   "electro": 0,
+   "dendro": 0,
+   "cryo": 0,
+   "geo": 0,
+   "physical": 0
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "矿石采集",
+   "type": "辅助",
+   "icon": "skill-1.webp",
+   "description": "当队伍存在菈乌玛或哥伦比娅，接近任意钝角犀时，若附近存在<c=#ffdfbf>矿物</c>，则钝角犀会挖掘它们，并带回玩家身边。挖掘时，造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "惊犀猛进",
+   "type": "控制",
+   "icon": "skill-2.webp",
+   "description": "受惊的钝角犀可能会撞向玩家，造成<c=#b8b8b8>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "动物",
+   "level": 100,
+   "hp": 2,
+   "atk": 2462,
+   "weight": 80,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "钝角犀-红",
+ "icon": "avatar.webp",
+ "tags": [
+  "动物"
+ ]
+}

@@ -1,0 +1,99 @@
+{
+ "name": "盗宝团·拳术家",
+ "nameEn": "Treasure Hoarder: Pugilist",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 20.096000000000004,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "速拳连打",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "拳术家用右手连续出拳2次，均造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "重拳一记",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "拳术家蓄力发动一拳，造成<c=#b9b9b9>200%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1112",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 73530,
+   "atk": 3940,
+   "weight": 100,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "treasure-hoarder-pugilist",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

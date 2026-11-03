@@ -1,0 +1,170 @@
+{
+ "name": "深海龙蜥之群·轰旋",
+ "nameEn": "Booming Bathysmal Vishap Herd",
+ "subtitle": "珊瑚的守护者",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 185.185,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "唳霜",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 30,
+   "geo": 10,
+   "physical": 30
+  },
+  {
+   "name": "啸霆",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 30,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 250,
+ "skills": [
+  {
+   "name": "冰潮雷涌",
+   "type": "协同妨害",
+   "icon": "skill-1.webp",
+   "description": "两个深海龙蜥面对面用尾部架阵，从阵中发射总计34枚的冰刺与雷针，不论冰与雷，都造成对应元素的`20%,10%,5%`伤害。"
+  },
+  {
+   "name": "彼岸双蜥",
+   "type": "协同输出",
+   "icon": "skill-2.webp",
+   "description": "当某个龙蜥濒死时，两只龙蜥跳到场地中央，缠绕尾部，产生超导场持续造成<span class=\"cryo\">**50%**</span>+<c=#ffacff>50%</c>伤害，随后两只龙蜥均发射对应的激光，造成对应元素的`100%,50%,\n25%,10%`伤害。"
+  },
+  {
+   "name": "霜绽雷苛",
+   "type": "协同输出",
+   "icon": "skill-3.webp",
+   "description": "两个深海龙蜥尾对尾插入地面，啸霆生成3个等分圆心的落雷扇区，唳霜随机生成5-11个霜棘区域，霜棘都造成<span class=\"cryo\">**67%**</span>伤害，雷扇造成<c=#ffacff>66.6%</c>伤害。"
+  },
+  {
+   "name": "霆海重滨",
+   "type": "协同妨害",
+   "icon": "skill-4.webp",
+   "description": "两个深海龙蜥爬上中央的`糙岩石柱`，不断朝玩家发射涤魔子弹，都造成对应元素的`5%`伤害并扣除角色<c=#72ff72>30点</c>能量。"
+  },
+  {
+   "name": "涤魔喷吐",
+   "type": "妨害",
+   "icon": "skill-5.webp",
+   "description": "唳霜或啸霆蓄力发射一枚带刺冰球，造成对应元素的`5%`伤害，并扣除角色<c=#72ff72>30点</c>能量，若能量不足则无视护盾额外扣除一定比例的生命值。"
+  },
+  {
+   "name": "袭卷白霜",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "唳霜后撤一步。随后向前翻滚，用尾部扫两圈，造成两段<span class=\"cryo\">**30%**</span>伤害。"
+  },
+  {
+   "name": "闪电引弹",
+   "type": "追踪",
+   "icon": "skill-7.webp",
+   "description": "啸霆使用尾部产生雷球，雷球破裂产生3个雷刺，造成<c=#ffacff>30%,15%,7.5%</c>伤害。"
+  },
+  {
+   "name": "彻地千雷",
+   "type": "追踪",
+   "icon": "skill-8.webp",
+   "description": "啸霆将尾部插入地面，在一定区域内不断生成雷棘，造成<c=#ffacff>60%,30%,15%</c>伤害。"
+  },
+  {
+   "name": "左右开攻",
+   "type": "输出",
+   "icon": "skill-9.webp",
+   "description": "唳霜后撤一步。先用右爪扫，造成<c=#b9b9b9>30%</c>伤害，再用左爪扫，造成<c=#b9b9b9>50%</c>伤害，最后双爪敲，造成<c=#b9b9b9>80%</c>伤害。"
+  },
+  {
+   "name": "生死之恋",
+   "type": "回复",
+   "icon": "skill-10.webp",
+   "description": "(强化)当某个龙蜥濒死时，另一种龙蜥将在10s后回复其<c=#ffdfbf>50%</c>的生命值使其重新加入战斗。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "糙岩石柱",
+   "desc": "<c=#ffe599>8岩</c>盾，受到近战攻击-<c=#ffe599>0.08岩</c>，击破可击落位于其上的吞雷。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "糙岩石柱",
+   "description": "<c=#ffe599>8岩</c>盾，受到近战攻击-<c=#ffe599>0.08岩</c>，击破可击落位于其上的吞雷。",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:B_1113",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 830703,
+   "atk": 13054,
+   "weight": 250,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "booming-bathysmal-vishap-herd",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

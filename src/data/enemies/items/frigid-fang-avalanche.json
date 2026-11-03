@@ -1,0 +1,109 @@
+{
+ "name": "蕈兽·大雪猪王",
+ "nameEn": "Frigid Fang: Avalanche",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 1344.816,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 30,
+   "geo": 10,
+   "physical": 50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 10000,
+ "skills": [
+  {
+   "name": "猪突猛进",
+   "type": "位移",
+   "icon": "skill-1.webp",
+   "description": "大雪猪王突然猛冲，造成<c=#b8b8b8>40%</c>伤害。"
+  },
+  {
+   "name": "寒流冲锋",
+   "type": "爆发",
+   "icon": "skill-2.webp",
+   "description": "大雪猪王锁定蕈兽，朝蕈兽冲来，造成<c=#b8b8b8>100%</c>伤害，在冲刺终点可造成<c=#b8b8b8>216.4%</c>伤害。"
+  },
+  {
+   "name": "雪猪助阵",
+   "type": "召唤输出",
+   "icon": "skill-3.webp",
+   "description": "大雪猪王召唤1个雪猪，雪猪周期性扔出雪球，均造成<span class=\"cryo\">**20%**</span>雪猪攻击力的伤害。\n击败雪猪可获得`寒冷祝福`。"
+  },
+  {
+   "name": "怒雪地覆",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "大雪猪王锁定蕈兽，在原地猛烈跳动地板，造成<c=#b8b8b8>100%</c>伤害，并在周围产生诸多下落的雪球，造成<span class=\"cryo\">**100%**</span>伤害，有玩家倾向，持续8轮后结束。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "寒冷祝福",
+   "desc": "获得继承50%生命值的护盾，持续15s。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 90,
+   "hp": 2411055,
+   "atk": 9516,
+   "weight": 10000,
+   "tenacity": 400
+  },
+  {
+   "label": "动物-雪猪-幻戏召唤",
+   "level": 90,
+   "hp": 95781,
+   "atk": 1903,
+   "weight": 10000,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "frigid-fang-avalanche",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

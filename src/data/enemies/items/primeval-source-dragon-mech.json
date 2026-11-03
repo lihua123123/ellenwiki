@@ -1,0 +1,120 @@
+{
+ "name": "深古秘源机龙",
+ "nameEn": "Primeval Source Dragon Mech",
+ "subtitle": "最后试炼机关",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 80,
+ "baseStats": {
+  "hp": {
+   "Value": 760.704,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 87.92,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "型装擘爪",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "秘源机龙立即进行划、砸2段普通攻击，依次造成<c=#ffebbf>75%,70%</c>伤害；第二段攻击可与小龙共鸣展开护罩，遏制攻击行动。"
+  },
+  {
+   "name": "峙以烬攻",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "若上述技能被小龙遏制，则该爪与小龙将对峙10s，期间另外一爪化为大炮，持续向角色发射火球，造成<c=#ff9999>30%</c>伤害。对峙结束后猛地造成<c=#ffebbf>100%</c>伤害。对峙期间若进行5次攻击，可直接使护罩-85%。"
+  },
+  {
+   "name": "镌焰浊焚",
+   "type": "猛攻",
+   "icon": "skill-3.webp",
+   "description": "秘源机龙朝场地内持续喷吐烈焰，逐渐造成<c=#ff9999>15%,20%,30%</c>伤害；可与小龙共鸣展开护罩。"
+  },
+  {
+   "name": "统拟碎星",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "秘源机龙联结燃素流，在中央凝聚一团高能燃素，随后炸裂变为燃素微粒，微粒向前方地面发射大量燃素激光，每道均造成<c=#ff9999>60%</c>伤害。"
+  },
+  {
+   "name": "樊金滞纹",
+   "type": "限制",
+   "icon": "skill-5.webp",
+   "description": "秘源机龙先放射出大量金光织火命中玩家，均造成<c=#ff9999>30%</c>伤害，随后将玩家禁锢，并逐渐持续造成<c=#ffebbf>20%,30%,40%</c>伤害。需与小龙共鸣方可解除禁锢状态。"
+  },
+  {
+   "name": "深古燃铭",
+   "type": "天赋",
+   "icon": "skill-6.webp",
+   "description": "秘源机龙初始持有`秘源护罩`，遭受小龙攻击时会额外失去<c=#ffdfbf>15%</c>，且在小龙对峙期间尝试破盾则会令其直接损失<c=#ffdfbf>85%</c>，护罩破坏后秘源机龙损失<c=#ffbfbf>20%</c>生命值并瘫痪15s。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "秘源护罩",
+   "desc": "70%生命值盾。击破后瘫痪15s。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "秘源护罩",
+   "description": "70%生命值盾。击破后瘫痪15s。",
+   "elementType": "",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "剧情",
+   "level": 80,
+   "hp": 1323651,
+   "atk": 10376,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "primeval-source-dragon-mech",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

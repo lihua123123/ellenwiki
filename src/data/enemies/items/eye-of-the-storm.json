@@ -1,0 +1,100 @@
+{
+ "name": "狂风之核",
+ "nameEn": "Eye of the Storm",
+ "subtitle": "躁动的纯粹元素",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 67.92,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": "IMM",
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "风聚尘清",
+   "type": "妨害",
+   "icon": "skill-1.webp",
+   "description": "狂风之核吸引周围玩家，猛地下落造成<span class=\"anemo\">**100%**</span>伤害。\n若在其吸引时命中了狂风之核，则将直接落下不造成伤害。"
+  },
+  {
+   "name": "风劲舞旋",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "狂风之核进行蓄力旋转，辄停止旋转直冲，造成<span class=\"anemo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "风楼飐狱",
+   "type": "妨害",
+   "icon": "skill-3.webp",
+   "description": "狂风之核向地面注入风元素，形成不可逾越的风屏障；注入点与地面持续造成<span class=\"anemo\">**10%**</span>伤害，触碰造成<span class=\"anemo\">**20%**</span>伤害。一段时间后风屏障内持续出现飘忽不定的风场可远离地面的伤害。\n若此时命中了狂风之核，则将直接落下停止攻击。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:A_3303",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 183826,
+   "atk": 12311,
+   "weight": 150,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "eye-of-the-storm",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

@@ -1,0 +1,123 @@
+{
+ "name": "深邃拟态·秘源机兵·寻捕械",
+ "nameEn": "Void Obliterator Bubble",
+ "subtitle": "虚界浮灭气泡",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 65.2032,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "炽烙赤遣",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "寻捕械推出一个排满尖牙的排斥装甲，造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "日煜天基",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "寻捕械朝天发射一束高能脉冲，其持续打击地面，持续造成<c=#ff9999>70%,35%,14%,7%</c>伤害。"
+  },
+  {
+   "name": "月余辉烨",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "寻捕械朝玩家发射连续的集中热能激光，持续造成<c=#ff9999>60%</c>伤害，至多3次。\n强化版本命中将施加<c=#ccffbf>12</c>级「蚀破」。"
+  },
+  {
+   "name": "啮铁流星",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "距离较远时，寻捕械突然朝玩家发动赤牙合击，造成<c=#ff9999>80%</c>伤害。\n强化版本命中将施加<c=#ccffbf>18</c>级「` `」。"
+  },
+  {
+   "name": "旧阳皆彗",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "寻捕械发射持续5s的集束激光，持续造成<c=#ff9999>100%,10%</c>伤害。\n强化版本命中将施加<c=#ccffbf>6</c>级「蚀破」。"
+  },
+  {
+   "name": "玄影残闪",
+   "type": "强化",
+   "icon": "skill-6.webp",
+   "description": "拟态寻捕械将进行一次闪现，显形时立即无视条件施放以下3个技能的随机一个强化版本：「旧阳皆彗」/「啮铁流星」/「月余辉烨」。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1113",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 266208,
+   "atk": 12311,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "void-obliterator-bubble",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

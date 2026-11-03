@@ -1,0 +1,123 @@
+{
+ "name": "大型碎石隙境原体",
+ "nameEn": "Large Shatterstone Breacher Primus",
+ "subtitle": "异界的生命体",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 97.8048,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 87.92,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 50,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "隙境缘石",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "碎石原体蓄力，发射一枚石弹，造成<c=#b8b8b8>60%</c>伤害。"
+  },
+  {
+   "name": "石动尘飞",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "碎石原体进行一段挥扫攻击，造成<c=#b8b8b8>60%</c>伤害。"
+  },
+  {
+   "name": "黄尘龙卷",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "大型碎石原体朝玩家翻滚，形似弹簧，至多连续翻滚3次，每次造成<c=#b8b8b8>60%</c>伤害。"
+  },
+  {
+   "name": "乱石穿空",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "碎石原体进入「应激」状态，该状态下，狂蔓原体将获得`坚岩护嶂`，持续进行大范围石潮舞击，造成<c=#ffe599>100%</c>伤害，持续4轮。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "坚岩护嶂",
+   "desc": "<c=#ffe599>6岩</c>盾，<c=#ffbfbf>1次</c>芒或荒攻击可以击破，击破后瘫痪其15s。该状态下，免疫击飞、击退、风场力。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "坚岩护嶂",
+   "description": "<c=#ffe599>6岩</c>盾，<c=#ffbfbf>1次</c>芒或荒攻击可以击破，击破后瘫痪其15s。该状态下，免疫击飞、击退、风场力。",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:B_1113",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 399312,
+   "atk": 17235,
+   "weight": 150,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "large-shatterstone-breacher-primus",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

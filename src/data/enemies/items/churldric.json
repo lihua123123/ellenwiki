@@ -1,0 +1,189 @@
+{
+ "name": "历经百战的丘丘萨满",
+ "nameEn": "Churldric",
+ "subtitle": "",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 271.68,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 96.712,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "烹饪&满足",
+   "pyro": 120,
+   "hydro": 120,
+   "anemo": 120,
+   "electro": 120,
+   "dendro": 120,
+   "cryo": 120,
+   "geo": 120,
+   "physical": 120
+  },
+  {
+   "name": "烹饪&满足(渊)",
+   "pyro": 300,
+   "hydro": 300,
+   "anemo": 300,
+   "electro": 300,
+   "dendro": 300,
+   "cryo": 300,
+   "geo": 300,
+   "physical": 300
+  },
+  {
+   "name": "瘫痪",
+   "pyro": -50,
+   "hydro": -50,
+   "anemo": -50,
+   "electro": -50,
+   "dendro": -50,
+   "cryo": -50,
+   "geo": -50,
+   "physical": -50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "荡地笋突",
+   "type": "定点",
+   "icon": "skill-1.webp",
+   "description": "萨满施法，在玩家处连续生成至多3次的突震，造成<c=#b8b8b8>60%</c>伤害。\n「怒面」状态下，每次突震将产生额外的冲击波，造成<c=#b8b8b8>70%</c>伤害。"
+  },
+  {
+   "name": "食硕杖法",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "萨满将随机召唤6枚日落果或卷心菜，均造成<c=#b8b8b8>100%</c>伤害。\n「怒面」状态下不施放。"
+  },
+  {
+   "name": "萨满杖击",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "距离玩家较近时，萨满挥杖击飞玩家，造成<c=#b8b8b8>80%</c>伤害。\n「怒面」状态下，挥杖范围变大。"
+  },
+  {
+   "name": "援杖乘跃",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "萨满立即翘杆进行3次下落攻击，每次造成<c=#b8b8b8>70%</c>伤害；返回中心时只下落一次。\n「怒面」状态下，每次下落将产生额外2道冲击波，均造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "琼汤盛馔",
+   "type": "召唤",
+   "icon": "skill-5.webp",
+   "description": "萨满架设「`美味汤锅`」并进行烹饪，烹饪时长16s，期间周围将不间断产生流溢余火，对范围内目标造成<c=#ff9999>70%</c>伤害。根据`烹饪进度`可产生不同效果：\n烹饪进度完成为<c=#bfffbf>`汤成`</c>：进入绿色「满足」状态，抗性提升，持续30s；\n烹饪进度未满为<c=#ffb299>`炊生`</c>：进入红色「怒面」状态，攻击力翻倍，持续30s；\n成功破坏汤锅则<c=#ffffbf>`破釜`</c>：根据期间汤锅所受伤害返还真伤，抗性降低，瘫痪10s。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "烹饪进度",
+   "desc": "满进度100，汤锅为点燃状态时，前20%进度每0.5秒+2.5，后续每0.5秒+7.5。"
+  },
+  {
+   "text": "美味汤锅",
+   "desc": "30岩盾，会记录伤害但无伤害转化，同时伤害会转移伤害到大萨满身上，持续16s；破坏后萨满瘫痪。\n用1次火元素攻击可点燃汤锅，用2次冰/岩/风攻击，或者1次雷/水攻击会熄灭锅，草元素攻击无用。锅的「火」为特效，仅指示状态，不是真火。"
+  },
+  {
+   "text": "汤成",
+   "desc": "恢复20%生命值，全抗提升110%(深渊290%)，持续30s。"
+  },
+  {
+   "text": "炊生",
+   "desc": "攻击提升100%，持续30s。"
+  },
+  {
+   "text": "破釜",
+   "desc": "破坏后，造成(锅所受伤害+10%生命值)的真伤，不超过20%生命值，同时全抗降至-50%，瘫痪10s。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "美味汤锅",
+   "description": "30岩盾，会记录伤害但无伤害转化，同时伤害会转移伤害到大萨满身上，持续16s；破坏后萨满瘫痪。\n用1次火元素攻击可点燃汤锅，用2次冰/岩/风攻击，或者1次雷/水攻击会熄灭锅，草元素攻击无用。锅的「火」为特效，仅指示状态，不是真火。",
+   "elementType": "Rock",
+   "duration": 16
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1115",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 4874809,
+   "atk": 28719,
+   "weight": 150,
+   "tenacity": 400
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 1109200,
+   "hpNote": "25%",
+   "atk": 18959,
+   "atkNote": "70%",
+   "weight": 150,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "churldric",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群",
+  "历经百战"
+ ]
+}

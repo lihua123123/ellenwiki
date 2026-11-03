@@ -1,0 +1,94 @@
+{
+ "name": "突角龙",
+ "nameEn": "Tatankasaurus",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 43.4688,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 45.216,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 50,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "咆跃之鸣",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "突角龙抬起前身，进行一次扑地攻击，造成<c=#ffacff>90%</c>伤害。"
+  },
+  {
+   "name": "疾角腾突",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "距离较远时，突角龙对角朝玩家冲去，碰撞造成<c=#ffacff>100%</c>伤害，突角龙冲撞碰到障碍物时会停下，并对周围造成<c=#ffacff>20%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:A_1101",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 177472,
+   "atk": 8864,
+   "weight": 150,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "tatankasaurus",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

@@ -1,0 +1,150 @@
+{
+ "name": "镀金旅团·炽沙叙事人",
+ "nameEn": "Eremite: Scorching Loremaster",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 59.769600000000004,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  },
+  {
+   "name": "魔化",
+   "pyro": 60,
+   "hydro": 60,
+   "anemo": 60,
+   "electro": 60,
+   "dendro": 60,
+   "cryo": 60,
+   "geo": 60,
+   "physical": 30
+  },
+  {
+   "name": "虚弱",
+   "pyro": -50,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "飞火逐蛾",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "炽沙叙事人用法器发射4枚短程强追踪性的棱弹，均造成<c=#ff9999>25%</c>伤害，是虚弱后施放的唯一技能。"
+  },
+  {
+   "name": "祭天炎陨",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "炽沙叙事人展开法器，发射4枚烟弹，片刻后落在玩家处，造成<c=#ff9999>80%,20%</c>伤害。"
+  },
+  {
+   "name": "灼炎之光",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "距离玩家较远时，炽沙叙事人使用法器发射热能射线，射线命中爆炸，造成<c=#ff9999>100%</c>伤害。"
+  },
+  {
+   "name": "灸炎针刺",
+   "type": "偷袭",
+   "icon": "skill-4.webp",
+   "description": "(扈从协同)炽沙叙事人闪现出现在玩家身边，趁机施放火蜂刺，造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "烁火微光",
+   "type": "位移",
+   "icon": "skill-5.webp",
+   "description": "离玩家太近时，炽沙叙事人将闪现至较远的地方，也可用此靠近玩家。"
+  },
+  {
+   "name": "厄灵解放·炎之魔蝎",
+   "type": "召唤",
+   "icon": "skill-6.webp",
+   "description": "当炽沙叙事人的<c=#ffbfbf>生命值低于70%(特化为100%)</c>时，其会唤出武器内的炎之魔蝎，<c=#ffb299>进入魔化状态</c>，全抗性提升50%。击破炎之魔蝎会使炽沙叙事人受到<c=#ff9999>当前生命值的37.5%</c>的<c=#ff9999>火元素真伤</c>，并虚弱10s，一次战斗内仅会施放一次该技能。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "机制",
+   "desc": "处于魔化状态下，抗打断0，质量翻6倍。虚弱状态下抗打断0。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:B_1111",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 244024,
+   "atk": 12311,
+   "weight": 80,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "eremite-scorching-loremaster",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

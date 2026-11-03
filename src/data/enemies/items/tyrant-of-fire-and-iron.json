@@ -1,0 +1,179 @@
+{
+ "name": "铁甲熔火暴君",
+ "nameEn": "Tyrant of Fire and Iron",
+ "subtitle": "横行无忌的孤王",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 105,
+ "baseStats": {
+  "hp": {
+   "Value": 168.71329,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 150,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 60,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "带甲",
+   "pyro": 120,
+   "hydro": 70,
+   "anemo": 70,
+   "electro": 70,
+   "dendro": 70,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 70
+  },
+  {
+   "name": "词条带甲",
+   "pyro": 180,
+   "hydro": 130,
+   "anemo": 130,
+   "electro": 130,
+   "dendro": 130,
+   "cryo": 130,
+   "geo": 130,
+   "physical": 130
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "106",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "蛰蟹突啄",
+   "type": "突袭",
+   "icon": "skill-1.webp",
+   "description": "开局入战时，熔火蟹钻出地面立即使用白色左爪突然敲击，造成<c=#bababa>50%</c>伤害。本技能仅开局入战施放。"
+  },
+  {
+   "name": "熔火蜚溅",
+   "type": "妨害",
+   "icon": "skill-2.webp",
+   "description": "熔火蟹下降高度，利用头顶的熔岩喷口，发射1-3批的大规模熔岩溅射，命中造成<c=#ff9999>50%,25%,12.5%,5%</c>伤害，留下热烬，持续造成<c=#ff9999>6%</c>伤害。"
+  },
+  {
+   "name": "焮焰加冕",
+   "type": "必杀技",
+   "icon": "skill-3.webp",
+   "description": "熔火蟹逃离，移至场地中央，下降高度，埋住半身，蓄力点火，在前方产生2枚`燃晶`，7s后产生大爆炸，<c=#ffbfbf>秒杀</c>在场非无敌状态的角色。若燃晶均被摧毁，则扣除双螯<c=#ffbfbf>12火</c>盾。"
+  },
+  {
+   "name": "赤染焰拳",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "熔火蟹喷出熔岩染到白色左爪，敲地产生火灼崩破，命中造成<c=#ff9999>70%,7%</c>伤害，并在途经上留下热烬。"
+  },
+  {
+   "name": "黑火白钳",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "熔火蟹使用黑色右爪或白色左爪进行至多2段攻击，分别造成<c=#b9b9b9>50%,60%</c>伤害。"
+  },
+  {
+   "name": "远逸近挠",
+   "type": "远程",
+   "icon": "",
+   "description": "距离较远时，熔火蟹曲线冲击，使用爪子进行攻击，造成<c=#b9b9b9>70%</c>伤害。"
+  },
+  {
+   "name": "赤蛑鲜螯",
+   "type": "强化",
+   "icon": "skill-7.webp",
+   "description": "双螯盾量低于33%后，熔火蟹立即将双螯插入地面汲取火元素之力，双螯每秒恢复<c=#ffbfbf>4火</c>盾，15s后汲取完成，熔火蟹蟹钳进行的攻击将转为火元素伤害，且攻击力提升<c=#ffcdbf>80%</c>，持续30s。"
+  },
+  {
+   "name": "炽沙再熔",
+   "type": "复燃",
+   "icon": "skill-8.webp",
+   "description": "陷入熄灭状态约<c=#ffecbf>30s</c>后，熔火蟹钻入沙地，再次冒出时即重新形成`熔火双角`，其周围有部分白色的硬灰甲围绕，阻挡较低处的攻击。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "熔火双角",
+   "desc": "96火盾，存在时抗性获得提升，击破使其进入熄灭状态；免疫扩散附着。"
+  },
+  {
+   "text": "燃晶",
+   "desc": "14火盾，全部击破后可中断必杀技。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "熔火双角",
+   "description": "96火盾，存在时抗性获得提升，击破使其进入熄灭状态；免疫扩散附着。",
+   "elementType": "Fire",
+   "duration": ""
+  },
+  {
+   "name": "燃晶",
+   "description": "14火盾，全部击破后可中断必杀技。",
+   "elementType": "Fire",
+   "duration": 7
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 105,
+   "hp": 796477,
+   "atk": 32366,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "tyrant-of-fire-and-iron",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

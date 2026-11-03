@@ -1,0 +1,162 @@
+{
+ "name": "赤璋巡岳府君",
+ "nameEn": "The Rising Fire: Yiji",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 649.3151999999999,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 87.92,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "熛火",
+   "pyro": 70,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 50,
+   "physical": 30
+  },
+  {
+   "name": "荒寒",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 70,
+   "geo": 50,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 250,
+ "skills": [
+  {
+   "name": "绛霞霏雪",
+   "type": "协同妨害",
+   "icon": "skill-1.webp",
+   "description": "两只岩龙蜥起跳至玩家处，造成对应元素的<c=#f7f978>40%</c>伤害，随后朝各自的侧方喷吐蜚火和流霜，持续造成对应元素的<c=#f7f978>40%,\n20%,4%,0.4%</c>伤害。"
+  },
+  {
+   "name": "袭星卷碛",
+   "type": "协同输出",
+   "icon": "skill-2.webp",
+   "description": "两只岩龙蜥起跳至玩家对侧，造成对应元素的<c=#f7f978>40%</c>伤害，随后均朝玩家翻滚而来，造成对应元素的<c=#f7f978>50%</c>伤害。冲刺期间<c=#bfffeb>碰到护盾</c>则会眩晕。"
+  },
+  {
+   "name": "爪犁熯炎",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "熛火进行右爪挥扫、左爪拔扯的普通攻击，其依次造成<c=#ff9999>40%,50%</c>伤害。"
+  },
+  {
+   "name": "爪犁皛寒",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "荒寒进行右爪挥扫、左爪拔扯的普通攻击，其依次造成<span class=\"cryo\">**40%,50%**</span>伤害。"
+  },
+  {
+   "name": "左右交焚",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "熛火进行至多3段的震地普通攻击，其依次造成<c=#ff9999>50%,50%,75%</c>伤害。"
+  },
+  {
+   "name": "冰蕨巡生",
+   "type": "追踪",
+   "icon": "skill-6.webp",
+   "description": "荒寒进行至多3段的震地普通攻击，每段攻击都召唤持续4段的冰棘，造成<span class=\"cryo\">**30%**</span>伤害。"
+  },
+  {
+   "name": "天煠悬炣",
+   "type": "猛攻",
+   "icon": "skill-7.webp",
+   "description": "熛火起跳，重重下落，造成<c=#ff9999>100%</c>伤害。"
+  },
+  {
+   "name": "剡凌碎晶",
+   "type": "远程",
+   "icon": "skill-8.webp",
+   "description": "荒寒喷出4枚冰锥，冰锥造成<span class=\"cryo\">**30%**</span>伤害；冰锥落地形成冰阱，触碰造成<span class=\"cryo\">**70%**</span>伤害，两种伤害共用(1,0.4,0.1)的衰减。"
+  },
+  {
+   "name": "生死缘祸",
+   "type": "回复",
+   "icon": "skill-9.webp",
+   "description": "当某个龙蜥濒死时，不会立即死亡，另一只龙蜥将在15s后回复其<c=#ffdfbf>20%/16%/\n10%</c>的生命值使其重新加入战斗。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 2912698,
+   "atk": 17235,
+   "weight": 250,
+   "tenacity": 4000
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 795297,
+   "hpNote": "30%",
+   "atk": 17235,
+   "atkNote": "100%",
+   "weight": 250,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "赤璋巡岳府君",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

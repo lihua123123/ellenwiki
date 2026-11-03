@@ -1,0 +1,138 @@
+{
+ "name": "元能构装体·重塑仪",
+ "nameEn": "Primal Construct: Reshaper",
+ "subtitle": "砂原王都的建造者",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 46.1856,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 45.216,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "隐蔽",
+   "pyro": 60,
+   "hydro": 60,
+   "anemo": 60,
+   "electro": 60,
+   "dendro": 60,
+   "cryo": 60,
+   "geo": 60,
+   "physical": 60
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 200,
+ "skills": [
+  {
+   "name": "考古锥凿",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "重塑仪使用锥针部件叠加发射，落地造成<c=#b9b9b9>50%</c>伤害，2s后二次凿地造成<c=#b9b9b9>70%</c>伤害。"
+  },
+  {
+   "name": "辅助钻探",
+   "type": "协同 部件N",
+   "icon": "skill-2.webp",
+   "description": "游离的锥针部件依次落地，造成<c=#b9b9b9>50%</c>伤害，两个锥针部件还会产生电弧，触碰造成<c=#b9b9b9>20%,10%,5%</c>伤害。"
+  },
+  {
+   "name": "不可之视",
+   "type": "隐蔽",
+   "icon": "skill-3.webp",
+   "description": "重塑仪游离出两个`电锯部件`，自己进入隐蔽状态，驱散所有元素附着，<c=#ffbfbf>全抗性提升50%</c>，每个部件继承10%的重塑仪生命值，状态持续10-20s。在本体上进行<c=#99ff86>激化反应</c>或其使被<c=#4cffa5>「真识波」</c>命中，可解除该状态并使其瘫痪。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "锥针部件",
+   "desc": "12盾量的10%生命值盾，继承召唤者的生命值上限，其他属性相同；每秒消耗0.2直至损毁。"
+  },
+  {
+   "text": "修复中的锥针部件",
+   "desc": "4草盾，1次雷元素攻击即可，其他元素只反应不消耗。击破后瘫痪构装体。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "锥针部件",
+   "description": "12盾量的10%生命值盾，继承召唤者的生命值上限，其他属性相同；每秒消耗0.2直至损毁。",
+   "elementType": "",
+   "duration": ""
+  },
+  {
+   "name": "修复中的锥针部件",
+   "description": "4草盾，1次雷元素攻击即可，其他元素只反应不消耗。击破后瘫痪构装体。",
+   "elementType": "Grass",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1111",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 188564,
+   "atk": 8864,
+   "weight": 200,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "primal-construct-reshaper",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

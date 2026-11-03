@@ -1,0 +1,163 @@
+{
+ "name": "微末",
+ "nameEn": "Infinitesimal",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 489.024,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 150.72,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 130,
+   "hydro": 130,
+   "anemo": 130,
+   "electro": 130,
+   "dendro": 130,
+   "cryo": 130,
+   "geo": 130,
+   "physical": 130
+  },
+  {
+   "name": "虚耗",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "磐晶之旋",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "微末进行旋转、坠拳2段攻击，均造成<c=#ffe599>60%</c>伤害；坠拳产生向前的多段岩击波，造成<c=#ffe599>70%,35%</c>伤害。"
+  },
+  {
+   "name": "砭嵴流沙",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "微末进行左右交拿、纵拳3段攻击，分别造成<c=#ffe599>50%,50%,80%</c>伤害。"
+  },
+  {
+   "name": "悬岩浮礁",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "距离较远时，微末举起岩石，朝玩家丢来，造成<c=#ffe599>100%</c>伤害。"
+  },
+  {
+   "name": "敛石辗轹",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "距离较远时，微末化为巨石翻滚而来，移至目标处立即接一纵拳，造成<c=#ffe599>90%</c>伤害。"
+  },
+  {
+   "name": "巉金之撼",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "微末将双拳强化，朝地板进行3次撼地猛击，依次造成<c=#ffe599>50%,50%,100%</c>伤害。"
+  },
+  {
+   "name": "垩甲镶金",
+   "type": "天赋",
+   "icon": "skill-6.webp",
+   "description": "微末自身附属`垩甲`，以及一条独立的热量。垩甲未坏时，微末将不受到伤害；热量填满时，微末将过载陷入瘫痪，40s内不会重新出现热量条，否则将持续维持高抗性。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "「过载燃烧」",
+   "desc": "热量上限944。微末受到火元素攻击后，会根据火元素的量积攒2.119n%(20n)或0.742%(7)热量，攒满后进入虚耗状态，该状态下会失去抗性提升。"
+  },
+  {
+   "text": "垩甲",
+   "desc": "40岩盾，击破后允许受到伤害，90s内不会恢复。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "垩甲",
+   "description": "40岩盾，击破后允许受到伤害，90s内不会恢复。",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [
+  {
+   "Name": "「过载燃烧」",
+   "Description": "热量上限944。微末受到火元素攻击后，会根据火元素的量积攒2.119n%(20n)或0.742%(7)热量，攒满后进入虚耗状态，该状态下会失去抗性提升。",
+   "IconPath": "",
+   "MaxValue": 944,
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "热量上限944。微末受到火元素攻击后，会根据火元素的量积攒2.119n%(20n)或0.742%(7)热量，攒满后进入虚耗状态，该状态下会失去抗性提升。"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1115",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 2193664,
+   "atk": 31329,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "infinitesimal",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

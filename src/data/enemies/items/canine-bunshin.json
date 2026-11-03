@@ -1,0 +1,96 @@
+{
+ "name": "帽子刀子狗子",
+ "nameEn": "Canine Bunshin",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 815.04,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 101,
+ "skills": [
+  {
+   "name": "环棘方牢",
+   "type": "限制",
+   "icon": "skill-1.webp",
+   "description": "狗子咆哮，在玩家周围形成一个荆棘笼，无害，持续10s后消失。"
+  },
+  {
+   "name": "刀尖雳雷",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "狗子传送至玩家处，翻身使用刀刃插入地面引起落雷，造成<c=#ffacff>100%</c>伤害。"
+  },
+  {
+   "name": "爿轮电转",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "狗子使用嘴部咬住刀，转身放出3道雷轮造成<c=#ffacff>50%,12.5%,5%</c>伤害，同时也是狗子的亡语。"
+  },
+  {
+   "name": "土制伪身",
+   "type": "妨害",
+   "icon": "skill-4.webp",
+   "description": "受击后，狗子在原地留下一个石质炸药，利用帽子迅速撤离，炸药3s后爆炸，造成<c=#ff9999>75%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 3327601,
+   "atk": 14773,
+   "weight": 101,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "canine-bunshin",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

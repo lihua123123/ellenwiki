@@ -1,0 +1,125 @@
+{
+ "name": "蕴光璇蛸",
+ "nameEn": "Radiant Lunapod",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 135.84,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 82.896,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 50,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "潮花轻蘸",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "璇蛸轻轻地扒拉两下，依次造成<c=#7fbfff>40%,\n60%</c>伤害，容易后接「洄水飞浪」。"
+  },
+  {
+   "name": "洄水飞浪",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "璇蛸划拉转圈袭来，持续造成<c=#7fbfff>20%</c>伤害，最后用力再转一圈，造成<c=#7fbfff>90%</c>伤害。"
+  },
+  {
+   "name": "抽滔断水",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "璇蛸突然朝玩家袭来，用力砸一下，造成<c=#7fbfff>80%</c>伤害。"
+  },
+  {
+   "name": "断浪长袭",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "璇蛸展开半径<c=#ffdfbf>15m</c>的`蕴光领域`，朝玩家方向斩出两道水刃，造成<c=#7fbfff>60%</c>伤害。"
+  },
+  {
+   "name": "露流彩沫",
+   "type": "位移",
+   "icon": "skill-5.webp",
+   "description": "璇蛸展开半径<c=#ffdfbf>15m</c>的`蕴光领域`，并且朝玩家钻旋袭来，途径造成<c=#7fbfff>30%</c>伤害，行至目标处释放水涌，造成<c=#7fbfff>100%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "蕴光领域",
+   "desc": "展开时施加「蕴光之茧」状态，扣除全队角色10%+1800点生命值，若角色生命值低于7200点，则改为扣除35%生命值，可致命但可开大招躲避；主动治疗清除后获得「出缠」效果。若范围内前台角色仍处于「蕴光之茧」状态，璇蛸则不会施放「断浪长袭」、「露流彩沫」。"
+  },
+  {
+   "text": "蕴光之茧",
+   "desc": "暴击率-10%，造成的伤害-10%，受治疗加成-10%。"
+  },
+  {
+   "text": "出缠",
+   "desc": "暴击率+15%，造成的伤害+50%，持续15s。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 554600,
+   "atk": 16251,
+   "weight": 150,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "radiant-lunapod",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

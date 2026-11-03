@@ -1,0 +1,177 @@
+{
+ "name": "超重型陆巡舰·机动战垒",
+ "nameEn": "All-Terrain Combat Mek",
+ "subtitle": "全地形战争机关",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 298.848,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "常态深渊+80",
+   "pyro": 70,
+   "hydro": 70,
+   "anemo": 70,
+   "electro": 70,
+   "dendro": 70,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 70
+  },
+  {
+   "name": "红温深渊+40",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "瘫痪深渊+40",
+   "pyro": -60,
+   "hydro": -60,
+   "anemo": -60,
+   "electro": -60,
+   "dendro": -60,
+   "cryo": -60,
+   "geo": -60,
+   "physical": -60
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "烈铓残霜",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "交替进行下列两种攻击：\n陆巡舰使用舰炮轰击，造成<span class=\"cryo\">**70%**</span>伤害；\n陆巡舰使用攻坚锯进行一次挥锯，造成<c=#ff9999>60%</c>伤害。"
+  },
+  {
+   "name": "赤铦华光",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "陆巡舰使用攻坚锯进行两次来回挥锯，依次造成<c=#ff9999>50%,60%</c>伤害。"
+  },
+  {
+   "name": "冰期谶辞",
+   "type": "定点",
+   "icon": "skill-3.webp",
+   "description": "陆巡舰使用舰炮朝空中发射2枚迫击弹，依次在玩家处落下，造成<span class=\"cryo\">**80%**</span>伤害并飞溅出10枚霜核，接触造成<span class=\"cryo\">**40%**</span>伤害；此外命中处留下冰地面，持续造成<span class=\"cryo\">**6%**</span>伤害，持续12s。"
+  },
+  {
+   "name": "驰越崔嵬",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "处于较远的位置时，陆巡舰起飞并缓缓降落至预警位置，造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "逆折穿壑",
+   "type": "位移",
+   "icon": "skill-5.webp",
+   "description": "处于陆巡舰后方时，陆巡迅速使用攻坚锯挥舞一圈，造成1-2次<c=#ff9999>60%</c>伤害，随后起飞并转身面朝玩家，缓缓落地，造成<c=#b8b8b8>70%</c>伤害。"
+  },
+  {
+   "name": "降控温御",
+   "type": "防护",
+   "icon": "skill-6.webp",
+   "description": "高热计量满时，陆巡舰立即展开持续<c=#ffdfbf>18s </c>的`散热套件`护罩，持续减少高热计量；若成功击破护罩，则其将立即受到<c=#ffdfbf>当前30%生命值</c>的<c=#ff9999>火元素</c>真伤并瘫痪15s；否则施放「断明颓敝」，期间抗性不变。"
+  },
+  {
+   "name": "断明颓敝",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "未成功击破护罩时，陆巡舰升空，利用舰炮轰击，造成<span class=\"cryo\">**100%**</span>伤害并留下冰地面；随后利用攻坚锯下劈重重坠落，造成<c=#ff9999>150%</c>伤害；落地后持续切锯造成<c=#ff9999>25%</c>伤害；坠落时将冰地面替换为持续12s的火地面，并持续造成<c=#ff9999>6%</c>伤害；升空与坠落伤害<c=#ffbfbf>闪避帧均无法躲避</c>。"
+  },
+  {
+   "name": "温变热媒",
+   "type": "天赋",
+   "icon": "skill-8.webp",
+   "description": "自身存在「高热」计量条，满计量<c=#ffdfbf>600</c>点。陆巡舰在受到<c=#ff9999>火元素</c>攻击后，将积攒<c=#ffdfbf>5</c>高热，每额外n单位火元素额外积攒<c=#ffdfbf>5n</c>高热，计量过半后进入「红温过载」状态，计量满后进行「降控温御」，持续减少高热计量。\n本高热计量不受<span class=\"cryo\">**冰**</span><c=#7fbfff>水</c>影响。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "深渊抗性",
+   "desc": "正常150%，红温过载状态50%，瘫痪为-20%。"
+  },
+  {
+   "text": "高热",
+   "desc": "满计量600点。受到火元素攻击后，积攒0.833%(5)高热，每额外1U火元素量积攒0.833%(5)高热，计量过半后进入「红温过载」状态，计量满后进行「降控温御」。"
+  },
+  {
+   "text": "散热套件",
+   "desc": "28冻盾，持续18s，存在期间将持续减少高热计量条，击破后瘫痪16s，填满热量，全抗下降，恢复后清空热量。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "散热套件",
+   "description": "28冻盾，持续18s，存在期间将持续减少高热计量条，击破后瘫痪16s，填满热量，全抗下降，恢复后清空热量。",
+   "elementType": "Frozen",
+   "duration": 18
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1340572,
+   "atk": 20886,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "all-terrain-combat-mek",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "name": "蕈兽·魔偶剑鬼",
+ "nameEn": "Machine Marionette: Heart of the Blade",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 1097.375,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 180.864,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 99999,
+ "skills": [
+  {
+   "name": "幽面枉合",
+   "type": "锚定",
+   "icon": "skill-1.webp",
+   "description": "剑鬼放开枉死之面，面具锁定蕈兽，随后闭合发生爆炸，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "清风徐来",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "剑鬼锁定蕈兽，迅速斩出3-4道风刃，风刃均造成<span class=\"anemo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "七五斩落",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "剑鬼右持<c=#99ffe5>破风</c>，左持<span class=\"cryo\">**碎霜**</span>，朝地用尽全力猛击，造成<span class=\"cryo\">**80%**</span>+<c=#66ffcc>80%</c>伤害，<span class=\"cryo\">**冰伤**</span>范围比<c=#66ffcc>风伤</c>大。"
+  },
+  {
+   "name": "一文平刃",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "剑鬼在近处挥刀，最多可以进行纵、横、纵3段的普攻，依次造成<c=#b9b9b9>20%,20%,\n30%</c>伤害"
+  },
+  {
+   "name": "真空斩破",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "剑鬼平插刀鞘，产生真空场吸引蕈兽，随后发动圆形斩击，造成<c=#b9b9b9>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领-幻戏",
+   "level": 90,
+   "hp": 1967430,
+   "atk": 27405,
+   "weight": 99999,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "machine-marionette-heart-of-the-blade",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

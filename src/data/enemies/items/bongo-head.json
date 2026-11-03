@@ -1,0 +1,151 @@
+{
+ "name": "咚咚小圆帽",
+ "nameEn": "Bongo-Head",
+ "subtitle": "",
+ "category": "Others",
+ "categoryLabel": "其他",
+ "tier": "Common",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 24.4512,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 54.25920000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 20,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 20,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "水泡猛击",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "浮游水蕈兽发射1个小型水弹，造成<c=#7fbfff>141%</c>伤害。"
+  },
+  {
+   "name": "水泡猛击",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "浮游水蕈兽发射一个大水泡，包住敌人造成<c=#7fbfff>60%</c>伤害，如果命中多个敌人，水泡可能爆炸，造成<c=#7fbfff>183%</c>伤害。"
+  },
+  {
+   "name": "水弹爆轰",
+   "type": "战技",
+   "icon": "skill-3.webp",
+   "description": "浮游水蕈兽召唤大水泡，爆炸造成<c=#7fbfff>462%</c>伤害，恢复当前场上的所有友方灵蕈<c=#b8ff72>45%生命值</c>。"
+  },
+  {
+   "name": "水球狙击",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "浮游水蕈兽发射1个精准水弹，造成<c=#7fbfff>300%</c>伤害。"
+  },
+  {
+   "name": "飞沫涌流",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "浮游水蕈兽每施放2次「水球狙击」后，会进行重击，施放一个较大的飞沫水泡，造成<c=#7fbfff>500%</c>伤害。"
+  },
+  {
+   "name": "浮泡破袭",
+   "type": "战技",
+   "icon": "skill-6.webp",
+   "description": "浮游水蕈兽召唤大水泡，爆炸造成<c=#7fbfff>450%</c>伤害，恢复当前场上的所有友方灵蕈<c=#b8ff72>40%生命值</c>。"
+  },
+  {
+   "name": "精准水泡",
+   "type": "远程",
+   "icon": "skill-7.webp",
+   "description": "浮游水蕈兽发射1个精准水弹，造成<c=#7fbfff>300%</c>伤害。"
+  },
+  {
+   "name": "飞沫破袭",
+   "type": "天赋",
+   "icon": "skill-8.webp",
+   "description": "浮游水蕈兽每施放2次「精准水泡」后，会进行重击，施放一个较大的飞沫水泡，造成<c=#7fbfff>600%</c>伤害。"
+  },
+  {
+   "name": "浮泡涌流",
+   "type": "战技",
+   "icon": "skill-9.webp",
+   "description": "浮游水蕈兽立即召唤3-4个大水喷，造成<c=#7fbfff>600%,300%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "3.5 灵蕈棋阵",
+   "desc": "150元素精通。"
+  },
+  {
+   "text": "4.2 小小灵蕈大幻戏",
+   "desc": "100元素精通，剧变反应系数1.5。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "友方-3.2智巧灵蕈",
+   "level": 90
+  },
+  {
+   "label": "普通敌方-3.2智巧灵蕈",
+   "level": 90,
+   "hp": 44520,
+   "atk": 6577,
+   "weight": 75,
+   "tenacity": 600
+  },
+  {
+   "label": "友方-3.5塔防灵蕈",
+   "level": 90
+  },
+  {
+   "label": "友方-4.2幻戏灵蕈",
+   "level": 90,
+   "hp": 77911,
+   "atk": 8222,
+   "weight": 75,
+   "tenacity": 600
+  }
+ ],
+ "leyline": null,
+ "id": "bongo-head",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他"
+ ]
+}

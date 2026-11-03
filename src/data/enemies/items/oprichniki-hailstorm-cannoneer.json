@@ -1,0 +1,106 @@
+{
+ "name": "愚人众特辖队·冰雹重炮手",
+ "nameEn": "Oprichniki: Hailstorm Cannoneer",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 65.2032,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 55.26400000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "霜晶随眼",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "冰炮发射一枚冰弹，造成<span class=\"cryo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "冬帷加坠",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "冰炮操使武器对地面狠狠敲击，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "重砲先袭",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "冰炮挥舞武器进行2段普通攻击，依次造成<span class=\"cryo\">**60%,80%**</span>伤害。"
+  },
+  {
+   "name": "雹影洊至",
+   "type": "防御",
+   "icon": "skill-4.webp",
+   "description": "冰胖启动武器，形成一面可抵挡伤害的重盾。武器会持续发射9枚冰弹，造成<span class=\"cryo\">**75%**</span>伤害。武器属「单极」物件，可被`月`<c=#cdbfff>矩</c><c=#edbfff>力</c>干扰。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:A_1101",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 266208,
+   "atk": 10834,
+   "weight": 150,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "oprichniki-hailstorm-cannoneer",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

@@ -1,0 +1,225 @@
+{
+ "name": "暝视龙",
+ "nameEn": "Iktomisaurus",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 36.6768,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 33.912000000000006,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 50,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 110,
+ "skills": [
+  {
+   "name": "寒风逾案",
+   "type": "定点",
+   "icon": "skill-1.webp",
+   "description": "暝视龙在玩家处生成1枚烙印，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "高瞻远睹",
+   "type": "灵动",
+   "icon": "skill-2.webp",
+   "description": "暝视龙振翼，召唤临时风场，并悬浮至空中，可施放技能。"
+  },
+  {
+   "name": "离魂残音",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "暝视龙发射共寒音爆，造成<span class=\"cryo\">**75%**</span>伤害，可在空中施放。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:A_1101",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 149742,
+   "atk": 6648,
+   "weight": 110,
+   "tenacity": 150
+  }
+ ],
+ "leyline": {
+  "name": "历经百战的暝视龙·霜雪苛念",
+  "nameEn": "Battle-Hardened Iktomisaurus: Frostbound Resolve",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 887041,
+    "atk": 7613,
+    "multiplier": 1.2,
+    "advantage": "Pyro Adv."
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 4420030,
+    "atk": 9849,
+    "multiplier": 4.0,
+    "advantage": "Ranged Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 4344257,
+    "atk": 10840,
+    "multiplier": 3.4,
+    "advantage": "Aggregate Adv."
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 7972064,
+    "atk": 11611,
+    "multiplier": 5.7,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "出场",
+    "diffNote": "N5",
+    "pyro": 210,
+    "hydro": 210,
+    "anemo": 210,
+    "electro": 210,
+    "dendro": 210,
+    "cryo": 250,
+    "geo": 210,
+    "physical": 210
+   },
+   {
+    "name": "正常",
+    "diffNote": "N5",
+    "pyro": 70,
+    "hydro": 70,
+    "anemo": 70,
+    "electro": 70,
+    "dendro": 70,
+    "cryo": 110,
+    "geo": 70,
+    "physical": 70
+   },
+   {
+    "name": "正常",
+    "diffNote": "N4",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 50,
+    "geo": 10,
+    "physical": 10
+   }
+  ],
+  "skills": [
+   {
+    "name": "冰霰骤袭",
+    "type": "爆发 (N5)",
+    "icon": "leyline-skill-1.webp",
+    "description": "暝视龙升空，为我方全体恢复所有元素能量与特殊能量；随后为自己施加「`冰霰防护`」，并在场地内生成3-5个随机游走的`冰龙卷`，接触将持续对非己目标造成<span class=\"cryo\">**20%**</span>伤害；17s后场地出现3枚「`冰霰之阵`」；\n17s后，所有冰龙卷消失，暝视龙转为施放一次强力的冰风暴席卷全场，<c=#ffbfbf>秒杀</c>前台角色。\n冰龙卷可被风力牵引。"
+   },
+   {
+    "name": "骤阵残寒",
+    "type": "位移 (N5)",
+    "icon": "leyline-skill-2.webp",
+    "description": "暝视龙后撤跃起，发射数枚冰锥，均造成<span class=\"cryo\">**50%,25%,\n12.5%,5%**</span>伤害。"
+   }
+  ],
+  "notes": [
+   {
+    "text": "(N5) 冰霰防护",
+    "desc": "24冻盾，持续34s，成功击破后可使其坠落摔伤，并损失<c=#ffdfbf>10%</c>生命值，该伤害会追加<c=#ffdfbf>50%的护盾所受伤害</c>，不超过<c=#ffdfbf>50%暝视龙生命值</c>。"
+   },
+   {
+    "text": "(N5) 冰霰之阵",
+    "desc": "暝视龙施放爆发之后的<c=#ffdfbf>17s</c>出现，共3枚，每枚<span class=\"cryo\">**8冻**</span>盾，每破坏一个会使冰霰防护<span class=\"cryo\">**-9.6冻**</span>。"
+   },
+   {
+    "text": "(N5) 冰龙卷",
+    "desc": "暝视龙施放爆发后出现，初始5个，后续每次刷新3个，每个持续6s，可命中暝视龙，每命中一次就会令暝视龙的<span class=\"anemo\">**风元素抗性**</span>降低<c=#ffdfbf>35%</c>，最多叠加<c=#ffdfbf>3</c>层，且使冰霰防护<span class=\"cryo\">**-2冻**</span>。"
+   }
+  ],
+  "shields": [
+   {
+    "name": "(N5) 冰霰防护",
+    "description": "24冻盾，持续34s，成功击破后可使其坠落摔伤，并损失<c=#ffdfbf>10%</c>生命值，该伤害会追加<c=#ffdfbf>50%的护盾所受伤害</c>，不超过<c=#ffdfbf>50%暝视龙生命值</c>。",
+    "elementType": "Frozen",
+    "duration": 34
+   },
+   {
+    "name": "(N5) 冰霰之阵",
+    "description": "暝视龙施放爆发之后的<c=#ffdfbf>17s</c>出现，共3枚，每枚<span class=\"cryo\">**8冻**</span>盾，每破坏一个会使冰霰防护<span class=\"cryo\">**-9.6冻**</span>。",
+    "elementType": "Frozen",
+    "duration": ""
+   }
+  ]
+ },
+ "id": "iktomisaurus",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽",
+  "幽境危战"
+ ]
+}

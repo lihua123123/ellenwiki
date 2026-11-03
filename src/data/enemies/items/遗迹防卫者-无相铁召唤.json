@@ -1,0 +1,106 @@
+{
+ "name": "遗迹防卫者·无相铁召唤",
+ "nameEn": "Ruin Defender",
+ "subtitle": "遗迹防卫者",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 57.0528,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 56.52,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "蟹肢卸织",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "防卫者使用前肢对玩家切削，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "蟹掘访问",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "防卫者从远处跳起高高落下，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "斥退之策",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "防卫者暴露核心，蓄力一发炮弹后发射，造成<c=#b9b9b9>26.6%</c>伤害。"
+  },
+  {
+   "name": "铁嶂罅袭",
+   "type": "防御",
+   "icon": "skill-4.webp",
+   "description": "防卫者利用前肢展开「光御之盾」，抵挡前方伤害。玩家靠太近则会偷袭，造成<c=#b9b9b9>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_1102",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 232932,
+   "atk": 11080,
+   "weight": 300,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "遗迹防卫者-无相铁召唤",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

@@ -1,6 +1,6 @@
 # 艾莲的数据库
 
-以「角色」为核心的原神 Wiki 式单页应用，整合角色图鉴、武器图鉴、圣遗物图鉴、伤害计算公式与幽境 Boss 图鉴五大模块，统一深色卡片化 UI。纯静态站点，无后端。
+以「角色」为核心的原神 Wiki 式单页应用，整合角色图鉴、武器图鉴、圣遗物图鉴、伤害计算公式与幽境危战图鉴五大模块，统一深色卡片化 UI。纯静态站点，无后端。
 
 ## 模块与路由
 
@@ -14,7 +14,7 @@
 | 圣遗物图鉴 | `#/artifacts` | 63 套圣遗物长卡片（每行两个，左图标 + 右套装效果），**按实装版本倒序**，稀有度筛选 + 名称搜索 |
 | 圣遗物详情 | `#/artifacts/:name` | 1/2/4 件套效果 + 五个部位的介绍与故事（可折叠，部位资料每行两个） |
 | 伤害公式 | `#/formulas/genshin` `#/formulas/sr` `#/formulas/zzz` | 三游戏伤害公式，KaTeX 渲染 |
-| 幽境 Boss | `#/boss` | 版本珠链切换，卡片翻面查看机制 / 介绍 / 背景 |
+| 幽境危战 | `#/boss` | 版本珠链切换，卡片翻面查看机制 / 介绍 / 背景 |
 | 我的角色 | `#/my-characters` | **输入 UID** 直读展示柜角色（武器 + 圣遗物副词条），或**导入 GOODScanner 的 `GOODv3.json`** 拿到全部角色；按「词条数」降序列出当前角色的副词条；免登录、数据只存 `sessionStorage`，关闭标签页即清除 |
 | 开发者 · 数据 API | `#/developer` | 对外只读 JSON 接口（数据中转站）的文档：端点、字段、示例代码、来源与许可 |
 
@@ -42,8 +42,9 @@ npm run deploy   # 构建 + 部署到 Cloudflare Workers
 | `GET /api/weapons` · `/api/weapons/<名称>` | 武器列表 / 详情 |
 | `GET /api/artifacts` · `/api/artifacts/<名称>` | 圣遗物列表 / 详情 |
 | `GET /api/attachment` | 元素附着及产球（解析后） |
-| `GET /api/bosses` | 幽境 Boss |
+| `GET /api/bosses` | 幽境危战 |
 | `GET /api/formulas` · `/api/formulas/<game>` | 伤害公式目录 / 原文（`genshin` / `sr` / `zzz`） |
+| `GET /api/palette` | 配色方案（`foundation` / `element` / `reaction` / `rarity` / `ui` 令牌 + 原表 450 条色值留档） |
 
 路径不存在返回 JSON `404`（不是页面）；`<名称>` 用中文名（请 URL 编码）。响应带 `Cache-Control: public, max-age=300`，请尽量本地缓存、避免高频全量拉取。
 
@@ -132,7 +133,7 @@ npm run data -- --list        # 只列出数据源
 | `npm run deploy` | `build` + `wrangler deploy`（Cloudflare Workers） |
 | `npm run data` | **数据源同步入口**：交互式选源 → 扫描新增 / 导入新增 / 精确复查 / 补全 |
 | `npm run esdata` | 同上，但只面向**体验服 / 未实装**内容（= `data -- --beta`） |
-| `npm run parse` | 只解析本地 md：幽境 Boss + 附着产球 → `src/data/` |
+| `npm run parse` | 只解析本地 md：幽境危战 + 附着产球 → `src/data/` |
 | `npm run index` | 由 `content/{weapons,artifacts}/*.json` 重建列表索引 + 游戏内 ID 对照表（已存在条目不动） |
 | `npm run refresh` | ⚠️ **正式服全量重刷**：角色 + 武器 + 圣遗物（genshin-db `--force`）→ 解析 → 版本 → 加强文本 |
 | `npm run refresh:characters` | 只用 genshin-db 重刷全部角色资料（⚠️ 覆盖手工文案、清掉 `buffs`） |
@@ -155,11 +156,19 @@ npm run data -- --list        # 只列出数据源
 - **状态说明（悬停词条）**：存在条目的 `states`（`{ name, text }`）里，正文里出现该名字即自动包成虚线下划线 + 气泡；由 genshin-db 的正文解析，再由 lunaris 的 `fill` 按正文里的 `{LINK#N<id>}` 标记补词条（**只看 LINK 标记**，同名但未被链接的词不挂说明）。
 - **加强文本（金色 `.rt-buff`）**：gachabase 有 `buffed_description`（genshin-db 没有），`npm run buffs` 与基础描述做逐词 diff 后，**只把新增片段**包进 `buffs.description` 的 `<buff>…</buff>`（重叠文段保持正文色）。当前 14 名角色：七七 / 可莉 / 温迪 / 阿贝多 / 莫娜 / 砂糖 / 雷泽 / 菲谢尔 / 八重神子 / 北斗 / 迪奥娜 / 赛诺 / 莱欧斯利 / 梦见月瑞希。
 - **技能引用（淡紫 `.rt-skill`）**：天赋里提到技能时（`元素战技柔板·幻灵夜舞`）标出，与金色区分；武器 / 圣遗物不标。
-- **数值高亮（主题蓝 `.rt-num`）**：武器精炼、圣遗物套装、技能文本里的百分比 / 带单位数值。武器与圣遗物正文里的 `魔导·秘仪` / `月兆·满辉` / `辉映·星烁` 属于正文本身，**不上色**。
+- **数值高亮（主题金 `.rt-num`）**：武器精炼、圣遗物套装、技能文本里的百分比 / 带单位数值。武器与圣遗物正文里的 `魔导·秘仪` / `月兆·满辉` / `辉映·星烁` 属于正文本身，**不上色**。
 - **武器等级模拟**：滑块 1~max + 「已突破」勾选（仅 20 / 40 / 50 / 60 / 70 / 80 可切），数据来自 `curve.attack[lv-1]`（已突破）/ `curve.preAttack[cap]`（未突破）；1~2★ 上限 70 级。
 - **角色属性**：生命值 / 攻击力 / 防御力 / 突破属性四格 + 同一套等级滑块（1~90，突破节点同上），数据存 `stats`；`specialized` 只存突破带来的增量。
 - **排序**：三个图鉴都按实装版本（`version`）倒序，同版本再按星级 / 名称；测试服条目带 `"beta": true` 排最前。
 - **UI 约束**：卡片不加悬停遮罩、不加左侧彩色描边；圣遗物部位不用颜色区分；主题色只由星级决定。
+
+## 配色系统
+
+- **单一数据源**：`src/data/palette.json` —— `foundation`（表面 / 文字 / 描边 / 强调 / 状态）、`element`（火水风雷草冰岩 + 物理，各含 主色 / 浅色 / 描述 / 伤害数字 / 护盾 / 视野 / 祈愿 / 七圣 / 共鸣）、`reaction`（蒸发…月反应 / 星超导）、`rarity`（1~5 星 + 特殊 5 星）、`ui`（增益 / 技能 / 链接 / 血条等）、`catalog`（原表 450 条色值留档，含使用场景与分组）。
+- **生成 CSS 令牌**：`npm run palette` → `src/styles/tokens.css`（`dev` / `build` 走 `parse` 时自动执行）。样式文件只引用 `var(--bg-body)` / `var(--accent)` / `var(--el-pyro)` 这类令牌，不再写死色值。
+- **元素色落点**：基础八元素由 `src/core/colors.js` 从 palette 注入 `.scope-genshin .pyro` 等类；`content/meta/colors.json` 只保留月感电 / 月绽放 / 星超导等渐变。
+- **JS 里需要具体色值**：从 `src/core/palette.js` 取（`elementVariant('pyro','soft')`、`rarityHex(5,'bg')`），不要硬编码；需要跟主题联动时直接写 `var(--token)`。
+- **改色流程**：改 `palette.json` → `npm run palette` → `npm run build`。
 
 ## 目录结构
 

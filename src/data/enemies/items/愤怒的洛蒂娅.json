@@ -1,0 +1,39 @@
+{
+ "name": "愤怒的洛蒂娅",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Boss",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {
+   "Value": 135.84,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "id": "愤怒的洛蒂娅",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

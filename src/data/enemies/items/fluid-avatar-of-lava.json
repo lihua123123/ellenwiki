@@ -1,0 +1,106 @@
+{
+ "name": "熔岩游像·流燃体",
+ "nameEn": "Fluid Avatar of Lava",
+ "subtitle": "熊熊燃烧的石之心",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 103.2384,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 87.92,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 70,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "醉蘸烈血",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "流燃体快速发射2枚熔石，均造成<c=#ff9999>60%</c>伤害，然后双手入地，形成熔喷，造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "浮熔游红",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "流燃体陷入地面，然后在玩家处出现，并进行一次熔喷，造成<c=#ff9999>100%</c>伤害。"
+  },
+  {
+   "name": "贯岩铄金",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "流燃体进行旋、砸两段攻击，分别造成<c=#ff9999>70%,80%</c>伤害。"
+  },
+  {
+   "name": "瓦甘之泪",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "流燃体飞出10枚烈焰弹，落地造成<c=#ff9999>50%,25%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:A_1101",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 421496,
+   "atk": 17235,
+   "weight": 150,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "fluid-avatar-of-lava",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

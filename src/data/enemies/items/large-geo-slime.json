@@ -1,0 +1,112 @@
+{
+ "name": "大型岩史莱姆",
+ "nameEn": "Large Geo Slime",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 52.752,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": "IMM",
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "凝固岩块",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "外壳存在时，大型岩史莱姆朝玩家蓄力扔出一块石头，造成<c=#ffe599>33.3%</c>伤害。"
+  },
+  {
+   "name": "琢硬坠地",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "大型岩史莱姆起跳，重重下落，造成<c=#ffe599>100%</c>伤害，若外壳破碎，则下落造成<c=#b9b9b9>66.6%</c>伤害\n<c=#ffbf00>强攻强化：\n</c>该技能使用的更加频繁。"
+  },
+  {
+   "name": "坚筑之岩",
+   "type": "天赋",
+   "icon": "skill-3.webp",
+   "description": "大型岩史莱姆常驻附属`岩罩`，打碎后才能受到伤害，一段时间后会自动恢复。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "岩罩",
+   "desc": "<c=#ffe599>8岩</c>盾，破碎后攻击欲望直线下降，一段时间后恢复。该状态下，抗打断0.4。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "岩罩",
+   "description": "<c=#ffe599>8岩</c>盾，破碎后攻击欲望直线下降，一段时间后恢复。该状态下，抗打断0.4。",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:A_1103",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 73530,
+   "atk": 10341,
+   "weight": 100,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "large-geo-slime",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

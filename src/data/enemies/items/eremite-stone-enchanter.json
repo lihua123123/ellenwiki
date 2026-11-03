@@ -1,0 +1,156 @@
+{
+ "name": "镀金旅团·魔岩役使",
+ "nameEn": "Eremite: Stone Enchanter",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 67.92,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  },
+  {
+   "name": "魔化",
+   "pyro": 60,
+   "hydro": 60,
+   "anemo": 60,
+   "electro": 60,
+   "dendro": 60,
+   "cryo": 60,
+   "geo": 60,
+   "physical": 30
+  },
+  {
+   "name": "虚弱",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": -50,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "岩锋尖斧",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "魔岩役使使用盾斧进行划、戳、掘岩3段攻击，前两段攻击均造成<c=#ffe599>75%</c>伤害，第三段产生的碎岩波造成<c=#ffe599>50%,25%,10%,\n5%</c>伤害。"
+  },
+  {
+   "name": "荡砂碎尘",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "距离玩家较远时，魔岩役使直接进行掘岩攻击，产生碎岩波，造成<c=#ffe599>50%,25%,\n10%,5%</c>伤害，是虚弱后施放的两个技能之一。"
+  },
+  {
+   "name": "斫岩一击",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "魔岩役使使用盾斧进行划击，造成<c=#ffe599>75%</c>伤害，是虚弱后施放的两个技能之一。"
+  },
+  {
+   "name": "陷阵落石",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "距离玩家较远时，魔岩役使跳到玩家上方，朝下丢出一个石块造成<c=#ffe599>80%</c>伤害。"
+  },
+  {
+   "name": "黄金回璇",
+   "type": "位移",
+   "icon": "skill-5.webp",
+   "description": "魔岩役使侧身使用盾斧蓄力，进行旋转攻击，持续造成<c=#ffe599>50%</c>伤害，旋转结束后施放尾刀，造成<c=#ffe599>75%</c>伤害。"
+  },
+  {
+   "name": "镶金斜护",
+   "type": "远程",
+   "icon": "skill-6.webp",
+   "description": "(魔化)当玩家靠近魔岩役使时，魔岩役使使用盾斧格挡玩家攻击，可将其打碎使魔岩役使暂时失衡。"
+  },
+  {
+   "name": "厄灵解放·岩之魔蜥",
+   "type": "位移",
+   "icon": "skill-7.webp",
+   "description": "当魔岩役使的<c=#ffbfbf>生命值低于70%(特化为100%)</c>时，其会唤出武器内的岩之魔蜥，<c=#ffffbf>进入魔化状态</c>，全抗性提升50%。击破岩之魔蜥会使魔岩役使受到<c=#ffe599>当前生命值的37.5%</c>的<c=#ffe599>岩元素真伤</c>，并虚弱10s。一次战斗内仅会施放一次该技能。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "机制",
+   "desc": "处于魔化或虚弱状态下，抗打断0，质量翻6倍；格挡时，质量翻6倍。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:B_1111",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 277300,
+   "atk": 9849,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "eremite-stone-enchanter",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

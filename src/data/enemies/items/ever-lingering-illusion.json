@@ -1,0 +1,110 @@
+{
+ "name": "永恒徘徊的幻景",
+ "nameEn": "Ever-lingering Illusion",
+ "subtitle": "兽",
+ "category": "Tps",
+ "categoryLabel": "第三人称射击（TPS）",
+ "tier": "Quest",
+ "defaultLevel": 20,
+ "baseStats": {
+  "hp": {
+   "Value": 329.176096,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 135.174886,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 50,
+   "electro": 50,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "虚弱",
+   "pyro": -60,
+   "hydro": -60,
+   "anemo": -20,
+   "electro": -20,
+   "dendro": -60,
+   "cryo": -60,
+   "geo": -60,
+   "physical": -60
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "忆霆流星",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "兽蓄力发射一枚雷弹，雷弹缓慢移动，落地造成<c=#ffacff>100%</c>伤害."
+  },
+  {
+   "name": "荒风悲陨",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "兽蓄力，在身旁产生4枚风球，10s后风球迅速发射造成<span class=\"anemo\">**70%,35%,17.5%,7%**</span>伤害。若及时击破所有风球，则虚弱<c=#ffdfbf>10s</c>。<c=#ffbfff>[绝境]</c>风球数量变为6枚。"
+  },
+  {
+   "name": "腾驭越逐",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "兽绕场地盘旋大半圈，并在途径的位置留下共8枚烈风弹。烈风弹依次朝玩家飞去，造成<span class=\"anemo\">**50%,25%,10%,5%**</span>伤害。烈风弹会摧毁部分掩体与建筑。"
+  },
+  {
+   "name": "势动苍霆",
+   "type": "猛攻",
+   "icon": "skill-4.webp",
+   "description": "兽利用双头施放双属性高能激光束，接触造成对应元素的<c=#ffff99>50%,25%,10%,5%</c>伤害，可利用滑铲和柱子躲避。"
+  },
+  {
+   "name": "寸飙鸢狩",
+   "type": "输出",
+   "icon": "",
+   "description": "兽短暂蓄力，突然朝玩家冲来并着陆，造成<span class=\"anemo\">**60%**</span>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [
+  {
+   "label": "剧情首领",
+   "level": 20,
+   "hp": 20625,
+   "atk": 1800,
+   "weight": 300,
+   "tenacity": 4000
+  },
+  {
+   "label": "TPS射击",
+   "level": 20,
+   "hp": 6302,
+   "atk": 1800,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "ever-lingering-illusion",
+ "icon": "avatar.webp",
+ "tags": [
+  "第三人称射击（TPS）"
+ ]
+}

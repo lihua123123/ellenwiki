@@ -74,7 +74,7 @@
   height: 100%;
   object-fit: contain;
   border-radius: 14px;
-  background: color-mix(in srgb, var(--rarity-color, var(--accent)) 12%, #10131a);
+  background: color-mix(in srgb, var(--rarity-color, var(--accent)) 12%, var(--bg-body));
   padding: 6px;
   display: block;
 }
@@ -96,8 +96,8 @@
   transition: color 0.16s ease;
 }
 .weapon-card:hover .weapon-card-name { color: var(--text-heading); }
-.weapon-card.r5 .weapon-card-name { color: #e8c883; }
-.weapon-card.r4 .weapon-card-name { color: #c3a6ef; }
+.weapon-card.r5 .weapon-card-name { color: var(--rarity-5-text); }
+.weapon-card.r4 .weapon-card-name { color: var(--rarity-4-text); }
 
 /* 星级 */
 .rarity-stars { display: inline-flex; gap: 1px; line-height: 1; }
@@ -115,9 +115,9 @@
   border-radius: 999px;
   font-size: 0.72rem;
   white-space: nowrap;
-  color: #d8c489;
-  background: rgba(216, 196, 137, 0.12);
-  border: 1px solid rgba(216, 196, 137, 0.32);
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 32%, transparent);
 }
 
 /* ===== 详情 ===== */
@@ -207,8 +207,8 @@
 .refine-tab.active {
   background: var(--accent-gradient);
   border-color: transparent;
-  color: #fff;
-  box-shadow: 0 3px 10px rgba(74, 137, 220, 0.35);
+  color: var(--text-on-accent);
+  box-shadow: 0 3px 10px color-mix(in srgb, var(--accent) 35%, transparent);
 }
 
 .refine-desc {

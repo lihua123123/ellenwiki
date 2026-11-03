@@ -7,6 +7,7 @@
  */
 import '../styles/charge-timeline.css';
 import { renderMarkdown } from '../core/markdown.js';
+import palette, { elementVariant } from '../core/palette.js';
 import {
   buildConfig, parseConfig, serializeConfig, summarizeConfig, configFileName, downloadText,
 } from '../core/charge-config.js';
@@ -21,14 +22,14 @@ const EL_MAP = {
   wind: 'anemo', rock: 'geo', grass: 'dendro',
 };
 const EL = {
-  electro:  { color: '#b197fc', label: '雷' },
-  pyro:     { color: '#ff6b6b', label: '火' },
-  hydro:    { color: '#4dabf7', label: '水' },
-  dendro:   { color: '#86efac', label: '草' },
-  cryo:     { color: '#a5f3fc', label: '冰' },
-  anemo:    { color: '#a7f3d0', label: '风' },
-  geo:      { color: '#fde047', label: '岩' },
-  colorless:{ color: '#9aa3b2', label: '无' },
+  electro:  { color: elementVariant('electro', 'soft'), label: '雷' },
+  pyro:     { color: elementVariant('pyro', 'soft'), label: '火' },
+  hydro:    { color: elementVariant('hydro', 'soft'), label: '水' },
+  dendro:   { color: elementVariant('dendro', 'soft'), label: '草' },
+  cryo:     { color: elementVariant('cryo', 'soft'), label: '冰' },
+  anemo:    { color: elementVariant('anemo', 'soft'), label: '风' },
+  geo:      { color: elementVariant('geo', 'soft'), label: '岩' },
+  colorless:{ color: palette.foundation.text.secondary.hex, label: '无' },
 };
 const TYPE_LABEL = {
   na:    { short: 'NA', full: '普通攻击' },
@@ -78,11 +79,11 @@ function hexToRgba(hex, a) {
 
 function shellHtml() {
   const tiles = [
-    ['na', '普通攻击', '<path d="M14.5 3.5 21 3l-.5 6.5L9 21l-3-3L14.5 3.5z"/><path d="m6 18 3 3"/><path d="m3 21 3-3"/>', 'none', '#dde1e8'],
-    ['skill', '战技释放', '<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>', 'none', '#6aa3f0'],
-    ['burst', '元素爆发', '<path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/>', '#ffcf6b', '#ffcf6b'],
-    ['switch', '切人', '<path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/>', 'none', '#b3a1ff'],
-    ['favonius', '西风', '<circle cx="12" cy="5.6" r="4.1"/><circle cx="6.6" cy="17" r="4.1"/><circle cx="17.4" cy="17" r="4.1"/>', '#cfd8e6', '#cfd8e6'],
+    ['na', '普通攻击', '<path d="M14.5 3.5 21 3l-.5 6.5L9 21l-3-3L14.5 3.5z"/><path d="m6 18 3 3"/><path d="m3 21 3-3"/>', 'none', palette.foundation.text.primary.hex],
+    ['skill', '战技释放', '<path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>', 'none', palette.foundation.accent.base.hex],
+    ['burst', '元素爆发', '<path d="M12 2l2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4z"/>', palette.ui.buff.hex, palette.ui.buff.hex],
+    ['switch', '切人', '<path d="M8 3 4 7l4 4"/><path d="M4 7h16"/><path d="m16 21 4-4-4-4"/><path d="M20 17H4"/>', 'none', palette.ui.skill.hex],
+    ['favonius', '西风', '<circle cx="12" cy="5.6" r="4.1"/><circle cx="6.6" cy="17" r="4.1"/><circle cx="17.4" cy="17" r="4.1"/>', palette.foundation.text.secondary.hex, palette.foundation.text.secondary.hex],
   ];
   const tileHtml = tiles.map(([act, label, path, fill, stroke], k) => `
     <button type="button" class="ct-tile ct-t${k + 1}" data-act="${act}">
@@ -377,7 +378,7 @@ export function initChargeTimeline(root) {
     const c = $('ct-tracks');
     c.innerHTML = '';
     state.tracks.forEach((tr, i) => {
-      const col = tr.char ? EL[tr.char.element].color : '#3f4654';
+      const col = tr.char ? EL[tr.char.element].color : palette.foundation.surface.elevated.hex;
       const pv = tr.char ? presetOf(tr.char.name) : null;
       const inst = tr.char ? eParticleOf(tr.char.name) : null;
       const row = document.createElement('div');

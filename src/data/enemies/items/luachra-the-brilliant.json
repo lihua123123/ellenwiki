@@ -1,0 +1,101 @@
+{
+ "name": "极彩的露珂菈",
+ "nameEn": "Luachra the Brilliant",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1753.3205999999998,
+   "Curve": "HP_3"
+  },
+  "atk": {
+   "Value": 175,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "103",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "环围涟诏",
+   "type": "追踪",
+   "icon": "skill-1.webp",
+   "description": "大海兔进行蓄力，产生6枚追踪水弹，均造成<c=#7fbfff>20%</c>伤害，蓄力期间会产生<c=#ebbfff>`滞流红晕`</c>。"
+  },
+  {
+   "name": "绕流羁行",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "大海兔进行1-2次的冲刺，接触造成<c=#b8b8b8>100%</c>伤害，进行冲刺时会短暂产生<c=#ecbfff>`滞流红晕`</c>。"
+  },
+  {
+   "name": "圆润水弹",
+   "type": "追踪",
+   "icon": "skill-3.webp",
+   "description": "大海兔使用双角发射圆润气泡水弹，造成<c=#7fbfff>20%</c>伤害。"
+  },
+  {
+   "name": "滞流红晕",
+   "type": "天赋",
+   "icon": "",
+   "description": "大海兔施放某些技能时，将产生<c=#ecbfff>`滞流红晕`</c>。\n使用「异色水母」的帽子炸弹，能对处于<c=#ecbfff>`滞流红晕`</c>下的大海兔额外造成<c=#ffdfbf>15%</c>生命值的伤害并令其移除护罩。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "滞流红晕",
+   "desc": "1次特化次数盾，击破扣除生命值。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 3172460,
+   "atk": 36376,
+   "weight": 300,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "luachra-the-brilliant",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

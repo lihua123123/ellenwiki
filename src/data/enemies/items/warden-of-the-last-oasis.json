@@ -1,0 +1,325 @@
+{
+ "name": "绿洲的守望者",
+ "nameEn": "Warden of the Last Oasis",
+ "subtitle": "历经千年之「末日」 的进化生命",
+ "category": "EnemyOfNote",
+ "categoryLabel": "值得铭记的强敌",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 244.512,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 70,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "103",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "穷乡踱围",
+   "type": "伏击",
+   "icon": "skill-1.webp",
+   "description": "守望者钻入地面，随后突出给玩家一个环抱，造成<c=#bababa>100%</c>伤害。"
+  },
+  {
+   "name": "葳菸相偕",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "守望者进行2或4段的普通攻击：划、砸、旋、翻，每段分别造成<c=#b9b9b9>50%,50%,\n80%,90%</c>伤害。"
+  },
+  {
+   "name": "萧枝寂蔓",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "守望者进行3段的普通攻击：砸、划、翻，每段分别造成<c=#bababa>50%,80%,90%</c>伤害。"
+  },
+  {
+   "name": "末路扶疏",
+   "type": "防卫",
+   "icon": "skill-4.webp",
+   "description": "处在其后侧方时，守望者进行至多2段的划击，每段分别造成<c=#b9b9b9>70%,90%</c>伤害。"
+  },
+  {
+   "name": "藻荇交横",
+   "type": "锁定",
+   "icon": "skill-5.webp",
+   "description": "守望者将前肢插入地面，在玩家处冒出四个肢条，分别进行交砸，造成<c=#bababa>70%,\n35%,7%</c>伤害。"
+  },
+  {
+   "name": "妄淆余律",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "守望者在原地大范围旋转，造成<c=#bababa>90%</c>伤害。"
+  },
+  {
+   "name": "蠹祸之飨",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "守望者进行连续三下的原地震敲攻击，三段分别造成<c=#bababa>70%,70%,90%</c>伤害，并且前两段的每段均产生数十个随机翻滚的刺球，接触造成<c=#bababa>70%,35%,7%</c>伤害，第三段震敲则变为产生大型的刺球，接触造成<c=#bababa>80%,40%,8%</c>伤害。每次攻击都有概率产生2个有追踪性的刺球。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "周本-第一阶段",
+   "level": 90,
+   "hp": 667806,
+   "atk": 11419,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "warden-of-the-last-oasis",
+ "icon": "avatar.webp",
+ "states": [
+  {
+   "key": "p1",
+   "label": "第一阶段",
+   "name": "终末绿洲的守望者",
+   "subtitle": "历经千年之「末日」 的进化生命",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 244.512,
+     "Curve": "HP_2"
+    },
+    "atk": {
+     "Value": 75.36,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-第一阶段",
+     "level": 90,
+     "hp": 667806,
+     "atk": 11419,
+     "weight": 20000,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 10,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 70,
+     "cryo": 10,
+     "geo": 10,
+     "physical": 10
+    }
+   ],
+   "skills": [
+    {
+     "name": "穷乡踱围",
+     "type": "伏击",
+     "icon": "skill-1.webp",
+     "description": "守望者钻入地面，随后突出给玩家一个环抱，造成<c=#bababa>100%</c>伤害。"
+    },
+    {
+     "name": "葳菸相偕",
+     "type": "输出",
+     "icon": "skill-2.webp",
+     "description": "守望者进行2或4段的普通攻击：划、砸、旋、翻，每段分别造成<c=#b9b9b9>50%,50%,\n80%,90%</c>伤害。"
+    },
+    {
+     "name": "萧枝寂蔓",
+     "type": "输出",
+     "icon": "skill-3.webp",
+     "description": "守望者进行3段的普通攻击：砸、划、翻，每段分别造成<c=#bababa>50%,80%,90%</c>伤害。"
+    },
+    {
+     "name": "末路扶疏",
+     "type": "防卫",
+     "icon": "skill-4.webp",
+     "description": "处在其后侧方时，守望者进行至多2段的划击，每段分别造成<c=#b9b9b9>70%,90%</c>伤害。"
+    },
+    {
+     "name": "藻荇交横",
+     "type": "锁定",
+     "icon": "skill-5.webp",
+     "description": "守望者将前肢插入地面，在玩家处冒出四个肢条，分别进行交砸，造成<c=#bababa>70%,\n35%,7%</c>伤害。"
+    },
+    {
+     "name": "妄淆余律",
+     "type": "输出",
+     "icon": "skill-6.webp",
+     "description": "守望者在原地大范围旋转，造成<c=#bababa>90%</c>伤害。"
+    },
+    {
+     "name": "蠹祸之飨",
+     "type": "爆发",
+     "icon": "skill-7.webp",
+     "description": "守望者进行连续三下的原地震敲攻击，三段分别造成<c=#bababa>70%,70%,90%</c>伤害，并且前两段的每段均产生数十个随机翻滚的刺球，接触造成<c=#bababa>70%,35%,7%</c>伤害，第三段震敲则变为产生大型的刺球，接触造成<c=#bababa>80%,40%,8%</c>伤害。每次攻击都有概率产生2个有追踪性的刺球。"
+    }
+   ],
+   "notes": [],
+   "shields": [],
+   "chargebar": [],
+   "energy": {
+    "element": "None",
+    "elementLabel": "无元素",
+    "raw": "EnergyGroup:N_0000",
+    "rows": [
+     {
+      "hp": 0,
+      "particle": 0,
+      "orb": 0
+     }
+    ]
+   },
+   "weight": 20000,
+   "elementMastery": 0,
+   "multiplayerGroup": "103",
+   "icon": "avatar.webp",
+   "defaultLevel": 90
+  },
+  {
+   "key": "p3",
+   "label": "第三阶段",
+   "name": "起源绿洲的守望者",
+   "subtitle": "经由「火种」而 得以复苏的生命",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 217.344,
+     "Curve": "HP_2"
+    },
+    "atk": {
+     "Value": 125.60000000000001,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-第三阶段",
+     "level": 90,
+     "hp": 593605,
+     "atk": 19031,
+     "weight": 20000,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 10,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 70,
+     "cryo": 10,
+     "geo": 10,
+     "physical": 10
+    }
+   ],
+   "skills": [
+    {
+     "name": "叶繁蓊茂",
+     "type": "输出",
+     "icon": "state-p3-skill-1.webp",
+     "description": "守望者进行甩尾、横扫2段攻击，每段分别造成<c=#99ff87>80%,90%</c>伤害。"
+    },
+    {
+     "name": "肇始旋奏",
+     "type": "追踪",
+     "icon": "state-p3-skill-2.webp",
+     "description": "守望者蓄力，放出15个螺旋弹，该弹瞄准玩家后直线攻击，每个均造成<c=#99ff87>50%,\n25%,12.5%,5%</c>伤害。"
+    },
+    {
+     "name": "汐生菡蕾",
+     "type": "持续",
+     "icon": "state-p3-skill-3.webp",
+     "description": "守望者朝天蓄能，产生持续3轮的下落缠花弹攻击。第一轮造成<c=#99ff86>100%</c>伤害，第二三轮造成<c=#99ff86>70%</c>伤害。\n该技能为持久技，第一轮之后守望者会施放其他技能。"
+    },
+    {
+     "name": "逾土萌茁",
+     "type": "位移",
+     "icon": "state-p3-skill-4.webp",
+     "description": "守望者钻入地面，在玩家处钻出(或在中央)，顺便进行扫尾攻击，造成<c=#99ff86>70%</c>伤害。该技能常用于位置转移。"
+    },
+    {
+     "name": "末日余波",
+     "type": "爆发",
+     "icon": "state-p3-skill-5.webp",
+     "description": "守望者在原地不断旋舞、扩散有毒地面，接触其高频造成<c=#99ff87>10%</c>伤害。\n其将产生3个位置固定的「苏生的礼赞」护罩，吟唱5s后，施放末日的余波，造成<c=#99ff87>400%</c>伤害，以上伤害<c=#ffbfbf>闪避帧均无效</c>。\n处在「苏生的礼赞」护罩内的玩家不受任何伤害。"
+    }
+   ],
+   "notes": [],
+   "shields": [],
+   "chargebar": [],
+   "energy": {
+    "element": "None",
+    "elementLabel": "无元素",
+    "raw": "EnergyGroup:N_0000",
+    "rows": [
+     {
+      "hp": 0,
+      "particle": 0,
+      "orb": 0
+     }
+    ]
+   },
+   "weight": 20000,
+   "elementMastery": 0,
+   "multiplayerGroup": "103",
+   "icon": "state-p3-avatar.webp",
+   "defaultLevel": 90
+  }
+ ],
+ "defaultState": "p1",
+ "aliases": [
+  "终末绿洲的守望者",
+  "起源绿洲的守望者"
+ ],
+ "tags": [
+  "值得铭记的强敌"
+ ]
+}

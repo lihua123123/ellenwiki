@@ -1,0 +1,76 @@
+{
+ "name": "蜘蛛",
+ "nameEn": "Spider",
+ "subtitle": "",
+ "category": "Others",
+ "categoryLabel": "其他",
+ "tier": "None",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 4.523472,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 7.536,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 0,
+   "hydro": 0,
+   "anemo": 0,
+   "electro": 0,
+   "dendro": 0,
+   "cryo": 0,
+   "geo": 0,
+   "physical": 0
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [
+  {
+   "name": "蛛丝兜弹",
+   "type": "减速",
+   "icon": "skill-1.webp",
+   "description": "蜘蛛施放蛛丝弹追踪玩家，造成<c=#b8b8b8>25%</c>伤害，并使命中的玩家速度降低<c=#ffcebf>50%</c>，持续3s；巨渊版本的蜘蛛额外扣除<c=#bfeeff>1格</c>流明石能量。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "物件",
+   "level": 100,
+   "hp": 12242,
+   "atk": 1477
+  }
+ ],
+ "leyline": null,
+ "id": "spider",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他"
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "name": "机关·区域警戒型-歼灭召唤",
+ "nameEn": "Area Alert Mek",
+ "subtitle": "",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 19.017599999999998,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "涟水流弹",
+   "type": "追踪 芒",
+   "icon": "skill-1.webp",
+   "description": "警戒机关释放出一枚追踪性的慢速水球，造成<c=#7fbfff>100%</c>伤害。"
+  },
+  {
+   "name": "气凝寒弹",
+   "type": "妨害 荒",
+   "icon": "skill-2.webp",
+   "description": "警戒机关打开，朝玩家不断发射冰弹，造成<span class=\"cryo\">**100%**</span>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "荒芒性质",
+   "desc": "<c=#ffbfbf>1次</c>芒荒攻击可以瘫痪相反属性的警戒机关，约25s后恢复荒芒属性。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 77644,
+   "atk": 4924,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "机关-区域警戒型-歼灭召唤",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

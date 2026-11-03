@@ -1,0 +1,151 @@
+{
+ "name": "蕈蕈雷法师",
+ "nameEn": "Stormsage",
+ "subtitle": "",
+ "category": "Others",
+ "categoryLabel": "其他",
+ "tier": "Common",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 24.4512,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 54.25920000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 20,
+   "dendro": 20,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "球状雷击",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "伸缩雷蕈兽甩出一枚雷珠，造成<c=#ffacff>61%</c>伤害。"
+  },
+  {
+   "name": "倏闪落雷",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "伸缩雷蕈兽抬头，在敌人处召唤落雷，造成<c=#ffacff>142%</c>伤害。"
+  },
+  {
+   "name": "轰雷高鸣",
+   "type": "战技",
+   "icon": "skill-3.webp",
+   "description": "伸缩雷蕈兽抻直发令，所有友方灵蕈提升<c=#ffbfbf>40%攻击力</c>。"
+  },
+  {
+   "name": "闪电裂果",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "伸缩雷蕈兽甩出一枚雷珠，造成<c=#ffacff>150%</c>伤害。"
+  },
+  {
+   "name": "迅捷响应",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "伸缩雷蕈兽永久提升<c=#dfbfff>150元素精通</c>。"
+  },
+  {
+   "name": "超限增幅",
+   "type": "战技",
+   "icon": "skill-6.webp",
+   "description": "伸缩雷蕈兽为场上的所有友方灵蕈施加「超限增幅」状态，灵蕈在攻击时将降下落雷，造成<c=#ffacff>200%</c>伤害，该状态在12s后或触发4次后移除。"
+  },
+  {
+   "name": "球状雷击",
+   "type": "输出",
+   "icon": "skill-7.webp",
+   "description": "伸缩雷蕈兽甩出一枚雷珠，造成<c=#ffacff>200%</c>伤害。"
+  },
+  {
+   "name": "迅捷响应",
+   "type": "天赋",
+   "icon": "skill-8.webp",
+   "description": "伸缩雷蕈兽永久提升全队<c=#dfbfff>80元素精通</c>。"
+  },
+  {
+   "name": "超限增幅",
+   "type": "战技",
+   "icon": "skill-9.webp",
+   "description": "伸缩雷蕈兽为场上的所有友方灵蕈施加「超限」效果，「超限」下<c=#ffb299>攻击力提升40%</c>，受伤时移除此效果。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "3.5 灵蕈棋阵",
+   "desc": "150元素精通。"
+  },
+  {
+   "text": "4.2 小小灵蕈大幻戏",
+   "desc": "100元素精通，剧变反应系数1.5。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "友方-3.2智巧灵蕈",
+   "level": 90
+  },
+  {
+   "label": "普通敌方-3.2智巧灵蕈",
+   "level": 90,
+   "hp": 59360,
+   "atk": 6577,
+   "weight": 75,
+   "tenacity": 600
+  },
+  {
+   "label": "友方-3.5塔防灵蕈",
+   "level": 90
+  },
+  {
+   "label": "友方-4.2幻戏灵蕈",
+   "level": 90,
+   "hp": 77911,
+   "atk": 8222,
+   "weight": 75,
+   "tenacity": 600
+  }
+ ],
+ "leyline": null,
+ "id": "stormsage",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他"
+ ]
+}

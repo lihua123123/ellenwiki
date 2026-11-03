@@ -1,0 +1,107 @@
+{
+ "name": "岩飘浮灵",
+ "nameEn": "Geo Specter",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 21.7344,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 21.98,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": "IMM",
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "晶岩弹片",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "岩飘浮灵喷出3个弱追踪性的岩弹，移动速度较快，每个造成<c=#ffe599>80%</c>伤害。"
+  },
+  {
+   "name": "击石震碎",
+   "type": "猛攻",
+   "icon": "skill-2.webp",
+   "description": "(满怒施放)岩飘浮灵蓄力，朝地面施放冲击波，造成<c=#ffe599>100%</c>伤害。"
+  },
+  {
+   "name": "磐石构进",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "岩飘浮灵朝前，旋转扇叶不断朝玩家突进，造成<c=#ffe599>100%</c>伤害。"
+  },
+  {
+   "name": "迸裂迷沙",
+   "type": "亡语",
+   "icon": "skill-4.webp",
+   "description": "岩飘浮灵死亡。\n<c=#f2d899>未满怒：</c>直接爆炸，造成<c=#ffe599>100%</c>伤害；\n<c=#f2d899>满怒：</c>蓄力爆炸，造成<c=#ffe599>120%</c>伤害，范围比其他飘浮灵大得多。"
+  },
+  {
+   "name": "怒气积攒",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "飘浮灵在受到超过自身生命值上限一定比例的单次伤害时，会积攒「怒气」。\n满怒状态下，免疫风场力、击飞，重量翻3倍。所受单次伤害与自身生命上限的区间关系如右侧："
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 88736,
+   "atk": 4309,
+   "weight": 80,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "geo-specter",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

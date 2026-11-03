@@ -1,0 +1,133 @@
+{
+ "name": "镀金旅团·沙中净水",
+ "nameEn": "Eremite: Desert Clearwater",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 48.9024,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 40.19200000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  },
+  {
+   "name": "虚弱",
+   "pyro": 10,
+   "hydro": -50,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "运水如丝",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "沙中净水进行划、戳2段攻击，依次造成<c=#7fbfff>40%,50%</c>伤害。"
+  },
+  {
+   "name": "交引汇流",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "沙中净水进行突进式的十字攻击，造成<c=#7fbfff>50%</c>伤害。"
+  },
+  {
+   "name": "厄灵解放·吞水",
+   "type": "强化",
+   "icon": "skill-3.webp",
+   "description": "当沙中净水的<c=#ffbfbf>生命值低于70%</c>时，沙中净水将武器的厄灵解放出来，<c=#bfffff>进入魔化状态</c>，该状态持续20s，状态结束后虚弱8s。"
+  },
+  {
+   "name": "环转急流",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "距离玩家较远时，沙中净水冲过来进行翻转攻击，造成2段<c=#7fbfff>50%</c>伤害，后接十字斩攻击，造成<c=#7fbfff>75%</c>伤害。"
+  },
+  {
+   "name": "导引源水",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "(魔化)沙中净水进行3段普通攻击，有2种施放方式：\n进行纵划、横划、十字斩3段攻击，该方式的攻击依次造成<c=#7fbfff>50%,50%,75%</c>伤害；\n进行划、戳、十字斩3段攻击，每段攻击分别造成<c=#7fbfff>60%,50%,75%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "机制",
+   "desc": "处于魔化状态下，抗打断0，质量翻6倍。虚弱状态下抗打断0。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:B_1112",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 199656,
+   "atk": 7879,
+   "weight": 70,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "eremite-desert-clearwater",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

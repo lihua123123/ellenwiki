@@ -1,0 +1,171 @@
+{
+ "name": "尖峰",
+ "nameEn": "The Peak",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 858.5088000000001,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 175.84,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "熔燃",
+   "pyro": 150,
+   "hydro": 110,
+   "anemo": 110,
+   "electro": 110,
+   "dendro": 110,
+   "cryo": 110,
+   "geo": 110,
+   "physical": 110
+  },
+  {
+   "name": "正常",
+   "pyro": 50,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "大招",
+   "pyro": 350,
+   "hydro": 310,
+   "anemo": 310,
+   "electro": 310,
+   "dendro": 310,
+   "cryo": 310,
+   "geo": 310,
+   "physical": 310
+  },
+  {
+   "name": "瘫痪",
+   "pyro": -20,
+   "hydro": -60,
+   "anemo": -60,
+   "electro": -60,
+   "dendro": -60,
+   "cryo": -60,
+   "geo": -60,
+   "physical": -60
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "相以烈角",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "尖峰立即使用炽热的突角进行攻击，造成<c=#ff9999>75%</c>伤害。"
+  },
+  {
+   "name": "地覆流岩",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "尖峰从地上挖出一块火山弹，抛向角色，造成<c=#ff9999>80%</c>伤害。「熔燃」状态下不施放。"
+  },
+  {
+   "name": "岚间硫火",
+   "type": "强化",
+   "icon": "skill-3.webp",
+   "description": "尖峰抬起前身，重重扑下，造成<c=#ff9999>90%</c>伤害，并召唤4枚`燃晶`，进入「熔燃」状态。场地存在燃晶时不再召唤。燃晶摧毁后可令其退出「熔燃」状态。"
+  },
+  {
+   "name": "凌焦炽土",
+   "type": "定点",
+   "icon": "skill-4.webp",
+   "description": "尖峰暴躁的进行2次连跳，均造成<c=#ff9999>90%</c>伤害。"
+  },
+  {
+   "name": "熔壑焰蹈",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "尖峰吸收全部燃晶，并冲向玩家来回两次，触碰造成<c=#ff9999>80%</c>伤害；随后尖峰跳回场地内进行蓄力，造成<c=#ff9999>100%</c>伤害，13s后爆炸，造成<c=#ff9999>300%</c>伤害，随后退出「熔燃」状态。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "燃晶",
+   "desc": "小型<c=#ff9999>40火</c>盾，大型<c=#ff9999>80火</c>盾。受超载波及<c=#ff9999>-40火</c>，受<c=#ffacff>突角龙</c>能力攻击直接摧毁。摧毁全部大型燃晶后瘫痪12s。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "燃晶",
+   "description": "小型<c=#ff9999>40火</c>盾，大型<c=#ff9999>80火</c>盾。受超载波及<c=#ff9999>-40火</c>，受<c=#ffacff>突角龙</c>能力攻击直接摧毁。摧毁全部大型燃晶后瘫痪12s。",
+   "elementType": "Fire",
+   "duration": 13
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 3851099,
+   "atk": 36551,
+   "weight": 20000,
+   "tenacity": 4000
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 981642,
+   "hpNote": "28%",
+   "atk": 22160,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "the-peak",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

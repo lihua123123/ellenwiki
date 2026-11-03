@@ -1,0 +1,127 @@
+{
+ "name": "溯流·大灵显化身",
+ "nameEn": "Flow-Inverted Wayob Manifestation",
+ "subtitle": "夜晚与游灵的代行",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 57.775999999999996,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 50,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "浮映明鉴",
+   "type": "控制",
+   "icon": "skill-1.webp",
+   "description": "溯流化身唤出一枚大型水泡，其不断吸引玩家；后水泡崩破，造成<c=#7fbfff>100%</c>伤害。"
+  },
+  {
+   "name": "兼汩并流",
+   "type": "定点",
+   "icon": "skill-2.webp",
+   "description": "溯流化身在玩家处召出一枚水泡，然后水泡崩破，造成<c=#7fbfff>70%</c>伤害。"
+  },
+  {
+   "name": "一泓濯界",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "溯流化身朝玩家方向蓄力，迸发水元素冲流，造成<c=#7fbfff>70%</c>伤害。"
+  },
+  {
+   "name": "漂溺久泉",
+   "type": "强化",
+   "icon": "skill-4.webp",
+   "description": "溯流化身即刻展开`试炼领域`，并获得`白护盾`，从领域内不断产生向外的互相垂直的4道溺没濑涌，造成<c=#7fbfff>50%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，重复3回，最后收回领域并产生深涛阔澜，造成<c=#7fbfff>100%</c>伤害，所剩的护盾将转为等量`流泉之灵御`。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "试炼领域",
+   "desc": "溯流化身展开的特殊领域，此领域内玩家造成的伤害提升120%，其内的角色造成的夜魂伤害则额外提升60%，但会不断流失元素能量(不影响特殊能量)。"
+  },
+  {
+   "text": "白护盾",
+   "desc": "111.4%生命值盾，击破后返还90元素能量(不含特殊能量)，并瘫痪溯流化身5s。"
+  },
+  {
+   "text": "流泉之灵御",
+   "desc": "48水盾，免疫冻结，击破后可瘫痪溯流化身5s。一般由等量的白护盾转化而来。\n\n重复获得白护盾会使其衰减，其序列为111.4%/73.52%/\n36.76%；具体的计算公式见「窟岩·大灵显化身」。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "白护盾",
+   "description": "111.4%生命值盾，击破后返还90元素能量(不含特殊能量)，并瘫痪溯流化身5s。",
+   "elementType": "",
+   "duration": ""
+  },
+  {
+   "name": "流泉之灵御",
+   "description": "48水盾，免疫冻结，击破后可瘫痪溯流化身5s。一般由等量的白护盾转化而来。\n\n重复获得白护盾会使其衰减，其序列为111.4%/73.52%/\n36.76%；具体的计算公式见「窟岩·大灵显化身」。",
+   "elementType": "Water",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:C_1002",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 388220,
+   "atk": 11326,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "flow-inverted-wayob-manifestation",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

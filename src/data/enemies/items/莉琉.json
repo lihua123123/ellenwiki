@@ -1,0 +1,119 @@
+{
+ "name": "莉琉",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 81.50399999999999,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 22.608,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "质量久耐",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "莉琉拿着炮筒进行划、砸2段攻击，分别造成<c=#b8b8b8>50%,70%</c>伤害。"
+  },
+  {
+   "name": "谧寒星点",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "莉琉立即使用炮筒发射2枚冰雹，均造成<span class=\"cryo\">**45%**</span>伤害"
+  },
+  {
+   "name": "蔽日萧凌",
+   "type": "追踪",
+   "icon": "skill-3.webp",
+   "description": "莉琉朝空中发射一枚大冰雹，随后立即炸裂，裂成8根追踪冰刺，均造成<span class=\"cryo\">**35%**</span>伤害。"
+  },
+  {
+   "name": "卜谜之巧",
+   "type": "强化",
+   "icon": "skill-4.webp",
+   "description": "莉琉驱使灵力，使炮筒凝聚寒气，并产生冰雾震，造成<span class=\"cryo\">**60%**</span>伤害并进入强化状态：该状态下允许施放「沆霭眠凇」。"
+  },
+  {
+   "name": "炽阳凛晶",
+   "type": "定点",
+   "icon": "skill-5.webp",
+   "description": "莉琉将炮筒滞空，命令其发射从天而降的冰锥，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "捷御身武",
+   "type": "防御",
+   "icon": "skill-6.webp",
+   "description": "莉琉拿着炮筒进行格挡，可格挡最多4次，满4次时立即触发闪现，并施放随机小技能。此后各有50%概率将格挡计数重置为1或0。"
+  },
+  {
+   "name": "沆霭眠凇",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "莉琉的真本事之一。本技能有两种施放方式：\n1.低于<c=#ffbfbf>80%</c>生命值时，莉琉升空，并借用2枚`坚石之晶`汲取力量，在场地内持续不断地降下冰晶，造成<span class=\"cryo\">**100%**</span>伤害；\n2.低于<c=#ffbfbf>15%</c>生命值时，莉琉爬上高塔吟唱，在场地内持续不断地降下冰晶，造成<span class=\"cryo\">**100%**</span>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "坚岩之晶",
+   "desc": "4次次数盾，击破其中一个即可打断莉琉招式，并致摔伤。\n常驻抗打断0.25。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 332760,
+   "atk": 4432,
+   "weight": 150,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "莉琉",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "name": "机关·灵活采集型",
+ "nameEn": "Nimble Harvester Mek",
+ "subtitle": "",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 32.6016,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 17.584,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 50,
+ "skills": [
+  {
+   "name": "碾滚冲撞",
+   "type": "应急",
+   "icon": "skill-1.webp",
+   "description": "采集机关原地滚动一圈，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "风过携尘",
+   "type": "输出 芒",
+   "icon": "skill-2.webp",
+   "description": "采集机关蓄力朝前方不断滚动，期间接触持续造成<span class=\"anemo\">**80%,20%,8%**</span>伤害。"
+  },
+  {
+   "name": "土弹挥尘",
+   "type": "控制 荒",
+   "icon": "skill-3.webp",
+   "description": "采集机关不断翻动自身的收集器，之后扔出一块土，造成<c=#ffe599>75%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "荒芒性质",
+   "desc": "<c=#ffbfbf>1次</c>芒荒攻击可以瘫痪相反属性的采集机关，约25s后恢复荒芒属性。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 133104,
+   "atk": 3447,
+   "weight": 50,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "nimble-harvester-mek",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

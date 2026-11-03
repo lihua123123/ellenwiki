@@ -1,0 +1,134 @@
+{
+ "name": "历经百战的鳍游龙武士",
+ "nameEn": "Sappho Amidst the Waves",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 229.56959999999998,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 87.92,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "机械加弓",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "莎孚拿着弹弓进行至多3段攻击，分别造成<c=#b8b8b8>70%,70%,80%</c>伤害。"
+  },
+  {
+   "name": "逾幕迅涟",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "莎孚架起弹弓，一次性发射6枚水弹，水弹造成<c=#7fbfff>65%,32.5%,13%,6.5%</c>伤害。"
+  },
+  {
+   "name": "涤濯礼弹",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "距离较远时，莎孚架起弹弓，连续发射2枚迫击水球，均造成<c=#7fbfff>80%</c>伤害。"
+  },
+  {
+   "name": "吞崖之涛",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "莎孚驱使灵力，拉着弹弓进行冲浪，冲刺3趟，接触造成<c=#7fbfff>80%</c>伤害。"
+  },
+  {
+   "name": "夏染帕提",
+   "type": "妨害",
+   "icon": "skill-5.webp",
+   "description": "低于<c=#ffcebf>85%生命值</c>后，莎孚丢出一枚`冰元素喷罐`，落地时造成<span class=\"cryo\">**40%**</span>伤害，展开冰元素领域造成<span class=\"cryo\">**50%**</span>伤害；喷罐在原地旋转，产生冰脉冲，持续造成<span class=\"cryo\">**10%**</span>伤害；一段时间后引爆，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "极冰易感",
+   "type": "追加",
+   "icon": "skill-6.webp",
+   "description": "角色附着冻元素时，莎孚会立即飞过来进行一次重重打击，造成<c=#7fbfff>90%</c>伤害并可触发碎冰，碎冰造成的伤害提升<c=#ffdfbf>500%</c>。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冰元素喷罐",
+   "desc": "<span class=\"cryo\">**2冻**</span>盾，8s后爆炸。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "冰元素喷罐",
+   "description": "<span class=\"cryo\">**2冻**</span>盾，8s后爆炸。",
+   "elementType": "Frozen",
+   "duration": 8
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 4570133,
+   "atk": 20886,
+   "weight": 100,
+   "tenacity": 50
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 937274,
+   "hpNote": "22.53%",
+   "atk": 17235,
+   "atkNote": "87.5%",
+   "weight": 100,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "sappho-amidst-the-waves",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力",
+  "历经百战"
+ ]
+}

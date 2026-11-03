@@ -1,0 +1,107 @@
+{
+ "name": "草史莱姆",
+ "nameEn": "Dendro Slime",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 10.8672,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 7.536,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": "IMM",
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 60,
+ "skills": [
+  {
+   "name": "胶质撞击",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "草史莱姆撞击玩家，造成<c=#b9b9b9>100%</c>伤害。背对地下的草史莱姆也会触发，在偷袭玩家之后再次钻入地面。"
+  },
+  {
+   "name": "近避远逐",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "正对地下的草史莱姆会使其不断后退，背对其则会不断靠近，然后偷袭。"
+  },
+  {
+   "name": "芽初之草",
+   "type": "天赋",
+   "icon": "skill-3.webp",
+   "description": "草史莱姆喜欢躲在地下，可被<c=#ff9999>火元素</c>攻击唤出。初始附属`茵草`，性质活泼，草没了就从地面钻出，不会再生。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "茵草",
+   "desc": "<c=#99ff85>2草</c>盾，燃尽后可迫使大型草史莱姆出地面，不会再生。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "茵草",
+   "description": "<c=#99ff85>2草</c>盾，燃尽后可迫使大型草史莱姆出地面，不会再生。",
+   "elementType": "Grass",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 29412,
+   "atk": 1477,
+   "weight": 60,
+   "tenacity": 20
+  }
+ ],
+ "leyline": null,
+ "id": "dendro-slime",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

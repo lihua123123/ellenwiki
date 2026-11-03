@@ -1,0 +1,118 @@
+{
+ "name": "丘丘水行游侠",
+ "nameEn": "Hydro Hilichurl Rogue",
+ "subtitle": "永恒异乡人",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 67.92,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "镰刀割草",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "水丘丘游侠使用镰刀进行快速的两段攻击，分别造成<c=#7fbfff>80%,100%</c>伤害。"
+  },
+  {
+   "name": "镰刀兜旋",
+   "type": "追踪",
+   "icon": "skill-2.webp",
+   "description": "水丘丘游侠使用镰刀进行一段较长时间的蓄力回旋，造成<c=#7fbfff>100%</c>伤害。"
+  },
+  {
+   "name": "镰刀追猎",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "距离玩家较远时，水丘丘游侠追逐玩家并给一镰刀，造成<c=#7fbfff>100%</c>伤害。"
+  },
+  {
+   "name": "镰切布丁",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "距离玩家较近时，水丘丘游侠掰直镰刀，戳击，造成<c=#7fbfff>80%</c>伤害。"
+  },
+  {
+   "name": "布丁泡泡",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "水丘丘游侠将自身挂水，召唤出`水史莱姆`，使其发射3个水泡，触碰造成<c=#7fbfff>50%</c>伤害，之后大水史莱姆变小，被水丘丘游侠踢出，造成<c=#7fbfff>100%</c>伤害。\n用元素反应破除水史莱姆可瘫痪游侠。"
+  },
+  {
+   "name": "三史莱姆",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "水丘丘游侠丢出3个小水史莱姆，造成<c=#7fbfff>80%,40%,20%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "水史莱姆",
+   "desc": "<c=#7fbfff>2水</c>盾，受击会为周围挂2单位<c=#7fbfff>水元素</c>。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "水史莱姆",
+   "description": "<c=#7fbfff>2水</c>盾，受击会为周围挂2单位<c=#7fbfff>水元素</c>。",
+   "elementType": "Water",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:A_1101",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 277300,
+   "atk": 12311,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "hydro-hilichurl-rogue",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

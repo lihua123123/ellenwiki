@@ -13,6 +13,7 @@
 import '../styles/artifacts.css';
 import { renderRichText, highlightNumbers } from '../core/richtext.js';
 import index from '../data/artifacts-index.json';
+import { rarityHex } from '../core/palette.js';
 
 /* 完整资料：非 eager，切到详情页时才加载对应文件 */
 const DETAIL_LOADERS = import.meta.glob('../../content/artifacts/*.json');
@@ -26,7 +27,7 @@ for (const [path, url] of Object.entries(LOCAL_ICONS)) {
   LOCAL_ICON_MAP[decodeURIComponent(path.split('/').pop())] = url;
 }
 
-const RARITY_COLOR = { 5: '#e0a63c', 4: '#a06cd5', 3: '#4a8ad6', 2: '#4caf7d', 1: '#8b98a8' };
+const RARITY_COLOR = { 5: rarityHex(5, 'bg'), 4: rarityHex(4, 'bg'), 3: rarityHex(3, 'bg'), 2: rarityHex(2, 'bg'), 1: rarityHex(1, 'bg') };
 
 function escapeHtml(value) {
   return String(value ?? '')

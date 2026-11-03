@@ -1,0 +1,148 @@
+{
+ "name": "无相之风·间奏曲·暴风之蝶",
+ "nameEn": "「Etar」",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 149.424,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": "IMM",
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "气蓄空爆",
+   "type": "牵引",
+   "icon": "skill-1.webp",
+   "description": "无相之风脱去外壳暴露核心，在周围产生真空场牵引玩家，持续造成<span class=\"anemo\">**25%**</span>伤害，之后产生剧烈爆炸，造成<span class=\"anemo\">**150%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "翠星一煜",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "无相之风开阵，8个风立方外壳围一圈暴露核心，发射3个风弹，每个风弹造成<span class=\"anemo\">**75%**</span>伤害。"
+  },
+  {
+   "name": "蝶振暴风",
+   "type": "控制",
+   "icon": "skill-3.webp",
+   "description": "无相之风升空化成风晶蝶，不断抖动周围空气，持续大范围造成<span class=\"anemo\">**50%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>，使用下落攻击命中以打断其技能。"
+  },
+  {
+   "name": "墙封·隙驰",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "无相之风将外壳化为成两面墙，随后夹击，造成<span class=\"anemo\">**100%**</span>伤害。夹击时产生3道风刃，每个风刃造成<span class=\"anemo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "飓风临陆",
+   "type": "辅助",
+   "icon": "skill-5.webp",
+   "description": "无相之风盘旋升空，于空中向地面注入风元素气旋，持续造成<span class=\"anemo\">**25%**</span>伤害，同时场地出现8个游离的龙卷风，龙卷风可被<c=#ff9999>火</c>/<c=#7fbfff>水</c>/<c=#ffacff>雷</c>/<span class=\"cryo\">**冰**</span>染色，接触造成<c=#ffeebf>对应元素</c>的<c=#ffeebf>75%</c>伤害，最终形成对应`元素之微粒`。"
+  },
+  {
+   "name": "风卷残流",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "无相之风在地面高速旋转，在其周围持续造成<span class=\"anemo\">**10%**</span>伤害，吸收风之微粒产生大范围冲击波，造成<span class=\"anemo\">**100%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>，吸收3个微粒后停止攻击，暴露核心；若吸收其他元素则会爆炸，并立即停止攻击暴露核心。"
+  },
+  {
+   "name": "超缩晶旋",
+   "type": "辅助",
+   "icon": "skill-7.webp",
+   "description": "无相之风蜕去外壳，将风立方从空中坠下，每个造成<span class=\"anemo\">**100%**</span>伤害，共计下落5个风立方，风立方落地产生`风棱晶`，打碎风棱晶才会产生风场。"
+  },
+  {
+   "name": "濒亡·止风",
+   "type": "复苏",
+   "icon": "skill-8.webp",
+   "description": "生命值低于5%时，无相之风召唤5个`复苏风晶球`，其中一个风晶球是游离的；周围产生4个风场，复苏持续15s，每个风之晶球恢复无相之风<span class=\"anemo\">**12.5%**</span>生命值，无晶球时恢复<c=#72ffdc>5%</c>生命值。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "元素之微粒",
+   "desc": "触碰产生6个对应元素微粒。"
+  },
+  {
+   "text": "复苏风晶球",
+   "desc": "触碰产生3个风元素微粒。"
+  },
+  {
+   "text": "风棱晶",
+   "desc": "3次次数盾，击破产生风场。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 433564,
+   "atk": 15665,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "etar",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

@@ -186,7 +186,7 @@
   white-space: pre-line;
 }
 .mine-notice.ok { color: var(--accent-light); }
-.mine-notice.err { color: #e5707a; border-color: rgba(229, 112, 122, 0.35); }
+.mine-notice.err { color: var(--state-danger); border-color: color-mix(in srgb, var(--state-danger) 35%, transparent); }
 
 /* ===== 头像 / 图标通用：右上角数字徽标（命之座、精炼） ===== */
 .face-fallback {
@@ -206,20 +206,20 @@
   padding: 0 3px;
   border-radius: 999px;
   background: var(--accent);
-  color: #fff;
+  color: var(--text-on-accent);
   font-size: 0.62rem;
   font-weight: 700;
   line-height: 16px;
   text-align: center;
-  box-shadow: 0 0 0 1.5px rgba(12, 14, 18, 0.9);
+  box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--bg-body) 90%, transparent);
 }
 
 /* 星级底色：5★ 金 / 4★ 紫 / 3★ 蓝 / 2★ 绿 / 1★ 灰（武器与圣遗物图标共用） */
-.rar-5 { background: linear-gradient(160deg, rgba(255, 190, 92, 0.55), rgba(255, 190, 92, 0.1)); border-color: rgba(255, 190, 92, 0.75) !important; }
-.rar-4 { background: linear-gradient(160deg, rgba(186, 130, 255, 0.5), rgba(186, 130, 255, 0.1)); border-color: rgba(186, 130, 255, 0.7) !important; }
-.rar-3 { background: linear-gradient(160deg, rgba(96, 165, 250, 0.5), rgba(96, 165, 250, 0.1)); border-color: rgba(96, 165, 250, 0.7) !important; }
-.rar-2 { background: linear-gradient(160deg, rgba(74, 222, 128, 0.45), rgba(74, 222, 128, 0.1)); border-color: rgba(74, 222, 128, 0.65) !important; }
-.rar-1 { background: linear-gradient(160deg, rgba(160, 170, 180, 0.4), rgba(160, 170, 180, 0.08)); border-color: rgba(160, 170, 180, 0.55) !important; }
+.rar-5 { background: linear-gradient(160deg, color-mix(in srgb, var(--rarity-5-text) 55%, transparent), color-mix(in srgb, var(--rarity-5-text) 10%, transparent)); border-color: color-mix(in srgb, var(--rarity-5-text) 75%, transparent) !important; }
+.rar-4 { background: linear-gradient(160deg, color-mix(in srgb, var(--rarity-4-text) 50%, transparent), color-mix(in srgb, var(--rarity-4-text) 10%, transparent)); border-color: color-mix(in srgb, var(--rarity-4-text) 70%, transparent) !important; }
+.rar-3 { background: linear-gradient(160deg, color-mix(in srgb, var(--rarity-3-text) 50%, transparent), color-mix(in srgb, var(--rarity-3-text) 10%, transparent)); border-color: color-mix(in srgb, var(--rarity-3-text) 70%, transparent) !important; }
+.rar-2 { background: linear-gradient(160deg, color-mix(in srgb, var(--rarity-2-text) 45%, transparent), color-mix(in srgb, var(--rarity-2-text) 10%, transparent)); border-color: color-mix(in srgb, var(--rarity-2-text) 65%, transparent) !important; }
+.rar-1 { background: linear-gradient(160deg, color-mix(in srgb, var(--rarity-1-text) 40%, transparent), color-mix(in srgb, var(--rarity-1-text) 8%, transparent)); border-color: color-mix(in srgb, var(--rarity-1-text) 55%, transparent) !important; }
 
 /* ===== 角色抽屉（右侧，浮在主体之上）=====
    收起 = 一列窄条（最多 15 个头像）；展开 = 每列最多 15 个，超出横向多开几列 */

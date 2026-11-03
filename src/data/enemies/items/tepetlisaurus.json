@@ -1,0 +1,100 @@
+{
+ "name": "嵴锋龙",
+ "nameEn": "Tepetlisaurus",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 40.751999999999995,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 50,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "掘岩潜进",
+   "type": "位移",
+   "icon": "skill-1.webp",
+   "description": "嵴锋龙潜入地面，然后突然钻出，造成<c=#ffe599>30%</c>伤害。"
+  },
+  {
+   "name": "相以臤角",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "嵴锋龙进行至多2段的普通攻击，分别造成<c=#ffe599>60%,100%</c>伤害。"
+  },
+  {
+   "name": "匍土待兔",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "嵴锋龙潜入地面，突然跃出然后落地，分别造成<c=#ffe599>60%,100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:A_1101",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 166380,
+   "atk": 7386,
+   "weight": 150,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "tepetlisaurus",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

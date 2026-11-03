@@ -1,0 +1,123 @@
+{
+ "name": "深邃拟态·风行丘丘游侠",
+ "nameEn": "Tenebrous Mimesis： Anemo Hilichurl Rogue",
+ "subtitle": "虚界浮灭气泡",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 59.769600000000004,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "风行忍镖",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "风丘丘游侠快速发射3个风手里剑，前两个较小的均造成<span class=\"anemo\">**60%**</span>伤害，第三枚较大的造成<span class=\"anemo\">**85%**</span>伤害。"
+  },
+  {
+   "name": "俎玉短刃",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "风丘丘游侠使用匕首进行至多3段的普通攻击，每段分别造成<span class=\"anemo\">**60%,60%,80%**</span>伤害。"
+  },
+  {
+   "name": "风旋居合",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "风丘丘游侠使用匕首进行居合旋斩，每段分别造成<span class=\"anemo\">**80%**</span>伤害。\n强化版本命中将施加<c=#ccffbf>12</c>级「蚀破」。"
+  },
+  {
+   "name": "巨刃回旋",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "风丘丘游侠扔出一枚较大的风手里剑，其会飞回来，接触造成<span class=\"anemo\">**85%**</span>伤害。"
+  },
+  {
+   "name": "断界刀风",
+   "type": "远程",
+   "icon": "skill-5.webp",
+   "description": "风丘丘游侠借助`风史莱姆`悬浮空中，在空中用匕首进行3段普通攻击，每段分别造成<span class=\"anemo\">**80%,80%,100%**</span>伤害，每段还会斩出伤害相同的风刃。\n用非风元素攻击风史莱姆可瘫痪游侠。"
+  },
+  {
+   "name": "真伪未归",
+   "type": "强化",
+   "icon": "skill-6.webp",
+   "description": "拟态风丘丘游侠将进行一次闪现，显形时立即无视条件施放以下1个技能的强化版本：「风旋居合」。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1111",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 244024,
+   "atk": 7387,
+   "weight": 150,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "tenebrous-mimesis-anemo-hilichurl-rogue",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

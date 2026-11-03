@@ -1,0 +1,565 @@
+{
+ "name": "「公子」",
+ "nameEn": "「Childe」",
+ "subtitle": "愚人众执行官末席",
+ "category": "EnemyOfNote",
+ "categoryLabel": "值得铭记的强敌",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 81.50399999999999,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 125.60000000000001,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 0,
+   "hydro": 50,
+   "anemo": 0,
+   "electro": 0,
+   "dendro": 0,
+   "cryo": 0,
+   "geo": 0,
+   "physical": 0
+  },
+  {
+   "name": "虚弱",
+   "pyro": -30,
+   "hydro": 20,
+   "anemo": -30,
+   "electro": -30,
+   "dendro": -30,
+   "cryo": -30,
+   "geo": -30,
+   "physical": -30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "裁霖之矢",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "公子持弓连续速射2-6个较细的水箭，各造成<c=#7fbfff>35%</c>伤害，命中<c=#72ff96>施加</c><c=#72dcff>「断流·水」</c>效果。"
+  },
+  {
+   "name": "断雨之箭",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "公子表演一整段普攻，发射6个较粗的水箭，各造成<c=#7fbfff>40%</c>伤害，命中<c=#72ff96>施加</c><c=#72dcff>「断流·水」</c>效果。"
+  },
+  {
+   "name": "漫箭止水",
+   "type": "追踪",
+   "icon": "skill-3.webp",
+   "description": "断流效果下，公子持弓对空，发射2-14个水箭，最后一发间隔较短，水箭落在地上造成<c=#7fbfff>75%</c>伤害，命中<c=#ff7272>引爆</c>「断流·水」效果。"
+  },
+  {
+   "name": "潮声流响",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "公子凌空，使用弓发射2-6段激流，激流造成<c=#7fbfff>50%</c>伤害，命中<c=#72ff96>施加</c><c=#72dcff>「断流·水」</c>效果。"
+  },
+  {
+   "name": "星海游鲸",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "断流效果下，公子移至场地边缘，蓄力召唤一个巨鲸，其跃出造成<c=#7fbfff>75%</c>伤害，落下造成更大范围的<c=#7fbfff>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，命中均<c=#ff7272>引爆</c>「断流·水」效果。"
+  },
+  {
+   "name": "止水息源",
+   "type": "靠近",
+   "icon": "skill-6.webp",
+   "description": "距离公子过远时，公子瞬移使用水形剑斩击，造成<c=#7fbfff>62.5%</c>伤害，命中<c=#ff7272>引爆</c><c=#72dcff>「断流·水」</c>效果。"
+  },
+  {
+   "name": "赐予潺流",
+   "type": "反击",
+   "icon": "skill-7.webp",
+   "description": "在公子空闲时若对其进行普通攻击，则公子会产生水元素盾抵挡伤害，每次受击有<c=#ffdfbf>13%</c>概率进行反击，造成<c=#7fbfff>50%</c>伤害，命中<c=#72ff96>施加</c><c=#72dcff>「断流·水」</c>效果。"
+  },
+  {
+   "name": "覆以海潮",
+   "type": "反击",
+   "icon": "skill-8.webp",
+   "description": "在公子空闲时若对其进行近战<c=#7fbfff>水元素</c>攻击，则公子瞬间施放反击，造成<c=#7fbfff>150%</c>伤害，命中<c=#72ff96>施加</c><c=#72dcff>「断流·水」</c>效果。"
+  },
+  {
+   "name": "断流·水",
+   "type": "天赋",
+   "icon": "skill-9.webp",
+   "description": "公子的某些技能<c=#72ff96>施加</c>的<c=#72dcff>「断流·水」</c>效果，在玩家身上持续30s，若被引爆断流技能命中，则<c=#ff7272>引爆</c><c=#72dcff>「断流·水」</c>效果，将额外造成<c=#7fbfff>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "周本-第一阶段",
+   "level": 90,
+   "hp": 146125,
+   "atk": 19031,
+   "weight": 150,
+   "tenacity": 500
+  }
+ ],
+ "leyline": null,
+ "id": "childe",
+ "icon": "avatar.webp",
+ "states": [
+  {
+   "key": "p1",
+   "label": "第一阶段",
+   "name": "「公子」·末席",
+   "subtitle": "愚人众执行官末席",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 81.50399999999999,
+     "Curve": "HP_1"
+    },
+    "atk": {
+     "Value": 125.60000000000001,
+     "Curve": "ATK_1"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-第一阶段",
+     "level": 90,
+     "hp": 146125,
+     "atk": 19031,
+     "weight": 150,
+     "tenacity": 500
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 0,
+     "hydro": 50,
+     "anemo": 0,
+     "electro": 0,
+     "dendro": 0,
+     "cryo": 0,
+     "geo": 0,
+     "physical": 0
+    },
+    {
+     "name": "虚弱",
+     "pyro": -30,
+     "hydro": 20,
+     "anemo": -30,
+     "electro": -30,
+     "dendro": -30,
+     "cryo": -30,
+     "geo": -30,
+     "physical": -30
+    }
+   ],
+   "skills": [
+    {
+     "name": "裁霖之矢",
+     "type": "输出",
+     "icon": "skill-1.webp",
+     "description": "公子持弓连续速射2-6个较细的水箭，各造成<c=#7fbfff>35%</c>伤害，命中<c=#72ff96>施加</c><c=#72dcff>「断流·水」</c>效果。"
+    },
+    {
+     "name": "断雨之箭",
+     "type": "输出",
+     "icon": "skill-2.webp",
+     "description": "公子表演一整段普攻，发射6个较粗的水箭，各造成<c=#7fbfff>40%</c>伤害，命中<c=#72ff96>施加</c><c=#72dcff>「断流·水」</c>效果。"
+    },
+    {
+     "name": "漫箭止水",
+     "type": "追踪",
+     "icon": "skill-3.webp",
+     "description": "断流效果下，公子持弓对空，发射2-14个水箭，最后一发间隔较短，水箭落在地上造成<c=#7fbfff>75%</c>伤害，命中<c=#ff7272>引爆</c>「断流·水」效果。"
+    },
+    {
+     "name": "潮声流响",
+     "type": "输出",
+     "icon": "skill-4.webp",
+     "description": "公子凌空，使用弓发射2-6段激流，激流造成<c=#7fbfff>50%</c>伤害，命中<c=#72ff96>施加</c><c=#72dcff>「断流·水」</c>效果。"
+    },
+    {
+     "name": "星海游鲸",
+     "type": "爆发",
+     "icon": "skill-5.webp",
+     "description": "断流效果下，公子移至场地边缘，蓄力召唤一个巨鲸，其跃出造成<c=#7fbfff>75%</c>伤害，落下造成更大范围的<c=#7fbfff>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，命中均<c=#ff7272>引爆</c>「断流·水」效果。"
+    },
+    {
+     "name": "止水息源",
+     "type": "靠近",
+     "icon": "skill-6.webp",
+     "description": "距离公子过远时，公子瞬移使用水形剑斩击，造成<c=#7fbfff>62.5%</c>伤害，命中<c=#ff7272>引爆</c><c=#72dcff>「断流·水」</c>效果。"
+    },
+    {
+     "name": "赐予潺流",
+     "type": "反击",
+     "icon": "skill-7.webp",
+     "description": "在公子空闲时若对其进行普通攻击，则公子会产生水元素盾抵挡伤害，每次受击有<c=#ffdfbf>13%</c>概率进行反击，造成<c=#7fbfff>50%</c>伤害，命中<c=#72ff96>施加</c><c=#72dcff>「断流·水」</c>效果。"
+    },
+    {
+     "name": "覆以海潮",
+     "type": "反击",
+     "icon": "skill-8.webp",
+     "description": "在公子空闲时若对其进行近战<c=#7fbfff>水元素</c>攻击，则公子瞬间施放反击，造成<c=#7fbfff>150%</c>伤害，命中<c=#72ff96>施加</c><c=#72dcff>「断流·水」</c>效果。"
+    },
+    {
+     "name": "断流·水",
+     "type": "天赋",
+     "icon": "skill-9.webp",
+     "description": "公子的某些技能<c=#72ff96>施加</c>的<c=#72dcff>「断流·水」</c>效果，在玩家身上持续30s，若被引爆断流技能命中，则<c=#ff7272>引爆</c><c=#72dcff>「断流·水」</c>效果，将额外造成<c=#7fbfff>100%</c>伤害。"
+    }
+   ],
+   "notes": [],
+   "shields": [],
+   "chargebar": [],
+   "energy": {
+    "element": "None",
+    "elementLabel": "无元素",
+    "raw": "EnergyGroup:N_0000",
+    "rows": [
+     {
+      "hp": 0,
+      "particle": 0,
+      "orb": 0
+     }
+    ]
+   },
+   "weight": 150,
+   "elementMastery": 0,
+   "multiplayerGroup": "1",
+   "icon": "avatar.webp",
+   "defaultLevel": 90
+  },
+  {
+   "key": "p2",
+   "label": "第二阶段",
+   "name": "「公子」·邪眼解放",
+   "subtitle": "邪眼解放",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 81.50399999999999,
+     "Curve": "HP_1"
+    },
+    "atk": {
+     "Value": 125.60000000000001,
+     "Curve": "ATK_1"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-第二阶段",
+     "level": 90,
+     "hp": 146125,
+     "atk": 19031,
+     "weight": 150,
+     "tenacity": 500
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 0,
+     "hydro": 0,
+     "anemo": 0,
+     "electro": 50,
+     "dendro": 0,
+     "cryo": 0,
+     "geo": 0,
+     "physical": 0
+    },
+    {
+     "name": "虚弱",
+     "pyro": -50,
+     "hydro": -50,
+     "anemo": -50,
+     "electro": 0,
+     "dendro": -50,
+     "cryo": -50,
+     "geo": -50,
+     "physical": -50
+    }
+   ],
+   "skills": [
+    {
+     "name": "奔雷刃尖",
+     "type": "输出",
+     "icon": "state-p2-skill-1.webp",
+     "description": "公子进行至多5段的普通攻击，但一般只放2、3段。该5段普攻分别造成<c=#ffacff>25%,27.5%,30%,35%,40%</c>伤害，命中<c=#72ff96>施加</c><c=#dc72ff>「断流·雷」</c>效果。"
+    },
+    {
+     "name": "祟行遽影",
+     "type": "位移",
+     "icon": "state-p2-skill-2.webp",
+     "description": "公子进行2-5段的冲刺攻击，每段冲刺造成<c=#ffacff>37.5%</c>伤害，命中<c=#72ff96>施加</c><c=#dc72ff>「断流·雷」</c>效果。"
+    },
+    {
+     "name": "势如万钧",
+     "type": "防卫",
+     "icon": "state-p2-skill-3.webp",
+     "description": "处在公子身后时，公子使用雷枪转身扫击，造成<c=#ffacff>50%</c>伤害，命中<c=#72ff96>施加</c><c=#dc72ff>「断流·雷」</c>效果。"
+    },
+    {
+     "name": "星裁夤灭",
+     "type": "爆发",
+     "icon": "state-p2-skill-4.webp",
+     "description": "断流效果下，公子使用雷环标记玩家，升空，数秒后下落在环的位置，造成<c=#ffacff>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，命中<c=#ff7272>引爆</c>「断流·雷」效果。"
+    },
+    {
+     "name": "止变息霆",
+     "type": "靠近",
+     "icon": "state-p2-skill-5.webp",
+     "description": "距离公子过远时，公子瞬移使用雷刃斩击造成<c=#ffacff>62.5%</c>伤害，命中<c=#ff7272>引爆</c><c=#dc72ff>「断流·雷」</c>效果。"
+    },
+    {
+     "name": "赐予紫雷",
+     "type": "反击",
+     "icon": "state-p2-skill-6.webp",
+     "description": "在公子空闲时若对其进行普通攻击，则公子会产生雷元素盾抵挡伤害，每次受击都有<c=#ffcdbf>13%</c>概率进行反击，造成<c=#df99ff>50%</c>伤害，命中<c=#72ff96>施加</c><c=#dc72ff>「断流·雷」</c>效果。"
+    },
+    {
+     "name": "覆以霍闪",
+     "type": "反击",
+     "icon": "state-p2-skill-7.webp",
+     "description": "在公子空闲时若对其进行近战<c=#ffacff>雷元素</c>攻击，则公子瞬间施放反击，造成<c=#ffacff>150%</c>伤害，命中<c=#72ff96>施加</c><c=#dc72ff>「断流·雷」</c>效果。"
+    },
+    {
+     "name": "断流·雷",
+     "type": "天赋",
+     "icon": "state-p2-skill-8.webp",
+     "description": "公子的某些技能施加的<c=#dc72ff>「断流·雷」</c>效果，在玩家身上持续30s，若被引爆断流技能命中，则<c=#ff7272>引爆</c><c=#dc72ff>「断流·雷」</c>效果，将额外造成<c=#ffacff>100%</c>伤害。"
+    }
+   ],
+   "notes": [],
+   "shields": [],
+   "chargebar": [],
+   "energy": {
+    "element": "None",
+    "elementLabel": "无元素",
+    "raw": "EnergyGroup:N_0000",
+    "rows": [
+     {
+      "hp": 0,
+      "particle": 0,
+      "orb": 0
+     }
+    ]
+   },
+   "weight": 150,
+   "elementMastery": 0,
+   "multiplayerGroup": "1",
+   "icon": "state-p2-avatar.webp",
+   "defaultLevel": 90
+  },
+  {
+   "key": "p3",
+   "label": "第三阶段",
+   "name": "「公子」·第三阶段",
+   "subtitle": "别看了这里没有",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 135.84,
+     "Curve": "HP_1"
+    },
+    "atk": {
+     "Value": 175.84,
+     "Curve": "ATK_1"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-第三阶段",
+     "level": 90,
+     "hp": 243541,
+     "atk": 26644,
+     "weight": 20000,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 10,
+     "hydro": 70,
+     "anemo": 10,
+     "electro": 70,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 10,
+     "physical": 10
+    }
+   ],
+   "skills": [
+    {
+     "name": "邪闪秽雷",
+     "type": "输出",
+     "icon": "state-p3-skill-1.webp",
+     "description": "公子使用手中的邪刃进行3段普攻，第一段与第二段分别造成<c=#ffacff>25%,35%</c>伤害；第三段扔出邪枪，造成<c=#ffacff>25%</c>伤害；邪枪在前方旋转，持续造成4次<c=#ffacff>15%</c>伤害，命中均<c=#72ff96>施加</c><c=#dc72ff>「断流·雷」</c>效果。"
+    },
+    {
+     "name": "紫风蹑影",
+     "type": "位移",
+     "icon": "state-p3-skill-2.webp",
+     "description": "公子使用手中的邪枪进行至多5段冲刺，每次均造成<c=#ffacff>37.5%</c>伤害，命中<c=#72ff96>施加</c><c=#dc72ff>「断流·雷」</c>效果。"
+    },
+    {
+     "name": "银索霎闪",
+     "type": "输出",
+     "icon": "state-p3-skill-3.webp",
+     "description": "处在公子近身时，公子使用手中的邪刃先右斩再左斩，各造成<c=#ffacff>25%</c>伤害，命中<c=#72ff96>施加</c><c=#dc72ff>「断流·雷」</c>效果。"
+    },
+    {
+     "name": "霆时刹那",
+     "type": "防卫",
+     "icon": "state-p3-skill-4.webp",
+     "description": "处在公子身后时，公子挥转手中的邪枪向后斩击，造成<c=#ffacff>50%</c>伤害，命中<c=#72ff96>施加</c><c=#dc72ff>「断流·雷」</c>效果。"
+    },
+    {
+     "name": "霓云雳雨",
+     "type": "瞄准",
+     "icon": "state-p3-skill-5.webp",
+     "description": "公子在每个玩家处召唤并落下4个雷枪，造成一次<c=#ffacff>50%</c>伤害。"
+    },
+    {
+     "name": "疾电神枪",
+     "type": "扰动",
+     "icon": "state-p3-skill-6.webp",
+     "description": "断流效果下，公子扔出手中的邪枪，邪枪绕场地滚动，触碰造成<c=#ffacff>40%</c>伤害，命中<c=#72ff96>施加</c><c=#dc72ff>「断流·雷」</c>效果，一段时间后邪枪消失。"
+    },
+    {
+     "name": "殛恶绝陨",
+     "type": "爆发",
+     "icon": "state-p3-skill-7.webp",
+     "description": "断流效果下，公子使用雷环标记玩家，升空几秒后落在圈的位置，5m内造成<c=#df99ff>100%</c>伤害，外围造成<c=#df99ff>50%</c>伤害<c=#ffbfbf>(闪避帧均无效)</c>，命中<c=#ff7272>引爆</c>「断流」效果。"
+    },
+    {
+     "name": "星海游鲸",
+     "type": "爆发",
+     "icon": "state-p3-skill-8.webp",
+     "description": "断流效果下，公子移至场地边缘，蓄力召唤一个巨鲸，其跃出造成<c=#7fbfff>75%</c>伤害，落下造成更大范围的<c=#7fbfff>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，命中均<c=#ff7272>引爆</c>「断流」效果。"
+    },
+    {
+     "name": "暴雨帘箭",
+     "type": "爆发",
+     "icon": "state-p3-skill-9.webp",
+     "description": "断流效果下，公子移至场地边缘，蓄力发射一枚巨型水箭，在地面产生4个大范围雨区，随后该处下大雨，造成<c=#7fbfff>87.5%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，命中<c=#ff7272>引爆</c>「断流」效果。"
+    },
+    {
+     "name": "涌泉交转",
+     "type": "妨害",
+     "icon": "",
+     "description": "公子施放数个水喷，呈折线形移动，每个造成<c=#7fbfff>35%</c>伤害，命中<c=#72ff96>施加</c><c=#72dcff>「断流·水」</c>效果。"
+    },
+    {
+     "name": "渤浪滔天",
+     "type": "闪现",
+     "icon": "state-p3-skill-11.webp",
+     "description": "断流效果下，公子使用邪枪朝玩家发射水枪，随后闪现至其他区域重复此过程1-3次，水枪造成<c=#7fbfff>50%</c>伤害。"
+    },
+    {
+     "name": "绝溦之澜",
+     "type": "输出",
+     "icon": "state-p3-skill-12.webp",
+     "description": "公子蓄力发射1-3个较粗的水箭，造成<c=#7fbfff>40%</c>伤害，命中<c=#72ff96>施加</c><c=#72dcff>「断流·水」</c>效果。"
+    },
+    {
+     "name": "碧波与共",
+     "type": "输出",
+     "icon": "state-p3-skill-13.webp",
+     "description": "公子使用邪枪挥出两道水刃，一水刃偏右，另一水刃偏左，水刃造成<c=#7fbfff>37.5%</c>伤害，命中<c=#72ff96>施加</c><c=#72dcff>「断流·水」</c>效果。"
+    },
+    {
+     "name": "蹈断辙流",
+     "type": "天赋",
+     "icon": "state-p3-skill-14.webp",
+     "description": "当已有的断流被施加不同的断流时，原先存在的断流会被<c=#ff7272>引爆</c>，造成对应元素的<c=#ccbfff>50%</c>伤害同时施加新的断流。若断流被引爆技能命中，则正常<c=#ff7272>引爆</c>，额外造成对应元素的<c=#ccbfff>100%</c>伤害。"
+    }
+   ],
+   "notes": [],
+   "shields": [],
+   "chargebar": [],
+   "energy": {
+    "element": "White",
+    "elementLabel": "无元素",
+    "raw": "EnergyGroup:B_3333",
+    "rows": [
+     {
+      "hp": 75,
+      "particle": 0,
+      "orb": 1
+     },
+     {
+      "hp": 50,
+      "particle": 0,
+      "orb": 1
+     },
+     {
+      "hp": 25,
+      "particle": 0,
+      "orb": 1
+     },
+     {
+      "hp": 0,
+      "particle": 0,
+      "orb": 1
+     }
+    ]
+   },
+   "weight": 20000,
+   "elementMastery": 0,
+   "multiplayerGroup": "1",
+   "icon": "state-p3-avatar.webp",
+   "defaultLevel": 90
+  }
+ ],
+ "defaultState": "p1",
+ "aliases": [
+  "「公子」·末席",
+  "「公子」·邪眼解放"
+ ],
+ "tags": [
+  "值得铭记的强敌"
+ ]
+}

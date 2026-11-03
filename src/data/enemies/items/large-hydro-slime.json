@@ -1,0 +1,106 @@
+{
+ "name": "大型水史莱姆",
+ "nameEn": "Large Hydro Slime",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 35.168,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": "IMM",
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "水涵圆泡",
+   "type": "控制",
+   "icon": "skill-1.webp",
+   "description": "大型水史莱姆吐出大水泡，会包住角色或小体型原魔，造成<c=#7fbfff>50%</c>伤害，水泡弹跳、击破水泡都会造成<c=#7fbfff>50%</c>伤害。"
+  },
+  {
+   "name": "露水撞击",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "在大型水史莱姆面前时，大型水史莱姆撞击玩家，造成<c=#7fbfff>50%</c>伤害。"
+  },
+  {
+   "name": "珠凝坠地",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "大型水史莱姆起跳，重重下落，造成<c=#7fbfff>100%</c>伤害。\n<c=#59acff>强攻强化：\n</c>该技能使用的更加频繁。"
+  },
+  {
+   "name": "温润之水",
+   "type": "天赋",
+   "icon": "skill-4.webp",
+   "description": "大型水史莱姆常驻<c=#7fbfff>水元素</c>，每次弹跳时，会给附近角色施加<c=#7fbfff>水元素</c>。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:A_1103",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 73530,
+   "atk": 6894,
+   "weight": 100,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "large-hydro-slime",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

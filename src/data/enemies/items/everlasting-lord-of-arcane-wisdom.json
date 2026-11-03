@@ -1,0 +1,502 @@
+{
+ "name": "七叶寂照秘密主",
+ "nameEn": "Everlasting Lord of Arcane Wisdom",
+ "subtitle": "「正机之神」",
+ "category": "EnemyOfNote",
+ "categoryLabel": "值得铭记的强敌",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 271.68,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 50,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "104",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "障破灵毕逐连",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "(半瘫施放)另一侧的机械臂会召唤至多6次的落雷，均造成<c=#ffacff>66%</c>伤害。\n第1、2、4、5次落雷施放完毕均掉落1个`小能量块`。"
+  },
+  {
+   "name": "幽冥砺雷封合",
+   "type": "持续",
+   "icon": "skill-2.webp",
+   "description": "正机上方的两机械臂不断洒落雷晶，造成<c=#ffacff>100%,50%,25%,10%</c>伤害，掉落2个`小能量块`，最后扔出2个雷光棱镜均造成<c=#ffacff>50%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "灭劫轮转殛流",
+   "type": "猛攻",
+   "icon": "skill-3.webp",
+   "description": "正机召唤12个围绕自己的激光器，逆时针旋转，发射激光造成<c=#ffacff>100%,50%,25%</c>伤害，10s后激光爆发，伤害与之前相同，并掉落1个`大能量块`。正机身边的等离子场造成相同的伤害。"
+  },
+  {
+   "name": "抚撼千灌爆震",
+   "type": "猛攻",
+   "icon": "",
+   "description": "正机使用上方机械臂汇聚雷素，6s后发射激光作于全场，持续造成<c=#ffacff>50%</c>伤害，5s后爆破，造成<c=#ffacff>100%</c>伤害，并掉落1个`大能量块`。"
+  },
+  {
+   "name": "冰结炎劫轰震",
+   "type": "输出",
+   "icon": "",
+   "description": "正机使用单个机械臂朝地面猛击，造成对应元素的<c=#edffbf>75%</c>伤害，然后产生爆破，造成对应元素的<c=#edffbf>100%</c>伤害，并留下<span class=\"cryo\">**霜寒**</span>或<c=#ff9999>余火</c>地面，掉落1个`大能量块`。\n<span class=\"cryo\">**霜寒**</span>地面造成<span class=\"cryo\">**5%**</span>伤害；\n<c=#ff9999>余火</c>地面造成<c=#ff9999>15%</c>伤害。"
+  },
+  {
+   "name": "气寒灼焰覆辙",
+   "type": "妨害",
+   "icon": "skill-6.webp",
+   "description": "正机先使用一侧的机械臂喷洒冰雾或烈火扫场，持续造成对应元素的<c=#eeffbf>100%,50%,25%,10%</c>伤害，并留下<span class=\"cryo\">**霜寒**</span>或<c=#ff9999>余火</c>地面，随后使用另一侧砸击地面，造成对应元素的<c=#eeffbf>66%</c>伤害。掉落1个大能量块。"
+  },
+  {
+   "name": "残雪余温摩挲",
+   "type": "追加",
+   "icon": "skill-7.webp",
+   "description": "正机使用单个机械臂划过地面，然造成对应元素的<c=#eeffbf>100%</c>伤害，留下小范围的<span class=\"cryo\">**霜寒**</span>或<c=#ff9999>余火</c>地面。"
+  },
+  {
+   "name": "风怒龙吟水啸",
+   "type": "追加",
+   "icon": "",
+   "description": "正机召唤3个风涡，触碰造成<span class=\"anemo\">**33%**</span>伤害，之后染上水元素，形成水龙卷在场地游走，触碰造成<c=#7fbfff>50%</c>伤害，一段时间后，水龙卷爆发，造成<c=#7fbfff>75%</c>伤害，每个都会掉落1个`小能量块`。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "大能量块",
+   "desc": "恢复虚空终端100%能量。"
+  },
+  {
+   "text": "小能量块",
+   "desc": "恢复虚空终端50%能量。"
+  },
+  {
+   "text": "雷元素矩阵",
+   "desc": "瘫痪正机之神的一侧，激活2侧可完全瘫痪正机之神，CD1min。"
+  },
+  {
+   "text": "风元素矩阵",
+   "desc": "产生持续15s的风场，用于躲避伤害，CD15s。"
+  },
+  {
+   "text": "火元素矩阵",
+   "desc": "清除全场的霜寒地面，CD10s。"
+  },
+  {
+   "text": "冰元素矩阵",
+   "desc": "清除全场的余烬地面，CD10s。"
+  },
+  {
+   "text": "水元素矩阵",
+   "desc": "持续恢复全部在场角色生命值，10%/2s，持续10s，CD15s。\n激活一次矩阵会掉落对应元素的5个元素微粒。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "周本-第一阶段",
+   "level": 90,
+   "hp": 742006,
+   "atk": 9516,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "everlasting-lord-of-arcane-wisdom",
+ "icon": "avatar.webp",
+ "states": [
+  {
+   "key": "p1",
+   "label": "第一阶段",
+   "name": "七叶寂照秘密主·半身",
+   "subtitle": "「正机之神」",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 271.68,
+     "Curve": "HP_2"
+    },
+    "atk": {
+     "Value": 62.800000000000004,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-第一阶段",
+     "level": 90,
+     "hp": 742006,
+     "atk": 9516,
+     "weight": 20000,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 10,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 50,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 10,
+     "physical": 10
+    }
+   ],
+   "skills": [
+    {
+     "name": "障破灵毕逐连",
+     "type": "输出",
+     "icon": "skill-1.webp",
+     "description": "(半瘫施放)另一侧的机械臂会召唤至多6次的落雷，均造成<c=#ffacff>66%</c>伤害。\n第1、2、4、5次落雷施放完毕均掉落1个`小能量块`。"
+    },
+    {
+     "name": "幽冥砺雷封合",
+     "type": "持续",
+     "icon": "skill-2.webp",
+     "description": "正机上方的两机械臂不断洒落雷晶，造成<c=#ffacff>100%,50%,25%,10%</c>伤害，掉落2个`小能量块`，最后扔出2个雷光棱镜均造成<c=#ffacff>50%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+    },
+    {
+     "name": "灭劫轮转殛流",
+     "type": "猛攻",
+     "icon": "skill-3.webp",
+     "description": "正机召唤12个围绕自己的激光器，逆时针旋转，发射激光造成<c=#ffacff>100%,50%,25%</c>伤害，10s后激光爆发，伤害与之前相同，并掉落1个`大能量块`。正机身边的等离子场造成相同的伤害。"
+    },
+    {
+     "name": "抚撼千灌爆震",
+     "type": "猛攻",
+     "icon": "",
+     "description": "正机使用上方机械臂汇聚雷素，6s后发射激光作于全场，持续造成<c=#ffacff>50%</c>伤害，5s后爆破，造成<c=#ffacff>100%</c>伤害，并掉落1个`大能量块`。"
+    },
+    {
+     "name": "冰结炎劫轰震",
+     "type": "输出",
+     "icon": "",
+     "description": "正机使用单个机械臂朝地面猛击，造成对应元素的<c=#edffbf>75%</c>伤害，然后产生爆破，造成对应元素的<c=#edffbf>100%</c>伤害，并留下<span class=\"cryo\">**霜寒**</span>或<c=#ff9999>余火</c>地面，掉落1个`大能量块`。\n<span class=\"cryo\">**霜寒**</span>地面造成<span class=\"cryo\">**5%**</span>伤害；\n<c=#ff9999>余火</c>地面造成<c=#ff9999>15%</c>伤害。"
+    },
+    {
+     "name": "气寒灼焰覆辙",
+     "type": "妨害",
+     "icon": "skill-6.webp",
+     "description": "正机先使用一侧的机械臂喷洒冰雾或烈火扫场，持续造成对应元素的<c=#eeffbf>100%,50%,25%,10%</c>伤害，并留下<span class=\"cryo\">**霜寒**</span>或<c=#ff9999>余火</c>地面，随后使用另一侧砸击地面，造成对应元素的<c=#eeffbf>66%</c>伤害。掉落1个大能量块。"
+    },
+    {
+     "name": "残雪余温摩挲",
+     "type": "追加",
+     "icon": "skill-7.webp",
+     "description": "正机使用单个机械臂划过地面，然造成对应元素的<c=#eeffbf>100%</c>伤害，留下小范围的<span class=\"cryo\">**霜寒**</span>或<c=#ff9999>余火</c>地面。"
+    },
+    {
+     "name": "风怒龙吟水啸",
+     "type": "追加",
+     "icon": "",
+     "description": "正机召唤3个风涡，触碰造成<span class=\"anemo\">**33%**</span>伤害，之后染上水元素，形成水龙卷在场地游走，触碰造成<c=#7fbfff>50%</c>伤害，一段时间后，水龙卷爆发，造成<c=#7fbfff>75%</c>伤害，每个都会掉落1个`小能量块`。"
+    }
+   ],
+   "notes": [
+    {
+     "text": "大能量块",
+     "desc": "恢复虚空终端100%能量。"
+    },
+    {
+     "text": "小能量块",
+     "desc": "恢复虚空终端50%能量。"
+    },
+    {
+     "text": "雷元素矩阵",
+     "desc": "瘫痪正机之神的一侧，激活2侧可完全瘫痪正机之神，CD1min。"
+    },
+    {
+     "text": "风元素矩阵",
+     "desc": "产生持续15s的风场，用于躲避伤害，CD15s。"
+    },
+    {
+     "text": "火元素矩阵",
+     "desc": "清除全场的霜寒地面，CD10s。"
+    },
+    {
+     "text": "冰元素矩阵",
+     "desc": "清除全场的余烬地面，CD10s。"
+    },
+    {
+     "text": "水元素矩阵",
+     "desc": "持续恢复全部在场角色生命值，10%/2s，持续10s，CD15s。\n激活一次矩阵会掉落对应元素的5个元素微粒。"
+    }
+   ],
+   "shields": [],
+   "chargebar": [],
+   "energy": {
+    "element": "None",
+    "elementLabel": "无元素",
+    "raw": "EnergyGroup:N_0000",
+    "rows": [
+     {
+      "hp": 0,
+      "particle": 0,
+      "orb": 0
+     }
+    ]
+   },
+   "weight": 20000,
+   "elementMastery": 0,
+   "multiplayerGroup": "104",
+   "icon": "avatar.webp",
+   "defaultLevel": 90
+  },
+  {
+   "key": "p2",
+   "label": "第二阶段",
+   "name": "七叶寂照秘密主·第二阶段",
+   "subtitle": "「正机之神」",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 244.512,
+     "Curve": "HP_2"
+    },
+    "atk": {
+     "Value": 75.36,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-第二阶段",
+     "level": 90,
+     "hp": 667806,
+     "atk": 11419,
+     "weight": 20000,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "带甲",
+     "pyro": 230,
+     "hydro": 230,
+     "anemo": 230,
+     "electro": 290,
+     "dendro": 230,
+     "cryo": 230,
+     "geo": 230,
+     "physical": 230
+    },
+    {
+     "name": "无甲",
+     "pyro": 30,
+     "hydro": 30,
+     "anemo": 30,
+     "electro": 90,
+     "dendro": 30,
+     "cryo": 30,
+     "geo": 30,
+     "physical": 30
+    },
+    {
+     "name": "核心",
+     "pyro": -140,
+     "hydro": -140,
+     "anemo": -140,
+     "electro": -80,
+     "dendro": -140,
+     "cryo": -140,
+     "geo": -140,
+     "physical": -140
+    }
+   ],
+   "skills": [
+    {
+     "name": "霍杵作堀复却",
+     "type": "妨害",
+     "icon": "state-p2-skill-1.webp",
+     "description": "正机将雷针插入地面，造成<c=#ffacff>100%</c>伤害，插针所引发的雷痕地面持续造成<c=#ffacff>25%</c>伤害，总计插<c=#ffbfbf>2</c>次雷针，最后掉落1个`大能量块`。"
+    },
+    {
+     "name": "百蹈陨锻锤曜",
+     "type": "输出",
+     "icon": "state-p2-skill-2.webp",
+     "description": "正机进行右脚跺、左地拳、拳爆破共3段的普通攻击，分别造成<c=#ffacff>75%,75%,\n100%</c>伤害，第三段产生地波，造成<c=#ffacff>50%</c>伤害，并掉落1个`小能量块`。"
+    },
+    {
+     "name": "藏界百摄爆轰",
+     "type": "猛攻",
+     "icon": "state-p2-skill-3.webp",
+     "description": "正机召唤数个黑洞，持续发射雷晶，在前方圆形区域造成<c=#ffacff>100%,50%,25%,10%</c>伤害，该区域追踪玩家；约10s后召唤大批激雷，造成<c=#ffacff>100%</c>伤害，并掉落`大能量块`和`小能量块`各1个。"
+    },
+    {
+     "name": "辄彼移慑星烁",
+     "type": "防卫",
+     "icon": "state-p2-skill-4.webp",
+     "description": "正机转身一挥，产生并发射5个雷球，其命中均造成<c=#ffacff>50%</c>伤害。"
+    },
+    {
+     "name": "匿镜千粼渊花",
+     "type": "猛攻",
+     "icon": "state-p2-skill-5.webp",
+     "description": "正机抛射8-10个元素弹，嵌入地面并造成对应元素的<c=#eeffbf>50%</c>伤害，随后施放满天星，星弹命中造成对应元素的<c=#eeffbf>100%,\n50%,25%,10%</c>伤害。\n`元素弹`安置15s后爆炸，造成对应元素的<c=#eeffbf>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。\n(有<c=#7fbfff>水</c><c=#ff9999>火</c>、<span class=\"cryo\">**冰**</span><c=#ff9999>火</c>、<c=#7fbfff>水</c><span class=\"cryo\">**冰**</span>3个组合)"
+    },
+    {
+     "name": "壑熔冰凿之径",
+     "type": "位移",
+     "icon": "state-p2-skill-6.webp",
+     "description": "正机在远处朝玩家冲来，持续2轮，先<c=#ff9999>火</c>后<span class=\"cryo\">**冰**</span>。冲撞造成对应元素的<c=#eeffbf>50%</c>伤害，并在路径上产生爆破，造成对应元素的<c=#eeffbf>62.5%</c>伤害，同时地面上留下对应元素的残余地面，持续造成<c=#eeffbf>25%</c>伤害，技能完整结束后掉落1个`小能量块`。"
+    },
+    {
+     "name": "倾风荡泉幻寂",
+     "type": "输出",
+     "icon": "state-p2-skill-7.webp",
+     "description": "正机在前方的X形区域，分别召唤<span class=\"anemo\">**风**</span>、<c=#7fbfff>水</c>元素的线型爆震，造成对应元素的<c=#eeffbf>75%,37.5%,18.75%,7.5%</c>伤害，并掉落1个`小能量块`。"
+    },
+    {
+     "name": "刹那生灭·将至",
+     "type": "斩杀",
+     "icon": "state-p2-skill-8.webp",
+     "description": "(盾破时施放)清空虚空终端能量，并在场上形成灭度机：3个`激光部件`、1个`炮台部件`。\n`激光部件`的激光造成<c=#ffacff>37.5%</c>伤害，`炮台部件`的炮弹造成<c=#ffacff>25%,12.5%,6.25%,2.5%</c>伤害。\n此时<c=#ffcdbf>击破弱点</c>即可中断技能，瘫痪正机之神。\n若40s内未击破弱点，将时停并锁定，<c=#ffbfff>直接击败</c>随机一个玩家，其他玩家均受到<c=#ffacff>100%</c>伤害；施放时停瞬间<c=#ff9999>清空角色的所有元素能量与特殊能量</c>，其瘫痪的时候<c=#72dcff>充满角色的所有元素能量与特殊能量</c>。"
+    }
+   ],
+   "notes": [
+    {
+     "text": "大能量块",
+     "desc": "恢复虚空终端50%能量。"
+    },
+    {
+     "text": "小能量块",
+     "desc": "恢复虚空终端25%能量。"
+    },
+    {
+     "text": "正机虚甲",
+     "desc": "240次特化次数盾，虚空终端普通攻击-0.04/发，虚空终端蓄力攻击-72/发。"
+    },
+    {
+     "text": "风元素弹",
+     "desc": "7次次数盾，击破留下1个大能量块，已废弃。"
+    },
+    {
+     "text": "火元素弹",
+     "desc": "2火盾，击破留下1个大能量块。"
+    },
+    {
+     "text": "水元素弹",
+     "desc": "2水盾，击破留下1个大能量块，免疫感电。"
+    },
+    {
+     "text": "冰元素弹",
+     "desc": "2冰盾，击破留下1个大能量块。"
+    },
+    {
+     "text": "灭度机激光部件",
+     "desc": "1雷盾，击破留下1个小能量块。"
+    },
+    {
+     "text": "灭度机炮台部件",
+     "desc": "5雷盾，击破留下1个小能量块。"
+    }
+   ],
+   "shields": [
+    {
+     "name": "火元素弹",
+     "description": "2火盾，击破留下1个大能量块。",
+     "elementType": "Fire",
+     "duration": ""
+    },
+    {
+     "name": "水元素弹",
+     "description": "2水盾，击破留下1个大能量块，免疫感电。",
+     "elementType": "Water",
+     "duration": ""
+    },
+    {
+     "name": "冰元素弹",
+     "description": "2冰盾，击破留下1个大能量块。",
+     "elementType": "Ice",
+     "duration": ""
+    },
+    {
+     "name": "灭度机激光部件",
+     "description": "1雷盾，击破留下1个小能量块。",
+     "elementType": "Electric",
+     "duration": ""
+    },
+    {
+     "name": "灭度机炮台部件",
+     "description": "5雷盾，击破留下1个小能量块。",
+     "elementType": "Electric",
+     "duration": ""
+    }
+   ],
+   "chargebar": [],
+   "energy": {
+    "element": "None",
+    "elementLabel": "无元素",
+    "raw": "EnergyGroup:N_0000",
+    "rows": [
+     {
+      "hp": 0,
+      "particle": 0,
+      "orb": 0
+     }
+    ]
+   },
+   "weight": 20000,
+   "elementMastery": 0,
+   "multiplayerGroup": "104",
+   "icon": "state-p2-avatar.webp",
+   "defaultLevel": 90
+  }
+ ],
+ "defaultState": "p1",
+ "aliases": [
+  "七叶寂照秘密主·半身"
+ ],
+ "tags": [
+  "值得铭记的强敌"
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "name": "有翼草本真蕈",
+ "nameEn": "Winged Dendroshroom",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 40,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 125,
+ "skills": [
+  {
+   "name": "叶绿菌雾",
+   "type": "追踪",
+   "icon": "skill-1.webp",
+   "description": "翼草真蕈转身抛出1枚追踪性草弹，造成<c=#99ff87>70%</c>伤害。\n<c=#ff99ff>活化：</c>速度提升；\n<c=#ff9672>枯焦：</c>抛出1枚大型草弹，造成<c=#99ff87>85%</c>伤害。"
+  },
+  {
+   "name": "硬叶扫扇",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "翼草真蕈使用右翼挥扫，造成<c=#b8b8b8>70%</c>伤害。\n<c=#ff99ff>活化：</c>速度提升；\n<c=#ff9672>枯焦：</c>挥扫伤害提升至<c=#b8b8b8>85%</c>。"
+  },
+  {
+   "name": "荒草轰炸",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "翼草真蕈升空，旋转俯冲趁机扔下2颗草弹，每个造成<c=#99ff87>85%</c>伤害。\n<c=#ff99ff>活化：</c>速度提升；\n<c=#ff9672>枯焦：</c>草弹伤害提升至<c=#99ff87>100%</c>。"
+  },
+  {
+   "name": "三相之形",
+   "type": "天赋",
+   "icon": "skill-4.webp",
+   "description": "陆水真蕈受到<c=#ff9999>火元素</c>/<c=#ffacff>雷元素</c>攻击后，会分别永久转变为<c=#ff9672>枯焦</c>/<c=#ff99ff>活化</c>状态。\n<c=#ff99ff>活化：</c>CD缩短，移速提升150%；\n<c=#ff9672>枯焦：</c>CD延长，移速下降50%。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 110920,
+   "atk": 7387,
+   "weight": 125,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "winged-dendroshroom",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

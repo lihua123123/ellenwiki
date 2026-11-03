@@ -1,0 +1,102 @@
+{
+ "name": "凝冰秘法师",
+ "nameEn": "Glaciomancer",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 16.301,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 32.66,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 30,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "悬露盐华",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "秘法师凝聚大块冰晶，抛向玩家，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "寒枝霜角",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "秘法师连续发射4枚冰刺，造成<span class=\"cryo\">**50%,\n25%**</span>伤害。"
+  },
+  {
+   "name": "冰躯怜椁",
+   "type": "回复",
+   "icon": "",
+   "description": "秘法师在低于<c=#ffdfbf>50%生命值</c>时，会将自己封入「`冰棺`」，<c=#ffdfbf>16s</c>后解除，并恢复<c=#ffdfbf>50%生命值</c>，仅触发一次。受`星烁反应`影响，冰棺会更容易被<c=#ffacff>雷元素</c>/<span class=\"anemo\">**风元素**</span>破坏。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冰棺",
+   "desc": "8冻盾，击破会直接击败秘法师。「星烁反应」会使雷/风的相应反应消耗比变为1:4。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "冰棺",
+   "description": "8冻盾，击破会直接击败秘法师。「星烁反应」会使雷/风的相应反应消耗比变为1:4。",
+   "elementType": "Frozen",
+   "duration": 16
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "CP[0]",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 66552,
+   "atk": 6402,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "glaciomancer",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

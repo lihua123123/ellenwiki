@@ -1,0 +1,123 @@
+{
+ "name": "特瓦林",
+ "nameEn": "Dvalin",
+ "subtitle": "往日的天空之王",
+ "category": "EnemyOfNote",
+ "categoryLabel": "值得铭记的强敌",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 122.256,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "渐进的协奏",
+   "type": "位移",
+   "icon": "skill-1.webp",
+   "description": "特瓦林从远处猛地冲来，用爪子划过平台，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "裂风的回旋",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "特瓦林趴在平台上，吐出疾风，持续造成<span class=\"anemo\">**50%**</span>伤害，从一侧开始扫过平台大部分区域。技能期间有<c=#ffdfbf>25%减伤</c>。"
+  },
+  {
+   "name": "袤远的奏鸣",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "特瓦林离开平台，一左一右地发射风弹，每次2个，每个造成<span class=\"anemo\">**50%**</span>伤害。技能期间有<c=#ffdfbf>95%减伤</c>。"
+  },
+  {
+   "name": "魔龙的咏叹",
+   "type": "防御",
+   "icon": "skill-4.webp",
+   "description": "特瓦林将头甩上平台，造成<c=#bababa>100%</c>伤害，停留数秒后离去。"
+  },
+  {
+   "name": "暴风的狂想",
+   "type": "猛攻",
+   "icon": "skill-5.webp",
+   "description": "特瓦林下潜，并从对面超远处平台冒出，蓄力施放巨大的能量球，对整个平台造成<c=#b9b9b9>200%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "辰星的变奏",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "特瓦林盘旋升空，在所有平台周期性产生5道星陨阵，每个星陨阵造成<span class=\"anemo\">**50%**</span>伤害；特瓦林倒地则暂停施放，恢复后继续；在一次战斗中本技能至多施放1次。"
+  },
+  {
+   "name": "终天的闭幕",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "特瓦林使玩家附近的3个平台开裂，造成伤害，在一次战斗中至多施放3次。\n设造成伤害的次数为n，则该次受到的伤害值为<span class=\"anemo\">**3×n%**</span>的伤害<c=#ffbfbf>(闪避帧无效)</c>，n值初始为1，最大为100，即<span class=\"anemo\">**300%**</span>。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "减伤",
+   "desc": "在特瓦林从地下升起、「终天的闭幕」吼叫时、「袤远的奏鸣」施放时、「辰星的变奏」盘旋时、「暴风的狂想」蓄力时均具有<c=#ffdfbf>95%减伤</c>；<c=#ffdfbf>(仅初见特瓦林)</c>特瓦林倒地时带有额外<c=#ffdfbf>25%减伤</c>。"
+  },
+  {
+   "text": "千风之护",
+   "desc": "生命盾，继承20%特瓦林生命值。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "周本",
+   "level": 90,
+   "hp": 219187,
+   "atk": 11419,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "dvalin",
+ "icon": "avatar.webp",
+ "tags": [
+  "值得铭记的强敌"
+ ]
+}

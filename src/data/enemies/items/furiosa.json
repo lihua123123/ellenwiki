@@ -1,0 +1,155 @@
+{
+ "name": "弗瑞奥萨",
+ "nameEn": "Furiosa",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1494.24,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": -20,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 40,
+   "cryo": 40,
+   "geo": 40,
+   "physical": 10
+  },
+  {
+   "name": "大招",
+   "pyro": 130,
+   "hydro": 160,
+   "anemo": 160,
+   "electro": 160,
+   "dendro": 190,
+   "cryo": 190,
+   "geo": 190,
+   "physical": 160
+  },
+  {
+   "name": "虚弱",
+   "pyro": -70,
+   "hydro": -40,
+   "anemo": -40,
+   "electro": -40,
+   "dendro": -10,
+   "cryo": -10,
+   "geo": -10,
+   "physical": -40
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "幻雪零星",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "弗瑞奥萨以站姿迅速拈弓一发冰箭，造成<span class=\"cryo\">**60%**</span>伤害；或以蹲姿发射，造成<span class=\"cryo\">**70%**</span>伤害。"
+  },
+  {
+   "name": "雨前三两",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "弗瑞奥萨蹲下迅速发射两一枚冰箭，均造成<span class=\"cryo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "流矢烁寒",
+   "type": "追踪",
+   "icon": "skill-3.webp",
+   "description": "弗瑞奥萨给弓注入冰元素，随后发射三枚极快的追踪箭，造成<span class=\"cryo\">**90%,18%,9%**</span>伤害。受`星烁反应`影响后箭失去目标，并会使其眩晕一小会。"
+  },
+  {
+   "name": "凌冰微舞",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "距离较近时，弗瑞奥萨使用下肢进行踢踹攻击，造成<span class=\"cryo\">**60%**</span>伤害。"
+  },
+  {
+   "name": "急雪连霖",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "弗瑞奥萨缠根，并在两侧留下根须；同时持续发射7波箭雨，前6波箭雨持续造成<span class=\"cryo\">**50%,25%,10%,5%**</span>伤害，第7波箭雨虽迟但痛，造成<span class=\"cryo\">**100%,20%,10%**</span>伤害。"
+  },
+  {
+   "name": "掩脉存根",
+   "type": "位移",
+   "icon": "",
+   "description": "弗瑞奥萨遁入地面，在目标处留下「`阻生根须`」，<c=#ffdfbf>1.5s</c>后现身。根须受`星烁反应`影响后会变矮，受击即可破坏，无论位置。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "阻生根须",
+   "desc": "顶端受到任意攻击即可摧毁，摧毁所有根须使弗瑞奥萨虚弱<c=#ffeebf>13s</c>。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "CP[66x2,33x2,0],CO[0]",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 6702862,
+   "atk": 20886,
+   "weight": 150,
+   "tenacity": 4000
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 1422660,
+   "hpNote": "23.32%",
+   "atk": 11819,
+   "atkNote": "60%",
+   "weight": 150,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "furiosa",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

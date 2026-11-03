@@ -1,0 +1,123 @@
+{
+ "name": "遗迹重机",
+ "nameEn": "Ruin Grader",
+ "subtitle": "",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 122.256,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 87.92,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "侧转进锋",
+   "type": "位移",
+   "icon": "skill-1.webp",
+   "description": "处在较远的地方时，遗迹重机侧身朝玩家处快速移动，期间碰到造成<c=#b9b9b9>30%</c>伤害，冲刺开始与结束时造成<c=#b9b9b9>40%</c>伤害。"
+  },
+  {
+   "name": "激光雕刻",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "遗迹重机暴露头部弱点，发射激光对玩家持续造成<c=#b9b9b9>40%</c>伤害，摧毁双腿核心后则坐在地上施放。"
+  },
+  {
+   "name": "大型耕地",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "遗迹重机上半身快速旋转，并朝玩家走来，扫击范围内持续造成<c=#b8b8b8>60%</c>伤害，双腿核心大概率暴露。"
+  },
+  {
+   "name": "砧合砌光",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "遗迹重机低身，暴露头部核心，双掌合十，造成<c=#b8b8b8>50%</c>伤害，随后快速发射激光，从右到左扫射，造成<c=#b8b8b8>80%</c>伤害。"
+  },
+  {
+   "name": "混沌光种",
+   "type": "远程",
+   "icon": "skill-5.webp",
+   "description": "遗迹重机短暂暴露头部核心，发射一枚大型混沌球，其分裂成3个小型混沌球，并呈三角状分布在玩家周围，触碰持续造成<c=#b8b8b8>16%</c>伤害。"
+  },
+  {
+   "name": "沉铁重震",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "遗迹重机迈出右脚踩下，造成<c=#b8b8b8>40%</c>伤害，随后暴露双腿核心，并产生一个更大范围的震波，造成<c=#b8b8b8>70%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_4443",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 330886,
+   "atk": 17235,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "ruin-grader",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

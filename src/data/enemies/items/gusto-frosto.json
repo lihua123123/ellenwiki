@@ -1,0 +1,162 @@
+{
+ "name": "冰爆菇",
+ "nameEn": "Gusto-Frosto",
+ "subtitle": "",
+ "category": "Others",
+ "categoryLabel": "其他",
+ "tier": "Common",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 36.6768,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 54.25920000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 20,
+   "cryo": 20,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "寒冰突击",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "旋转冰蕈兽钻入地面，在敌人处钻出，造成<span class=\"cryo\">**99%**</span>伤害。"
+  },
+  {
+   "name": "严霜震击",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "旋转冰蕈兽连续进行3次弹跳，造成<span class=\"cryo\">**52%**</span>伤害。"
+  },
+  {
+   "name": "冰霜喷流",
+   "type": "战技",
+   "icon": "skill-3.webp",
+   "description": "旋转冰蕈兽高速旋转，朝敌人处发射一枚穿刺冰锥，造成<span class=\"cryo\">**1154%**</span>伤害。"
+  },
+  {
+   "name": "寒冰震击",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "旋转冰蕈兽钻入地面，在敌人处钻出，持续2次，每次造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "延时冻结",
+   "type": "回复",
+   "icon": "skill-5.webp",
+   "description": "旋转冰蕈兽受到攻击时，会<c=#bfedff>恢复自身5%的生命值</c>。"
+  },
+  {
+   "name": "冰霜喷流",
+   "type": "战技",
+   "icon": "skill-6.webp",
+   "description": "旋转冰蕈兽在目标处施放冰风暴，持续造成<span class=\"cryo\">**300%**</span>伤害。"
+  },
+  {
+   "name": "寒冰突击",
+   "type": "输出",
+   "icon": "skill-7.webp",
+   "description": "旋转冰蕈兽钻入地面，在敌人处钻出，持续2次，每次造成<span class=\"cryo\">**150%**</span>伤害。"
+  },
+  {
+   "name": "冷度聚焦",
+   "type": "嘲讽",
+   "icon": "skill-8.webp",
+   "description": "旋转冰蕈兽将嘲讽周围敌人，吸引火力。"
+  },
+  {
+   "name": "流霜屏障",
+   "type": "战技",
+   "icon": "skill-9.webp",
+   "description": "旋转冰蕈兽在目标处施放冰风暴，持续造成<span class=\"cryo\">**150%**</span>伤害，同时自身披护持续6s的`霜嶂`，并嘲讽周围敌人。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "霜嶂",
+   "desc": "4冻盾，可伤害转化4倍生命值。"
+  },
+  {
+   "text": "3.5 灵蕈棋阵",
+   "desc": "150元素精通。"
+  },
+  {
+   "text": "4.2 小小灵蕈大幻戏",
+   "desc": "100元素精通，剧变反应系数1.5。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "霜嶂",
+   "description": "4冻盾，可伤害转化4倍生命值。",
+   "elementType": "Frozen",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "友方-3.2智巧灵蕈",
+   "level": 90
+  },
+  {
+   "label": "普通敌方-3.2智巧灵蕈",
+   "level": 90,
+   "hp": 55650,
+   "atk": 6577,
+   "weight": 75,
+   "tenacity": 600
+  },
+  {
+   "label": "友方-3.5塔防灵蕈",
+   "level": 90
+  },
+  {
+   "label": "友方-4.2幻戏灵蕈",
+   "level": 90,
+   "hp": 116866,
+   "atk": 8222,
+   "weight": 75,
+   "tenacity": 600
+  }
+ ],
+ "leyline": null,
+ "id": "gusto-frosto",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他"
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "name": "黯色空壳·近卫",
+ "nameEn": "Shadowy Husk: Defender",
+ "subtitle": "黑蛇骑士的终末",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 54.336,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 30,
+   "geo": 10,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 110,
+ "skills": [
+  {
+   "name": "流霜矢尖",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "近卫拉弓，很慢地发射一枚冰箭，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "坠凌遮雪",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "近卫朝上方拉弓，发射一枚冰箭对地打击，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "锋冰剡华",
+   "type": "天赋",
+   "icon": "skill-3.webp",
+   "description": "当近卫的攻击命中护盾庇护下的的玩家时，<c=#99ffcc>扣除当前15%生命值</c>，自己将获得<c=#ffbfbf>15%的攻击力提升，该效果可叠加，最多叠加至5层</c>，持续30s；\n此时近卫自己的弓两侧展开形成一面盾抵挡正向攻击，抗打断0.5，持续30s；\n若再次进入攻击力提升状态则基于上一次的提升状态继续提升。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:B_1111",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 221840,
+   "atk": 12311,
+   "weight": 110,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "shadowy-husk-defender",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

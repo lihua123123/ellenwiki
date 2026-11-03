@@ -1,0 +1,107 @@
+{
+ "name": "火史莱姆",
+ "nameEn": "Pyro Slime",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 10.8672,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 7.536,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": "IMM",
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 60,
+ "skills": [
+  {
+   "name": "高温撞击",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "火史莱姆撞击玩家，造成<c=#ff9999>100%</c>伤害，熄灭状态下撞击则造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "过热涌泄",
+   "type": "亡语",
+   "icon": "skill-2.webp",
+   "description": "燃烧状态的火史莱姆死亡时，爆炸，造成<c=#ff9999>200%</c>伤害。"
+  },
+  {
+   "name": "星萤之火",
+   "type": "天赋",
+   "icon": "skill-3.webp",
+   "description": "火史莱姆常驻`火息`，耗尽后会转为熄灭状态，一段时间或受到任意<c=#ff9999>火元素</c>伤害后(可无元素附着)，当无元素附着时会尝试复燃。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "火息",
+   "desc": "<c=#ff9999>2火</c>盾，浇熄后转为熄灭状态，一段时间后恢复。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "火息",
+   "description": "<c=#ff9999>2火</c>盾，浇熄后转为熄灭状态，一段时间后恢复。",
+   "elementType": "Fire",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 29412,
+   "atk": 1477,
+   "weight": 60,
+   "tenacity": 20
+  }
+ ],
+ "leyline": null,
+ "id": "pyro-slime",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

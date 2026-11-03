@@ -1,0 +1,82 @@
+{
+ "name": "幻形蟹·水·活动",
+ "nameEn": "Hydro Mimic Crab",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 8.1504,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 15,
+   "hydro": "IMM",
+   "anemo": 15,
+   "electro": 15,
+   "dendro": 15,
+   "cryo": -40,
+   "geo": 15,
+   "physical": 15
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "濯洗吐息",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "水蟹垂直于玩家面对方向移动，持续侧向喷水沫造成<c=#7fbfff>10%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:E_0001",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "其他-纯水幻形-常规",
+   "level": 100
+  },
+  {
+   "label": "其他-纯水幻形-活动",
+   "level": 100,
+   "hp": 22059,
+   "atk": 4924,
+   "weight": 150,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "幻形蟹-水-活动",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "name": "大天使海兔·陆地",
+ "nameEn": "Cherubic Sea Hare",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 35.3184,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 59.99999999999999,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "带盾",
+   "pyro": 70,
+   "hydro": 70,
+   "anemo": 70,
+   "electro": 70,
+   "dendro": 70,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 70
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 125,
+ "skills": [
+  {
+   "name": "寒气外迸",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "(仅盾)大天使海兔使用`脂肪冻`的冰元素力量，聚集寒气并猛地施放，造成<span class=\"cryo\">**100%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "冰陨雹落",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "(仅盾)大天使海兔使用双角蓄积，发射一枚追踪性冰雹，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "极寒勇进",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "大天使海兔进行旋转突进，触碰造成<c=#b9b9b9>70%</c>伤害。"
+  },
+  {
+   "name": "圆润水弹",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "大天使海兔使用双角发射圆润气泡水弹，造成<c=#7fbfff>100%</c>伤害。"
+  },
+  {
+   "name": "琦涟覕霜",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "(固有天赋)大天使海兔处于陆地上时，会打开元素护甲使用元素力，而进入水下则会暂时关闭护甲，保留关前盾量。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "脂肪冻",
+   "desc": "<span class=\"cryo\">**10.8冻**</span>盾，击破后将不会使用部分技能，不恢复。该状态下，抗打断0.7。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "脂肪冻",
+   "description": "<span class=\"cryo\">**10.8冻**</span>盾，击破后将不会使用部分技能，不恢复。该状态下，抗打断0.7。",
+   "elementType": "Frozen",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:E_0003",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通-陆地",
+   "level": 100,
+   "hp": 144196,
+   "atk": 11762,
+   "weight": 125,
+   "tenacity": 210
+  },
+  {
+   "label": "普通-水下",
+   "level": 100,
+   "hp": 108758,
+   "atk": 11762,
+   "weight": 125,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "cherubic-sea-hare",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

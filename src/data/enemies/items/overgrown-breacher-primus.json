@@ -1,0 +1,107 @@
+{
+ "name": "狂蔓隙境原体",
+ "nameEn": "Overgrown Breacher Primus",
+ "subtitle": "异界的生命体",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 40.751999999999995,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 32.656000000000006,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 30,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "隙境缘石",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "狂蔓原体蓄力，发射一枚石弹，造成<c=#b8b8b8>60%</c>伤害。"
+  },
+  {
+   "name": "石动尘飞",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "狂蔓原体进行一段挥扫攻击，造成<c=#b8b8b8>60%</c>伤害。"
+  },
+  {
+   "name": "蔓草横飞",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "狂蔓原体进入「应激」状态，该状态下，狂蔓原体获得`蔓草护嶂`，将持续发射2枚蔓草飞弹，飞弹造成<c=#99ff85>75%,37.5%,\n25%,7.5%</c>伤害，持续4轮。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "蔓草护嶂",
+   "desc": "<c=#99ff85>2草</c>盾，<c=#ffbfbf>1次</c>芒或荒攻击可以击破，击破后瘫痪其15s。该状态下，免疫击飞、击退、风场力。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "蔓草护嶂",
+   "description": "<c=#99ff85>2草</c>盾，<c=#ffbfbf>1次</c>芒或荒攻击可以击破，击破后瘫痪其15s。该状态下，免疫击飞、击退、风场力。",
+   "elementType": "Grass",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 166380,
+   "atk": 6402,
+   "weight": 100,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "overgrown-breacher-primus",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

@@ -1,0 +1,565 @@
+{
+  "name": "祸津御建鸣神命",
+  "nameEn": "Magatsu Mitake Narukami no Mikoto",
+  "subtitle": "雷电之稻妻殿",
+  "category": "EnemyOfNote",
+  "categoryLabel": "值得铭记的强敌",
+  "tier": "Boss",
+  "defaultLevel": 90,
+  "baseStats": {
+    "hp": {
+      "Value": 543.360176,
+      "Curve": "HP_2"
+    },
+    "atk": {
+      "Value": 150.722326,
+      "Curve": "ATK_2"
+    },
+    "def": {
+      "Value": 500,
+      "Curve": "DEF_1"
+    }
+  },
+  "resistances": [
+    {
+      "name": "正常",
+      "pyro": 10,
+      "hydro": 10,
+      "anemo": 10,
+      "electro": 10,
+      "dendro": 10,
+      "cryo": 10,
+      "geo": 10,
+      "physical": 10
+    },
+    {
+      "name": "眩晕",
+      "pyro": -50,
+      "hydro": -50,
+      "anemo": -50,
+      "electro": -50,
+      "dendro": -50,
+      "cryo": -50,
+      "geo": -50,
+      "physical": -50
+    }
+  ],
+  "elementMastery": 0,
+  "multiplayerGroup": "1",
+  "weight": 375,
+  "skills": [
+    {
+      "name": "夙念如决",
+      "type": "输出",
+      "icon": "",
+      "description": "祸津使用手上的梦想一心，进行至多5段的普通攻击，5段普攻依次造成<c=#ffacff>8.3%,\n8.3%,16.6%,8.3%x2,16.6%</c>伤害。"
+    },
+    {
+      "name": "霆震裁决",
+      "type": "防卫",
+      "icon": "",
+      "description": "处于祸津身后时，祸津御建立即转身斩击，造成<c=#ffacff>50%</c>伤害。"
+    },
+    {
+      "name": "刀光紫影",
+      "type": "输出",
+      "icon": "",
+      "description": "离祸津较远时，祸津迅速朝玩家冲击，并施放两段斩击，冲击造成<c=#ffacff>16.6%</c>伤害，两段斩击分别造成<c=#ffacff>8.3%,58.3%</c>伤害。"
+    },
+    {
+      "name": "光转爿轮",
+      "type": "输出",
+      "icon": "",
+      "description": "祸津依次斩出3个雷轮，每个雷轮造成<c=#ffacff>33.3%</c>伤害，最后水平劈出一道雷刃，造成<c=#ffacff>50%</c>伤害。"
+    },
+    {
+      "name": "薙尽神雷",
+      "type": "转换",
+      "icon": "",
+      "description": "祸津旋转梦想一心，替换武器为<c=#ffdc72>薙</c><c=#ffdc72>草之稻光</c>，同时在其前方产生一道落雷，造成<c=#ffacff>16.6%</c>伤害，之后场景间歇出现祸眼，触碰造成4段<c=#ffacff>5.6%</c>伤害。"
+    },
+    {
+      "name": "尘世如影",
+      "type": "输出",
+      "icon": "",
+      "description": "祸津进行旋斩、冲击、旋斩最多3段的普通攻击，3段普攻依次造成<c=#ffacff>8.3%x2,\n16.6%,33.3%</c>伤害。"
+    },
+    {
+      "name": "繁芜断尽",
+      "type": "反击",
+      "icon": "",
+      "description": "在祸津技能间歇期时攻击，产生雷盾，抵挡伤害；受击超4次时，每次攻击会增加10%反击概率；反击时，先劈一刀造成<c=#ffacff>33.3%</c>伤害，接着产生次元斩造成3段<c=#ffacff>8.3%</c>伤害。"
+    },
+    {
+      "name": "欺神太甚",
+      "type": "苏醒",
+      "icon": "",
+      "description": "眩晕时受击超8次时，将有48%的概率立即恢复，且每次受击都会增加6%恢复概率。祸津恢复<c=#ffebbf>眩晕</c>后，在身边产生雷震击飞玩家，造成<c=#ffacff>8.3%</c>伤害但不显示数字<c=#ffbfbf>(闪避帧无效)</c>。"
+    },
+    {
+      "name": "泡影幻灭",
+      "type": "召唤",
+      "icon": "",
+      "description": "祸津召唤4个`幻影`奔向场地边缘，持续劈出雷刃。3个假幻影只劈一刀，造成<c=#ffacff>8.3%</c>伤害，真幻影劈十字斩，造成<c=#ffacff>16.6%</c>伤害，真幻影击破后祸津御建<c=#ffebbf>眩晕</c>，假幻影击破后有50%概率立即爆炸，造成<c=#ffacff>33.3%</c>伤害。"
+    },
+    {
+      "name": "四海归寂",
+      "type": "爆发",
+      "icon": "",
+      "description": "祸津用梦想一心画圈后将其举向天空，召唤9个雷球在场地边缘，以顺时针顺序下落，雷球下落造成<c=#ffacff>66.6%</c>伤害，留下雷痕，持续造成<c=#ffacff>12.5%</c>伤害；\n雷球全部落下后祸津御建在场地中间施放次元斩，造成4段<c=#ffacff>33.3%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，最后碎屏斩造成<c=#ffacff>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+    }
+  ],
+  "notes": [
+    {
+      "text": "幻影",
+      "desc": "3次次数盾，击破真幻影可眩晕祸津，击破假幻影可能爆炸。"
+    }
+  ],
+  "shields": [],
+  "chargebar": [],
+  "energy": null,
+  "levelRows": [
+    {
+      "label": "周本-梦想一心形态",
+      "level": 90,
+      "hp": 1484012,
+      "atk": 22838,
+      "weight": 375,
+      "tenacity": 500
+    }
+  ],
+  "leyline": null,
+  "id": "magatsu-mitake-narukami-no-mikoto",
+  "icon": "avatar.webp",
+  "states": [
+    {
+      "key": "p1",
+      "label": "第一阶段",
+      "name": "祸津御建鸣神命·第一阶段",
+      "subtitle": "雷电之稻妻殿",
+      "tier": "",
+      "baseStats": {
+        "hp": {
+          "Value": 543.360176,
+          "Curve": "HP_2"
+        },
+        "atk": {
+          "Value": 150.722326,
+          "Curve": "ATK_2"
+        },
+        "def": {
+          "Value": 500,
+          "Curve": "DEF_1"
+        }
+      },
+      "levelRows": [
+        {
+          "label": "周本-梦想一心形态",
+          "level": 90,
+          "hp": 1484012,
+          "atk": 22838,
+          "weight": 375,
+          "tenacity": 500
+        }
+      ],
+      "resistances": [
+        {
+          "name": "正常",
+          "pyro": 10,
+          "hydro": 10,
+          "anemo": 10,
+          "electro": 10,
+          "dendro": 10,
+          "cryo": 10,
+          "geo": 10,
+          "physical": 10
+        },
+        {
+          "name": "眩晕",
+          "pyro": -50,
+          "hydro": -50,
+          "anemo": -50,
+          "electro": -50,
+          "dendro": -50,
+          "cryo": -50,
+          "geo": -50,
+          "physical": -50
+        }
+      ],
+      "skills": [
+        {
+          "name": "夙念如决",
+          "type": "输出",
+          "icon": "",
+          "description": "祸津使用手上的梦想一心，进行至多5段的普通攻击，5段普攻依次造成<c=#ffacff>8.3%,\n8.3%,16.6%,8.3%x2,16.6%</c>伤害。"
+        },
+        {
+          "name": "霆震裁决",
+          "type": "防卫",
+          "icon": "",
+          "description": "处于祸津身后时，祸津御建立即转身斩击，造成<c=#ffacff>50%</c>伤害。"
+        },
+        {
+          "name": "刀光紫影",
+          "type": "输出",
+          "icon": "",
+          "description": "离祸津较远时，祸津迅速朝玩家冲击，并施放两段斩击，冲击造成<c=#ffacff>16.6%</c>伤害，两段斩击分别造成<c=#ffacff>8.3%,58.3%</c>伤害。"
+        },
+        {
+          "name": "光转爿轮",
+          "type": "输出",
+          "icon": "",
+          "description": "祸津依次斩出3个雷轮，每个雷轮造成<c=#ffacff>33.3%</c>伤害，最后水平劈出一道雷刃，造成<c=#ffacff>50%</c>伤害。"
+        },
+        {
+          "name": "薙尽神雷",
+          "type": "转换",
+          "icon": "",
+          "description": "祸津旋转梦想一心，替换武器为<c=#ffdc72>薙</c><c=#ffdc72>草之稻光</c>，同时在其前方产生一道落雷，造成<c=#ffacff>16.6%</c>伤害，之后场景间歇出现祸眼，触碰造成4段<c=#ffacff>5.6%</c>伤害。"
+        },
+        {
+          "name": "尘世如影",
+          "type": "输出",
+          "icon": "",
+          "description": "祸津进行旋斩、冲击、旋斩最多3段的普通攻击，3段普攻依次造成<c=#ffacff>8.3%x2,\n16.6%,33.3%</c>伤害。"
+        },
+        {
+          "name": "繁芜断尽",
+          "type": "反击",
+          "icon": "",
+          "description": "在祸津技能间歇期时攻击，产生雷盾，抵挡伤害；受击超4次时，每次攻击会增加10%反击概率；反击时，先劈一刀造成<c=#ffacff>33.3%</c>伤害，接着产生次元斩造成3段<c=#ffacff>8.3%</c>伤害。"
+        },
+        {
+          "name": "欺神太甚",
+          "type": "苏醒",
+          "icon": "",
+          "description": "眩晕时受击超8次时，将有48%的概率立即恢复，且每次受击都会增加6%恢复概率。祸津恢复<c=#ffebbf>眩晕</c>后，在身边产生雷震击飞玩家，造成<c=#ffacff>8.3%</c>伤害但不显示数字<c=#ffbfbf>(闪避帧无效)</c>。"
+        },
+        {
+          "name": "泡影幻灭",
+          "type": "召唤",
+          "icon": "",
+          "description": "祸津召唤4个`幻影`奔向场地边缘，持续劈出雷刃。3个假幻影只劈一刀，造成<c=#ffacff>8.3%</c>伤害，真幻影劈十字斩，造成<c=#ffacff>16.6%</c>伤害，真幻影击破后祸津御建<c=#ffebbf>眩晕</c>，假幻影击破后有50%概率立即爆炸，造成<c=#ffacff>33.3%</c>伤害。"
+        },
+        {
+          "name": "四海归寂",
+          "type": "爆发",
+          "icon": "",
+          "description": "祸津用梦想一心画圈后将其举向天空，召唤9个雷球在场地边缘，以顺时针顺序下落，雷球下落造成<c=#ffacff>66.6%</c>伤害，留下雷痕，持续造成<c=#ffacff>12.5%</c>伤害；\n雷球全部落下后祸津御建在场地中间施放次元斩，造成4段<c=#ffacff>33.3%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，最后碎屏斩造成<c=#ffacff>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+        }
+      ],
+      "notes": [
+        {
+          "text": "幻影",
+          "desc": "3次次数盾，击破真幻影可眩晕祸津，击破假幻影可能爆炸。"
+        }
+      ],
+      "shields": [],
+      "chargebar": [],
+      "energy": null,
+      "weight": 375,
+      "elementMastery": 0,
+      "multiplayerGroup": "1",
+      "icon": "avatar.webp",
+      "defaultLevel": 90
+    },
+    {
+      "key": "p2",
+      "label": "第二阶段",
+      "name": "祸津御建鸣神命·第二阶段",
+      "subtitle": "雷电之稻妻殿",
+      "tier": "",
+      "baseStats": {
+        "hp": {
+          "Value": 543.360176,
+          "Curve": "HP_2"
+        },
+        "atk": {
+          "Value": 150.722326,
+          "Curve": "ATK_2"
+        },
+        "def": {
+          "Value": 500,
+          "Curve": "DEF_1"
+        }
+      },
+      "levelRows": [
+        {
+          "label": "周本-薙刀形态",
+          "level": 90,
+          "hp": 1484012,
+          "atk": 22838,
+          "weight": 375,
+          "tenacity": 500
+        }
+      ],
+      "resistances": [
+        {
+          "name": "正常",
+          "pyro": 10,
+          "hydro": 10,
+          "anemo": 10,
+          "electro": 10,
+          "dendro": 10,
+          "cryo": 10,
+          "geo": 10,
+          "physical": 10
+        },
+        {
+          "name": "眩晕",
+          "pyro": -50,
+          "hydro": -50,
+          "anemo": -50,
+          "electro": -50,
+          "dendro": -50,
+          "cryo": -50,
+          "geo": -50,
+          "physical": -50
+        }
+      ],
+      "skills": [
+        {
+          "name": "裁震刚决",
+          "type": "输出",
+          "icon": "",
+          "description": "祸津使用手上的薙刀，进行至多4段的普通攻击，4段普攻均造成<c=#ffacff>16.6%</c>伤害。"
+        },
+        {
+          "name": "万雷归葬",
+          "type": "输出",
+          "icon": "",
+          "description": "祸津旋转薙刀，产生大范围的落雷，造成<c=#ffacff>66.6%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+        },
+        {
+          "name": "无想一槊",
+          "type": "远程",
+          "icon": "",
+          "description": "祸津用薙刀划过，划出一道雷刃，造成<c=#ffacff>33.3%</c>伤害，在近处会被薙刀打到也造成<c=#ffacff>33.3%</c>伤害。"
+        },
+        {
+          "name": "震厄裁决",
+          "type": "防卫",
+          "icon": "",
+          "description": "处于祸津身后时，祸津转身划薙刀，造成<c=#ffacff>25%</c>伤害，随后产生爆破，造成<c=#ffacff>25%</c>伤害。"
+        },
+        {
+          "name": "祸津之眼",
+          "type": "召唤",
+          "icon": "",
+          "description": "祸津召唤一个<c=#e5d7fd>「</c><c=#e5d7fd>`祸津之雷眼`</c><c=#e5d7fd>」</c>，雷眼一段时间后爆炸，造成<c=#ffacff>116.6%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，破坏<c=#e5d7fd>「祸津之雷眼」</c>后祸津<c=#ff9672>眩晕</c>。"
+        },
+        {
+          "name": "忿怨之断",
+          "type": "输出",
+          "icon": "",
+          "description": "祸津旋转薙刀冲向玩家，造成<c=#ffacff>16.6%</c>伤害，并斩3刀，前两刀依次造成<c=#ffacff>8.3%,\n16.6%</c>伤害，较大的第三刀，造成<c=#ffacff>25%</c>伤害。"
+        },
+        {
+          "name": "浮尘薙净",
+          "type": "反击",
+          "icon": "",
+          "description": "在祸津技能间歇期时攻击，产生雷盾，抵挡伤害；受击超4次时，每次攻击会增加10%反击概率；反击时，迅速斩两刀分别造成<c=#ffacff>16.6%,33.3%</c>伤害。"
+        },
+        {
+          "name": "欺神太甚",
+          "type": "苏醒",
+          "icon": "",
+          "description": "眩晕时受击超8次时，将有48%的概率立即恢复，且每次受击都会增加6%恢复概率。祸津恢复<c=#ffebbf>眩晕</c>后，在身边产生雷震击飞玩家，造成<c=#ffacff>8.3%</c>伤害但不显示数字<c=#ffbfbf>(闪避帧无效)</c>。"
+        },
+        {
+          "name": "梦景神光",
+          "type": "转换",
+          "icon": "",
+          "description": "祸津将薙刀指向空中，将武器变为<c=#ff9999>梦想一心</c>，同时在其前方产生一道落雷，造成<c=#ffacff>16.6%</c>伤害，之后场景间歇出现落雷，一次施放3道，每道落雷造成<c=#ffacff>16.6%</c>伤害。"
+        },
+        {
+          "name": "三重祸眼",
+          "type": "召唤",
+          "icon": "",
+          "description": "祸津斜拿薙刀，震开附近玩家，造成<c=#ffacff>16.6%</c>伤害，召唤<c=#e5d7fd>「</c><c=#e5d7fd>`祸津三重眼`</c><c=#e5d7fd>」</c>在场地上，雷眼一段时间后同时爆炸；\n被雷眼命中的个数不同，造成的伤害不一样，一个造成<c=#ffacff>133.3%</c>伤害，两个造成2段<c=#ffacff>33.3%</c>伤害，三个造成3段<c=#ffacff>13.3%</c>伤害，以上伤害<c=#ffbfbf>闪避帧均无效</c>。"
+        }
+      ],
+      "notes": [
+        {
+          "text": "祸津之雷眼",
+          "desc": "9次次数盾，击破可眩晕祸津。"
+        },
+        {
+          "text": "祸津三重眼",
+          "desc": "7次次数盾，击破可躲避爆炸。"
+        }
+      ],
+      "shields": [],
+      "chargebar": [],
+      "energy": null,
+      "weight": 375,
+      "elementMastery": 0,
+      "multiplayerGroup": "1",
+      "icon": "state-p2-avatar.webp",
+      "defaultLevel": 90
+    },
+    {
+      "key": "p3",
+      "label": "第三阶段",
+      "name": "祸津御建鸣神命·第三阶段",
+      "subtitle": "雷电之稻妻殿",
+      "tier": "Boss",
+      "baseStats": {
+        "hp": {
+          "Value": 543.36,
+          "Curve": "HP_2"
+        },
+        "atk": {
+          "Value": 150.72,
+          "Curve": "ATK_2"
+        },
+        "def": {
+          "Value": 500,
+          "Curve": "DEF_1"
+        }
+      },
+      "levelRows": [
+        {
+          "label": "周本-恶耀影向天魔",
+          "level": 90,
+          "hp": 1484012,
+          "atk": 22838,
+          "weight": 450,
+          "tenacity": 4000
+        }
+      ],
+      "resistances": [
+        {
+          "name": "恶耀",
+          "pyro": 210,
+          "hydro": 210,
+          "anemo": 210,
+          "electro": 210,
+          "dendro": 210,
+          "cryo": 210,
+          "geo": 210,
+          "physical": 210
+        },
+        {
+          "name": "无盾",
+          "pyro": 10,
+          "hydro": 10,
+          "anemo": 10,
+          "electro": 10,
+          "dendro": 10,
+          "cryo": 10,
+          "geo": 10,
+          "physical": 10
+        },
+        {
+          "name": "眩晕",
+          "pyro": -50,
+          "hydro": -50,
+          "anemo": -50,
+          "electro": -50,
+          "dendro": -50,
+          "cryo": -50,
+          "geo": -50,
+          "physical": -50
+        }
+      ],
+      "skills": [
+        {
+          "name": "祓除诸恶",
+          "type": "输出",
+          "icon": "",
+          "description": "祸津进行两段斩击，分别造成<c=#ffacff>16.6%,\n25%</c>伤害，之后中手丢出雷钴，造成<c=#ffacff>16.6%</c>伤害，片刻后雷钴爆炸，造成<c=#ffacff>\n33.3%</c>伤害。"
+        },
+        {
+          "name": "愠恚不弭",
+          "type": "输出",
+          "icon": "",
+          "description": "祸津握住刀柄，施放拔刀斩，造成<c=#ffacff>50%</c>伤害。"
+        },
+        {
+          "name": "降愚圣雷",
+          "type": "防卫",
+          "icon": "",
+          "description": "处在祸津后方时，其转身用刀斩造成<c=#ffacff>66.6%</c>伤害，在斩击的轨迹上将降下落雷，每道造成<c=#ffacff>8.3%</c>伤害，之后中手丢出雷钴，造成<c=#ffacff>16.6%</c>伤害，片刻后雷钴爆炸，造成<c=#ffacff>33.3%</c>伤害。"
+        },
+        {
+          "name": "断梁绝槊",
+          "type": "猛攻",
+          "icon": "",
+          "description": "祸津高举刀，在前方长矩形区域劈下，造成<c=#ffacff>116.6%</c>伤害；在周身产生持续的等离子场，持续造成<c=#ffacff>8.3%</c>伤害"
+        },
+        {
+          "name": "分断溃灭",
+          "type": "输出",
+          "icon": "",
+          "description": "祸津先朝上纵劈，产生5道快速移动的纵雷刃，造成<c=#ffacff>25%</c>伤害，再朝右横劈一刀，产生1道慢速的横雷刃，造成<c=#ffacff>50%</c>伤害；在近处，若被刀劈到则每次额外造成<c=#ffacff>25%</c>伤害。"
+        },
+        {
+          "name": "裁绸断碎",
+          "type": "位移",
+          "icon": "",
+          "description": "距离祸津较远时，其立即冲过来劈一刀，造成<c=#ffacff>16.6%</c>伤害，劈后立即产生次元斩，依次造成<c=#ffacff>8.3%,8.3%,33.3%</c>伤害。"
+        },
+        {
+          "name": "祸神之牢",
+          "type": "追踪",
+          "icon": "",
+          "description": "施放时，50%概率为该技能；祸津召唤两个手眼，手眼位置同步于玩家，几秒后两个手眼合击造成<c=#ffacff>50%</c>伤害。"
+        },
+        {
+          "name": "祸神之黯",
+          "type": "追踪",
+          "icon": "",
+          "description": "施放时，50%概率为该技能；祸津召唤一道黑影原地跟踪玩家，接触持续造成<c=#ffacff>8.3%</c>伤害，片刻后黑影处钻出手眼，造成<c=#ffacff>16.6%</c>伤害，再拍下，造成<c=#ffacff>33.3%</c>伤害。"
+        },
+        {
+          "name": "恶耀三钴",
+          "type": "爆发",
+          "icon": "",
+          "description": "祸津移至场地中心，召唤3个大型的雷钴落下，造成<c=#ffacff>25%</c>伤害，其呈三角形摆布；雷钴将持续产生地波扩散，其造成<c=#ffacff>50%</c>伤害。\n地波沿顺时针方向产生，持续2轮，第3轮中，3个雷钴将全部产生地波，随后全部损坏。"
+        },
+        {
+          "name": "万劫一梦",
+          "type": "斩杀",
+          "icon": "",
+          "description": "祸津移至场地中心，<c=#ffdfbf>清空角色的所有元素能量和特殊能量</c>并消失，留下一个<c=#ffbfff>「</c><c=#ffbfff>`追忆花团`</c><c=#ffbfff>」</c>，并随机标记一名玩家；稍后无想的一刀降下，并产生碎屏特效。若在护罩外，被标记的玩家将直接被<c=#ffacff>击败</c>，未被标记的玩家受到<c=#ffacff>66.6%</c>伤害，若在护罩内，则所有玩家只受到<c=#ffacff>1</c>伤害，以上伤害<c=#ffbfbf>闪避帧均无效</c>。"
+        },
+        {
+          "name": "影向天魔",
+          "type": "转换",
+          "icon": "",
+          "description": "祸津御建转变为对付「永恒」之敌的形态，进入恶耀影向天魔状态，击飞附近的玩家不造成伤害，展开`恶耀魔甲`，每5s汲取玩家20能量(特殊能量不受影响)。<c=#a4ffcc>退出状态后恢复全队元素能量与特殊能量。</c>"
+        }
+      ],
+      "notes": [
+        {
+          "text": "恶耀魔甲",
+          "desc": "96雷盾，击破可移除抗性，使祸津退出恶耀影向天魔状态并眩晕；与其发生元素反应可产生3枚全元素微粒，CD1.5s；每10s，将失去8雷盾。"
+        },
+        {
+          "text": "追忆花团",
+          "desc": "25雷充能盾，雷元素攻击+25/次，其他元素攻击+6.5/次，其他攻击无效，击破展开护罩。"
+        }
+      ],
+      "shields": [
+        {
+          "name": "恶耀魔甲",
+          "description": "96雷盾，击破可移除抗性，使祸津退出恶耀影向天魔状态并眩晕；与其发生元素反应可产生3枚全元素微粒，CD1.5s；每10s，将失去8雷盾。",
+          "elementType": "Electric",
+          "duration": ""
+        }
+      ],
+      "chargebar": [],
+      "energy": null,
+      "weight": "",
+      "elementMastery": 0,
+      "multiplayerGroup": "103",
+      "icon": "state-p3-avatar.webp",
+      "defaultLevel": null
+    }
+  ],
+  "defaultState": "p1",
+  "tags": [
+    "值得铭记的强敌"
+  ]
+}

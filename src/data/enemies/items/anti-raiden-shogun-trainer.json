@@ -1,0 +1,75 @@
+{
+ "name": "反雷电将军训练器",
+ "nameEn": "Anti-Raiden Shogun Trainer",
+ "subtitle": "",
+ "category": "Others",
+ "categoryLabel": "其他",
+ "tier": "None",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 1358.3999999999999,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [
+  {
+   "name": "典传五切",
+   "type": "定点",
+   "icon": "skill-1.webp",
+   "description": "训练机关在玩家处召唤次元斩，造成<c=#ffacff>37.5%</c>伤害。"
+  },
+  {
+   "name": "无想试刀",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "训练机关突然产生一道纵向雷刃袭击玩家，造成<c=#ffacff>33.3%</c>伤害。"
+  },
+  {
+   "name": "唤雷磨刃",
+   "type": "猛攻",
+   "icon": "skill-3.webp",
+   "description": "训练机关在自身周围产生大范围落雷，造成<c=#ffacff>200%</c>伤害。"
+  },
+  {
+   "name": "千手百眼",
+   "type": "天赋",
+   "icon": "skill-4.webp",
+   "description": "训练机关在周围产生三个`祸津之雷眼`，爆炸造成<c=#ffacff>133.3%</c>/<c=#ffacff>33.3%x2</c>/<c=#ffacff>13.3%x3</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "祸津之雷眼",
+   "desc": "9次次数盾，击破以摧毁。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [
+  {
+   "label": "物件",
+   "level": 100,
+   "atk": 7387
+  }
+ ],
+ "leyline": null,
+ "id": "anti-raiden-shogun-trainer",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他"
+ ]
+}

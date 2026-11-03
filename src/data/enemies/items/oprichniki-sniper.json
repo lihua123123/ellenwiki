@@ -1,0 +1,71 @@
+{
+ "name": "愚人众特辖队·狙击手",
+ "nameEn": "Oprichniki Sniper",
+ "subtitle": "",
+ "category": "Tps",
+ "categoryLabel": "第三人称射击（TPS）",
+ "tier": "Common",
+ "defaultLevel": 20,
+ "baseStats": {
+  "hp": {
+   "Value": 2.745129,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 67.587443,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "辅瞄狙击",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "狙击手在掩体后使用激光瞄准玩家，3s后发射造成<c=#b8b8b8>60%</c>伤害。<c=#ffbfff>[绝境]</c>造成<span class=\"cryo\">**冰元素**</span>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [
+  {
+   "label": "TPS射击",
+   "level": 20
+  },
+  {
+   "label": "TPS射击",
+   "level": 20,
+   "hp": 172,
+   "atk": 900,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "oprichniki-sniper",
+ "icon": "avatar.webp",
+ "tags": [
+  "第三人称射击（TPS）"
+ ]
+}

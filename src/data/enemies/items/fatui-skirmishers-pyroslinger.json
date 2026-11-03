@@ -1,0 +1,73 @@
+{
+ "name": "愚人众先遣队·火铳士",
+ "nameEn": "Fatui Skirmishers: Pyroslinger",
+ "subtitle": "",
+ "category": "Tps",
+ "categoryLabel": "第三人称射击（TPS）",
+ "tier": "",
+ "defaultLevel": 20,
+ "baseStats": {
+  "hp": {
+   "Value": 18.290221,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 56.322869,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "流弹速射",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "火铳士连续进行猛烈攻击，造成<c=#ff9999>22%</c>伤害。"
+  },
+  {
+   "name": "火穴爆破",
+   "type": "妨害",
+   "icon": "skill-2.webp",
+   "description": "停止攻击，蓄力<c=#ffdfbf>3s</c>后发射手雷，造成<c=#ff9999>70%</c>伤害。蓄力可被打断，手雷掉落地面对自己造成<c=#ff9999>70%</c>伤害。<c=#ffbfff>[绝境]</c>连续发射3次手雷，依次造成<c=#ff9999>35%,35%,70%</c>伤害，第二次及之后蓄力<c=#ffdfbf>1.3s</c>便丢出。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [
+  {
+   "label": "TPS射击",
+   "level": 20,
+   "hp": 1146,
+   "atk": 750,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "fatui-skirmishers-pyroslinger",
+ "icon": "avatar.webp",
+ "tags": [
+  "第三人称射击（TPS）"
+ ]
+}

@@ -1,0 +1,131 @@
+{
+ "name": "窟岩·大灵显化身",
+ "nameEn": "Rock-Cavernous Wayob Manifestation",
+ "subtitle": "夜晚与游灵的代行",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 57.775999999999996,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 50,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "晶丛玉冗",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "窟岩化身释放4道葬峡晶浪，造成<c=#ffe599>50%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，之后再在前方放出繁生玉簇，造成<c=#ffe599>70%</c>伤害。"
+  },
+  {
+   "name": "声羽流尘",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "窟岩化身飞快使用自身翼片旋转，造成<c=#b8b8b8>20%x3</c>伤害。"
+  },
+  {
+   "name": "秘符鸣谷",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "窟岩化身使出秘法，在前方区域震岩造成<c=#b8b8b8>70%</c>伤害。"
+  },
+  {
+   "name": "纡响萦浪",
+   "type": "强化",
+   "icon": "skill-4.webp",
+   "description": "窟岩化身即刻展开`试炼领域`，并获得`白护盾`，从领域内不断产生向外的互相垂直的4道葬峡晶浪，造成<c=#ffe599>50%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，重复3回，最后收回领域并产生峰壑之夷，造成<c=#ffe599>100%</c>伤害，所剩的护盾将转为等量`回声之灵御`。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "试炼领域",
+   "desc": "窟岩化身展开的特殊领域，此领域内玩家造成的伤害提升120%，其内的角色造成的夜魂伤害则额外提升60%，但会不断流失元素能量(不影响特殊能量)。"
+  },
+  {
+   "text": "白护盾",
+   "desc": "111.4%生命值盾，击破后返还90元素能量(不含特殊能量)，并瘫痪窟岩化身5s。"
+  },
+  {
+   "text": "回声之灵御",
+   "desc": "24岩盾，击破后可瘫痪窟岩化身5s。一般由等量的白护盾转化而来。\n\n重复获得白护盾会使其衰减，其序列为111.4%/73.52%/\n36.76%；具体的计算公式见右侧。"
+  },
+  {
+   "text": "机制",
+   "desc": "H为生命值提升系数，正常状态下，H=1，深境螺旋H=2.5或3.75；D为衰减系数，第<c=#ffe599>1</c>/<c=#ffe599>2</c>/<c=#ffe599>>2</c>次开盾，对应D为<c=#ffe599>1</c>/<c=#ffe599>0.66</c>/<c=#ffe599>0.33</c>。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "白护盾",
+   "description": "111.4%生命值盾，击破后返还90元素能量(不含特殊能量)，并瘫痪窟岩化身5s。",
+   "elementType": "",
+   "duration": ""
+  },
+  {
+   "name": "回声之灵御",
+   "description": "24岩盾，击破后可瘫痪窟岩化身5s。一般由等量的白护盾转化而来。\n\n重复获得白护盾会使其衰减，其序列为111.4%/73.52%/\n36.76%；具体的计算公式见右侧。",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:C_1002",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 388220,
+   "atk": 11326,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "rock-cavernous-wayob-manifestation",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

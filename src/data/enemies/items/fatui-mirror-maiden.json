@@ -1,0 +1,130 @@
+{
+ "name": "愚人众·藏镜仕女",
+ "nameEn": "Fatui Mirror Maiden",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 81.50399999999999,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 30.144,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 50,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "依附之潮",
+   "type": "妨害",
+   "icon": "skill-1.webp",
+   "description": "镜女扔出3个水镖，落在附近地面上，然后水镖爆炸造成<c=#7fbfff>62.5%</c>伤害，并<c=#bfbfff>标记</c>玩家。"
+  },
+  {
+   "name": "排斥之水",
+   "type": "反击",
+   "icon": "skill-2.webp",
+   "description": "10s内，持续攻击镜女7次及以上时，镜女会进行反击，在身边产生一次水爆，造成<c=#7fbfff>93.75%</c>伤害，并<c=#bfbfff>标记</c>玩家。"
+  },
+  {
+   "name": "苦水之牢",
+   "type": "限制",
+   "icon": "skill-3.webp",
+   "description": "「水光破镜」状态下，镜女在玩家脚下生成水纹，1s后生成水笼包裹玩家造成<c=#7fbfff>12.5%</c>伤害，然后紧接着再施放一个技能。"
+  },
+  {
+   "name": "寒凛之花",
+   "type": "反击",
+   "icon": "skill-4.webp",
+   "description": "「水光破镜」状态下，镜女召唤下落的水花，造成<c=#7fbfff>62.5%</c>伤害。"
+  },
+  {
+   "name": "净水之弹",
+   "type": "追踪",
+   "icon": "skill-5.webp",
+   "description": "镜女扔出1-2个直线水弹，各造成<c=#7fbfff>62.5%</c>伤害；若处于<c=#bfbfff>「水光破镜」</c>状态下，则扔出3个强追踪水弹，各造成<c=#7fbfff>50%</c>伤害。"
+  },
+  {
+   "name": "折镜迴光",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "「水光破镜」状态下，镜女召唤水棱镜阵瞄准玩家，折射水线造成8段<c=#7fbfff>16.25%</c>伤害，最后产生水爆造成<c=#7fbfff>97.5%</c>伤害。"
+  },
+  {
+   "name": "水光破镜",
+   "type": "天赋",
+   "icon": "skill-7.webp",
+   "description": "镜女成功标记玩家后，即永久进入<c=#bfbfff>「水光破镜」</c>状态。该状态下，镜女免疫风场力，抗打断0.1。"
+  },
+  {
+   "name": "镜洁之刻",
+   "type": "位移",
+   "icon": "skill-8.webp",
+   "description": "若镜女离玩家太远，则会后退进入水镜中再出现在玩家面前，若镜女就在玩家面前，则会后退进入水镜中大概率出现在玩家身后。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_3303",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 332760,
+   "atk": 5909,
+   "weight": 80,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "fatui-mirror-maiden",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

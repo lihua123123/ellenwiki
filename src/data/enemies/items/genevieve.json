@@ -1,0 +1,96 @@
+{
+ "name": "智勇双拳·格内薇芙",
+ "nameEn": "Genevieve",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 65.2032,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 90,
+ "skills": [
+  {
+   "name": "重型爆竹",
+   "type": "妨害",
+   "icon": "skill-1.webp",
+   "description": "格内薇芙扔出爆竹，造成<c=#ff9999>160%,40%</c>伤害。\n<c=#ffe599>提升后：</c>伤害获得提升，爆竹造成<c=#ff9999>240%,40%x4</c>伤害。"
+  },
+  {
+   "name": "纵斧劈山",
+   "type": "控制",
+   "icon": "skill-2.webp",
+   "description": "格内薇芙跳起，使用斧头下劈，造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "倒斧断叶",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "格内薇芙用斧进行至多3段的普通攻击，每段依次造成<c=#b8b8b8>50%,70%,80%</c>伤害。"
+  },
+  {
+   "name": "连斧撂柴",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "格内薇芙用斧进行至多2段的普通攻击，每段依次造成<c=#b8b8b8>75%,80%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "友方-智勇双拳",
+   "level": 100,
+   "hp": 176473,
+   "atk": 9849,
+   "weight": 90,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "genevieve",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

@@ -1,0 +1,291 @@
+{
+ "name": "嵌合翼骏狮",
+ "nameEn": "Chimeric Winged Lion",
+ "subtitle": "单体的协奏者",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 296.131,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 95.46,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "开局",
+   "pyro": 210,
+   "hydro": 210,
+   "anemo": 250,
+   "electro": 250,
+   "dendro": 210,
+   "cryo": 210,
+   "geo": 210,
+   "physical": 210
+  },
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 50,
+   "electro": 50,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "瘫痪",
+   "pyro": -60,
+   "hydro": -60,
+   "anemo": -20,
+   "electro": -20,
+   "dendro": -60,
+   "cryo": -60,
+   "geo": -60,
+   "physical": -60
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "凛谷深雷",
+   "type": "防御",
+   "icon": "skill-1.webp",
+   "description": "战斗开始时，翼骏师进入「唤雷」形态，并展开`幻雷护罩`，该状态持续直至护罩被破坏。"
+  },
+  {
+   "name": "摧灾折败",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "翼骏狮使用左右双爪先后进行攻击，均造成<span class=\"anemo\">**30%**</span>伤害，若玩家距离较近，则还会追加一段翻尾攻击，造成<c=#ffacff>60%</c>伤害。"
+  },
+  {
+   "name": "横刃碎牙",
+   "type": "猛攻",
+   "icon": "skill-3.webp",
+   "description": "距离较远时，翼骏狮升空，衔着雷剑向玩家突击，造成<c=#ffacff>100%</c>伤害，若玩家距离较近，则还会追加一段翻尾攻击，造成<c=#ffacff>60%</c>伤害。"
+  },
+  {
+   "name": "衍雷并巽",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "距离较远时，翼骏狮吐出5枚雳珠，并加以强化，朝着玩家飞去，造成<c=#ffacff>40%,20%,\n10%,4%</c>伤害。"
+  },
+  {
+   "name": "威淬万钧",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "翼骏狮将雷剑插入地面，并对其施加强风，使其产生冲击地波，每次造成<c=#ffacff>60%</c>伤害，一共会形成4道冲击波。可受`星烁反应`影响。"
+  },
+  {
+   "name": "腾驭越逐",
+   "type": "远程",
+   "icon": "skill-6.webp",
+   "description": "瘫痪恢复后，翼骏狮进入「驱风」形态，绕场地盘旋大半圈，并在途径的位置留下共8枚烈风弹。烈风弹依次朝玩家飞去，造成<span class=\"anemo\">**50%,25%,10%,5%**</span>伤害。"
+  },
+  {
+   "name": "势动苍霆",
+   "type": "猛攻",
+   "icon": "skill-7.webp",
+   "description": "翼骏狮利用双头施放双属性高能激光束，接触造成对应元素的<c=#ffff99>50%,25%,\n10%,5%</c>伤害。"
+  },
+  {
+   "name": "烈惊千朽",
+   "type": "爆发",
+   "icon": "",
+   "description": "翼骏狮蜷缩，在场地召唤5枚`风球`，5s后尝试吸收它们。若10s内吸收了3枚风球，则施放气爆，造成<span class=\"anemo\">**30%**</span>伤害，否则施放失败。可受`星烁反应`影响。"
+  },
+  {
+   "name": "寸飙鸢狩",
+   "type": "输出",
+   "icon": "",
+   "description": "翼骏狮短暂蓄力，突然朝玩家冲来并着陆，造成<span class=\"anemo\">**60%**</span>伤害，准备重新进入「唤雷」形态。"
+  },
+  {
+   "name": "星烁辉离",
+   "type": "天赋",
+   "icon": "",
+   "description": "「威淬万钧」：中断技能，并使其护罩<c=#ffdfbf>-4</c>单位；「烈惊千朽」：无法吸收风球，并失去<c=#ffdfbf>15%</c>生命值<c=#ffdfbf>(仅大世界)</c>。两者均会掉落<c=#ffdfbf>6枚</c>对应元素微粒。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "幻雷护罩",
+   "desc": "12雷盾，击破可使其瘫痪12s；受到「星烁反应」影响-4雷。第2/3次及之后展开护罩的厚度为8/6雷。"
+  },
+  {
+   "text": "风球",
+   "desc": "可被火/水/雷/冰攻击击毁，翼骏狮吸收不到足够的风球会瘫痪，持续16s。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "幻雷护罩",
+   "description": "12雷盾，击破可使其瘫痪12s；受到「星烁反应」影响-4雷。第2/3次及之后展开护罩的厚度为8/6雷。",
+   "elementType": "Electric",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EP[0x2],EO[66,33]",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1328385,
+   "atk": 19842,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": {
+  "name": "嵌合翼骏狮·摧枯伟力",
+  "nameEn": "Chimeric Winged Lion: Power Overwhelming",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 1147994,
+    "atk": 14464,
+    "multiplier": 1.2,
+    "advantage": "Cryo Adv."
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 5720328,
+    "atk": 18713,
+    "multiplier": 4.0,
+    "advantage": "Superconduct Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 10748445,
+    "atk": 20597,
+    "multiplier": 6.5,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 23349702,
+    "atk": 22061,
+    "multiplier": 12.9,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "开局",
+    "pyro": 210,
+    "hydro": 210,
+    "anemo": 250,
+    "electro": 250,
+    "dendro": 210,
+    "cryo": 210,
+    "geo": 210,
+    "physical": 210
+   },
+   {
+    "name": "正常",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 50,
+    "electro": 50,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   },
+   {
+    "name": "瘫痪",
+    "pyro": -60,
+    "hydro": -60,
+    "anemo": -20,
+    "electro": -20,
+    "dendro": -60,
+    "cryo": -60,
+    "geo": -60,
+    "physical": -60
+   },
+   {
+    "name": "瘫痪",
+    "diffNote": "N5",
+    "pyro": -60,
+    "hydro": -60,
+    "anemo": -120,
+    "electro": -60,
+    "dendro": -60,
+    "cryo": -120,
+    "geo": -60,
+    "physical": -60
+   }
+  ],
+  "skills": [],
+  "notes": [
+   {
+    "text": "幻雷护罩",
+    "desc": "12雷盾，持续整个「唤雷」形态。护罩破坏后陷入瘫痪<c=#ffdfbf>12s</c>。\n受`星烁反应`影响后，施放爆发技能会使该护罩-4雷，同时中断技能，并掉落6枚雷元素晶球。\n<c=#ffbfbf>(N5) </c>护罩厚度提升至40雷，且受`星烁反应`影响后-16雷；护罩破坏后会对翼骏狮造成一次真伤，其值由护罩展开期间<c=#ffdfbf>100%星反应伤+30%其余伤害</c>组成，不超过<c=#ffdfbf>80%翼骏狮生命值</c>。"
+   },
+   {
+    "text": "凌朽烈风",
+    "desc": "「驱风」形态下召唤5枚风球，<c=#ffdfbf>5s</c>后将开始向翼骏狮移动。若翼骏狮吸收的风球少于3个，那么技能施放失败，瘫痪<c=#ffdfbf>16s</c>。\n受`星烁反应`影响后，翼骏狮将不能吸收风球，直接中断技能，并掉落6枚<span class=\"anemo\">**风元素**</span>晶球，同时扣除<c=#ffdfbf>15%生命值</c>。\n<c=#ffbfbf>(N5) </c>移除扣除生命值的效果。"
+   }
+  ],
+  "shields": [
+   {
+    "name": "幻雷护罩",
+    "description": "12雷盾，持续整个「唤雷」形态。护罩破坏后陷入瘫痪<c=#ffdfbf>12s</c>。\n受`星烁反应`影响后，施放爆发技能会使该护罩-4雷，同时中断技能，并掉落6枚雷元素晶球。\n<c=#ffbfbf>(N5) </c>护罩厚度提升至40雷，且受`星烁反应`影响后-16雷；护罩破坏后会对翼骏狮造成一次真伤，其值由护罩展开期间<c=#ffdfbf>100%星反应伤+30%其余伤害</c>组成，不超过<c=#ffdfbf>80%翼骏狮生命值</c>。",
+    "elementType": "Electric",
+    "duration": ""
+   }
+  ]
+ },
+ "id": "chimeric-winged-lion",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽",
+  "幽境危战"
+ ]
+}

@@ -1,0 +1,114 @@
+{
+ "name": "巴窟纳瓦",
+ "nameEn": "Bakunawa",
+ "subtitle": "层侵的躯块",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 104,
+ "baseStats": {
+  "hp": {
+   "Value": 2716.7999999999997,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 9999999,
+ "skills": [
+  {
+   "name": "霜炙随巨浪",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "巴窟纳瓦重重锤下右拳，对玩家进行重拳出击，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "罡风折岩掌",
+   "type": "猛攻",
+   "icon": "skill-2.webp",
+   "description": "巴窟纳瓦将玩家吸引至跟前，随后挥一耳光，造成<c=#ffe599>100%</c>伤害，该技能可被「厄水之祸」反制。"
+  },
+  {
+   "name": "万烬连踪灭",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "巴窟纳瓦手搓一枚螺旋弹，随即朝玩家施放，造成<span class=\"anemo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "寒锋遮晴霁",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "失去双臂后，巴窟纳瓦从断臂处射出数十枚冰棘，并朝着玩家如数散落，造成<span class=\"cryo\">**70%**</span>伤害(难以命中)；冰棘在一段时间后引爆，造成<span class=\"cryo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "霏雪压荒渊",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "失去双臂后，巴窟纳瓦张开大胃袋，将一切尽数纳入其间，10s后发射寒飓之息，<c=#ffbfbf>秒杀我方前台角色</c>，该技能可被「厄水之祸」克制。"
+  },
+  {
+   "name": "时闻掷踵声",
+   "type": "输出",
+   "icon": "",
+   "description": "失去双臂后，巴窟纳瓦抬起下肢，重跺一脚，造成<c=#ffe599>100%</c>伤害。"
+  },
+  {
+   "name": "厄水之秘引",
+   "type": "克制",
+   "icon": "",
+   "description": "战斗中可以使用「厄水之祸」中的大灵力量战斗。\n在成功反制巴窟纳瓦的「罡风折岩掌」技能后，「厄水之祸」将会给予其一次重伤攻击，使巴窟纳瓦失去一臂并扣除<c=#ffdfbf>30%</c>生命值 (但巴窟纳瓦会因此恢复<c=#ffdfbf>20%</c>生命值)；\n在巴窟纳瓦「霏雪压荒渊」技能期间可蓄力使用「厄水之祸」的大灵进行克制，能将其打入残血状态，之后「厄水之祸」将会给予其一次致命攻击，封印巴窟纳瓦。\n未及时克制巴窟纳瓦，其将恢复至<c=#ffdfbf>50%</c>生命值。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "剧情首领",
+   "level": 104,
+   "hp": 12472648,
+   "atk": 21272,
+   "weight": 9999999,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "bakunawa",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

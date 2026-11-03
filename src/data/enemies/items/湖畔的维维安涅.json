@@ -1,0 +1,115 @@
+{
+ "name": "湖畔的维维安涅",
+ "nameEn": "Vivianne of the Lake",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 885.6768000000001,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 120.576,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": "IMM",
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 101,
+ "skills": [
+  {
+   "name": "浊浪喷流",
+   "type": "追踪",
+   "icon": "skill-1.webp",
+   "description": "维维安涅朝玩家处不断且连续地一直喷水，持续造成<c=#7fbfff>40%,20%,4%</c>伤害。"
+  },
+  {
+   "name": "水刑巨弹",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "维维安涅幻化成水壶，从壶嘴出发射5枚水弹，造成<c=#7fbfff>100%,25%,10%</c>伤害。"
+  },
+  {
+   "name": "水刑臌胀",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "接近维维安涅时，蜷缩自身，产生较大的爆炸，造成<c=#7fbfff>100%</c>伤害，且在周围产生4道扩散型水喷，造成<c=#7fbfff>100%,25%,10%</c>伤害，该技能可以打断其他技能施放。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 3972969,
+   "atk": 25063,
+   "weight": 101,
+   "tenacity": 400
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 723199,
+   "hpNote": "20%",
+   "atk": 11819,
+   "atkNote": "50%",
+   "weight": 101,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "湖畔的维维安涅",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

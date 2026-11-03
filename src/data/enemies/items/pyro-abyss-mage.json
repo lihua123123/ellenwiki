@@ -1,0 +1,129 @@
+{
+ "name": "火深渊法师",
+ "nameEn": "Pyro Abyss Mage",
+ "subtitle": "火之咏者",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 56.52,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "炎心焰波",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "火法施放一个贴近地面的火团，造成<c=#ff9999>50%</c>伤害。"
+  },
+  {
+   "name": "敕火戒嶂",
+   "type": "防御",
+   "icon": "skill-2.webp",
+   "description": "靠近施法的火法时，火法生成一个<c=#ff9999>12元元素量</c>的`火护罩`，`水元素`破盾最快。\n<c=#ff4c4c>防护强化：</c>护盾盾量x2，玩家攻击护盾会被附着<c=#ff9999>火元素</c>。"
+  },
+  {
+   "name": "灼面祭法",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "火法施法，召唤三个一组的灼面，灼面朝中间吐火，造成<c=#ff9999>66.6%,33.3%,16.6%</c>伤害，持续5次。\n<c=#ff4c4c>强攻强化：</c>召唤3组灼面进行攻击。"
+  },
+  {
+   "name": "焰涌之仪",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "火法施法恢复火盾，期间不断召唤火喷造成<c=#ff9999>100%</c>伤害，盾生成后施放冲击波造成<c=#ff9999>100%</c>伤害，若处在近处，则额外再受到<c=#ff9999>133.3%</c>伤害。"
+  },
+  {
+   "name": "嚣闪",
+   "type": "位移",
+   "icon": "skill-5.webp",
+   "description": "火法传送，出现在玩家正前方，同时造成<c=#ff9999>66.6%</c>伤害，近处受玩家攻击时概率传送远离玩家，盾破之后持续攻击有小概率闪现。\n<c=#ff4c4c>灵动强化：</c>闪现前后位置均造成相同伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "火护罩",
+   "desc": "<c=#ff9999>12火</c>盾，击破后打断并虚弱，可伤害转化。该状态下，抗打断0，免疫风场力。本体免疫燃烧伤害。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "火护罩",
+   "description": "<c=#ff9999>12火</c>盾，击破后打断并虚弱，可伤害转化。该状态下，抗打断0，免疫风场力。本体免疫燃烧伤害。",
+   "elementType": "Fire",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:B_1113",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 73530,
+   "atk": 11080,
+   "weight": 75,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "pyro-abyss-mage",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

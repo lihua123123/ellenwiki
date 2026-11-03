@@ -13,9 +13,12 @@ const ENDPOINTS = [
   ['GET', '/api/artifacts', '圣遗物套装列表（套装效果 / 部位图标与名称）'],
   ['GET', '/api/artifacts/{名称}', '单套圣遗物完整数据'],
   ['GET', '/api/attachment', '元素附着及产球：逐角色每个技能的元素量 / 附着规则 / 产球'],
-  ['GET', '/api/bosses', '幽境 Boss 图鉴（按版本）'],
+  ['GET', '/api/bosses', '幽境危战图鉴（按版本）'],
+  ['GET', '/api/enemies', '敌人图鉴列表（名称 / 分类 / 头像 / 是否含幽境挑战）'],
+  ['GET', '/api/enemies/{id}', '单个敌人完整档案：基础数值 / 抗性 / 技能 / 护盾 / 注解 / 幽境挑战难度数据'],
   ['GET', '/api/formulas', '伤害公式目录'],
   ['GET', '/api/formulas/{game}', '伤害公式 Markdown 原文（genshin / sr / zzz）'],
+  ['GET', '/api/palette', '配色方案：表面 / 文字 / 元素 / 反应 / 稀有度 / UI 语义令牌（每项带 hex 与用途），另附原表色值留档'],
 ];
 
 const DATASETS = [
@@ -23,8 +26,10 @@ const DATASETS = [
   ['weapons', '武器', '单个文件：name / id / rarity / type / baseAtk / mainStat / mainStatValue / maxLevel / source / effectName / refinements / curve（逐级基础攻击与副属性）/ costs / story 等。'],
   ['artifacts', '圣遗物', '单个文件：name / rarity / effect1Pc / effect2Pc / effect4Pc / iconUrl / pieceIcons / pieceNames 等。'],
   ['attachment', '元素附着及产球', '以元素分组：{ elementLabels, elementIds, weaponTypes, characters: { fire: [ { name, weapon, energy, skills: [ { name, elementAmount, attachRule, particles, note, poise } ] } ] } }。elementAmount=元素量（弱/强/超强 + 元素），attachRule=附着规则（独立 / N hits / M s 等，即 ICD），particles=产球。'],
-  ['bosses', '幽境 Boss', '按版本分组的数组：[ { version, bosses: [ { shortName, fullName, hp, skills[], imgUrl } ] } ]。skills 里的 __SEP__ 是「机制 / 介绍 / 背景」分组分隔符。'],
+  ['bosses', '幽境危战', '按版本分组的数组：[ { version, bosses: [ { shortName, fullName, hp, skills[], imgUrl } ] } ]。skills 里的 __SEP__ 是「机制 / 介绍 / 背景」分组分隔符。'],
+  ['enemies', '敌人图鉴', 'index.json 为列表；单个文件：name / nameEn / category / baseStats（曲线基值）/ levelRows（多档等级实际值）/ resistances / skills（图标+富文本）/ notes / shields / leyline（幽境变体：difficulties 为 N3~N6 难度表 Lv/HP/ATK/倍率/优势机制）。技能描述内 <span class="cryo"> 为元素色、<c=#hex> 为源色、反引号为特殊名词。'],
   ['formulas', '伤害公式', '单个文件：{ id, title, markdown }，markdown 为公式页的原始 Markdown（含 KaTeX 公式）。'],
+  ['palette', '配色方案', '单个文件：meta（版本/来源）/ foundation（surface·text·border·accent·state，每项 { hex, usage }）/ element（火水风雷草冰岩 + 物理，各含 color·soft·text·number·shield·vision·wish·tcg·resonance）/ reaction（蒸发…月反应·星超导）/ rarity（1~5 星 + 特殊 5 星：text·bg·border·itemBg）/ ui（buff·skill·link·mark·血条等）/ catalog（原表 450 条色值，按 group 归类）。页面样式由它生成 tokens.css。'],
 ];
 
 export function initDeveloperPage(root) {
@@ -37,7 +42,7 @@ export function initDeveloperPage(root) {
       <header class="page-header">
         <h1>开发者 · 数据 API</h1>
         <p class="dev-lead">
-          本站把整合后的角色 / 武器 / 圣遗物 / 元素附着及产球 / 幽境 Boss / 伤害公式数据，
+          本站把整合后的角色 / 武器 / 圣遗物 / 元素附着及产球 / 幽境危战 / 伤害公式数据，
           以<strong>只读 JSON API</strong> 开放出来。你可以像我们抓取上游数据源一样，直接 HTTP GET 本站聚合后的结果。
         </p>
       </header>

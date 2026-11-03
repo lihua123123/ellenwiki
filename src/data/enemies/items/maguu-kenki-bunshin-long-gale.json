@@ -1,0 +1,99 @@
+{
+ "name": "魔偶剑鬼·孤风",
+ "nameEn": "Maguu Kenki Bunshin: Long Gale",
+ "subtitle": "如剑迅疾之风",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 217.344,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 30,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 600,
+ "skills": [
+  {
+   "name": "伪天狗抄",
+   "type": "爆发",
+   "icon": "skill-1.webp",
+   "description": "孤风迅速挥出2刀风刃，各造成<span class=\"anemo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "孤风携刃",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "孤风进行纵-横的普通攻击，每一段都会产生一道风刃，孤风攻击造成<span class=\"anemo\">**50%**</span>伤害，风刃也造成<span class=\"anemo\">**50%**</span>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_3334",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 630639,
+   "atk": 13054,
+   "weight": 600,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "maguu-kenki-bunshin-long-gale",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

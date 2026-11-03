@@ -1,0 +1,135 @@
+{
+ "name": "图帕尧的协辅",
+ "nameEn": "Tupayo’s Aid",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1184.5248,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 113.04,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 50,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "铄岩流幔",
+   "type": "定点",
+   "icon": "skill-1.webp",
+   "description": "「协辅」在玩家处召唤熔岩之穴，造成<c=#ff9999>80%</c>伤害，并留下持续35s的破焰裂口，踏入其中将持续造成基于角色自身<c=#ff9999>10%生命值</c>的真实伤害。"
+  },
+  {
+   "name": "千星挟焰",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "「协辅」进行蓄力，在其周围形成4处地喷，均造成<c=#ff9999>70%</c>伤害；凝聚燃炎之怒，向前发射9枚带追踪性的火焰弹，造成<c=#ff9999>40%,20%,10%,4%</c>伤害。"
+  },
+  {
+   "name": "磷翼流尘",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "「协辅」飞快使用自身翼片旋转，造成<c=#b8b8b8>20%x3</c>伤害。"
+  },
+  {
+   "name": "镌铭荡谷",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "「协辅」使出秘法，在前方区域造成震岩，造成<c=#b8b8b8>70%</c>伤害。"
+  },
+  {
+   "name": "曦阳弥雨",
+   "type": "定点",
+   "icon": "skill-5.webp",
+   "description": "「协辅」依次在玩家位置召唤6道燃素流束，每道造成<c=#ff9999>30%</c>伤害。"
+  },
+  {
+   "name": "一虹灼界",
+   "type": "远程",
+   "icon": "skill-6.webp",
+   "description": "「协辅」朝玩家方向蓄力，迸发燃素湍流，造成<c=#ff9999>70%</c>伤害。"
+  },
+  {
+   "name": "宫火焦糜",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "「协辅」移至场地中央，并盘旋于此蓄力；场地边缘出现燃素风场，并伴随不断出现3个一组的地喷，造成<c=#ff9999>70%</c>伤害；蓄力10s后，「协辅」开始连续释放6道炎燃脉冲，前5道造成<c=#ff9999>100%</c>伤害，第6道造成<c=#ff9999>300%</c>伤害。\n<c=#ffe599>利用风场进行下落攻击可打断本技能。</c>"
+  },
+  {
+   "name": "灰熛俱灭",
+   "type": "爆发",
+   "icon": "skill-8.webp",
+   "description": "「协辅」移至场地中央，并升空蓄力；场地边缘出现燃素风场和风圈，并伴随不断出现3-4个一组的地喷，造成<c=#ff9999>70%</c>伤害；蓄力10s后，「协辅」下落，释放腾炎脉冲，造成<c=#ff9999>600%</c>伤害，并产生5道呈扇形分布的线性地喷，造成<c=#ff9999>70%</c>伤害。<c=#ffe599>\n角色通过风圈加速碰撞空中的「协辅」可打断本技能，并扣除其10%生命值。</c>"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "夜魂试炼",
+   "level": 103,
+   "hp": 5313541,
+   "atk": 23497,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "tupayo-s-aid",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

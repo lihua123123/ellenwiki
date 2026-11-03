@@ -1,0 +1,171 @@
+{
+ "name": "丘丘雷兜王",
+ "nameEn": "Thunderwhelm Lawachurl",
+ "subtitle": "狂雷刻印的丘丘王者",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 122.256,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 150.72,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 70,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "黑虎掏",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "雷丘丘王进行勾拳、捶地2段的普通攻击，分别造成<c=#ffacff>37.5%,40%</c>伤害。\n<c=#dc72ff>魔化状态：</c>捶地产生<c=#ffbfbf>2</c>个电气碎石。"
+  },
+  {
+   "name": "雳雷嵌",
+   "type": "强化",
+   "icon": "skill-2.webp",
+   "description": "雷丘丘王进行扩胸运动，全身变雷晶发亮，进入<c=#ff99ff>魔化状态</c>，并附属`雷甲`。"
+  },
+  {
+   "name": "鹤捕虾",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "(魔化)雷丘丘王左手伏地冲过来，造成<c=#ffacff>50%</c>伤害，蓄力时间可长可短。"
+  },
+  {
+   "name": "掌掴蝇",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "雷丘丘王进行一次勾拳，朝任意方向挥一拳，造成<c=#ffacff>37.5%</c>伤害。\n<c=#dc72ff>魔化状态：</c>使用左手蓄力一挥，造成<c=#ffacff>37.5%</c>伤害。"
+  },
+  {
+   "name": "乌鸦坐",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "雷丘丘王侧身蓄力起跳，重重下落造成<c=#b9b9b9>100%</c>伤害，并留下<c=#ffbfbf>1</c>个电气碎石，形成碎石的落雷造成<c=#ffacff>50%</c>伤害：\n<c=#dc72ff>魔化状态：</c>落地产生<c=#ffbfbf>3</c>个电气碎石。"
+  },
+  {
+   "name": "地震拳",
+   "type": "猛攻",
+   "icon": "skill-6.webp",
+   "description": "雷丘丘王进行固定2次的双锤地攻击，两次分别造成<c=#ffacff>50%,62.5%</c>伤害，第二次锤击的范围更大。\n<c=#dc72ff>魔化状态：</c>锤地产生<c=#ffbfbf>2-3</c>个电气碎石。"
+  },
+  {
+   "name": "猛虎跳",
+   "type": "位移",
+   "icon": "skill-7.webp",
+   "description": "(魔化)雷丘丘王蓄力进行飞扑，造成<c=#ffacff>62.5%</c>伤害，可突然进行飞扑攻击。"
+  },
+  {
+   "name": "阶石迸",
+   "type": "召唤",
+   "icon": "skill-8.webp",
+   "description": "处于魔化状态下的雷丘丘王的部分技能会留下`电气碎石`，一段时间后爆炸，造成<c=#ffacff>50%</c>伤害，也可被雷丘丘王的<c=#ffbfbf>冲撞</c>引爆。"
+  },
+  {
+   "name": "布丁飞",
+   "type": "远程",
+   "icon": "skill-9.webp",
+   "description": "雷丘丘王从地上挖并抛出1只雷史莱姆或者变异雷史莱姆，均造成<c=#ffacff>50%</c>伤害。\n<c=#dc72ff>魔化状态：\n</c>1.抛出一只大雷史莱姆，造成<c=#ffacff>62.5%</c>伤害；\n2.抛出一只变异大雷史莱姆，造成<c=#ffacff>62.5%</c>伤害，其产生3个碎屑，每个造成<c=#ffacff>50%</c>伤害；"
+  }
+ ],
+ "notes": [
+  {
+   "text": "雷甲",
+   "desc": "18雷盾，持续90s。该状态下，抗打断0，免疫风场力。"
+  },
+  {
+   "text": "电气碎石",
+   "desc": "3雷盾，持续20s，具有嘲讽，可被丘丘王冲撞提前引爆。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "雷甲",
+   "description": "18雷盾，持续90s。该状态下，抗打断0，免疫风场力。",
+   "elementType": "Electric",
+   "duration": 90
+  },
+  {
+   "name": "电气碎石",
+   "description": "3雷盾，持续20s，具有嘲讽，可被丘丘王冲撞提前引爆。",
+   "elementType": "Electric",
+   "duration": 20
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "WP[75x3,50x3,25x3,0x3], WO[75,50,25,0]",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 3,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 3,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 3,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 330886,
+   "atk": 29547,
+   "weight": 150,
+   "tenacity": 400
+  },
+  {
+   "label": "精英-禅那园地底",
+   "level": 100,
+   "hp": 992658,
+   "atk": 59093,
+   "weight": 150,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "thunderwhelm-lawachurl",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

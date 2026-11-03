@@ -1,0 +1,39 @@
+{
+ "name": "熔岩游像·蚀土者·白壳",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {
+   "Value": 140.18688,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 43.96,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "id": "熔岩游像-蚀土者-白壳",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

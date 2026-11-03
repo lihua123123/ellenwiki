@@ -1,0 +1,107 @@
+{
+ "name": "流刃勇士·掷叉猎手",
+ "nameEn": "Flowing Blade Harpoon-Thrower",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 21.7344,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "拳掴掌打",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "猎手挥动拳头，连扫两次，分别造成<c=#b8b8b8>80%,90%</c>伤害。"
+  },
+  {
+   "name": "鱼叉仙人",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "猎手丢出背上的鱼叉，造成<c=#b8b8b8>100%</c>伤害，鱼叉将被消耗。"
+  },
+  {
+   "name": "前踢扑踹",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "猎手扑地向前踹去，造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "传统宝刀",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "鱼叉丢完后，猎手丢出古典宝刀，造成<c=#b8b8b8>50%</c>伤害。"
+  },
+  {
+   "name": "浮陆若游",
+   "type": "强攻",
+   "icon": "skill-5.webp",
+   "description": "猎手导引水源，于场地之中冲、卷、扑共三轮，触碰均造成<c=#7fbfff>80%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通-",
+   "level": 100,
+   "hp": 88736,
+   "atk": 4924,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "flowing-blade-harpoon-thrower",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

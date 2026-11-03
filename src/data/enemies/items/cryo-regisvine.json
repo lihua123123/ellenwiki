@@ -1,0 +1,181 @@
+{
+ "name": "急冻树",
+ "nameEn": "Cryo Regisvine",
+ "subtitle": "吐息冰霜的巨藤",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 110,
+   "hydro": 110,
+   "anemo": 110,
+   "electro": 110,
+   "dendro": 110,
+   "cryo": 170,
+   "geo": 110,
+   "physical": 130
+  },
+  {
+   "name": "瘫痪",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 70,
+   "geo": 10,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "寒花冷冽",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "急冻树朝地面猛锤，锤点造成<span class=\"cryo\">**100%**</span>伤害，形成3道冲击波，各造成<span class=\"cryo\">**50%**</span>伤害，该技能可连续进行3次锤击。"
+  },
+  {
+   "name": "封霜轮转",
+   "type": "苏醒",
+   "icon": "skill-2.webp",
+   "description": "瘫痪恢复后，急冻树在原地快速旋转一圈半，造成<span class=\"cryo\">**100%**</span>伤害，旋转之前的砸地也造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "融雪未尽",
+   "type": "防卫",
+   "icon": "skill-3.webp",
+   "description": "处在急冻树后方时，急冻树向玩家方向迅速旋转半圈，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "风凛延冬",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "急冻树进行左砸划-右砸划-锤击三段连击，均造成<span class=\"cryo\">**100%**</span>伤害，产生的震波造成<span class=\"cryo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "尖棱偕冰",
+   "type": "追踪",
+   "icon": "skill-5.webp",
+   "description": "急冻树使用两侧藤条，每侧发射4个冰锥，总共8个冰锥，冰锥追踪玩家均造成<span class=\"cryo\">**12.5%**</span>伤害，最多施放3次。"
+  },
+  {
+   "name": "寒晶琉心",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "急冻树不断在玩家处召唤若干个冰块，冰块生成时造成<span class=\"cryo\">**50%**</span>伤害，片刻后爆炸，造成<span class=\"cryo\">**50%**</span>伤害，留下一片冰霜，持续造成<span class=\"cryo\">**30%**</span>伤害。"
+  },
+  {
+   "name": "凕光冷摄",
+   "type": "妨害",
+   "icon": "skill-7.webp",
+   "description": "急冻树使用两侧藤条释放冰寒射线，造成<span class=\"cryo\">**50%**</span>伤害，最多施放2次。"
+  },
+  {
+   "name": "急冻射线",
+   "type": "猛攻",
+   "icon": "skill-8.webp",
+   "description": "急冻树苏醒后，面对玩家发射急冻射线，持续造成<span class=\"cryo\">**50%,25%,12.5%,5%**</span>伤害并绕场一圈，在场地外围形成冰霜地面，其持续造成<span class=\"cryo\">**30%**</span>伤害。"
+  },
+  {
+   "name": "拂寒泠风",
+   "type": "防卫",
+   "icon": "skill-9.webp",
+   "description": "急冻树的花冠垂直收缩下压，造成<span class=\"cryo\">**100%**</span>伤害，并在其周身生成冰霜，持续造成<span class=\"cryo\">**30%**</span>伤害。"
+  },
+  {
+   "name": "寒洊冬冹",
+   "type": "爆发",
+   "icon": "skill-10.webp",
+   "description": "(仅限活动)急冻树在全场产生暴风雪，持续造成<span class=\"cryo\">**100%**</span>伤害，且时间较长。\n处于冬之种形成的护罩内可免伤。"
+  },
+  {
+   "name": "霜心严寒",
+   "type": "转换",
+   "icon": "skill-11.webp",
+   "description": "急冻树首先在<c=#bfedff>`根部`</c>形成`核心`，被击破后下次在<c=#bfedff>`冠部`</c>形成`核心`，若击破后则重新在<c=#bfedff>根部</c>形成核心，交替进行。若62s内没有击破<c=#bfedff>冠部</c>核心，则会转移到<c=#bfedff>根部</c>。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "根部核心",
+   "desc": "12冻盾，击破可瘫痪急冻树15s。"
+  },
+  {
+   "text": "冠部核心",
+   "desc": "6冻盾，不稳定，会转化为根部核心，击破可瘫痪急冻树15s。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "根部核心",
+   "description": "12冻盾，击破可瘫痪急冻树15s。",
+   "elementType": "Frozen",
+   "duration": ""
+  },
+  {
+   "name": "冠部核心",
+   "description": "6冻盾，不稳定，会转化为根部核心，击破可瘫痪急冻树15s。",
+   "elementType": "Frozen",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:A_3302",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 275905,
+   "atk": 13054,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "cryo-regisvine",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

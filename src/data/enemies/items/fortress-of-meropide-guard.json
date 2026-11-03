@@ -1,0 +1,107 @@
+{
+ "name": "梅洛彼得堡看守",
+ "nameEn": "Fortress of Meropide Guard",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 21.7344,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 20.096000000000004,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 90,
+ "skills": [
+  {
+   "name": "防暴力行",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "看守使用防暴叉进行戳、扳、戳至多3段普通攻击，每段依次造成<c=#b8b8b8>70%,60%,80%</c>伤害。"
+  },
+  {
+   "name": "斥恶驱匪",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "看守进行戳、扳至多2段普通攻击，每段依次造成<c=#b8b8b8>60%,70%</c>伤害。"
+  },
+  {
+   "name": "回押遣进",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "看守进行1-2次的戳击，均造成<c=#b8b8b8>80%</c>伤害。"
+  },
+  {
+   "name": "制暴压敌",
+   "type": "控制",
+   "icon": "skill-4.webp",
+   "description": "看守进行普攻驱动后，进行小幅冲刺，接触造成<c=#b8b8b8>15%</c>伤害；达目标处举起防暴叉跳起，猛地落下，造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "镇收扳伏",
+   "type": "猛攻",
+   "icon": "skill-5.webp",
+   "description": "看守进行普攻驱动后，使用防暴叉进行利落的三段攻击，依次造成<c=#b8b8b8>60%,60%,\n80%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通&龚古尔-智勇双拳",
+   "level": 100,
+   "hp": 58824,
+   "atk": 3940,
+   "weight": 90,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "fortress-of-meropide-guard",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

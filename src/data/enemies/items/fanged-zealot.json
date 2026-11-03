@@ -1,0 +1,118 @@
+{
+ "name": "牙兽狂徒",
+ "nameEn": "Fanged Zealot",
+ "subtitle": "气魄千钧的迷兽",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 54.336,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 45.22,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 30,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "涤恶韧炎",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "牙兽使用大剑进行纵击，造成<c=#ff9999>80%</c>伤害，容易后接「斫罪长火」。"
+  },
+  {
+   "name": "斫罪长火",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "牙兽使用长鼻牵出大剑进行甩击，造成<c=#ff9999>100%</c>伤害，容易后接「涤恶韧炎」、「轰红之意」、「金象摧驰」。"
+  },
+  {
+   "name": "轰红之意",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "牙兽使用左拳进行重击，造成<c=#ff9999>60%</c>伤害，容易后接「斫罪长火」、「涤恶韧炎」。"
+  },
+  {
+   "name": "嗔灼如星",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "牙兽使用长鼻朝前抛出炎晶，造成<c=#ff9999>70%</c>伤害。"
+  },
+  {
+   "name": "金象摧驰",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "牙兽使用尖锐獠牙进行前驱攻击，造成<c=#ff9999>100%</c>伤害，容易后接「斫罪长火」。"
+  },
+  {
+   "name": "酣屠醉梦",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "牙兽掏出火水，进入酒狂：连续进行4段挥舞攻击，依次造成<c=#ff9999>80%,80%,80%,\n100%</c>伤害，重复3次；受`星烁反应`影响后变为醉乱：攻击失去目标，连续进行2段挥舞攻击，均造成<c=#ff9999>80%</c>伤害，重复5次，最后进行2段甩击，依次造成<c=#ff9999>80%,100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "PP[66,33,0]",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 221840,
+   "atk": 8864,
+   "weight": 300,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "fanged-zealot",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

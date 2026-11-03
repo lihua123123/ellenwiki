@@ -1,0 +1,244 @@
+{
+ "name": "历经百战的执灯人",
+ "nameEn": "Sigurd",
+ "subtitle": "永誓猎杀「狂猎」之人",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 128.3688,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 69.08,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 99,
+ "skills": [
+  {
+   "name": "不屈戮刃",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "西格德使用短刀进行至多3段的攻击，依次造成<c=#ffacff>45%,45%,55%</c>伤害，每刀都会划出剑气；技能施放后闪现。"
+  },
+  {
+   "name": "殄灭戗雷",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "西格德执剑朝前方猛冲，造成<c=#ffacff>85%</c>伤害，最多冲刺2次。"
+  },
+  {
+   "name": "八夤诛猎",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "西格德原地蓄力，施放大范围戕灭神斩，连续造成<c=#ffacff>50%,30%,10%,5%,2.5%</c>伤害。"
+  },
+  {
+   "name": "昏罔深蚀",
+   "type": "天赋",
+   "icon": "skill-4.webp",
+   "description": "狂猎之鸩已然入髓，西格德一阶段清空血条后不会死亡，转为<c=#ffdfbf>具有狂猎性质的二阶段</c>。整体性质与狂猎无异。"
+  },
+  {
+   "name": "业痴心魔",
+   "type": "召唤",
+   "icon": "skill-5.webp",
+   "description": "西格德从心膛掏出魔火，落地即召唤4个「荒野幽徒」，且造成<c=#b8b8b8>20%</c>伤害。"
+  },
+  {
+   "name": "执灯常明",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "执灯人之志深铭心底，召唤物出现17s后，西格德将其抓起，并如数殉灭，每个造成<c=#b8b8b8>200%</c>伤害，按照召唤物剩余生命上限为西格德恢复生命上限。"
+  },
+  {
+   "name": "缠心黑火",
+   "type": "远程",
+   "icon": "skill-7.webp",
+   "description": "西格德又从心膛掏出魔火，猛地丢出，造成<c=#b8b8b8>80%,16%,4%</c>伤害。"
+  },
+  {
+   "name": "惛然前赴",
+   "type": "位移",
+   "icon": "skill-8.webp",
+   "description": "西格德邪意上身，朝前方猛地冲刺两次，均造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "幽魂野行",
+   "type": "位移",
+   "icon": "skill-9.webp",
+   "description": "西格德化为幽雾，之后显现并给予一个怀抱，造成<c=#b8b8b8>80%</c>伤害。"
+  },
+  {
+   "name": "迷魊游猎",
+   "type": "输出",
+   "icon": "skill-10.webp",
+   "description": "西格德朝前方猛猛抓划2-3次，依次造成<c=#b8b8b8>70%,70%,80%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "临界状态",
+   "desc": "见「荒野幽徒」。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1115",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 2,
+   "atk": 28719,
+   "weight": 99,
+   "tenacity": 150
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 2,
+   "hpNote": "21%",
+   "atk": 13542,
+   "atkNote": "50%",
+   "weight": 99,
+   "tenacity": 150
+  }
+ ],
+ "leyline": {
+  "name": "历经百战的执灯人·哀恸回响",
+  "nameEn": "Battle-Hardened Lightkeeper: Mourning Echoes",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 459197,
+    "atk": 10467,
+    "multiplier": 1.2,
+    "advantage": ""
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 2288131,
+    "atk": 13542,
+    "multiplier": 4.0,
+    "advantage": ""
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 3307214,
+    "atk": 14905,
+    "multiplier": 5.0,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 8109043,
+    "atk": 15965,
+    "multiplier": 11.2,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "正常",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   }
+  ],
+  "skills": [
+   {
+    "name": "业痴心魔",
+    "type": "召唤",
+    "icon": "leyline-skill-1.webp",
+    "description": "执灯人从心膛掏出魔火，丢在面前，落地召唤<c=#ffdfbf>2</c>个「荒野幽徒」，且造成<c=#b8b8b8>20%</c>伤害。"
+   }
+  ],
+  "notes": [
+   {
+    "text": "悲余残念",
+    "desc": "执灯人一阶段处于「游荡」状态，不具有狂猎相关性质，将其第一条血清空后，可以令其陷入「狂猎」状态。\n执灯人转阶段的「失色哀恸」状态只<c=#ffdfbf>持续4s</c>。"
+   },
+   {
+    "text": "失色哀恸(临界状态)",
+    "desc": "若队伍不处于 <c=#99ff99>「满辉」</c>，则只能通过清空红血，才可使其陷入临界状态，从而继续削减生命上限，期间狂猎所受伤害的<c=#ffdfbf>65%</c>会用于削减上限；\n若队伍处于<c=#99ff99>「满辉」</c>，施放被「满辉」强化的技能，附近的狂猎会直接进入临界状态，期间狂猎所受伤害的<c=#ffdfbf>90%</c>会用于削减上限，注意该临界状态也只持续10s，并且不能中途续杯。\n狂猎<c=#ffdfbf>进入因清空红血所致的</c>临界状态时，会立即减少<c=#ffdfbf>10%</c>生命上限，此后每次进入状态都会额外削减<c=#ffdfbf>8%</c>生命上限，即：第一次清空红血会立即削减<c=#ffdfbf>10%</c>生命上限，第二次<c=#ffdfbf>18%</c>，第三次<c=#ffdfbf>26%</c>……以此类推。"
+   },
+   {
+    "text": "荒野幽徒",
+    "desc": "共2只，每只为执灯人<c=#ffbfbf>2/15生命值</c>。「荒野幽徒」的<c=#ffdfbf>15%生命上限</c>用于<c=#ffdfbf>回复</c>执灯人自身的生命上限；若召唤物生命上限已遭削减，则取其<c=#ffdfbf>7.5%生命上限</c>作为回复；执灯人单次最高回复上限<c=#ffdfbf>不超过30%生命值</c>。"
+   }
+  ],
+  "shields": []
+ },
+ "id": "sigurd",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇",
+  "幽境危战",
+  "历经百战"
+ ]
+}

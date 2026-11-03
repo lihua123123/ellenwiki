@@ -1,0 +1,130 @@
+{
+ "name": "深渊使徒·激流",
+ "nameEn": "Abyss Herald: Wicked Torrents",
+ "subtitle": "操纵激流的漆黑先兆",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 108.672,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "流刃于形",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "激流使用双手上的水刀进行2/3/5段的普通攻击，全五段普通攻击依次造成<c=#7fbfff>25%,25%,35%,35%,50%</c>伤害。\n不同阶段下，施放方式也不同：\n前3(<c=#99b2ff>阶段1-4</c>)，前2(<c=#99b2ff>阶段1-3</c>)，\n后3(<c=#99b2ff>阶段3-4</c>)，全5(<c=#99b2ff>阶段4</c>)。"
+  },
+  {
+   "name": "暗渊卷潮",
+   "type": "碾压",
+   "icon": "skill-2.webp",
+   "description": "激流不断旋转自身进行攻击，造成<c=#7fbfff>40%,20%,10%</c>伤害，旋转完毕后停下，重复1-4次。\n处在第几阶段就旋转几次。"
+  },
+  {
+   "name": "交织滞流",
+   "type": "妨害",
+   "icon": "skill-3.webp",
+   "description": "激流劈出十字水刃，造成<c=#7fbfff>25%</c>伤害，命中造成<c=#00bfff>「暗潮」</c>效果：\n命中角色后，若其任意技能正在CD状态，并且未被护盾有效庇护，则将其<c=#72ffb8>CD额外延长6s</c>。1s内至多触发一次效果。"
+  },
+  {
+   "name": "刃行泉涌",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "激流使用水刀连续斩出1-2道水刃，造成<c=#7fbfff>50%</c>伤害，若近处被水刀命中则造成<c=#7fbfff>25%</c>伤害。\n不同阶段下，施放方式也不同：\n1段(<c=#99b2ff>阶段1</c>)，2段(<c=#99b2ff>阶段2-3</c>)，\n2段连续2次(<c=#99b2ff>阶段4</c>)。"
+  },
+  {
+   "name": "濯渊之水",
+   "type": "防护",
+   "icon": "skill-5.webp",
+   "description": "当激流的生命值<c=#ffbfbf>低于20%</c>时，踉跄并释放大范围的水爆，造成<c=#7fbfff>100%</c>伤害，并附属<c=#7fbfff>`渊源加护`</c>，使用<c=#99ff86>草</c>和<span class=\"cryo\">**冰**</span>破盾有奇效，盾破后激流立即死亡。"
+  },
+  {
+   "name": "浪斩八方",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "激流不断在原地街舞，不断的摆姿势，当摆到第八个姿势时，从8个方向发射水刃，造成<c=#7fbfff>25%</c>伤害，水刃命中同样造成<c=#00bfff>「暗潮」</c>效果。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "渊源加护",
+   "desc": "<c=#7fbfff>36水</c>盾，击破后激流立即死亡，可伤害转化。该状态下，抗打断0，免疫风场力。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "渊源加护",
+   "description": "<c=#7fbfff>36水</c>盾，击破后激流立即死亡，可伤害转化。该状态下，抗打断0，免疫风场力。",
+   "elementType": "Water",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:A_3302",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 294121,
+   "atk": 14773,
+   "weight": 150,
+   "tenacity": 840
+  }
+ ],
+ "leyline": null,
+ "id": "abyss-herald-wicked-torrents",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

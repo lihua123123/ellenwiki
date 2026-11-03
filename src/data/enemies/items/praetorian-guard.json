@@ -1,0 +1,151 @@
+{
+ "name": "魔像禁卫",
+ "nameEn": "Praetorian Guard",
+ "subtitle": "黄金乐章的守卫者",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 54.336,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "带甲起身",
+   "pyro": 260,
+   "hydro": 260,
+   "anemo": 260,
+   "electro": 260,
+   "dendro": 260,
+   "cryo": 260,
+   "geo": 260,
+   "physical": 260
+  },
+  {
+   "name": "带甲",
+   "pyro": 60,
+   "hydro": 60,
+   "anemo": 60,
+   "electro": 60,
+   "dendro": 60,
+   "cryo": 60,
+   "geo": 60,
+   "physical": 60
+  },
+  {
+   "name": "破甲",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "于剑戈舞",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "禁卫进行2段普通攻击，其依次造成<c=#ff9999>50%,80%</c>伤害。"
+  },
+  {
+   "name": "于地焦炎",
+   "type": "猛攻",
+   "icon": "skill-2.webp",
+   "description": "禁卫架势，举起大剑，朝下一劈，造成<c=#ff9999>100%</c>伤害。"
+  },
+  {
+   "name": "于音残响",
+   "type": "定点",
+   "icon": "skill-3.webp",
+   "description": "禁卫将剑插入地面，在玩家处召唤魔音，持续鼓动造成<c=#ff9999>40%</c>伤害，鼓动数次后爆裂，造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "于焰斫毁",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "禁卫架起大剑，旋转3圈并朝玩家移动，其依次造成<c=#ff9999>60%,80%,100%</c>伤害。"
+  },
+  {
+   "name": "于锷具形",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "禁卫用力劈出一刀，产生火刃，造成<c=#ff9999>80%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "白石之躯",
+   "desc": "<c=#ffe599>12岩</c>盾，击破后将瘫痪8s。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "白石之躯",
+   "description": "<c=#ffe599>12岩</c>盾，击破后将瘫痪8s。",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1113",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 221840,
+   "atk": 12311,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "praetorian-guard",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

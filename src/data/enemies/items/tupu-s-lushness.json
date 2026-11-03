@@ -1,0 +1,140 @@
+{
+ "name": "图普的繁茂",
+ "nameEn": "Tupu’s Lushness",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1385.568,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 138.16,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "霆斥",
+   "pyro": 210,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 250,
+   "dendro": 210,
+   "cryo": 210,
+   "geo": 210,
+   "physical": 210
+  },
+  {
+   "name": "虚弱",
+   "pyro": -40,
+   "hydro": -40,
+   "anemo": -40,
+   "electro": -40,
+   "dendro": -40,
+   "cryo": -40,
+   "geo": -40,
+   "physical": -40
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "落翼华珠",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "「繁茂」飞快使用自身翼片旋转，造成<c=#ffacff>20%x3</c>伤害，并在攻击范围边缘产生8道落雷，均造成<c=#ffacff>30%</c>伤害，之后场地内缘落下相同的6道落雷，在其位置形成6枚「夜祝晶球」，一段时间后将其吸收。"
+  },
+  {
+   "name": "谴谶荒雷",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "「繁茂」甩下8道线性落雷，向8个方向劈，造成<c=#ffacff>30%,15%,7.5%</c>伤害，最多重复3次。"
+  },
+  {
+   "name": "净罪囚霆",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "「繁茂」在身边唤出5枚闪雷球，并慢慢旋转，触碰持续造成<c=#ffacff>10%,5%,2.5%,1%</c>伤害，最终闪雷球被引爆，造成<c=#ffacff>70%</c>伤害。"
+  },
+  {
+   "name": "碎灵愆钧",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "「繁茂」闪至场地中央，开始蓄力，期间触碰周身将持续造成<c=#ffacff>30%</c>伤害，从玩家后方外围开始顺时针生成「夜祝晶球」并快速飞向「繁茂」，26s后爆发，<c=#ffbfbf>秒杀</c>未被「巡礼护盾」庇护的在场角色，持续5s。"
+  },
+  {
+   "name": "夜域祝颂",
+   "type": "天赋",
+   "icon": "",
+   "description": "场地内存在「夜祝晶球」。「繁茂」吸收晶球时，每1枚会给予其<c=#ffecbf>1/6</c>的`雷元素护罩`；\n玩家吸收晶球达<c=#ffbfbf>6</c>枚时，将生成能够抵消「霆斥」的夜域祭场，持续20s；\n达<c=#ffbfbf>10</c>枚时，生成「巡礼护盾」，持续15s；另外每吸收一枚「夜祝晶球」，都会补满燃素。\n继续吸收晶球时，将产生冲击波，每次对「繁茂」造成<c=#ffbfbf>5%</c>生命值的真伤，且扣除<c=#ffdfbf>1/6</c>的雷元素护罩。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "雷元素护罩",
+   "desc": "<c=#ffacff>120雷</c>盾，吸收夜祝晶球恢复1/6，受夜祝晶球冲击波-1/6。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "雷元素护罩",
+   "description": "<c=#ffacff>120雷</c>盾，吸收夜祝晶球恢复1/6，受夜祝晶球冲击波-1/6。",
+   "elementType": "Electric",
+   "duration": 20
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:B_1111",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "夜魂试炼",
+   "level": 103,
+   "hp": 6215380,
+   "atk": 28719,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "tupu-s-lushness",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

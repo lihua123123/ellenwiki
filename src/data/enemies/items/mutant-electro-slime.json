@@ -1,0 +1,124 @@
+{
+ "name": "变异雷史莱姆",
+ "nameEn": "Mutant Electro Slime",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 52.752,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": "IMM",
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "电流泄溢",
+   "type": "妨害",
+   "icon": "skill-1.webp",
+   "description": "变异雷史莱姆周期性的放电，每次放电消耗<c=#ffacff>1雷</c>电量，造成<c=#ffacff>33.3%</c>伤害。"
+  },
+  {
+   "name": "酥麻撞击",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "在变异雷史莱姆面前时，大型雷史莱姆撞击玩家，造成<c=#ffacff>33.3%</c>伤害，没电状态则造成<c=#b8b8b8>33.3%</c>伤害。"
+  },
+  {
+   "name": "电浆坠地",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "变异雷史莱姆起跳，重重下落，造成<c=#ffacff>100%</c>伤害，没电状态则造成<c=#b8b8b8>66.6%</c>伤害。\n<c=#eb59f2>强攻强化：\n</c>该技能的使用更加频繁。"
+  },
+  {
+   "name": "高压电弧",
+   "type": "充能",
+   "icon": "skill-4.webp",
+   "description": "变异雷史莱姆放电时，会向周围异色的史莱姆产生电弧，造成<c=#ffacff>33.3%</c>伤害，并强制使其放电一次。"
+  },
+  {
+   "name": "芒灿之雷",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "变异雷史莱姆附属`电量`，耗尽后进入没电状态，一段时间或受到任意<c=#df99ff>雷元素</c>伤害后(可无元素附着)，会充满电。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "电量",
+   "desc": "<c=#ffacff>8雷</c>盾，耗尽后转为没电状态，一段时间后恢复。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "电量",
+   "description": "<c=#ffacff>8雷</c>盾，耗尽后转为没电状态，一段时间后恢复。",
+   "elementType": "Electric",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:A_1103",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 73530,
+   "atk": 10341,
+   "weight": 100,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "mutant-electro-slime",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

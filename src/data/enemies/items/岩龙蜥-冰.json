@@ -1,0 +1,135 @@
+{
+ "name": "岩龙蜥·冰",
+ "nameEn": "Geovishap",
+ "subtitle": "坚若磐石的岩生猛兽",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 108.672,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 50,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "汲取赤炎",
+   "type": "强化",
+   "icon": "skill-1.webp",
+   "description": "岩龙蜥汲取<c=#ff9999>火元素</c>，<c=#ff9999>火抗+20%</c>，此后的所有攻击均附带<c=#ff9999>火元素附魔</c>，同时攻击倍率提升；下落时会产生额外的地刺造成伤害。"
+  },
+  {
+   "name": "汲取雳电",
+   "type": "强化",
+   "icon": "skill-2.webp",
+   "description": "岩龙蜥汲取<c=#ffacff>雷元素</c>，<c=#ffacff>雷抗+20%</c>，此后的所有攻击均产生一定数量的游离雷球，游离的雷球触碰即造成<c=#ffacff>30%</c>伤害。"
+  },
+  {
+   "name": "汲取清涟",
+   "type": "强化",
+   "icon": "skill-3.webp",
+   "description": "岩龙蜥汲取<c=#7fbfff>水元素</c>，<c=#7fbfff>水抗+20%</c>，此后岩龙蜥进行攻击时即会给玩家施加水环，水环同步于玩家，5s后水环爆破，造成<c=#7fbfff>25%</c>伤害。"
+  },
+  {
+   "name": "汲取霜霰",
+   "type": "强化",
+   "icon": "skill-4.webp",
+   "description": "岩龙蜥汲取<span class=\"cryo\">**冰元素**</span>，<span class=\"cryo\">**冰抗+20%**</span>，此后岩龙蜥进行攻击时会在其附近产生冰簇，冰簇会在触碰或5s后爆破，造成<span class=\"cryo\">**35%**</span>伤害。"
+  },
+  {
+   "name": "左右开攻",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "岩龙蜥使用双爪抓划一次，右爪造成<c=#ffe599>40%</c>伤害，左爪造成<c=#ffe599>50%</c>伤害。\n<c=#ff794c>赤炎：</c>右爪划击和左爪抓划连续进行，分别造成<c=#ff9999>50%,60%</c>伤害；\n<c=#cc99ff>雳电：</c>左爪抓划产生2个对向的雷球；\n<c=#79b6f8>清涟：</c>左爪抓划即施加水环；\n<c=#77ebf8>霜霰：</c>左爪抓划在周围产生3个冰簇。"
+  },
+  {
+   "name": "龙势维卷",
+   "type": "强攻",
+   "icon": "skill-6.webp",
+   "description": "岩龙蜥蜷缩身子向玩家冲去，造成对应元素的<c=#ffffbf>30%</c>伤害，若命中玩家，则立即进行下落攻击造成<c=#ffe599>85%</c>伤害。冲刺期间<c=#bfffec>碰到护盾</c>则会眩晕。\n<c=#ff794c>赤炎：</c>下落攻击造成<c=#ff9999>100%</c>伤害，产生地刺造成<c=#ff9999>70%</c>伤害。\n<c=#cc99ff>雳电：</c>下落产生3个雷球；\n<c=#79b6f8>清涟：</c>下落即施加水环；\n<c=#77ebf8>霜霰：</c>下落在周围产生3个冰簇。"
+  },
+  {
+   "name": "高效作战",
+   "type": "输出",
+   "icon": "skill-7.webp",
+   "description": "岩龙蜥进行两次不同的下落攻击，第一次跳起下落造成<c=#ffe599>40%</c>伤害，第二次跳起下落造成<c=#ffe599>60%</c>伤害，第二次比第一次范围更大，时间更短。\n<c=#ff794c>赤炎：</c>两次下落分别造成<c=#ff9999>50%,70%</c>伤害，每次下落会产生地刺，再次造成相同的伤害。\n<c=#cc99ff>雳电：</c>第一次下落产生3个雷球，第二次下落产生4个雷球；\n<c=#79b6f8>清涟：</c>第一次下落即施加水环；\n<c=#77ebf8>霜霰：</c>每次下落在周围产生3个冰簇。"
+  },
+  {
+   "name": "岩蕨棘生",
+   "type": "追踪",
+   "icon": "skill-8.webp",
+   "description": "岩龙蜥进行左、右、砸3段攻击，每段均产生持续4段的追踪地刺波，接触造成<c=#ffe599>16.5%</c>伤害。\n<c=#ff794c>赤炎：</c>每段产生持续4段的追踪熔岩地刺波，接触造成<c=#ff9999>25%</c>伤害。\n<c=#cc99ff>雳电：</c>左捶、右捶产生1个雷球，捶地产生4个雷球；\n<c=#79b6f8>清涟：</c>左捶即施加水环；\n<c=#77ebf8>霜霰：</c>3段攻击分别在其右侧、左侧、前侧产生3个冰簇。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "机制",
+   "desc": "岩龙蜥入战半分钟，或生命值低于40%后，将会汲取本征元素，汲取元素后，对应元素的抗性提升<c=#ffbfbf>20%</c>，且抗打断0。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 294121,
+   "atk": 14773,
+   "weight": 150,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "岩龙蜥-冰",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

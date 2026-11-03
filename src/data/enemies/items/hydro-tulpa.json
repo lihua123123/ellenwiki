@@ -1,0 +1,292 @@
+{
+ "name": "水形幻人",
+ "nameEn": "Hydro Tulpa",
+ "subtitle": "苏醒的生命",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 298.848,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 125.60000000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": "IMM",
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "强化",
+   "pyro": 55,
+   "hydro": "IMM",
+   "anemo": 55,
+   "electro": 55,
+   "dendro": 55,
+   "cryo": 55,
+   "geo": 55,
+   "physical": 55
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "濯涟梭枪",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "幻人扔出纯水制成的标枪，落地造成<c=#7fbfff>60%</c>伤害，可连续施放3次；\n<c=#9999ff>半幻人强化：</c>伤害倍率提升，造成<c=#7fbfff>90%</c>伤害。"
+  },
+  {
+   "name": "涤浸青刃",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "幻人挥舞纯水制成的短刀，进行2次攻击，依次造成<c=#7fbfff>60%,65%</c>伤害；\n<c=#9999ff>半幻人强化：</c>伤害倍率提升，挥舞造成<c=#7fbfff>90%,95%</c>伤害。"
+  },
+  {
+   "name": "净域洄榔",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "幻人旋转纯水制成的榔锤，进行3次攻击，依次造成<c=#7fbfff>60%,62.5%,65%</c>伤害；\n<c=#9999ff>半幻人强化：</c>伤害倍率提升，挥舞造成<c=#7fbfff>90%,92.5%,95%</c>伤害。"
+  },
+  {
+   "name": "幻泉终拳",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "幻人用左手拍向玩家，造成<c=#7fbfff>50%</c>伤害。"
+  },
+  {
+   "name": "幻蜃化溶",
+   "type": "强化",
+   "icon": "skill-5.webp",
+   "description": "每12.5s，水形幻人会在随机位置召唤一只`半幻人`，最多存在3个；\n在战斗中水形幻人会随机吸收一只半幻人，获得强化：<c=#ffcdbf>全抗性提升45%</c>，伤害倍率提升30%，施放1-2个技能后结束<c=#cebfff>(纳齐森科鲁兹无需吸收，原地强化)</c>。"
+  },
+  {
+   "name": "钦罪之雨",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "幻人溅起澜海激潮，在场地内下起小雨，造成<c=#7fbfff>20%</c>伤害；溅起的潮水凝结成3-4把水枪，并一起在自身周围降下，造成<c=#7fbfff>100%</c>伤害。"
+  },
+  {
+   "name": "泉涌弹飞",
+   "type": "远程",
+   "icon": "skill-7.webp",
+   "description": "半幻人发射一枚弱追踪性的水弹，造成半幻人<c=#7fbfff>50%</c>攻击力的伤害。"
+  },
+  {
+   "name": "抚掌及地",
+   "type": "输出",
+   "icon": "skill-8.webp",
+   "description": "半幻人用一侧的肢体击地，造成半幻人<c=#7fbfff>100%</c>攻击力的伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "半幻人",
+   "desc": "<c=#7fbfff>1水</c>盾，击破后立即死亡，可伤害转化(4倍)；半幻人继承水形幻人20%的攻击力。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "半幻人",
+   "description": "<c=#7fbfff>1水</c>盾，击破后立即死亡，可伤害转化(4倍)；半幻人继承水形幻人20%的攻击力。",
+   "elementType": "Water",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:A_3302",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1340572,
+   "atk": 26108,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": {
+  "name": "水形幻人·极旋湍流",
+  "nameEn": "Hydro Tulpa: Turbulent Vortex",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 1042556,
+    "atk": 15225,
+    "multiplier": 1.2,
+    "advantage": ""
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 5194944,
+    "atk": 19698,
+    "multiplier": 4.0,
+    "advantage": "Pyro Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 7658830,
+    "atk": 21681,
+    "multiplier": 5.1,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 17260003,
+    "atk": 23222,
+    "multiplier": 10.5,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "正常",
+    "pyro": 10,
+    "hydro": "IMM",
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   },
+   {
+    "name": "吸收",
+    "diffNote": "N5",
+    "pyro": 210,
+    "hydro": "IMM",
+    "anemo": 210,
+    "electro": 210,
+    "dendro": 210,
+    "cryo": 210,
+    "geo": 210,
+    "physical": 210
+   },
+   {
+    "name": "强化",
+    "pyro": 55,
+    "hydro": "IMM",
+    "anemo": 55,
+    "electro": 55,
+    "dendro": 55,
+    "cryo": 55,
+    "geo": 55,
+    "physical": 55
+   }
+  ],
+  "skills": [
+   {
+    "name": "濯漾梭枪",
+    "type": "远程",
+    "icon": "leyline-skill-1.webp",
+    "description": "幻人扔出纯水制成的标枪，落地造成<c=#7fbfff>60%</c>伤害，并产生内外2层激波，造成<c=#7fbfff>60%</c>伤害，可连续施放3次；\n<c=#9999ff>强化：</c>伤害倍率提升，造成<c=#7fbfff>90%</c>伤害。"
+   },
+   {
+    "name": "涤浸青刃",
+    "type": "输出",
+    "icon": "leyline-skill-2.webp",
+    "description": "幻人挥舞纯水制成的短刀，进行2次攻击，依次造成<c=#7fbfff>60%,65%</c>伤害；第一段攻击产生剑气，造成<c=#7fbfff>50%</c>伤害。\n<c=#9999ff>强化：</c>伤害倍率提升，挥舞造成<c=#7fbfff>90%,95%</c>伤害。"
+   },
+   {
+    "name": "净域洄榔",
+    "type": "输出",
+    "icon": "leyline-skill-3.webp",
+    "description": "幻人旋转纯水制成的榔锤，进行3次攻击，依次造成<c=#7fbfff>60%,62.5%,65%</c>伤害；第三段攻击产生激波，造成<c=#7fbfff>90%</c>伤害。<c=#9999ff>强化：</c>伤害倍率提升，挥舞造成<c=#7fbfff>90%,\n92.5%,95%</c>伤害，不产生激波。"
+   },
+   {
+    "name": "坏蔑锋雨",
+    "type": "必杀技 (N5)",
+    "icon": "leyline-skill-4.webp",
+    "description": "幻人蓄力，附属`白盾`；幻人掀起澜海激潮，在场地内下起小雨，造成<c=#7fbfff>20%</c>伤害；12s后白盾消失，溅起的潮水凝结成3把水枪，并一起在自身周围降下，造成<c=#7fbfff>100%</c>伤害，并产生一道冲击波引爆所有半幻人，造成<c=#7fbfff>100%</c>伤害，冲击波将会<c=#ffbfbf>秒杀</c>在场非无敌状态的角色，持续5s。"
+   }
+  ],
+  "notes": [
+   {
+    "text": "半幻人",
+    "desc": "1水盾，击破后消失；允许伤害转换(4倍)；半幻人继承幻人20%的攻击力和12%生命值，每15s生成一只半幻人。\n<c=#ffbfbf>(N5)</c> 12水盾，击破后消失，或被<span class=\"cryo\">**冻结**</span>/<c=#ffe599>石化</c>后立即消失；半幻人继承幻人34.83%的攻击力和<c=#ffdfbf>8.54%</c>生命值，每30s生成2只半幻人。"
+   },
+   {
+    "text": "(N5) 白盾",
+    "desc": "厚度为水形幻人<c=#ffdfbf>8.85%</c>生命值，破坏后扣除幻人护盾等量生命值。\n展开白盾时，重置我方所有角色的元素战技和元素爆发的CD，恢复所有角色的元素能量与特殊能量。"
+   },
+   {
+    "text": "强化状态",
+    "desc": "场上存在半幻人时，水形幻人会尝试吸收它们，进入15~25s的强化状态， 吸收期间及之后全抗提升<c=#ffdfbf>45%</c>，技能伤害得到提升，\n<c=#ffbfbf>(N5)</c><c=#7fbfff> </c>吸收期间及之后全抗提升<c=#ffdfbf>200%</c>，且恢复<c=#ffdfbf>12.5%</c>生命值，吸收<c=#ffdfbf>1</c>/<c=#ffdfbf>2</c>只半幻人时，强化状态持续<c=#ffdfbf>15s</c>/<c=#ffdfbf>20s</c>。"
+   },
+   {
+    "text": "(N5) 位移",
+    "desc": "水形幻人不会移动，只会待在场地中央。"
+   }
+  ],
+  "shields": [
+   {
+    "name": "半幻人",
+    "description": "1水盾，击破后消失；允许伤害转换(4倍)；半幻人继承幻人20%的攻击力和12%生命值，每15s生成一只半幻人。\n<c=#ffbfbf>(N5)</c> 12水盾，击破后消失，或被<span class=\"cryo\">**冻结**</span>/<c=#ffe599>石化</c>后立即消失；半幻人继承幻人34.83%的攻击力和<c=#ffdfbf>8.54%</c>生命值，每30s生成2只半幻人。",
+    "elementType": "Water",
+    "duration": 5
+   },
+   {
+    "name": "(N5) 白盾",
+    "description": "厚度为水形幻人<c=#ffdfbf>8.85%</c>生命值，破坏后扣除幻人护盾等量生命值。\n展开白盾时，重置我方所有角色的元素战技和元素爆发的CD，恢复所有角色的元素能量与特殊能量。",
+    "elementType": "",
+    "duration": ""
+   }
+  ]
+ },
+ "id": "hydro-tulpa",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命",
+  "幽境危战"
+ ]
+}

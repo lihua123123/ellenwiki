@@ -1,0 +1,101 @@
+{
+ "name": "厄灵·炎之魔蝎",
+ "nameEn": "Spirit of Omen: Pyro Scorpion",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 17.930880000000002,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": -50,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "热焰天坠",
+   "type": "协同爆发",
+   "icon": "skill-1.webp",
+   "description": "炽沙叙事人与炎之魔蝎一同进行：炎之魔蝎钻入地面，钻出，进行冲刺，再钻入地面，最后从高处坠落，以上5个过程分别造成<c=#ff9999>50%,60%,80%,50%,100%</c>伤害；炽沙叙事人则施放「炙炎针刺」。"
+  },
+  {
+   "name": "熔岩螯针",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "炎之魔蝎使用尾部扔出一枚带追踪性的尾弹，命中爆炸，造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "赤盘指针",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "炎之魔蝎旋转前爪进行冲刺攻击，造成<c=#ff9999>80%</c>伤害，再用尾部扎地，也造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "燹窝深掘",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "炎之魔蝎钻入地面，造成<c=#ff9999>50%</c>伤害，2s后钻出进行冲刺，钻出造成<c=#ff9999>60%</c>伤害，冲刺造成<c=#ff9999>80%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 73207,
+   "atk": 9849,
+   "weight": 150,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "spirit-of-omen-pyro-scorpion",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

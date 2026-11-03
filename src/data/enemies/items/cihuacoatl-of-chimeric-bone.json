@@ -1,0 +1,140 @@
+{
+ "name": "嵌合神骨的蛇姬",
+ "nameEn": "Cihuacoatl of Chimeric Bone",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 719.952,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 87.92,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "驻空",
+   "pyro": 110,
+   "hydro": 110,
+   "anemo": 110,
+   "electro": 110,
+   "dendro": 110,
+   "cryo": 110,
+   "geo": 110,
+   "physical": 80
+  },
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "质量相当",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "蛇姬拿着炮筒进行划、砸2段攻击，分别造成<c=#b8b8b8>50%,70%</c>伤害。"
+  },
+  {
+   "name": "如雾种实",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "蛇姬扔出钩锁进行一段位移，立即接开炮发射8枚籽弹，每枚籽弹造成<c=#99ff85>30%,15%,7.5%,3%</c>伤害。"
+  },
+  {
+   "name": "芳蕴礼弹",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "距离较远时，蛇姬将装弹炮筒，发射1枚迫击草球，造成<c=#99ff85>80%</c>伤害。"
+  },
+  {
+   "name": "走心离火",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "蛇姬驱使灵力，迂旋炮筒造成<c=#99ff85>80%</c>伤害，接着捶地，促使炮筒喷出9枚草球，每枚草球造成<c=#99ff85>100%,50%</c>伤害。技能施放后在空中凝聚3枚`钩爪`。"
+  },
+  {
+   "name": "浮索远驻",
+   "type": "远程",
+   "icon": "skill-5.webp",
+   "description": "蛇姬借助钩爪进行空战，会连续发射最多6枚草球进行攻击，每枚草球造成<c=#99ff85>66%</c>伤害。攻击后会移到其他钩爪处。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "钩爪",
+   "desc": "<c=#99ff85>5草</c>盾，一共3枚，击破蛇姬所在钩爪可使其坠落瘫痪；一段时间后也会自行消失。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "钩爪",
+   "description": "<c=#99ff85>5草</c>盾，一共3枚，击破蛇姬所在钩爪可使其坠落瘫痪；一段时间后也会自行消失。",
+   "elementType": "Grass",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "夜魂试炼",
+   "level": 103,
+   "hp": 3229561,
+   "atk": 18275,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "cihuacoatl-of-chimeric-bone",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

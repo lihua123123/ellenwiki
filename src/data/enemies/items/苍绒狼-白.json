@@ -1,0 +1,82 @@
+{
+ "name": "苍绒狼·白",
+ "nameEn": "Pale-Furred Wolf",
+ "subtitle": "",
+ "category": "Animals",
+ "categoryLabel": "动物",
+ "tier": "Animal",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "狼之本性",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "苍绒狼进行一次扑咬，造成<c=#b8b8b8>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "动物-白狼",
+   "level": 100
+  },
+  {
+   "label": "动物-黑狼",
+   "level": 100,
+   "hp": 66552,
+   "atk": 4924,
+   "weight": 80,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "苍绒狼-白",
+ "icon": "avatar.webp",
+ "tags": [
+  "动物"
+ ]
+}

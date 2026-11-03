@@ -1,0 +1,84 @@
+{
+ "name": "智勇双拳·罗西莫夫",
+ "nameEn": "Roussimoff",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 135.84,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 60.288,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "碎拳连击",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "罗西莫夫用右手连续出拳2次，均造成<c=#b8b8b8>50%</c>伤害。"
+  },
+  {
+   "name": "重拳一记",
+   "type": "猛攻",
+   "icon": "skill-2.webp",
+   "description": "罗西莫夫蓄力发动一拳，造成<c=#b8b8b8>400%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通-智勇双拳",
+   "level": 100,
+   "hp": 554600,
+   "atk": 11819,
+   "weight": 100,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "roussimoff",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "name": "木盾丘丘人",
+ "nameEn": "Wooden Shield Hilichurl",
+ "subtitle": "",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 22.608,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "木棍子敲",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "木棍存在时，`木盾`丘丘人使用木棍击打，造成<c=#b9b9b9>100%</c>伤害。该`木棍`可被<c=#ff9999>烧毁</c>。"
+  },
+  {
+   "name": "木棒子舞",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "木盾毁坏但木棍存在时，木盾丘丘人快速使用木棍进行连续3段挥舞攻击，每段依次造成<c=#b9b9b9>100%,100%,125%</c>伤害。"
+  },
+  {
+   "name": "跳蹦子打",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "木盾毁坏但木棍存在时，木盾丘丘人跳起来用力砸地，造成<c=#b9b9b9>200%</c>伤害并击飞玩家。"
+  },
+  {
+   "name": "卵石子蹦",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "木棍毁坏时，木盾丘丘人朝玩家扔石子，造成<c=#b9b9b9>50%</c>伤害。"
+  },
+  {
+   "name": "掌掴子搭",
+   "type": "反击",
+   "icon": "skill-5.webp",
+   "description": "木盾和木棍均毁坏后，木盾丘丘人抓玩家，造成<c=#b9b9b9>75%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "木盾",
+   "desc": "2木盾，可伤害转化。持盾与格挡下，抗打断0.65。"
+  },
+  {
+   "text": "木棍",
+   "desc": "12木盾，不可再生。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "木盾",
+   "description": "2木盾，可伤害转化。持盾与格挡下，抗打断0.65。",
+   "elementType": "Wood",
+   "duration": ""
+  },
+  {
+   "name": "木棍",
+   "description": "12木盾，不可再生。",
+   "elementType": "Wood",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 36765,
+   "atk": 4432,
+   "weight": 75,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "wooden-shield-hilichurl",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

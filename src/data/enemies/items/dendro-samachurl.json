@@ -1,0 +1,107 @@
+{
+ "name": "草丘丘萨满",
+ "nameEn": "Dendro Samachurl",
+ "subtitle": "",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 50,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "祸草毒雾",
+   "type": "妨害",
+   "icon": "skill-1.webp",
+   "description": "草萨满在玩家处生成一片草领域，使处于其中的所有目标每0.5s附着1.6单位<c=#99ff85>草元素</c>，无伤害。\n<c=#00ff7f>支援强化：\n</c>草领域的周围会生成3个荆棘丛，短时间后会转变为更大的草领域。"
+  },
+  {
+   "name": "荆缠棘蔓",
+   "type": "天赋",
+   "icon": "skill-2.webp",
+   "description": "草萨满立即在玩家处生成3个一组的荆棘丛，接触造成<c=#b8b8b8>100%</c>`荆棘丛`攻击力的伤害，可被烧毁。\n<c=#00ff7f>攻击强化：\n</c>召唤的荆棘丛数量提升。"
+  },
+  {
+   "name": "萨满杖击",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "距离玩家较近时，草萨满挥杖击飞玩家，造成<c=#b8b8b8>100%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "荆棘丛",
+   "desc": "<c=#99ff85>1.2木</c>盾，可被烧毁，攻击力恒定10。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "荆棘丛",
+   "description": "<c=#99ff85>1.2木</c>盾，可被烧毁，攻击力恒定10。",
+   "elementType": "Wood",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 36765,
+   "atk": 9849,
+   "weight": 75,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "dendro-samachurl",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

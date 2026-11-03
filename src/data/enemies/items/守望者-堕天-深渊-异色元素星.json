@@ -1,0 +1,39 @@
+{
+ "name": "守望者·堕天·深渊·异色元素星",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Common",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {
+   "Value": 54.336,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "id": "守望者-堕天-深渊-异色元素星",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

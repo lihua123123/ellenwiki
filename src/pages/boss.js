@@ -1,5 +1,5 @@
 /**
- * boss.js — 幽境 Boss 图鉴模块。
+ * boss.js — 幽境危战（周期挑战）图鉴模块。
  * 数据源：src/data/bosses.json（由 scripts/parse-boss.mjs 从 content/boss/幽境boss.md 生成）。
  * 卡片正面为机制，点击翻面查看介绍与背景；版本珠子串切换。
  */
@@ -155,7 +155,7 @@ export function initBossPage(root) {
   root.innerHTML = `
     <div class="boss-page scope-genshin">
       <header class="page-header boss-header">
-        <h1>幽境 Boss 图鉴</h1>
+        <h1>幽境危战</h1>
         <p class="page-subtitle">VERSION ARCHIVE · 点击卡片翻面查看介绍与背景</p>
         <div id="boss-version-tabs" class="tabs" role="tablist" aria-label="选择版本"></div>
       </header>

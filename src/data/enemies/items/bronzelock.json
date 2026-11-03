@@ -1,0 +1,134 @@
+{
+ "name": "铜锁",
+ "nameEn": "Bronzelock",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 652.0319999999999,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 175.84,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 4000,
+ "skills": [
+  {
+   "name": "近尾齿砌",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "靠近地巡时，地巡原地旋转一圈，使用尾部齿轮造成<c=#b8b8b8>60%</c>伤害。"
+  },
+  {
+   "name": "驱地动掘",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "靠近地巡时，地巡使用头部进行挑击，向左向右各一次，每次造成<c=#b8b8b8>60%</c>伤害。"
+  },
+  {
+   "name": "驱身前击",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "离地巡较远时，地巡暴露头部弱点，扭头冲撞过来，造成<c=#b8b8b8>80%</c>伤害，若命中玩家则原地旋转一圈，再造成<c=#b8b8b8>60%</c>伤害。"
+  },
+  {
+   "name": "嵌石之踵",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "靠近地巡时，地巡使用足部左右各跺一次，每次造成<c=#b8b8b8>50%</c>伤害。"
+  },
+  {
+   "name": "垂巡天坠",
+   "type": "位移",
+   "icon": "skill-5.webp",
+   "description": "远离地巡时，地巡利落的起跳落地，造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "散落洪流",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "地巡暴露头部弱点，使用两翼汲取元素力或阿索斯能量，向空中抛出13枚散弹，造成<c=#bfbfff>100%,30%,10%</c>对应属性伤害并清空元素螺栓。"
+  },
+  {
+   "name": "能量先导",
+   "type": "天赋",
+   "icon": "skill-7.webp",
+   "description": "地巡施放「散落洪流」<c=#ffb299>前</c>，会立即吸收合适属性填充`元素螺栓`，使下一次「散洪流落」技能附上对应属性伤害。瘫痪<c=#ffb299>不</c>清空螺栓及其的抗性。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "元素螺栓",
+   "desc": "储存元素力。以<c=#ffebbf>上一次清空螺栓开始</c>所受到的<c=#ff9999>总和最高</c>的<c=#ffebbf>伤害属性</c>为准，<c=#99ffcc>不吸收挂着的元素</c>，吸收完毕后该元素抗性<c=#ff9999>+120%</c>。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1115",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 2924885,
+   "atk": 36551,
+   "weight": 4000,
+   "tenacity": 20000
+  }
+ ],
+ "leyline": null,
+ "id": "bronzelock",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

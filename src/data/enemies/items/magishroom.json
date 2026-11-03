@@ -1,0 +1,151 @@
+{
+ "name": "蘑菇魔法使",
+ "nameEn": "Magishroom",
+ "subtitle": "",
+ "category": "Others",
+ "categoryLabel": "其他",
+ "tier": "Common",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 24.4512,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 54.25920000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 25,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "孢子炮弹",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "浮游草蕈兽发射1个草弹，造成<c=#99ff87>110%</c>伤害。"
+  },
+  {
+   "name": "生命藤蔓",
+   "type": "回复",
+   "icon": "skill-2.webp",
+   "description": "恢复当前场上生命值最低的友方灵蕈<c=#b8ff72>36%生命值</c>。"
+  },
+  {
+   "name": "飞花弹幕",
+   "type": "战技",
+   "icon": "skill-3.webp",
+   "description": "浮游草蕈兽快速连发6个草弹，每个造成<c=#99ff87>192%</c>伤害。"
+  },
+  {
+   "name": "孢子轻弹",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "浮游草蕈兽发射1个荒草弹，造成<c=#99ff87>300%</c>伤害。"
+  },
+  {
+   "name": "生机蔓延",
+   "type": "回复",
+   "icon": "skill-5.webp",
+   "description": "浮游草蕈兽每施放3次「孢子轻弹」，则恢复当前场上生命值最低的友方灵蕈<c=#b8ff72>30%生命值</c>。"
+  },
+  {
+   "name": "飞花集幕",
+   "type": "战技",
+   "icon": "skill-6.webp",
+   "description": "浮游草蕈兽快速连发5个草弹，每个造成<c=#99ff87>240%</c>伤害。"
+  },
+  {
+   "name": "荒草射弹",
+   "type": "远程",
+   "icon": "skill-7.webp",
+   "description": "浮游草蕈兽发射1个荒草弹，造成<c=#99ff86>300%</c>伤害。"
+  },
+  {
+   "name": "生机蔓延",
+   "type": "回复",
+   "icon": "skill-8.webp",
+   "description": "浮游草蕈兽每施放2次「荒草射弹」，则恢复当前场上生命值最低的友方灵蕈<c=#b8ff72>12%生命值</c>。"
+  },
+  {
+   "name": "飞花集幕",
+   "type": "战技",
+   "icon": "skill-9.webp",
+   "description": "浮游草蕈兽快速连发6个草弹，每个造成<c=#99ff86>200%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "3.5 灵蕈棋阵",
+   "desc": "150元素精通。"
+  },
+  {
+   "text": "4.2 小小灵蕈大幻戏",
+   "desc": "100元素精通，剧变反应系数1.5。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "友方-3.2智巧灵蕈",
+   "level": 90
+  },
+  {
+   "label": "普通敌方-3.2智巧灵蕈",
+   "level": 90,
+   "hp": 44520,
+   "atk": 6577,
+   "weight": 75,
+   "tenacity": 600
+  },
+  {
+   "label": "友方-3.5塔防灵蕈",
+   "level": 90
+  },
+  {
+   "label": "友方-4.2幻戏灵蕈",
+   "level": 90,
+   "hp": 77911,
+   "atk": 8222,
+   "weight": 75,
+   "tenacity": 600
+  }
+ ],
+ "leyline": null,
+ "id": "magishroom",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他"
+ ]
+}

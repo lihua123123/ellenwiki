@@ -1,0 +1,84 @@
+{
+ "name": "嵌合翼象兽",
+ "nameEn": "Chimeric Winged Elephant",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 30.14,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 20,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "零风细拂",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "翼象兽施放圆风弹进行攻击，造成<span class=\"anemo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "百涡一浪",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "翼象兽凝聚自身元素，结成一枚风晶，发射后追踪玩家，造成<span class=\"anemo\">**100%**</span>伤害。受<c=#bfccff>「星烁反应」</c>影响后中断技能，并掉落2枚<span class=\"anemo\">**风元素**</span>微粒，之后不再施放本技能。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "AP[0]",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 110920,
+   "atk": 5909,
+   "weight": 75,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "chimeric-winged-elephant",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

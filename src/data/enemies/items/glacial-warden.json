@@ -1,0 +1,130 @@
+{
+ "name": "凝冰戍卫",
+ "nameEn": "Glacial Warden",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 81.504,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 30,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "霜疾突拳",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "戍卫使用右手进行拳击，造成<span class=\"cryo\">**50%**</span>伤害，接着短暂蓄力后发出强力拳，造成<span class=\"cryo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "雪砌冰铓",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "戍卫凝成霜锤，进行2次的挥动攻击，依次造成<span class=\"cryo\">**60%,70%**</span>伤害。"
+  },
+  {
+   "name": "晶光雾华",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "距离较远时，戍卫结出3枚寒晶，迸射而来，造成<span class=\"cryo\">**80%,8%**</span>伤害。"
+  },
+  {
+   "name": "素尘扑影",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "戍卫凝成霜锤，将其击地，扬起雪尘，来回两次，均造成<span class=\"cryo\">**60%**</span>伤害。"
+  },
+  {
+   "name": "银瀑冬流",
+   "type": "猛攻",
+   "icon": "",
+   "description": "距离较远时，戍卫就着霜锤飞跃而来，重重落地造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "冰躯怜椁",
+   "type": "回复",
+   "icon": "",
+   "description": "戍卫在低于<c=#ffdfbf>50%生命值</c>时，会将自己封入「`冰棺`」，<c=#ffdfbf>16s</c>后解除，并恢复<c=#ffdfbf>50%生命值</c>，仅触发一次。受`星烁反应`影响，冰棺会更容易被<c=#ffacff>雷元素</c>/<span class=\"anemo\">**风元素**</span>破坏。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冰棺",
+   "desc": "16冻盾，击破会直接击败戍卫。「星烁反应」会使雷/风的相应反应消耗比变为1:4。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "冰棺",
+   "description": "16冻盾，击破会直接击败戍卫。「星烁反应」会使雷/风的相应反应消耗比变为1:4。",
+   "elementType": "Frozen",
+   "duration": 16
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "CP[66,33,0]",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 332760,
+   "atk": 14773,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "glacial-warden",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

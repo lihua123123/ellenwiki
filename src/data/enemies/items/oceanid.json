@@ -1,0 +1,161 @@
+{
+ "name": "纯水精灵",
+ "nameEn": "Oceanid",
+ "subtitle": "轻策的净水之主",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 190.176,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 113.04,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": "IMM",
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "林野百态",
+   "type": "召唤",
+   "icon": "skill-1.webp",
+   "description": "纯水精灵吐出1或2个水泡，水泡在平台上形成对应的纯水幻形。\n第三次及之后喷吐2个水泡。"
+  },
+  {
+   "name": "水土流失",
+   "type": "妨害",
+   "icon": "skill-2.webp",
+   "description": "纯水精灵砸向平台，使该平台沉入水下，被纯水精灵砸到造成<c=#7fbfff>50%</c>伤害。"
+  },
+  {
+   "name": "水刃漩涡",
+   "type": "蓄爆",
+   "icon": "skill-3.webp",
+   "description": "若长时间未击败纯水幻形，纯水精灵在玩家位置生成漩涡，持续造成<c=#7fbfff>50%</c>伤害，3s后爆炸，造成<c=#7fbfff>200%</c>伤害，以上伤害<c=#ffbfbf>闪避帧均无效</c>。"
+  },
+  {
+   "name": "凝幻水弹",
+   "type": "亡语",
+   "icon": "skill-4.webp",
+   "description": "幻形蛙或幻形雀被击败后，被消灭后产生水弹，爆炸造成等同于纯水精灵<c=#7fbfff>83.3%</c>攻击力的伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "纵向水刀",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "纯水精灵挥动左/右鳍部向下猛击，造成<c=#7fbfff>66.6%</c>伤害，二阶段后会在此位置产生水爆，造成<c=#7fbfff>66.6%</c>伤害。"
+  },
+  {
+   "name": "横向水刀",
+   "type": "防卫",
+   "icon": "skill-6.webp",
+   "description": "纯水精灵挥动左/右鳍部转身猛击，造成<c=#7fbfff>66.6%</c>伤害。"
+  },
+  {
+   "name": "竖向水刀",
+   "type": "输出",
+   "icon": "skill-7.webp",
+   "description": "纯水精灵翻空，挥动尾鳍部向下猛击，造成<c=#7fbfff>100%</c>伤害，二阶段后会在此位置产生3道水爆，各造成<c=#7fbfff>66.6%</c>伤害。"
+  },
+  {
+   "name": "林野幻化",
+   "type": "隐蔽",
+   "icon": "skill-8.webp",
+   "description": "生命值低于<c=#ffcebf>81%</c>时，纯水精灵召唤4个纯水幻形，然后隐蔽身形。每击败一个纯水幻形，就会使纯水精灵扣除<c=#ffcebf>5%</c>生命值，全击败使其现形进入二阶段。"
+  },
+  {
+   "name": "洪流翻涌",
+   "type": "输出",
+   "icon": "skill-9.webp",
+   "description": "纯水精灵后空翻贴地冲刺，造成1-2段<c=#7fbfff>33.3%</c>伤害，可重复2-4次。"
+  },
+  {
+   "name": "苦水翻腾",
+   "type": "限制",
+   "icon": "skill-10.webp",
+   "description": "纯水精灵召唤3或5个水漩涡，漩涡将持续造成<c=#7fbfff>13.3%</c>伤害。"
+  },
+  {
+   "name": "净水濯洗",
+   "type": "追踪",
+   "icon": "skill-11.webp",
+   "description": "纯水精灵用双鳍汇聚出1-3个追踪水弹，水弹可被攻击打碎，水弹接触爆炸造成<c=#7fbfff>80%,40%,20%</c>伤害。"
+  },
+  {
+   "name": "浑水抓鱼",
+   "type": "追踪",
+   "icon": "skill-12.webp",
+   "description": "纯水精灵潜地后冒出，并携带2-4个追踪小水泡后发射，水泡可被攻击击碎，造成<c=#7fbfff>66.6%,33.3%,16.6%,6.66%</c>伤害。"
+  },
+  {
+   "name": "巨浪喷流",
+   "type": "锁定",
+   "icon": "skill-13.webp",
+   "description": "纯水精灵开始蓄力，标记玩家，片刻后喷出巨大喷流，持续造成<c=#7fbfff>33.3%</c>伤害。"
+  },
+  {
+   "name": "杀生潮涌",
+   "type": "爆发",
+   "icon": "skill-14.webp",
+   "description": "纯水精灵蓄力产生巨大的水球，几秒后落地，产生巨大水波，水波造成两段<c=#7fbfff>133.3%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "纯水幻形",
+   "desc": "水弹落在角地砖，召唤3个一组的幻形鹤或幻形飞鸢；\n水弹落在边地砖，召唤1个一组的幻形雀或幻形蛙；\n水弹落在中心地砖，召唤2个一组的幻形游禽、幻形豕兽、幻形花鼠、幻形蟹；"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:E_0003",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 551809,
+   "atk": 23497,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "oceanid",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

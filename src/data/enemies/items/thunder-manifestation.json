@@ -1,0 +1,182 @@
+{
+ "name": "雷音权现",
+ "nameEn": "Thunder Manifestation",
+ "subtitle": "天云峠的愤怒雷鸣",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 190.176,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 90.432,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": "IMM",
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "雷霆探针",
+   "type": "妨害 未怒",
+   "icon": "skill-1.webp",
+   "description": "雷音权现首先放出5个雷霆探针，每个探针击中造成<c=#ffacff>16.6%</c>伤害。探针检测自身半径8m、高3m圆柱内的玩家，满即标记。"
+  },
+  {
+   "name": "探针电感",
+   "type": "探测 未怒",
+   "icon": "skill-2.webp",
+   "description": "雷音权现激活所有探针，并在自身下方产生一次氛雷标记，造成<c=#ffacff>83.3%</c>伤害，其会<c=#99ff99>标记玩家</c>。"
+  },
+  {
+   "name": "啸雷八方",
+   "type": "输出 未怒",
+   "icon": "skill-3.webp",
+   "description": "雷音权现升空，施放8道落雷，总计施放2轮，每道造成<c=#ffacff>43.3%</c>伤害，8道落雷的位置与玩家共圆，并且不会出现在中心。"
+  },
+  {
+   "name": "废针毁探",
+   "type": "探测 未怒",
+   "icon": "skill-4.webp",
+   "description": "雷音权现毁坏所有`探针`，探针造成<c=#ffacff>27.7%</c>`探针`攻击力的伤害，并在自身下方产生一次氛雷标记，造成<c=#ffacff>83.3%</c>伤害，其会<c=#99ff99>标记玩家</c>。"
+  },
+  {
+   "name": "嗜音闪落",
+   "type": "输出 未怒",
+   "icon": "skill-5.webp",
+   "description": "靠近雷音权现时，雷音权现即旋转自身，施放短程的旋转造成<c=#ffacff>27.7%,13.85%,6.925%,2.77%</c>伤害。"
+  },
+  {
+   "name": "雷冥禁灭",
+   "type": "输出 未怒",
+   "icon": "skill-6.webp",
+   "description": "雷音权现在5s内若受击超过10次，即会在其附近施放雷暴，造成<c=#ffacff>27.7%</c>伤害并强制<c=#99ff99>标记玩家</c>。"
+  },
+  {
+   "name": "昔怨今现",
+   "type": "妨害 未怒",
+   "icon": "skill-7.webp",
+   "description": "当雷音权现的生命值接近<c=#ffacff>71%</c>则强制进行全场雷暴，造成<c=#ffacff>27.7%</c>伤害，技能持续期间锁血，周期为8s一次，直至标记到玩家为止。"
+  },
+  {
+   "name": "躁震九霄",
+   "type": "警告 已怒",
+   "icon": "skill-8.webp",
+   "description": "雷音权现标记上玩家后，进行一次高声怒喝，进入标记状态。"
+  },
+  {
+   "name": "循声躁动",
+   "type": "防卫 已怒",
+   "icon": "skill-9.webp",
+   "description": "处在雷音权现后方时，雷音权现挥动左或右翼造成<c=#ffacff>55.5%</c>伤害。"
+  },
+  {
+   "name": "裂嶂相并",
+   "type": "输出 已怒",
+   "icon": "skill-10.webp",
+   "description": "雷音权现召唤两面相对的雷墙，雷墙缓慢向中间合拢，消失，触碰持续造成<c=#ffacff>100%,70%,50%,25%,10%</c>伤害；有时也可能召唤两道平行同向的雷墙。"
+  },
+  {
+   "name": "息时止电",
+   "type": "输出 已怒",
+   "icon": "skill-11.webp",
+   "description": "雷音权现唤出5个雷球，从左至右依次朝玩家施放，造成<c=#ffacff>28.8%,14.4%,7.7%,2.88%</c>伤害。"
+  },
+  {
+   "name": "循位电笼",
+   "type": "追踪 已怒",
+   "icon": "skill-12.webp",
+   "description": "雷音权现在已标记的玩家处召唤一个追踪玩家的长方形电笼，接触持续造成<c=#ffacff>27.7%</c>伤害，持续7s。"
+  },
+  {
+   "name": "怒刈空原",
+   "type": "输出 已怒",
+   "icon": "skill-13.webp",
+   "description": "雷音权现俯下朝玩家冲刺，共冲刺2次，每次均造成<c=#ffacff>83.3%</c>伤害。"
+  },
+  {
+   "name": "天云之怒",
+   "type": "输出 已怒",
+   "icon": "skill-14.webp",
+   "description": "雷音权现升空，在所有已标记玩家处召唤3道落雷，持续3轮，每道落雷造成<c=#ffacff>43.3%</c>伤害。"
+  },
+  {
+   "name": "扰动浮尘",
+   "type": "输出",
+   "icon": "skill-15.webp",
+   "description": "靠近雷音权现时，雷音权现即旋转自身，施放长程的旋转造成<c=#ffacff>27.7%,13.85%,6.925%,2.77%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "探针",
+   "desc": "攻击力恒定1000。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 853091,
+   "atk": 18798,
+   "weight": 150,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "thunder-manifestation",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

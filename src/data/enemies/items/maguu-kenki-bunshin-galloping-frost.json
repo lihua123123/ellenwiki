@@ -1,0 +1,111 @@
+{
+ "name": "魔偶剑鬼·霜驰",
+ "nameEn": "Maguu Kenki Bunshin: Galloping Frost",
+ "subtitle": "如剑刺骨之霜",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 217.344,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 30,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 600,
+ "skills": [
+  {
+   "name": "七五霜落",
+   "type": "爆发",
+   "icon": "skill-1.webp",
+   "description": "霜驰左右双持，全身发亮朝地猛击，造成<span class=\"cryo\">**160%**</span>伤害，并留下持续20s的冰地面，接触持续造成<span class=\"cryo\">**25%**</span>伤害。"
+  },
+  {
+   "name": "霜驰驻刃",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "霜驰进行横-斜-纵的普通攻击，共计3段，每段均造成<span class=\"cryo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "居合寒锋",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "霜驰斜上插刀鞘，随后快速突进，突进和终点处均造成<span class=\"cryo\">**60%**</span>伤害。"
+  },
+  {
+   "name": "复霜真斩",
+   "type": "妨害",
+   "icon": "skill-4.webp",
+   "description": "霜驰平插刀鞘，产生真空场吸引玩家，随后挥刀造成小范围<span class=\"cryo\">**100%**</span>伤害，接下来在更大的范围再次造成<span class=\"cryo\">**100%**</span>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_3334",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 630639,
+   "atk": 13054,
+   "weight": 600,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "maguu-kenki-bunshin-galloping-frost",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

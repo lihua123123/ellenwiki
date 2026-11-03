@@ -1,0 +1,118 @@
+{
+ "name": "深海龙蜥·原种",
+ "nameEn": "Primordial Bathysmal Vishap",
+ "subtitle": "盘踞深海的水栖猛兽",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 108.672,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "涤净喷吐",
+   "type": "妨害",
+   "icon": "skill-1.webp",
+   "description": "原种蓄力发射一枚水球，造成<c=#7fbfff>50%</c>伤害，并扣除角色<c=#72ff72>10点</c>元素能量，若能量不足则扣除一定比例的生命值，扣除公式见左下角。"
+  },
+  {
+   "name": "泉涌跃集",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "(仅成体)原种将尾部插入地面，在一定区域内不断生成水喷，造成<c=#7fbfff>60%,30%</c>伤害。"
+  },
+  {
+   "name": "如流之迅",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "原种后撤，向前翻滚，用尾部扫两圈，造成2段<c=#7fbfff>30%</c>伤害。"
+  },
+  {
+   "name": "流澈环卷",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "原种翘起尾部，聚集水花，产生3个水轮，每个水轮造成<c=#7fbfff>30%,15%,7.5%</c>伤害。"
+  },
+  {
+   "name": "左右开攻",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "原种后撤一步，进行左、右、砸3段攻击，依次造成<c=#b9b9b9>30%,50%,80%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "HP[75,50,25,0x2](成体), HP[60,0](幼体)",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英-成体",
+   "level": 100,
+   "hp": 443680,
+   "atk": 9849,
+   "weight": 150,
+   "tenacity": 150
+  },
+  {
+   "label": "精英-幼体",
+   "level": 100,
+   "hp": 221840,
+   "atk": 4924,
+   "weight": 150,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "primordial-bathysmal-vishap",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "name": "冲锋丘丘人",
+ "nameEn": "Hiluchurl Berserker",
+ "subtitle": "",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 22.608,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "逆焰之棍",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "在远处时，冲锋丘丘人朝玩家不断挥舞`火棍`冲来，造成<c=#ff9999>10%</c>伤害，最后施放尾刀摔倒造成<c=#ff9999>100%</c>伤害；若火棍熄灭，则冲锋造成<c=#b8b8b8>10%</c>伤害，但尾刀造成<c=#b8b8b8>75%</c>伤害。"
+  },
+  {
+   "name": "炎杖子抽",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "在近处时，冲锋丘丘人击打玩家一下，造成<c=#ff9999>10%</c>伤害，若火棍熄灭，则造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "攥木取火",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "当冲锋丘丘人的`火棍`被熄灭后，其会尝试手搓火棍使其复燃，这个火棍无法烧坏。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "火棍",
+   "desc": "<c=#ff9999>1火</c>盾，浇熄后造成物理伤害。\n免疫燃烧伤害。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "火棍",
+   "description": "<c=#ff9999>1火</c>盾，浇熄后造成物理伤害。\n免疫燃烧伤害。",
+   "elementType": "Fire",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 36765,
+   "atk": 4432,
+   "weight": 75,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "hiluchurl-berserker",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

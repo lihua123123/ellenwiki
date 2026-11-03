@@ -1,0 +1,129 @@
+{
+ "name": "愚人众先遣队·岩使游击兵",
+ "nameEn": "Fatui Skirmishers: Geochanter Bracer",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 40.751999999999995,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  },
+  {
+   "name": "增幅",
+   "pyro": 110,
+   "hydro": 110,
+   "anemo": 110,
+   "electro": 110,
+   "dendro": 110,
+   "cryo": 110,
+   "geo": 110,
+   "physical": 80
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "速效构晶",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "岩使使用法杖，发射1枚岩晶，造成<c=#ffe599>66.6%</c>伤害；\n<c=#ffc926>强化技：</c>同时发射3个岩晶，造成<c=#ffe599>100%,50%,25%</c>伤害。"
+  },
+  {
+   "name": "硬石加胄",
+   "type": "强化",
+   "icon": "skill-2.webp",
+   "description": "开场一段时间后，或岩使半血以下，岩使进入元素增幅状态：<c=#ffbfbf>全抗提升100%</c>，附属`岩御`盾，该岩盾系正常岩盾。"
+  },
+  {
+   "name": "琼岩筑晶",
+   "type": "强化",
+   "icon": "skill-3.webp",
+   "description": "若场上存在其他先遣队队友，并且岩使处于增幅状态时，岩使将法杖插入地面打开大型穹顶盾：阻挡玩家的弹射物，其内敌方的<c=#ffbfbf>攻击力提升20%</c>，持续直到离开区域或岩使退出增幅状态。"
+  },
+  {
+   "name": "岩脉相通",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "靠近岩使，岩使迅速后撤立即瞬移至其他地方。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "岩御",
+   "desc": "<c=#ffe599>8岩</c>盾，击破可暂时瘫痪。该状态下，抗打断为0，重量翻6倍。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "岩御",
+   "description": "<c=#ffe599>8岩</c>盾，击破可暂时瘫痪。该状态下，抗打断为0，重量翻6倍。",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 110295,
+   "atk": 7387,
+   "weight": 80,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "fatui-skirmishers-geochanter-bracer",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

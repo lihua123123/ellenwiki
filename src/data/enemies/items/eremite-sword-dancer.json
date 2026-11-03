@@ -1,0 +1,95 @@
+{
+ "name": "镀金旅团·刀舞者",
+ "nameEn": "Eremite: Sword-Dancer",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 21.7344,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 20.096000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "近身刃击",
+   "type": "躲闪",
+   "icon": "skill-1.webp",
+   "description": "刀舞者使用弯刀攻击，造成<c=#b9b9b9>100%</c>伤害并迅速后撤。"
+  },
+  {
+   "name": "舞刃突进",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "刀舞者挥舞弯刀不断向前攻击，造成<c=#b9b9b9>15%</c>伤害，命中目标后立即停止挥舞并施放强力尾刀，造成<c=#b9b9b9>100%</c>伤害并迅速后撤。"
+  },
+  {
+   "name": "Han Shot First",
+   "type": "天赋",
+   "icon": "skill-3.webp",
+   "description": "刀舞者在战斗时，有时候会进行左右交换抖刀嘲讽或指刀嘲讽。\n当进行抖刀嘲讽时，若使用`远程攻击`命中后，会令其击飞并获得隐藏成就<c=#99ffb2>「…汉总是先开枪」</c>。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 88736,
+   "atk": 3940,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "eremite-sword-dancer",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

@@ -1,0 +1,123 @@
+{
+ "name": "深邃拟态·雷斧丘丘暴徒",
+ "nameEn": "Tenebrous Mimesis： Crackling Axe Mitachurl",
+ "subtitle": "虚界浮灭气泡",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 59.769600000000004,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "斧砍树",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "雷斧进行至多3段的4种普通攻击：\n<c=#bfffeb>旋-劈</c>；<c=#bfffeb>挑-劈</c>；<c=#bfffeb>旋-旋-劈</c>；<c=#bfffeb>挑-旋</c>；每段攻击都造成<c=#ffacff>50%</c>伤害。\n强化版本命中将施加<c=#ccffbf>7</c>级「蚀破」。"
+  },
+  {
+   "name": "飞象坠",
+   "type": "爆发",
+   "icon": "skill-2.webp",
+   "description": "距离玩家较远时，雷斧拿着斧子跳起来下落，造成<c=#df99ff>100%</c>伤害。\n强化版本命中将施加<c=#ccffbf>14</c>级「蚀破」。"
+  },
+  {
+   "name": "布丁飞",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "雷斧从地里挖出雷史莱姆丢出，造成<c=#ffacff>62.5%</c>伤害。"
+  },
+  {
+   "name": "虎鹰掠",
+   "type": "妨害",
+   "icon": "skill-4.webp",
+   "description": "雷斧用力将斧子往地上砸，造成<c=#ffacff>50%</c>伤害，顺势将自己挑起，然后落地坐下，造成<c=#ffacff>75%</c>伤害。"
+  },
+  {
+   "name": "龙卷摧",
+   "type": "猛攻",
+   "icon": "skill-5.webp",
+   "description": "雷斧横拿斧子转圈圈，触碰造成<c=#ffacff>12.5%</c>伤害，持续3s，旋转结束后施放尾刀，造成<c=#ffacff>50%</c>伤害。\n强化版本命中将施加<c=#ccffbf>7</c>级「蚀破」。"
+  },
+  {
+   "name": "虚燎罅",
+   "type": "强化",
+   "icon": "skill-6.webp",
+   "description": "拟态雷斧将进行一次闪现，显形时立即无视条件施放以下3个技能的随机一个<c=#ff9999>火元素</c>强化版本：「龙卷摧」/「飞象坠」/「斧砍树」。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1111",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 244024,
+   "atk": 7387,
+   "weight": 150,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "tenebrous-mimesis-crackling-axe-mitachurl",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

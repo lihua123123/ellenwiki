@@ -1,0 +1,134 @@
+{
+ "name": "铁须",
+ "nameEn": "Ironbeard",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1257.8783999999998,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 150.72,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  },
+  {
+   "name": "突刺存在时",
+   "pyro": 110,
+   "hydro": 110,
+   "anemo": 110,
+   "electro": 110,
+   "dendro": 110,
+   "cryo": 110,
+   "geo": 110,
+   "physical": 80
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "过燃炬锤",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "铁须使用重锤进行横、斜、砸至多3段的攻击，分别造成<c=#b8b8b8>60%,60%,\n70%+10%</c>伤害。"
+  },
+  {
+   "name": "无屈匠火",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "铁须使用锤后端砸向地面，造成<c=#ff9999>50%</c>伤害，之后锤头爆炸，造成<c=#ff9999>80%</c>伤害，铁须顺势后撤。"
+  },
+  {
+   "name": "熔铸三叠",
+   "type": "召唤",
+   "icon": "skill-3.webp",
+   "description": "铁须的第三段普攻砸击地面时，将会召唤`「熔裂突刺」`；使用下落攻击破坏它将会引爆，对铁须造成<c=#ffbfbf>10%生命值</c>的真伤(无火附着)。"
+  },
+  {
+   "name": "终锻绝铭",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "铁须导引灵力，飞起炬锤并砸向地面，造成<c=#ff9999>100%</c>伤害；若场上存在「熔裂突刺」，则铁须将砸向「突刺」并引爆它，造成<c=#ff9999>200%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "熔裂突刺",
+   "desc": "<c=#ffe599>12岩</c>盾，击破将引爆并对铁须造成伤害，下落攻击例外，可一次破除并引爆，若使用非下落攻击击破，则只会破坏无其他效果。\n常驻抗打断0.75"
+  }
+ ],
+ "shields": [
+  {
+   "name": "熔裂突刺",
+   "description": "<c=#ffe599>12岩</c>盾，击破将引爆并对铁须造成伤害，下落攻击例外，可一次破除并引爆，若使用非下落攻击击破，则只会破坏无其他效果。\n常驻抗打断0.75",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "夜魂试炼",
+   "level": 103,
+   "hp": 5642591,
+   "atk": 31329,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "ironbeard",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

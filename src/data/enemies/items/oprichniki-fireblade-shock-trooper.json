@@ -1,0 +1,106 @@
+{
+ "name": "愚人众特辖队·火刃突击队",
+ "nameEn": "Oprichniki: Fireblade Shock Trooper",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 59.769600000000004,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "转刃突火",
+   "type": "防御",
+   "icon": "skill-1.webp",
+   "description": "靠近火刃时，中尉立即一个拔刀突袭，造成<c=#ff9999>70%</c>伤害。"
+  },
+  {
+   "name": "绳枪游炎",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "火刃架起火长枪，朝玩家发射连续3波的火焰弹，前两波造成<c=#ff9999>50%,5%</c>伤害，第三波造成<c=#ff9999>80%,8%</c>伤害。"
+  },
+  {
+   "name": "逐焰长锋",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "火刃冲击而来，并顺势对地猛击，依次造成<c=#ff9999>50%,90%</c>伤害。"
+  },
+  {
+   "name": "戕敌赤影",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "火刃启动武器，进行长达6段的持续攻击，依次造成<c=#ff9999>40%,50%,40%,50%,70%,\n100%</c>伤害。武器属「单极」物件，可被`月`<c=#cdbfff>矩</c><c=#edbfff>力</c>干扰。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:A_1101",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 244024,
+   "atk": 9849,
+   "weight": 150,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "oprichniki-fireblade-shock-trooper",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

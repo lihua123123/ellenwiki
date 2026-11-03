@@ -1,0 +1,124 @@
+{
+ "name": "博士·多托雷",
+ "nameEn": "The Doctor",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 102,
+ "baseStats": {
+  "hp": {
+   "Value": 2852.64,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 69.08,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "涤濯四象荡深铡",
+   "type": "持续",
+   "icon": "skill-1.webp",
+   "description": "博士利用浮游机关在自身四个方向处扫射，造成<c=#7fbfff>10%</c>伤害，并留下潮水裂隙，随后裂隙迸发，造成<c=#7fbfff>50%</c>伤害，重复5次，为持久技。"
+  },
+  {
+   "name": "且观飞雪送冰零",
+   "type": "锁定",
+   "icon": "skill-2.webp",
+   "description": "博士召出2架弩台，随后锁定玩家并依次发射冰镞，造成<span class=\"cryo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "罢如天隅落离毁",
+   "type": "猛攻",
+   "icon": "skill-3.webp",
+   "description": "博士利用浮游机关在空中绘制圆隅，随后这些圆从里到外依次崩落，在相邻两个圆隅的范围内造成<c=#7fbfff>50%</c>伤害。"
+  },
+  {
+   "name": "身流水变凝四方",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "博士召唤独立浮游机关，自身附属「`于此锢身`」。该浮游机关会同时向玩家发射射线，造成<c=#7fbfff>50%</c>伤害。"
+  },
+  {
+   "name": "欲穷其技不及此",
+   "type": "防御",
+   "icon": "skill-5.webp",
+   "description": "博士于此锢身期间，玩家离得较近会触发博士近身攻击，造成<span class=\"cryo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "却为异端愿以偿",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "博士施放全部技能，并令正二十面体装置在中间持续施放冰锥，每次5枚，均造成造成<span class=\"cryo\">**20%**</span>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "于此锢身",
+   "desc": "4次特化盾，需俘游机关攻击4次破坏。"
+  },
+  {
+   "text": "独立浮游机关",
+   "desc": "40水盾，但触发一次月感电/月绽放后立即被转化为俘游机关，并朝博士攻击。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "独立浮游机关",
+   "description": "40水盾，但触发一次月感电/月绽放后立即被转化为俘游机关，并朝博士攻击。",
+   "elementType": "Water",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "剧情首领",
+   "level": 102,
+   "hp": 12403160,
+   "atk": 14035,
+   "weight": 150,
+   "tenacity": 500
+  }
+ ],
+ "leyline": null,
+ "id": "the-doctor",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

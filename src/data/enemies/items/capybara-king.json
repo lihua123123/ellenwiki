@@ -1,0 +1,106 @@
+{
+ "name": "豚兽大王",
+ "nameEn": "Capybara King",
+ "subtitle": "",
+ "category": "Animals",
+ "categoryLabel": "动物",
+ "tier": "Animal",
+ "defaultLevel": 97,
+ "baseStats": {
+  "hp": {
+   "Value": 1168.224,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 150.72,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "入战&蓄力",
+   "pyro": 310,
+   "hydro": 310,
+   "anemo": 310,
+   "electro": 310,
+   "dendro": 310,
+   "cryo": 310,
+   "geo": 310,
+   "physical": 310
+  },
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "翘首一刻",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "「豚兽大王」很简单的进行一次上挑，造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "迤行千步",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "「豚兽大王」踱步小跑冲了一下，造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "绝技冲撞",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "「豚兽大王」进行长达15s的蓄力，蓄力完成后，进行连续3次的冲撞，每次造成<c=#b8b8b8>300%</c>伤害。\n需要累计<c=#ffbfbf>2500削韧</c>且的攻击方可打断蓄力，中断蓄力将扣除「豚兽大王」10%生命值；`钝击`造成的削韧按5倍计入，单次最高计入上限为<c=#ffdfbf>800</c>削韧。\n以此方法扣除的生命值不致死，生命值低于10%便不再被此机制扣除。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "钝击",
+   "desc": "如大剑普战终、下落攻击、超载、炸药桶等。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "动物-任务",
+   "level": 97,
+   "hp": 4257791,
+   "atk": 26641,
+   "weight": 100,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "capybara-king",
+ "icon": "avatar.webp",
+ "tags": [
+  "动物"
+ ]
+}

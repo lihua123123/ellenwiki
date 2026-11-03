@@ -1,0 +1,135 @@
+{
+ "name": "莉莱",
+ "nameEn": "Rilai",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1045.968,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 113.04,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "质量久耐",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "莉莱拿着炮筒进行划、闪现、砸的攻击，其中划和砸分别造成<c=#b8b8b8>50%,70%</c>伤害。"
+  },
+  {
+   "name": "逐夜星点",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "莉莱立即使用炮筒发射4枚带追踪性的冰雹，造成<span class=\"cryo\">**45%,9%**</span>伤害"
+  },
+  {
+   "name": "蔽日寂寒",
+   "type": "追踪",
+   "icon": "skill-3.webp",
+   "description": "莉莱朝空中发射一枚大冰雹，随后立即炸裂，裂成8根追踪冰刺，造成<span class=\"cryo\">**35%,21%,10.5%,3.5%**</span>伤害。该过程重复两次，以闪现衔接。"
+  },
+  {
+   "name": "奇秘巧寒",
+   "type": "强化",
+   "icon": "skill-4.webp",
+   "description": "莉莱驱使灵力，使炮筒凝聚寒气，并产生冰雾震，造成<span class=\"cryo\">**60%**</span>伤害并进入强化状态。仅开局施放。\n强化状态无特殊效果。"
+  },
+  {
+   "name": "骄阳凛晶",
+   "type": "定点",
+   "icon": "skill-5.webp",
+   "description": "莉莱将炮筒滞空，命令其连续发射4枚从天而降的冰锥，依次下落在玩家处，均造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "捷卫身武",
+   "type": "防御",
+   "icon": "skill-6.webp",
+   "description": "莉莱拿着炮筒进行格挡，格挡一次计数1或2(各50%)，计数满4时立即触发闪现，并施放「奔逸假身」或「逐夜星点」。格挡冷却19s。"
+  },
+  {
+   "name": "熔冱灾星",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "莉莱于场地中央，持续在场地内召唤冰之崩破，均造成<span class=\"cryo\">**100%**</span>伤害；同时场地随机出现燃素炸药桶，被击中后延迟1s引爆，对范围内目标造成<c=#ff9999>100%</c>伤害；技能结束后闪现接上「质量久耐」砸击。"
+  },
+  {
+   "name": "奔逸假身",
+   "type": "反击",
+   "icon": "skill-8.webp",
+   "description": "莉莱闪走，立即在原地留下一个燃素炸药桶，并朝玩家发射2枚追踪性炸药桶，均造成<c=#ff9999>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 4692003,
+   "atk": 23497,
+   "weight": 100,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "rilai",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

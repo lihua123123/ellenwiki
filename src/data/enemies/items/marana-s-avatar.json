@@ -1,0 +1,88 @@
+{
+ "name": "无留陀的化身",
+ "nameEn": "Marana’s Avatar",
+ "subtitle": "",
+ "category": "Others",
+ "categoryLabel": "其他",
+ "tier": "None",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 40.751999999999995,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 0,
+   "hydro": 0,
+   "anemo": 0,
+   "electro": 0,
+   "dendro": 0,
+   "cryo": 0,
+   "geo": 0,
+   "physical": 0
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [
+  {
+   "name": "污暗渊旋涟漪",
+   "type": "持续",
+   "icon": "skill-1.webp",
+   "description": "无留陀的化身不断在周围产生起伏的暗黑激波，持续造成<c=#b8b8b8>10%</c>伤害。"
+  },
+  {
+   "name": "黑寂残腐之凝",
+   "type": "定点",
+   "icon": "skill-2.webp",
+   "description": "无留陀的化身在玩家周围产生下落的污秽落球，每个均造成<c=#b8b8b8>30%</c>伤害。"
+  },
+  {
+   "name": "凋零朽败之光",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "无留陀的化身用6道激光瞄准玩家，不断造成<c=#b8b8b8>10%</c>伤害，一段时间后产生巨大爆炸，造成<c=#b8b8b8>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "物件",
+   "level": 100,
+   "hp": 110295,
+   "atk": 19697
+  }
+ ],
+ "leyline": null,
+ "id": "marana-s-avatar",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他"
+ ]
+}

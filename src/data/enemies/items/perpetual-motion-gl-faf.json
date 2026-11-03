@@ -1,0 +1,194 @@
+{
+ "name": "重武装兆载永劫龙兽",
+ "nameEn": "Perpetual Motion GL-Faf",
+ "subtitle": "永续永动·Gl-Faf",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 203.76,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 90.432,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "起身/升空",
+   "pyro": 110,
+   "hydro": 110,
+   "anemo": 110,
+   "electro": 110,
+   "dendro": 110,
+   "cryo": 110,
+   "geo": 110,
+   "physical": 170
+  },
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 70
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "106",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "重式机枪",
+   "type": "远程 空巡",
+   "icon": "skill-1.webp",
+   "description": "兆载龙兽使用两翼各朝前施放一排的子弹，命中造成<c=#bababa>60%</c>伤害。"
+  },
+  {
+   "name": "尾行摩托",
+   "type": "位移 空巡",
+   "icon": "skill-2.webp",
+   "description": "靠近兆载龙兽时，兆载龙兽用尾部齿轮碾过，<c=#ffcebf>暴露头部弱点</c>，造成<c=#bababa>60%</c>伤害，若命中玩家则立即扫尾造成<c=#bababa>60%</c>伤害。"
+  },
+  {
+   "name": "高效打击",
+   "type": "锁定 空巡",
+   "icon": "skill-3.webp",
+   "description": "兆载龙兽瞄准玩家，<c=#ffcdbf>暴露腹部弱点</c>，使用两翼施放总共28个追踪弹，造成<c=#b9b9b9>80%,24%,8%,0.8%</c>伤害。"
+  },
+  {
+   "name": "低空游巡",
+   "type": "位移 地巡",
+   "icon": "skill-4.webp",
+   "description": "兆载龙兽朝玩家冲来，<c=#ffcebf>暴露头部弱点</c>，冲刺命中造成<c=#bababa>75%</c>伤害，若命中玩家则立即扫尾造成<c=#bababa>75%</c>伤害。"
+  },
+  {
+   "name": "开岩碎土",
+   "type": "输出 地巡",
+   "icon": "skill-5.webp",
+   "description": "靠近兆载龙兽时，兆载龙兽使用头部进行挑击，左右各一次，每次造成<c=#b9b9b9>60%</c>伤害，每次挑击时扔出3块石头，造成<c=#bababa>80%,40%,16%</c>伤害，极大概率接扫尾。"
+  },
+  {
+   "name": "磅沉拓石",
+   "type": "输出 地巡",
+   "icon": "skill-6.webp",
+   "description": "兆载龙兽使用双翼分别朝地面砸去，均造成<c=#b8b8b8>75%</c>伤害，每个翼落地后还将在外圈产生冲击波，造成<c=#bababa>100%</c>伤害。"
+  },
+  {
+   "name": "尾链牵旋",
+   "type": "防卫 地巡",
+   "icon": "skill-7.webp",
+   "description": "靠近兆载龙兽时，兆载龙兽原地旋转一圈，使用尾部齿轮造成<c=#b9b9b9>75%</c>伤害，可能接翼坠。"
+  },
+  {
+   "name": "震击荡波",
+   "type": "警戒 地巡",
+   "icon": "skill-8.webp",
+   "description": "兆载龙兽<c=#ffcebf>暴露头、胸部弱点</c>，使用核心朝地上发射大范围冲击，造成<c=#bababa>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，空地巡状态皆可施放。"
+  },
+  {
+   "name": "散落湍流",
+   "type": "爆发",
+   "icon": "skill-9.webp",
+   "description": "兆载龙兽<c=#ffcebf>暴露头部弱点</c>，汲取`元素锚栓`的力量，向空中抛出20枚散弹，造成对应元素的<c=#d8ffcc>100%,30%,10%</c>伤害，每个散弹有<c=#ffcebf>33%</c>概率留下`元素氛`，之后转换空地巡状态，降落地面造成<c=#b9b9b9>30%</c>伤害。"
+  },
+  {
+   "name": "能量泄溢",
+   "type": "天赋",
+   "icon": "skill-10.webp",
+   "description": "施放「散落洪流」前，会立即吸收元素填充元素螺栓，使该次技能附上元素伤害，元素的种类以<c=#ffebbf>上一周期</c>所受<c=#ffbfbf>总和最高</c>的<c=#ffeebf>伤害</c>为准<c=#ffeebf>(物伤则无属性)</c>，<c=#ffbfbf>不吸收附着的元素</c>。元素吸收完毕后该元素抗性<c=#ffbfbf>+60%</c>，提升的抗性仅能通过吸收其他属性来转移。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "火",
+   "desc": "留下大片熔岩，持续造成50%伤害。"
+  },
+  {
+   "text": "水",
+   "desc": "留下湍急水涡，持续造成50%伤害。"
+  },
+  {
+   "text": "草",
+   "desc": "留下一片毒雾，持续造成50%伤害。"
+  },
+  {
+   "text": "雷",
+   "desc": "产生交闪雷叉，造成50%伤害。"
+  },
+  {
+   "text": "冰",
+   "desc": "留下冰霜地面，持续造成50%伤害。"
+  },
+  {
+   "text": "风",
+   "desc": "留下牵引风涡，持续造成50%伤害。"
+  },
+  {
+   "text": "元素锚栓",
+   "desc": "吸收元素后，增加60%该元素抗性。"
+  },
+  {
+   "text": "轻巡武装",
+   "desc": "升空后提供的护盾，2次特化次数盾，击破任意弱点-1次，耗尽后落地。"
+  },
+  {
+   "text": "重胄武装",
+   "desc": "升空后提供的护盾，不定次特化次数盾，击破双翼弱点需6次，击破头、胸弱点需3次，耗尽后落地。"
+  },
+  {
+   "text": "岩",
+   "desc": "产生震荡地波，造成50%伤害。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_3302",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 914027,
+   "atk": 18798,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "perpetual-motion-gl-faf",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

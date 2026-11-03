@@ -1,0 +1,39 @@
+{
+ "name": "历经百战的岩居蟹·岩居之种",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Common",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {
+   "Value": 287.9808,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "id": "历经百战的岩居蟹-岩居之种",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

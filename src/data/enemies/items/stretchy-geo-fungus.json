@@ -1,0 +1,90 @@
+{
+ "name": "伸缩岩蕈兽",
+ "nameEn": "Stretchy Geo Fungus",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 22.608,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 20,
+   "cryo": 10,
+   "geo": 20,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "弹性回旋",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "伸缩岩蕈兽横弯伞杆，蓄力后转一圈，造成<c=#b9b9b9>30%</c>伤害。\n<c=#ff99ff>活化：</c>快速进行3次该技能；\n<c=#ff9672>枯焦：</c>旋转伤害提升至<c=#b9b9b9>60%</c>。"
+  },
+  {
+   "name": "硬质顶盖",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "伸缩岩蕈兽后倾，朝着玩家翻滚过来，造成3段<c=#b8b8b8>60%</c>伤害。\n<c=#ff99ff>活化：</c>快速进行3次该技能；\n<c=#ff9672>枯焦：</c>翻滚伤害提升至<c=#b8b8b8>100%</c>。"
+  },
+  {
+   "name": "三相之形",
+   "type": "天赋",
+   "icon": "skill-3.webp",
+   "description": "伸缩岩蕈兽受到<c=#ff9999>火元素</c>/<c=#ffacff>雷元素</c>攻击后，会分别永久转变为<c=#ff9672>枯焦</c>/<c=#ff99ff>活化</c>状态。\n<c=#ff99ff>活化：</c>CD缩短，移速提升150%；\n<c=#ff9672>枯焦：</c>CD延长，移速下降50%。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:E_0001",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 55460,
+   "atk": 4432,
+   "weight": 75,
+   "tenacity": 20
+  }
+ ],
+ "leyline": null,
+ "id": "stretchy-geo-fungus",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

@@ -1,0 +1,250 @@
+{
+ "name": "深黯魇语之主",
+ "nameEn": "Lord of the Hidden Depths: Whisperer of Nightmares",
+ "subtitle": "无面无域的支配者",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 366.768,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "瘫痪",
+   "pyro": -60,
+   "hydro": -60,
+   "anemo": -60,
+   "electro": -60,
+   "dendro": -60,
+   "cryo": -60,
+   "geo": -60,
+   "physical": -60
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "疾荒破袭",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "距离较远时，黯主进行突棘、横波、纵波至多3段攻击，依次造成<c=#ffacff>60%,70%,\n80%</c>伤害。"
+  },
+  {
+   "name": "遁谋危意",
+   "type": "定点",
+   "icon": "skill-2.webp",
+   "description": "黯主跃入空中不见，随后从角色下方突袭，造成<c=#ffacff>100%</c>伤害。"
+  },
+  {
+   "name": "涉哀死棘",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "黯主使用荆尖的尾部造成伤害，造成<c=#ffacff>25%x3</c>伤害。"
+  },
+  {
+   "name": "靡于孑翼",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "黯主迅速蜷缩并在原地周转一圈，造成<c=#ffacff>75%</c>伤害。"
+  },
+  {
+   "name": "韬迹渊离",
+   "type": "位移",
+   "icon": "skill-5.webp",
+   "description": "黯主打开后方的传送门并撤入，随后出现在玩家身边，立即甩尾造成<c=#ffacff>80%</c>伤害。"
+  },
+  {
+   "name": "深魇颂祭",
+   "type": "蓄力",
+   "icon": "skill-6.webp",
+   "description": "黯主吼叫一声，跃入空中，移至场地中央展开「`深黯护盾`」，召唤4个「`深黯钓客`」并开始蓄力。期间「深黯钓客」不附属「深黯护盾」，只会发射激光。"
+  },
+  {
+   "name": "夤星劫寂",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "蓄力17s后，黯主吸收所有钓客并消失，随后直接全屏对玩家造成<c=#ffacff>200%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，并在玩家前方重新出现。"
+  },
+  {
+   "name": "隙中谵呓",
+   "type": "天赋",
+   "icon": "skill-8.webp",
+   "description": "黯主蓄力时会展开「深黯护盾」，该护盾为生命盾，并且只接受元素伤害，免疫物理伤害；月曜伤害将造成原来<c=#ffdfbf>300%</c>的伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "深黯钓客",
+   "desc": "特殊的钓客，生命值296145(4.86F)(18%黯主生命值)，攻击力7832(3.0B2)，无护盾，只会发射激光；击败钓客会扣除25%的深黯护盾。"
+  },
+  {
+   "text": "深黯护盾",
+   "desc": "45%生命值盾，击破后黯主损失20%生命值，并瘫痪16s。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "深黯护盾",
+   "description": "45%生命值盾，击破后黯主损失20%生命值，并瘫痪16s。",
+   "elementType": "Abyss",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1645248,
+   "atk": 15665,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": {
+  "name": "深黯魇语之主·袭掠锋刃",
+  "nameEn": "Lord of the Hidden Depths: Whisperer of Nightmares — Ravager’s Edge",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 1415539,
+    "atk": 11419,
+    "multiplier": 1.2,
+    "advantage": ""
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 7053480,
+    "atk": 14773,
+    "multiplier": 4.0,
+    "advantage": "Lunar Reaction Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 12437830,
+    "atk": 16260,
+    "multiplier": 6.1,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 23658107,
+    "atk": 17417,
+    "multiplier": 10.6,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "本体",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   },
+   {
+    "name": "瘫痪",
+    "pyro": -60,
+    "hydro": -60,
+    "anemo": -60,
+    "electro": -60,
+    "dendro": -60,
+    "cryo": -60,
+    "geo": -60,
+    "physical": -60
+   }
+  ],
+  "skills": [],
+  "notes": [
+   {
+    "text": "深黯护盾",
+    "desc": "黯主蓄力期间展开，护盾厚度为<c=#ffbfbf>45%生命值</c>，持续18s，击破后黯主损失<c=#ffdfbf>20%生命值</c>，并瘫痪16s。\n对该护盾造成伤害可跳字，但只接受元素伤害，并免疫物理伤害；受到的月曜伤害将造成原来<c=#ffdfbf>300%</c>的伤害。\n<c=#ffbfbf>(N5) </c>护盾持续28s，首次受到月曜反应伤害时，掉落6枚无元素晶球。"
+   },
+   {
+    "text": "深黯钓客",
+    "desc": "由黯主蓄力期间召唤，一共4只，每只为黯主<c=#ffbfbf>18%生命值</c>，期间这些「深黯钓客」不附属「深黯护盾」，只会发射激光；随后被黯主献祭。"
+   }
+  ],
+  "shields": [
+   {
+    "name": "深黯护盾",
+    "description": "黯主蓄力期间展开，护盾厚度为<c=#ffbfbf>45%生命值</c>，持续18s，击破后黯主损失<c=#ffdfbf>20%生命值</c>，并瘫痪16s。\n对该护盾造成伤害可跳字，但只接受元素伤害，并免疫物理伤害；受到的月曜伤害将造成原来<c=#ffdfbf>300%</c>的伤害。\n<c=#ffbfbf>(N5) </c>护盾持续28s，首次受到月曜反应伤害时，掉落6枚无元素晶球。",
+    "elementType": "Abyss",
+    "duration": 18
+   }
+  ]
+ },
+ "id": "lord-of-the-hidden-depths-whisperer-of-nightmares",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊",
+  "幽境危战"
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "name": "愚人众·风役人",
+ "nameEn": "Wind Operative",
+ "subtitle": "役人·幽风铃兰",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 50,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 85,
+ "skills": [
+  {
+   "name": "风余",
+   "type": "普攻·追踪",
+   "icon": "skill-1.webp",
+   "description": "风役人施放风弹，进行至多3段的连续攻击，对敌人分别造成<span class=\"anemo\">**50%,50%,60%x2**</span>伤害，第三段攻击带有追踪性；攻击造成的伤害带有(1,0.5)的衰减。"
+  },
+  {
+   "name": "陬花忆现",
+   "type": "重击·输出",
+   "icon": "skill-2.webp",
+   "description": "风役人旋转权杖，进行一段重击，在敌人的下方产生风泽域，产生似花棘物，造成<span class=\"anemo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "杜屏",
+   "type": "战技·反击",
+   "icon": "skill-3.webp",
+   "description": "风役人展开风嶂，当敌人对其施放攻击时，<c=#ffbfbf>无视此次伤害</c>并发动反击：闪现至敌人上方投下权杖，造成<span class=\"anemo\">**70%**</span>伤害。"
+  },
+  {
+   "name": "入扉",
+   "type": "天赋·妨害",
+   "icon": "skill-4.webp",
+   "description": "风役人的元素爆发命中所累加的生命之契大小等同于自身<c=#ff9999>16%</c>的攻击力，且在该生命之契的影响下，目标敌人将每秒流失<c=#dfbfff>(0.4%HP+72)</c>的生命值(后台停5%)，其与生命之契同生共死，持续10min。"
+  },
+  {
+   "name": "玦风翠流",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "风役人瞄准目标，<c=#ffebbf>消耗5%生命值</c>，2s后发动攻击，对目标敌人降下翠雨利叶，造成<span class=\"anemo\">**90%**</span>伤害并施加生命之契，若成功施加，则发动追加「猎杀」攻击：\n翠叶之诀的场地将产生爆炸，造成<span class=\"anemo\">**100%**</span>伤害并施加生命之契。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:B_1112",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 388220,
+   "atk": 14773,
+   "weight": 85,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "wind-operative",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

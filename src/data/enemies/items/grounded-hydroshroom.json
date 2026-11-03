@@ -1,0 +1,101 @@
+{
+ "name": "陆行水本真蕈",
+ "nameEn": "Grounded Hydroshroom",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 30,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 30,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 125,
+ "skills": [
+  {
+   "name": "净水流弹",
+   "type": "追踪",
+   "icon": "skill-1.webp",
+   "description": "陆水真蕈迅速发射2枚追踪水弹，造成<c=#7fbfff>70%,35%</c>伤害。\n<c=#ff99ff>活化：</c>连发1至5枚追踪水弹，造成<c=#7fbfff>70%,35%,35%,7%,7%</c>伤害；\n<c=#ff9672>枯焦：</c>发射2枚小型非追踪水弹，每个造成<c=#7fbfff>85%</c>伤害。"
+  },
+  {
+   "name": "跃腾飞踢",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "陆水真蕈跳起飞踢造成<c=#b9b9b9>85%</c>伤害。\n<c=#ff99ff>活化：</c>速度提升；\n<c=#ff9672>枯焦：</c>飞踢伤害提升至<c=#b9b9b9>100%</c>。"
+  },
+  {
+   "name": "水光粼泡",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "陆水真蕈凝聚一个追踪水泡，造成<c=#7fbfff>85%</c>伤害。\n<c=#ff99ff>活化：</c>速度提升；\n<c=#ff9672>枯焦：</c>发射一个慢速大型水泡，造成<c=#7fbfff>100%</c>伤害。"
+  },
+  {
+   "name": "三相之形",
+   "type": "天赋",
+   "icon": "skill-4.webp",
+   "description": "陆水真蕈受到<c=#ff9999>火元素</c>/<c=#ffacff>雷元素</c>攻击后，会分别永久转变为<c=#ff9672>枯焦</c>/<c=#ff99ff>活化</c>状态。\n<c=#ff99ff>活化：</c>CD缩短，移速提升150%；\n<c=#ff9672>枯焦：</c>CD延长，移速下降50%。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 110920,
+   "atk": 7387,
+   "weight": 125,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "grounded-hydroshroom",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

@@ -1,0 +1,237 @@
+{
+ "name": "兆载永劫龙兽",
+ "nameEn": "Aeonblight Drake",
+ "subtitle": "永续永动·Gl-Faf",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 230.928,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "起身",
+   "pyro": 110,
+   "hydro": 110,
+   "anemo": 110,
+   "electro": 110,
+   "dendro": 110,
+   "cryo": 110,
+   "geo": 110,
+   "physical": 170
+  },
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 70
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "重式机枪",
+   "type": "远程 空巡",
+   "icon": "skill-1.webp",
+   "description": "兆载龙兽使用两翼各朝前施放一排的子弹，命中造成<c=#bababa>60%</c>伤害。"
+  },
+  {
+   "name": "尾行摩托",
+   "type": "位移 空巡",
+   "icon": "skill-2.webp",
+   "description": "靠近兆载龙兽时，兆载龙兽用尾部齿轮碾过，<c=#ffcebf>暴露头部弱点</c>，造成<c=#bababa>60%</c>伤害，若命中玩家则立即扫尾造成<c=#bababa>60%</c>伤害。"
+  },
+  {
+   "name": "高效打击",
+   "type": "锁定 空巡",
+   "icon": "skill-3.webp",
+   "description": "兆载龙兽瞄准玩家，<c=#ffcebf>暴露腹部弱点</c>，使用两翼施放总共28个追踪弹，造成<c=#bababa>80%,24%,8%,0.8%</c>伤害。"
+  },
+  {
+   "name": "低空游巡",
+   "type": "位移 地巡",
+   "icon": "skill-4.webp",
+   "description": "兆载龙兽朝玩家冲来，<c=#ffcebf>暴露头部弱点</c>，冲刺命中造成<c=#bababa>75%</c>伤害，若命中玩家则立即扫尾造成<c=#bababa>75%</c>伤害。"
+  },
+  {
+   "name": "垦土撅岩",
+   "type": "输出 地巡",
+   "icon": "skill-5.webp",
+   "description": "靠近兆载龙兽时，兆载龙兽使用头部进行挑击，向左向右各一次，每次造成<c=#bababa>60%</c>伤害，极大概率接扫尾。"
+  },
+  {
+   "name": "沉翼耘泥",
+   "type": "输出 地巡",
+   "icon": "skill-6.webp",
+   "description": "兆载龙兽使用双翼分别朝地面砸去，均造成<c=#b8b8b8>75%</c>伤害。"
+  },
+  {
+   "name": "尾链牵旋",
+   "type": "防卫 地巡",
+   "icon": "skill-7.webp",
+   "description": "靠近兆载龙兽时，兆载龙兽原地旋转一圈，使用尾部齿轮造成<c=#bababa>75%</c>伤害，可能接翼坠。"
+  },
+  {
+   "name": "散落洪流",
+   "type": "爆发",
+   "icon": "skill-8.webp",
+   "description": "每30s，兆载龙兽暴露头部弱点，汲取`元素锚栓`的力量，向空中抛出20枚散弹，造成对应元素的<c=#d8ffcc>100%,30%,10%</c>伤害，清空锚栓并<c=#ffbfbf>吸收元素</c>，之后转换空地巡状态，降落地面造成<c=#b9b9b9>30%</c>伤害。"
+  },
+  {
+   "name": "能量转化",
+   "type": "天赋",
+   "icon": "skill-9.webp",
+   "description": "施放「散落洪流」后，会立即吸收元素填充元素螺栓，使下一次该技能附上元素伤害，元素的种类以<c=#ffebbf>上一周期</c>所受<c=#ffbfbf>总和最高</c>的<c=#ffeebf>伤害</c>为准<c=#ffeebf>(物伤则无属性)</c>，<c=#ffbfbf>不吸收附着的元素</c>。元素吸收完毕后该元素抗性<c=#ffbfbf>+60%</c>，瘫痪清空抗性。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "元素锚栓",
+   "desc": "吸收元素后，增加<c=#ffbfbf>60%</c>该元素抗性。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_3302",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1035897,
+   "atk": 15665,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": {
+  "name": "兆载永劫龙兽·歼灭构型",
+  "nameEn": "Aeonblight Drake: Annihilation Configuration",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 969417,
+    "atk": 11419,
+    "multiplier": 1.2,
+    "advantage": ""
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 4830499,
+    "atk": 14773,
+    "multiplier": 4.0,
+    "advantage": "Multiple Elements Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 6004430,
+    "atk": 16260,
+    "multiplier": 4.3,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 13909262,
+    "atk": 17417,
+    "multiplier": 9.1,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "正常",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 70
+   }
+  ],
+  "skills": [
+   {
+    "name": "能量泄溢",
+    "type": "天赋",
+    "icon": "leyline-skill-1.webp",
+    "description": "施放「散落洪流」前，会立即吸收元素填充元素螺栓，使该次技能附上元素伤害，元素的种类以<c=#ffebbf>上一周期</c>所受<c=#ffbfbf>总和最高</c>的<c=#ffecbf>伤害</c>为准<c=#ffecbf>(物伤则无属性)</c>，<c=#ffbfbf>不吸收附着的元素</c>。元素吸收完毕后该元素抗性<c=#ffbfbf>+60%</c>，提升的抗性仅能通过吸收其他属性来转移。\n仅瘫痪动画期间不记录伤害。\n<c=#ffbfbf>(N5) </c>元素抗性提升效果变为<c=#ffbfbf>200%</c>。"
+   }
+  ],
+  "notes": [
+   {
+    "text": "(N5) 反制保护",
+    "desc": "永劫龙兽会以自身生命值划分为4个周期进行战斗：由生命值处于<c=#ffdfbf>75%/\n49%/24%</c>的瞬时锁血进行划分，每个周期内永劫龙兽会<c=#ffdfbf>吸收周期内所受伤害最多的元素</c>进行转换并提升<c=#ffbfbf>200%</c>对应抗性。\n触发瞬时锁血后，永劫龙兽会立即播放瘫痪动画，随后吸收元素。"
+   },
+   {
+    "text": "(N5) 强化翼胫",
+    "desc": "击中永劫龙兽的弱点时不会使其瘫痪落地，也不影响元素洪流的吸收，甚至无法中断技能施放。"
+   },
+   {
+    "text": "(N5) 多元作战",
+    "desc": "永劫龙兽若保持同一元素抗性超过55s，则会尝试升空作战。"
+   },
+   {
+    "text": "机制",
+    "desc": "吸收上一个周期内所受伤害最多的元素属性，并提升<c=#ffdfbf>60%</c>该元素抗性。\n<c=#ffbfbf>(N5) </c>抗性提升效果变为为<c=#ffdfbf>200%</c>。"
+   }
+  ],
+  "shields": []
+ },
+ "id": "aeonblight-drake",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关",
+  "幽境危战"
+ ]
+}

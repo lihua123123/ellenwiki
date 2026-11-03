@@ -1,0 +1,73 @@
+{
+ "name": "愚人众先遣队·水铳士",
+ "nameEn": "Fatui Skirmishers: Hydrogunner",
+ "subtitle": "",
+ "category": "Tps",
+ "categoryLabel": "第三人称射击（TPS）",
+ "tier": "",
+ "defaultLevel": 20,
+ "baseStats": {
+  "hp": {
+   "Value": 21.945073,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 67.587443,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 120,
+ "skills": [
+  {
+   "name": "流弹速射",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "水铳士连续进行猛烈攻击，造成<c=#7fbfff>22%</c>伤害。"
+  },
+  {
+   "name": "巨沫潮涌",
+   "type": "爆发",
+   "icon": "skill-2.webp",
+   "description": "[绝境]水铳士死亡留下纯水同款巨大水弹，爆炸造成<c=#7fbfff>150%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [
+  {
+   "label": "TPS射击",
+   "level": 20,
+   "hp": 1375,
+   "atk": 900,
+   "weight": 120,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "fatui-skirmishers-hydrogunner",
+ "icon": "avatar.webp",
+ "tags": [
+  "第三人称射击（TPS）"
+ ]
+}

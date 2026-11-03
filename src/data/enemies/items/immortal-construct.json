@@ -1,0 +1,163 @@
+{
+ "name": "不灭衍生造物",
+ "nameEn": "Immortal Construct",
+ "subtitle": "永恒焰羽的残次身躯",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 421.104,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "开局",
+   "pyro": 250,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 210,
+   "dendro": 210,
+   "cryo": 210,
+   "geo": 210,
+   "physical": 210
+  },
+  {
+   "name": "正常",
+   "pyro": 50,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "虚弱",
+   "pyro": 0,
+   "hydro": -40,
+   "anemo": -40,
+   "electro": -40,
+   "dendro": -40,
+   "cryo": -40,
+   "geo": -40,
+   "physical": -40
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "印曜饰缕",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "造物进行左右双翼挥扫、转身三段攻击，分别造成<c=#b8b8b8>50%,50%,70%</c>伤害。\n「命曜之姿」强化：攻击造成<c=#ff9999>火元素</c>伤害，且伤害倍率提升，分别造成<c=#ff9999>65%,\n65%,90%</c>伤害。"
+  },
+  {
+   "name": "殷花焚沉",
+   "type": "防御",
+   "icon": "skill-2.webp",
+   "description": "处于侧后方时，造物一个转身，顺便造成<c=#b8b8b8>25%</c>伤害。\n「命曜之姿」强化：攻击造成<c=#ff9999>火元素</c>伤害，且伤害倍率提升，造成<c=#ff9999>65%</c>伤害。"
+  },
+  {
+   "name": "命生灼耀",
+   "type": "强化",
+   "icon": "skill-3.webp",
+   "description": "造物升空，消耗<c=#ffdfbf>18%生命值</c>，<c=#ffdfbf>缓慢</c>展开等量的`余温护罩`，并进入「命曜之姿」状态。护罩展开期间可受`星烁反应`影响。\n该状态下，造物每造成一次伤害，都会为自身恢复<c=#ffdfbf>3%生命值(除爆发伤害外)</c>，恢复总量至多不超过所消耗的生命值，恢复行为可受`星烁反应`影响。若造物命中<c=#ffdfbf>角色护盾</c>，或命中<c=#ffdfbf>处于无敌帧下的角色</c>，则<c=#ffdfbf>不会触发恢复效果</c>。\n当生命值不足以消耗时，造物会尽量转换剩余的生命值成等量的护罩。护罩移除后进入<c=#ffdfbf>15s</c>的虚弱状态，直至再次开启护罩。"
+  },
+  {
+   "name": "至怒斗冠",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "距离较远时，造物朝玩家冲击而来，造成<c=#b8b8b8>100%</c>伤害，仅在「命曜之姿」状态下施放。"
+  },
+  {
+   "name": "烬灭蚀爪",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "造物抬起前肢进行两段爪划攻击，均造成<c=#b8b8b8>60%</c>伤害。\n「命曜之姿」强化：能够连续施放2次。"
+  },
+  {
+   "name": "茹焰炙升",
+   "type": "爆发",
+   "icon": "",
+   "description": "造物移至场地中央，将火焰盛放的花冠裹回蓓蕾，随后令其猛烈绽放，造成<c=#ff9999>150%</c>伤害，退出「命曜之姿」状态并移除护罩。若命中玩家则恢复<c=#ffdfbf>15%生命值</c>。"
+  },
+  {
+   "name": "星烁辉离",
+   "type": "天赋",
+   "icon": "",
+   "description": "「命曜之姿」：生成护罩时会倒扣<c=#ffdfbf>2</c>层；恢复的生命值将<c=#ffdfbf>立即扣除</c>，等于回血失效。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "余温护罩",
+   "desc": "层页生命护罩，共<c=#ffdfbf>9</c>层，每层<c=#ffdfbf>2%生命值</c>，破坏后进入虚弱状态，约<c=#ffdfbf>15s</c>后再次展开护罩。展开时，完全填满护罩需<c=#ffdfbf>2s</c>。<c=#ffdfbf>(仅大世界)</c>再次展开的护罩仅有<c=#ffdfbf>4.5</c>层，同时，第<c=#ffdfbf>2/3/4/\n>4</c>次展开护罩时的生命值恢复量为原来的<c=#ffdfbf>50%/25%/12.5%/\n10%</c>。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "余温护罩",
+   "description": "层页生命护罩，共<c=#ffdfbf>9</c>层，每层<c=#ffdfbf>2%生命值</c>，破坏后进入虚弱状态，约<c=#ffdfbf>15s</c>后再次展开护罩。展开时，完全填满护罩需<c=#ffdfbf>2s</c>。<c=#ffdfbf>(仅大世界)</c>再次展开的护罩仅有<c=#ffdfbf>4.5</c>层，同时，第<c=#ffdfbf>2/3/4/\n>4</c>次展开护罩时的生命值恢复量为原来的<c=#ffdfbf>50%/25%/12.5%/\n10%</c>。",
+   "elementType": "",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "WO[75,50,25,0]",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1888988,
+   "atk": 20886,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "immortal-construct",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

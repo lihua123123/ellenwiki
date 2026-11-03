@@ -1,0 +1,71 @@
+{
+ "name": "驼角鹿",
+ "nameEn": "Camelhorn Deer",
+ "subtitle": "",
+ "category": "Animals",
+ "categoryLabel": "动物",
+ "tier": "Animal",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 10.8672,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 15.072,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 0,
+   "hydro": 0,
+   "anemo": 0,
+   "electro": 0,
+   "dendro": 0,
+   "cryo": 0,
+   "geo": 0,
+   "physical": 0
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 500,
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "动物",
+   "level": 100,
+   "hp": 29412,
+   "atk": 2954,
+   "weight": 500,
+   "tenacity": 20
+  }
+ ],
+ "leyline": null,
+ "id": "camelhorn-deer",
+ "icon": "avatar.webp",
+ "tags": [
+  "动物"
+ ]
+}

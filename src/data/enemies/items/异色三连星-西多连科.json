@@ -1,0 +1,145 @@
+{
+ "name": "异色三连星·西多连科",
+ "nameEn": "Polychrome Tri-Stars: Sidorenko",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 502.608,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  },
+  {
+   "name": "增幅",
+   "pyro": 110,
+   "hydro": 110,
+   "anemo": 110,
+   "electro": 110,
+   "dendro": 110,
+   "cryo": 110,
+   "geo": 110,
+   "physical": 80
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "冰幕铳枪",
+   "type": "妨害",
+   "icon": "skill-1.webp",
+   "description": "冰胖掏出喷枪，朝前方扇形区域喷洒。\n喷枪持续造成<span class=\"cryo\">**30%,15%,7.5%,3%**</span>伤害，从右往左扫一次。\n<c=#72ffff>强化技：</c>从右往左扫，边走边扫，持续4个来回。"
+  },
+  {
+   "name": "坠地冰寒",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "冰胖蓄力跳起，重重下落在玩家面前，造成<span class=\"cryo\">**50%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "路见不平",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "处于增幅前状态时接近冰胖，冰胖撞出去造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "冰冻保鲜",
+   "type": "防御",
+   "icon": "skill-4.webp",
+   "description": "进入战斗后，或从瘫痪恢复，冰胖会尝试进入元素增幅状态：<c=#ffbfbf>全抗提升100%</c>，附属`冰御`特化盾，有效元素是<c=#ff9999>火</c>。"
+  },
+  {
+   "name": "凛冬余威",
+   "type": "亡语",
+   "icon": "skill-5.webp",
+   "description": "冰胖倒下后，留下一片冰风暴，持续高频造成<span class=\"cryo\">**40%**</span>伤害，冰雾的存在会吸引瓦西里前来乘凉。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冰御",
+   "desc": "<span class=\"cryo\">**8冻**</span>盾，火冰为1:2，其他所有反应均是1:10；击破可暂时瘫痪。该状态下，抗打断为0，重量翻6倍。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "冰御",
+   "description": "<span class=\"cryo\">**8冻**</span>盾，火冰为1:2，其他所有反应均是1:10；击破可暂时瘫痪。该状态下，抗打断为0，重量翻6倍。",
+   "elementType": "Frozen",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:A_1104",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 2254599,
+   "atk": 20886,
+   "weight": 150,
+   "tenacity": 210
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 574566,
+   "hpNote": "28%",
+   "atk": 9849,
+   "atkNote": "50%",
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "异色三连星-西多连科",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

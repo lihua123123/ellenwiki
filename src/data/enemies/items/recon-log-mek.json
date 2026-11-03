@@ -1,0 +1,100 @@
+{
+ "name": "机关·侦察记录型",
+ "nameEn": "Recon Log Mek",
+ "subtitle": "",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 21.7344,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 22.608,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "横撞直冲",
+   "type": "位移",
+   "icon": "skill-1.webp",
+   "description": "记录机关向前方突进一段距离，造成<c=#bababa>60%</c>伤害。"
+  },
+  {
+   "name": "发条爆弹",
+   "type": "输出 芒",
+   "icon": "skill-2.webp",
+   "description": "记录机关喷吐一枚带发条的定时炸弹，该炸弹将在一段时间后爆炸，造成<c=#ffacff>100%</c>伤害。"
+  },
+  {
+   "name": "雷闪发条",
+   "type": "妨害 荒",
+   "icon": "skill-3.webp",
+   "description": "记录机关喷吐一枚带发条的定时炸弹，该炸弹将在一段时间内放电持续造成<c=#ffacff>25%</c>伤害，最后爆炸造成<c=#ffacff>50%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "荒芒性质",
+   "desc": "<c=#ffbfbf>1次</c>芒荒攻击可以瘫痪相反属性的记录机关，约25s后恢复荒芒属性。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 88736,
+   "atk": 4432,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "recon-log-mek",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

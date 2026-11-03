@@ -1,0 +1,123 @@
+{
+ "name": "愚人众·冰萤术士",
+ "nameEn": "Fatui Cryo Cicin Mage",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 67.92,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 50,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "游雾洊冰",
+   "type": "召唤",
+   "icon": "skill-1.webp",
+   "description": "场上无冰萤存在时，冰萤术士使用雾虚草灯召唤3只冰萤。"
+  },
+  {
+   "name": "冰眩寒环",
+   "type": "号令",
+   "icon": "skill-2.webp",
+   "description": "冰萤术士召唤的冰萤间歇性的向玩家喷吐冰块，造成<span class=\"cryo\">**20%**</span>伤害。"
+  },
+  {
+   "name": "阵锢集令",
+   "type": "号令",
+   "icon": "skill-3.webp",
+   "description": "冰萤术士使用雾虚草灯指挥冰萤，围住玩家或者依次冲向玩家，产生爆破造成<span class=\"cryo\">**20%**</span>伤害。此外碰到冲刺中的冰萤也造成<span class=\"cryo\">**20%**</span>伤害。"
+  },
+  {
+   "name": "白绽冰花",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "冰萤术士用雾虚草灯砸击地面，产生范围冰刺，造成<span class=\"cryo\">**75%**</span>伤害。\n<c=#11dddd>攻击强化：</c>产生的冰刺向四个方向溅射，额外造成<span class=\"cryo\">**75%**</span>伤害。"
+  },
+  {
+   "name": "御寒萤华",
+   "type": "防御",
+   "icon": "skill-5.webp",
+   "description": "冰萤术士根据场上自己召唤的冰萤数量，附属不同厚度的`萤霜流华`护盾，并且场上的冰萤会间歇性为冰萤术士恢复盾量。"
+  },
+  {
+   "name": "爱屋及乌",
+   "type": "位移",
+   "icon": "skill-6.webp",
+   "description": "冰萤术士与冰萤一同进行传送位移，传送完毕后冰萤将在原地产生一次冰爆，造成<span class=\"cryo\">**20%**</span>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "萤霜流华",
+   "desc": "<span class=\"cryo\">**4×(冰萤数量)冻**</span>盾，击破没效果。该状态下，抗打断0，免疫风场力。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "WO[66x2,33x2,0x2]",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 2
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 2
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 2
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 183826,
+   "atk": 9849,
+   "weight": 75,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "fatui-cryo-cicin-mage",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

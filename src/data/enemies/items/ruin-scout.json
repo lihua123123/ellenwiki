@@ -1,0 +1,106 @@
+{
+ "name": "遗迹侦察者",
+ "nameEn": "Ruin Scout",
+ "subtitle": "",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 57.0528,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 48.984,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "翼叶旋振",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "侦察者旋动四翼叶，造成<c=#b9b9b9>30.7%</c>伤害。"
+  },
+  {
+   "name": "蓄压冲击",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "侦察者朝向玩家，暴露核心，蓄力冲击造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "溢能过载",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "侦察者绷直四翼叶，随后核心施放脉冲波，造成<c=#b9b9b9>76.9%</c>伤害。"
+  },
+  {
+   "name": "混形球阵",
+   "type": "召唤",
+   "icon": "skill-4.webp",
+   "description": "侦察者在自己位置放下一个混沌球，持续接触造成<c=#b9b9b9>38.4%</c>伤害，混沌球在场上长时间存在，不同顺序的混沌球之间会连线，接触持续造成<c=#b9b9b9>38.4%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_1102",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 90,
+   "hp": 111301,
+   "atk": 7422,
+   "weight": 300,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "ruin-scout",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

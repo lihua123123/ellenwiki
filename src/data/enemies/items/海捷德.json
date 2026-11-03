@@ -1,0 +1,155 @@
+{
+ "name": "海捷德",
+ "nameEn": "Hiljetta",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1412.7359999999999,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 140.672,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "战前",
+   "pyro": 310,
+   "hydro": 310,
+   "anemo": 310,
+   "electro": 310,
+   "dendro": 310,
+   "cryo": 310,
+   "geo": 310,
+   "physical": 280
+  },
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  },
+  {
+   "name": "蓄力",
+   "pyro": 70,
+   "hydro": 70,
+   "anemo": 70,
+   "electro": 70,
+   "dendro": 70,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 40
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 85,
+ "skills": [
+  {
+   "name": "吾虽寿矣",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "海捷德不紧不慢地打两个近拳，均造成<c=#ffebbf>40%</c>伤害。装备装甲后伤害翻倍，当装备1/2/3个装甲时，就会进行1/2/4次连续普攻。"
+  },
+  {
+   "name": "壮心不已",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "处于后方时，海捷德用力打出下勾拳，造成<c=#ffebbf>40%</c>伤害。装备装甲后伤害翻倍。"
+  },
+  {
+   "name": "志在千里",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "海捷德立即蓄力，随后冲向玩家造成<c=#ffebbf>60%,15%</c>伤害。装备装甲后，冲刺造成<c=#ffebbf>100%,25%</c>伤害，当装备1/2/3个装甲时，就会进行2/4/8次冲刺，且冲刺距离大幅加长。"
+  },
+  {
+   "name": "老骥伏枥",
+   "type": "强化",
+   "icon": "skill-4.webp",
+   "description": "一段时间后，或者海捷德生命值低于<c=#ffdfbf>80%/60%/40%</c>时，海捷德会在战斗中尝试吸附「`战斗装甲`」强化战斗，第<c=#ffdfbf>1/2/\n>2</c>次蓄力将召唤<c=#ffdfbf>1/2/3</c>个装甲；若处于深境螺旋则直接召唤<c=#ffdfbf>3</c>个装甲。\n对海捷德持续触发<span class=\"cryo\">**冻结反应**</span>可冻结她，使其无法装备装甲，每个装甲在吸收时将对其造成<c=#ffdfbf>5%生命值</c>的真伤；\n对装甲触发<c=#ff66aa>超载反应</c>可直接炸毁；\n或者<c=#ffff99>阻挡路径</c>同样可以阻止吸附，使其掉落为角色提供增益。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "战斗装甲",
+   "desc": "每个装甲吸附所需7s，总蓄力时长7/12/17s，可被超载破坏；海捷德吸附后持续2个技能或至多18s卸下。"
+  },
+  {
+   "text": "被阻挡后掉落地面，为附近2m内角色提供加成",
+   "desc": "攻击力提升40%，持续8s，可叠加，每层单独计算。"
+  },
+  {
+   "text": "冻结",
+   "desc": "冻结一次+12*D，满计量36，冻结后吸附装甲造成真伤后解除；D为影响因子，会受到多人模式影响(D=1/0.9/0.83/0.8)，"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1115",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 6337251,
+   "atk": 29241,
+   "weight": 85,
+   "tenacity": 4000
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 1470800,
+   "hpNote": "25.5%",
+   "atk": 15758,
+   "weight": 85,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "海捷德",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

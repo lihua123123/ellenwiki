@@ -1,0 +1,102 @@
+{
+ "name": "愚人众特辖队·先锋士",
+ "nameEn": "Oprichniki Vanguard",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 16.3008,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 22.608,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "挥锤走电",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "先锋士使用撬锤挥舞至多2段，造成<c=#ffacff>40%,70%</c>伤害。"
+  },
+  {
+   "name": "制压重击",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "先锋士激活撬锤，跳起并向地面砸下，造成<c=#ffacff>100%</c>伤害。武器属「双极」物件，其可用`月`<c=#ccbfff>矩</c><c=#ebbfff>力</c>没收。"
+  },
+  {
+   "name": "赤手双拳",
+   "type": "其他",
+   "icon": "skill-3.webp",
+   "description": "武器被夺后，若为女先锋士，则进行2次拳击，均造成<c=#b8b8b8>10%</c>伤害。"
+  },
+  {
+   "name": "赤手空踹",
+   "type": "其他",
+   "icon": "skill-4.webp",
+   "description": "武器被夺后，若为男先锋士，则抬腿旋转踢，造成<c=#b8b8b8>10%</c>伤害。"
+  },
+  {
+   "name": "雷矩重暴",
+   "type": "亡语",
+   "icon": "",
+   "description": "[绝境]先锋士被击败后，在原地留下雷氛，持续造成<c=#ffacff>125%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:E_0001",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 66552,
+   "atk": 4432,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "oprichniki-vanguard",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

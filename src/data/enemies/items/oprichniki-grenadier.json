@@ -1,0 +1,90 @@
+{
+ "name": "愚人众特辖队·榴铳手",
+ "nameEn": "Oprichniki Grenadier",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 20.096000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "气弹零星",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "榴铳手发射一枚风弹，造成<span class=\"anemo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "乱风珠连",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "榴铳手激活榴弹炮，连续发射6枚风弹，均造成<span class=\"anemo\">**60%**</span>伤害。武器属「双极」物件，其可用`月`<c=#ccbfff>矩</c><c=#ebbfff>力</c>没收。"
+  },
+  {
+   "name": "赤手双拳",
+   "type": "其他",
+   "icon": "skill-3.webp",
+   "description": "武器被夺后，则进行2次拳击，均造成<c=#b8b8b8>10%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:E_0001",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 55460,
+   "atk": 3940,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "oprichniki-grenadier",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

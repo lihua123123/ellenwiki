@@ -1,0 +1,113 @@
+{
+ "name": "斯克弗努格",
+ "nameEn": "Skofnungr",
+ "subtitle": "血蛇的断锋",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 489.024,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 35.168,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 70,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "锋引黑蔓",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "幻影自身旋转一圈，造成<c=#ffacff>60%</c>伤害，同时在地面挑起3道扩散的荆棘，触碰造成<c=#b8b8b8>60%,30%,15%,6%</c>伤害。容易在普攻后施放。"
+  },
+  {
+   "name": "阔剑雷尖",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "幻影以不规则的攻击连招使用阔剑进行攻击，一共有2种：\n左扫一圈，造成<c=#ffacff>80%</c>伤害；\n纵劈一下，造成<c=#ffacff>90%</c>伤害；\n此外，每次挥剑都会在原地留下停滞的裂缝，片刻后崩裂造成<c=#ffacff>50%</c>伤害。"
+  },
+  {
+   "name": "雷索重剑",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "幻影旋转阔剑并丢出，造成<c=#ffacff>100%</c>伤害；\n该技能容易与普攻形成连招。"
+  },
+  {
+   "name": "分断生界",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "幻影闪现，并在传送门后出现，进行挥剑并产生剑气，挥剑造成<c=#ffacff>60%</c>伤害，剑气造成<c=#ffacff>80%</c>伤害。通常在<c=#ffdfbf>现身时</c>施放。"
+  },
+  {
+   "name": "噬涡黑牙",
+   "type": "蓄力",
+   "icon": "skill-5.webp",
+   "description": "低于<c=#ffdfbf>75%</c>生命值时，幻影消失，并在场地留下2处涡眼，涡眼带有`星锥`，其中的涡眼将慢慢变大，16s后变为<c=#ffacff>幻形牙兽·雷</c>，其立即扫尾并产生剑气，两者均造成<c=#ffacff>100%</c>牙兽攻击力的伤害。\n(牙兽的攻击力约<c=#ffdfbf>3510</c>(<c=#ffdfbf>3.7854B2</c>))"
+  },
+  {
+   "name": "窃承漆角",
+   "type": "蓄力",
+   "icon": "skill-6.webp",
+   "description": "低于<c=#ffdfbf>50%</c>生命值时，幻影消失，并在场地留下3处星隙，其将锁定玩家，6s后变为鲸刺并依次发射，造成<c=#ffacff>100%</c>尖刺攻击力的伤害。低于<c=#ffdfbf>25%</c>生命值时将与「噬涡黑牙」一起施放，且出现4处星隙。\n(鲸刺的攻击力约<c=#ffdfbf>1003</c>(<c=#ffdfbf>1.0816B2</c>))"
+  }
+ ],
+ "notes": [
+  {
+   "text": "星锥",
+   "desc": "2单位特化盾，2次攻击或1次重击可破坏，每处涡眼有三枚星锥。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "剧情",
+   "level": 90,
+   "hp": 1335610,
+   "atk": 5329,
+   "weight": 150,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "skofnungr",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

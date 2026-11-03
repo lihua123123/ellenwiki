@@ -1,0 +1,106 @@
+{
+ "name": "大型风史莱姆",
+ "nameEn": "Large Anemo Slime",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 35.168,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": "IMM",
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "球状臌胀",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "离得很近时，大型风史莱姆突然鼓起，造成<span class=\"anemo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "气垫撞击",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "离得较远时，大型风史莱姆鼓起，朝玩家冲来，造成<span class=\"anemo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "空弦流弹",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "大型风史莱姆起飞并鼓起，朝玩家发射至多4枚的无色气弹，每个造成<span class=\"anemo\">**50%**</span>伤害。\n<c=#10dead>强攻强化：\n</c>连续发射更多的气弹。"
+  },
+  {
+   "name": "轻巧之风",
+   "type": "天赋",
+   "icon": "skill-4.webp",
+   "description": "大型风史莱姆若处在膨胀状态，受到除免疫外的攻击则会立即爆炸死亡；死亡时推开玩家，原地留下短暂的风场。\n坠落时，会张开小翅膀缓降不受伤。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:A_1103",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 73530,
+   "atk": 6894,
+   "weight": 100,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "large-anemo-slime",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

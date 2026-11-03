@@ -1,0 +1,118 @@
+{
+ "name": "幼岩龙蜥",
+ "nameEn": "Geovishap Hatchling",
+ "subtitle": "梦想成为巨龙的幼兽",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 40.751999999999995,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 54.25920000000001,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 50,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "撕峰之爪",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "幼岩龙蜥使用双爪划击，造成<c=#ffe599>55.5%</c>伤害。"
+  },
+  {
+   "name": "途行无迹",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "幼岩龙蜥蜷缩身子，在场地内无目的性的滚动，触碰持续造成<c=#ffe599>33.3%</c>伤害。"
+  },
+  {
+   "name": "掀地迂旋",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "幼岩龙蜥在原地不断旋转，造成<c=#b9b9b9>44.4%</c>伤害，旋转结束后施放强力尾刀，造成<c=#b9b9b9>66.6%</c>伤害。"
+  },
+  {
+   "name": "若龙崩空",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "距离玩家较远时，幼岩龙蜥会直接高空跳跃过来，造成<c=#b9b9b9>83.3%</c>伤害。"
+  },
+  {
+   "name": "龙径危卷",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "幼岩龙蜥蜷缩身子，朝玩家冲过来，造成<c=#b9b9b9>83.3%</c>伤害，若命中玩家则立即弹开坠落，坠落造成<c=#b9b9b9>100%</c>伤害。若命中玩家身上的护盾，则会造成一段时间的眩晕。"
+  },
+  {
+   "name": "粹石凝晶",
+   "type": "天赋",
+   "icon": "skill-6.webp",
+   "description": "距离玩家较远时，幼岩龙蜥钻地接近玩家，在钻入处掉落<c=#ffdc72>2个岩结晶片</c>，该结晶盾可与其他结晶盾叠加，目前岩结晶盾仅能由此方法产生，其盾量取决于拾取的角色等级。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:A_1103",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 110295,
+   "atk": 10637,
+   "weight": 150,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "geovishap-hatchling",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

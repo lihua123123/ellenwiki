@@ -1,0 +1,107 @@
+{
+ "name": "冰飘浮灵",
+ "nameEn": "Cryo Specter",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 21.7344,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 21.98,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": "IMM",
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "俱寒冰角",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "冰飘浮灵发射1个弱追踪性的冰锥，移动速度较慢，造成<span class=\"cryo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "陨冰崩雪",
+   "type": "猛攻",
+   "icon": "skill-2.webp",
+   "description": "(满怒施放)冰飘浮灵连续朝玩家抛出6个大雪块，每个造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "霜荚圆晶",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "冰飘浮灵朝地面喷出一颗冰球，冰球爆炸造成<span class=\"cryo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "迸裂寒尘",
+   "type": "亡语",
+   "icon": "skill-4.webp",
+   "description": "冰飘浮灵死亡。\n<c=#7df0fd>未满怒：</c>直接爆炸，造成<span class=\"cryo\">**100%**</span>伤害；\n<c=#7df0fd>满怒：</c>蓄力爆炸，造成<span class=\"cryo\">**120%**</span>伤害，并留下一地的冰霜，接触造成<span class=\"cryo\">**40%**</span>伤害。"
+  },
+  {
+   "name": "怒气积攒",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "飘浮灵在受到超过自身生命值上限一定比例的单次伤害时，会积攒「怒气」。\n满怒状态下，免疫风场力、击飞，重量翻3倍。所受单次伤害与自身生命上限的区间关系如右侧："
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 88736,
+   "atk": 4309,
+   "weight": 80,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "cryo-specter",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

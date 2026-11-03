@@ -1,0 +1,95 @@
+{
+ "name": "风丘丘萨满",
+ "nameEn": "Anemo Samachurl",
+ "subtitle": "",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 50,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "低压风涡",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "风萨满在玩家处召唤真空场，持续吸引玩家，无伤害。\n<c=#10deac>支援强化：\n</c>生成真空场的时候中央同时生成龙卷风，持续造成<span class=\"anemo\">**25%**</span>伤害。"
+  },
+  {
+   "name": "周环气旋",
+   "type": "天赋",
+   "icon": "skill-2.webp",
+   "description": "风萨满召唤3个龙卷风，其游走于场地，接触造成<span class=\"anemo\">**25%**</span>伤害。\n<c=#10deac>攻击强化：\n</c>中央的龙卷风变得更大。"
+  },
+  {
+   "name": "萨满杖击",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "距离玩家较近时，风萨满挥杖击飞玩家，造成<c=#b9b9b9>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 36765,
+   "atk": 9849,
+   "weight": 75,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "anemo-samachurl",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

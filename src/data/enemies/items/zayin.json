@@ -1,0 +1,155 @@
+{
+ "name": "无相之草·回旋曲·森郁之笼",
+ "nameEn": "「Zayin」",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 122.256,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": "IMM",
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "棘缚连落",
+   "type": "碾压",
+   "icon": "skill-1.webp",
+   "description": "无相之草用荆棘束缚，升空朝玩家进行3次下落攻击，前两次造成<c=#99ff87>70%</c>伤害，最后一次造成<c=#99ff87>100%</c>伤害。下落攻击坠地时，可使用<c=#ff9999>火元素</c>攻击外壳暴露核心。"
+  },
+  {
+   "name": "毒荆交集",
+   "type": "妨害",
+   "icon": "skill-2.webp",
+   "description": "无相之草形成一个刺锥深入地面，并暴露核心，此后追踪玩家生成3-4个`荆棘锥`，每个造成<c=#99ff87>20%</c>伤害，可被<c=#ff9999>烧毁</c>，2s后各荆棘锥依次进行放刺针扎，造成<c=#99ff87>50%</c>伤害。"
+  },
+  {
+   "name": "含孢初绽",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "无相之草化为肮脏花苞，喷出草球，每个造成<c=#99ff87>40%</c>伤害，总共分3批喷出，批次为2/3/4，每个草球落地后留下腐殖质，接触持续造成<c=#99ff87>5%</c>伤害。"
+  },
+  {
+   "name": "松闪笞鞭",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "无相之草化为一个草鞭，进行纵击、甩击、旋转共3段的攻击，其依次造成<c=#99ff87>40%,60%,80%</c>伤害。"
+  },
+  {
+   "name": "枯木复春",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "无相之草化为一个树苗，暴露核心，场地边缘形成一圈的`荆棘`，其将不断接近无相之草，接触造成<c=#99ff86>10%</c>伤害，到达后引发无相之草的一次爆炸，造成<c=#99ff86>250%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。荆棘可被<c=#ff9999>烧毁</c>，全部烧毁后继续暴露核心而不爆炸。"
+  },
+  {
+   "name": "悉数禁灭",
+   "type": "重置",
+   "icon": "skill-6.webp",
+   "description": "无相之草组装成类似于三脚架的装置，数秒后将场上的「愈疗草芯」全部转变为枯焦状态。"
+  },
+  {
+   "name": "愈疗芯丛",
+   "type": "辅助",
+   "icon": "skill-7.webp",
+   "description": "无相之草在场上产生3个枯焦状态的「愈疗草芯」，不同状态有不同效果：\n<c=#ff9999>火-枯焦：</c>每1s扣除<c=#bfffbf>3%(极限9%)生命值</c>，敌人恢复<c=#ffccbf>1.5%(极限6%)生命值</c>；\n<c=#99ff86>草-正常：</c>每2s恢复<c=#bfffbf>2%生命值</c>；\n<c=#ffacff>雷-活化：</c>每2s恢复<c=#bfcdff>5点元素能量</c>并提升<c=#ffbfbf>50%攻击力</c>，10sD。"
+  },
+  {
+   "name": "濒亡·净化",
+   "type": "复苏",
+   "icon": "skill-8.webp",
+   "description": "无相之草生命值低于5%时进行净化，利用现存的「愈疗草芯」进行净化。\n净化期间无相之草自身附着<c=#99ff86>`朽木秽质`</c>，且会间歇抛出枯萎弹，造成<c=#00ea52>60%</c>伤害，其会将「愈疗草芯」转化为枯焦状态。\n枯萎弹落地会留下`侵蚀草晶球`， 一段时间后将返回核心处削减净化进度。\n当净化次数为<c=#72ff72>1/2/>2</c>时，无相之草恢复<c=#72ff72>50%/25%/12.5%</c>生命值。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "荆棘锥",
+   "desc": "2木盾，可被烧毁。 荆棘：2木盾，可被烧毁，全部烧毁阻止无相之草技能。"
+  },
+  {
+   "text": "朽木秽质",
+   "desc": "48木逆盾，受到草伤+0.24(极限0.16)木，受到正常草芯净化+0.32(极限0.20)木，受到活化草芯净化+0.96(极限0.60)木，燃烧-0.4木持续10s后熄灭。"
+  },
+  {
+   "text": "侵蚀草晶球",
+   "desc": "非盾，返回核心-0.4木，被雷元素活化后返回核心+0.8木。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "荆棘锥",
+   "description": "2木盾，可被烧毁。 荆棘：2木盾，可被烧毁，全部烧毁阻止无相之草技能。",
+   "elementType": "Wood",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:B_3332",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 548416,
+   "atk": 15665,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "zayin",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

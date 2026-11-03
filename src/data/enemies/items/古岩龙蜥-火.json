@@ -1,0 +1,180 @@
+{
+ "name": "古岩龙蜥·火",
+ "nameEn": "Primo Geovishap",
+ "subtitle": "曾与「龙王」摇撼山岳的岩龙",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 407.52,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "起身",
+   "pyro": 210,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 210,
+   "dendro": 210,
+   "cryo": 210,
+   "geo": 250,
+   "physical": 230
+  },
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 50,
+   "physical": 30
+  },
+  {
+   "name": "弹反",
+   "pyro": -40,
+   "hydro": -40,
+   "anemo": -40,
+   "electro": -40,
+   "dendro": -40,
+   "cryo": -40,
+   "geo": 0,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "爪犁天开",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "古岩龙蜥使用右爪挥扫，造成<c=#ffe599>40%</c>伤害；古岩龙蜥使用左爪敲地，后拔扯，敲地和拔扯均造成<c=#ffe599>35%</c>伤害。"
+  },
+  {
+   "name": "躣岩如沙",
+   "type": "瞄准",
+   "icon": "skill-2.webp",
+   "description": "离古岩龙蜥较远时，古岩龙蜥深入地下,碰到造成<c=#ffe599>25%</c>伤害，然后冒出捶击地面造成<c=#ffe599>75%</c>伤害，并在途经上留下对应元素的「龙鳞」。\n<c=#ffebbf>(仅限风来人)</c>出地后获得`幽谷之庇`。"
+  },
+  {
+   "name": "左右开攻",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "古岩龙蜥先用右爪扫击，造成<c=#ffe599>40%</c>伤害，再用左爪划扫，造成<c=#ffe599>50%</c>伤害，最后双爪拍击地面造成<c=#ffe599>62.5%</c>伤害。"
+  },
+  {
+   "name": "原素吐息",
+   "type": "妨害",
+   "icon": "skill-4.webp",
+   "description": "古岩龙蜥凝聚自身元素，朝前方扇形区域扫过，造成对应元素的<c=#ffffbf>40%,20%,10%</c>伤害。"
+  },
+  {
+   "name": "浮金飘尘",
+   "type": "防卫",
+   "icon": "skill-5.webp",
+   "description": "处于古岩龙蜥身后时，古岩龙蜥使用尾部旋扫一圈，造成<c=#ffe599>50%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "晶鳞棋布",
+   "type": "埋伏",
+   "icon": "skill-6.webp",
+   "description": "古岩龙蜥翘尾扔出5个对应自身元素的「龙鳞」，没有伤害。"
+  },
+  {
+   "name": "龙灵残煜",
+   "type": "天赋",
+   "icon": "skill-7.webp",
+   "description": "古岩龙蜥产生的「龙鳞」，不同元素的攻击方式不同：\n<c=#ff9999>狱火</c>：爆炸造成<c=#ff9999>40%</c>伤害，留下一片熔岩持续造成<c=#ff9999>10%</c>伤害；\n<c=#7fbfff>清涟</c>：在其附近产生7~8次水喷，每个水喷造成<c=#7fbfff>20%</c>伤害；\n<span class=\"cryo\">**青霜**</span>：产生三波冰棘，依次造成<span class=\"cryo\">**25%,25%,37.5%**</span>伤害；\n<c=#ffacff>紫电</c>：产生十字雷，造成<c=#ffacff>25%</c>伤害。"
+  },
+  {
+   "name": "晶鳞四处",
+   "type": "埋伏",
+   "icon": "skill-8.webp",
+   "description": "当古岩龙蜥的生命值低于<c=#ffebbf>20%</c>时，古岩龙蜥抖动全身，飞出数十个对应元素的「龙鳞」，没有伤害。\n<c=#ffebbf>(仅限风来人)</c>晶鳞四处可转换其元素属性，顺序为<c=#ff9999>火</c><c=#7fbfff>水</c><span class=\"cryo\">**冰**</span><c=#ffacff>雷</c>。"
+  },
+  {
+   "name": "原岩喷吐",
+   "type": "爆发",
+   "icon": "skill-9.webp",
+   "description": "古岩龙蜥凝聚自身元素之力，朝地面喷射，造成大范围对应元素的<c=#ffffbf>100%</c>伤害，若角色受护盾庇护则只受到对应元素的<c=#ffffbf>25%</c>伤害。\n该技能可被`盾反`。此技能在古岩龙蜥生命值低于<c=#ffebbf>15%</c>时不再施放。\n<c=#ffebbf>(仅限风来人)</c>原岩喷吐可转换其元素属性，顺序为<c=#ff9999>火</c><c=#7fbfff>水</c><span class=\"cryo\">**冰**</span><c=#ffacff>雷</c>。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "盾反",
+   "desc": "护盾必须能扛住该次攻击，方可触发盾反，盾反成功后古岩龙蜥虚弱5s，全抗下降50%。若盾反成功，则按如下扣除古岩龙蜥的生命值：\n1.若为岩盾或对应元素盾，扣除15%生命值；\n2.若不为对应元素盾或岩盾，扣除5%生命值。"
+  },
+  {
+   "text": "幽谷之庇",
+   "desc": "40岩盾，继承10/3倍生命值。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "盾反",
+   "description": "护盾必须能扛住该次攻击，方可触发盾反，盾反成功后古岩龙蜥虚弱5s，全抗下降50%。若盾反成功，则按如下扣除古岩龙蜥的生命值：\n1.若为岩盾或对应元素盾，扣除15%生命值；\n2.若不为对应元素盾或岩盾，扣除5%生命值。",
+   "elementType": "Rock",
+   "duration": ""
+  },
+  {
+   "name": "幽谷之庇",
+   "description": "40岩盾，继承10/3倍生命值。",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:A_1103",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1182448,
+   "atk": 20886,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "古岩龙蜥-火",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

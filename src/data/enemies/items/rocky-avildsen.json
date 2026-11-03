@@ -1,0 +1,129 @@
+{
+ "name": "罗基·艾威尔森",
+ "nameEn": "Rocky Avildsen",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 869.376,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 138.16,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 125,
+ "skills": [
+  {
+   "name": "右平勾拳",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "罗基进行蓄力，用力向前下方挥出一拳，造成<c=#b9b9b9>85%</c>伤害。\n概率接着施放「左侧平拳」；80%HP以下时，则概率接着施放「左侧二连」。"
+  },
+  {
+   "name": "左侧平拳",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "罗基侧身蓄力，朝对手快速使出一拳，造成<c=#b9b9b9>66%</c>伤害。"
+  },
+  {
+   "name": "左侧二连",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "罗基侧身蓄力，朝对手快速使出2拳，依次造成<c=#b9b9b9>50%,85%</c>伤害。"
+  },
+  {
+   "name": "伏下辄出",
+   "type": "闪避",
+   "icon": "skill-4.webp",
+   "description": "若罗基被击飞落地，则直接闪现，或许突然挥来一平勾拳，造成<c=#b8b8b8>85%</c>伤害，或许从天而坠，造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "彻天裂石",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "罗基倏的跳起，在对手上方重重落地，击飞对手并造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "石碎尘砂",
+   "type": "远程",
+   "icon": "skill-6.webp",
+   "description": "罗基原地朝地拳击1-3次，产生以对手为方目标的1/2/4道地波，地波造成<c=#b9b9b9>60%</c>伤害。"
+  },
+  {
+   "name": "硬气犟劲",
+   "type": "天赋",
+   "icon": "skill-7.webp",
+   "description": "罗基的生命值低于80%时，将能够施放「彻天裂石」与「石碎尘砂」技能；\n罗基的生命值低于40%时，攻击力将永久提升<c=#ffbfbf>40%</c>。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1115",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 3899847,
+   "atk": 28719,
+   "weight": 125,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "rocky-avildsen",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

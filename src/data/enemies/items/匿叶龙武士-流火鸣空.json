@@ -1,0 +1,106 @@
+{
+ "name": "匿叶龙武士·流火鸣空",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 54.336,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 45.216,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "质量不错",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "流火鸣空拿着炮筒进行划、砸2段攻击，分别造成<c=#b8b8b8>50%,70%</c>伤害。"
+  },
+  {
+   "name": "如雾种实",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "流火鸣空扔出钩锁进行一段位移，立即接开炮发射8枚籽弹，每枚籽弹造成<c=#99ff85>30%,15%,7.5%,3%</c>伤害。"
+  },
+  {
+   "name": "芳蕴礼弹",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "距离较远时，流火鸣空将装弹炮筒，发射1枚迫击草球，造成<c=#99ff85>80%</c>伤害。"
+  },
+  {
+   "name": "走心离火",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "流火鸣空驱使灵力，迂旋炮筒造成<c=#99ff85>80%</c>伤害，接着捶地，促使炮筒喷出9枚草球，每枚草球造成<c=#99ff85>100%,50%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:A_1102",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 221840,
+   "atk": 8864,
+   "weight": 100,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "匿叶龙武士-流火鸣空",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

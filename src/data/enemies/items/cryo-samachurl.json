@@ -1,0 +1,113 @@
+{
+ "name": "冰丘丘萨满",
+ "nameEn": "Cryo Samachurl",
+ "subtitle": "",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 50,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "霜棘笋突",
+   "type": "定点",
+   "icon": "skill-1.webp",
+   "description": "冰萨满在玩家处生成寒冰锥，每个造成<span class=\"cryo\">**50%**</span>伤害，冰锥消失后留下冰霜，持续造成<span class=\"cryo\">**15%**</span>伤害。"
+  },
+  {
+   "name": "冰质平柱",
+   "type": "辅助",
+   "icon": "skill-2.webp",
+   "description": "冰萨满<c=#4cffff>给自己</c>和在场的<c=#4cffff>丘丘射手、其他丘丘萨满、深渊法师</c>的下方生成一个`冰柱`，供其在柱子上输出，至多生成3个冰柱。"
+  },
+  {
+   "name": "棱鸣震波",
+   "type": "妨害",
+   "icon": "skill-3.webp",
+   "description": "玩家离柱子较近时，冰萨满令其产生冲击波，造成<span class=\"cryo\">**15%**</span>伤害。"
+  },
+  {
+   "name": "萨满杖击",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "距离玩家较近时，冰萨满挥杖击飞玩家，造成<c=#b8b8b8>100%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冰柱",
+   "desc": "<span class=\"cryo\">**12冻**</span>盾，可伤害转化。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "冰柱",
+   "description": "<span class=\"cryo\">**12冻**</span>盾，可伤害转化。",
+   "elementType": "Frozen",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 36765,
+   "atk": 9849,
+   "weight": 75,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "cryo-samachurl",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

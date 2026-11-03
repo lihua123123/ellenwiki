@@ -1,0 +1,90 @@
+{
+ "name": "幼嫩的分节树",
+ "nameEn": "Juvenile Tree Segment",
+ "subtitle": "生于灵野的树妖",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": -20,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 20,
+   "cryo": 10,
+   "geo": 20,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 200,
+ "skills": [
+  {
+   "name": "晃节曳枝",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "树妖进行左右横扫攻击，依次造成<c=#b8b8b8>60%,\n80%</c>伤害。持有「岩息」时攻击造成<c=#ffe599>岩元素</c>伤害，且伤害倍率提升，依次造成<c=#ffe599>80%,100%</c>伤害。"
+  },
+  {
+   "name": "扑根落蘖",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "树妖拖着树枝奔跑进行甩击，造成<c=#b8b8b8>80%,\n</c>伤害。持有「岩息」时攻击造成<c=#ffe599>岩元素</c>伤害，且伤害倍率提升，造成<c=#ffe599>100%</c>伤害。受`星烁反应`影响，树妖施放本技能时会被绊倒在地。"
+  },
+  {
+   "name": "采息复灵",
+   "type": "回复",
+   "icon": "",
+   "description": "树妖进行「扎根」，生出根须，暴露胸部树心，持续<c=#ffdfbf>3s</c>后恢复<c=#ffdfbf>17%生命值</c>，同时获得持续1次技能的「岩息」。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "GP[0]",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 110920,
+   "atk": 4924,
+   "weight": 200,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "juvenile-tree-segment",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

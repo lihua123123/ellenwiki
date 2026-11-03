@@ -1,0 +1,112 @@
+{
+ "name": "巡陆艇·近战攻坚型",
+ "nameEn": "Close Combat Storm Landcruiser",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 32.6016,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 22.608,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 120,
+ "skills": [
+  {
+   "name": "遽以火明",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "巡陆艇使用锯片进行一段攻击，造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "炽铁旋刃",
+   "type": "妨害",
+   "icon": "skill-2.webp",
+   "description": "巡陆艇使用锯片持续进行切割，持续造成<c=#ff9999>30%,15%,6%,3%</c>伤害。"
+  },
+  {
+   "name": "白刃灼击",
+   "type": "猛攻",
+   "icon": "skill-3.webp",
+   "description": "巡陆艇激活锯片，进入`附魔状态`，使用锯片进行持续短锯、划、旋、戳、戳、大戳6段攻击，依次造成<c=#ff9999>30%,100%,\n100%,80%,80%,100%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "附魔状态",
+   "desc": "巡陆艇的武器进行附魔且顶部出现一充能条，此时<c=#ffdfbf>触发4次(月)感电</c>或<c=#ffdfbf>直接利用月矩力</c>可中断技能。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [
+  {
+   "Name": "附魔状态",
+   "Description": "巡陆艇的武器进行附魔且顶部出现一充能条，此时<color=#ffdfbf>触发4次(月)感电</color>或<color=#ffdfbf>直接利用月矩力</color>可中断技能。",
+   "IconPath": "",
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "巡陆艇的武器进行附魔且顶部出现一充能条，此时触发4次(月)感电或直接利用月矩力可中断技能。"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 133104,
+   "atk": 4432,
+   "weight": 120,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "close-combat-storm-landcruiser",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

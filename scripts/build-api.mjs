@@ -17,8 +17,11 @@
  *   /api/artifacts/<名称>     → dist/api/artifacts/<名称>.json
  *   /api/attachment           → dist/api/attachment.json    （元素附着及产球，解析后）
  *   /api/bosses               → dist/api/bosses.json
+ *   /api/enemies              → dist/api/enemies/index.json
+ *   /api/enemies/<id>         → dist/api/enemies/<id>.json
  *   /api/formulas             → dist/api/formulas/index.json
  *   /api/formulas/<game>      → dist/api/formulas/<game>.json（genshin / sr / zzz）
+ *   /api/palette              → dist/api/palette.json       （配色方案：令牌 + 原表色值留档）
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync, rmSync, readdirSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
@@ -118,6 +121,21 @@ async function main() {
     counts.bosses = Array.isArray(bosses) ? bosses.length : Object.keys(bosses).length;
   } else counts.bosses = 0;
 
+  /* ===== 敌人图鉴（generate-enemies.py 产物） ===== */
+  const enemyIndexPath = join(ROOT, 'src/data/enemies/index.json');
+  if (existsSync(enemyIndexPath)) {
+    const enemyIndex = readJson(enemyIndexPath);
+    const eIndex = [];
+    for (const meta of enemyIndex.enemies || []) {
+      const detailPath = join(ROOT, 'src/data/enemies/items', `${meta.id}.json`);
+      if (!existsSync(detailPath)) continue;
+      write(join('enemies', `${meta.id}.json`), readJson(detailPath));
+      eIndex.push(meta);
+    }
+    write(join('enemies', 'index.json'), eIndex);
+    counts.enemies = eIndex.length;
+  } else counts.enemies = 0;
+
   /* ===== 伤害公式 ===== */
   const FORMULAS = [
     ['genshin', '原神'],
@@ -134,6 +152,14 @@ async function main() {
   write(join('formulas', 'index.json'), fIndex);
   counts.formulas = fIndex.length;
 
+  /* ===== 配色方案（与 src/styles/tokens.css 同源，见 scripts/build-palette.mjs） ===== */
+  const palettePath = join(ROOT, 'src/data/palette.json');
+  if (existsSync(palettePath)) {
+    const palette = readJson(palettePath);
+    write('palette.json', palette);
+    counts.palette = (palette.catalog || []).length;
+  } else counts.palette = 0;
+
   /* ===== 清单 ===== */
   const manifest = {
     name: '艾莲的数据库 · 数据 API',
@@ -148,14 +174,16 @@ async function main() {
       weapons: { count: counts.weapons, index: '/api/weapons', item: '/api/weapons/{名称}' },
       artifacts: { count: counts.artifacts, index: '/api/artifacts', item: '/api/artifacts/{名称}' },
       attachment: { file: '/api/attachment', desc: '元素附着及产球（逐角色技能的元素量 / 附着规则 / 产球）' },
-      bosses: { file: '/api/bosses', desc: '幽境 Boss 图鉴（按版本）' },
+      bosses: { file: '/api/bosses', desc: '幽境危战图鉴（按版本）' },
+      enemies: { count: counts.enemies, index: '/api/enemies', item: '/api/enemies/{id}', desc: '敌人图鉴（含幽境挑战难度数据）' },
       formulas: { index: '/api/formulas', item: '/api/formulas/{genshin|sr|zzz}', desc: '伤害计算公式（Markdown 原文）' },
+      palette: { file: '/api/palette', count: counts.palette, desc: '配色方案：foundation / element / reaction / rarity / ui 令牌 + 原表 colorValue 留档' },
     },
   };
   write('index.json', manifest);
 
   console.log(`✅ 已生成数据 API → dist/api/`);
-  console.log(`   角色 ${counts.characters} · 武器 ${counts.weapons} · 圣遗物 ${counts.artifacts} · 公式 ${counts.formulas} · Boss ${counts.bosses}`);
+  console.log(`   角色 ${counts.characters} · 武器 ${counts.weapons} · 圣遗物 ${counts.artifacts} · 公式 ${counts.formulas} · Boss ${counts.bosses} · 敌人 ${counts.enemies} · 配色 ${counts.palette}`);
 }
 
 /* ---------- 子步骤 ---------- */

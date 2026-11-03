@@ -1,0 +1,130 @@
+{
+ "name": "深渊咏者·紫电",
+ "nameEn": "Abyss Lector: Violet Lightning",
+ "subtitle": "降下紫电的福音使者",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 108.672,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 56.52,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "织线络雷",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "紫电进行吟唱，发动1-2道沿直线行进的落雷，造成<c=#ffacff>53.3%,26.65%</c>伤害；二阶段后有2道落雷。"
+  },
+  {
+   "name": "曝虚成影",
+   "type": "猛攻",
+   "icon": "skill-2.webp",
+   "description": "靠近紫电时，紫电进行短暂吟唱，然后产生雷暴，造成<c=#ffacff>100%</c>伤害。"
+  },
+  {
+   "name": "翻卷覆雷",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "紫电拨动法器，发动1至4道落雷，落雷会预判玩家位置，每道落雷造成<c=#ffacff>66.6%</c>伤害；处在第几阶段就施放几道落雷。"
+  },
+  {
+   "name": "化能霰珠",
+   "type": "妨害",
+   "icon": "skill-4.webp",
+   "description": "紫电在召唤3个雷球，从左向右依次朝玩家发射，依次造成<c=#ffacff>33.3%,16.6%,8.33%</c>伤害，命中造成<c=#cc7fff>「紊雷」</c>效果：\n命中角色后，若角色未被护盾有效庇护，则<c=#99ffe5>扣除20元素能量(特殊能量不受影响)</c>。1s内至多触发一次效果。"
+  },
+  {
+   "name": "斫渊之雷",
+   "type": "防护",
+   "icon": "skill-5.webp",
+   "description": "当紫电的生命值<c=#ffcebf>低于20%</c>时，踉跄并施放大范围雷爆造成<c=#ffacff>133.3%</c>伤害，并附属<c=#fdacff>`紫霆加护`</c>，使用<c=#ff9999>火</c>、<span class=\"cryo\">**冰**</span>和<c=#99ff87>草</c>破盾更快，盾破后紫电立即死亡。"
+  },
+  {
+   "name": "雳索八方",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "紫电召唤8个雷球，围绕自己旋转，之后向八个方向飞出，均造成<c=#ffacff>33.3%</c>伤害，雷球命中同样造成<c=#cc7fff>「紊雷」</c>效果。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "紫霆加护",
+   "desc": "<c=#ffacff>36雷</c>盾，击破后紫电立即死亡，可伤害转化。该状态下，抗打断0，免疫风场力。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "紫霆加护",
+   "description": "<c=#ffacff>36雷</c>盾，击破后紫电立即死亡，可伤害转化。该状态下，抗打断0，免疫风场力。",
+   "elementType": "Electric",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:A_3302",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 294121,
+   "atk": 11080,
+   "weight": 150,
+   "tenacity": 840
+  }
+ ],
+ "leyline": null,
+ "id": "abyss-lector-violet-lightning",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

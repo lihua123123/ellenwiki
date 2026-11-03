@@ -1,0 +1,100 @@
+{
+ "name": "绒翼龙",
+ "nameEn": "Qucusaurus",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 40.751999999999995,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 50,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 110,
+ "skills": [
+  {
+   "name": "明炜之衔",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "绒翼龙发射一颗火球，造成<c=#ff9999>90%</c>伤害。"
+  },
+  {
+   "name": "辟以过焰",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "绒翼龙飞起，迅速进行抓挠，造成<c=#ff9999>50%x2</c>伤害。"
+  },
+  {
+   "name": "赤羽平掠",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "绒翼龙迅速俯冲平飞而来，造成<c=#ff9999>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:A_1101",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 166380,
+   "atk": 7387,
+   "weight": 110,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "qucusaurus",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

@@ -1,0 +1,129 @@
+{
+ "name": "岩盾丘丘暴徒",
+ "nameEn": "Rock Shieldwall Mitachurl",
+ "subtitle": "丘丘暴徒·岩盾",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 40.751999999999995,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 30.144,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "恶狼奔",
+   "type": "位移",
+   "icon": "skill-1.webp",
+   "description": "岩盾丘丘持盾朝玩家进行冲击，触碰造成<c=#b9b9b9>50%</c>伤害，冲击后甩盾，造成<c=#b9b9b9>100%</c>伤害。该`岩盾`<c=#ffe599>不可再生</c>。"
+  },
+  {
+   "name": "水牛扫",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "岩盾丘丘使用右手进行1段的攻击。\n<c=#ffedbf>有盾：</c>带盾进行挥舞，造成<c=#b9b9b9>100%</c>伤害；\n<c=#ffedbf>无盾：</c>挥右手，造成<c=#b9b9b9>75%</c>伤害。"
+  },
+  {
+   "name": "饿狼扑",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "(无盾)岩盾丘丘愤怒拳击两下后冲向玩家，造成<c=#b9b9b9>50%,100%</c>伤害，最后飞扑过去，造成<c=#b9b9b9>50%</c>伤害。"
+  },
+  {
+   "name": "晶岩布丁",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "岩盾丘丘从地里挖出岩史莱姆丢出，造成<c=#ffe599>50%</c>伤害。"
+  },
+  {
+   "name": "牡蛎壳",
+   "type": "反击",
+   "icon": "skill-5.webp",
+   "description": "岩盾丘丘在进行盾挡时，若受击，则+8%的反击率，2s内未受击则-5%反击率；反击时，岩盾丘丘扔起盾，然后挥打一下，造成<c=#b9b9b9>150%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "岩盾",
+   "desc": "<c=#ffe599>20岩</c>盾，不可再生，可伤害转化。持盾状态下，抗打断0.3；格挡状态下，抗打断0.65。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "岩盾",
+   "description": "<c=#ffe599>20岩</c>盾，不可再生，可伤害转化。持盾状态下，抗打断0.3；格挡状态下，抗打断0.65。",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_4443",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 110295,
+   "atk": 5909,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "rock-shieldwall-mitachurl",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

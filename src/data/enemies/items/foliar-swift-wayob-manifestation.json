@@ -1,0 +1,127 @@
+{
+ "name": "疾叶·大灵显化身",
+ "nameEn": "Foliar-Swift Wayob Manifestation",
+ "subtitle": "夜晚与游灵的代行",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 57.775999999999996,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 50,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "梢驰杪张",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "疾叶化身标记玩家，在原地进行吟唱，并在标记处产生爆炸，爆炸产生额外的2道振波，这些都造成<c=#99ff85>90%,22.5%</c>伤害。"
+  },
+  {
+   "name": "翠柳垂阴",
+   "type": "定点",
+   "icon": "skill-2.webp",
+   "description": "疾叶化身释放一枚魔咒，坠落在玩家处并留下毒化迷雾，迷雾持续造成<c=#99ff85>20%</c>伤害。"
+  },
+  {
+   "name": "咒阵流韵",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "疾叶化身朝玩家方向蓄力，迸发草元素脉冲，造成<c=#99ff85>70%</c>伤害。"
+  },
+  {
+   "name": "浮灵亡蓟",
+   "type": "强化",
+   "icon": "skill-4.webp",
+   "description": "疾叶化身即刻展开`试炼领域`，并获得`白护盾`，从领域内不断产生向外的互相垂直的4道亡蓟涟漪，造成<c=#99ff85>50%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，重复3回，最后收回领域并产生旋蔓崩破，造成<c=#99ff85>100%</c>伤害，所剩的护盾将转为等量`悬木之灵御`。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "试炼领域",
+   "desc": "疾叶化身展开的特殊领域，此领域内玩家造成的伤害提升120%，其内的角色造成的夜魂伤害则额外提升60%，但会不断流失元素能量(不影响特殊能量)。"
+  },
+  {
+   "text": "白护盾",
+   "desc": "111.4%生命值盾，击破后返还90元素能量(不含特殊能量)，并瘫痪疾叶化身5s。"
+  },
+  {
+   "text": "悬木之灵御",
+   "desc": "24草盾，击破后可瘫痪疾叶化身5s。一般由等量的白护盾转化而来。\n\n重复获得白护盾会使其衰减，其序列为111.4%/73.52%/\n36.76%；具体的计算公式见「窟岩·大灵显化身」。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "白护盾",
+   "description": "111.4%生命值盾，击破后返还90元素能量(不含特殊能量)，并瘫痪疾叶化身5s。",
+   "elementType": "",
+   "duration": ""
+  },
+  {
+   "name": "悬木之灵御",
+   "description": "24草盾，击破后可瘫痪疾叶化身5s。一般由等量的白护盾转化而来。\n\n重复获得白护盾会使其衰减，其序列为111.4%/73.52%/\n36.76%；具体的计算公式见「窟岩·大灵显化身」。",
+   "elementType": "Grass",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:C_1002",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 388220,
+   "atk": 11326,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "foliar-swift-wayob-manifestation",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

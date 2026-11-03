@@ -1,0 +1,406 @@
+{
+ "name": "「女士」",
+ "nameEn": "Frost Operative",
+ "subtitle": "",
+ "category": "EnemyOfNote",
+ "categoryLabel": "值得铭记的强敌",
+ "tier": "Boss",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 135.84,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 60.288,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 70,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "103",
+ "weight": 85,
+ "skills": [
+  {
+   "name": "霜截",
+   "type": "普攻·输出",
+   "icon": "skill-1.webp",
+   "description": "霜役人使用单手剑进行双划、寒役、空翻至多3段的连续攻击，对敌人分别造成50%x2,50%,70%伤害。"
+  },
+  {
+   "name": "冬袭雪冹",
+   "type": "重击·输出",
+   "icon": "skill-2.webp",
+   "description": "霜役人使用单手剑瞬间向前方挥出几剑进行一段重击，对前方敌人造成80%, 40%,20%,10%伤害。"
+  },
+  {
+   "name": "罚赦",
+   "type": "战技·位移",
+   "icon": "",
+   "description": "霜役人向前突进一段距离，对路径上的敌人造成70%伤害。"
+  },
+  {
+   "name": "破僭",
+   "type": "天赋·妨害",
+   "icon": "",
+   "description": "霜役人的元素爆发命中所累加的生命之契大小等同于自身16%的攻击力，且在该生命之契的影响下，目标敌人将每秒流失(0.4%HP+72)的生命值(后台停5%)，其与生命之契同生共死，持续10min。"
+  },
+  {
+   "name": "刑影寒摄",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "霜役人瞄准目标，消耗5%生命值，2s后闪现发动攻击，对目标敌人造成40%伤害并施加生命之契，若成功施加，则发动追加「猎杀」攻击： 闪现并发射一枚寒冰箭，造成50%伤害并施加生命之契，随后冲刺下落，造成100%伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "「冰茧」",
+   "desc": "60冻盾，击破使其进入下一阶段。"
+  },
+  {
+   "text": "红莲蛾",
+   "desc": "用于破除冰茧，命中时额外施加8火。"
+  },
+  {
+   "text": "炎之心",
+   "desc": "7次次数盾，位于场地四角，靠近每秒-20%寒冷值，击破后清除半径12.5m内的结霜，且清空玩家寒冷值；最大可再生数量为2。"
+  },
+  {
+   "text": "寒冷",
+   "desc": "正常每秒积攒3%，满后每秒流失(3%+150)生命值，冰/水附着+20%积攒速度，火/燃附着-20%积攒速度。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "「冰茧」",
+   "description": "60冻盾，击破使其进入下一阶段。",
+   "elementType": "Frozen",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:B_1112",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 443680,
+   "atk": 11819,
+   "weight": 85,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "女士",
+ "icon": "avatar.webp",
+ "states": [
+  {
+   "key": "p1",
+   "label": "第一阶段",
+   "name": "「女士」·第一阶段",
+   "subtitle": "",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 135.84,
+     "Curve": "HP_2"
+    },
+    "atk": {
+     "Value": 60.288,
+     "Curve": "ATK_1"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "精英",
+     "level": 100,
+     "hp": 443680,
+     "atk": 11819,
+     "weight": 85,
+     "tenacity": 100
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 10,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 70,
+     "geo": 10,
+     "physical": 10
+    }
+   ],
+   "skills": [
+    {
+     "name": "霜截",
+     "type": "普攻·输出",
+     "icon": "skill-1.webp",
+     "description": "霜役人使用单手剑进行双划、寒役、空翻至多3段的连续攻击，对敌人分别造成50%x2,50%,70%伤害。"
+    },
+    {
+     "name": "冬袭雪冹",
+     "type": "重击·输出",
+     "icon": "skill-2.webp",
+     "description": "霜役人使用单手剑瞬间向前方挥出几剑进行一段重击，对前方敌人造成80%, 40%,20%,10%伤害。"
+    },
+    {
+     "name": "罚赦",
+     "type": "战技·位移",
+     "icon": "",
+     "description": "霜役人向前突进一段距离，对路径上的敌人造成70%伤害。"
+    },
+    {
+     "name": "破僭",
+     "type": "天赋·妨害",
+     "icon": "",
+     "description": "霜役人的元素爆发命中所累加的生命之契大小等同于自身16%的攻击力，且在该生命之契的影响下，目标敌人将每秒流失(0.4%HP+72)的生命值(后台停5%)，其与生命之契同生共死，持续10min。"
+    },
+    {
+     "name": "刑影寒摄",
+     "type": "爆发",
+     "icon": "skill-5.webp",
+     "description": "霜役人瞄准目标，消耗5%生命值，2s后闪现发动攻击，对目标敌人造成40%伤害并施加生命之契，若成功施加，则发动追加「猎杀」攻击： 闪现并发射一枚寒冰箭，造成50%伤害并施加生命之契，随后冲刺下落，造成100%伤害。"
+    }
+   ],
+   "notes": [
+    {
+     "text": "「冰茧」",
+     "desc": "60冻盾，击破使其进入下一阶段。"
+    },
+    {
+     "text": "红莲蛾",
+     "desc": "用于破除冰茧，命中时额外施加8火。"
+    },
+    {
+     "text": "炎之心",
+     "desc": "7次次数盾，位于场地四角，靠近每秒-20%寒冷值，击破后清除半径12.5m内的结霜，且清空玩家寒冷值；最大可再生数量为2。"
+    },
+    {
+     "text": "寒冷",
+     "desc": "正常每秒积攒3%，满后每秒流失(3%+150)生命值，冰/水附着+20%积攒速度，火/燃附着-20%积攒速度。"
+    }
+   ],
+   "shields": [
+    {
+     "name": "「冰茧」",
+     "description": "60冻盾，击破使其进入下一阶段。",
+     "elementType": "Frozen",
+     "duration": ""
+    }
+   ],
+   "chargebar": [],
+   "energy": {
+    "element": "Cryo",
+    "elementLabel": "冰",
+    "raw": "EnergyGroup:B_1112",
+    "rows": [
+     {
+      "hp": 75,
+      "particle": 1,
+      "orb": 0
+     },
+     {
+      "hp": 50,
+      "particle": 1,
+      "orb": 0
+     },
+     {
+      "hp": 25,
+      "particle": 1,
+      "orb": 0
+     },
+     {
+      "hp": 0,
+      "particle": 2,
+      "orb": 0
+     }
+    ]
+   },
+   "weight": 85,
+   "elementMastery": 0,
+   "multiplayerGroup": "103",
+   "icon": "avatar.webp",
+   "defaultLevel": 100
+  },
+  {
+   "key": "p2",
+   "label": "第二阶段",
+   "name": "「女士」·第二阶段",
+   "subtitle": "",
+   "tier": "",
+   "baseStats": {
+    "hp": {
+     "Value": 271.680088,
+     "Curve": "HP_2"
+    },
+    "atk": {
+     "Value": 60.287611,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-第二阶段",
+     "level": 90,
+     "hp": 742006,
+     "atk": 9135,
+     "weight": 20000,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 70,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 10,
+     "physical": 10
+    }
+   ],
+   "skills": [
+    {
+     "name": "焚心之赤",
+     "type": "天赋",
+     "icon": "",
+     "description": "罗莎琳的部分攻击命中地面会产生余烬，其持续造成<c=#ff9999>6.25%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，命中+<c=#ffdfbf>2.5%</c>炎热值，余烬永久存在，只能被<c=#99e5ff>`霜之眼`</c>破坏。"
+    },
+    {
+     "name": "炽炎笞灭",
+     "type": "输出",
+     "icon": "",
+     "description": "罗莎琳使劲挥动手中的火鞭，以5种方式施放：近弧、远直、双连、倒直、倒弧，不论怎么施放，都造成<c=#ff9999>50%</c>伤害，命中+<c=#ffdfbf>5%</c>炎热值。"
+    },
+    {
+     "name": "红莲翳火",
+     "type": "妨害",
+     "icon": "",
+     "description": "罗莎琳张开双翼，召唤一堆的火之蝶坠向地面，造成<c=#ff9999>25%</c>伤害，并留下余烬，命中+<c=#ffdfbf>2%</c>炎热值。"
+    },
+    {
+     "name": "燔焦炙土",
+     "type": "输出",
+     "icon": "",
+     "description": "罗莎琳张开双翼，扇一下挥出一个暗红色的火球，火球沿直线移动，碰到造成<c=#ff9999>62.5%</c>伤害，并在途经上留下余烬，命中+<c=#ffdfbf>5%</c>炎热值。"
+    },
+    {
+     "name": "丹蝶红莲",
+     "type": "追踪",
+     "icon": "",
+     "description": "罗莎琳召唤一个较大的红莲蛾，红莲蛾追逐玩家，具有一定追踪性，会穿墙，碰到造成<c=#ff9999>25%</c>伤害，命中+<c=#ffdfbf>5%</c>炎热值。"
+    },
+    {
+     "name": "冕霞降陨",
+     "type": "爆发",
+     "icon": "",
+     "description": "罗莎琳张开双翼哀嚎，召唤数个火陨命中地面，有较弱的玩家倾向，每个火陨造成<c=#ff9999>100%</c>伤害，命中+<c=#ffdfbf>5%</c>炎热值。"
+    },
+    {
+     "name": "燹笞三罚",
+     "type": "输出",
+     "icon": "",
+     "description": "罗莎琳挥舞火鞭，插入地面，呈三叉状，造成<c=#ff9999>50%</c>伤害，之后罗莎琳用力拔出，造成<c=#ff9999>75%</c>伤害，命中+<c=#ffdfbf>5%</c>炎热值。"
+    },
+    {
+     "name": "業瘴罪身",
+     "type": "位移",
+     "icon": "",
+     "description": "罗莎琳传送转移的时候化为暗红的火球，触碰造成<c=#ff9999>37.5%</c>伤害，命中+<c=#ffdfbf>5%</c>炎热值。"
+    },
+    {
+     "name": "净染超脱",
+     "type": "爆发",
+     "icon": "",
+     "description": "罗莎琳位于场地中央，旋转自身变成大火龙卷，触碰造成<c=#ff9999>75%</c>伤害，该大火龙卷会不断分出4个小火龙卷，各造成<c=#ff9999>37.5%</c>伤害，大火龙卷经过的地方会留下余烬；被大火龙卷命中+<c=#ffdfbf>5%</c>炎热值，被小火龙卷则+<c=#ffdfbf>2%</c>炎热值；\n持续时间结束后大火龙卷重新变为罗莎琳，会<c=#ff9999>充满</c>一半的炎热值。"
+    },
+    {
+     "name": "流灼如狱",
+     "type": "天赋",
+     "icon": "",
+     "description": "当罗莎琳本次受到的伤害超过本阶段<c=#99e5ff>生命值的20.1%</c>时，罗莎琳施放一次大范围爆炸，造成<c=#ff9999>125%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，<c=#ff9999>充满</c>炎热值；\n该次伤害超过罗莎琳生命值20.1%的部分无效(即受到的最高伤害只能是罗莎琳<c=#99e5ff>生命值的20.1%</c>)。"
+    }
+   ],
+   "notes": [
+    {
+     "text": "霜之眼",
+     "desc": "7次次数盾，位于场地四角，靠近每秒-20%炎热值，击破后清除半径12.5m内的余烬，且清空玩家炎热值；最大可再生数量为2。"
+    },
+    {
+     "text": "炎热",
+     "desc": "正常每秒积攒3%，满后每秒流失(3%+150)生命值，火/燃附着+20%积攒速度，冰/水附着-20%积攒速度。"
+    }
+   ],
+   "shields": [],
+   "chargebar": [],
+   "energy": null,
+   "weight": 20000,
+   "elementMastery": 0,
+   "multiplayerGroup": "1",
+   "icon": "state-p2-avatar.webp",
+   "defaultLevel": 90
+  }
+ ],
+ "defaultState": "p1",
+ "aliases": [
+  "女士"
+ ],
+ "tags": [
+  "值得铭记的强敌"
+ ]
+}

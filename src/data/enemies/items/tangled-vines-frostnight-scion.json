@@ -1,0 +1,157 @@
+{
+ "name": "蔓结·霜夜灵嗣",
+ "nameEn": "Tangled Vines: Frostnight Scion",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 138.55679999999998,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": "IMM",
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "晦隐",
+   "pyro": 60,
+   "hydro": 60,
+   "anemo": 60,
+   "electro": 60,
+   "dendro": 100,
+   "cryo": 60,
+   "geo": 60,
+   "physical": 60
+  },
+  {
+   "name": "深渊晦隐",
+   "pyro": 130,
+   "hydro": 130,
+   "anemo": 130,
+   "electro": 130,
+   "dendro": 170,
+   "cryo": 130,
+   "geo": 130,
+   "physical": 130
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "枝樊交络",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "灵嗣利用巨尾进行至多2段的横扫攻击，均造成<c=#99ff85>80%</c>伤害。"
+  },
+  {
+   "name": "幽光翠笼",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "灵嗣将尾部掷向地面，造成<c=#99ff85>80%</c>伤害；「晦隐」状态下还会产生一枚草种，种子落地造成<c=#99ff85>90%</c>伤害并形成灯铃，随后爆炸造成<c=#99ff85>100%</c>伤害。"
+  },
+  {
+   "name": "腐草飞铃",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "灵嗣操控巨尾，抛出3枚草种，草种落地造成<c=#99ff85>90%</c>伤害并形成灯铃，随后爆炸造成<c=#99ff85>100%</c>伤害；该技能仅在「晦隐」状态下施放。"
+  },
+  {
+   "name": "蔽以丵叶",
+   "type": "天赋",
+   "icon": "skill-4.webp",
+   "description": "灵嗣转身翻越，进入「`晦隐`」状态，该状态下灵嗣施放技能前后都会闪现，并且全抗提升，解除对<c=#99ff85>草元素</c>的免疫。\n不处于「晦隐」状态下持续附着<c=#99ff85>草元素</c>。"
+  },
+  {
+   "name": "授以芳蕴",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "灵嗣抬起前身向前跺下，造成<c=#99ff85>70%</c>伤害。"
+  },
+  {
+   "name": "蔑以败叶",
+   "type": "防御",
+   "icon": "skill-6.webp",
+   "description": "灵嗣背对玩家用后肢猛踢，造成<c=#99ff85>70%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "晦隐",
+   "desc": "抗打断0，全抗性提升<c=#ffccbf>60%</c>/<c=#ffccbf>120%</c>，允许受到草元素伤害；充能条总量<c=#99ff85>100</c>/<c=#99ff85>150</c>(深渊)，受到<c=#99ff85>草元素</c>攻击后根据草元素的量积攒<c=#99ff85>20n</c>或<c=#99ff85>3</c>，受到月反应伤害积攒<c=#99ff85>3</c>，充满退出状态。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [
+  {
+   "Name": "晦隐",
+   "Description": "抗打断0，全抗性提升<color=#ffccbf>60%</color>/<color=#ffccbf>120%</color>，允许受到草元素伤害；充能条总量<color=#99ff85>100</color>/<color=#99ff85>150</color>(深渊)，受到<color=#99ff85>草元素</color>攻击后根据草元素的量积攒<color=#99ff85>20n</color>或<color=#99ff85>3</color>，受到月反应伤害积攒<color=#99ff85>3</color>，充满退出状态。",
+   "IconPath": "",
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "抗打断0，全抗性提升60%/120%，允许受到草元素伤害；充能条总量100/150(深渊)，受到草元素攻击后根据草元素的量积攒20n或3，受到月反应伤害积攒3，充满退出状态。"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 565692,
+   "atk": 14773,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "tangled-vines-frostnight-scion",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

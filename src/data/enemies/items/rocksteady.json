@@ -1,0 +1,155 @@
+{
+ "name": "不破础石",
+ "nameEn": "Rocksteady",
+ "subtitle": "",
+ "category": "Others",
+ "categoryLabel": "其他",
+ "tier": "Common",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 36.6768,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 54.25920000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 20,
+   "cryo": 10,
+   "geo": 20,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "强硬打击",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "伸缩岩蕈兽横弯伞杆，蓄力后转一圈，造成<c=#b8b8b8>118%</c>伤害，若命中敌人的岩元素造物则额外消耗其<c=#ffe599>2单位的岩元素量</c>。"
+  },
+  {
+   "name": "磐岩阵线",
+   "type": "嘲讽",
+   "icon": "skill-2.webp",
+   "description": "伸缩岩蕈兽短时间内嘲讽其他敌人。"
+  },
+  {
+   "name": "迸裂落石",
+   "type": "战技",
+   "icon": "skill-3.webp",
+   "description": "伸缩岩蕈兽蓄力起飞，重重下落，造成<c=#b8b8b8>1154%</c>伤害并击飞敌人，若命中敌人的岩元素造物则额外消耗其<c=#ffe599>12单位的岩元素量</c>。"
+  },
+  {
+   "name": "刚猛打击",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "伸缩岩蕈兽横弯伞杆，蓄力后转一圈，造成<c=#b9b9b9>300%</c>伤害。"
+  },
+  {
+   "name": "硬质结晶",
+   "type": "强化",
+   "icon": "skill-5.webp",
+   "description": "短时间内，伸缩岩蕈兽<c=#ffedbf>提升自身40%全抗性</c>。"
+  },
+  {
+   "name": "磐固阵型",
+   "type": "战技",
+   "icon": "skill-6.webp",
+   "description": "伸缩岩蕈兽为周围的友方蕈兽施加`磐岩嶂`护盾，抵挡外来伤害。"
+  },
+  {
+   "name": "强硬打击",
+   "type": "输出",
+   "icon": "skill-7.webp",
+   "description": "伸缩岩蕈兽横弯伞杆，蓄力后转一圈，造成<c=#b9b9b9>400%</c>伤害。"
+  },
+  {
+   "name": "尖硬结晶",
+   "type": "强化",
+   "icon": "skill-8.webp",
+   "description": "伸缩岩蕈兽的「强硬打击」攻击命中后，战技造成的伤害<c=#ffccbf>提升200%</c>，最多叠加4层。"
+  },
+  {
+   "name": "磐固震击",
+   "type": "战技",
+   "icon": "skill-9.webp",
+   "description": "伸缩岩蕈兽蓄力起飞，重重下落，造成<c=#b8b8b8>1000%</c>伤害并击飞敌人，同时移除被动尖硬结晶层数。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "磐岩嶂",
+   "desc": "生命盾，继承70%被保护对象的生命值。"
+  },
+  {
+   "text": "3.5 灵蕈棋阵",
+   "desc": "150元素精通。"
+  },
+  {
+   "text": "4.2 小小灵蕈大幻戏",
+   "desc": "100元素精通，剧变反应系数1.5(除碎冰)。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "友方-3.2智巧灵蕈",
+   "level": 90
+  },
+  {
+   "label": "普通敌方-3.2智巧灵蕈",
+   "level": 90,
+   "hp": 118721,
+   "atk": 6577,
+   "weight": 75,
+   "tenacity": 600
+  },
+  {
+   "label": "友方-3.5塔防灵蕈",
+   "level": 90
+  },
+  {
+   "label": "友方-4.2幻戏灵蕈",
+   "level": 90,
+   "hp": 97425,
+   "atk": 8222,
+   "weight": 75,
+   "tenacity": 600
+  }
+ ],
+ "leyline": null,
+ "id": "rocksteady",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他"
+ ]
+}

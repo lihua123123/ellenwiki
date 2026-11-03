@@ -1,0 +1,203 @@
+/* 由 scripts/build-palette.mjs 从 src/data/palette.json 生成，请勿手改。 */
+:root {
+  /* 表面 */
+  --bg-body: #0F1218;
+  --bg-elev: #161A22;
+  --bg-card: #191D26;
+  --bg-code: rgba(255, 255, 255, 0.06);
+  --bg-hover: rgba(211, 188, 142, 0.08);
+  --nav-bg: rgba(15, 18, 24, 0.86);
+  --bg-input: rgba(255, 255, 255, 0.06);
+  --card-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.035) 0%, rgba(255, 255, 255, 0.008) 100%), #191D26;
+  --card-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  /* 文字 */
+  --text-main: #E4DED2;
+  --text-secondary: #A6A296;
+  --text-heading: #F6F0E2;
+  --text-muted: #8B8779;
+  --text-on-accent: #16130C;
+  /* 描边 */
+  --border-color: rgba(211, 188, 142, 0.12);
+  --border-strong: rgba(211, 188, 142, 0.28);
+  /* 强调 */
+  --accent: #D3BC8E;
+  --accent-light: #EBD9AE;
+  --accent-deep: #A88F5E;
+  --accent-soft: rgba(211, 188, 142, 0.15);
+  --accent-gradient: linear-gradient(135deg, #D3BC8E, #EBD9AE);
+  /* 状态 */
+  --state-success: #66C000;
+  --state-danger: #FF5E41;
+  --state-warning: #FFCC33;
+  --state-info: #00E1FF;
+  /* UI 语义 */
+  --buff-color: #FFCC66;
+  --skill-color: #FFD780;
+  --link-color: #E0C88F;
+  --mark-bg: #D3BC8E;
+  --mark-text: #16130C;
+  --bar-hp: #96D722;
+  --bar-hp-low: #FF5A5A;
+  --bar-energy: #66E9FF;
+  --bar-stamina: #FFC700;
+  --shadow-color: rgba(0, 0, 0, 0.45);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 14px 36px rgba(0, 0, 0, 0.45);
+  /* 元素 */
+  --el-pyro: #FF7A4D;
+  --el-pyro-soft: #FF9999;
+  --el-pyro-text: #FF9999;
+  --el-pyro-number: #FF9B00;
+  --el-pyro-shield: #FF9966;
+  --el-pyro-vision: #FF5511;
+  --el-pyro-vision-border: #FF9A26;
+  --el-pyro-wish: #EC4923;
+  --el-pyro-tcg: #F38954;
+  --el-pyro-resonance: #FF6640;
+  --el-hydro: #4DA6FF;
+  --el-hydro-soft: #99CCFF;
+  --el-hydro-text: #80C0FF;
+  --el-hydro-number: #33CCFF;
+  --el-hydro-shield: #00C0FF;
+  --el-hydro-vision: #33AAFF;
+  --el-hydro-vision-border: #0DE8FF;
+  --el-hydro-wish: #498FCC;
+  --el-hydro-tcg: #71A3E4;
+  --el-hydro-resonance: #00C0FF;
+  --el-anemo: #73FFDC;
+  --el-anemo-soft: #99FFE5;
+  --el-anemo-text: #80FFD7;
+  --el-anemo-number: #66FFCC;
+  --el-anemo-shield: #32D7A0;
+  --el-anemo-vision: #00FFCC;
+  --el-anemo-vision-border: #A6FFFC;
+  --el-anemo-wish: #369697;
+  --el-anemo-tcg: #64E0B4;
+  --el-anemo-resonance: #33D7A0;
+  --el-electro: #DC73FF;
+  --el-electro-soft: #FF99FF;
+  --el-electro-text: #FFACFF;
+  --el-electro-number: #E19BFF;
+  --el-electro-shield: #CC99FF;
+  --el-electro-vision: #CC33FF;
+  --el-electro-vision-border: #FF34FF;
+  --el-electro-wish: #6957C2;
+  --el-electro-tcg: #C18CEE;
+  --el-electro-resonance: #CC80FF;
+  --el-dendro: #4DFF7A;
+  --el-dendro-soft: #99FFB3;
+  --el-dendro-text: #99FF88;
+  --el-dendro-number: #00EA52;
+  --el-dendro-shield: #00D755;
+  --el-dendro-vision: #77FF44;
+  --el-dendro-vision-border: #B2FF79;
+  --el-dendro-wish: #66AD16;
+  --el-dendro-tcg: #A9D025;
+  --el-dendro-resonance: #90CC00;
+  --el-cryo: #73FFFF;
+  --el-cryo-soft: #99E5FF;
+  --el-cryo-text: #99FFFF;
+  --el-cryo-number: #99FFFF;
+  --el-cryo-shield: #80FFFF;
+  --el-cryo-vision: #99EEFF;
+  --el-cryo-vision-border: #E9FFFF;
+  --el-cryo-wish: #35AACC;
+  --el-cryo-tcg: #76DAE6;
+  --el-cryo-resonance: #80FFFF;
+  --el-geo: #FFDC73;
+  --el-geo-soft: #FFE699;
+  --el-geo-text: #FFE699;
+  --el-geo-number: #FFCC66;
+  --el-geo-shield: #FFD962;
+  --el-geo-vision: #FFBB55;
+  --el-geo-vision-border: #FFE48F;
+  --el-geo-wish: #CC9046;
+  --el-geo-tcg: #E8B50A;
+  --el-geo-resonance: #FFAC00;
+  --el-physical: #E8E2D6;
+  --el-physical-soft: #FFFFFF;
+  --el-physical-text: #CFC9BC;
+  --el-physical-number: #FFFFFF;
+  --el-physical-shield: #FFFFFF;
+  --el-physical-vision: #EEEEEE;
+  --el-physical-vision-border: #F7F7F7;
+  --el-physical-wish: #565656;
+  --el-physical-tcg: #837174;
+  --el-physical-resonance: #FFB973;
+  /* 稀有度 */
+  --rarity-1-text: #CCCCCC;
+  --rarity-1-bg: #949494;
+  --rarity-1-border: #72778B;
+  --rarity-1-item: #888888;
+  --rarity-2-text: #ACFF45;
+  --rarity-2-bg: #59AB84;
+  --rarity-2-border: #2A9072;
+  --rarity-2-item: #80C022;
+  --rarity-3-text: #4FF4FF;
+  --rarity-3-bg: #549BC7;
+  --rarity-3-border: #5180CC;
+  --rarity-3-item: #3299CC;
+  --rarity-4-text: #F998FF;
+  --rarity-4-bg: #CB8BDD;
+  --rarity-4-border: #A256E0;
+  --rarity-4-item: #D766E6;
+  --rarity-5-text: #FFE14B;
+  --rarity-5-bg: #E98B20;
+  --rarity-5-border: #BC6932;
+  --rarity-5-item: #FF9922;
+  --rarity-special5-text: #FF8080;
+  --rarity-special5-bg: #E34B53;
+  --rarity-special5-border: #BB5858;
+  --rarity-special5-item: #FF9922;
+  /* 元素反应 */
+  --rx-vaporize: #FFCC66;
+  --rx-melt: #FFCC66;
+  --rx-overload: #FF809B;
+  --rx-electro-charged: #E19BFF;
+  --rx-frozen: #99FFFF;
+  --rx-superconduct: #B4B4FF;
+  --rx-swirl: #66FFCC;
+  --rx-crystallize: #FF9B00;
+  --rx-shatter: #FFFFFF;
+  --rx-burning: #FF9B00;
+  --rx-bloom: #00EA53;
+  --rx-hyperbloom: #E19BFF;
+  --rx-burgeon: #FF9B00;
+  --rx-quicken: #00EA53;
+  --rx-aggravate: #E19BFF;
+  --rx-spread: #00EA53;
+  --rx-wet: #33CCFF;
+  --rx-heal: #5FD976;
+  --rx-immune: #A8A8A8;
+  --rx-lunar-charged: #C9A0FF;
+  --rx-lunar-charged-vein: #B951FF;
+  --rx-lunar-bloom: #B0FFA0;
+  --rx-lunar-bloom-vein: #50FD50;
+  --rx-lunar-crystallize: #FFD4A0;
+  --rx-lunar-crystallize-vein: #FFCD51;
+  --rx-stellar-conduct-electro: #A0BDFF;
+  --rx-stellar-conduct-electro-light: #F3F5FF;
+  --rx-stellar-conduct-cryo: #98F4FB;
+  --rx-stellar-conduct-cryo-light: #F4FDFF;
+  --rx-stellar-conduct-anemo: #72FFBB;
+  --rx-stellar-conduct-anemo-light: #F3FFFE;
+}
+
+/* 元素文字类：正文里 **火元素** 之类 */
+.pyro { color: var(--el-pyro); }
+.hydro { color: var(--el-hydro); }
+.anemo { color: var(--el-anemo); }
+.electro { color: var(--el-electro); }
+.dendro { color: var(--el-dendro); }
+.cryo { color: var(--el-cryo); }
+.geo { color: var(--el-geo); }
+.rt-physical { color: var(--el-physical); }
+
+/* 稀有度快捷类 */
+.rarity-5 { color: var(--rarity-5-text); }
+.rarity-4 { color: var(--rarity-4-text); }
+.rarity-3 { color: var(--rarity-3-text); }
+.rarity-2 { color: var(--rarity-2-text); }
+.rarity-1 { color: var(--rarity-1-text); }
+.rarity-special5 { color: var(--rarity-special5-text); }

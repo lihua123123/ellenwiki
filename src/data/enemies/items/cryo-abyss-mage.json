@@ -1,0 +1,129 @@
+{
+ "name": "冰深渊法师",
+ "nameEn": "Cryo Abyss Mage",
+ "subtitle": "冰之咏者",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "冰棘锐刺",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "冰法施放一个冰块，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "冻冰结嶂",
+   "type": "防御",
+   "icon": "skill-2.webp",
+   "description": "靠近施法的冰法时，冰法生成一个<c=#72ffff>12元元素量</c>的冰护罩，<c=#ffbfbf>火元素</c>破盾最快。\n<c=#00d8d8>防护强化：</c>护盾盾量x2，玩家攻击护盾会被附着<span class=\"cryo\">**冰元素**</span>。"
+  },
+  {
+   "name": "凝华祭法",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "冰法施法，在玩家处召唤下落的冰锥，造成<span class=\"cryo\">**100%**</span>伤害，持续3次。\n<c=#00d8d8>强攻强化：</c>冰锥下落产生持续20s的冰雾，接触持续造成<span class=\"cryo\">**30%**</span>伤害。"
+  },
+  {
+   "name": "寒旋之仪",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "冰法施法恢复冻盾，期间产生3层旋转的冰锥，接触造成<span class=\"cryo\">**70%**</span>伤害，每层3个冰锥，旋转方向互不相同，盾生成后施放冲击波造成<span class=\"cryo\">**150%**</span>伤害，若处在近处，则额外再受到<span class=\"cryo\">**200%**</span>伤害。"
+  },
+  {
+   "name": "皛闪",
+   "type": "位移",
+   "icon": "skill-5.webp",
+   "description": "冰法传送，出现在玩家正前方，同时造成<span class=\"cryo\">**100%**</span>伤害，近处受玩家攻击时概率传送远离玩家，盾破之后持续攻击有小概率闪现。\n<c=#00d8d8>灵动强化：</c>闪现前后位置均造成相同伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冰护罩",
+   "desc": "<span class=\"cryo\">**12冻**</span>盾，击破后打断并虚弱，可伤害转化。该状态下，抗打断0，免疫风场力。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "冰护罩",
+   "description": "<span class=\"cryo\">**12冻**</span>盾，击破后打断并虚弱，可伤害转化。该状态下，抗打断0，免疫风场力。",
+   "elementType": "Frozen",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:B_1113",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 73530,
+   "atk": 7387,
+   "weight": 75,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "cryo-abyss-mage",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

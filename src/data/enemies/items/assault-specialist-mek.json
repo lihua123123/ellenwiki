@@ -1,0 +1,140 @@
+{
+ "name": "攻坚特化型机关",
+ "nameEn": "Assault Specialist Mek",
+ "subtitle": "",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 65.2032,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "自相矛盾",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "攻坚机关使用左右两臂进行至多2段挥舞攻击，均造成<c=#b8b8b8>50%</c>伤害。"
+  },
+  {
+   "name": "腕盾顶击",
+   "type": "控制",
+   "icon": "skill-2.webp",
+   "description": "攻坚机关使用左臂的盾向前猛顶，造成<c=#b8b8b8>60%</c>伤害。"
+  },
+  {
+   "name": "锤罚光棍",
+   "type": "击退",
+   "icon": "skill-3.webp",
+   "description": "攻坚机关使用右臂的长棍进行下劈，造成<c=#b8b8b8>30%</c>伤害。"
+  },
+  {
+   "name": "戒退热浪",
+   "type": "输出 芒",
+   "icon": "skill-4.webp",
+   "description": "攻坚机关使用长棍进行旋、挑、旋至多三段的攻击，攻击依次造成<c=#ff9999>60%,70%,\n90%</c>伤害。"
+  },
+  {
+   "name": "炎枪冲锋",
+   "type": "位移 芒",
+   "icon": "skill-5.webp",
+   "description": "攻坚机关使用长棍进行穿戳攻击，造成<c=#ff9999>100%</c>伤害，冲刺结束后可能进行一次挥扫，造成<c=#ff9999>90%</c>伤害。"
+  },
+  {
+   "name": "旋雳轮盘",
+   "type": "输出 荒",
+   "icon": "skill-6.webp",
+   "description": "攻坚机关使用盾锯进行3段的旋扫攻击，其依次造成<c=#ffacff>50%,50%,70%</c>伤害。"
+  },
+  {
+   "name": "折胫诡轮",
+   "type": "控制 荒",
+   "icon": "skill-7.webp",
+   "description": "攻坚机关使用盾锯进行上挑、下落至多2段的攻击，其依次造成<c=#ffacff>70%,90%</c>伤害。"
+  },
+  {
+   "name": "盾击裂霆",
+   "type": "控制 荒",
+   "icon": "skill-8.webp",
+   "description": "攻坚机关使用盾锯进行重重下落，造成<c=#ffacff>90%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "荒芒性质",
+   "desc": "<c=#ffbfbf>2次</c>芒荒攻击可以瘫痪相反属性的攻坚机关，约25s-30s后恢复荒芒属性。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1113",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 266208,
+   "atk": 12311,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "assault-specialist-mek",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "name": "盗宝团·怪鸟",
+ "nameEn": "Treasure Hoarder: Raptor",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "火牵星流",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "怪鸟给弩附魔火元素，瞄准玩家连续发射三枚烈焰箭，每个造成<c=#ff9999>150%</c>伤害。"
+  },
+  {
+   "name": "朽质弩箭",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "怪鸟拿弩瞄准玩家发射一箭，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "你行不行",
+   "type": "嘲讽",
+   "icon": "skill-3.webp",
+   "description": "当玩家不攻击时，怪鸟会挑衅玩家。"
+  },
+  {
+   "name": "技术后撤",
+   "type": "规避",
+   "icon": "skill-4.webp",
+   "description": "怪鸟突然后撤，至多连续后撤两次，后撤有概率发射弩箭。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_1102",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 73530,
+   "atk": 4924,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "treasure-hoarder-raptor",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

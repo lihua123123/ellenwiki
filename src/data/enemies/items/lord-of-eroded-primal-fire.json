@@ -1,0 +1,400 @@
+{
+ "name": "蚀灭的源焰之主",
+ "nameEn": "Lord of Eroded Primal Fire",
+ "subtitle": "",
+ "category": "EnemyOfNote",
+ "categoryLabel": "值得铭记的强敌",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 1290.48,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 150.72,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "持谕玄日喘残延",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "古斯托特召唤4枚拟视之实，依次朝玩家扔来，每枚造成<c=#b8b8b8>40%,10%,4% </c>(<c=#ccffbf>10</c>)伤害；拟视之实爆炸留下持续20s的渊泥，每0.5s造成<c=#b8b8b8>5%</c>(<c=#ccffbf>2</c>)伤害。"
+  },
+  {
+   "name": "千曜焚灭晨昏现",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "古斯托特举起斫阳之曜，重重进行下劈，造成大范围<c=#ff9999>60%</c>伤害并留下3处持续20s的余烬，每0.5s造成<c=#ff9999>10%</c>伤害。"
+  },
+  {
+   "name": "疑云远垢燧火邀",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "古斯托特使用斫阳之曜对玩家进行一次冲击，造成大范围<c=#ff9999>60%</c>伤害并留下余烬，然后闪现到玩家背后，并随机接上「千曜焚灭晨昏现」或「刀锋过焰寂沉消」。"
+  },
+  {
+   "name": "刀锋过焰寂沉消",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "古斯托特使用斫阳之曜进行左划、右划2段普攻，均造成大范围<c=#ff9999>30%</c>伤害并留下余烬。"
+  },
+  {
+   "name": "虬首孤月染赩潮",
+   "type": "范围",
+   "icon": "skill-5.webp",
+   "description": "古斯托特将斫阳之曜插入地面,持续产生焰浪，造成<c=#ff9999>20%,5%,2%</c>伤害，技能期间古斯托特持有13s的`虚界护罩`。"
+  },
+  {
+   "name": "虬影将绝浮垣消",
+   "type": "追加",
+   "icon": "skill-6.webp",
+   "description": "技能「虬首孤月染赩潮」超时未破盾时，古斯托特将手搓的量子奇点掷向玩家，造成<c=#b8b8b8>60%</c>(<c=#ccffbf>30</c>)伤害并留下渊泥。"
+  },
+  {
+   "name": "沧睱黑雨天刀燎",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "低于<c=#ffccbf>65%</c>生命值时，古斯托特释放寰宇界门，倾下数十秒的沦没黑雨，雨滴造成<c=#b8b8b8>15%,\n3.75%,1.5%</c>(<c=#ccffbf>5</c>)伤害；黑雨间夹杂间断的淤块，淤块造成<c=#b8b8b8>35%,8.75%,3.5%</c>(<c=#ccffbf>15</c>)伤害。"
+  },
+  {
+   "name": "黑云敝尘百魅生",
+   "type": "召唤",
+   "icon": "skill-8.webp",
+   "description": "古斯托特遁入黑霾之夜，并召唤3个`拟覆叶`发射白蜡叶，造成<c=#b8b8b8>10%,1%</c>伤害；黑夜持续12s；若未及时破坏所有的拟覆叶，则古斯托特将施放「霾中迷物罟中沉」。开战技后的<c=#ff9999>火神</c>和<c=#ffbfbf>火主</c>可以立即驱散黑霾。"
+  },
+  {
+   "name": "半壁巅城一焱开-输出",
+   "type": "转状态",
+   "icon": "skill-9.webp",
+   "description": "继「沧睱黑雨天刀燎」后，古斯托特凝聚日炎之力，使用斫阳之曜沿中心圆切线方向切开场地，造成大范围<c=#ff9999>120%</c>伤害。该技能最多施放3次。"
+  },
+  {
+   "name": "霾中迷物罟中沉",
+   "type": "追加",
+   "icon": "skill-10.webp",
+   "description": "古斯托特锁定在场玩家，片刻后伸出黑爪，造成<c=#b8b8b8>40%</c>(<c=#ccffbf>20</c>)伤害，紧接黑爪握拳，造成<c=#b8b8b8>60%</c>(<c=#ccffbf>30</c>)伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "拟覆叶",
+   "desc": "3虚界盾，破盾后击败，一共有3个，全部击败后可令古斯托特瘫痪15s，并扣除古斯托特10%生命值。"
+  },
+  {
+   "text": "虚界护罩",
+   "desc": "成功破除后扣除古斯托特10%生命值。\n\n坠入平台之下时，会传送回场地中央，但前台角色将会扣除80%生命值。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "虚界护罩",
+   "description": "成功破除后扣除古斯托特10%生命值。\n\n坠入平台之下时，会传送回场地中央，但前台角色将会扣除80%生命值。",
+   "elementType": "",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [
+  {
+   "label": "周本-地面状态",
+   "level": 90,
+   "hp": 3524527,
+   "atk": 22838,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "lord-of-eroded-primal-fire",
+ "icon": "avatar.webp",
+ "states": [
+  {
+   "key": "ground",
+   "label": "地面",
+   "name": "蚀灭的源焰之主·地面",
+   "subtitle": "",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 1290.48,
+     "Curve": "HP_2"
+    },
+    "atk": {
+     "Value": 150.72,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-地面状态",
+     "level": 90,
+     "hp": 3524527,
+     "atk": 22838,
+     "weight": 20000,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 10,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 10,
+     "physical": 10
+    }
+   ],
+   "skills": [
+    {
+     "name": "持谕玄日喘残延",
+     "type": "远程",
+     "icon": "skill-1.webp",
+     "description": "古斯托特召唤4枚拟视之实，依次朝玩家扔来，每枚造成<c=#b8b8b8>40%,10%,4% </c>(<c=#ccffbf>10</c>)伤害；拟视之实爆炸留下持续20s的渊泥，每0.5s造成<c=#b8b8b8>5%</c>(<c=#ccffbf>2</c>)伤害。"
+    },
+    {
+     "name": "千曜焚灭晨昏现",
+     "type": "输出",
+     "icon": "skill-2.webp",
+     "description": "古斯托特举起斫阳之曜，重重进行下劈，造成大范围<c=#ff9999>60%</c>伤害并留下3处持续20s的余烬，每0.5s造成<c=#ff9999>10%</c>伤害。"
+    },
+    {
+     "name": "疑云远垢燧火邀",
+     "type": "位移",
+     "icon": "skill-3.webp",
+     "description": "古斯托特使用斫阳之曜对玩家进行一次冲击，造成大范围<c=#ff9999>60%</c>伤害并留下余烬，然后闪现到玩家背后，并随机接上「千曜焚灭晨昏现」或「刀锋过焰寂沉消」。"
+    },
+    {
+     "name": "刀锋过焰寂沉消",
+     "type": "输出",
+     "icon": "skill-4.webp",
+     "description": "古斯托特使用斫阳之曜进行左划、右划2段普攻，均造成大范围<c=#ff9999>30%</c>伤害并留下余烬。"
+    },
+    {
+     "name": "虬首孤月染赩潮",
+     "type": "范围",
+     "icon": "skill-5.webp",
+     "description": "古斯托特将斫阳之曜插入地面,持续产生焰浪，造成<c=#ff9999>20%,5%,2%</c>伤害，技能期间古斯托特持有13s的`虚界护罩`。"
+    },
+    {
+     "name": "虬影将绝浮垣消",
+     "type": "追加",
+     "icon": "skill-6.webp",
+     "description": "技能「虬首孤月染赩潮」超时未破盾时，古斯托特将手搓的量子奇点掷向玩家，造成<c=#b8b8b8>60%</c>(<c=#ccffbf>30</c>)伤害并留下渊泥。"
+    },
+    {
+     "name": "沧睱黑雨天刀燎",
+     "type": "爆发",
+     "icon": "skill-7.webp",
+     "description": "低于<c=#ffccbf>65%</c>生命值时，古斯托特释放寰宇界门，倾下数十秒的沦没黑雨，雨滴造成<c=#b8b8b8>15%,\n3.75%,1.5%</c>(<c=#ccffbf>5</c>)伤害；黑雨间夹杂间断的淤块，淤块造成<c=#b8b8b8>35%,8.75%,3.5%</c>(<c=#ccffbf>15</c>)伤害。"
+    },
+    {
+     "name": "黑云敝尘百魅生",
+     "type": "召唤",
+     "icon": "skill-8.webp",
+     "description": "古斯托特遁入黑霾之夜，并召唤3个`拟覆叶`发射白蜡叶，造成<c=#b8b8b8>10%,1%</c>伤害；黑夜持续12s；若未及时破坏所有的拟覆叶，则古斯托特将施放「霾中迷物罟中沉」。开战技后的<c=#ff9999>火神</c>和<c=#ffbfbf>火主</c>可以立即驱散黑霾。"
+    },
+    {
+     "name": "半壁巅城一焱开-输出",
+     "type": "转状态",
+     "icon": "skill-9.webp",
+     "description": "继「沧睱黑雨天刀燎」后，古斯托特凝聚日炎之力，使用斫阳之曜沿中心圆切线方向切开场地，造成大范围<c=#ff9999>120%</c>伤害。该技能最多施放3次。"
+    },
+    {
+     "name": "霾中迷物罟中沉",
+     "type": "追加",
+     "icon": "skill-10.webp",
+     "description": "古斯托特锁定在场玩家，片刻后伸出黑爪，造成<c=#b8b8b8>40%</c>(<c=#ccffbf>20</c>)伤害，紧接黑爪握拳，造成<c=#b8b8b8>60%</c>(<c=#ccffbf>30</c>)伤害。"
+    }
+   ],
+   "notes": [
+    {
+     "text": "拟覆叶",
+     "desc": "3虚界盾，破盾后击败，一共有3个，全部击败后可令古斯托特瘫痪15s，并扣除古斯托特10%生命值。"
+    },
+    {
+     "text": "虚界护罩",
+     "desc": "成功破除后扣除古斯托特10%生命值。\n\n坠入平台之下时，会传送回场地中央，但前台角色将会扣除80%生命值。"
+    }
+   ],
+   "shields": [
+    {
+     "name": "虚界护罩",
+     "description": "成功破除后扣除古斯托特10%生命值。\n\n坠入平台之下时，会传送回场地中央，但前台角色将会扣除80%生命值。",
+     "elementType": "",
+     "duration": ""
+    }
+   ],
+   "chargebar": [],
+   "energy": null,
+   "weight": 20000,
+   "elementMastery": 0,
+   "multiplayerGroup": "1",
+   "icon": "avatar.webp",
+   "defaultLevel": 90
+  },
+  {
+   "key": "air",
+   "label": "空中",
+   "name": "蚀灭的源焰之主·空中",
+   "subtitle": "",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 1290.48,
+     "Curve": "HP_2"
+    },
+    "atk": {
+     "Value": 150.72,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-空中状态",
+     "level": 90,
+     "hp": 3524527,
+     "atk": 22838,
+     "weight": 20000,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 10,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 10,
+     "physical": 10
+    }
+   ],
+   "skills": [
+    {
+     "name": "星寰黑雨天刀磨",
+     "type": "爆发",
+     "icon": "state-air-skill-1.webp",
+     "description": "古斯托特释放寰宇界门，倾下数十秒的沦没黑雨，雨滴造成<c=#b8b8b8>15%,3.75%,1.5%</c>(<c=#ccffbf>5</c>)伤害；黑雨间夹杂间断的磊块，磊块造成<c=#b8b8b8>35%,\n8.75%,3.5%</c>(<c=#ccffbf>15</c>)伤害。"
+    },
+    {
+     "name": "半壁巅城一焱开-输出",
+     "type": "转状态",
+     "icon": "state-air-skill-2.webp",
+     "description": "继「星寰黑雨天刀磨」后，古斯托特凝聚日炎之力，使用斫阳之曜沿中心圆切线方向切开场地，造成大范围<c=#ff9999>120%</c>伤害。该技能最多施放3次。"
+    },
+    {
+     "name": "盘虺一啸朝夕映",
+     "type": "猛攻",
+     "icon": "state-air-skill-3.webp",
+     "description": "古斯托特将斫阳之曜与铸影之暗插入地面，造成<c=#ff9999>25%</c>/<c=#b8b8b8>25%</c>(<c=#ccffbf>10</c>)伤害并留下余烬/渊泥；随后两剑向前迸裂产生冲击波，造成上述相同效果；同时古斯托特蓄力朝玩家喷吐黑渊蚀光，持续造成<c=#b8b8b8>50%,12.5%,5%</c>(<c=#ccffbf>5</c>)伤害。"
+    },
+    {
+     "name": "伏蛟半潭分日影",
+     "type": "位移",
+     "icon": "state-air-skill-4.webp",
+     "description": "古斯托特起身向前冲，使用铸影之暗和斫阳之曜各进行一次超大范围挥砍，分别造成<c=#b8b8b8>25%</c>(<c=#ccffbf>20</c>),<c=#ff9999>45%</c>伤害；随后巡弋至另一侧，再重复上述过程一次，巡弋期间场地将随机出现大量地喷，造成<c=#b8b8b8>15%</c>(<c=#ccffbf>10</c>)伤害并留下渊泥。"
+    },
+    {
+     "name": "焰光淤影共徘徊",
+     "type": "输出",
+     "icon": "state-air-skill-5.webp",
+     "description": "古斯托特使用斫阳之曜与铸影之暗进行炎、渊、十字三段普攻，曜与暗的攻击分别造成<c=#ff9999>25%</c>,<c=#b8b8b8>25%</c>(<c=#ccffbf>10</c>)伤害并留下余烬/渊泥；每一段攻击都会产生相应的剑气，造成对应属性的<c=#ffdfbf>15%</c>伤害。"
+    },
+    {
+     "name": "觇尽天辰瞳尚佚",
+     "type": "爆发",
+     "icon": "state-air-skill-6.webp",
+     "description": "古斯托特将铸影之暗刺入空瞳，倏然一片虚空，鳞渊气泡如群星般散而又聚，而后湮毁，造成<c=#b8b8b8>80%</c>(<c=#ccffbf>30</c>)伤害<c=#ffbfbf>(闪避帧无效)</c>；期间古斯托特持有10s的`虚界护罩`。"
+    },
+    {
+     "name": "乌羽纷来千里寂",
+     "type": "远程",
+     "icon": "state-air-skill-7.webp",
+     "description": "古斯托特将漆黑之翼上的鳞羽大量洒下，造成<c=#b8b8b8>15%,7.5%,3.75%</c>(<c=#ccffbf>2</c>)伤害。"
+    },
+    {
+     "name": "荒霾残烟皆消殒",
+     "type": "召唤",
+     "icon": "state-air-skill-8.webp",
+     "description": "古斯托特遁入深寂之霞，同时召唤3个`图腾石碑`，并吸引玩家，持续造成<c=#b8b8b8>10%</c>伤害，随后 每隔7s施放一次回响黑潮，造成<c=#b8b8b8>30%</c>(<c=#ccffbf>10</c>)伤害，持续30s；若未及时破坏所有石碑，则古斯托特施放「苍穹悬星万豗雷」。以上伤害<c=#ffbfbf>闪避帧均无法躲避</c>。"
+    },
+    {
+     "name": "苍穹悬星万豗雷",
+     "type": "爆发",
+     "icon": "state-air-skill-9.webp",
+     "description": "古斯托特借自垂悬天界的渊隧之门降下，绽放出惑光之叶，造成<c=#b8b8b8>100%</c>(<c=#ccffbf>60</c>)伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+    }
+   ],
+   "notes": [
+    {
+     "text": "图腾石碑",
+     "desc": "24虚界盾，破盾后破坏，并恢复全队100点元素能量寂特殊能量；一共有3个，全部击败后可令古斯托特主瘫痪15s并扣除古斯托特10%生命值。"
+    },
+    {
+     "text": "虚界护罩",
+     "desc": "成功破除后扣除古斯托特10%生命值。"
+    }
+   ],
+   "shields": [
+    {
+     "name": "虚界护罩",
+     "description": "成功破除后扣除古斯托特10%生命值。",
+     "elementType": "",
+     "duration": ""
+    }
+   ],
+   "chargebar": [],
+   "energy": null,
+   "weight": 20000,
+   "elementMastery": 0,
+   "multiplayerGroup": "1",
+   "icon": "state-air-avatar.webp",
+   "defaultLevel": 90
+  }
+ ],
+ "defaultState": "ground",
+ "aliases": [
+  "蚀灭的源焰之主·地面",
+  "蚀灭的源焰之主·空中"
+ ],
+ "tags": [
+  "值得铭记的强敌"
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "name": "陆行岩本真蕈",
+ "nameEn": "Grounded Geoshroom",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 38.035199999999996,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 30.144,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 30,
+   "cryo": 10,
+   "geo": 30,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 125,
+ "skills": [
+  {
+   "name": "硬盖冲击",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "陆岩真蕈使用头顶朝玩家冲过来，接触持续造成<c=#ffe599>30%</c>伤害，冲刺结束后挑击造成<c=#ffe599>85%</c>伤害。\n<c=#ff99ff>活化：</c>连续进行较快速的3次冲击；\n<c=#ff9672>枯焦：</c>进行一次较慢的冲击，冲击伤害提升至<c=#ffe599>40%</c>，挑击伤害提升至<c=#ffe599>100%</c>。"
+  },
+  {
+   "name": "守门特技",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "陆岩真蕈跳起飞踢，造成<c=#b9b9b9>70%</c>伤害，后接扫堂腿，造成<c=#b9b9b9>85%</c>伤害。\n<c=#ff99ff>活化：</c>速度提升；\n<c=#ff9672>枯焦：</c>飞踢伤害提升至<c=#b9b9b9>85%</c>，扫堂腿伤害提升至<c=#b9b9b9>100%</c>。"
+  },
+  {
+   "name": "沙岩之花",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "陆岩真蕈使用头顶击地起跳，造成<c=#ffe599>30%</c>伤害，起跳后落地造成<c=#ffe599>85%</c>伤害，并眩晕一小会。\n<c=#ff99ff>活化：</c>速度提升；\n<c=#ff9672>枯焦：</c>起跳伤害提升至<c=#ffe599>40%</c>，落地伤害提升至<c=#ffe599>100%</c>，在周围产生一圈岩爆，造成<c=#ffe599>100%</c>伤害。"
+  },
+  {
+   "name": "三相之形",
+   "type": "天赋",
+   "icon": "skill-4.webp",
+   "description": "陆岩真蕈受到<c=#ff9999>火元素</c>/<c=#ffacff>雷元素</c>攻击后，会分别永久转变为<c=#ff9672>枯焦</c>/<c=#ff99ff>活化</c>状态。\n<c=#ff99ff>活化：</c>CD缩短，移速提升150%；\n<c=#ff9672>枯焦：</c>CD延长，移速下降50%。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 155288,
+   "atk": 5909,
+   "weight": 125,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "grounded-geoshroom",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

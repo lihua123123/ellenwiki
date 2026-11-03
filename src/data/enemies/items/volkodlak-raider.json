@@ -1,0 +1,90 @@
+{
+ "name": "兽怪捷掠者",
+ "nameEn": "Volkodlak Raider",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 17.659,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 20.1,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "出刀回鞘",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "兽怪使用锐器转身进行攻击，造成<c=#b8b8b8>60%</c>伤害。"
+  },
+  {
+   "name": "刀锋及地",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "兽怪跃起，使用锐器插入地面，造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "炼野放形",
+   "type": "强化",
+   "icon": "",
+   "description": "兽怪将使用自身的元素力，令其进入「解放」状态，根据变体的不同，其可汲取<c=#99ff87>草</c>/<c=#ffacff>雷</c>/<c=#ff9999>火</c>的元素力，使攻击变为对应属性伤害。\n「解放」状态下会连续施放数次技能。受`星烁反应`影响，每进行一次攻击就会被打断。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "WP[0]",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 72098,
+   "atk": 3940,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "volkodlak-raider",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

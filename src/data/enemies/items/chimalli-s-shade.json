@@ -1,0 +1,143 @@
+{
+ "name": "切玛利的遮荫",
+ "nameEn": "Chimalli’s Shade",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 489.024,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 113.04,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 50,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 10000,
+ "skills": [
+  {
+   "name": "深翎流尘",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "「遮荫」飞快使用自身翼片旋转，造成<c=#b8b8b8>20%x3</c>伤害。"
+  },
+  {
+   "name": "导源引理",
+   "type": "召唤",
+   "icon": "skill-2.webp",
+   "description": "「遮荫」在前方召唤出2枚`水泡`，水泡缓慢追踪玩家并崩破，每个水泡造成<c=#7fbfff>50%</c>伤害。<c=#bfffff>水泡可冻结，可击回破盾。</c>"
+  },
+  {
+   "name": "亘缘海泉",
+   "type": "定点",
+   "icon": "skill-3.webp",
+   "description": "「遮荫」在玩家处召唤`流泉`，造成一次<c=#7fbfff>100%</c>伤害。<c=#bfffff>流泉可冻结，可抵挡「败众淮渊」的伤害。</c>"
+  },
+  {
+   "name": "一泓濯界",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "「遮荫」朝玩家方向蓄力，迸发水元素冲流，造成<c=#7fbfff>70%</c>伤害。"
+  },
+  {
+   "name": "败众淮渊",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "「遮荫」召出6股流泉，各造成<c=#7fbfff>100%</c>伤害；接着进行长达10s的喷流，持续造成<c=#7fbfff>250%</c>伤害。"
+  },
+  {
+   "name": "噬众灏浪",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "「遮荫」进行蓄力，重新形成`流泉之灵界`；场地边缘开始出现缓慢朝其移动的水泡，尝试接触会造成<c=#7fbfff>50%</c>伤害；接着进行长达30s的蓄力过程。蓄力完成后，将进行一次涌海裂罚，造成<c=#7fbfff>400%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "水泡",
+   "desc": "可被冰冻结，冻结后可被重击击回，命中护盾则-64水并造成440%基础倍率的伤害；若在技能「噬众苦泉」期间被「遮荫」吸收，则护盾+64水。"
+  },
+  {
+   "text": "流泉",
+   "desc": "可被冰冻结，冻结后可抵挡「败众淮渊」的伤害，"
+  },
+  {
+   "text": "流泉之灵界",
+   "desc": "320水盾，开局自带，击破后可瘫痪「遮荫」10s，并使其受到的伤害提升100%。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "流泉之灵界",
+   "description": "320水盾，开局自带，击破后可瘫痪「遮荫」10s，并使其受到的伤害提升100%。",
+   "elementType": "Water",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "夜魂试炼",
+   "level": 103,
+   "hp": 2193664,
+   "atk": 23497,
+   "weight": 10000,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "chimalli-s-shade",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

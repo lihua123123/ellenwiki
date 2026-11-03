@@ -1,0 +1,268 @@
+{
+ "name": "游雪的护刃",
+ "nameEn": "Guardian Blade of Drifting Snow",
+ "subtitle": "离群的冰影",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 366.768,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 95.46,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 50,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "开盾",
+   "pyro": 210,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 210,
+   "dendro": 210,
+   "cryo": 250,
+   "geo": 210,
+   "physical": 210
+  },
+  {
+   "name": "虚弱",
+   "pyro": -40,
+   "hydro": -40,
+   "anemo": -40,
+   "electro": -40,
+   "dendro": -40,
+   "cryo": 0,
+   "geo": -40,
+   "physical": -40
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "冬锷游锋",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "雪精使用双刃进行一次华丽的旋身攻击，造成<span class=\"cryo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "云泻州河",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "雪精突刺而来，造成<span class=\"cryo\">**100%**</span>伤害，若玩家距离较近，则后接「冬锷游锋」。"
+  },
+  {
+   "name": "饰霜镜华",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "雪精进行至多4段的普通攻击，运动幅度越来越大，依次造成<span class=\"cryo\">**30%,30%,40%,\n40%**</span>伤害。"
+  },
+  {
+   "name": "死寒碎壑",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "雪精召唤6枚冰棱箭，以三枚一组的方式施放追踪玩家，均造成<span class=\"cryo\">**25%**</span>伤害。"
+  },
+  {
+   "name": "杵愿遗影",
+   "type": "防御",
+   "icon": "skill-5.webp",
+   "description": "雪精在低于<c=#ffdfbf>50%生命值</c>时，会将自己封入「`冰棺`」；展开「冰棺」进行蓄力时会在周围产生冰风暴，持续造成<span class=\"cryo\">**3.125%**</span>伤害，<c=#ffdfbf>16s</c>后解除并施放「凝秉六境」，同时恢复<c=#ffdfbf>20%生命值</c>，仅触发一次。受`星烁反应`影响，冰棺会更容易被<c=#ffacff>雷元素</c>/<span class=\"anemo\">**风元素**</span>破坏。"
+  },
+  {
+   "name": "凝秉六境",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "雪精展开「冰棺」的同时，会在上空不断生成6枚冰长枪，并在蓄力完成后依次朝玩家发射而来，均造成<span class=\"cryo\">**60%,6%**</span>伤害，同时额外造成<span class=\"cryo\">**15%**</span>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冰棺",
+   "desc": "<span class=\"cryo\">**20冻**</span>盾/<span class=\"cryo\">**40冻**</span>盾<c=#ffdfbf>(深渊)</c>，击破会使其<c=#ffdfbf>扣除20%生命值</c>，同时虚弱<c=#ffdfbf>15s</c>。`星烁反应`会使<c=#ffacff>雷</c>/<span class=\"anemo\">**风**</span>的相应反应消耗比变为<c=#ffdfbf>1:4</c>。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "冰棺",
+   "description": "<span class=\"cryo\">**20冻**</span>盾/<span class=\"cryo\">**40冻**</span>盾<c=#ffdfbf>(深渊)</c>，击破会使其<c=#ffdfbf>扣除20%生命值</c>，同时虚弱<c=#ffdfbf>15s</c>。`星烁反应`会使<c=#ffacff>雷</c>/<span class=\"anemo\">**风**</span>的相应反应消耗比变为<c=#ffdfbf>1:4</c>。",
+   "elementType": "Frozen",
+   "duration": 16
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "CP[0x2],CO[66,33]",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1645248,
+   "atk": 19842,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": {
+  "name": "游雪的护刃·不绝余音",
+  "nameEn": "Guardian Blade of Drifting Snow: Endless Reverberation",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 1195827,
+    "atk": 14464,
+    "multiplier": 1.2,
+    "advantage": "星烁反应"
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 5958675,
+    "atk": 18713,
+    "multiplier": 4.0,
+    "advantage": "Pyro Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 10335043,
+    "atk": 20597,
+    "multiplier": 6.0,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 21871489,
+    "atk": 22061,
+    "multiplier": 11.6,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "正常",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 50,
+    "geo": 10,
+    "physical": 10
+   },
+   {
+    "name": "开盾",
+    "pyro": 210,
+    "hydro": 210,
+    "anemo": 210,
+    "electro": 210,
+    "dendro": 210,
+    "cryo": 250,
+    "geo": 210,
+    "physical": 210
+   },
+   {
+    "name": "虚弱",
+    "pyro": -40,
+    "hydro": -40,
+    "anemo": -40,
+    "electro": -40,
+    "dendro": -40,
+    "cryo": 0,
+    "geo": -40,
+    "physical": -40
+   }
+  ],
+  "skills": [
+   {
+    "name": "杵愿遗影",
+    "type": "防御",
+    "icon": "leyline-skill-1.webp",
+    "description": "雪精在低于<c=#ffdfbf>80%生命值</c>时，会将自己封入「`冰棺`」；展开「冰棺」进行蓄力时会在周围产生冰风暴，持续造成<span class=\"cryo\">**3.125%**</span>伤害，<c=#ffdfbf>16s</c>后解除并施放「凝秉六境」，同时恢复<c=#ffdfbf>10%生命值</c>。受`星烁反应`影响，冰棺会转为「`冰明屏障`」，同时冰风暴消失。"
+   }
+  ],
+  "notes": [
+   {
+    "text": "冰棺",
+    "desc": "当生命值<c=#ffdfbf>低于50%</c>时，雪精会尝试将自己封入冰棺，冰棺为<span class=\"cryo\">**20冻**</span>盾，<c=#ffdfbf>16s</c>后解除并恢复<c=#ffdfbf>20%生命值</c>，若击破冰棺则使其<c=#ffdfbf>失去等量生命值</c>，同时虚弱<c=#ffdfbf>10s</c>。受`星烁反应`影响，冰棺会使<c=#ffacff>雷</c>/<span class=\"anemo\">**风**</span>的相应反应消耗比变为<c=#ffdfbf>1:4</c>。\n<c=#bfffbf>(N4) </c>冰棺厚度翻倍，为<span class=\"cryo\">**40冻**</span>盾。\n<c=#ffbfbf>(N5) </c>冰棺厚度提升，为<span class=\"cryo\">**42冻**</span>盾，且改为在<c=#ffdfbf>80%生命值</c>左右开盾，16s后解除并恢复<c=#ffdfbf>10%生命值</c>，若击破冰棺则使其<c=#ffdfbf>失去等量生命值</c>。冰棺在受到`星烁反应`影响后，将转为「冰明屏障」。冰棺至多开启2次，第二次冰棺将在破盾约<c=#ffdfbf>35s</c>后展开。"
+   },
+   {
+    "text": "(N5) 冰明屏障",
+    "desc": "为冰棺受`星烁反应`影响后，根据冰棺剩余量转变而来，屏障厚度最大为<c=#ffdfbf>15%生命值</c>，最大持续<c=#ffdfbf>20s</c>。击破后将使雪精虚弱<c=#ffdfbf>10s</c>，并对雪精造成两段伤害，其值分别为：<c=#ffdfbf>10%生命值的真伤</c>，屏障期间所受<c=#ffdfbf>60%伤害</c>(不超过<c=#ffdfbf>10%雪精生命值</c>)的<c=#ffdfbf>普通伤害</c>。"
+   },
+   {
+    "text": "(N5) 抗性",
+    "desc": "冰元素抗性-40%。"
+   }
+  ],
+  "shields": [
+   {
+    "name": "冰棺",
+    "description": "当生命值<c=#ffdfbf>低于50%</c>时，雪精会尝试将自己封入冰棺，冰棺为<span class=\"cryo\">**20冻**</span>盾，<c=#ffdfbf>16s</c>后解除并恢复<c=#ffdfbf>20%生命值</c>，若击破冰棺则使其<c=#ffdfbf>失去等量生命值</c>，同时虚弱<c=#ffdfbf>10s</c>。受`星烁反应`影响，冰棺会使<c=#ffacff>雷</c>/<span class=\"anemo\">**风**</span>的相应反应消耗比变为<c=#ffdfbf>1:4</c>。\n<c=#bfffbf>(N4) </c>冰棺厚度翻倍，为<span class=\"cryo\">**40冻**</span>盾。\n<c=#ffbfbf>(N5) </c>冰棺厚度提升，为<span class=\"cryo\">**42冻**</span>盾，且改为在<c=#ffdfbf>80%生命值</c>左右开盾，16s后解除并恢复<c=#ffdfbf>10%生命值</c>，若击破冰棺则使其<c=#ffdfbf>失去等量生命值</c>。冰棺在受到`星烁反应`影响后，将转为「冰明屏障」。冰棺至多开启2次，第二次冰棺将在破盾约<c=#ffdfbf>35s</c>后展开。",
+    "elementType": "Frozen",
+    "duration": 16
+   },
+   {
+    "name": "(N5) 冰明屏障",
+    "description": "为冰棺受`星烁反应`影响后，根据冰棺剩余量转变而来，屏障厚度最大为<c=#ffdfbf>15%生命值</c>，最大持续<c=#ffdfbf>20s</c>。击破后将使雪精虚弱<c=#ffdfbf>10s</c>，并对雪精造成两段伤害，其值分别为：<c=#ffdfbf>10%生命值的真伤</c>，屏障期间所受<c=#ffdfbf>60%伤害</c>(不超过<c=#ffdfbf>10%雪精生命值</c>)的<c=#ffdfbf>普通伤害</c>。",
+    "elementType": "",
+    "duration": 20
+   }
+  ]
+ },
+ "id": "guardian-blade-of-drifting-snow",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽",
+  "幽境危战"
+ ]
+}

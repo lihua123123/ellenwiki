@@ -1,0 +1,196 @@
+{
+ "name": "千年珍珠骏麟·升怒",
+ "nameEn": "Enraged Millennial Pearl Seahorse",
+ "subtitle": "最好的骑宠",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 163.00799999999998,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 145,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 60,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "带甲",
+   "pyro": 145,
+   "hydro": 145,
+   "anemo": 145,
+   "electro": 195,
+   "dendro": 145,
+   "cryo": 145,
+   "geo": 145,
+   "physical": 145
+  },
+  {
+   "name": "削弱带甲",
+   "pyro": 90,
+   "hydro": 90,
+   "anemo": 90,
+   "electro": 140,
+   "dendro": 90,
+   "cryo": 90,
+   "geo": 90,
+   "physical": 90
+  },
+  {
+   "name": "出场",
+   "pyro": 210,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 260,
+   "dendro": 210,
+   "cryo": 210,
+   "geo": 210,
+   "physical": 210
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "106",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "尾羽环转",
+   "type": "防卫",
+   "icon": "skill-1.webp",
+   "description": "雷海马进行一次环转，造成<c=#ffacff>60%</c>伤害；无珍珠时进行则造成<c=#b9b9b9>50%</c>伤害。"
+  },
+  {
+   "name": "尾羽交扇",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "雷海马迅速翻滚至多3圈，分别造成<c=#ffacff>60%,60%,50%</c>伤害；无珍珠时进行则造成<c=#b8b8b8>50%,50%,40%</c>伤害；攻击造成的伤害带有(1,0.5)的衰减。"
+  },
+  {
+   "name": "掣海无影",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "雷海马从远处迅速冲向玩家，造成<c=#ffacff>80%</c>伤害；途经将留下雷曜地面，持续造成<c=#ffacff>6%</c>伤害；无珍珠时进行则造成<c=#bababa>65%</c>伤害，且不会留下雷曜地面。"
+  },
+  {
+   "name": "群鱼天游",
+   "type": "追踪",
+   "icon": "skill-4.webp",
+   "description": "雷海马释放出大群的游鱼，游鱼在飞出一小会后冲向玩家，造成<c=#ffacff>35%,17.5%,\n6.3%~3.5%</c>伤害。"
+  },
+  {
+   "name": "永海捩江",
+   "type": "锁定",
+   "icon": "skill-5.webp",
+   "description": "雷海马瞄准并锁定玩家，数秒后在玩家处和周围4个位置产生5个喷涌，同步于玩家的喷涌率先喷发，造成<c=#ffacff>50%</c>伤害；固定于场地的4个喷涌，寿命30s，在玩家触及后立即造成<c=#ffacff>50%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。喷涌都会留下雷曜地面。"
+  },
+  {
+   "name": "原海古雷",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "当珍珠盾量<=7时施放；雷海马登天，唤临4枚绕场顺时针旋转的`共鸣珊瑚珠`，并不断降下总计6道的落雷，均造成<c=#ffacff>100%</c>伤害。\n破坏所有珊瑚珠可以使其瘫痪陷入无珠状态，未及时破除会修复珍珠。"
+  },
+  {
+   "name": "绺导缬流",
+   "type": "位移",
+   "icon": "skill-7.webp",
+   "description": "雷海马导引三股鱼群，均造成<c=#ffacff>40%</c>伤害，最后施放一段冲刺，造成<c=#ffacff>80%</c>伤害。"
+  },
+  {
+   "name": "麟凌疾空",
+   "type": "猛攻",
+   "icon": "skill-8.webp",
+   "description": "雷海马登天，朝玩家猛地下戳，造成<c=#ffacff>95%</c>伤害，并引起地裂喷涌，造成<c=#ffacff>50%</c>伤害，留下雷曜地面，持续造成<c=#ffacff>6%</c>伤害。"
+  },
+  {
+   "name": "明珠鸣雷",
+   "type": "再生",
+   "icon": "skill-9.webp",
+   "description": "陷入无珠状态约<c=#dfbfff>18s/30s(词条削弱)</c>后，雷海马即将再度生成`异海珍珠`！生成时施放雷暴，造成<c=#ffacff>90%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "异海珍珠",
+   "desc": "19雷盾，击破使其进入无珠状态；免疫扩散附着；第二次及后续再生时只有11.4雷盾。"
+  },
+  {
+   "text": "共鸣珊瑚珠",
+   "desc": "0.4雷盾，击破扣除异海珍珠当前剩余-当前/4雷，若未及时破除，每个珍珠则将恢复异海珍珠当前/4+2雷。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "异海珍珠",
+   "description": "19雷盾，击破使其进入无珠状态；免疫扩散附着；第二次及后续再生时只有11.4雷盾。",
+   "elementType": "Electric",
+   "duration": ""
+  },
+  {
+   "name": "共鸣珊瑚珠",
+   "description": "0.4雷盾，击破扣除异海珍珠当前剩余-当前/4雷，若未及时破除，每个珍珠则将恢复异海珍珠当前/4+2雷。",
+   "elementType": "Electric",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 731221,
+   "atk": 30140,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "enraged-millennial-pearl-seahorse",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

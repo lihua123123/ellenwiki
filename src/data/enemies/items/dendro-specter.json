@@ -1,0 +1,107 @@
+{
+ "name": "草飘浮灵",
+ "nameEn": "Dendro Specter",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 21.7344,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 17.584,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": "IMM",
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "悬铃毒种",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "草飘浮灵悬着一个草团，摇摇晃晃地丢出，造成<c=#99ff87>100%</c>伤害。"
+  },
+  {
+   "name": "锋刃叶裁",
+   "type": "猛攻",
+   "icon": "skill-2.webp",
+   "description": "(满怒施放)草飘浮灵进行自旋，自旋时会追着玩家施放3次冲击波，每次造成<c=#99ff87>100%</c>伤害，并且范围会越来越大。"
+  },
+  {
+   "name": "丛草妨生",
+   "type": "强化",
+   "icon": "skill-3.webp",
+   "description": "草飘浮灵左摇右晃，在玩家处生成草丛，草丛爆发造成<c=#99ff87>100%</c>伤害，若命中玩家，则会产生一个草晶粒<c=#dfffbf>给自己填充50%怒气值</c>。"
+  },
+  {
+   "name": "迸裂缠繁",
+   "type": "亡语",
+   "icon": "skill-4.webp",
+   "description": "草飘浮灵死亡。\n<c=#9dffb6>未满怒：</c>直接爆炸，造成<c=#99ff87>125%</c>伤害；\n<c=#9dffb6>满怒：</c>蓄力爆炸，造成<c=#99ff87>150%</c>伤害，若周围20m内存在不满怒飘浮灵，则产生对应数量的草晶粒，<c=#dfffbf>填满它们的怒气值</c>。"
+  },
+  {
+   "name": "怒气积攒",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "飘浮灵在受到超过自身生命值上限一定比例的单次伤害时，会积攒「怒气」。\n满怒状态下，免疫风场力、击飞，重量翻3倍。所受单次伤害与自身生命上限的区间关系如右侧："
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 88736,
+   "atk": 3447,
+   "weight": 80,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "dendro-specter",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

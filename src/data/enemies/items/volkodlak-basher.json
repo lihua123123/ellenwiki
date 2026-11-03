@@ -1,0 +1,90 @@
+{
+ "name": "兽怪敲打者",
+ "nameEn": "Volkodlak Basher",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 20.376,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "压制横驰",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "兽怪使用钝器进行横向挥扫击，造成<c=#b8b8b8>70%</c>伤害。"
+  },
+  {
+   "name": "相峙纵击",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "兽怪使用钝器垂直敲击，造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "悍势威行",
+   "type": "强化",
+   "icon": "",
+   "description": "兽怪将使用自身的元素力，令其进入「解放」状态，根据变体的不同，其可汲取<span class=\"cryo\">**冰**</span>/<c=#ff9999>火</c>/<c=#ffe599>岩</c>的元素力，使攻击变为对应属性伤害。\n「解放」状态下会连续施放数次技能。受`星烁反应`影响，每进行一次攻击就会被打断。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "WP[0]",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 83190,
+   "atk": 4924,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "volkodlak-basher",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "name": "遗迹猎者",
+ "nameEn": "Ruin Hunter",
+ "subtitle": "",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 81.50399999999999,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 175.84,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "切械尖刃",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "遗迹猎者使用一侧肢体进行划击，造成<c=#b9b9b9>15%</c>和<c=#b9b9b9>25%</c>伤害。"
+  },
+  {
+   "name": "裁镶之刃",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "遗迹猎者进行4段普通攻击：右划，左划，旋转，右劈，四段攻击依次造成<c=#b9b9b9>15%,15%,10%x2,20%</c>伤害，当其<c=#ffdfbf>生命值低于60%</c>后，有概率会后接一段水平或垂直的旋转，均造成<c=#b9b9b9>15%x4</c>伤害。"
+  },
+  {
+   "name": "尖利穿刺",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "遗迹猎者使用右肢蓄力，4s后直接冲刺攻击，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "热炽凌空",
+   "type": "转变",
+   "icon": "skill-4.webp",
+   "description": "当玩家直线距离遗迹猎者30m以上或者遗迹猎者够不到玩家时，遗迹猎者直接进入「空袭」状态，强制推开15m内的玩家。"
+  },
+  {
+   "name": "空袭散落",
+   "type": "爆发 空袭",
+   "icon": "skill-5.webp",
+   "description": "远离遗迹猎者使其进入「空袭」状态，往空中发射8枚导弹，片刻后下落在玩家周围，每枚导弹造成<c=#b9b9b9>25%</c>伤害，最多可持续10轮。"
+  },
+  {
+   "name": "重膛机枪",
+   "type": "爆发 空袭",
+   "icon": "skill-6.webp",
+   "description": "距离「空袭」状态的遗迹猎者过远时，遗迹猎者朝玩家发射4批子弹，每批子弹造成<c=#b9b9b9>10%</c>伤害，持续2-4轮后施放<c=#ffa54c>「机光飞火」</c>。"
+  },
+  {
+   "name": "降陨余光",
+   "type": "转变 空袭",
+   "icon": "skill-7.webp",
+   "description": "处在处于「空袭」状态够久的遗迹猎者下方时，遗迹猎者朝下方发射激光轰炸地面，激光和爆炸均造成<c=#b8b8b8>50%</c>伤害，并退出「空袭」状态。"
+  },
+  {
+   "name": "机光飞火",
+   "type": "爆发 空袭",
+   "icon": "skill-8.webp",
+   "description": "「空袭」状态下，遗迹猎者发射8个螺旋飞的追踪弹，每枚导弹造成<c=#b9b9b9>5%</c>伤害，接着使用4个炮筒蓄力，4s后发射巨大火炮造成<c=#ff9999>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_4443",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 220591,
+   "atk": 34471,
+   "weight": 300,
+   "tenacity": 4000
+  },
+  {
+   "label": "精英-靖世九柱",
+   "level": 110,
+   "hp": 481520,
+   "atk": 40638,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "ruin-hunter",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

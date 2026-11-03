@@ -1,0 +1,118 @@
+{
+ "name": "嗜雷·兽境幼兽",
+ "nameEn": "Thundercraven Rifthound Whelp",
+ "subtitle": "隙间侵入的异兽",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 32.6016,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 15.072,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 20,
+   "hydro": 20,
+   "anemo": 20,
+   "electro": 20,
+   "dendro": 20,
+   "cryo": 20,
+   "geo": 20,
+   "physical": 20
+  },
+  {
+   "name": "嗜魔",
+   "pyro": 20,
+   "hydro": 20,
+   "anemo": 20,
+   "electro": -10,
+   "dendro": 20,
+   "cryo": 20,
+   "geo": 20,
+   "physical": 20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "龋啮追合",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "幼兽侧身，突进咬合，造成<c=#ffacff>85%</c>伤害。"
+  },
+  {
+   "name": "长爪追袭",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "幼兽后空翻消失，传送至玩家身后使用爪子划击，成<c=#ffacff>100%</c>伤害。"
+  },
+  {
+   "name": "撕痕裂迹",
+   "type": "妨害",
+   "icon": "skill-3.webp",
+   "description": "幼兽张牙舞爪，在近处进行快速的左右两段划击攻击，均造成<c=#ffacff>65%</c>伤害。"
+  },
+  {
+   "name": "嗜雷之烈",
+   "type": "天赋",
+   "icon": "skill-4.webp",
+   "description": "每受到一次直接<c=#ffacff>雷元素</c>伤害，其怒气值就增长34%，值满时幼兽的外观发生明显变化，永久<c=#dfbfff>进入嗜魔状态</c>，以<c=#e599ff>雷抗减至-10%</c>为代价提升攻击频率。"
+  },
+  {
+   "name": "郄兽侵蚀",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "兽境类原魔造成的伤害都会附带「侵蚀」效果。兽境幼兽的效果为：每层每秒扣除玩家<c=#ffcdbf>0.5%HP</c>的生命值，每层持续<c=#ffcdbf>9.5s</c>，持续时间独立计算，可叠加。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 133104,
+   "atk": 2955,
+   "weight": 100,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "thundercraven-rifthound-whelp",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

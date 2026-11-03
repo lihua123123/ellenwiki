@@ -1,0 +1,140 @@
+{
+ "name": "圣骸赤鹫",
+ "nameEn": "Consecrated Red Vulture",
+ "subtitle": "啃噬伟大生命的火之兽",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "噬骸",
+   "pyro": 70,
+   "hydro": 40,
+   "anemo": 40,
+   "electro": 40,
+   "dendro": 40,
+   "cryo": 40,
+   "geo": 40,
+   "physical": 40
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "赤鹫爪",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "圣骸赤鹫进行双啄击、左爪划、旋火龙卷三段攻击，分别造成<c=#ff9999>50%x2,80%,\n100%</c>伤害，及时远离可以打断旋火龙卷的攻击。"
+  },
+  {
+   "name": "钩折扫",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "圣骸赤鹫进行啄击、右翼翻转两段攻击，分别造成<c=#ff9999>50%,70%</c>伤害。"
+  },
+  {
+   "name": "鹰落地",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "距离玩家较远时，圣骸赤鹫振翅起跳，在玩家处下落，造成<c=#ff9999>100%</c>伤害。"
+  },
+  {
+   "name": "鹫平飞",
+   "type": "妨害",
+   "icon": "skill-4.webp",
+   "description": "距离玩家更远时，圣骸赤鹫振翅起飞，朝玩家飞过来，两翼交替施放火焰弹落地轰炸，每个火焰弹造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "鹰回头",
+   "type": "防卫",
+   "icon": "skill-5.webp",
+   "description": "处于赤鹫后方时，圣骸赤鹫瞬间转身攻击，造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "羽飞刃",
+   "type": "噬骸爆发",
+   "icon": "skill-6.webp",
+   "description": "每45s-60s，圣骸赤鹫升空化作火球，产生并发射大量焰飞刃对准玩家，命中造成<c=#ff9999>50%,25%,12.5%,5%</c>伤害，同时形成<c=#dd4a04>「</c><c=#dd4a04>`噬骸能量块·火`</c><c=#dd4a04>」</c>；此时赤鹫失去强化抗性正常，6s后则会被赤鹫吸收恢复强化。"
+  },
+  {
+   "name": "秃鹫扑火",
+   "type": "天赋",
+   "icon": "skill-7.webp",
+   "description": "圣骸赤鹫从开局、瘫痪恢复后或者吸收<c=#dd4a04>「噬骸能量块·火」</c>之后，将进行抗性强化：<c=#ff9672>火抗+60%，其他抗性+30%</c>，并且全身变亮；该效果持续到其施放<c=#dd4a04>「羽飞刃」</c>技能后，或被携带有<c=#dd4a04>「噬骸能量块·火」</c>的玩家命中后失效。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "噬骸能量块·火",
+   "desc": "1次<c=#ff9999>火元素</c>攻击，或6次其他元素攻击可拾取，命中可瘫痪圣骸赤鹫。其存在6s，超时则会被圣骸赤鹫夺取。\n持有噬骸能量块·火时命中圣骸赤鹫则会令其强制瘫痪10s，并移除抗性提升，同时扣除<c=#ffdfbf>15%</c>生命值；噬骸能量块携带时，会反噬全队：每秒损失<c=#ffdfbf>2%</c>生命值，持续10s，穿盾不致死。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 388220,
+   "atk": 14773,
+   "weight": 150,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "consecrated-red-vulture",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

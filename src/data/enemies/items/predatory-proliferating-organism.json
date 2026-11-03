@@ -1,0 +1,89 @@
+{
+ "name": "掠食性增殖生命体",
+ "nameEn": "Predatory Proliferating Organism",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Common",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 32.6016,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 50,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "弱肉强食",
+   "type": "强化",
+   "icon": "skill-1.webp",
+   "description": "掠食型会吞噬6m内最近的基础型，然后进入为期20s的狂暴状态，且体型变大。\n狂暴状态会转为不断向玩家攻击。"
+  },
+  {
+   "name": "蚌扇开合",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "非狂暴：掠食型朝前咬一口，造成<c=#b8b8b8>50%</c>伤害。\n已狂暴：掠食型不断追着玩家咬，频率高速度快，持续造成<c=#b8b8b8>100%.50%,30%,\n20%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "核心守塔机制",
+   "desc": "掠食型吞噬的基础型计入进度。\n击败掠食型推进<c=#bfffbf>11%</c>(220)进度，恢复全队20能量。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "其他-守望者二阶段衍生物",
+   "level": 90,
+   "hp": 89041,
+   "atk": 7613,
+   "weight": 100,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "predatory-proliferating-organism",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

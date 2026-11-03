@@ -1,0 +1,3118 @@
+{
+  "meta": {
+    "name": "Ellen Wiki Palette",
+    "version": "1.0.0",
+    "theme": "dark",
+    "source": "ColorPanel1.xlsx（子表 hues CN / hues CN SR）",
+    "note": "foundation / element / reaction / rarity / ui 为落地到站点的语义令牌；catalog 为原表全部色值对的完整留档。",
+    "updated": "2026-11-04"
+  },
+  "foundation": {
+    "surface": {
+      "body": {
+        "hex": "#0F1218",
+        "usage": "页面底色"
+      },
+      "elevated": {
+        "hex": "#161A22",
+        "usage": "侧栏 / 弹层 / 次级面板"
+      },
+      "card": {
+        "hex": "#191D26",
+        "usage": "卡片与内容块底色"
+      },
+      "cardTop": {
+        "hex": "rgba(255, 255, 255, 0.035)",
+        "usage": "卡片顶部微亮渐变起点"
+      },
+      "code": {
+        "hex": "rgba(255, 255, 255, 0.06)",
+        "usage": "行内代码块底色"
+      },
+      "hover": {
+        "hex": "rgba(211, 188, 142, 0.08)",
+        "usage": "列表与按钮悬停底色"
+      },
+      "nav": {
+        "hex": "rgba(15, 18, 24, 0.86)",
+        "usage": "顶栏 / 侧栏半透明底"
+      },
+      "input": {
+        "hex": "rgba(255, 255, 255, 0.06)",
+        "usage": "输入框底色"
+      }
+    },
+    "text": {
+      "primary": {
+        "hex": "#E4DED2",
+        "usage": "正文（源自「主文本-黑底 #ECE5D8」，按深色底微调）"
+      },
+      "secondary": {
+        "hex": "#A6A296",
+        "usage": "次级说明 / 英文副标题"
+      },
+      "heading": {
+        "hex": "#F6F0E2",
+        "usage": "标题（源自「白字描述 #F7EAD2」）"
+      },
+      "muted": {
+        "hex": "#8B8779",
+        "usage": "禁用 / 占位 / 极弱提示"
+      },
+      "onAccent": {
+        "hex": "#16130C",
+        "usage": "金色强调底上的文字"
+      }
+    },
+    "border": {
+      "hairline": {
+        "hex": "rgba(211, 188, 142, 0.12)",
+        "usage": "卡片描边 / 分隔线（金色微光）"
+      },
+      "strong": {
+        "hex": "rgba(211, 188, 142, 0.28)",
+        "usage": "强调描边 / 聚焦态"
+      }
+    },
+    "accent": {
+      "base": {
+        "hex": "#D3BC8E",
+        "usage": "主强调色（源自「界面左上角 / 备注 / 传送-黑」）"
+      },
+      "light": {
+        "hex": "#EBD9AE",
+        "usage": "强调色高亮 / 链接悬停"
+      },
+      "deep": {
+        "hex": "#A88F5E",
+        "usage": "强调色按下 / 深金描边"
+      },
+      "soft": {
+        "hex": "rgba(211, 188, 142, 0.15)",
+        "usage": "强调色淡底 / 选中态"
+      },
+      "gradient": {
+        "hex": "linear-gradient(135deg, #D3BC8E, #EBD9AE)",
+        "usage": "强调按钮与标题渐变"
+      }
+    },
+    "state": {
+      "success": {
+        "hex": "#66C000",
+        "usage": "成功 / 完成（源自「制作完成」）"
+      },
+      "danger": {
+        "hex": "#FF5E41",
+        "usage": "错误 / 不足 / 高亮警示"
+      },
+      "warning": {
+        "hex": "#FFCC33",
+        "usage": "警告 / 任务提示"
+      },
+      "info": {
+        "hex": "#00E1FF",
+        "usage": "信息 / 对话高亮"
+      }
+    }
+  },
+  "element": {
+    "pyro": {
+      "name": "火",
+      "nameEn": "Pyro",
+      "className": "pyro",
+      "color": {
+        "hex": "#FF7A4D",
+        "usage": "元素主色（元素色系）"
+      },
+      "soft": {
+        "hex": "#FF9999",
+        "usage": "浅色（一图拓展配色）"
+      },
+      "text": {
+        "hex": "#FF9999",
+        "usage": "元素描述文本"
+      },
+      "number": {
+        "hex": "#FF9B00",
+        "usage": "伤害数字"
+      },
+      "shield": {
+        "hex": "#FF9966",
+        "usage": "护盾 / 充能"
+      },
+      "vision": {
+        "hex": "#FF5511",
+        "usage": "元素视野"
+      },
+      "visionBorder": {
+        "hex": "#FF9A26",
+        "usage": "元素视野边框"
+      },
+      "wish": {
+        "hex": "#EC4923",
+        "usage": "祈愿卡池主题色"
+      },
+      "tcg": {
+        "hex": "#F38954",
+        "usage": "七圣召唤伤害色"
+      },
+      "resonance": {
+        "hex": "#FF6640",
+        "usage": "元素共鸣 / 屏障"
+      }
+    },
+    "hydro": {
+      "name": "水",
+      "nameEn": "Hydro",
+      "className": "hydro",
+      "color": {
+        "hex": "#4DA6FF",
+        "usage": "元素主色（元素色系）"
+      },
+      "soft": {
+        "hex": "#99CCFF",
+        "usage": "浅色（一图拓展配色）"
+      },
+      "text": {
+        "hex": "#80C0FF",
+        "usage": "元素描述文本"
+      },
+      "number": {
+        "hex": "#33CCFF",
+        "usage": "伤害数字"
+      },
+      "shield": {
+        "hex": "#00C0FF",
+        "usage": "护盾 / 充能"
+      },
+      "vision": {
+        "hex": "#33AAFF",
+        "usage": "元素视野"
+      },
+      "visionBorder": {
+        "hex": "#0DE8FF",
+        "usage": "元素视野边框"
+      },
+      "wish": {
+        "hex": "#498FCC",
+        "usage": "祈愿卡池主题色"
+      },
+      "tcg": {
+        "hex": "#71A3E4",
+        "usage": "七圣召唤伤害色"
+      },
+      "resonance": {
+        "hex": "#00C0FF",
+        "usage": "元素共鸣 / 屏障"
+      }
+    },
+    "anemo": {
+      "name": "风",
+      "nameEn": "Anemo",
+      "className": "anemo",
+      "color": {
+        "hex": "#73FFDC",
+        "usage": "元素主色（元素色系）"
+      },
+      "soft": {
+        "hex": "#99FFE5",
+        "usage": "浅色（一图拓展配色）"
+      },
+      "text": {
+        "hex": "#80FFD7",
+        "usage": "元素描述文本"
+      },
+      "number": {
+        "hex": "#66FFCC",
+        "usage": "伤害数字"
+      },
+      "shield": {
+        "hex": "#32D7A0",
+        "usage": "护盾 / 充能"
+      },
+      "vision": {
+        "hex": "#00FFCC",
+        "usage": "元素视野"
+      },
+      "visionBorder": {
+        "hex": "#A6FFFC",
+        "usage": "元素视野边框"
+      },
+      "wish": {
+        "hex": "#369697",
+        "usage": "祈愿卡池主题色"
+      },
+      "tcg": {
+        "hex": "#64E0B4",
+        "usage": "七圣召唤伤害色"
+      },
+      "resonance": {
+        "hex": "#33D7A0",
+        "usage": "元素共鸣 / 屏障"
+      }
+    },
+    "electro": {
+      "name": "雷",
+      "nameEn": "Electro",
+      "className": "electro",
+      "color": {
+        "hex": "#DC73FF",
+        "usage": "元素主色（元素色系）"
+      },
+      "soft": {
+        "hex": "#FF99FF",
+        "usage": "浅色（一图拓展配色）"
+      },
+      "text": {
+        "hex": "#FFACFF",
+        "usage": "元素描述文本"
+      },
+      "number": {
+        "hex": "#E19BFF",
+        "usage": "伤害数字"
+      },
+      "shield": {
+        "hex": "#CC99FF",
+        "usage": "护盾 / 充能"
+      },
+      "vision": {
+        "hex": "#CC33FF",
+        "usage": "元素视野"
+      },
+      "visionBorder": {
+        "hex": "#FF34FF",
+        "usage": "元素视野边框"
+      },
+      "wish": {
+        "hex": "#6957C2",
+        "usage": "祈愿卡池主题色"
+      },
+      "tcg": {
+        "hex": "#C18CEE",
+        "usage": "七圣召唤伤害色"
+      },
+      "resonance": {
+        "hex": "#CC80FF",
+        "usage": "元素共鸣 / 屏障"
+      }
+    },
+    "dendro": {
+      "name": "草",
+      "nameEn": "Dendro",
+      "className": "dendro",
+      "color": {
+        "hex": "#4DFF7A",
+        "usage": "元素主色（元素色系）"
+      },
+      "soft": {
+        "hex": "#99FFB3",
+        "usage": "浅色（一图拓展配色）"
+      },
+      "text": {
+        "hex": "#99FF88",
+        "usage": "元素描述文本"
+      },
+      "number": {
+        "hex": "#00EA52",
+        "usage": "伤害数字"
+      },
+      "shield": {
+        "hex": "#00D755",
+        "usage": "护盾 / 充能"
+      },
+      "vision": {
+        "hex": "#77FF44",
+        "usage": "元素视野"
+      },
+      "visionBorder": {
+        "hex": "#B2FF79",
+        "usage": "元素视野边框"
+      },
+      "wish": {
+        "hex": "#66AD16",
+        "usage": "祈愿卡池主题色"
+      },
+      "tcg": {
+        "hex": "#A9D025",
+        "usage": "七圣召唤伤害色"
+      },
+      "resonance": {
+        "hex": "#90CC00",
+        "usage": "元素共鸣 / 屏障"
+      }
+    },
+    "cryo": {
+      "name": "冰",
+      "nameEn": "Cryo",
+      "className": "cryo",
+      "color": {
+        "hex": "#73FFFF",
+        "usage": "元素主色（元素色系）"
+      },
+      "soft": {
+        "hex": "#99E5FF",
+        "usage": "浅色（一图拓展配色）"
+      },
+      "text": {
+        "hex": "#99FFFF",
+        "usage": "元素描述文本"
+      },
+      "number": {
+        "hex": "#99FFFF",
+        "usage": "伤害数字"
+      },
+      "shield": {
+        "hex": "#80FFFF",
+        "usage": "护盾 / 充能"
+      },
+      "vision": {
+        "hex": "#99EEFF",
+        "usage": "元素视野"
+      },
+      "visionBorder": {
+        "hex": "#E9FFFF",
+        "usage": "元素视野边框"
+      },
+      "wish": {
+        "hex": "#35AACC",
+        "usage": "祈愿卡池主题色"
+      },
+      "tcg": {
+        "hex": "#76DAE6",
+        "usage": "七圣召唤伤害色"
+      },
+      "resonance": {
+        "hex": "#80FFFF",
+        "usage": "元素共鸣 / 屏障"
+      }
+    },
+    "geo": {
+      "name": "岩",
+      "nameEn": "Geo",
+      "className": "geo",
+      "color": {
+        "hex": "#FFDC73",
+        "usage": "元素主色（元素色系）"
+      },
+      "soft": {
+        "hex": "#FFE699",
+        "usage": "浅色（一图拓展配色）"
+      },
+      "text": {
+        "hex": "#FFE699",
+        "usage": "元素描述文本"
+      },
+      "number": {
+        "hex": "#FFCC66",
+        "usage": "伤害数字"
+      },
+      "shield": {
+        "hex": "#FFD962",
+        "usage": "护盾 / 充能"
+      },
+      "vision": {
+        "hex": "#FFBB55",
+        "usage": "元素视野"
+      },
+      "visionBorder": {
+        "hex": "#FFE48F",
+        "usage": "元素视野边框"
+      },
+      "wish": {
+        "hex": "#CC9046",
+        "usage": "祈愿卡池主题色"
+      },
+      "tcg": {
+        "hex": "#E8B50A",
+        "usage": "七圣召唤伤害色"
+      },
+      "resonance": {
+        "hex": "#FFAC00",
+        "usage": "元素共鸣 / 屏障"
+      }
+    },
+    "physical": {
+      "name": "物理",
+      "nameEn": "Physical",
+      "className": "rt-physical",
+      "color": {
+        "hex": "#E8E2D6",
+        "usage": "物理主色（深色底下由「物伤数字 #FFFFFF」调暗，避免刺眼）"
+      },
+      "soft": {
+        "hex": "#FFFFFF",
+        "usage": "物伤数字"
+      },
+      "text": {
+        "hex": "#CFC9BC",
+        "usage": "物理描述文本"
+      },
+      "number": {
+        "hex": "#FFFFFF",
+        "usage": "物伤数字"
+      },
+      "shield": {
+        "hex": "#FFFFFF",
+        "usage": "物理盾 / 充能"
+      },
+      "vision": {
+        "hex": "#EEEEEE",
+        "usage": "无元素视野"
+      },
+      "visionBorder": {
+        "hex": "#F7F7F7",
+        "usage": "无元素视野边框"
+      },
+      "wish": {
+        "hex": "#565656",
+        "usage": "黑底（常驻池）"
+      },
+      "tcg": {
+        "hex": "#837174",
+        "usage": "七圣物伤"
+      },
+      "resonance": {
+        "hex": "#FFB973",
+        "usage": "通用/无属性（Commons 饱和色）"
+      }
+    }
+  },
+  "reaction": {
+    "vaporize": {
+      "name": "蒸发",
+      "hex": "#FFCC66"
+    },
+    "melt": {
+      "name": "融化",
+      "hex": "#FFCC66"
+    },
+    "overload": {
+      "name": "超载",
+      "hex": "#FF809B"
+    },
+    "electroCharged": {
+      "name": "感电",
+      "hex": "#E19BFF"
+    },
+    "frozen": {
+      "name": "冻结",
+      "hex": "#99FFFF"
+    },
+    "superconduct": {
+      "name": "超导",
+      "hex": "#B4B4FF"
+    },
+    "swirl": {
+      "name": "扩散",
+      "hex": "#66FFCC"
+    },
+    "crystallize": {
+      "name": "结晶",
+      "hex": "#FF9B00"
+    },
+    "shatter": {
+      "name": "碎冰",
+      "hex": "#FFFFFF"
+    },
+    "burning": {
+      "name": "燃烧",
+      "hex": "#FF9B00"
+    },
+    "bloom": {
+      "name": "绽放",
+      "hex": "#00EA53"
+    },
+    "hyperbloom": {
+      "name": "超绽放",
+      "hex": "#E19BFF"
+    },
+    "burgeon": {
+      "name": "烈绽放",
+      "hex": "#FF9B00"
+    },
+    "quicken": {
+      "name": "原激化",
+      "hex": "#00EA53"
+    },
+    "aggravate": {
+      "name": "超激化",
+      "hex": "#E19BFF"
+    },
+    "spread": {
+      "name": "蔓激化",
+      "hex": "#00EA53"
+    },
+    "wet": {
+      "name": "潮湿",
+      "hex": "#33CCFF"
+    },
+    "heal": {
+      "name": "治疗",
+      "hex": "#5FD976"
+    },
+    "immune": {
+      "name": "免疫",
+      "hex": "#A8A8A8"
+    },
+    "lunarCharged": {
+      "name": "月感电",
+      "hex": "#C9A0FF",
+      "extra": {
+        "vein": "#B951FF"
+      }
+    },
+    "lunarBloom": {
+      "name": "月绽放",
+      "hex": "#B0FFA0",
+      "extra": {
+        "vein": "#50FD50"
+      }
+    },
+    "lunarCrystallize": {
+      "name": "月结晶",
+      "hex": "#FFD4A0",
+      "extra": {
+        "vein": "#FFCD51"
+      }
+    },
+    "stellarConductElectro": {
+      "name": "星超导·雷",
+      "hex": "#A0BDFF",
+      "extra": {
+        "light": "#F3F5FF"
+      }
+    },
+    "stellarConductCryo": {
+      "name": "星超导·冰",
+      "hex": "#98F4FB",
+      "extra": {
+        "light": "#F4FDFF"
+      }
+    },
+    "stellarConductAnemo": {
+      "name": "星超导·风",
+      "hex": "#72FFBB",
+      "extra": {
+        "light": "#F3FFFE"
+      }
+    }
+  },
+  "rarity": {
+    "5": {
+      "name": "5 星",
+      "text": {
+        "hex": "#FFE14B",
+        "usage": "星级文本 / 高亮"
+      },
+      "bg": {
+        "hex": "#E98B20",
+        "usage": "星级背景渐变主色"
+      },
+      "border": {
+        "hex": "#BC6932",
+        "usage": "星级边框背景"
+      },
+      "itemBg": {
+        "hex": "#FF9922",
+        "usage": "道具星级背景"
+      }
+    },
+    "4": {
+      "name": "4 星",
+      "text": {
+        "hex": "#F998FF",
+        "usage": "星级文本 / 高亮"
+      },
+      "bg": {
+        "hex": "#CB8BDD",
+        "usage": "星级背景渐变主色"
+      },
+      "border": {
+        "hex": "#A256E0",
+        "usage": "星级边框背景"
+      },
+      "itemBg": {
+        "hex": "#D766E6",
+        "usage": "道具星级背景"
+      }
+    },
+    "3": {
+      "name": "3 星",
+      "text": {
+        "hex": "#4FF4FF",
+        "usage": "星级文本 / 高亮"
+      },
+      "bg": {
+        "hex": "#549BC7",
+        "usage": "星级背景渐变主色"
+      },
+      "border": {
+        "hex": "#5180CC",
+        "usage": "星级边框背景"
+      },
+      "itemBg": {
+        "hex": "#3299CC",
+        "usage": "道具星级背景"
+      }
+    },
+    "2": {
+      "name": "2 星",
+      "text": {
+        "hex": "#ACFF45",
+        "usage": "星级文本 / 高亮"
+      },
+      "bg": {
+        "hex": "#59AB84",
+        "usage": "星级背景渐变主色"
+      },
+      "border": {
+        "hex": "#2A9072",
+        "usage": "星级边框背景"
+      },
+      "itemBg": {
+        "hex": "#80C022",
+        "usage": "道具星级背景"
+      }
+    },
+    "1": {
+      "name": "1 星",
+      "text": {
+        "hex": "#CCCCCC",
+        "usage": "星级文本 / 高亮"
+      },
+      "bg": {
+        "hex": "#949494",
+        "usage": "星级背景渐变主色"
+      },
+      "border": {
+        "hex": "#72778B",
+        "usage": "星级边框背景"
+      },
+      "itemBg": {
+        "hex": "#888888",
+        "usage": "道具星级背景"
+      }
+    },
+    "special5": {
+      "name": "特殊 5 星",
+      "text": {
+        "hex": "#FF8080",
+        "usage": "特殊 5 星物品文本"
+      },
+      "bg": {
+        "hex": "#E34B53",
+        "usage": "特殊 5 星背景"
+      },
+      "border": {
+        "hex": "#BB5858",
+        "usage": "特殊 5 星边框背景"
+      },
+      "itemBg": {
+        "hex": "#FF9922",
+        "usage": "道具背景"
+      }
+    }
+  },
+  "ui": {
+    "buff": {
+      "hex": "#FFCC66",
+      "usage": "增益 / 加成数值"
+    },
+    "skill": {
+      "hex": "#FFD780",
+      "usage": "技能 / 命座名称（源自「技能/命座名称」）"
+    },
+    "link": {
+      "hex": "#E0C88F",
+      "usage": "正文链接"
+    },
+    "mark": {
+      "hex": "#D3BC8E",
+      "usage": "搜索命中 <mark> 底色"
+    },
+    "markText": {
+      "hex": "#16130C",
+      "usage": "搜索命中文字色"
+    },
+    "hpBar": {
+      "hex": "#96D722",
+      "usage": "生命值条"
+    },
+    "lowHpBar": {
+      "hex": "#FF5A5A",
+      "usage": "低生命值 / 原魔血条"
+    },
+    "energyBar": {
+      "hex": "#66E9FF",
+      "usage": "充能图标 / 能量条"
+    },
+    "staminaBar": {
+      "hex": "#FFC700",
+      "usage": "体力条"
+    },
+    "shadow": {
+      "hex": "rgba(0, 0, 0, 0.45)",
+      "usage": "投影"
+    }
+  },
+  "starRail": {
+    "physical": {
+      "name": "物理",
+      "color": {
+        "hex": "#FFFFFF",
+        "usage": "元素主色（hues CN SR）"
+      },
+      "small": {
+        "hex": "#E1E1E1",
+        "usage": "伤害小字"
+      },
+      "crit": {
+        "hex": "#BABABA",
+        "usage": "暴击数字"
+      }
+    },
+    "fire": {
+      "name": "火",
+      "color": {
+        "hex": "#F84F36",
+        "usage": "元素主色（hues CN SR）"
+      },
+      "small": {
+        "hex": "#EC505F",
+        "usage": "伤害小字"
+      },
+      "crit": {
+        "hex": "#ED5E5E",
+        "usage": "暴击数字"
+      }
+    },
+    "ice": {
+      "name": "冰",
+      "color": {
+        "hex": "#47C7FD",
+        "usage": "元素主色（hues CN SR）"
+      },
+      "small": {
+        "hex": "#55C5FF",
+        "usage": "伤害小字"
+      },
+      "crit": {
+        "hex": "#5DCFFF",
+        "usage": "暴击数字"
+      }
+    },
+    "lightning": {
+      "name": "雷",
+      "color": {
+        "hex": "#8872F1",
+        "usage": "元素主色（hues CN SR）"
+      },
+      "small": {
+        "hex": "#E471FF",
+        "usage": "伤害小字"
+      },
+      "crit": {
+        "hex": "#E25EED",
+        "usage": "暴击数字"
+      }
+    },
+    "wind": {
+      "name": "风",
+      "color": {
+        "hex": "#00FF9C",
+        "usage": "元素主色（hues CN SR）"
+      },
+      "small": {
+        "hex": "#50ECB0",
+        "usage": "伤害小字"
+      },
+      "crit": {
+        "hex": "#5EEEB6",
+        "usage": "暴击数字"
+      }
+    },
+    "quantum": {
+      "name": "量子",
+      "color": {
+        "hex": "#1C29BA",
+        "usage": "元素主色（hues CN SR）"
+      },
+      "small": {
+        "hex": "#9C98FF",
+        "usage": "伤害小字"
+      },
+      "crit": {
+        "hex": "#8271FF",
+        "usage": "暴击数字"
+      }
+    },
+    "imaginary": {
+      "name": "虚数",
+      "color": {
+        "hex": "#F4D258",
+        "usage": "元素主色（hues CN SR）"
+      },
+      "small": {
+        "hex": "#F3DA75",
+        "usage": "伤害小字"
+      },
+      "crit": {
+        "hex": "#E9D67D",
+        "usage": "暴击数字"
+      }
+    }
+  },
+  "starRailNote": "子表 hues CN SR 另附四档队伍色阶（#ECDEF7/#CBD9F2/#3D3B3F 等），与本站无关，未纳入 catalog。",
+  "catalog": [
+    {
+      "name": "Pyro",
+      "hex": "#FF9999",
+      "group": "元素·基础"
+    },
+    {
+      "name": "物伤描述文本",
+      "hex": "#B8B8B8",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "Pyro",
+      "hex": "#FF7A4D",
+      "group": "元素·基础"
+    },
+    {
+      "name": "祈愿-火",
+      "hex": "#EC4923",
+      "group": "元素·祈愿"
+    },
+    {
+      "name": "火伤数字",
+      "hex": "#FF9B00",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "火盾/充能",
+      "hex": "#FF9966",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "火元素视野",
+      "hex": "#FF5511",
+      "group": "元素·视野"
+    },
+    {
+      "name": "火元素视野边框",
+      "hex": "#FF9A26",
+      "group": "元素·视野"
+    },
+    {
+      "name": "火元素描述文本",
+      "hex": "#FF9999",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "火元素剧诗增益",
+      "hex": "#EF5534",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "热诚之火",
+      "hex": "#FF6640",
+      "group": "元素·共鸣"
+    },
+    {
+      "name": "七圣火伤",
+      "hex": "#F38954",
+      "group": "元素·七圣"
+    },
+    {
+      "name": "潮湿",
+      "hex": "#33CCFF",
+      "group": "反应"
+    },
+    {
+      "name": "蒸发",
+      "hex": "#FFCC66",
+      "group": "反应"
+    },
+    {
+      "name": "燃烧",
+      "hex": "#FF9B00",
+      "group": "反应"
+    },
+    {
+      "name": "结晶",
+      "hex": "#FF9B00",
+      "group": "反应"
+    },
+    {
+      "name": "物伤",
+      "hex": "#837174",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "火伤",
+      "hex": "#F38954",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "水伤",
+      "hex": "#71A3E4",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "雷伤",
+      "hex": "#C18CEE",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "Hydro",
+      "hex": "#99CCFF",
+      "group": "元素·基础"
+    },
+    {
+      "name": "遗迹类描述文本",
+      "hex": "#F8C9A5",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "Hydro",
+      "hex": "#4DA6FF",
+      "group": "元素·基础"
+    },
+    {
+      "name": "祈愿-水",
+      "hex": "#498FCC",
+      "group": "元素·祈愿"
+    },
+    {
+      "name": "水伤数字",
+      "hex": "#33CCFF",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "水盾/充能",
+      "hex": "#00C0FF",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "水元素视野",
+      "hex": "#33AAFF",
+      "group": "元素·视野"
+    },
+    {
+      "name": "水元素视野边框",
+      "hex": "#0DE8FF",
+      "group": "元素·视野"
+    },
+    {
+      "name": "水元素描述文本",
+      "hex": "#80C0FF",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "水元素剧诗增益",
+      "hex": "#0075DE",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "愈疗之水",
+      "hex": "#00C0FF",
+      "group": "元素·共鸣"
+    },
+    {
+      "name": "七圣水伤",
+      "hex": "#71A3E4",
+      "group": "元素·七圣"
+    },
+    {
+      "name": "水屏障",
+      "hex": "#51ADFF",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "冻结",
+      "hex": "#99FFFF",
+      "group": "反应"
+    },
+    {
+      "name": "超导",
+      "hex": "#B4B4FF",
+      "group": "反应"
+    },
+    {
+      "name": "融化",
+      "hex": "#FFCC66",
+      "group": "反应"
+    },
+    {
+      "name": "扩散",
+      "hex": "#66FFCC",
+      "group": "反应"
+    },
+    {
+      "name": "冰伤",
+      "hex": "#76DAE6",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "草伤",
+      "hex": "#A9D025",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "风伤",
+      "hex": "#64E0B4",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "岩伤",
+      "hex": "#E8B50A",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "Anemo",
+      "hex": "#99FFE5",
+      "group": "元素·基础"
+    },
+    {
+      "name": "风伤数字",
+      "hex": "#75DECB",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "元能类描述文本",
+      "hex": "#C4C6FA",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "Anemo",
+      "hex": "#73FFDC",
+      "group": "元素·基础"
+    },
+    {
+      "name": "祈愿-风",
+      "hex": "#369697",
+      "group": "元素·祈愿"
+    },
+    {
+      "name": "风伤数字",
+      "hex": "#66FFCC",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "风盾/充能",
+      "hex": "#32D7A0",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "风元素视野",
+      "hex": "#00FFCC",
+      "group": "元素·视野"
+    },
+    {
+      "name": "风元素视野边框",
+      "hex": "#A6FFFC",
+      "group": "元素·视野"
+    },
+    {
+      "name": "风元素描述文本",
+      "hex": "#80FFD7",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "风元素剧诗增益",
+      "hex": "#19C78E",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "迅捷之风",
+      "hex": "#33D7A0",
+      "group": "元素·共鸣"
+    },
+    {
+      "name": "七圣风伤",
+      "hex": "#64E0B4",
+      "group": "元素·七圣"
+    },
+    {
+      "name": "风屏障",
+      "hex": "#5DFFBC",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "感电",
+      "hex": "#E19BFF",
+      "group": "反应"
+    },
+    {
+      "name": "超载",
+      "hex": "#FF809B",
+      "group": "反应"
+    },
+    {
+      "name": "碎冰",
+      "hex": "#FFFFFF",
+      "group": "反应"
+    },
+    {
+      "name": "免疫",
+      "hex": "#A8A8A8",
+      "group": "反应"
+    },
+    {
+      "name": "Electro",
+      "hex": "#FF99FF",
+      "group": "元素·基础"
+    },
+    {
+      "name": "拟覆类描述文本",
+      "hex": "#A3A5FE",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "Electro",
+      "hex": "#DC73FF",
+      "group": "元素·基础"
+    },
+    {
+      "name": "祈愿-雷",
+      "hex": "#6957C2",
+      "group": "元素·祈愿"
+    },
+    {
+      "name": "雷伤数字",
+      "hex": "#E19BFF",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "雷盾/充能",
+      "hex": "#CC99FF",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "雷元素视野",
+      "hex": "#CC33FF",
+      "group": "元素·视野"
+    },
+    {
+      "name": "雷元素视野边框",
+      "hex": "#FF34FF",
+      "group": "元素·视野"
+    },
+    {
+      "name": "雷元素描述文本",
+      "hex": "#FFACFF",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "雷元素剧诗增益",
+      "hex": "#B863EE",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "强能之雷",
+      "hex": "#CC80FF",
+      "group": "元素·共鸣"
+    },
+    {
+      "name": "七圣雷伤",
+      "hex": "#C18CEE",
+      "group": "元素·七圣"
+    },
+    {
+      "name": "雷屏障",
+      "hex": "#D483FF",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "治疗",
+      "hex": "#BCFF37",
+      "group": "反应"
+    },
+    {
+      "name": "原激化",
+      "hex": "#00EA53",
+      "group": "反应"
+    },
+    {
+      "name": "绽放",
+      "hex": "#00EA53",
+      "group": "反应"
+    },
+    {
+      "name": "超绽放",
+      "hex": "#E19BFF",
+      "group": "反应"
+    },
+    {
+      "name": "激化",
+      "hex": "#00EA53",
+      "group": "反应"
+    },
+    {
+      "name": "Dendro",
+      "hex": "#99FFB3",
+      "group": "元素·基础"
+    },
+    {
+      "name": "Dendro",
+      "hex": "#99E5FF",
+      "group": "元素·基础"
+    },
+    {
+      "name": "狂猎类描述文本",
+      "hex": "#F3A3D6",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "Dendro",
+      "hex": "#4DFF7A",
+      "group": "元素·基础"
+    },
+    {
+      "name": "祈愿-草",
+      "hex": "#66AD16",
+      "group": "元素·祈愿"
+    },
+    {
+      "name": "草伤数字",
+      "hex": "#00EA52",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "草盾/充能",
+      "hex": "#00D755",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "草元素视野",
+      "hex": "#77FF44",
+      "group": "元素·视野"
+    },
+    {
+      "name": "草元素视野边框",
+      "hex": "#B2FF79",
+      "group": "元素·视野"
+    },
+    {
+      "name": "草元素描述文本",
+      "hex": "#99FF88",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "草元素剧诗增益",
+      "hex": "#7BB100",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "蔓生之草",
+      "hex": "#90CC00",
+      "group": "元素·共鸣"
+    },
+    {
+      "name": "七圣草伤",
+      "hex": "#A9D025",
+      "group": "元素·七圣"
+    },
+    {
+      "name": "烈绽放",
+      "hex": "#FF9B00",
+      "group": "反应"
+    },
+    {
+      "name": "超激化",
+      "hex": "#E19BFF",
+      "group": "反应"
+    },
+    {
+      "name": "蔓激化",
+      "hex": "#00EA53",
+      "group": "反应"
+    },
+    {
+      "name": "治疗",
+      "hex": "#5FD976",
+      "group": "反应"
+    },
+    {
+      "name": "Cryo",
+      "hex": "#99E5FF",
+      "group": "元素·基础"
+    },
+    {
+      "name": "冰伤数字",
+      "hex": "#FFEBBF",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "Cryo",
+      "hex": "#73FFFF",
+      "group": "元素·基础"
+    },
+    {
+      "name": "祈愿-冰",
+      "hex": "#35AACC",
+      "group": "元素·祈愿"
+    },
+    {
+      "name": "冰伤数字",
+      "hex": "#99FFFF",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "冰盾/充能",
+      "hex": "#80FFFF",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "冰元素视野",
+      "hex": "#99EEFF",
+      "group": "元素·视野"
+    },
+    {
+      "name": "冰元素视野边框",
+      "hex": "#E9FFFF",
+      "group": "元素·视野"
+    },
+    {
+      "name": "冰元素描述文本",
+      "hex": "#99FFFF",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "冰元素剧诗增益",
+      "hex": "#2BB7D5",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "粉碎之冰",
+      "hex": "#80FFFF",
+      "group": "元素·共鸣"
+    },
+    {
+      "name": "七圣冰伤",
+      "hex": "#76DAE6",
+      "group": "元素·七圣"
+    },
+    {
+      "name": "冰屏障",
+      "hex": "#BFEAFF",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "月感电-渐变深色",
+      "hex": "#C9A0FF",
+      "group": "反应"
+    },
+    {
+      "name": "月绽放-渐变深色",
+      "hex": "#B0FFA0",
+      "group": "反应"
+    },
+    {
+      "name": "月结晶-渐变深色",
+      "hex": "#FFD4A0",
+      "group": "反应"
+    },
+    {
+      "name": "我方回合",
+      "hex": "#A0703B",
+      "group": "七圣召唤·对局"
+    },
+    {
+      "name": "对方回合",
+      "hex": "#426089",
+      "group": "七圣召唤·对局"
+    },
+    {
+      "name": "我方回合-浅",
+      "hex": "#FFCC80",
+      "group": "七圣召唤·对局"
+    },
+    {
+      "name": "对方回合-浅",
+      "hex": "#80CCFF",
+      "group": "七圣召唤·对局"
+    },
+    {
+      "name": "Geo",
+      "hex": "#FFE699",
+      "group": "元素·基础"
+    },
+    {
+      "name": "强调色1",
+      "hex": "#FFDFBF",
+      "group": "元素·备用色"
+    },
+    {
+      "name": "Geo",
+      "hex": "#FFDC73",
+      "group": "元素·基础"
+    },
+    {
+      "name": "祈愿-岩",
+      "hex": "#CC9046",
+      "group": "元素·祈愿"
+    },
+    {
+      "name": "岩伤数字",
+      "hex": "#FFCC66",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "岩盾/充能",
+      "hex": "#FFD962",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "岩元素视野",
+      "hex": "#FFBB55",
+      "group": "元素·视野"
+    },
+    {
+      "name": "岩元素视野边框",
+      "hex": "#FFE48F",
+      "group": "元素·视野"
+    },
+    {
+      "name": "岩元素描述文本",
+      "hex": "#FFE699",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "岩元素剧诗增益",
+      "hex": "#E09800",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "坚定之岩",
+      "hex": "#FFAC00",
+      "group": "元素·共鸣"
+    },
+    {
+      "name": "七圣岩伤",
+      "hex": "#E8B50A",
+      "group": "元素·七圣"
+    },
+    {
+      "name": "月感电-纹路深色",
+      "hex": "#B951FF",
+      "group": "反应"
+    },
+    {
+      "name": "月绽放-纹路深色",
+      "hex": "#50FD50",
+      "group": "反应"
+    },
+    {
+      "name": "月结晶-纹路深色",
+      "hex": "#FFCD51",
+      "group": "反应"
+    },
+    {
+      "name": "描述-伤害",
+      "hex": "#4BFF79",
+      "group": "七圣召唤·对局"
+    },
+    {
+      "name": "省费",
+      "hex": "#4BFF79",
+      "group": "七圣召唤·对局"
+    },
+    {
+      "name": "七圣高亮",
+      "hex": "#C76A22",
+      "group": "元素·七圣"
+    },
+    {
+      "name": "对局失败",
+      "hex": "#FF5C5C",
+      "group": "七圣召唤·对局"
+    },
+    {
+      "name": "Commons",
+      "hex": "#FFDFBF",
+      "group": "元素·基础"
+    },
+    {
+      "name": "强调色2",
+      "hex": "#BFFFBF",
+      "group": "元素·备用色"
+    },
+    {
+      "name": "Commons",
+      "hex": "#FFB973",
+      "group": "元素·基础"
+    },
+    {
+      "name": "黑底",
+      "hex": "#565656",
+      "group": "元素·祈愿"
+    },
+    {
+      "name": "物伤数字",
+      "hex": "#FFFFFF",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "物理盾/充能",
+      "hex": "#FFFFFF",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "无元素视野",
+      "hex": "#EEEEEE",
+      "group": "元素·视野"
+    },
+    {
+      "name": "无元素视野边框",
+      "hex": "#F7F7F7",
+      "group": "元素·视野"
+    },
+    {
+      "name": "一般描述文本",
+      "hex": "#ECE5D8",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "通用剧诗增益",
+      "hex": "#F39001",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "未激活1",
+      "hex": "#847D6F",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "七圣物伤",
+      "hex": "#837174",
+      "group": "元素·七圣"
+    },
+    {
+      "name": "深黯护盾",
+      "hex": "#7744FF",
+      "group": "反应"
+    },
+    {
+      "name": "星超导-雷 -渐变浅色",
+      "hex": "#F3F5FF",
+      "group": "反应"
+    },
+    {
+      "name": "星超导-冰 -渐变浅色",
+      "hex": "#F4FDFF",
+      "group": "反应"
+    },
+    {
+      "name": "星超导-风 -渐变浅色",
+      "hex": "#F3FFFE",
+      "group": "反应"
+    },
+    {
+      "name": "白字描述",
+      "hex": "#F7EAD2",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "事件牌效果",
+      "hex": "#FFD780",
+      "group": "七圣召唤·对局"
+    },
+    {
+      "name": "对局名字",
+      "hex": "#FFBD66",
+      "group": "七圣召唤·对局"
+    },
+    {
+      "name": "规则解释",
+      "hex": "#758498",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "强调色3",
+      "hex": "#FFBFBF",
+      "group": "元素·备用色"
+    },
+    {
+      "name": "神铸赋形",
+      "hex": "#EF7C1A",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "草伤数字(旧)",
+      "hex": "#BAFF37",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "死域元素视野",
+      "hex": "#DDBB99",
+      "group": "元素·视野"
+    },
+    {
+      "name": "死域 元素视野边框",
+      "hex": "#E9D4C0",
+      "group": "元素·视野"
+    },
+    {
+      "name": "草元素描述文本（七圣）",
+      "hex": "#7EC236",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "雷元素版本2",
+      "hex": "#C974FF",
+      "group": "元素·描述与增益"
+    },
+    {
+      "name": "未激活2",
+      "hex": "#8F887A",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "次数盾",
+      "hex": "#6610C0",
+      "group": "反应"
+    },
+    {
+      "name": "星超导-雷 -渐变深色",
+      "hex": "#A0BDFF",
+      "group": "反应"
+    },
+    {
+      "name": "星超导-冰 -渐变深色",
+      "hex": "#98F4FB",
+      "group": "反应"
+    },
+    {
+      "name": "星超导-风 -渐变深色",
+      "hex": "#72FFBB",
+      "group": "反应"
+    },
+    {
+      "name": "剩余增援",
+      "hex": "#B9D4E8",
+      "group": "七圣召唤·对局"
+    },
+    {
+      "name": "我方行动",
+      "hex": "#E4A95F",
+      "group": "七圣召唤·对局"
+    },
+    {
+      "name": "对方行动",
+      "hex": "#7CB4FF",
+      "group": "七圣召唤·对局"
+    },
+    {
+      "name": "火子弹",
+      "hex": "#EF5534",
+      "group": "元素·备用色"
+    },
+    {
+      "name": "对应元素",
+      "hex": "#FFFFBF",
+      "group": "元素·备用色"
+    },
+    {
+      "name": "奔行世间",
+      "hex": "#757ACD",
+      "group": "元素·祈愿"
+    },
+    {
+      "name": "沙漠死域 元素视野",
+      "hex": "#9988DD",
+      "group": "元素·视野"
+    },
+    {
+      "name": "沙漠死域 元素视野边框",
+      "hex": "#F1E4FF",
+      "group": "元素·视野"
+    },
+    {
+      "name": "芒属性文本",
+      "hex": "#FFD644",
+      "group": "元素·备用色"
+    },
+    {
+      "name": "水子弹",
+      "hex": "#0075DE",
+      "group": "元素·备用色"
+    },
+    {
+      "name": "新手池 奔行世间旧",
+      "hex": "#C8A078",
+      "group": "元素·祈愿"
+    },
+    {
+      "name": "荒属性文本",
+      "hex": "#58D3FF",
+      "group": "元素·备用色"
+    },
+    {
+      "name": "冰子弹",
+      "hex": "#2BB7D5",
+      "group": "元素·备用色"
+    },
+    {
+      "name": "物伤2",
+      "hex": "#7C6666",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "火伤2",
+      "hex": "#F17947",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "水伤2",
+      "hex": "#5D95E0",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "雷伤2",
+      "hex": "#B77CEC",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "冰伤2",
+      "hex": "#70D6E3",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "草伤2",
+      "hex": "#A5CC13",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "风伤2",
+      "hex": "#5DDCAB",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "岩伤2",
+      "hex": "#E4AA07",
+      "group": "元素·伤害与护盾"
+    },
+    {
+      "name": "治疗2",
+      "hex": "#49D469",
+      "group": "元素·备用色"
+    },
+    {
+      "name": "每日委托",
+      "hex": "#D7C0FF",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "突发事件",
+      "hex": "#CCDDFF",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "装备对比-加",
+      "hex": "#90E800",
+      "group": "系统与界面"
+    },
+    {
+      "name": "装备对比-减",
+      "hex": "#FF5E41",
+      "group": "系统与界面"
+    },
+    {
+      "name": "绯红之愿",
+      "hex": "#CCDDFF",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "任务",
+      "hex": "#FFCC33",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "VS-敌方文本",
+      "hex": "#FFCCCC",
+      "group": "系统与界面"
+    },
+    {
+      "name": "VS-我方文本",
+      "hex": "#38FFFF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "Text1",
+      "hex": "#FFFFFF",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "任务失败",
+      "hex": "#FF8560",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "任务完成",
+      "hex": "#4FFF4F",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "委托完成",
+      "hex": "#407A0D",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "挑战成功",
+      "hex": "#C58B27",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "对话对象",
+      "hex": "#FFC300",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "对话选项高亮",
+      "hex": "#FFE14B",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "圣遗物套装",
+      "hex": "#99FF88",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "圣遗物套装-图鉴",
+      "hex": "#5CB256",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "生命值条",
+      "hex": "#96D722",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "低生命值条",
+      "hex": "#FF5A5A",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "原魔生命值条",
+      "hex": "#FF5A5A",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "条值减少",
+      "hex": "#FFD17E",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "载具生命值条",
+      "hex": "#FFCC32",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "怒气值图标",
+      "hex": "#FF6969",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "充能图标",
+      "hex": "#66E9FF",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "充能-流明石",
+      "hex": "#00FFFF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "流明石",
+      "hex": "#7AD3FF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "怒气值",
+      "hex": "#FFFFFF",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "Lv.普通",
+      "hex": "#80DF66",
+      "group": "系统与界面"
+    },
+    {
+      "name": "Lv.简单",
+      "hex": "#CCCCCC",
+      "group": "系统与界面"
+    },
+    {
+      "name": "描述高亮",
+      "hex": "#38E0F3",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "食物描述高亮",
+      "hex": "#5DAACD",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "Unknown1",
+      "hex": "#F39000",
+      "group": "系统与界面"
+    },
+    {
+      "name": "寒冷值",
+      "hex": "#80FFFF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "炎热值",
+      "hex": "#FF8000",
+      "group": "系统与界面"
+    },
+    {
+      "name": "体力条",
+      "hex": "#FFC700",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "体力不足",
+      "hex": "#FF635C",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "烹饪-普通",
+      "hex": "#F4F2B2",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "跟踪",
+      "hex": "#FC5E3F",
+      "group": "系统与界面"
+    },
+    {
+      "name": "制作进度",
+      "hex": "#FFB738",
+      "group": "系统与界面"
+    },
+    {
+      "name": "信任",
+      "hex": "#7FD5FC",
+      "group": "系统与界面"
+    },
+    {
+      "name": "飘曳石筏",
+      "hex": "#FFD53D",
+      "group": "系统与界面"
+    },
+    {
+      "name": "死域-底",
+      "hex": "#420D0D",
+      "group": "系统与界面"
+    },
+    {
+      "name": "Lv.困难",
+      "hex": "#FFE14B",
+      "group": "系统与界面"
+    },
+    {
+      "name": "Lv.极限",
+      "hex": "#FF5F40",
+      "group": "系统与界面"
+    },
+    {
+      "name": "主文本-白底",
+      "hex": "#495366",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "主文本-黑底",
+      "hex": "#ECE5D8",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "Unknown2",
+      "hex": "#00E1FF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "烹饪-完美",
+      "hex": "#FFC040",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "队伍读条",
+      "hex": "#FFEB5F",
+      "group": "系统与界面"
+    },
+    {
+      "name": "队伍读条失败",
+      "hex": "#FF5A5A",
+      "group": "系统与界面"
+    },
+    {
+      "name": "VS-敌方",
+      "hex": "#FF6666",
+      "group": "系统与界面"
+    },
+    {
+      "name": "VS-我方",
+      "hex": "#40CCFF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "死域-红",
+      "hex": "#E14114",
+      "group": "系统与界面"
+    },
+    {
+      "name": "破绽",
+      "hex": "#FFCC35",
+      "group": "系统与界面"
+    },
+    {
+      "name": "新式虚空终端",
+      "hex": "#00D755",
+      "group": "系统与界面"
+    },
+    {
+      "name": "流浪者-空居力",
+      "hex": "#40FFD2",
+      "group": "系统与界面"
+    },
+    {
+      "name": "流浪者- 空居力不足",
+      "hex": "#D2FFFF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "冒险等阶文字",
+      "hex": "#9ACC49",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "纪行经验文本",
+      "hex": "#FFC178",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "活动纪行文本",
+      "hex": "#CC8000",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "文本-不足",
+      "hex": "#FF5F40",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "Unknown3",
+      "hex": "#FF5E41",
+      "group": "系统与界面"
+    },
+    {
+      "name": "冒险等阶经验",
+      "hex": "#F1FF8B",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "纪行经验",
+      "hex": "#F7B93F",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "好感经验",
+      "hex": "#ACA4FA",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "角色经验",
+      "hex": "#2AC6E3",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "圣遗物经验",
+      "hex": "#E39FF7",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "充能- 参量质变仪",
+      "hex": "#00FFFF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "水中耐力",
+      "hex": "#00E6FF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "异重力能量流",
+      "hex": "#8560FF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "湮晦之域",
+      "hex": "#B47FFF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "狂猎条值减少",
+      "hex": "#FFFFFF",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "一般描述文本 (白背景)",
+      "hex": "#6F7580",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "对话高亮",
+      "hex": "#00E1FF",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "武器被动",
+      "hex": "#3299CC",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "武器精炼",
+      "hex": "#CCAF70",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "Unknown4",
+      "hex": "#FFD780",
+      "group": "系统与界面"
+    },
+    {
+      "name": "武器经验",
+      "hex": "#E29FF9",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "钓鱼-正常",
+      "hex": "#40FFC0",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "钓鱼-挣扎",
+      "hex": "#FFCC32",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "钓鱼-失败",
+      "hex": "#FF737D",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "钓鱼进度",
+      "hex": "#FFFFC0",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "狂猎条-渐变左侧",
+      "hex": "#D8D8D8",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "狂猎条-渐变右侧",
+      "hex": "#B5B5B5",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "达成进度",
+      "hex": "#F8BA3F",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "奇域进度",
+      "hex": "#2EF7ED",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "技能等级+3",
+      "hex": "#38FFFF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "技能/命座名称",
+      "hex": "#FFD780",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "空月祝福 剩余天数",
+      "hex": "#CFFAF5",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "空月祝福",
+      "hex": "#C0D7FF",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "Unknown5",
+      "hex": "#B09057",
+      "group": "系统与界面"
+    },
+    {
+      "name": "Dawn",
+      "hex": "#FFFFB2",
+      "group": "系统与界面"
+    },
+    {
+      "name": "Noon",
+      "hex": "#FFFFF1",
+      "group": "系统与界面"
+    },
+    {
+      "name": "Dusk",
+      "hex": "#FFD4B0",
+      "group": "系统与界面"
+    },
+    {
+      "name": "Midnight",
+      "hex": "#9CFFFF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "宝可梦条",
+      "hex": "#7CCB68",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "9999血条-2",
+      "hex": "#FF9500",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "9999血条-2-减少",
+      "hex": "#FFCA80",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "9999血条-3",
+      "hex": "#A978F9",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "9999血条-3-减少",
+      "hex": "#D4BCFC",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "达成进度/总计",
+      "hex": "#84603D",
+      "group": "UI·数值条"
+    },
+    {
+      "name": "成就标题",
+      "hex": "#555555",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "成就副标题",
+      "hex": "#B7A18C",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "界面左上角",
+      "hex": "#D3BC8E",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "Unknown6",
+      "hex": "#FF0000",
+      "group": "系统与界面"
+    },
+    {
+      "name": "探索度百分比",
+      "hex": "#FFCC33",
+      "group": "系统与界面"
+    },
+    {
+      "name": "强化",
+      "hex": "#E9A4FF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "指标提示文本",
+      "hex": "#F39000",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "振晶增益",
+      "hex": "#FAEB8D",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "Unknown7",
+      "hex": "#37FFFF",
+      "group": "系统与界面"
+    },
+    {
+      "name": "额外物品",
+      "hex": "#A2FF55",
+      "group": "系统与界面"
+    },
+    {
+      "name": "传送-白",
+      "hex": "#8599A8",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "传送-黑",
+      "hex": "#D3BC8E",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "抽卡记录-其他",
+      "hex": "#757575",
+      "group": "稀有度"
+    },
+    {
+      "name": "Unknown8",
+      "hex": "#C8A078",
+      "group": "系统与界面"
+    },
+    {
+      "name": "岩1",
+      "hex": "#755006",
+      "group": "元素·位阶"
+    },
+    {
+      "name": "风1",
+      "hex": "#398774",
+      "group": "元素·位阶"
+    },
+    {
+      "name": "水1",
+      "hex": "#297BFF",
+      "group": "元素·位阶"
+    },
+    {
+      "name": "草1",
+      "hex": "#2B7754",
+      "group": "元素·位阶"
+    },
+    {
+      "name": "冰1",
+      "hex": "#6599FF",
+      "group": "元素·位阶"
+    },
+    {
+      "name": "雷1",
+      "hex": "#3714FB",
+      "group": "元素·位阶"
+    },
+    {
+      "name": "火1",
+      "hex": "#FF7900",
+      "group": "元素·位阶"
+    },
+    {
+      "name": "神像治疗",
+      "hex": "#80E480",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "神像的恩赐",
+      "hex": "#98FF88",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "神像治疗百分比",
+      "hex": "#6CC060",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "双倍奖励",
+      "hex": "#FFFFCC",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "Unknown9",
+      "hex": "#D47202",
+      "group": "系统与界面"
+    },
+    {
+      "name": "岩2",
+      "hex": "#FFE9B0",
+      "group": "元素·位阶"
+    },
+    {
+      "name": "风2",
+      "hex": "#87FBDE",
+      "group": "元素·位阶"
+    },
+    {
+      "name": "水2",
+      "hex": "#D0EFFF",
+      "group": "元素·位阶"
+    },
+    {
+      "name": "草2",
+      "hex": "#DAFF74",
+      "group": "元素·位阶"
+    },
+    {
+      "name": "冰2",
+      "hex": "#EBF1FF",
+      "group": "元素·位阶"
+    },
+    {
+      "name": "雷2",
+      "hex": "#F9EBFF",
+      "group": "元素·位阶"
+    },
+    {
+      "name": "火2",
+      "hex": "#FFE6A5",
+      "group": "元素·位阶"
+    },
+    {
+      "name": "NPC名字",
+      "hex": "#ECE5D8",
+      "group": "系统与界面"
+    },
+    {
+      "name": "NPC职业",
+      "hex": "#37D6D7",
+      "group": "系统与界面"
+    },
+    {
+      "name": "制作中",
+      "hex": "#CC8000",
+      "group": "系统与界面"
+    },
+    {
+      "name": "制作完成",
+      "hex": "#66C000",
+      "group": "系统与界面"
+    },
+    {
+      "name": "Unknown10",
+      "hex": "#FF5541",
+      "group": "系统与界面"
+    },
+    {
+      "name": "树脂减半",
+      "hex": "#99FF88",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "N秒后自动退出",
+      "hex": "#FFCC33",
+      "group": "系统与界面"
+    },
+    {
+      "name": "游侠",
+      "hex": "#89B4FF",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "猎手",
+      "hex": "#FF5E56",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "充能条样式 1、4、7-13",
+      "hex": "#16304F",
+      "group": "系统与界面"
+    },
+    {
+      "name": "充能条样式 5、14-16，19",
+      "hex": "#4C4C4C",
+      "group": "系统与界面"
+    },
+    {
+      "name": "充能条样式3",
+      "hex": "#4B2016",
+      "group": "系统与界面"
+    },
+    {
+      "name": "充能条样式 2、18",
+      "hex": "#54221A",
+      "group": "系统与界面"
+    },
+    {
+      "name": "充能条样式17",
+      "hex": "#4E1E18",
+      "group": "系统与界面"
+    },
+    {
+      "name": "好友私信",
+      "hex": "#FDAFF0",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "队友消息",
+      "hex": "#36EB4C",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "自己消息",
+      "hex": "#36D1EB",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "千星1-50级经验",
+      "hex": "#7FFFFF",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "千星51-100级经验",
+      "hex": "#FA7EF8",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "千星101-150级经验",
+      "hex": "#FFB166",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "千星151-200级经验",
+      "hex": "#FFC938",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "千星201-250级经验",
+      "hex": "#AFFDB5",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "奇域指标",
+      "hex": "#3299CC",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "奇域进度",
+      "hex": "#2ABCF7",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "茜特菈莉附身渊上",
+      "hex": "#E1A4D0",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "对话高亮2",
+      "hex": "#37FFFF",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "低难？",
+      "hex": "#A6FF55",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "中等？",
+      "hex": "#FFC677",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "高难？",
+      "hex": "#FF8080",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "幽境危战-绝境",
+      "hex": "#FF5E41",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "5星边框背景",
+      "hex": "#BC6932",
+      "group": "稀有度"
+    },
+    {
+      "name": "4星边框背景",
+      "hex": "#A256E0",
+      "group": "稀有度"
+    },
+    {
+      "name": "3星边框背景",
+      "hex": "#5180CC",
+      "group": "稀有度"
+    },
+    {
+      "name": "2星边框背景",
+      "hex": "#2A9072",
+      "group": "稀有度"
+    },
+    {
+      "name": "1星边框背景",
+      "hex": "#72778B",
+      "group": "稀有度"
+    },
+    {
+      "name": "特殊 5星边框背景",
+      "hex": "#BB5858",
+      "group": "稀有度"
+    },
+    {
+      "name": "？",
+      "hex": "#A1A1A1",
+      "group": "稀有度"
+    },
+    {
+      "name": "对话4",
+      "hex": "#999999",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "UGC部件标签1",
+      "hex": "#5C6980",
+      "group": "稀有度"
+    },
+    {
+      "name": "UGC部件标签2",
+      "hex": "#D1D0CF",
+      "group": "稀有度"
+    },
+    {
+      "name": "5星物品文本",
+      "hex": "#FFE14B",
+      "group": "稀有度"
+    },
+    {
+      "name": "4星物品文本",
+      "hex": "#F998FF",
+      "group": "稀有度"
+    },
+    {
+      "name": "3星物品文本",
+      "hex": "#4FF4FF",
+      "group": "稀有度"
+    },
+    {
+      "name": "2星物品文本",
+      "hex": "#ACFF45",
+      "group": "稀有度"
+    },
+    {
+      "name": "1星物品文本",
+      "hex": "#CCCCCC",
+      "group": "稀有度"
+    },
+    {
+      "name": "特殊 5星物品文本",
+      "hex": "#FF8080",
+      "group": "稀有度"
+    },
+    {
+      "name": "UGC部件标签3",
+      "hex": "#CC5949",
+      "group": "稀有度"
+    },
+    {
+      "name": "UGC部件标签4",
+      "hex": "#F0B7AD",
+      "group": "稀有度"
+    },
+    {
+      "name": "神工天巧韧战标",
+      "hex": "#7EB249",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "神工天巧棋谭标",
+      "hex": "#669DAD",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "5星背景",
+      "hex": "#E98B20",
+      "group": "稀有度"
+    },
+    {
+      "name": "4星背景",
+      "hex": "#CB8BDD",
+      "group": "稀有度"
+    },
+    {
+      "name": "3星背景",
+      "hex": "#549BC7",
+      "group": "稀有度"
+    },
+    {
+      "name": "2星背景",
+      "hex": "#59AB84",
+      "group": "稀有度"
+    },
+    {
+      "name": "1星背景",
+      "hex": "#949494",
+      "group": "稀有度"
+    },
+    {
+      "name": "特殊5星背景",
+      "hex": "#E34B53",
+      "group": "稀有度"
+    },
+    {
+      "name": "神工天巧破障标",
+      "hex": "#79B8AD",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "神工天巧越行标",
+      "hex": "#BDA959",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "神工天巧战斗标",
+      "hex": "#D17164",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "风塔",
+      "hex": "#33D7A0",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "UGC5星背景",
+      "hex": "#D69449",
+      "group": "稀有度"
+    },
+    {
+      "name": "UGC4星背景",
+      "hex": "#AD73E6",
+      "group": "稀有度"
+    },
+    {
+      "name": "UGC3星背景",
+      "hex": "#6490D4",
+      "group": "稀有度"
+    },
+    {
+      "name": "UGC2星背景",
+      "hex": "#619D87",
+      "group": "稀有度"
+    },
+    {
+      "name": "UGC1星背景",
+      "hex": "#787C96",
+      "group": "稀有度"
+    },
+    {
+      "name": "UGC特殊5星背景",
+      "hex": "#D4585E",
+      "group": "稀有度"
+    },
+    {
+      "name": "不足",
+      "hex": "#FF5141",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "备注",
+      "hex": "#D3BC8E",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "对话高亮3",
+      "hex": "#3399CC",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "高亮警示",
+      "hex": "#FF5E41",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "UGC5星底条",
+      "hex": "#FD9B33",
+      "group": "稀有度"
+    },
+    {
+      "name": "UGC4星底条",
+      "hex": "#DB6BFF",
+      "group": "稀有度"
+    },
+    {
+      "name": "UGC3星底条",
+      "hex": "#33AFFD",
+      "group": "稀有度"
+    },
+    {
+      "name": "UGC2星底条",
+      "hex": "#5BBF7F",
+      "group": "稀有度"
+    },
+    {
+      "name": "提示词",
+      "hex": "#E5870A",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "纳塔比赛活动文本",
+      "hex": "#CA6445",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "对话高亮3",
+      "hex": "#D18716",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "迷城战线活动文本",
+      "hex": "#E56378",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "橙色道具",
+      "hex": "#C37726",
+      "group": "稀有度"
+    },
+    {
+      "name": "紫色道具",
+      "hex": "#8068A0",
+      "group": "稀有度"
+    },
+    {
+      "name": "蓝色道具",
+      "hex": "#4B7191",
+      "group": "稀有度"
+    },
+    {
+      "name": "绿色道具",
+      "hex": "#4D7E6E",
+      "group": "稀有度"
+    },
+    {
+      "name": "灰色道具",
+      "hex": "#6C6C70",
+      "group": "稀有度"
+    },
+    {
+      "name": "红色道具",
+      "hex": "#C54D56",
+      "group": "稀有度"
+    },
+    {
+      "name": "打砖块活动文本",
+      "hex": "#E165B8",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "自走棋详情备注",
+      "hex": "#908F8F",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "自走棋详情说明",
+      "hex": "#FF8126",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "备注2",
+      "hex": "#4A5366",
+      "group": "UI·文字与提示"
+    },
+    {
+      "name": "5星道具背景",
+      "hex": "#FF9922",
+      "group": "稀有度"
+    },
+    {
+      "name": "4星道具背景",
+      "hex": "#D766E6",
+      "group": "稀有度"
+    },
+    {
+      "name": "3星道具背景",
+      "hex": "#3299CC",
+      "group": "稀有度"
+    },
+    {
+      "name": "2星道具背景",
+      "hex": "#80C022",
+      "group": "稀有度"
+    },
+    {
+      "name": "1星道具背景",
+      "hex": "#888888",
+      "group": "稀有度"
+    },
+    {
+      "name": "狸猫话",
+      "hex": "#625C41",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "奇术机关说明",
+      "hex": "#B09057",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "鬼兜虫之胜",
+      "hex": "#D4FF85",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "鬼兜虫之败",
+      "hex": "#FFAEAE",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "自走棋传奇装备",
+      "hex": "#C87CD2",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "自走棋稀有装备",
+      "hex": "#50A9DB",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "自走棋普通装备",
+      "hex": "#48BE75",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "自走棋普通装备",
+      "hex": "#7E7D7D",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "某段对话1",
+      "hex": "#4F65D3",
+      "group": "系统与界面"
+    },
+    {
+      "name": "某段对话2",
+      "hex": "#ECB227",
+      "group": "系统与界面"
+    },
+    {
+      "name": "某段对话3",
+      "hex": "#EC8427",
+      "group": "系统与界面"
+    },
+    {
+      "name": "某段对话4",
+      "hex": "#C7668B",
+      "group": "系统与界面"
+    },
+    {
+      "name": "活动提示",
+      "hex": "#EC9D1F",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "剧诗额外目标",
+      "hex": "#00EFFF",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "七圣描述文本1",
+      "hex": "#C76A24",
+      "group": "元素·七圣"
+    },
+    {
+      "name": "名片物品 边框背景",
+      "hex": "#EBE4D8",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "抽卡记录-3星",
+      "hex": "#8E8E8E",
+      "group": "稀有度"
+    },
+    {
+      "name": "抽卡记录-4星",
+      "hex": "#A256E1",
+      "group": "稀有度"
+    },
+    {
+      "name": "抽卡记录-5星",
+      "hex": "#BD6932",
+      "group": "稀有度"
+    },
+    {
+      "name": "七圣描述文本2",
+      "hex": "#C87D1D",
+      "group": "元素·七圣"
+    },
+    {
+      "name": "「咒印」",
+      "hex": "#D880FF",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "千星每日",
+      "hex": "#FF9D7A",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "杜林的回忆",
+      "hex": "#7E477A",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "人龙大战活动文本",
+      "hex": "#F08C14",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "鬼兜虫之评",
+      "hex": "#FEC14C",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "鬼兜虫之评",
+      "hex": "#878076",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "探险完成",
+      "hex": "#99CC33F",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "奇袭",
+      "hex": "#F86565",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "防御",
+      "hex": "#9DD84D",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "猛击",
+      "hex": "#E176F7",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "At@",
+      "hex": "#E66600",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "秘境全开",
+      "hex": "#8080FF",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "「天使」",
+      "hex": "#F665FF",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "灰眸",
+      "hex": "#CCFFFF",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "影域特化榴晶",
+      "hex": "#8A8DFF",
+      "group": "玩法与活动"
+    },
+    {
+      "name": "剧院狼人杀",
+      "hex": "#FF0D00",
+      "group": "玩法与活动"
+    }
+  ]
+}

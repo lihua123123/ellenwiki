@@ -1,0 +1,111 @@
+{
+ "name": "大雪猪王",
+ "nameEn": "The Great Snowboar King",
+ "subtitle": "龙脊雪山的真正王者？",
+ "category": "Animals",
+ "categoryLabel": "动物",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 149.424,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 30,
+   "geo": 10,
+   "physical": 50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 10000,
+ "skills": [
+  {
+   "name": "猪突撞进",
+   "type": "位移",
+   "icon": "skill-1.webp",
+   "description": "大雪猪王朝玩家冲来，造成<c=#b9b9b9>100%</c>伤害，持续3次，狂暴状态下持续4次，撞到墙眩晕5s。"
+  },
+  {
+   "name": "覆于雪中",
+   "type": "召唤输出",
+   "icon": "skill-2.webp",
+   "description": "大雪猪王召唤4个小雪猪，雪猪往前扔出大批雪球，均造成<span class=\"cryo\">**100%,50%,25%**</span>伤害，会短暂遮挡视野。"
+  },
+  {
+   "name": "兽蛮激醒",
+   "type": "强化",
+   "icon": "skill-3.webp",
+   "description": "大雪猪王不断抖动，皮变暗红，眼睛发红，此状态下攻击更为频繁，自身<c=#ffbfbf>攻击力提升30%</c>，持续1min。"
+  },
+  {
+   "name": "暴雪之瀑",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "大雪猪王在狂暴状态下，原地猛烈跳动地板，造成<c=#b8b8b8>100%</c>伤害，并在周围产生诸多下落的雪球，造成<span class=\"cryo\">**100%**</span>伤害，有玩家倾向，持续8轮后结束。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "WP[75x3,50x3,25x3,0x3], WO[75,50,25,0]",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 3,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 3,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 3,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 404416,
+   "atk": 12311,
+   "weight": 10000,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "the-great-snowboar-king",
+ "icon": "avatar.webp",
+ "tags": [
+  "动物"
+ ]
+}

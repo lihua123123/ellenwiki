@@ -1,0 +1,101 @@
+{
+ "name": "厄灵·风之魔鸢",
+ "nameEn": "Spirit of Omen: Wind Glede",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 17.930880000000002,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": -50,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 10000,
+ "skills": [
+  {
+   "name": "坠箭暴风",
+   "type": "协同爆发",
+   "icon": "skill-1.webp",
+   "description": "灵风猎手与风之魔鸢一同进行：灵风猎手借助风之魔鸢产生更大的真空场，不断吸引玩家至风矢范围内，4s后发射箭矢，造成灵风猎手<span class=\"anemo\">**100%**</span>攻击力的伤害。"
+  },
+  {
+   "name": "摇旋而上",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "风之魔鸢盘旋一圈向上，造成2段<span class=\"anemo\">**60%**</span>伤害，之后施放风爆，造成<span class=\"anemo\">**70%**</span>伤害。"
+  },
+  {
+   "name": "旋龙卷风",
+   "type": "妨害",
+   "icon": "skill-3.webp",
+   "description": "风之魔鸢唤出一个龙卷风，接触持续造成<span class=\"anemo\">**25%**</span>伤害。"
+  },
+  {
+   "name": "倾身随行",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "风之魔鸢后空翻并直接冲向玩家，造成3段<span class=\"anemo\">**70%**</span>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 73207,
+   "atk": 9849,
+   "weight": 10000,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "spirit-of-omen-wind-glede",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

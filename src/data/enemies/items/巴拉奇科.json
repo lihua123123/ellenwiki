@@ -1,0 +1,160 @@
+{
+ "name": "巴拉奇科",
+ "nameEn": "Balachko",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 472.72319999999996,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 125.60000000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 70,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  },
+  {
+   "name": "隐蔽",
+   "pyro": 370,
+   "hydro": 310,
+   "anemo": 310,
+   "electro": 310,
+   "dendro": 310,
+   "cryo": 310,
+   "geo": 310,
+   "physical": 280
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "焚锋毁锷",
+   "type": "爆发",
+   "icon": "skill-1.webp",
+   "description": "入战立即施放且仅施放一次。巴拉奇科召唤6个`幻影`，从每个幻影的位置依次冲向玩家，每次造成<c=#ff9999>50%</c>伤害，冲刺结束后从天而降下落，造成<c=#ff9999>85%</c>伤害。技能期间持续附着<c=#ff9999>火元素</c>。"
+  },
+  {
+   "name": "淬炎之刃",
+   "type": "召唤",
+   "icon": "skill-2.webp",
+   "description": "隐蔽状态下的巴拉奇科旋转祭刀，扔出一个`幻影`，造成<c=#ff9999>100%</c>伤害。"
+  },
+  {
+   "name": "穿刺之影",
+   "type": "强攻",
+   "icon": "skill-3.webp",
+   "description": "隐蔽状态下的巴拉奇科进行一次穿刺攻击，造成<c=#ff9999>100%</c>伤害，并在冲刺起点放置一个`幻影`。"
+  },
+  {
+   "name": "赤黯袭影",
+   "type": "协同",
+   "icon": "skill-4.webp",
+   "description": "巴拉奇科所放置的全部幻影会周期性同时朝玩家发射祭飞刀，均造成<c=#b8b8b8>50%</c>伤害。"
+  },
+  {
+   "name": "刃真影伪",
+   "type": "召唤",
+   "icon": "skill-5.webp",
+   "description": "巴拉奇科累计施放6个幻影后，启动战法，发射祭火刀造成<c=#ff9999>80%</c>伤害，后施放4个`真假镜像`：3个假镜像会朝玩家发射祭飞刀，均造成<c=#b8b8b8>50%</c>伤害，且被击破还会爆炸造成<c=#ff9999>100%</c>伤害；唯一的真镜像朝玩家发射祭火刀，造成<c=#ff9999>80%</c>伤害，击破即可显出真身。破坏幻影可提前施放。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "幻影",
+   "desc": "6火盾，每破坏一个幻影会使得巴拉奇科少计算一个幻影从而提前施放刃影战法。"
+  },
+  {
+   "text": "真假镜像",
+   "desc": "6火盾，击破真镜像瘫痪巴拉奇科10s，击破假镜像会爆炸。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "幻影",
+   "description": "6火盾，每破坏一个幻影会使得巴拉奇科少计算一个幻影从而提前施放刃影战法。",
+   "elementType": "Fire",
+   "duration": ""
+  },
+  {
+   "name": "真假镜像",
+   "description": "6火盾，击破真镜像瘫痪巴拉奇科10s，击破假镜像会爆炸。",
+   "elementType": "Fire",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 2120542,
+   "atk": 26108,
+   "weight": 80,
+   "tenacity": 210
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 386002,
+   "hpNote": "20%",
+   "atk": 17235,
+   "atkNote": "70%",
+   "weight": 80,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "巴拉奇科",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "name": "岩居蟹·红",
+ "nameEn": "Rock Crab",
+ "subtitle": "",
+ "category": "Animals",
+ "categoryLabel": "动物",
+ "tier": "Animal",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "1k",
+   "pyro": "IMM",
+   "hydro": "IMM",
+   "anemo": "IMM",
+   "electro": "IMM",
+   "dendro": "IMM",
+   "cryo": "IMM",
+   "geo": "IMM",
+   "physical": "IMM"
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 60,
+ "skills": [
+  {
+   "name": "马格尼特",
+   "type": "天赋",
+   "icon": "",
+   "description": "部分岩居蟹的顶部磁石可用于搬运吸附「单极」或「双极」物件。\n岩居蟹喜欢白灵果。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "动物",
+   "level": 100,
+   "hp": 55460,
+   "atk": 4924,
+   "weight": 60,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "岩居蟹-红",
+ "icon": "avatar.webp",
+ "tags": [
+  "动物"
+ ]
+}

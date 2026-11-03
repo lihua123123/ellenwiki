@@ -1,0 +1,102 @@
+{
+ "name": "跋掣",
+ "nameEn": "Beisht",
+ "subtitle": "「漩涡的余威」",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 81.50399999999999,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 70,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "海沫珠连",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "跋掣一支发射6个水珠追踪玩家，每个造成<c=#7fbfff>40%</c>伤害。"
+  },
+  {
+   "name": "原古溯流",
+   "type": "控制",
+   "icon": "skill-2.webp",
+   "description": "跋掣一支在边缘不断移动，使用口部吸引玩家，之后喷出巨大喷流，造成<c=#7fbfff>70%</c>伤害，继续接触喷流则额外再造成3段<c=#7fbfff>40%</c>伤害。"
+  },
+  {
+   "name": "掣越百川",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "跋掣一支后倾，然后用力朝前方撞去，造成<c=#7fbfff>80%</c>伤害。"
+  },
+  {
+   "name": "浓潮漩漾",
+   "type": "控制",
+   "icon": "skill-4.webp",
+   "description": "跋掣一支在场地中间产生一个漩涡，吸引玩家并持续造成<c=#7fbfff>40%</c>伤害，5s后漩涡喷发，造成<c=#7fbfff>100%</c>伤害。"
+  },
+  {
+   "name": "凝滴雨幕",
+   "type": "辅助",
+   "icon": "skill-5.webp",
+   "description": "当跋掣只剩下一支时，每15s，在场上产生8个下落的水弹，每个造成<c=#7fbfff>40%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 365610,
+   "atk": 10443,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "beisht",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

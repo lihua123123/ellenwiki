@@ -51,16 +51,24 @@ export function renderRichText(text) {
     return key;
   });
 
-  // 4) 颜色块 <span class="X">**文字**</span>
-  text = text.replace(/<span class="([\w-]+)">((?:(?!<\/span>).)+?)<\/span>/g, (_m, cls, inner) => {
+  // 4) 颜色块 <span class="X">**文字**</span>（源里会跨行，[\s\S] 匹配）
+  text = text.replace(/<span class="([\w-]+)">((?:(?!<\/span>)[\s\S])+?)<\/span>/g, (_m, cls, inner) => {
     const key = ph();
-    inner = inner.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    inner = inner.replace(/\*\*([\s\S]+?)\*\*/g, '<strong>$1</strong>');
     blocks.push({ key, html: `<span class="${cls}">${inner}</span>` });
     return key;
   });
 
+  // 4.5) 行内色 <c=#99ffff>文字</c>（敌人图鉴 ETL：未映射到元素类的源色原样保留）
+  //      源里还有 <color=#99ffff> 写法，一并兜底
+  text = text.replace(/<(c|color)=(#[0-9a-fA-F]{6})>((?:(?!<\/\1>)[\s\S])+?)<\/\1>/g, (_m, _tag, hex, inner) => {
+    const key = ph();
+    blocks.push({ key, html: `<span style="color:${hex}">${escapeHtml(inner)}</span>` });
+    return key;
+  });
+
   // 5) 剩余 **加粗**
-  text = text.replace(/\*\*(.+?)\*\*/g, (_m, inner) => {
+  text = text.replace(/\*\*([\s\S]+?)\*\*/g, (_m, inner) => {
     const key = ph();
     blocks.push({ key, html: `<strong>${escapeHtml(inner)}</strong>` });
     return key;

@@ -1,0 +1,90 @@
+{
+ "name": "愚人众特辖队·掷弹兵",
+ "nameEn": "Oprichniki Bombardier",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "开弹即食",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "掷弹兵抛出一个炸弹，造成<c=#ff9999>70%</c>伤害。"
+  },
+  {
+   "name": "制导快递",
+   "type": "追踪",
+   "icon": "skill-2.webp",
+   "description": "掷弹兵激活炸弹制导系统，短暂蓄力后丢出，造成<c=#ff9999>100%</c>伤害。武器属「双极」物件，其可用`月`<c=#ccbfff>矩</c><c=#ebbfff>力</c>没收。"
+  },
+  {
+   "name": "赤手空踹",
+   "type": "其他",
+   "icon": "skill-3.webp",
+   "description": "武器被夺后，则抬腿旋转踢，造成<c=#b8b8b8>10%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:E_0001",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 55460,
+   "atk": 4924,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "oprichniki-bombardier",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

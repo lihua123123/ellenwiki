@@ -1,0 +1,124 @@
+{
+ "name": "贪食匿叶龙山王",
+ "nameEn": "Gluttonous Yumkasaur Mountain Lord",
+ "subtitle": "「山王」康加玛托",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 366.768,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 105.504,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 70,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "掷步衔尾",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "山王至多进行践踏、甩尾2段攻击，分别造成<c=#99ff86>50%,65%</c>伤害。"
+  },
+  {
+   "name": "樊林倬影",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "山王拍拍肚子，扑倒并朝玩家方向开始旋转，持续造成<c=#99ff86>35%,17.5%,8.75%,\n3.5%</c>伤害。"
+  },
+  {
+   "name": "引索垂星",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "山王借助长舌纵身一跃，重重下落造成<c=#99ff86>80%</c>伤害，并产生一次相同伤害的振波。"
+  },
+  {
+   "name": "难支鞠硕",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "山王借助长舌抵达高处，缓慢下落，造成<c=#99ff86>80%</c>伤害。"
+  },
+  {
+   "name": "丛庞涎芬",
+   "type": "远程",
+   "icon": "skill-5.webp",
+   "description": "山王喷吐一枚草弹，造成<c=#99ff86>50%</c>伤害，可重复施放3次。"
+  },
+  {
+   "name": "腹盈丹若",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "山王吐出火榴果，造成<c=#ff9999>100%</c>伤害并留下<c=#ff9999>6%</c>伤害的燃烬；山王吞下全部3火榴果后，将吐出2枚火弹和一次热力喷发，喷发造成<c=#ff9999>250%</c>伤害并留下燃烬。"
+  },
+  {
+   "name": "如吞㮯枣",
+   "type": "蓄力",
+   "icon": "skill-7.webp",
+   "description": "山王周期性地在地上散落1或3枚火榴果，数秒后将其吞下。使用火元素可以点燃火榴果，每颗火榴果对玩家造成<c=#ff9999>30%</c>伤害，对山王造成<c=#ff9999>5%生命值</c>的真伤，若山王吞下被点燃的火榴果，则在反噬的同时使其瘫坐在地上6s。\n若被匿叶龙或基尼奇发射的火榴果命中山王时，除了火榴果基础的伤害外，也会对山王造成<c=#ff9999>5%生命值</c>的真伤。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:A_3303",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1645247,
+   "atk": 21931,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "gluttonous-yumkasaur-mountain-lord",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

@@ -1,0 +1,190 @@
+{
+ "name": "千年珍珠骏麟",
+ "nameEn": "Millennial Pearl Seahorse",
+ "subtitle": "陆上大湖的无名之主",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 149.424,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 60,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "带甲",
+   "pyro": 70,
+   "hydro": 70,
+   "anemo": 70,
+   "electro": 120,
+   "dendro": 70,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 70
+  },
+  {
+   "name": "深渊带甲",
+   "pyro": 90,
+   "hydro": 90,
+   "anemo": 90,
+   "electro": 140,
+   "dendro": 90,
+   "cryo": 90,
+   "geo": 90,
+   "physical": 90
+  },
+  {
+   "name": "出场",
+   "pyro": 210,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 260,
+   "dendro": 210,
+   "cryo": 210,
+   "geo": 210,
+   "physical": 210
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "尾羽环转",
+   "type": "防卫",
+   "icon": "skill-1.webp",
+   "description": "雷海马进行一次环转，造成<c=#ffacff>60%</c>伤害；无珍珠时进行则造成<c=#bababa>50%</c>伤害。"
+  },
+  {
+   "name": "尾羽交扇",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "雷海马迅速翻滚至多3圈，分别造成<c=#ffacff>60%,60%,50%</c>伤害；无珍珠时进行则造成<c=#b8b8b8>50%,50%,40%</c>伤害；攻击造成的伤害带有(1,0.5)的衰减。"
+  },
+  {
+   "name": "掣海无影",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "雷海马从远处迅速冲向玩家，造成<c=#ffacff>80%</c>伤害；途经将留下雷曜地面，持续造成<c=#ffacff>6%</c>伤害；无珍珠时进行则造成<c=#bababa>65%</c>伤害，且不会留下雷曜地面。"
+  },
+  {
+   "name": "群鱼天游",
+   "type": "追踪",
+   "icon": "skill-4.webp",
+   "description": "雷海马释放出大群的游鱼，游鱼在飞出一小会后冲向玩家，造成<c=#ffacff>35%,17.5%,\n6.3%~3.5%</c>伤害。"
+  },
+  {
+   "name": "始海之泉",
+   "type": "锁定",
+   "icon": "skill-5.webp",
+   "description": "雷海马瞄准并锁定玩家，数秒后在玩家处产生喷涌，造成<c=#ffacff>50%</c>伤害，留下雷曜地面，持续造成<c=#ffacff>5%</c>伤害。"
+  },
+  {
+   "name": "麟凌疾空",
+   "type": "猛攻",
+   "icon": "skill-6.webp",
+   "description": "雷海马登天，朝玩家猛地下戳，造成<c=#ffacff>95%</c>伤害，并引起地裂喷涌，造成<c=#ffacff>50%</c>伤害，留下雷曜地面。"
+  },
+  {
+   "name": "明珠鸣雷",
+   "type": "再生",
+   "icon": "skill-7.webp",
+   "description": "陷入无珠状态约<c=#dfbfff>30s/20s(深境螺旋)</c>后，雷海马即将再度生成`异海珍珠`！生成时施放雷暴，造成<c=#ffacff>90%</c>伤害。"
+  },
+  {
+   "name": "原海古雷",
+   "type": "爆发",
+   "icon": "skill-8.webp",
+   "description": "当珍珠盾量<=7时施放；雷海马登天，唤临3枚`共鸣珊瑚珠`，并不断降下总计5道的落雷，均造成<c=#ffacff>100%</c>伤害。\n破坏所有珊瑚珠可以使其瘫痪陷入无珠状态，未及时破除会修复珍珠。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "异海珍珠",
+   "desc": "19雷盾，击破使其进入无珠状态；免疫扩散附着；第二次及后续再生时只有11.4雷盾。"
+  },
+  {
+   "text": "共鸣珊瑚珠",
+   "desc": "0.4雷盾，击破扣除异海珍珠当前剩余-当前/3雷，若未及时破除，每个珍珠则将恢复异海珍珠当前/3+2雷。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "异海珍珠",
+   "description": "19雷盾，击破使其进入无珠状态；免疫扩散附着；第二次及后续再生时只有11.4雷盾。",
+   "elementType": "Electric",
+   "duration": ""
+  },
+  {
+   "name": "共鸣珊瑚珠",
+   "description": "0.4雷盾，击破扣除异海珍珠当前剩余-当前/3雷，若未及时破除，每个珍珠则将恢复异海珍珠当前/3+2雷。",
+   "elementType": "Electric",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 670286,
+   "atk": 20886,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "millennial-pearl-seahorse",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

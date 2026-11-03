@@ -1,0 +1,122 @@
+{
+ "name": "依奇卡胡伊皮利的庇护",
+ "nameEn": "Ichcahuipilli’s Aegis",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1494.24,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 113.04,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 50,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "梢驰杪张",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "「庇护」标记玩家，在原地进行吟唱，并在标记处产生爆炸，爆炸和冲击波都造成<c=#99ff85>90%,22.5%</c>伤害，同时产生2枚较小的图纹，爆裂造成<c=#99ff85>80%</c>伤害。"
+  },
+  {
+   "name": "翠莲扎荫",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "「庇护」召唤7枚图纹，呈三叉样分布，图纹迸裂造成<c=#99ff85>80%</c>伤害。"
+  },
+  {
+   "name": "咒阵流韵",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "「庇护」朝玩家方向蓄力，迸发草元素脉冲，造成<c=#99ff85>70%</c>伤害。"
+  },
+  {
+   "name": "流逐争魂",
+   "type": "领域",
+   "icon": "skill-4.webp",
+   "description": "「庇护」将玩家带入「`抉择之域`」，自己则暂时退入「夜魂灵隙」。领域内不断生成夜魂战士，在其周围有一圈毒雾，靠近将持续造成基于敌方<c=#99ff85>30%</c>攻击力的伤害。需与「夜魂灵隙」交互后方可退出领域。"
+  },
+  {
+   "name": "蜜饴血祭",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "每击败「抉择之域」中的一名夜魂战士，全队都会获得「咒祝」：获得<c=#ffccbf>60%</c>的增伤，但以此为代价的是当前角色会每<c=#ff9999>0.5秒</c>流失<c=#ffccbf>(1%+50)</c>生命值，以上效果均可叠加。流血效果在退出「抉择之域」后移除，而增伤效果持续15s。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "抉择之域",
+   "desc": "「庇护」将玩家带入的特殊领域，此领域内会持续刷新夜魂战士敌人(疾迅勇士系列)，击败以获得提升效果，可随时与夜魂灵隙交互退出。\n低于<c=#ffcebf>80%</c>生命值后，「庇护」将强制展开一次领域。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "夜魂试炼",
+   "level": 103,
+   "hp": 6702862,
+   "atk": 23497,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "ichcahuipilli-s-aegis",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

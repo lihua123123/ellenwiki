@@ -1,0 +1,122 @@
+{
+ "name": "苍遒的木灵长",
+ "nameEn": "Rugged Elder Leshy",
+ "subtitle": "生于灵野的树妖",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 108.672,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.8,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": -20,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 30,
+   "cryo": 10,
+   "geo": 30,
+   "physical": 10
+  },
+  {
+   "name": "扎根",
+   "pyro": -220,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 30,
+   "cryo": 10,
+   "geo": 30,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "击木弹石",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "树妖从地里面扣出一块晶髓，扔向玩家，造成<c=#ffe599>100%</c>伤害。"
+  },
+  {
+   "name": "形槁戒惧",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "树妖突然跃起，并重重击地，造成<c=#b8b8b8>100%</c>伤害。持有「灵髓」时攻击造成<c=#ffe599>岩元素</c>伤害，且伤害倍率提升，造成<c=#ffe599>125%</c>伤害。"
+  },
+  {
+   "name": "盘梢髓岩",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "树妖进行3段普通攻击，依次造成<c=#b8b8b8>50%,\n50%,70%</c>伤害。持有「灵髓」时攻击造成<c=#ffe599>岩元素</c>伤害，且伤害倍率提升，依次造成<c=#ffe599>75%,75%,100%</c>伤害。"
+  },
+  {
+   "name": "采息复灵",
+   "type": "回复",
+   "icon": "",
+   "description": "树妖进行「扎根」，下肢生出`虬须`，暴露胸部树心，持续<c=#ffdfbf>10s</c>后恢复<c=#ffdfbf>34%生命值</c>，同时获得持续<c=#ffdfbf>30s</c>的「灵髓」。受`星烁反应`影响后，树妖便会跌倒在地，同时树心高度也将下降。\n破坏虬须时，若树妖附着了<c=#ff9999>火元素</c>，那么它将受到<c=#ffdfbf>34%生命值</c>的<c=#ff9999>火元素真伤</c>，无附着。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "虬须",
+   "desc": "<c=#ffdfbf>34%生命值</c>护罩，击中树心即可立即破坏，中断扎根，期间<c=#ffdfbf>火抗-200%</c>。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "GP[66,33,0]",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 443680,
+   "atk": 12311,
+   "weight": 300,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "rugged-elder-leshy",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

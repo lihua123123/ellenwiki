@@ -1,0 +1,342 @@
+{
+ "name": "吞星之鲸",
+ "nameEn": "All-Devouring Narwhal",
+ "subtitle": "无光星海彼端的访客",
+ "category": "EnemyOfNote",
+ "categoryLabel": "值得铭记的强敌",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 543.36,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 125.60000000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 70,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "103",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "蹈汤覆浪",
+   "type": "动作1",
+   "icon": "skill-1.webp",
+   "description": "巨鲸缓慢冒出水面，在水面上缓慢进行游动，每往下游动，就会对周围造成伤害，该技能大概率重复2次；\n游动时，巨鲸冒出与触碰地面均造成<c=#7fbfff>100%</c>伤害，同时在此范围的周围产生6个喷溅延波，延波爆破造成<c=#7fbfff>50%</c>伤害。"
+  },
+  {
+   "name": "汲辰沦蜃",
+   "type": "动作2",
+   "icon": "skill-2.webp",
+   "description": "巨鲸扎入水面，一段时间后再从水面突出游走，该技能顺序可颠倒；\n扎入和突出时，巨鲸触碰地面即造成<c=#7fbfff>100%</c>伤害，同时在此范围的周围产生8个胎水涌泉，胎水涌泉造成<c=#7fbfff>50%</c>伤害。"
+  },
+  {
+   "name": "掊海蛰江",
+   "type": "动作3",
+   "icon": "skill-3.webp",
+   "description": "巨鲸从水面突然钻出，翻身后跌入水面下沉；\n游动时，巨鲸冒出与触碰地面均造成<c=#7fbfff>100%</c>伤害，同时在此范围的周围产生6个喷溅延波，延波爆破造成<c=#7fbfff>50%</c>伤害。"
+  },
+  {
+   "name": "渊洲星雨",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "巨鲸贴近水面，喷涌于空中，降下大量的星汐弹，均造成<c=#7fbfff>30%</c>伤害。"
+  },
+  {
+   "name": "鲸天映璃",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "巨鲸扎入水面，水映公子的鲸天座，降下数束魔光流注，流注命中造成<c=#7fbfff>50%,\n25%</c>伤害，持续流注造成<c=#7fbfff>12.5%</c>伤害。"
+  },
+  {
+   "name": "逾界噬眼",
+   "type": "转变",
+   "icon": "skill-6.webp",
+   "description": "巨鲸将以不定周期召唤`涡眼`，其将持续牵引在场玩家，未及时处理将爆炸造成<c=#7fbfff>50%</c>伤害；一阶段满`敌意`时或三阶段经过了30s后，若生命值>20%，巨鲸将吞噬玩家，进入神秘空间，即二阶段。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "涡眼",
+   "desc": "8次次数盾，1单位芒荒盾，击破后+30敌意。"
+  },
+  {
+   "text": "敌意",
+   "desc": "满120，+1/1s，+2/1s(>80)；受伤将额外加上对应生命值百分比的分子。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "周本-一三阶段",
+   "level": 90,
+   "hp": 1484012,
+   "atk": 19031,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "all-devouring-narwhal",
+ "icon": "avatar.webp",
+ "states": [
+  {
+   "key": "ben",
+   "label": "本体",
+   "name": "吞星之鲸",
+   "subtitle": "无光星海彼端的访客",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 543.36,
+     "Curve": "HP_2"
+    },
+    "atk": {
+     "Value": 125.60000000000001,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-一三阶段",
+     "level": 90,
+     "hp": 1484012,
+     "atk": 19031,
+     "weight": 20000,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 10,
+     "hydro": 70,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 10,
+     "physical": 10
+    }
+   ],
+   "skills": [
+    {
+     "name": "蹈汤覆浪",
+     "type": "动作1",
+     "icon": "skill-1.webp",
+     "description": "巨鲸缓慢冒出水面，在水面上缓慢进行游动，每往下游动，就会对周围造成伤害，该技能大概率重复2次；\n游动时，巨鲸冒出与触碰地面均造成<c=#7fbfff>100%</c>伤害，同时在此范围的周围产生6个喷溅延波，延波爆破造成<c=#7fbfff>50%</c>伤害。"
+    },
+    {
+     "name": "汲辰沦蜃",
+     "type": "动作2",
+     "icon": "skill-2.webp",
+     "description": "巨鲸扎入水面，一段时间后再从水面突出游走，该技能顺序可颠倒；\n扎入和突出时，巨鲸触碰地面即造成<c=#7fbfff>100%</c>伤害，同时在此范围的周围产生8个胎水涌泉，胎水涌泉造成<c=#7fbfff>50%</c>伤害。"
+    },
+    {
+     "name": "掊海蛰江",
+     "type": "动作3",
+     "icon": "skill-3.webp",
+     "description": "巨鲸从水面突然钻出，翻身后跌入水面下沉；\n游动时，巨鲸冒出与触碰地面均造成<c=#7fbfff>100%</c>伤害，同时在此范围的周围产生6个喷溅延波，延波爆破造成<c=#7fbfff>50%</c>伤害。"
+    },
+    {
+     "name": "渊洲星雨",
+     "type": "爆发",
+     "icon": "skill-4.webp",
+     "description": "巨鲸贴近水面，喷涌于空中，降下大量的星汐弹，均造成<c=#7fbfff>30%</c>伤害。"
+    },
+    {
+     "name": "鲸天映璃",
+     "type": "爆发",
+     "icon": "skill-5.webp",
+     "description": "巨鲸扎入水面，水映公子的鲸天座，降下数束魔光流注，流注命中造成<c=#7fbfff>50%,\n25%</c>伤害，持续流注造成<c=#7fbfff>12.5%</c>伤害。"
+    },
+    {
+     "name": "逾界噬眼",
+     "type": "转变",
+     "icon": "skill-6.webp",
+     "description": "巨鲸将以不定周期召唤`涡眼`，其将持续牵引在场玩家，未及时处理将爆炸造成<c=#7fbfff>50%</c>伤害；一阶段满`敌意`时或三阶段经过了30s后，若生命值>20%，巨鲸将吞噬玩家，进入神秘空间，即二阶段。"
+    }
+   ],
+   "notes": [
+    {
+     "text": "涡眼",
+     "desc": "8次次数盾，1单位芒荒盾，击破后+30敌意。"
+    },
+    {
+     "text": "敌意",
+     "desc": "满120，+1/1s，+2/1s(>80)；受伤将额外加上对应生命值百分比的分子。"
+    }
+   ],
+   "shields": [],
+   "chargebar": [],
+   "energy": {
+    "element": "None",
+    "elementLabel": "无元素",
+    "raw": "EnergyGroup:N_0000",
+    "rows": [
+     {
+      "hp": 0,
+      "particle": 0,
+      "orb": 0
+     }
+    ]
+   },
+   "weight": 20000,
+   "elementMastery": 0,
+   "multiplayerGroup": "103",
+   "icon": "avatar.webp",
+   "defaultLevel": 90
+  },
+  {
+   "key": "phantom",
+   "label": "幻影",
+   "name": "吞星之鲸·幻影",
+   "subtitle": "无光星海彼端的访客",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 326.01599999999996,
+     "Curve": "HP_2"
+    },
+    "atk": {
+     "Value": 100.48,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-二阶段",
+     "level": 90,
+     "hp": 890407,
+     "atk": 15225,
+     "weight": 150,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 10,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 70,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 10,
+     "physical": 10
+    }
+   ],
+   "skills": [
+    {
+     "name": "虚实幻境",
+     "type": "天赋",
+     "icon": "state-phantom-skill-1.webp",
+     "description": "此阶段下，进行攻击所造成的伤害不再对巨鲸造成伤害，转而对幻影的`虚影幻盾`造成伤害；击破该盾后，将对巨鲸造成<c=#ffdfbf>20%生命值</c>的反噬伤害(不致死)。\n第二次及之后进入此阶段时，护盾只有原来的一半。\n击破幻影退出空间后，<c=#ffbfbf>恢复角色的所有元素能量和特殊能量</c>。"
+    },
+    {
+     "name": "阔剑雷尖",
+     "type": "输出",
+     "icon": "state-phantom-skill-2.webp",
+     "description": "幻影以不规则的攻击连招使用阔剑进行攻击，一共有三种不同的攻击：\n左扫一圈，造成<c=#ffacff>80%</c>伤害；\n右旋一圈，造成<c=#ffacff>100%</c>伤害；\n纵劈一下，造成<c=#ffacff>90%</c>伤害；\n此外，每挥一剑，都会在原地留下停滞的裂缝，片刻后崩裂造成<c=#ffacff>50%</c>伤害。\n若玩家距离较远，则挥一剑闪现一次。"
+    },
+    {
+     "name": "雷索重剑",
+     "type": "远程",
+     "icon": "state-phantom-skill-3.webp",
+     "description": "幻影旋转阔剑并丢出，造成<c=#ffacff>100%</c>伤害；\n该技能容易与普攻形成连招。"
+    },
+    {
+     "name": "电链缀阵",
+     "type": "辅助",
+     "icon": "state-phantom-skill-4.webp",
+     "description": "场地内每经过一定时间T，就会在玩家位置降下一定数量B的落雷，均造成<c=#ffacff>50%</c>伤害；\n在进入空间的15s后施放落雷，此时T=10，B=4，待幻影第二次施放爆发后T=5，B=6。"
+    },
+    {
+     "name": "涡影黑蘙",
+     "type": "爆发",
+     "icon": "state-phantom-skill-5.webp",
+     "description": "每30s，幻影移至原地，化为涡眼进行蓄力，并随机召唤3种幻形的一种：\n召唤2只<c=#ff9999>幻形龙蜥·火</c>：进行下落攻击，造成<c=#ff9999>100%</c>伤害；\n召唤4只<c=#7fbfff>幻形水母·水</c>：进行水弹攻击，造成<c=#7fbfff>50%</c>伤害；\n召唤4只<c=#ffacff>幻形牙兽·雷</c>：进行翻滚攻击，造成<c=#ffacff>50%</c>伤害；\n幻形攻击完毕后，幻影将传送至玩家附近，从里面出来给玩家一刀，造成<c=#ffacff>100%</c>伤害。\n芒荒攻击能够打断该技能施放，并额外对幻影造成<c=#ffdfbf>25%生命值</c>的反噬伤害。"
+    }
+   ],
+   "notes": [
+    {
+     "text": "虚影幻盾",
+     "desc": "特化盾，4单位芒荒盾，其继承100%幻影生命值，击破后可退出二阶段，并对BOSS造成反噬伤害。"
+    }
+   ],
+   "shields": [
+    {
+     "name": "虚影幻盾",
+     "description": "特化盾，4单位芒荒盾，其继承100%幻影生命值，击破后可退出二阶段，并对BOSS造成反噬伤害。",
+     "elementType": "",
+     "duration": ""
+    }
+   ],
+   "chargebar": [],
+   "energy": {
+    "element": "None",
+    "elementLabel": "无元素",
+    "raw": "EnergyGroup:N_0000",
+    "rows": [
+     {
+      "hp": 0,
+      "particle": 0,
+      "orb": 0
+     }
+    ]
+   },
+   "weight": 150,
+   "elementMastery": 0,
+   "multiplayerGroup": "103",
+   "icon": "state-phantom-avatar.webp",
+   "defaultLevel": 90
+  }
+ ],
+ "defaultState": "ben",
+ "aliases": [
+  "吞星之鲸·幻影"
+ ],
+ "tags": [
+  "值得铭记的强敌"
+ ]
+}

@@ -1,0 +1,151 @@
+{
+ "name": "信风舞姬",
+ "nameEn": "Stormstress",
+ "subtitle": "",
+ "category": "Others",
+ "categoryLabel": "其他",
+ "tier": "Common",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 24.4512,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 54.25920000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 20,
+   "electro": 10,
+   "dendro": 20,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "劲风冲击",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "伸缩风蕈兽用伞盖发射1个风卷，造成<span class=\"anemo\">**124%**</span>伤害。"
+  },
+  {
+   "name": "哀风爆弹",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "伸缩风蕈兽朝上发射4个小型风弹，每个造成<span class=\"anemo\">**33%**</span>伤害，有追踪效果。"
+  },
+  {
+   "name": "煦风升腾",
+   "type": "战技",
+   "icon": "skill-3.webp",
+   "description": "伸缩风蕈兽在自身周围生成一个风场，每2.5s，此范围内的敌人将持续受到<span class=\"anemo\">**139%**</span>伤害，并使友方持续<c=#b8ff72>恢复7.5%生命值</c>，清除其身上的元素附着。"
+  },
+  {
+   "name": "劲风速射",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "伸缩风蕈兽用伞盖迅速发射3个风圈，每个造成<span class=\"anemo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "顺风攻势",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "伸缩风蕈兽为在场的友方蕈兽<c=#99ffe5>提升50元素精通和15%移速</c>。"
+  },
+  {
+   "name": "煦风回转",
+   "type": "战技",
+   "icon": "skill-6.webp",
+   "description": "伸缩风蕈兽在生命值最低的友方灵蕈处生成一个风场，每0.75s恢复友方蕈兽<c=#b8ff72>12.5%生命值</c>，并施加1单位风元素附着。"
+  },
+  {
+   "name": "劲风冲击",
+   "type": "远程",
+   "icon": "skill-7.webp",
+   "description": "伸缩风蕈兽用伞盖迅速发射3个风圈，每个造成<span class=\"anemo\">**150%**</span>伤害。"
+  },
+  {
+   "name": "顺风转场",
+   "type": "天赋",
+   "icon": "skill-8.webp",
+   "description": "受击后的6s内，伸缩风蕈兽的嘲讽降低；受击6s后，将持续恢复生命值，每1.5s回复<c=#99ffcc>基于自身100%的攻击力</c>的生命值。"
+  },
+  {
+   "name": "煦风回转",
+   "type": "战技",
+   "icon": "skill-9.webp",
+   "description": "伸缩风蕈兽在生命值最低的友方灵蕈处生成一个风场，每0.333s恢复友方蕈兽<c=#b8ff72>6%生命值</c>，并施加1单位风元素附着。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "3.5 灵蕈棋阵",
+   "desc": "150元素精通。"
+  },
+  {
+   "text": "4.2 小小灵蕈大幻戏",
+   "desc": "100元素精通，剧变反应系数1.5。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "友方-3.2智巧灵蕈",
+   "level": 90
+  },
+  {
+   "label": "普通敌方-3.2智巧灵蕈",
+   "level": 90,
+   "hp": 59360,
+   "atk": 6577,
+   "weight": 75,
+   "tenacity": 600
+  },
+  {
+   "label": "友方-3.5塔防灵蕈",
+   "level": 90
+  },
+  {
+   "label": "友方-4.2幻戏灵蕈",
+   "level": 90,
+   "hp": 77911,
+   "atk": 8222,
+   "weight": 75,
+   "tenacity": 600
+  }
+ ],
+ "leyline": null,
+ "id": "stormstress",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他"
+ ]
+}

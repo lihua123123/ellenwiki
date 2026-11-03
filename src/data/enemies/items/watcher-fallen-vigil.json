@@ -1,0 +1,172 @@
+{
+ "name": "守望者·堕天",
+ "nameEn": "Watcher: Fallen Vigil",
+ "subtitle": "开眼者·世界望楼之守望",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Common",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 326.01599999999996,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "本体",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "岩星",
+   "pyro": 80,
+   "hydro": 80,
+   "anemo": 80,
+   "electro": 80,
+   "dendro": 80,
+   "cryo": 80,
+   "geo": 80,
+   "physical": 80
+  },
+  {
+   "name": "深渊岩星",
+   "pyro": 140,
+   "hydro": 140,
+   "anemo": 140,
+   "electro": 140,
+   "dendro": 140,
+   "cryo": 140,
+   "geo": 140,
+   "physical": 140
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "遗世之流影",
+   "type": "突袭",
+   "icon": "skill-1.webp",
+   "description": "守望者从门中扔下长矛进入战斗，造成<c=#ffe599>20%</c>伤害，随后从门中出现。"
+  },
+  {
+   "name": "安守之斥逐",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "守望者进行2段左右划攻击，依次造成<c=#ffe599>32%,34%</c>伤害。"
+  },
+  {
+   "name": "圣临之重奏",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "守望者持矛立即进行破击，造成<c=#ffe599>41%</c>伤害，随后翻身，驾驭着长矛继续冲击，造成<c=#ffe599>47%</c>伤害。"
+  },
+  {
+   "name": "方寸之权见",
+   "type": "控制",
+   "icon": "skill-4.webp",
+   "description": "距离较远时，守望者动用空之权能，将<c=#ffffbf>玩家拉至自身面前</c><c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "苍际之鉴示",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "守望者抬起长矛，朝前方的地上猛击，造成<c=#ffe599>60%</c>伤害。"
+  },
+  {
+   "name": "贯洗之负槊",
+   "type": "远程",
+   "icon": "skill-6.webp",
+   "description": "守望者将长矛朝前方丢出，长矛经过将造成<c=#ffe599>60%</c>伤害。"
+  },
+  {
+   "name": "昂天之判谴",
+   "type": "位移",
+   "icon": "skill-7.webp",
+   "description": "距离较远时，守望者扔起长矛，纵身一跃，在玩家处落下，造成<c=#ffe599>60%</c>伤害。"
+  },
+  {
+   "name": "监摄之神筑",
+   "type": "反击",
+   "icon": "skill-8.webp",
+   "description": "守望者将长矛先转一圈，造成<c=#ffe599>40%</c>伤害，随后立即进入`监望之统摄`状态，持续5s；记录完毕后/未成功记录 将造成<c=#ffffbf>对应元素</c>/<c=#ffe599>岩元素</c>的<c=#ffbfbf>68%</c>伤害。累计施放2次后立即准备大招「现象之谵妄」。"
+  },
+  {
+   "name": "现象之谵妄",
+   "type": "爆发",
+   "icon": "skill-9.webp",
+   "description": "守望者移至场地中央，并进行蓄力，同时召唤2枚`元素星`，属性为先前两次所记录的元素，同时免疫对应元素伤害；<c=#ffdfbf>难以破坏</c>的惰性岩元素星不免疫伤害，但具有高抗；\n<c=#ffdfbf>18s</c>后，将根据场上剩余的元素星，依次造成<c=#ffffbf>对应元素</c>的<c=#ffbfbf>100%</c>伤害。破坏第<c=#ffdfbf>1</c>/<c=#ffdfbf>2</c>颗元素星将对守望者造成<c=#ffdfbf>2段3%</c>/<c=#ffdfbf>2段9%生命值</c>的<c=#ffffbf>对应元素真伤</c>(仅暴击的一段有附着)。\n深境螺旋内，若守望者召唤了<c=#ffdfbf>不同的两枚元素星</c>，则它们的生命值将大幅下降。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "监望之统摄",
+   "desc": "大招之前会施放2次，每次会分别记录火/水/雷/冰的攻击次数，首次施放时，当某一元素次数达3次时，即为记录完成，并作为元素星的属性储存；若第二次记录的元素与首次相同，则需要9次攻击才能被记录。"
+  },
+  {
+   "text": "元素星",
+   "desc": "生命值243740(4.0F)，为守望者的1/6；活性免疫对应元素伤害，惰性具有高抗；深渊内，若为异色元素星，则星星生命值降低至守望者的1/15。\n\n部分技能期间，抗打断80。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_4443",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领-尼西里塔",
+   "level": 103,
+   "hp": 1462443,
+   "atk": 20886,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "watcher-fallen-vigil",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

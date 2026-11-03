@@ -1,0 +1,83 @@
+{
+ "name": "雷萤",
+ "nameEn": "Electro Cicin",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 6.792,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 10.048000000000002,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 50,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 60,
+ "skills": [
+  {
+   "name": "暗光雷弹",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "雷萤发射雷电球，造成<c=#ffacff>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 18383,
+   "atk": 1970,
+   "weight": 60,
+   "tenacity": 20
+  }
+ ],
+ "leyline": null,
+ "id": "electro-cicin",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

@@ -1,0 +1,311 @@
+{
+ "name": "重拳出击鸭",
+ "nameEn": "Creator’s Pride",
+ "subtitle": "工坊主人的得意之作",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 366.768,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "歼灭",
+   "pyro": 80,
+   "hydro": 80,
+   "anemo": 80,
+   "electro": 80,
+   "dendro": 80,
+   "cryo": 80,
+   "geo": 80,
+   "physical": 80
+  },
+  {
+   "name": "歼灭深渊",
+   "pyro": 150,
+   "hydro": 150,
+   "anemo": 150,
+   "electro": 150,
+   "dendro": 150,
+   "cryo": 150,
+   "geo": 150,
+   "physical": 150
+  },
+  {
+   "name": "瘫痪",
+   "pyro": -50,
+   "hydro": -50,
+   "anemo": -50,
+   "electro": -50,
+   "dendro": -50,
+   "cryo": -50,
+   "geo": -50,
+   "physical": -50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "擎刃削泥",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "距离较远时，大鸭举着左手锯刃直冲过来下劈，造成<c=#ffacff>75%</c>伤害。"
+  },
+  {
+   "name": "执锤修葺",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "大鸭抄起右手大锤，用力朝前方砸下，造成<c=#ffacff>80%</c>伤害，若此时玩家处于后方，则立即自转一圈、外踢一脚，依次造成<c=#ffacff>60%,70%</c>伤害。"
+  },
+  {
+   "name": "摐地清尘",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "距离较远时，大鸭缩起自身，原地起飞并重重降落，起飞与降落分别造成<c=#ffacff>50%,80%</c>伤害，该技能也用来返回场地中央启用「歼灭模式」。"
+  },
+  {
+   "name": "拧转尘浪",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "处于其侧或后方时，大鸭利用左手锯刃自转一圈，造成<c=#ffacff>60%</c>伤害；。"
+  },
+  {
+   "name": "深度蠲洁",
+   "type": "防御",
+   "icon": "skill-5.webp",
+   "description": "启用「`歼灭模式`」！，大鸭四肢招展，召唤5只`冲鸭机关`，短时间内大鸭在高频捶地，造成<c=#ffacff>50%,40%,30%</c>伤害，q期间大鸭的全抗大幅提升，该模式持续36s。\n冲鸭机关被击败后，将反击大鸭，对其造成<c=#ffdfbf>5%</c>生命值的伤害。"
+  },
+  {
+   "name": "散拳惑眼",
+   "type": "位移",
+   "icon": "skill-6.webp",
+   "description": "歼灭技其一，大鸭朝前方持续沿直线行进，同时进行混捶散打，持续造成<c=#ffacff>40%,\n32%,24%</c>伤害。"
+  },
+  {
+   "name": "全位转碾",
+   "type": "位移",
+   "icon": "skill-7.webp",
+   "description": "歼灭技其二，大鸭朝前方持续沿直线行进，同时持续旋转，造成<c=#ffacff>30%</c>伤害，命中玩家或行至尽头时突然跃起坠落，造成<c=#ffacff>100%</c>伤害。"
+  },
+  {
+   "name": "矩力强合",
+   "type": "输出",
+   "icon": "skill-8.webp",
+   "description": "歼灭技其三，大鸭朝附近的玩家发动一次拳击，造成<c=#ffacff>90%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冲鸭机关",
+   "desc": "充能条总量100，每次受到(月)感电反应伤害积攒10，攒满后反击大鸭；在大世界中，冷静一下鸭与薇尔琪塔的攻击能够额外积攒3充能。"
+  },
+  {
+   "text": "歼灭模式",
+   "desc": "5次特化次数盾，对应5只鸭子的反击，击破可使其瘫痪15s。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [
+  {
+   "Name": "冲鸭机关",
+   "Description": "充能条总量100，每次受到(月)感电反应伤害积攒10，攒满后反击大鸭；在大世界中，冷静一下鸭与薇尔琪塔的攻击能够额外积攒3充能。",
+   "IconPath": "",
+   "MaxValue": 100,
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "充能条总量100，每次受到(月)感电反应伤害积攒10，攒满后反击大鸭；在大世界中，冷静一下鸭与薇尔琪塔的攻击能够额外积攒3充能。"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1645248,
+   "atk": 15665,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": {
+  "name": "重拳出击鸭·重甲武库",
+  "nameEn": "Kunckle Duckle: Armored Arsenal",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 1358918,
+    "atk": 11419,
+    "multiplier": 1.2,
+    "advantage": "Electro Adv."
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 6771341,
+    "atk": 14773,
+    "multiplier": 4.0,
+    "advantage": "Charged Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 13114774,
+    "atk": 16260,
+    "multiplier": 6.7,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 25925713,
+    "atk": 17417,
+    "multiplier": 12.1,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "正常",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   },
+   {
+    "name": "瘫痪",
+    "pyro": -50,
+    "hydro": -50,
+    "anemo": -50,
+    "electro": -110,
+    "dendro": -50,
+    "cryo": -50,
+    "geo": -50,
+    "physical": -50
+   },
+   {
+    "name": "破盾恢复后",
+    "diffNote": "N5",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": -50,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   },
+   {
+    "name": "小鸭",
+    "diffNote": "N4",
+    "pyro": 150,
+    "hydro": 150,
+    "anemo": 150,
+    "electro": 10,
+    "dendro": 150,
+    "cryo": 150,
+    "geo": 150,
+    "physical": 150
+   },
+   {
+    "name": "小鸭",
+    "diffNote": "N5",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   }
+  ],
+  "skills": [],
+  "notes": [
+   {
+    "text": "除尘歼灭",
+    "desc": "(N3) 入战一段时间后进入「歼灭模式」，期间将召唤5只`冲鸭机关`，持续40s；受到冲鸭机关的反撞攻击会使其损失<c=#ffdfbf>5%生命值</c>，破坏全部的冲鸭机关会令其瘫痪12s，期间抗性<c=#ffdfbf>降至-50%</c>。\n(N4) 开局秒进入「歼灭模式」，持续67s，击破后瘫痪12s。\n<c=#ffbfbf>(N5) </c>开局秒进入「歼灭模式」，持续60s，击破后瘫痪12s。冲鸭机关的反撞攻击的伤害变为<c=#ffdfbf>20%冲鸭机关所受伤害</c>。"
+   },
+   {
+    "text": "冲鸭机关",
+    "desc": "由「歼灭模式」召唤，一共5只，每只为<c=#ffdfbf>25%大鸭生命值</c>，有100感电充能条，每次受到<c=#ffacff>(月)感电反应伤害</c>积攒<c=#ffdfbf>10</c>，攒满后反撞大鸭；期间小鸭受到的<c=#ffacff>感电/月感电</c>伤害提升<c=#ffdfbf>150%</c>。\n<c=#ffbfbf>(N5) </c>感电条上限为200。"
+   },
+   {
+    "text": "其他抗性",
+    "desc": "<c=#bfffbf>(N4) </c>带甲时150%。<c=#ffbfbf>(N5) </c>带甲时210%。"
+   }
+  ],
+  "shields": []
+ },
+ "id": "creator-s-pride",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关",
+  "幽境危战"
+ ]
+}

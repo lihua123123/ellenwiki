@@ -1,0 +1,99 @@
+{
+ "name": "盗宝团·海上男儿",
+ "nameEn": "Treasure Hoarder: Seaman",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 20.096000000000004,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "归来一桨",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "海上男儿用船桨重重击一下，造成<c=#b9b9b9>120%</c>伤害。"
+  },
+  {
+   "name": "追潮赶海",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "海上男儿横拿船桨，朝玩家不断挥舞冲刺，触碰造成<c=#b9b9b9>50%</c>伤害，冲刺结束后施放强力尾棍，造成<c=#b9b9b9>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1112",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 73530,
+   "atk": 3940,
+   "weight": 100,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "treasure-hoarder-seaman",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

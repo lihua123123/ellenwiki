@@ -1,0 +1,174 @@
+{
+ "name": "寄骑武士·一心传·名刀",
+ "nameEn": "Yoriki Samurai",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 86.9376,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 15.072,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "驭刀·明尘",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "寄骑武士进行向上或向下的单次攻击，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "擒法·交横",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "寄骑武士进行挥、劈、十字斩3段攻击，每段攻击分别造成<c=#b9b9b9>87.5%,87.5%,75%x2</c>伤害。"
+  },
+  {
+   "name": "上斩·威棱",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "寄骑武士将刀举过头顶，进行连续两次的下劈攻击，两段分别造成<c=#b9b9b9>50%,100%</c>伤害，该技能为振刀版的<c=#bfffff>砻炼剑技</c>。"
+  },
+  {
+   "name": "侧斩·缎藤",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "寄骑武士侧身，拔刀进行快速上下挥刀，两段均造成<c=#b9b9b9>106.25%</c>伤害。"
+  },
+  {
+   "name": "四裁·惊神",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "寄骑武士进行左横劈、下直劈两段攻击，两段均造成<c=#b9b9b9>75%</c>伤害。"
+  },
+  {
+   "name": "跃击·形分",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "寄骑武士跳起来进行下劈，造成<c=#b9b9b9>120%</c>伤害。"
+  },
+  {
+   "name": "剑刺·击声",
+   "type": "位移",
+   "icon": "skill-7.webp",
+   "description": "寄骑武士面对玩家，侧身将剑对准玩家冲刺，造成<c=#b9b9b9>125%</c>伤害，距离较远。"
+  },
+  {
+   "name": "剑突·击魂",
+   "type": "位移",
+   "icon": "skill-8.webp",
+   "description": "寄骑武士侧身将刀入鞘，向玩家冲刺并拔刀，造成<c=#b9b9b9>150%</c>伤害，距离较近。"
+  },
+  {
+   "name": "风旋·紫刃",
+   "type": "爆发",
+   "icon": "skill-9.webp",
+   "description": "(一心传技能)寄骑武士侧身将刀入鞘，产生真空场吸引玩家，即刻挥出如万叶之一刀之<c=#ff99ff>「流风秋野」领域</c>，其不断造成<c=#ffacff>30%</c>伤害，持续5轮后消失。"
+  },
+  {
+   "name": "刚毅·锢身",
+   "type": "防护",
+   "icon": "skill-10.webp",
+   "description": "(振刀技能)寄骑武士赋予自己一层屏障效果，抗打断0，该效果在其受到盾反伤害后移除。"
+  },
+  {
+   "name": "格挡·泽锃",
+   "type": "格挡",
+   "icon": "skill-11.webp",
+   "description": "寄骑武士架剑格挡前方伤害，抗打断0.5。格挡有两种姿势：<c=#bfffed>双手持剑柄、左刃右柄</c>。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "机制",
+   "desc": "屏障状态下，物理抗性提升<c=#ffcebf>80%</c>(最高难度)/<c=#ffcebf>60%</c>(次高难度)。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1112",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 199656,
+   "atk": 5909,
+   "weight": 150,
+   "tenacity": 100
+  },
+  {
+   "label": "普通-一心传·名刀&2.6振刀",
+   "level": 90,
+   "hp": 237442,
+   "atk": 2284,
+   "weight": 120,
+   "tenacity": 100
+  },
+  {
+   "label": "普通-3.4振刀",
+   "level": 90,
+   "hp": 335989,
+   "atk": 2284,
+   "weight": 120,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "寄骑武士-一心传-名刀",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "name": "突角龙武士·破空轰动",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 59.769600000000004,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "过载腾锤",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "破空轰动使用重锤进行横、斜、砸至多3段的攻击，分别造成<c=#b8b8b8>60%,60%,\n70%+10%</c>伤害。"
+  },
+  {
+   "name": "耘除稗秕",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "破空轰动使用重锤分别在自身的左、右、前侧锤击3次：前2次造成<c=#ffacff>50%</c>伤害，第3次造成<c=#ffacff>70%</c>伤害，若被锤击命中还会造成上次伤害<c=#ffeebf>50%</c>的附加伤害。"
+  },
+  {
+   "name": "赴锋破阵",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "破空轰动导引灵力，猛地朝玩家冲来，迅速挥动2锤，造成<c=#ffacff>100%</c>伤害，多次攻击命中带有(1,0.5)的衰减。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:A_1102",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 244024,
+   "atk": 9849,
+   "weight": 100,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "突角龙武士-破空轰动",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

@@ -1,0 +1,198 @@
+{
+ "name": "半永恒统辖矩阵",
+ "nameEn": "Tomb Guard of the Desert King",
+ "subtitle": "砂原王之梦的守墓者",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 217.344,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 82.896,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "起身",
+   "pyro": 110,
+   "hydro": 110,
+   "anemo": 110,
+   "electro": 110,
+   "dendro": 110,
+   "cryo": 110,
+   "geo": 110,
+   "physical": 110
+  },
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "隐蔽",
+   "pyro": 210,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 210,
+   "dendro": 210,
+   "cryo": 210,
+   "geo": 210,
+   "physical": 210
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 200,
+ "skills": [
+  {
+   "name": "乱镜折射",
+   "type": "爆发 见面",
+   "icon": "skill-1.webp",
+   "description": "矩阵变换出数个折射镜，在领域不断发射并弹射激光，持续造成<c=#bababa>50%,25%,\n12.5%,5%</c>伤害，最后发射两束激光持续造成<c=#bababa>50%,5%</c>伤害。"
+  },
+  {
+   "name": "行锥定凿",
+   "type": "定点 D",
+   "icon": "skill-2.webp",
+   "description": "矩阵拼接锥子发射升空，然后坠落造成<c=#bababa>50%</c>伤害，2s后锥子深凿造成<c=#bababa>70%</c>伤害。"
+  },
+  {
+   "name": "力场推进",
+   "type": "碰撞 D",
+   "icon": "skill-3.webp",
+   "description": "矩阵拼接出一个力场屏障并推出，不断推开玩家，接触持续造成<c=#bababa>40%,20%,10%,4%</c>伤害。"
+  },
+  {
+   "name": "棱影光幕",
+   "type": "输出 A",
+   "icon": "skill-4.webp",
+   "description": "矩阵架起镜阵，投射12道激光，每个造成<c=#b9b9b9>50%</c>伤害。"
+  },
+  {
+   "name": "电掣流消",
+   "type": "输出 D",
+   "icon": "skill-5.webp",
+   "description": "矩阵在前方汇聚蓄力电磁激光，约4s后发射激光，造成<c=#bababa>70%</c>伤害。"
+  },
+  {
+   "name": "役锥蓦闪",
+   "type": "输出 B",
+   "icon": "skill-6.webp",
+   "description": "矩阵蓄力发射大枚锥子，约3s后丢出，造成<c=#bababa>100%</c>伤害。"
+  },
+  {
+   "name": "集束光切",
+   "type": "锁定 A/B",
+   "icon": "skill-7.webp",
+   "description": "矩阵在形成激光发射器，标记瞄准玩家，发射激光持续造成<c=#bababa>70%,35%,\n17.5%,7%</c>伤害，激光方向是从玩家左侧到右侧的一个圆弧。"
+  },
+  {
+   "name": "超频冲击",
+   "type": "爆发",
+   "icon": "skill-8.webp",
+   "description": "矩阵在累计进入隐蔽状态大于1min后，此时会同时修复6个部件，并在约10s后产生超频冲击，造成<c=#bababa>100%</c>伤害，使用<c=#ffacff>雷元素</c>命中部件会瘫痪矩阵10s。"
+  },
+  {
+   "name": "不可之视",
+   "type": "隐蔽",
+   "icon": "skill-9.webp",
+   "description": "矩阵游离出<c=#ccffbf>`一对电锯部件和激光部件(A)`</c>、或者<c=#ccffbf>`一对锥针和激光部件(B)`</c>，进入「不可视」状态，清除自身所有元素附着，所有抗性提升<c=#ffbfbf>200%</c>，持续60s。对本体使用<c=#8affc5>激化</c>反应或使用雷元素攻击`修复中部件`即可破除该状态。"
+  },
+  {
+   "name": "矩布阵棋",
+   "type": "定点 垂降部件",
+   "icon": "skill-10.webp",
+   "description": "垂降部件周期性朝玩家位置进行下落攻击，造成<c=#bababa>50%</c>伤害；两个垂降部件之间若距离较近，则产生连线，持续造成<c=#bababa>20%,10%,5%</c>伤害。"
+  },
+  {
+   "name": "百辙千旋",
+   "type": "跟踪 电锯部件",
+   "icon": "skill-11.webp",
+   "description": "电锯部件周期性朝玩家位置快速移动，持续5s，持续造成<c=#bababa>50%,25</c><c=#b8b8b8>%</c>伤害。"
+  },
+  {
+   "name": "跃闪殛光",
+   "type": "瞄准 激光部件",
+   "icon": "skill-12.webp",
+   "description": "激光部件周期性朝玩家位置发射激光，造成<c=#bababa>50%</c>伤害，有穿透性。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "垂降/激光/电锯部件",
+   "desc": "12盾量的10%生命值盾，继承矩阵生命值上限，其他属性与矩阵相同；每秒消耗0.2直至损毁。"
+  },
+  {
+   "text": "修复中的垂降/激光/电锯部件",
+   "desc": "4草盾，1次雷元素攻击即可，其他元素只反应不消耗。击破后瘫痪矩阵10s。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "垂降/激光/电锯部件",
+   "description": "12盾量的10%生命值盾，继承矩阵生命值上限，其他属性与矩阵相同；每秒消耗0.2直至损毁。",
+   "elementType": "",
+   "duration": ""
+  },
+  {
+   "name": "修复中的垂降/激光/电锯部件",
+   "description": "4草盾，1次雷元素攻击即可，其他元素只反应不消耗。击破后瘫痪矩阵10s。",
+   "elementType": "Grass",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_3302",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 974962,
+   "atk": 17231,
+   "weight": 200,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "tomb-guard-of-the-desert-king",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

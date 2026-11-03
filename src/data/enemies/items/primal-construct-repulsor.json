@@ -1,0 +1,138 @@
+{
+ "name": "元能构装体·力场发生器",
+ "nameEn": "Primal Construct: Repulsor",
+ "subtitle": "砂原王都的建造者",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 46.1856,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 45.216,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "隐蔽",
+   "pyro": 60,
+   "hydro": 60,
+   "anemo": 60,
+   "electro": 60,
+   "dendro": 60,
+   "cryo": 60,
+   "geo": 60,
+   "physical": 60
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 200,
+ "skills": [
+  {
+   "name": "考古运输",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "发生器叠加电锯部件，产生力场屏障平推出去，接触持续造成<c=#b9b9b9>30%,15%,7.5%,\n3%</c>伤害。"
+  },
+  {
+   "name": "切削抛光",
+   "type": "协同 部件S",
+   "icon": "skill-2.webp",
+   "description": "游离的电锯部件追踪玩家，接触造成<c=#b9b9b9>50%,25%</c>伤害。"
+  },
+  {
+   "name": "不可之视",
+   "type": "隐蔽",
+   "icon": "skill-3.webp",
+   "description": "发生器游离出两个`电锯部件`，自己进入隐蔽状态，驱散所有元素附着，<c=#ffbfbf>全抗性提升50%</c>，每个部件继承10%的发生器生命值，状态持续10-20s。在本体上进行<c=#99ff86>激化反应</c>或其使被<c=#4cffa5>「真识波」</c>命中，可解除该状态并使其瘫痪。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "电锯部件",
+   "desc": "12盾量的10%生命值盾，继承召唤者的生命值上限，其他属性相同；每秒消耗0.2直至损毁。"
+  },
+  {
+   "text": "修复中的电锯部件",
+   "desc": "4草盾，1次雷元素攻击即可，其他元素只反应不消耗。击破后瘫痪构装体。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "电锯部件",
+   "description": "12盾量的10%生命值盾，继承召唤者的生命值上限，其他属性相同；每秒消耗0.2直至损毁。",
+   "elementType": "",
+   "duration": ""
+  },
+  {
+   "name": "修复中的电锯部件",
+   "description": "4草盾，1次雷元素攻击即可，其他元素只反应不消耗。击破后瘫痪构装体。",
+   "elementType": "Grass",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1111",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 188564,
+   "atk": 8864,
+   "weight": 200,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "primal-construct-repulsor",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

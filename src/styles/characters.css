@@ -16,32 +16,6 @@
   gap: 0.6rem;
 }
 
-/* 图标按钮：未选中暗淡，选中点亮并发光 */
-.fbtn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 62px;
-  height: 62px;
-  padding: 0;
-  border-radius: 50%;
-  border: 1px solid transparent;
-  background: transparent;
-  cursor: pointer;
-  opacity: 0.4;
-  filter: grayscale(0.7);
-  transition: opacity 0.16s ease, filter 0.16s ease, background 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
-}
-.fbtn img { width: 38px; height: 38px; pointer-events: none; }
-.fbtn:hover { opacity: 0.85; filter: none; }
-.fbtn.active {
-  opacity: 1;
-  filter: none;
-  background: color-mix(in srgb, var(--el-color, var(--accent)) 16%, transparent);
-  border-color: color-mix(in srgb, var(--el-color, var(--accent)) 45%, transparent);
-  box-shadow: 0 0 12px color-mix(in srgb, var(--el-color, var(--accent)) 35%, transparent);
-}
-
 .icon-18 { width: 18px; height: 18px; object-fit: contain; }
 .icon-22 { width: 22px; height: 22px; object-fit: contain; }
 .icon-32 { width: 32px; height: 32px; object-fit: contain; }
@@ -66,8 +40,8 @@
 .wind-note {
   margin-bottom: 1rem;
   padding: 0.7rem 1rem;
-  background: rgba(52, 211, 153, 0.08);
-  border: 1px solid rgba(52, 211, 153, 0.3);
+  background: color-mix(in srgb, var(--el-anemo) 8%, transparent);
+  border: 1px solid color-mix(in srgb, var(--el-anemo) 30%, transparent);
   border-radius: var(--radius);
   font-size: 0.88rem;
 }
@@ -112,7 +86,7 @@
 }
 .char-avatar-wrap img {
   border-radius: 14px;
-  background: color-mix(in srgb, var(--el-color, var(--accent)) 12%, #10131a);
+  background: color-mix(in srgb, var(--el-color, var(--accent)) 12%, var(--bg-body));
 }
 .char-card:hover .char-avatar-wrap {
   transform: translateY(-3px);
@@ -122,16 +96,16 @@
 
 /* 稀有度光效：5 星金光 / 4 星紫光 */
 .char-card.r5 .char-avatar-wrap {
-  box-shadow: 0 0 14px rgba(255, 200, 87, 0.35), 0 3px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--rarity-5-text) 35%, transparent), 0 3px 12px rgba(0, 0, 0, 0.4);
 }
 .char-card.r5:hover .char-avatar-wrap {
-  box-shadow: 0 0 22px rgba(255, 200, 87, 0.55), 0 10px 26px color-mix(in srgb, var(--el-color, var(--accent)) 32%, transparent);
+  box-shadow: 0 0 22px color-mix(in srgb, var(--rarity-5-text) 55%, transparent), 0 10px 26px color-mix(in srgb, var(--el-color, var(--accent)) 32%, transparent);
 }
 .char-card.r4 .char-avatar-wrap {
-  box-shadow: 0 0 14px rgba(178, 132, 240, 0.32), 0 3px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--rarity-4-text) 32%, transparent), 0 3px 12px rgba(0, 0, 0, 0.4);
 }
 .char-card.r4:hover .char-avatar-wrap {
-  box-shadow: 0 0 22px rgba(178, 132, 240, 0.5), 0 10px 26px color-mix(in srgb, var(--el-color, var(--accent)) 32%, transparent);
+  box-shadow: 0 0 22px color-mix(in srgb, var(--rarity-4-text) 50%, transparent), 0 10px 26px color-mix(in srgb, var(--el-color, var(--accent)) 32%, transparent);
 }
 
 .char-avatar-sm {
@@ -152,8 +126,8 @@
 }
 .char-card:hover .char-name { color: var(--text-heading); }
 /* 稀有度名称配色 */
-.char-card.r5 .char-name { color: #e8c883; }
-.char-card.r4 .char-name { color: #c3a6ef; }
+.char-card.r5 .char-name { color: var(--rarity-5-text); }
+.char-card.r4 .char-name { color: var(--rarity-4-text); }
 
 .empty-hint {
   text-align: center;
@@ -264,28 +238,28 @@
 }
 
 /* 元素量颜色（弱 / 强 / 超强） */
-.element-fire-weak { color: #ff6b6b; font-weight: 600; }
-.element-fire-strong { color: #ee0000; font-weight: 600; }
-.element-fire-super { color: #c40000; font-weight: 600; }
-.element-water-weak { color: #4dabf7; font-weight: 600; }
-.element-water-strong { color: #0066cc; font-weight: 600; }
-.element-water-super { color: #004a94; font-weight: 600; }
-.element-thunder-weak { color: #b197fc; font-weight: 600; }
-.element-thunder-strong { color: #7950f2; font-weight: 600; }
-.element-thunder-super { color: #5b2bbf; font-weight: 600; }
-.element-ice-weak { color: #a5f3fc; font-weight: 600; }
-.element-ice-strong { color: #22d3ee; font-weight: 600; }
-.element-ice-super { color: #0891b2; font-weight: 600; }
-.element-wind-weak { color: #a7f3d0; font-weight: 600; }
-.element-wind-strong { color: #34d399; font-weight: 600; }
-.element-wind-super { color: #059669; font-weight: 600; }
-.element-rock-weak { color: #fde047; font-weight: 600; }
-.element-rock-strong { color: #eab308; font-weight: 600; }
-.element-rock-super { color: #a16207; font-weight: 600; }
-.element-grass-weak { color: #86efac; font-weight: 600; }
-.element-grass-medium { color: #4ade80; font-weight: 600; }
-.element-grass-strong { color: #16a34a; font-weight: 600; }
-.element-grass-super { color: #15803d; font-weight: 600; }
+.element-fire-weak { color: var(--el-pyro-soft); font-weight: 600; }
+.element-fire-strong { color: var(--el-pyro); font-weight: 600; }
+.element-fire-super { color: var(--el-pyro-wish); font-weight: 600; }
+.element-water-weak { color: var(--el-hydro-soft); font-weight: 600; }
+.element-water-strong { color: var(--el-hydro); font-weight: 600; }
+.element-water-super { color: var(--el-hydro-wish); font-weight: 600; }
+.element-thunder-weak { color: var(--el-electro-soft); font-weight: 600; }
+.element-thunder-strong { color: var(--el-electro); font-weight: 600; }
+.element-thunder-super { color: var(--el-electro-wish); font-weight: 600; }
+.element-ice-weak { color: var(--el-cryo-soft); font-weight: 600; }
+.element-ice-strong { color: var(--el-cryo); font-weight: 600; }
+.element-ice-super { color: var(--el-cryo-wish); font-weight: 600; }
+.element-wind-weak { color: var(--el-anemo-soft); font-weight: 600; }
+.element-wind-strong { color: var(--el-anemo); font-weight: 600; }
+.element-wind-super { color: var(--el-anemo-wish); font-weight: 600; }
+.element-rock-weak { color: var(--el-geo-soft); font-weight: 600; }
+.element-rock-strong { color: var(--el-geo); font-weight: 600; }
+.element-rock-super { color: var(--el-geo-wish); font-weight: 600; }
+.element-grass-weak { color: var(--el-dendro-soft); font-weight: 600; }
+.element-grass-medium { color: var(--el-dendro); font-weight: 600; }
+.element-grass-strong { color: var(--el-dendro-wish); font-weight: 600; }
+.element-grass-super { color: var(--el-dendro-wish); font-weight: 600; }
 
 /* 响应式 */
 @media (max-width: 1500px) {
@@ -309,7 +283,7 @@
 /* ===== 角色详情 · 本地资料（Snap.Hutao 式天赋卡片） ===== */
 
 .hero-rarity {
-  color: #fbbf24;
+  color: var(--rarity-5-text);
   font-size: 1rem;
   letter-spacing: 2px;
   vertical-align: middle;
@@ -360,7 +334,7 @@
   font-size: 0.75rem;
   background: var(--accent-soft);
   color: var(--accent-light);
-  border: 1px solid rgba(106, 163, 240, 0.25);
+  border: 1px solid color-mix(in srgb, var(--accent-light) 25%, transparent);
   white-space: nowrap;
 }
 
@@ -396,13 +370,13 @@
 /* 状态/术语内嵌悬停：主题色文字 + 虚线下划线，明显区别于正文 */
 .talent-term {
   color: var(--accent-light);
-  border-bottom: 1px dashed rgba(106, 163, 240, 0.55);
+  border-bottom: 1px dashed color-mix(in srgb, var(--accent-light) 55%, transparent);
   cursor: help;
   transition: color 0.15s, border-color 0.15s, background 0.15s;
 }
 
 .talent-term:hover {
-  color: #9ec4f5;
+  color: var(--accent-light);
   background: var(--accent-soft);
   border-bottom: 1px solid var(--accent-light);
   border-radius: 3px;
@@ -470,7 +444,7 @@
   transition: background 0.14s ease, color 0.14s ease;
 }
 .level-btn:hover { background: var(--accent-soft); color: var(--accent-light); }
-.level-btn:active { background: rgba(74, 137, 220, 0.25); }
+.level-btn:active { background: color-mix(in srgb, var(--accent) 25%, transparent); }
 
 .level-current {
   min-width: 3rem;
@@ -490,7 +464,7 @@
   justify-content: space-between;
   gap: 0.8rem;
   padding: 4px 0;
-  border-bottom: 1px solid rgba(127, 127, 127, 0.1);
+  border-bottom: 1px solid color-mix(in srgb, var(--text-muted) 10%, transparent);
   font-size: 0.85rem;
 }
 .level-row:last-child { border-bottom: none; }
@@ -513,7 +487,7 @@
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.05em;
-  color: #fbbf24;
+  color: var(--rarity-5-text);
   background: rgba(234, 179, 8, 0.1);
   border: 1px solid rgba(234, 179, 8, 0.3);
 }
@@ -548,7 +522,7 @@
   transition: color 0.15s ease, background 0.15s ease;
 }
 
-.constellation-tab:hover { color: var(--text-heading); background: rgba(127, 127, 127, 0.06); }
+.constellation-tab:hover { color: var(--text-heading); background: color-mix(in srgb, var(--text-muted) 6%, transparent); }
 
 .constellation-tab.active {
   color: var(--text-heading);

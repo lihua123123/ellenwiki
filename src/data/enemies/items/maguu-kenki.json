@@ -1,0 +1,191 @@
+{
+ "name": "魔偶剑鬼",
+ "nameEn": "Maguu Kenki",
+ "subtitle": "万般机巧，剑豪人形",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 271.68,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 99999,
+ "skills": [
+  {
+   "name": "居合破斩",
+   "type": "位移 破剑阶段",
+   "icon": "skill-1.webp",
+   "description": "剑鬼斜上插刀鞘，随后立即朝前突进，突进和终点处均造成<c=#bababa>60%</c>伤害。"
+  },
+  {
+   "name": "真空破斩",
+   "type": "吸引 破剑阶段",
+   "icon": "skill-2.webp",
+   "description": "剑鬼平插刀鞘，产生真空场吸引玩家，随后圆形斩击，造成<c=#bababa>100%</c>伤害。"
+  },
+  {
+   "name": "一文破字",
+   "type": "输出 破剑阶段",
+   "icon": "skill-3.webp",
+   "description": "剑鬼在近处挥刀，最多可以进行3段普攻，有两种不同的方式：横-斜-纵、纵-横-纵，每段造成<c=#bababa>50%</c>伤害"
+  },
+  {
+   "name": "枉面夹笼",
+   "type": "追踪",
+   "icon": "skill-4.webp",
+   "description": "剑鬼放开枉死之面，面具追踪玩家，随后闭合发生爆炸，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "枉面推行",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "剑鬼拼合枉死之面，随后朝前推行，造成<span class=\"anemo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "七五斩落",
+   "type": "输出 风魔阶段",
+   "icon": "skill-6.webp",
+   "description": "当生命值低于75%时，剑鬼右手持<c=#99ffe5>破风</c>，左手拿来一把<span class=\"cryo\">**碎霜**</span>，朝地用尽全力猛击，造成<span class=\"cryo\">**80%**</span>+<c=#66ffcc>80%</c>伤害，<span class=\"cryo\">**冰伤**</span>范围比<c=#66ffcc>风伤</c>大，随后进入风魔阶段。"
+  },
+  {
+   "name": "居合暴斩",
+   "type": "位移 风魔阶段",
+   "icon": "skill-7.webp",
+   "description": "剑鬼斜上插刀鞘，进行快速突进，突进和终点处均造成<span class=\"anemo\">**60%**</span>伤害，随后大概率接<span class=\"anemo\">**机巧声风**</span>技能，小概率接<span class=\"anemo\">**孤风刀势**</span>技能或<span class=\"cryo\">**霜驰刀势**</span>技能。"
+  },
+  {
+   "name": "真霜空斩",
+   "type": "妨害",
+   "icon": "skill-8.webp",
+   "description": "剑鬼平插刀鞘，产生真空场吸引玩家，随后挥刀造成<span class=\"anemo\">**100%**</span>伤害，之后在原地产生<span class=\"cryo\">**霜驰**</span>幻影，<span class=\"cryo\">**霜驰**</span>在更大范围外挥一圈造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "机巧刃锐",
+   "type": "闪避 风魔阶段",
+   "icon": "skill-9.webp",
+   "description": "剑鬼迅速瞬移，原地留下一个<span class=\"anemo\">**孤风**</span>幻影，<span class=\"anemo\">**孤风**</span>挥出一刀风刃，同时剑鬼继续劈砍3-4道风刃，风刃均造成<span class=\"anemo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "影突刃寒",
+   "type": "闪避 风魔阶段",
+   "icon": "skill-10.webp",
+   "description": "受击后，剑鬼突然后撤，原地留下一个<span class=\"cryo\">**霜驰**</span>幻影，剑鬼蓄力产生真空场吸引玩家，和<span class=\"cryo\">**霜驰**</span>同时挥出一刀，剑鬼造成<span class=\"cryo\">**100%**</span>伤害，<span class=\"cryo\">**霜驰**</span>造成<span class=\"cryo\">**60%**</span>伤害。"
+  },
+  {
+   "name": "孤风流锷",
+   "type": "协同输出 风魔阶段",
+   "icon": "skill-11.webp",
+   "description": "剑鬼在进行<c=#bfffee>纵-横-纵</c>的普通攻击时，<span class=\"anemo\">**孤风**</span>幻影会协同攻击，剑鬼造成<span class=\"anemo\">**50%**</span>伤害，<span class=\"anemo\">**孤风**</span>造成<span class=\"anemo\">**30%**</span>伤害。"
+  },
+  {
+   "name": "霜驰凝锋",
+   "type": "协同输出 风魔阶段",
+   "icon": "skill-12.webp",
+   "description": "剑鬼在进行<c=#bfeeff>横-斜-纵</c>的普通攻击时，<span class=\"cryo\">**霜驰**</span>幻影会协同攻击，剑鬼造成<span class=\"anemo\">**50%**</span>伤害，<span class=\"cryo\">**霜驰**</span>造成<span class=\"cryo\">**30%**</span>伤害。"
+  },
+  {
+   "name": "机巧声风",
+   "type": "连招 风魔阶段",
+   "icon": "skill-13.webp",
+   "description": "剑鬼迅速斜砍出一刀风刃，造成<span class=\"anemo\">**50%**</span>伤害，该技能不单放。"
+  },
+  {
+   "name": "疾风连暴",
+   "type": "输出 风魔阶段",
+   "icon": "skill-14.webp",
+   "description": "(振刀2技能)剑鬼后撤，迅速连续劈出1-5刀风刃，每个造成<span class=\"anemo\">**50%**</span>伤害，该风刃可被反击。"
+  },
+  {
+   "name": "枉面格挡",
+   "type": "被动",
+   "icon": "skill-15.webp",
+   "description": "当玩家距离剑鬼>7m时，魔偶剑鬼就会开始格挡攻击。\n<c=#bfffdf>(振刀2技能)</c>剑鬼会格挡近战攻击。"
+  },
+  {
+   "name": "挑衅嘲讽",
+   "type": "嘲讽",
+   "icon": "skill-16.webp",
+   "description": "魔偶剑鬼会不定时的握紧左拳，作出一副「你倒是打啊」的架势。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_3334",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 788299,
+   "atk": 20886,
+   "weight": 99999,
+   "tenacity": 4000
+  },
+  {
+   "label": "首领-3.4振刀",
+   "level": 90,
+   "hp": 434697,
+   "atk": 3806,
+   "weight": 99999,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "maguu-kenki",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

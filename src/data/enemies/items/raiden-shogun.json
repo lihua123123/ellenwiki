@@ -1,0 +1,125 @@
+{
+ "name": "雷电将军",
+ "nameEn": "Raiden Shogun",
+ "subtitle": "尘世七执政·雷之神",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 543.36,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 113.04,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": "IMM",
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "奔雷流电",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "雷电将军使用手上的薙刀，进行至多6段的普通攻击，每段攻击分别造成<c=#ffacff>25%,\n25%,33.3%,16.6%,16.6%,16.6%</c>伤害，最后命中产生次元斩，造成<c=#ffacff>12.5%,\n12.5%,25%</c>伤害。"
+  },
+  {
+   "name": "万雷归葬",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "雷电将军旋转薙刀，随后产生大范围的落雷，造成<c=#ffacff>66.6%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "忿怨之断",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "雷电将军旋转薙刀冲向玩家，造成<c=#ffacff>16.6%</c>伤害，随后速斩3刀，前两刀均造成<c=#ffacff>25%</c>伤害，较大的第三刀，造成<c=#ffacff>33.3%</c>伤害。"
+  },
+  {
+   "name": "三重祸眼",
+   "type": "召唤",
+   "icon": "skill-4.webp",
+   "description": "雷电将军拿薙刀，震开附近玩家，造成<c=#ffacff>16.6%</c>伤害，召唤三个`祸津之雷眼`在场地上，一段时间后同时爆炸，被1/2/3个祸眼命中时，将造成<c=#ffacff>133.3%</c>/2段<c=#ffacff>33.3%\n</c>/3段<c=#ffacff>13.3%</c>伤害，以上伤害<c=#ffbfbf>闪避帧均无效</c>。"
+  },
+  {
+   "name": "无想一槊",
+   "type": "远程",
+   "icon": "skill-5.webp",
+   "description": "雷电将军用薙刀划过，划出一道雷刃，造成<c=#ffacff>33.3%</c>伤害。"
+  },
+  {
+   "name": "震厄裁决",
+   "type": "防卫",
+   "icon": "skill-6.webp",
+   "description": "处于雷电将军身后时，雷电将军转身划薙刀，造成<c=#ffacff>50%</c>伤害，随后爆破一下，造成<c=#ffacff>50%</c>伤害。"
+  },
+  {
+   "name": "神权狩眼",
+   "type": "禁令",
+   "icon": "skill-7.webp",
+   "description": "在场上拖得足够久时，雷电将军的眼狩令的权能显现：产生雷震击飞附近玩家，造成<c=#ffacff>16.6%</c>伤害，并<c=#ffbfbf>永久禁用</c>除旅行者外的角色的<c=#ffffbf>元素战技</c>及<c=#ffffbf>元素爆发</c>。"
+  },
+  {
+   "name": "神令罚威",
+   "type": "决斗",
+   "icon": "skill-8.webp",
+   "description": "雷电将军的生命值下降至70%左右时，进行剧情杀神罚，弹开附近玩家造成<c=#ffacff>16.6%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "祸津之雷眼",
+   "desc": "7次次数盾，击破可阻止其爆炸。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领-薙刀形态-闭锁",
+   "level": 100,
+   "hp": 2218401,
+   "atk": 22160,
+   "weight": 150,
+   "tenacity": 500
+  }
+ ],
+ "leyline": null,
+ "id": "raiden-shogun",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

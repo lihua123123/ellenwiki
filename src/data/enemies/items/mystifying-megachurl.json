@@ -1,0 +1,147 @@
+{
+ "name": "神秘大丘",
+ "nameEn": "Mystifying Megachurl",
+ "subtitle": "误入秘境迷糊悟道的萨满？",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 320,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 200,
+   "hydro": 200,
+   "anemo": 200,
+   "electro": 200,
+   "dendro": 200,
+   "cryo": 200,
+   "geo": 200,
+   "physical": 200
+  },
+  {
+   "name": "摔倒",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "105",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "荡地笋突",
+   "type": "定点",
+   "icon": "skill-1.webp",
+   "description": "萨满施法，在玩家处连续生成至多3次的突震，造成<c=#b8b8b8>60%</c>伤害。"
+  },
+  {
+   "name": "萨满杖击",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "距离玩家较近时，萨满挥杖击飞玩家，造成<c=#b8b8b8>80%</c>伤害。"
+  },
+  {
+   "name": "引杖成旋",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "萨满进行大施法，场地召唤5个日落果，均造成<c=#b8b8b8>50%</c>伤害；同时萨满开始转圈圈，接触造成<c=#b8b8b8>70%,35%,7%</c>伤害。\n使用普攻击破日落果产生粘稠果汁，旋转的萨满经过可`摔倒`。"
+  },
+  {
+   "name": "引杖傩舞",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "萨满进行大施法，场地召唤5个日落果，均造成<c=#b8b8b8>50%</c>伤害；同时萨满起跳，不断朝玩家处下落，造成<c=#b8b8b8>70%</c>伤害。\n使用普攻击破日落果产生粘稠果汁，可使下落至此处的萨满`摔倒`。"
+  },
+  {
+   "name": "引杖开山",
+   "type": "妨害",
+   "icon": "skill-5.webp",
+   "description": "萨满进行`振岩杖法`，使一定数量的地砖塌陷；同时场地将随机下落以下物品：\n<c=#ceffbf>卷心菜</c>：造成<c=#b8b8b8>50%</c>伤害；\n<c=#ffffbf>黄金卷心菜</c>：造成<c=#b8b8b8>100%</c>伤害；\n<c=#ffdfbf>鱼骨</c>：造成<c=#b8b8b8>50%</c>伤害，塌陷周围地砖。\n使用普攻击回卷心菜等物品可以打断。"
+  },
+  {
+   "name": "引杖巽风",
+   "type": "协助",
+   "icon": "skill-6.webp",
+   "description": "萨满进行`霍风杖法`，在场地内召唤风场，可借其起飞；同时萨满开始持续进行下落攻击，造成<c=#b8b8b8>70%</c>伤害，范围较大，持续5次后结束。\n角色进行下落攻击可产生冲击波，此可打断萨满攻击。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "摔倒",
+   "desc": "萨满摔倒后，损失18%生命值并瘫痪10s，后续每摔倒一次损失生命值+2%。常驻抗打断0.01，翻6倍重量。"
+  },
+  {
+   "text": "振岩杖法",
+   "desc": "3次卷心菜/1个黄金卷心菜击破，击破后摔倒。"
+  },
+  {
+   "text": "霍风杖法",
+   "desc": "3次下落攻击冲击波击破，击破后摔倒。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_3334",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1435456,
+   "atk": 15590,
+   "weight": 150,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "mystifying-megachurl",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

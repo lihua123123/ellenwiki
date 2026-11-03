@@ -1,0 +1,176 @@
+{
+ "name": "冰风组曲·歌裴莉娅的葬送",
+ "nameEn": "Icewind Suite: Duality, Side A",
+ "subtitle": "冰风组曲·阴面",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 203.76,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "登场",
+   "pyro": 310,
+   "hydro": 310,
+   "anemo": 370,
+   "electro": 310,
+   "dendro": 310,
+   "cryo": 370,
+   "geo": 310,
+   "physical": 310
+  },
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 70,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 70,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "高潮",
+   "pyro": 35,
+   "hydro": 35,
+   "anemo": 95,
+   "electro": 35,
+   "dendro": 35,
+   "cryo": 95,
+   "geo": 35,
+   "physical": 35
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "冰风旋舞",
+   "type": "协同",
+   "icon": "skill-1.webp",
+   "description": "歌裴莉娅和科培琉司依次进行一次划击，均造成<c=#bfffdf>对应元素</c>的<c=#edffbf>60%</c>伤害。"
+  },
+  {
+   "name": "霜峰一现",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "科培琉司旋转魔杖在前方生成大块冰簇，造成<span class=\"cryo\">**80%**</span>伤害，随后冰簇消散。"
+  },
+  {
+   "name": "凝霜旋舞",
+   "type": "妨害",
+   "icon": "skill-3.webp",
+   "description": "科培琉司顺时针溜冰一圈，造成<span class=\"cryo\">**70%**</span>伤害，其行动轨迹留下冰块，将以逆时针顺序依次引爆，造成<span class=\"cryo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "寒苦冰棘",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "科培琉司旋转魔杖施放出若干个冰锥，每个造成<span class=\"cryo\">**75%**</span>伤害。"
+  },
+  {
+   "name": "歌裴莉娅的风之葬曲",
+   "type": "组曲",
+   "icon": "skill-5.webp",
+   "description": "歌裴莉娅和科培琉司开始进行表演，主角为歌裴莉娅，场地内形成顺时针游动的3个风之心，其不断牵引玩家造成<span class=\"anemo\">**15%**</span>伤害，其可被科培琉司的冰刃染色，染冰后造成<span class=\"anemo\">**25%**</span>+<span class=\"cryo\">**25%**</span>伤害。\n该技能分三个阶段：送别，独奏，回归，持续3个`循环`、8/3个`回合`。每回合开始时，其将获得25%全抗性加成。"
+  },
+  {
+   "name": "皙飏畛域",
+   "type": "送别",
+   "icon": "skill-6.webp",
+   "description": "歌裴莉娅将科培琉司送出，送出时将进行辞离颂舞：均进行多段划击，均造成<c=#bfffdf>对应元素</c>的<c=#ebffbf>60%,30%</c>伤害；科培琉司滑冰移走，造成2段<span class=\"cryo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "风波荒露",
+   "type": "独奏",
+   "icon": "skill-7.webp",
+   "description": "告别科培琉司后，歌裴莉娅进行一次气暴，造成<span class=\"anemo\">**90%**</span>伤害同时暴露<c=#b299ff>`荒性核心`</c>，持续至组曲结束，随后便等待科培琉司回归。"
+  },
+  {
+   "name": "寒波凌锐",
+   "type": "独奏",
+   "icon": "skill-8.webp",
+   "description": "科培琉司在场地外挥出2刀冰刃，均造成<span class=\"cryo\">**100%**</span>伤害，随后滑冰准备回归，冰刃会将其划过的风之心染色。"
+  },
+  {
+   "name": "风葬回旋",
+   "type": "回归",
+   "icon": "skill-9.webp",
+   "description": "科培琉司在场地高速滑冰，溅射的冰碎持续造成<span class=\"cryo\">**40%**</span>伤害，同时在场地中央进行旋舞，进行4段普通攻击，均造成<span class=\"anemo\">**92%**</span>伤害，最后产生2次气暴，造成<span class=\"anemo\">**90%**</span>伤害并推开玩家，可被削弱 (芒削效果：造成<span class=\"anemo\">**60%**</span>伤害且推力消失)。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "荒性核心",
+   "desc": "累计受到3次芒性攻击方可打断瘫痪组曲，每次芒性攻击方可削弱歌裴莉娅在本回合中的技能风葬回旋-气暴下的风场推力，并使其伤害倍率下降50%，移除该回合的抗性提升。"
+  },
+  {
+   "text": "回合",
+   "desc": "完整进行独奏、回归、送别三个阶段称为一个回合。"
+  },
+  {
+   "text": "循环",
+   "desc": "完整进行送别、独奏、回归三个阶段称为一个循环。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_3335",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 914027,
+   "atk": 13054,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "icewind-suite-duality-side-a",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

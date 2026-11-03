@@ -1,0 +1,96 @@
+{
+ "name": "蕈兽·帽子刀子狗子",
+ "nameEn": "Shadowhat: Blade Ninken",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 1247.0112,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 138.16,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 101,
+ "skills": [
+  {
+   "name": "忍法·呼呼刀绞",
+   "type": "控制",
+   "icon": "skill-1.webp",
+   "description": "黑影进行横、纵、旋3段攻击，横纵攻击均造成<c=#b8b8b8>20%</c>伤害，旋转造成4段<c=#b8b8b8>8%</c>伤害。"
+  },
+  {
+   "name": "忍法·嘶嘶电转",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "黑影使用嘴部咬住刀，转身放出3道雷刃造成<c=#ffacff>150%,37.5%,15%</c>伤害。"
+  },
+  {
+   "name": "忍法·呜呜换形",
+   "type": "嘲讽",
+   "icon": "skill-3.webp",
+   "description": "黑影在蕈兽处留下「替身忍犬」，然后传送开；一段时间后传送回来。「替身忍犬」引爆造成<c=#ff9999>66.6%</c>伤害。"
+  },
+  {
+   "name": "忍法·嗷嗷跳斩",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "黑影高跃，瞄准蕈兽，然后落地造成<c=#ffacff>100%</c>伤害。若命中「替身忍犬」，则自身将受到<c=#ff9999>75%</c>伤害并瘫痪一小会。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 90,
+   "hp": 2235705,
+   "atk": 20935,
+   "weight": 101,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "shadowhat-blade-ninken",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

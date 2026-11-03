@@ -1,0 +1,157 @@
+{
+ "name": "风蚀沙虫",
+ "nameEn": "Setekh Wenut",
+ "subtitle": "一万万砂砾最后的亲王",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 190.176,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 25,
+   "hydro": 25,
+   "anemo": 60,
+   "electro": 25,
+   "dendro": 25,
+   "cryo": 25,
+   "geo": 25,
+   "physical": 25
+  },
+  {
+   "name": "深渊",
+   "pyro": 55,
+   "hydro": 55,
+   "anemo": 90,
+   "electro": 55,
+   "dendro": 55,
+   "cryo": 55,
+   "geo": 55,
+   "physical": 55
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 500,
+ "skills": [
+  {
+   "name": "风沙霰弹",
+   "type": "输出 露尾",
+   "icon": "skill-1.webp",
+   "description": "风蚀沙虫使用尾部的鞘翼发射4-5枚风尘弹，每个造成<span class=\"anemo\">**50%,25%,5%**</span>伤害。"
+  },
+  {
+   "name": "扬沙起尘",
+   "type": "驱逐 露尾",
+   "icon": "skill-2.webp",
+   "description": "靠近风蚀沙虫时，其将使用尾部进行横扫攻击，范围恰好是半个圆，造成<c=#bababa>100%</c>伤害。"
+  },
+  {
+   "name": "蟒蛇出洞",
+   "type": "转换",
+   "icon": "skill-3.webp",
+   "description": "开局约25s后或生命值低于97.5%时，风蚀沙虫缓缓冒出地面，在空中划出完美的弧形后潜入地面，之后由露尾状态转为全身状态。"
+  },
+  {
+   "name": "伏沙之虫",
+   "type": "白给",
+   "icon": "skill-4.webp",
+   "description": "风蚀沙虫会不定期的从冒出地面钻入地面，行动缓慢，该技能可连续施放2-3次。"
+  },
+  {
+   "name": "低风蚀弹",
+   "type": "猛攻 全身",
+   "icon": "skill-5.webp",
+   "description": "风蚀沙虫快速钻出地面，不断从两侧气孔施放风蚀子弹，子弹有较强的追踪性，每个造成<span class=\"anemo\">**50%,25%,10%,5%**</span>伤害，可贴近沙虫躲避。"
+  },
+  {
+   "name": "破顶突钻",
+   "type": "突袭 全身",
+   "icon": "skill-6.webp",
+   "description": "风蚀沙虫使用头部突然钻出地面，造成<c=#bababa>100%</c>伤害，该技能有时候可连续施放2次。"
+  },
+  {
+   "name": "激风纵切",
+   "type": "输出 全身",
+   "icon": "skill-7.webp",
+   "description": "风蚀沙虫使用尾部鞘翼朝地面发射激光进行攻击，造成<span class=\"anemo\">**100%,25%,12.5%,1%**</span>伤害。"
+  },
+  {
+   "name": "暴风啸鸣",
+   "type": "输出 全身",
+   "icon": "skill-8.webp",
+   "description": "风蚀沙虫使用尾部鞘翼朝前方扇形区域吹大风，造成<span class=\"anemo\">**100%,25%,12.5%,1%**</span>伤害。"
+  },
+  {
+   "name": "高风蚀弹",
+   "type": "爆发 全身",
+   "icon": "skill-9.webp",
+   "description": "每70-80s，或者生命值低于<c=#ffcebf>50%</c>时，风蚀沙虫游离地面，依次产生6个风蚀弹。若未及时清除风蚀弹，风蚀沙虫将吸收所有风蚀弹，升空朝地施放大约50个风蚀弹幕，每个造成<span class=\"anemo\">**100%,50%,20%,10%**</span>伤害，并趁机钻入地面。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "风蚀弹",
+   "desc": "使用<c=#ff9999>火</c>/<c=#7fbfff>水</c>/<c=#ffacff>雷</c>/<span class=\"cryo\">**冰**</span>以破除，每破除一个将降低风蚀沙虫一次对应属性的抗性(同种属性至多一次)，连续破坏两个将瘫痪风蚀沙虫10s。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 853091,
+   "atk": 15665,
+   "weight": 500,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "setekh-wenut",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

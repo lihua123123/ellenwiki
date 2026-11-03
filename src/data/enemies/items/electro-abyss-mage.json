@@ -1,0 +1,129 @@
+{
+ "name": "雷深渊法师",
+ "nameEn": "Electro Abyss Mage",
+ "subtitle": "雷之咏者",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 47.1,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "球状闪电",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "雷法施放一个雷球，造成<c=#ffacff>60%</c>伤害。\n<c=#d24cff>强攻强化：</c>施放的雷球有弱追踪性。"
+  },
+  {
+   "name": "气雷晕嶂",
+   "type": "防御",
+   "icon": "skill-2.webp",
+   "description": "靠近施法的雷法时，雷法生成一个<c=#ffacff>8元素量</c>的`雷护罩`，<c=#ffbfbf>火元素</c>、<c=#bfffff>冰元素</c>、<c=#bfffce>草元素</c>均可快速破盾。\n<c=#d24cff>防护强化：</c>护盾盾量x2，玩家攻击护盾会被附着<c=#ffacff>雷元素</c>。"
+  },
+  {
+   "name": "缠光祭法",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "雷法施法，召唤一个雷环造成<c=#ffacff>80%</c>伤害，雷环围绕自己，持续3s，接触造成<c=#ffacff>80%</c>伤害。\n<c=#d24cff>强攻强化：</c>接触伤害提升至<c=#ffacff>100%</c>伤害，持续时间延长至6s。"
+  },
+  {
+   "name": "滚骤之仪",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "雷法施法恢复雷盾，期间不断召唤产生四方向的雷球，造成<c=#ffacff>40%</c>伤害，盾生成后施放冲击波造成<c=#ffacff>120%</c>伤害，若处在近处，则额外再受到<c=#ffacff>160%</c>伤害。"
+  },
+  {
+   "name": "霄闪",
+   "type": "位移",
+   "icon": "skill-5.webp",
+   "description": "雷法传送，出现在玩家正前方，同时造成<c=#ffacff>100%</c>伤害，近处受玩家攻击时概率传送远离玩家，盾破之后持续攻击有小概率闪现。\n<c=#d24cff>强攻强化：</c>有盾情况下，闪现完毕即产生雷环。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "雷护罩",
+   "desc": "<c=#ffacff>8雷</c>盾，击破后打断并虚弱，可伤害转化。该状态下，抗打断0，免疫风场力。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "雷护罩",
+   "description": "<c=#ffacff>8雷</c>盾，击破后打断并虚弱，可伤害转化。该状态下，抗打断0，免疫风场力。",
+   "elementType": "Electric",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:B_1113",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 73530,
+   "atk": 9233,
+   "weight": 75,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "electro-abyss-mage",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

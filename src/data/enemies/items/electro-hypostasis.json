@@ -1,0 +1,163 @@
+{
+ "name": "无相之雷",
+ "nameEn": "Electro Hypostasis",
+ "subtitle": "「阿莱夫」",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": "IMM",
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "猜拳把戏",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "无相之雷进行猜拳三连击攻击，施放石头-剪刀-布，石头和剪刀均造成<c=#ffacff>70%</c>伤害，布造成<c=#ffacff>100%</c>伤害。"
+  },
+  {
+   "name": "猜疑之拳",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "无相之雷只出石头，造成<c=#ffacff>70%</c>伤害，随后停止攻击暴露核心。"
+  },
+  {
+   "name": "雷方炫闪",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "无相之雷开阵，8个雷立方围成一圈暴露核心，依次将雷立方全部发射，每个雷立方造成<c=#ffacff>50%</c>伤害。"
+  },
+  {
+   "name": "墙封·电闪",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "无相之雷将外壳化为成两面墙，随后夹击，造成<c=#ffacff>100%</c>伤害。"
+  },
+  {
+   "name": "银索卦围",
+   "type": "控制",
+   "icon": "skill-5.webp",
+   "description": "无相之雷蜕去外壳，击飞并造成<c=#ffacff>100%</c>伤害，其将`雷柱`落下，围成牢笼困锁玩家，并在其间进行雷击，雷击造成<c=#ffacff>50%</c>伤害；雷柱之间会形成屏障，触碰屏障造成<c=#ffacff>1-10点</c>伤害。"
+  },
+  {
+   "name": "流光霆罚",
+   "type": "限制",
+   "icon": "skill-6.webp",
+   "description": "无相之雷蜕去外壳，击飞并造成<c=#ffacff>100%</c>伤害，雷立方围着无相之雷，发射4道逆时针旋转的激光，接触造成<c=#ffacff>40%</c>伤害；激光施放完毕后，无相之雷剧烈收缩造成<c=#ffacff>100%</c>伤害，并留下一个<c=#ffacff>雷元素晶球</c>。"
+  },
+  {
+   "name": "荷雷锥尖",
+   "type": "辅助",
+   "icon": "skill-7.webp",
+   "description": "无相之雷化成钻头向前突进，接触造成<c=#ffacff>50%</c>伤害，若持续接触则额外再造成<c=#ebe5d8>25%</c>伤害；技能施放完毕后会接上其他技能。"
+  },
+  {
+   "name": "雷晶潮漾",
+   "type": "输出",
+   "icon": "skill-8.webp",
+   "description": "无相之雷贴地高速旋转，在其周围持续造成<c=#ffacff>25%</c>伤害，其顺时针施放雷晶潮，触碰造成<c=#ffacff>75%</c>伤害，后暴露核心，并留下一个<c=#ffacff>雷元素晶球</c>。"
+  },
+  {
+   "name": "濒亡·光电",
+   "type": "复苏",
+   "icon": "skill-9.webp",
+   "description": "生命值低于5%时，无相之雷召唤3个`雷棱镜`，复苏持续15s，每个雷棱镜恢复无相之雷<c=#ffacff>15%</c>生命值。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "雷柱",
+   "desc": "4.4雷盾，击破可破坏附近的雷屏障。"
+  },
+  {
+   "text": "雷棱镜",
+   "desc": "3雷盾，击破产生1个雷元素晶球。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "雷柱",
+   "description": "4.4雷盾，击破可破坏附近的雷屏障。",
+   "elementType": "Electric",
+   "duration": ""
+  },
+  {
+   "name": "雷棱镜",
+   "description": "3雷盾，击破产生1个雷元素晶球。",
+   "elementType": "Electric",
+   "duration": 15
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 275905,
+   "atk": 15665,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "electro-hypostasis",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

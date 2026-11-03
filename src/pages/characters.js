@@ -14,15 +14,13 @@ import { levelSimHtml, bindLevelSim } from '../core/level-sim.js';
 import { elementLabels, elementIds, weaponTypes, characters } from '../data/characters.js';
 import { elementIcons, weaponIcons } from '../assets/icons.js';
 import { initChargeTimeline } from './charge-timeline.js';
+import { elementVariant } from '../core/palette.js';
 
-/* 本地角色资料库：content/characters/*.json（仿 Snap.Hutao Avatar/SkillDepot 模型）
- * 每个角色一份本地 JSON，构建时自动加载，按 name 与产球表匹配。 */
-const profileModules = import.meta.glob('../../content/characters/*.json', { eager: true });
-const PROFILES = {};
-for (const mod of Object.values(profileModules)) {
-  const p = mod.default || mod;
-  if (p && p.name) PROFILES[p.name] = p;
-}
+/* 角色轻量索引（列表/排序用，构建时由 scripts/gen-char-index.mjs 生成，~30KB）：
+ * { 名称: { version, rarity, title } }。完整资料改为详情页按需 fetch /api/characters/<名称>.json，
+ * 不再把 127 份角色 JSON 全打进 bundle（见 P4 优化）。 */
+import charIndexData from '../data/char-index.json';
+const CHAR_INDEX = charIndexData;
 
 /* 本地角色头像：content/characters/images/<角色名>.png */
 const avatarModules = import.meta.glob('../../content/characters/images/*.png', {
@@ -41,15 +39,15 @@ function avatarImg(name, cls = 'char-avatar') {
     : '';
 }
 
-/* 元素 id ↔ colors.json 类名 / 主题色 */
+/* 元素 id ↔ 主题色（取自 src/data/palette.json） */
 const ELEMENT_META = {
-  fire:    { color: '#ee0000', iconLabel: '火系' },
-  water:   { color: '#0066cc', iconLabel: '水系' },
-  thunder: { color: '#7950f2', iconLabel: '雷系' },
-  ice:     { color: '#22d3ee', iconLabel: '冰系' },
-  wind:    { color: '#34d399', iconLabel: '风系' },
-  rock:    { color: '#eab308', iconLabel: '岩系' },
-  grass:   { color: '#4ade80', iconLabel: '草系' },
+  fire:    { color: elementVariant('pyro', 'color'), iconLabel: '火系' },
+  water:   { color: elementVariant('hydro', 'color'), iconLabel: '水系' },
+  thunder: { color: elementVariant('electro', 'color'), iconLabel: '雷系' },
+  ice:     { color: elementVariant('cryo', 'color'), iconLabel: '冰系' },
+  wind:    { color: elementVariant('anemo', 'color'), iconLabel: '风系' },
+  rock:    { color: elementVariant('geo', 'color'), iconLabel: '岩系' },
+  grass:   { color: elementVariant('dendro', 'color'), iconLabel: '草系' },
 };
 
 const ELEMENT_AMOUNT_CLASSES = {
@@ -106,7 +104,7 @@ function talentIconHtml(item, cls = 'talent-icon') {
  * 暂无版本的排在最后 */
 const versionParts = (v) => String(v || '').split('.').map(Number);
 function versionRank(name) {
-  const v = PROFILES[name]?.version;
+  const v = CHAR_INDEX[name]?.version;
   if (!v) return [-1, -1];
   const p = versionParts(v);
   return [p[0] || 0, p[1] || 0];
@@ -116,8 +114,8 @@ const ALL_CHARACTERS = elementIds
   .sort((a, b) => {
     const [am, an] = versionRank(a.name);
     const [bm, bn] = versionRank(b.name);
-    const ar = PROFILES[a.name]?.rarity || 0;
-    const br = PROFILES[b.name]?.rarity || 0;
+    const ar = CHAR_INDEX[a.name]?.rarity || 0;
+    const br = CHAR_INDEX[b.name]?.rarity || 0;
     return (bm - am) || (bn - an) || (br - ar) || a.name.localeCompare(b.name, 'zh');
   });
 
@@ -137,7 +135,7 @@ function getAmountClass(text) {
 function getAmountStyle(text) {
   if (!text) return '';
   if (text.includes('染色') || text === '弱元素' || text.includes('弱元素')) {
-    return 'color:#a7f3d0;font-weight:600;';
+    return `color:${elementVariant('anemo', 'soft')};font-weight:600;`;
   }
   return '';
 }
@@ -158,13 +156,13 @@ function renderList(root) {
     <div class="filter-bar" id="filter-bar">
       <div class="filter-row" role="group" aria-label="按元素筛选（可多选，不选为全部）">
         ${elementIds.map(id => `
-          <button class="fbtn" data-element="${id}" title="${elementLabels[id]}" style="--el-color:${ELEMENT_META[id].color}">
+          <button class="fbtn fbtn-icon" data-element="${id}" title="${elementLabels[id]}" style="--el-color:${ELEMENT_META[id].color}">
             ${iconImg(elementIcons, ELEMENT_META[id].iconLabel)}
           </button>`).join('')}
       </div>
       <div class="filter-row" role="group" aria-label="按武器筛选（可多选，不选为全部）">
         ${weaponTypes.map(w => `
-          <button class="fbtn" data-weapon="${w}" title="${w}">
+          <button class="fbtn fbtn-icon" data-weapon="${w}" title="${w}">
             ${iconImg(weaponIcons, w)}
           </button>`).join('')}
       </div>
@@ -196,8 +194,8 @@ function renderList(root) {
 
     grid.innerHTML = list.map(c => {
       const meta = ELEMENT_META[c.element];
-      const profile = PROFILES[c.name];
-      const rarCls = profile?.rarity === 5 ? 'r5' : profile?.rarity === 4 ? 'r4' : '';
+      const rar = CHAR_INDEX[c.name]?.rarity;
+      const rarCls = rar === 5 ? 'r5' : rar === 4 ? 'r4' : '';
       const avatar = avatarImg(c.name, 'char-avatar-sm');
       return `
       <a class="char-card card hoverable ${rarCls}" href="#/characters/${encodeURIComponent(c.name)}"
@@ -741,9 +739,28 @@ function renderDetailProfile(root, char, meta, profile) {
   bindStatsSection(root, profile);
 }
 
-function renderDetail(root, char) {
+/* 角色完整资料：import.meta.glob 懒加载（与敌人图鉴同模式，纯静态可用，不依赖 /api） */
+const profileLoaders = import.meta.glob('../../content/characters/*.json');
+
+async function renderDetail(root, char) {
   const meta = ELEMENT_META[char.element];
-  const profile = PROFILES[char.name];
+  root.innerHTML = '<div class="route-loading">加载角色详情…</div>';
+  let profile = null;
+  /* ① 优先走打包内的 content/characters/<名>.json（懒加载独立 chunk） */
+  const loader = profileLoaders[`../../content/characters/${char.name}.json`];
+  if (loader) {
+    try {
+      const mod = await loader();
+      profile = mod.default || mod;
+    } catch { /* 文件损坏 → 继续尝试 API */ }
+  }
+  /* ② 兜底：/api/characters/<名>.json（build-api.mjs 产物 / wrangler dev） */
+  if (!profile) {
+    try {
+      const res = await fetch(`./api/characters/${encodeURIComponent(char.name)}.json`);
+      if (res.ok) profile = await res.json();
+    } catch { /* 网络异常 → 退化为纯文本详情 */ }
+  }
   if (profile) {
     renderDetailProfile(root, char, meta, profile);
   } else {

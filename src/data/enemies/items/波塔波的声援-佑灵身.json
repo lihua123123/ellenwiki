@@ -1,0 +1,39 @@
+{
+ "name": "波塔波的声援·佑灵身",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Common",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {
+   "Value": 264,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 125.60000000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "id": "波塔波的声援-佑灵身",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

@@ -17,7 +17,7 @@
   margin: 1.4rem 0;
   border-left: 4px solid var(--accent);
   padding: 0.9rem 1.2rem;
-  background: linear-gradient(180deg, rgba(74, 137, 220, 0.10), rgba(74, 137, 220, 0.04)), var(--bg-card);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 10%, transparent), color-mix(in srgb, var(--accent) 4%, transparent)), var(--bg-card);
   backdrop-filter: var(--glass-blur);
   border-radius: 0 10px 10px 0;
   box-shadow: var(--shadow-sm), var(--card-highlight);
@@ -59,7 +59,7 @@
   width: 4px;
   border-radius: 2px;
   background: var(--accent-gradient);
-  box-shadow: 0 0 10px rgba(74, 137, 220, 0.55);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 55%, transparent);
 }
 .section-card > h3 { margin-top: 1.2rem; }
 

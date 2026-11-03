@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "艾莲的数据库 · 整合版：伤害计算公式 / 幽境Boss图鉴 / 产球及附着，统一 UI 框架",
+  "description": "艾莲的数据库 · 整合版：伤害计算公式 / 幽境危战图鉴 / 产球及附着，统一 UI 框架",
   "scripts": {
     "dev": "npm run parse && vite",
     "build": "npm run parse && vite build && node scripts/build-api.mjs",
@@ -13,7 +13,8 @@
     "data": "node scripts/data.mjs",
     "esdata": "node scripts/esdata.mjs",
     "api": "wrangler dev --port 8787",
-    "parse": "node scripts/parse-boss.mjs && node scripts/parse-attachment.mjs",
+    "palette": "node scripts/build-palette.mjs",
+    "parse": "node scripts/build-palette.mjs && node scripts/parse-boss.mjs && node scripts/parse-attachment.mjs && node scripts/gen-char-index.mjs",
     "test:charge": "node scripts/test-charge-config.mjs",
     "index": "node scripts/generate-weapons.mjs && node scripts/generate-artifacts.mjs && node scripts/generate-game-ids.mjs",
     "refresh": "node scripts/generate-profiles.mjs && node scripts/generate-weapons.mjs --force && node scripts/generate-artifacts.mjs --force && npm run parse && node scripts/sync-character-versions.mjs && node scripts/sync-buffs.mjs",

@@ -1,0 +1,184 @@
+{
+ "name": "蕴光孤狼·狼魂",
+ "nameEn": "Boreas’s Shadow",
+ "subtitle": "无铭染血之狼灵",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Elite",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 163.00799999999998,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 30,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": "IMM",
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "坚爪涛寒",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "玻瑞亚斯使用左或右爪迅速划击，造成<span class=\"cryo\">**58.3%**</span>伤害。"
+  },
+  {
+   "name": "御阵凕风",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "玻瑞亚斯在自身位置产生霜气，随后旋转身迅速划击，造成<span class=\"cryo\">**83.3%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>，并产生一个<span class=\"cryo\">**冰元素晶球**</span>。"
+  },
+  {
+   "name": "御阵流冰",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "玻瑞亚斯在落地的位置产生寒气，随后跳跃至此，造成<span class=\"cryo\">**83.3%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>，并产生一个<span class=\"cryo\">**冰元素晶球**</span>。"
+  },
+  {
+   "name": "驰间疾袭",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "玻瑞亚斯突然朝前方进行一次疾冲，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "白草凇花",
+   "type": "妨害",
+   "icon": "skill-5.webp",
+   "description": "玻瑞亚斯抬起身子在途经上产生霜面，走在霜面上减速<c=#ffccbf>30%</c>，并附着冰元素，随后霜面开始起爆，造成<span class=\"cryo\">**41.6%**</span>伤害。"
+  },
+  {
+   "name": "凛若珠涟",
+   "type": "远程",
+   "icon": "skill-6.webp",
+   "description": "玻瑞亚斯蓄力吐出冰球，造成<span class=\"cryo\">**30%**</span>伤害。"
+  },
+  {
+   "name": "碎沙雪浪",
+   "type": "输出",
+   "icon": "skill-7.webp",
+   "description": "玻瑞亚斯抬起身子，随后扑下，产生大范围的冰冲击波，造成<span class=\"cryo\">**30%**</span>伤害。\n本技能抬身与扑下动作较「白草凇花」慢。本技能存在盲区，位于玻瑞亚斯正前方的一小块区域。"
+  },
+  {
+   "name": "陨息冻雨",
+   "type": "妨害",
+   "icon": "skill-8.webp",
+   "description": "玻瑞亚斯在原地晃动全身，凝聚空气中的水汽，不断产生冰锥下坠，造成<span class=\"cryo\">**25%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>，持续15s。"
+  },
+  {
+   "name": "雾隐遄行",
+   "type": "位移",
+   "icon": "skill-9.webp",
+   "description": "低于<c=#ffbfbf>60%生命值</c>时，玻瑞亚斯绕场地边缘跑动，跑3圈，前两圈跑完3/4圈将直接发起冲撞，最后一圈跑完起跳下落至场地中央。触碰跑动的玻瑞亚斯或遭其冲撞，将造成<span class=\"cryo\">**60%**</span>伤害；安德留斯跃入场地中央造成<span class=\"cryo\">**20%**</span>伤害。"
+  },
+  {
+   "name": "阑干冰崖",
+   "type": "试炼1",
+   "icon": "skill-10.webp",
+   "description": "玻瑞亚斯嗥叫，并召唤大中小型3个`冰平台`，玻瑞亚斯率先跃入最大的平台，造成<span class=\"cryo\">**10%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>，并附属「`坚冰`」；所有平台均出现一枚「`未熄的战火`」；周围的<c=#bfffff>空气开始变得寒冷</c>，每2s对角色造成<span class=\"cryo\">**5%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "晶凌如散",
+   "type": "远程",
+   "icon": "skill-11.webp",
+   "description": "玻瑞亚斯使用尾巴持续对玩家发射大量冰锥，共12枚，每枚造成<span class=\"cryo\">**10%**</span>伤害。"
+  },
+  {
+   "name": "千岭苍牙",
+   "type": "试炼2",
+   "icon": "skill-12.webp",
+   "description": "玻瑞亚斯召唤「`蕴光孤狼`」及其狼魂，自身消失并附属「`永冬`」，同时场地<c=#bfffff>空气变冷</c>，持续出现下落冰棱，造成<span class=\"cryo\">**20%**</span>伤害；击败孤狼后玻瑞亚斯重新出现。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冰平台",
+   "desc": "由玻瑞亚斯召唤，由低到高为小中大三个，需要使用「法尔伽」的长按战技飞上去；平台出现期间，将持续造成20%伤害。"
+  },
+  {
+   "text": "坚冰",
+   "desc": "12冻盾，可伤害转化，存在时空气极寒，击破来使玻瑞亚斯结束空气极寒，提前结束试炼，并推进到下一个试炼。"
+  },
+  {
+   "text": "永冬",
+   "desc": "40冻盾，存在时空气极寒，不可直接击破，击败「蕴光孤狼」以击破该盾。"
+  },
+  {
+   "text": "蕴光孤狼",
+   "desc": "与大世界版本类似，生命值445203(12.0F)，攻击力7613(4.0B2)；狼魂为12冻盾，也是刚需火扩散破盾。"
+  },
+  {
+   "text": "未熄的战火",
+   "desc": "试炼1后出现，接触可恢复25%生命值并重置CD，集齐3枚可使法尔伽「狂飙突进」状态下染火，持续14.5s；战火每隔9s在玩家附近出现，每枚寿命20s。\n试炼1持续约80s，在其恢复至试炼2出现之前，玻瑞亚斯锁血。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "坚冰",
+   "description": "12冻盾，可伤害转化，存在时空气极寒，击破来使玻瑞亚斯结束空气极寒，提前结束试炼，并推进到下一个试炼。",
+   "elementType": "Frozen",
+   "duration": ""
+  },
+  {
+   "name": "永冬",
+   "description": "40冻盾，存在时空气极寒，不可直接击破，击败「蕴光孤狼」以击破该盾。",
+   "elementType": "Frozen",
+   "duration": ""
+  },
+  {
+   "name": "蕴光孤狼",
+   "description": "与大世界版本类似，生命值445203(12.0F)，攻击力7613(4.0B2)；狼魂为12冻盾，也是刚需火扩散破盾。",
+   "elementType": "Frozen",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "试炼首领",
+   "level": 90,
+   "hp": 853307,
+   "atk": 10467,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "boreas-s-shadow",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

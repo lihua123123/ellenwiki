@@ -1,0 +1,133 @@
+{
+ "name": "镀金旅团·炽阳凝冰",
+ "nameEn": "Eremite: Sunfrost",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 48.9024,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 40.19200000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  },
+  {
+   "name": "虚弱",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": -50,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "錾冰双刃",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "炽阳凝冰进行右刃劈、左刃劈、十字斩3段攻击，依次造成<span class=\"cryo\">**40%,40%,50%**</span>伤害。\n<c=#10dfeb>魔化：</c>攻击伤害提升，依次造成<span class=\"cryo\">**50%,\n50%,60%**</span>伤害。"
+  },
+  {
+   "name": "镶霜逆刃",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "炽阳凝冰拼合两把刀的刀柄，形成双刃剑，进行旋转扫击，造成<span class=\"cryo\">**50%**</span>伤害。\n<c=#10dfeb>魔化：</c>攻击伤害提升，造成<span class=\"cryo\">**75%**</span>伤害。"
+  },
+  {
+   "name": "厄灵解放·冰噬",
+   "type": "强化",
+   "icon": "skill-3.webp",
+   "description": "当炽阳凝冰的<c=#ffbfbf>生命值低于70%</c>时，炽阳凝冰将武器的厄灵解放出来，<c=#bfffff>进入魔化状态</c>，该状态持续20s，状态结束后将虚弱8s。"
+  },
+  {
+   "name": "横斫冰锋",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "(魔化)炽阳凝冰拼合武器成双刃剑，水平丢出，造成<span class=\"cryo\">**35%**</span>伤害，剑刃的方向为从左至右。该技能经常会后接「纵斩冰锋」。"
+  },
+  {
+   "name": "纵斩冰锋",
+   "type": "远程",
+   "icon": "",
+   "description": "(魔化)炽阳凝冰拼合武器成双刃剑，竖直丢出，造成2段<span class=\"cryo\">**25%**</span>伤害，该技能经常施放2次。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "机制",
+   "desc": "处于魔化状态下，抗打断0，质量翻6倍。虚弱状态下抗打断0。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:B_1112",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 199656,
+   "atk": 7879,
+   "weight": 80,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "eremite-sunfrost",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

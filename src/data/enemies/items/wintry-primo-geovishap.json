@@ -1,0 +1,164 @@
+{
+ "name": "古岩龙蜥·溟冬",
+ "nameEn": "Wintry Primo Geovishap",
+ "subtitle": "圆滚滚肚皮",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 346.596,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 162.5,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "起身",
+   "pyro": 210,
+   "hydro": 270,
+   "anemo": 210,
+   "electro": 210,
+   "dendro": 210,
+   "cryo": 270,
+   "geo": 270,
+   "physical": 230
+  },
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 70,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 30
+  },
+  {
+   "name": "盾反",
+   "pyro": -40,
+   "hydro": 20,
+   "anemo": -40,
+   "electro": -40,
+   "dendro": -40,
+   "cryo": 20,
+   "geo": 20,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "106",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "爪犁寒池",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "古岩龙蜥使用右爪挥扫，造成对应元素的<c=#99e5ff>40%</c>伤害；古岩龙蜥使用左爪敲地，后拔扯，敲地和拔扯依次造成对应元素的<c=#99e5ff>35%,15%</c>伤害。"
+  },
+  {
+   "name": "步潭履冰",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "古岩龙蜥大跳移步，落地造成对应元素的<c=#99e5ff>70%</c>伤害。"
+  },
+  {
+   "name": "左右开攻",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "古岩龙蜥进行右爪扫-左爪划-双爪拍三段攻击，其依次造成对应元素的<c=#99e5ff>40%,\n50%,62.5%</c>伤害。"
+  },
+  {
+   "name": "南寒吐息",
+   "type": "妨害",
+   "icon": "skill-4.webp",
+   "description": "古岩龙蜥凝聚自身元素，朝前方扇形区域扫过，造成对应元素的<c=#99e5ff>40%,20%,10%</c>伤害。"
+  },
+  {
+   "name": "浮金飘尘",
+   "type": "防卫",
+   "icon": "skill-5.webp",
+   "description": "处于古岩龙蜥身后时，古岩龙蜥使用尾部旋扫一圈，造成<c=#ffe599>80%</c>伤害。"
+  },
+  {
+   "name": "晶鳞四处",
+   "type": "埋伏",
+   "icon": "skill-6.webp",
+   "description": "古岩龙蜥抖动全身，飞出8个对应元素的「龙鳞」，落地后绕龙蜥围成一圈，然后敲一下地板造成对应元素的<c=#99e5ff>80%</c>伤害。\n施放后可转换元素属性，顺序为<span class=\"cryo\">**冰**</span><c=#7fbfff>水</c>。"
+  },
+  {
+   "name": "原岩喷吐",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "古岩龙蜥凝聚自身元素之力，朝地面喷射，造成大范围对应元素的<c=#99e5ff>200%</c>伤害。若角色受护盾庇护则只受到对应元素的<c=#99e5ff>40%</c>伤害。\n该技能可被`盾反`。"
+  },
+  {
+   "name": "龙灵残煜",
+   "type": "天赋",
+   "icon": "skill-8.webp",
+   "description": "古岩龙蜥会依据自身属性产生「龙鳞」，不同元素的攻击方式不同：\n<c=#7fbfff>清涟</c>：朝玩家方向产生7~8次水喷，每个水喷造成<c=#7fbfff>16%</c>伤害；\n<span class=\"cryo\">**青霜**</span>：产生三波冰棘，依次造成<span class=\"cryo\">**25%,\n25%,37.5%**</span>伤害。\n「龙鳞」将在古岩龙蜥施放「原岩喷吐」或「晶鳞四处」或被某些攻击打断时立即消失。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "盾反",
+   "desc": "护盾必须能扛住该次攻击，方可触发盾反，盾反成功后古岩龙蜥虚弱6s。若盾反成功，则削减全抗性，并扣除10%生命值(异元素盾为3%)。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "盾反",
+   "description": "护盾必须能扛住该次攻击，方可触发盾反，盾反成功后古岩龙蜥虚弱6s。若盾反成功，则削减全抗性，并扣除10%生命值(异元素盾为3%)。",
+   "elementType": "",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "WP[66,33],WO[0x2]",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 2
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1554760,
+   "atk": 33778,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "wintry-primo-geovishap",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

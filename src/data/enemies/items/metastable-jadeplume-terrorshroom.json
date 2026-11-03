@@ -1,0 +1,176 @@
+{
+ "name": "亚稳态翠翎恐蕈",
+ "nameEn": "Metastable Jadeplume Terrorshroom",
+ "subtitle": "讨厌爆炎树果实",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 224.95103000000003,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 175,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 30,
+   "hydro": 30,
+   "anemo": 30,
+   "electro": 30,
+   "dendro": 80,
+   "cryo": 30,
+   "geo": 30,
+   "physical": 30
+  },
+  {
+   "name": "带盾",
+   "pyro": 70,
+   "hydro": 70,
+   "anemo": 70,
+   "electro": 70,
+   "dendro": 160,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 70
+  },
+  {
+   "name": "眩晕",
+   "pyro": 0,
+   "hydro": 0,
+   "anemo": 0,
+   "electro": 0,
+   "dendro": 50,
+   "cryo": 0,
+   "geo": 0,
+   "physical": 0
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "106",
+ "weight": 250,
+ "skills": [
+  {
+   "name": "蕈王掀尘",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "翠翎恐蕈进行左划、啄地至多2段的普通攻击，左划与啄地依次造成<c=#99ff86>75%,85%</c>伤害。"
+  },
+  {
+   "name": "不羁之行",
+   "type": "猛攻",
+   "icon": "skill-2.webp",
+   "description": "翠翎恐蕈尖叫，后疯狂向玩家冲来，触碰依次造成<c=#99ff85>100%</c>伤害，来回撞击2次，全程<c=#bfffbf>自身附着草</c>。"
+  },
+  {
+   "name": "尾羽飞扇",
+   "type": "追踪",
+   "icon": "skill-3.webp",
+   "description": "翠翎恐蕈进行左扫、右扫、翻扫至多3段的攻击，每一扫都扔出5个孢弹，且均<c=#bfffbf>自身附着草</c>，每个孢弹造成<c=#99ff86>30%,15%,\n3%</c>伤害。"
+  },
+  {
+   "name": "孢羽囊扇",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "激化状态下，翠翎恐蕈猛地朝玩家进行2次大跳，每次造成<c=#99ff85>100%</c>伤害，落地后即施放巨量孢子，孢子弱追踪玩家，每个孢子造成<c=#99ff85>30%,15%,3%,0.3%</c>伤害，技能结束眩晕16s。"
+  },
+  {
+   "name": "真稳孢云",
+   "type": "猛攻",
+   "icon": "skill-5.webp",
+   "description": "枯焦状态下，翠翎恐蕈产生菌雾，在地面蔓延毒素，持续造成<c=#99ff86>6%</c>伤害；此后翠翎恐蕈向空中吟叫3次后引爆，造成<c=#99ff86>100%</c>伤害，并向外产生2道扩散震波，也造成<c=#99ff86>100%</c>伤害。"
+  },
+  {
+   "name": "蕈王狂舞",
+   "type": "猛攻",
+   "icon": "skill-6.webp",
+   "description": "翠翎恐蕈尖叫，后在原地疯狂进行挑动3次，造成<c=#99ff85>90%,45%</c>伤害，然后进行1次大跳，造成<c=#99ff85>100%</c>伤害，全程<c=#bfffbf>自身附着草</c>，该过程重复2遍。"
+  },
+  {
+   "name": "孢棋弹布",
+   "type": "妨害",
+   "icon": "skill-7.webp",
+   "description": "翠翎恐蕈发射5个孢子，落地造成<c=#99ff85>30%</c>伤害，全程<c=#bfffbf>自身附着草</c>。每个孢子可主动引爆，爆炸对角色及翠翎恐蕈均造成<c=#99ff85>50%</c>伤害；孢子外观为草爆爆瓜，自身会随机引爆。"
+  },
+  {
+   "name": "护蕈之森",
+   "type": "防御",
+   "icon": "skill-8.webp",
+   "description": "翠翎恐蕈初始附属`蕈王之御`，并获得小幅抗性提升。`蕈王之御`将在翠翎恐蕈眩晕恢复后，或从枯焦状态恢复后再次出现。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "怒气",
+   "desc": "<c=#99ff85>100草</c>充能盾，受到雷元素攻击<c=#99ff85>+2</c>/次，触发任意激化<c=#99ff85>+15</c>/次，受到火元素攻击<c=#99ff85>-100</c>/次并直接枯焦。\n蕈王之御；<c=#99ff85>10草</c>盾，击破后移除抗性提升，与怒气结算互相独立；怒气值满后，进入活化状态，该护盾将直接移除。眩晕后恢复护盾。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "怒气",
+   "description": "<c=#99ff85>100草</c>充能盾，受到雷元素攻击<c=#99ff85>+2</c>/次，触发任意激化<c=#99ff85>+15</c>/次，受到火元素攻击<c=#99ff85>-100</c>/次并直接枯焦。\n蕈王之御；<c=#99ff85>10草</c>盾，击破后移除抗性提升，与怒气结算互相独立；怒气值满后，进入活化状态，该护盾将直接移除。眩晕后恢复护盾。",
+   "elementType": "Grass",
+   "duration": ""
+  }
+ ],
+ "chargebar": [
+  {
+   "Name": "怒气",
+   "Description": "<color=#99ff85>100草</color>充能盾，受到雷元素攻击<color=#99ff85>+2</color>/次，触发任意激化<color=#99ff85>+15</color>/次，受到火元素攻击<color=#99ff85>-100</color>/次并直接枯焦。\n蕈王之御；<color=#99ff85>10草</color>盾，击破后移除抗性提升，与怒气结算互相独立；怒气值满后，进入活化状态，该护盾将直接移除。眩晕后恢复护盾。",
+   "IconPath": "",
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "100草充能盾，受到雷元素攻击+2/次，触发任意激化+15/次，受到火元素攻击-100/次并直接枯焦。\n蕈王之御；10草盾，击破后移除抗性提升，与怒气结算互相独立；怒气值满后，进入活化状态，该护盾将直接移除。眩晕后恢复护盾。"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:A_3304",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1009085,
+   "atk": 36376,
+   "weight": 250,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "metastable-jadeplume-terrorshroom",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

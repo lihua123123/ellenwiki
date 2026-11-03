@@ -10,7 +10,7 @@
  *   GET /api/weapons    /weapons/<名称>          weapons 列表 / 详情
  *   GET /api/artifacts  /artifacts/<名称>        artifacts 列表 / 详情
  *   GET /api/attachment          元素附着及产球（解析后）
- *   GET /api/bosses              幽境 Boss
+ *   GET /api/bosses              幽境危战
  *   GET /api/formulas   /formulas/<game>         伤害公式（Markdown 原文）
  *   均带 CORS 与缓存头；文件不存在返回 JSON 404。
  *
@@ -51,7 +51,7 @@ const HINTS = {
  *   /api/attachment|bosses     → /api/<单文件>.json
  * 完全开放（无鉴权），带 CORS 与缓存头；文件不存在时返回 JSON 404（而不是 SPA 的 index.html）。
  */
-const SINGLETONS = new Set(['attachment', 'bosses']);
+const SINGLETONS = new Set(['attachment', 'bosses', 'palette']);
 
 function mapDataPath(pathname) {
   const p = pathname.replace(/\/+$/, '') || '/';
@@ -141,6 +141,15 @@ export default {
       return serveData(target, url, env, origin);
     }
 
-    return env.ASSETS.fetch(request);
+    const res = await env.ASSETS.fetch(request);
+    const headers = new Headers(res.headers);
+    if (url.pathname.startsWith('/assets/')) {
+      // 文件名带 hash，内容不可变 → 可长缓存，提升回访速度、降边缘回源
+      headers.set('Cache-Control', 'public, max-age=31536000, immutable');
+    } else if (url.pathname === '/' || url.pathname.endsWith('.html')) {
+      // SPA 入口：短缓存，保证发版后及时生效
+      headers.set('Cache-Control', 'public, max-age=300, must-revalidate');
+    }
+    return new Response(res.body, { status: res.status, headers });
   },
 };

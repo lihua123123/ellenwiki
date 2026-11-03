@@ -1,0 +1,73 @@
+{
+ "name": "愚人众特辖队·线列兵",
+ "nameEn": "Oprichniki Line Trooper",
+ "subtitle": "",
+ "category": "Tps",
+ "categoryLabel": "第三人称射击（TPS）",
+ "tier": "",
+ "defaultLevel": 20,
+ "baseStats": {
+  "hp": {
+   "Value": 5.490258,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 45.058295,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "瞄准射击",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "线列兵开枪，造成<c=#b8b8b8>22%</c>伤害。"
+  },
+  {
+   "name": "火穴爆破",
+   "type": "妨害",
+   "icon": "skill-2.webp",
+   "description": "停止攻击，蓄力<c=#ffdfbf>3s</c>后发射手雷，造成<c=#ff9999>70%</c>伤害。蓄力可被打断，手雷掉落地面对自己造成<c=#ff9999>70%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [
+  {
+   "label": "TPS射击",
+   "level": 20,
+   "hp": 344,
+   "atk": 600,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "oprichniki-line-trooper",
+ "icon": "avatar.webp",
+ "tags": [
+  "第三人称射击（TPS）"
+ ]
+}

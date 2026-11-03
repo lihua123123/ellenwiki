@@ -1,0 +1,136 @@
+{
+ "name": "愚人众·债务处理人",
+ "nameEn": "Fatui Pyro Agent",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 67.92,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 50,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "祭刀之炎",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "债务人使用祭刀进行冲刺上划攻击，造成<c=#ff9999>75%</c>伤害。"
+  },
+  {
+   "name": "穿刺之影",
+   "type": "强攻",
+   "icon": "skill-2.webp",
+   "description": "隐蔽状态下的债务人进行一次穿刺攻击，造成<c=#ff9999>75%</c>伤害，并在冲刺起点放置一个`幻影`。"
+  },
+  {
+   "name": "脱附之炎",
+   "type": "召唤",
+   "icon": "skill-3.webp",
+   "description": "隐蔽状态下的债务人旋转祭刀，扔出一个`幻影`，造成<c=#ff9999>75%</c>伤害。"
+  },
+  {
+   "name": "焚毁之锋",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "隐蔽状态下的债务人累计施放<c=#ffeebf>6个</c><c=#ffeebf>`幻影`</c>之后，尚存的幻影围一圈，债务人从每个幻影的位置依次冲向玩家，每次造成<c=#ff9999>50%</c>伤害，冲刺结束后从天而降下落，造成<c=#ff9999>85%</c>伤害，之后退出隐蔽状态。"
+  },
+  {
+   "name": "尖刃之旋",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "债务人使用祭刀进行旋转攻击，造成<c=#b9b9b9>60%</c>伤害。"
+  },
+  {
+   "name": "炎影之袭",
+   "type": "协同",
+   "icon": "skill-6.webp",
+   "description": "仅限强攻强化：\n债务人放置的幻影会周期性同时进行旋劈攻击，造成<c=#b9b9b9>60%</c>伤害。"
+  },
+  {
+   "name": "燃焰残影",
+   "type": "转换",
+   "icon": "skill-7.webp",
+   "description": "债务人旋转祭刀，在身边召唤3个旋火轮，接触造成<c=#ff9999>25%</c>伤害，并<c=#ffffbf>进入隐蔽状态</c>，该状态下会被元素附着勾画出轮廓，抗打断1.5，击飞可退出该状态。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "幻影",
+   "desc": "<c=#ff9999>1火</c>盾，受击2次或被反应后损毁。强攻强化下，幻影会进行协同攻击。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "幻影",
+   "description": "<c=#ff9999>1火</c>盾，受击2次或被反应后损毁。强攻强化下，幻影会进行协同攻击。",
+   "elementType": "Fire",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_3303",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 183826,
+   "atk": 19698,
+   "weight": 80,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "fatui-pyro-agent",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

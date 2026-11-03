@@ -1,0 +1,151 @@
+{
+ "name": "转转悠悠兽",
+ "nameEn": "Twirly-Whirly",
+ "subtitle": "",
+ "category": "Others",
+ "categoryLabel": "其他",
+ "tier": "Common",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 24.4512,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 54.25920000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 20,
+   "electro": 10,
+   "dendro": 20,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "烈风射弹",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "浮游风蕈兽发射1个风弹，造成<span class=\"anemo\">**108%**</span>伤害。"
+  },
+  {
+   "name": "锐气龙卷",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "浮游风蕈兽发射1个大风弹，造成<span class=\"anemo\">**210%**</span>伤害，并有轻微的聚怪效果。"
+  },
+  {
+   "name": "刀刃风涡",
+   "type": "战技",
+   "icon": "skill-3.webp",
+   "description": "浮游风蕈兽生成一个风刃漩涡，持续牵引敌人，结束后漩涡爆发，造成<span class=\"anemo\">**962%**</span>伤害。"
+  },
+  {
+   "name": "烈风攒射",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "浮游风蕈兽发射1个风弹，造成<span class=\"anemo\">**300%**</span>伤害。"
+  },
+  {
+   "name": "侵蚀之风",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "浮游风蕈兽触发对应元素的扩散反应后，将<c=#ccffbf>降低该防御塔40%的对应元素抗性</c>。"
+  },
+  {
+   "name": "切斩龙卷",
+   "type": "战技",
+   "icon": "skill-6.webp",
+   "description": "浮游风蕈兽在目标处生成风涡，持续造成<span class=\"anemo\">**375%**</span>伤害。"
+  },
+  {
+   "name": "烈风射弹",
+   "type": "远程",
+   "icon": "skill-7.webp",
+   "description": "浮游风蕈兽发射1个风弹，造成<span class=\"anemo\">**250%**</span>伤害。"
+  },
+  {
+   "name": "侵蚀之风",
+   "type": "天赋",
+   "icon": "skill-8.webp",
+   "description": "浮游风蕈兽触发对应元素的扩散反应后，将<c=#ccffbf>降低该防御塔30%的对应元素抗性</c>。"
+  },
+  {
+   "name": "龙卷斩切",
+   "type": "战技",
+   "icon": "skill-9.webp",
+   "description": "浮游风蕈兽在目标处生成风涡，持续牵引敌人并持续造成<span class=\"anemo\">**600%**</span>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "3.5 灵蕈棋阵",
+   "desc": "150元素精通。"
+  },
+  {
+   "text": "4.2 小小灵蕈大幻戏",
+   "desc": "100元素精通，剧变反应系数1.5。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "友方-3.2智巧灵蕈",
+   "level": 90
+  },
+  {
+   "label": "普通敌方-3.2智巧灵蕈",
+   "level": 90,
+   "hp": 44520,
+   "atk": 6577,
+   "weight": 75,
+   "tenacity": 600
+  },
+  {
+   "label": "友方-3.5塔防灵蕈",
+   "level": 90
+  },
+  {
+   "label": "友方-4.2幻戏灵蕈",
+   "level": 90,
+   "hp": 77911,
+   "atk": 8222,
+   "weight": 75,
+   "tenacity": 600
+  }
+ ],
+ "leyline": null,
+ "id": "twirly-whirly",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他"
+ ]
+}

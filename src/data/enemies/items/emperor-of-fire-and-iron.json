@@ -1,0 +1,295 @@
+{
+ "name": "铁甲熔火帝皇",
+ "nameEn": "Emperor of Fire and Iron",
+ "subtitle": "山峦之下鼓动的热潮",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 163.00799999999998,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 113.04,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 60,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "带甲",
+   "pyro": 120,
+   "hydro": 70,
+   "anemo": 70,
+   "electro": 70,
+   "dendro": 70,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 70
+  },
+  {
+   "name": "深渊带甲",
+   "pyro": 140,
+   "hydro": 90,
+   "anemo": 90,
+   "electro": 90,
+   "dendro": 90,
+   "cryo": 90,
+   "geo": 90,
+   "physical": 90
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "岩蝎突啄",
+   "type": "突袭 灼燃",
+   "icon": "",
+   "description": "开局入战时，熔火蟹钻出地面立即使用白色左爪突然敲击，造成<c=#bababa>50%</c>伤害。本技能仅开局入战施放。"
+  },
+  {
+   "name": "重蟹壳击",
+   "type": "控制 灼燃",
+   "icon": "skill-2.webp",
+   "description": "熔火蟹蓄力起跳，重重下落造成<c=#bababa>80%</c>伤害，起跳的距离有限。"
+  },
+  {
+   "name": "熔火蜚溅",
+   "type": "妨害 灼燃",
+   "icon": "skill-3.webp",
+   "description": "熔火蟹下降高度，利用头顶的熔岩喷口，发射1-3批的大规模熔岩溅射，命中造成<c=#ff9999>50%,25%,12.5%,5%</c>伤害，留下热烬，持续造成<c=#ff9999>6%</c>伤害。"
+  },
+  {
+   "name": "烈焰加冕",
+   "type": "爆发 灼燃",
+   "icon": "skill-4.webp",
+   "description": "熔火蟹逃离，移至场地中央，下降高度，埋住半身，蓄力点火产生大爆炸，造成<c=#ff9999>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "赤染焰拳",
+   "type": "输出 灼燃",
+   "icon": "skill-5.webp",
+   "description": "熔火蟹喷出熔岩染到白色左爪，敲地产生火灼崩破，命中造成<c=#ff9999>70%,7%</c>伤害，并在途经上留下热烬。"
+  },
+  {
+   "name": "白热钳崩",
+   "type": "控制 冷熄",
+   "icon": "skill-6.webp",
+   "description": "熔火蟹使用白色左爪进行敲击，造成<c=#bababa>60%</c>伤害。"
+  },
+  {
+   "name": "黑烬爪挠",
+   "type": "控制 冷熄",
+   "icon": "skill-7.webp",
+   "description": "熔火蟹使用黑色右爪划击，造成<c=#bababa>50%</c>伤害，该技能会表现出受击多次，但只有一次伤害。"
+  },
+  {
+   "name": "炽沙再熔",
+   "type": "复燃 冷熄",
+   "icon": "skill-8.webp",
+   "description": "陷入熄灭状态约<c=#ffedbf>30s/20s(深境螺旋)</c>后，熔火蟹钻入沙地，再次冒出时即重新形成`熔火双角`，其周围有部分白色的硬灰甲围绕，阻挡较低处的攻击。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "熔火双角",
+   "desc": "<c=#ff9999>16火</c>盾，存在时抗性获得提升，击破使其进入熄灭状态；免疫扩散附着，(深境螺旋)额外获得<c=#ffbfbf>33%</c>攻击力提升。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "熔火双角",
+   "description": "<c=#ff9999>16火</c>盾，存在时抗性获得提升，击破使其进入熄灭状态；免疫扩散附着，(深境螺旋)额外获得<c=#ffbfbf>33%</c>攻击力提升。",
+   "elementType": "Fire",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 731221,
+   "atk": 23497,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": {
+  "name": "铁甲熔火帝皇·敕命远征",
+  "nameEn": "Emperor of Fire and Iron: Ordained Conquest",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 781267,
+    "atk": 13322,
+    "multiplier": 1.2,
+    "advantage": ""
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 3892968,
+    "atk": 17235,
+    "multiplier": 4.0,
+    "advantage": "Hydro Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 8552750,
+    "atk": 18971,
+    "multiplier": 7.6,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 14042885,
+    "atk": 20319,
+    "multiplier": 11.4,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "正常",
+    "pyro": 60,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   },
+   {
+    "name": "带甲",
+    "diffNote": "N5",
+    "pyro": 210,
+    "hydro": 160,
+    "anemo": 160,
+    "electro": 160,
+    "dendro": 160,
+    "cryo": 160,
+    "geo": 160,
+    "physical": 160
+   },
+   {
+    "name": "带甲",
+    "diffNote": "N4",
+    "pyro": 140,
+    "hydro": 90,
+    "anemo": 90,
+    "electro": 90,
+    "dendro": 90,
+    "cryo": 90,
+    "geo": 90,
+    "physical": 90
+   },
+   {
+    "name": "带甲",
+    "diffNote": "N3",
+    "pyro": 120,
+    "hydro": 70,
+    "anemo": 70,
+    "electro": 70,
+    "dendro": 70,
+    "cryo": 70,
+    "geo": 70,
+    "physical": 70
+   }
+  ],
+  "skills": [
+   {
+    "name": "征王召嗣",
+    "type": "召唤 (N5)",
+    "icon": "leyline-skill-1.webp",
+    "description": "场地内将出现至多3只特殊的「坚盾重甲蟹」，该重甲蟹在<c=#ffbfbf>火护罩</c>破坏后立即失控撞向帝皇，造成自身所受伤害的的一定比例真伤并小幅破坏帝皇的「熔火双角」。"
+   }
+  ],
+  "notes": [
+   {
+    "text": "熔火双角",
+    "desc": "帝王头上的双角，<c=#ffbfbf>64火</c>盾，免疫扩散带来的攻击，破坏后20s开始挖地，随后恢复双角；\n<c=#ffbfbf>(N5) </c>破坏时，损失<c=#ffbfbf>10%生命值</c>，12s后恢复双角。\n<c=#bfffbf>(N4) </c>熔火双角存在时<c=#ffbfbf>+33%攻击力</c>。"
+   },
+   {
+    "text": "(N5) 坚盾重甲蟹",
+    "desc": "帝王场地内不断刷新的特殊「坚盾重甲蟹」，数量维持在3只，其上的元素护甲拥有<c=#ffbfbf>12火</c>盾，护罩破坏后失控撞向帝王，造成真实伤害并<c=#ffdfbf>破坏等量的熔火双角</c>，随后自杀；真实伤害的值由存活期间的<c=#ffdfbf>60%水伤+10%非水伤</c>构成，上限不超过帝王的15%生命值。"
+   }
+  ],
+  "shields": [
+   {
+    "name": "熔火双角",
+    "description": "帝王头上的双角，<c=#ffbfbf>64火</c>盾，免疫扩散带来的攻击，破坏后20s开始挖地，随后恢复双角；\n<c=#ffbfbf>(N5) </c>破坏时，损失<c=#ffbfbf>10%生命值</c>，12s后恢复双角。\n<c=#bfffbf>(N4) </c>熔火双角存在时<c=#ffbfbf>+33%攻击力</c>。",
+    "elementType": "Fire",
+    "duration": 12
+   },
+   {
+    "name": "(N5) 坚盾重甲蟹",
+    "description": "帝王场地内不断刷新的特殊「坚盾重甲蟹」，数量维持在3只，其上的元素护甲拥有<c=#ffbfbf>12火</c>盾，护罩破坏后失控撞向帝王，造成真实伤害并<c=#ffdfbf>破坏等量的熔火双角</c>，随后自杀；真实伤害的值由存活期间的<c=#ffdfbf>60%水伤+10%非水伤</c>构成，上限不超过帝王的15%生命值。",
+    "elementType": "Fire",
+    "duration": ""
+   }
+  ]
+ },
+ "id": "emperor-of-fire-and-iron",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽",
+  "幽境危战"
+ ]
+}

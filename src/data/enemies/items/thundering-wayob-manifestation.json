@@ -1,0 +1,127 @@
+{
+ "name": "雳震·大灵显化身",
+ "nameEn": "Thundering Wayob Manifestation",
+ "subtitle": "夜晚与游灵的代行",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 57.775999999999996,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 50,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "疾索流尘",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "雳震化身飞快使用自身翼片旋转，造成<c=#b8b8b8>20%x3</c>伤害，并在攻击范围边缘产生8道落雷，均造成<c=#ffacff>30%</c>伤害。"
+  },
+  {
+   "name": "谴戒荒雷",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "雳震化身甩下3道线性落雷，呈扇形分布，落雷造成<c=#ffacff>30%,15%,7.5%</c>伤害。"
+  },
+  {
+   "name": "净罪囚霆",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "雳震化身在身边唤出5枚闪雷球，并慢慢旋转，触碰持续造成<c=#ffacff>10%,5%,2.5%,1%</c>伤害，最终闪雷球被引爆，造成<c=#ffacff>70%</c>伤害。"
+  },
+  {
+   "name": "紫阱天囿",
+   "type": "强化",
+   "icon": "skill-4.webp",
+   "description": "雳震化身即刻展开`试炼领域`，并获得`白护盾`，从领域内不断产生向外的互相垂直的4道万钧之箔，造成<c=#ffacff>50%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，重复3回，最后收回领域并产生鸣震之斥，造成<c=#ffacff>100%</c>伤害，所剩的护盾将转为等量`沃陆之灵御`。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "试炼领域",
+   "desc": "雳震化身展开的特殊领域，此领域内玩家造成的伤害提升120%，其内的角色造成的夜魂伤害则额外提升60%，但会不断流失元素能量(不影响特殊能量)。"
+  },
+  {
+   "text": "白护盾",
+   "desc": "111.4%生命值盾，击破后返还90元素能量(不含特殊能量)，并瘫痪雳震化身5s。"
+  },
+  {
+   "text": "沃陆之灵御",
+   "desc": "24雷盾，击破后可瘫痪雳震化身5s。一般由等量的白护盾转化而来。\n\n重复获得白护盾会使其衰减，其序列为111.4%/73.52%/\n36.76%；具体的计算公式见「窟岩·大灵显化身」。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "白护盾",
+   "description": "111.4%生命值盾，击破后返还90元素能量(不含特殊能量)，并瘫痪雳震化身5s。",
+   "elementType": "",
+   "duration": ""
+  },
+  {
+   "name": "沃陆之灵御",
+   "description": "24雷盾，击破后可瘫痪雳震化身5s。一般由等量的白护盾转化而来。\n\n重复获得白护盾会使其衰减，其序列为111.4%/73.52%/\n36.76%；具体的计算公式见「窟岩·大灵显化身」。",
+   "elementType": "Electric",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:C_1002",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 388220,
+   "atk": 11326,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "thundering-wayob-manifestation",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

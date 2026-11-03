@@ -1,0 +1,100 @@
+{
+ "name": "膨膨兽·陆地·小",
+ "nameEn": "Puffbeast",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 10.59552,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 45,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "声波鼓动",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "膨膨兽连续发射3个音波，均造成<c=#bababa>100%</c>伤害。"
+  },
+  {
+   "name": "尾落鳍悬",
+   "type": "防卫",
+   "icon": "",
+   "description": "(摆烂的膨膨兽)攻击膨膨兽时，膨膨兽抬起尾部拍打地面，造成<c=#b9b9b9>50%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:E_0001",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通-大型-陆地",
+   "level": 100
+  },
+  {
+   "label": "普通-大型-水下",
+   "level": 100
+  },
+  {
+   "label": "普通-小型-水下",
+   "level": 100,
+   "hp": 32628,
+   "atk": 8822,
+   "weight": 300,
+   "tenacity": 20
+  },
+  {
+   "label": "普通-小型-陆地",
+   "level": 100,
+   "hp": 43259,
+   "atk": 6818,
+   "weight": 300,
+   "tenacity": 20
+  }
+ ],
+ "leyline": null,
+ "id": "膨膨兽-陆地-小",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

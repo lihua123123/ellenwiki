@@ -1,0 +1,90 @@
+{
+ "name": "浮游草蕈兽·恐蕈召唤",
+ "nameEn": "Floating Dendro Fungus",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 22.608,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 25,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "团草菌雾",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "浮游草蕈兽发射一个草球，造成<c=#99ff87>60%</c>伤害。\n<c=#ff99ff>活化：</c>连续发射3个草球；\n<c=#ff9672>枯焦：</c>发射一个草弹，造成<c=#99ff87>100%</c>伤害。"
+  },
+  {
+   "name": "蕈帽顶击",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "浮游草蕈兽后倾，朝着玩家撞来，造成<c=#b8b8b8>30%</c>伤害。\n<c=#ff99ff>活化：</c>速度提升；\n<c=#ff9672>枯焦：</c>撞击伤害提升至<c=#b8b8b8>60%</c>。"
+  },
+  {
+   "name": "三相之形",
+   "type": "天赋",
+   "icon": "skill-3.webp",
+   "description": "浮游草蕈兽受到<c=#ff9999>火元素</c>/<c=#ffacff>雷元素</c>攻击后，会分别永久转变为<c=#ff9672>枯焦</c>/<c=#ff99ff>活化</c>状态。\n<c=#ff99ff>活化：</c>CD缩短，移速提升150%；\n<c=#ff9672>枯焦：</c>CD延长，移速下降50%。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:E_0001",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 55460,
+   "atk": 4432,
+   "weight": 75,
+   "tenacity": 20
+  }
+ ],
+ "leyline": null,
+ "id": "浮游草蕈兽-恐蕈召唤",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

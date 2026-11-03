@@ -1,0 +1,173 @@
+{
+ "name": "望乡的孤狼",
+ "nameEn": "The Homesick Lone Wolf",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1127.472,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 50,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "入战&返魂",
+   "pyro": 110,
+   "hydro": 110,
+   "anemo": 160,
+   "electro": 110,
+   "dendro": 110,
+   "cryo": 110,
+   "geo": 110,
+   "physical": 110
+  },
+  {
+   "name": "瘫痪",
+   "pyro": -60,
+   "hydro": -60,
+   "anemo": -20,
+   "electro": -60,
+   "dendro": -60,
+   "cryo": -60,
+   "geo": -60,
+   "physical": -60
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "青牙嚼啮",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "孤狼对玩家进行至多抓，咬，咬3段攻击，依次造成<span class=\"anemo\">**50%,40%,70%**</span>伤害，可单独施放。"
+  },
+  {
+   "name": "山松飞猎",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "孤狼迅速高跳至玩家处，并踉跄一下，造成<span class=\"anemo\">**100%**</span>伤害。召唤狼魂之前返回场地中央时立即施放。"
+  },
+  {
+   "name": "愁狼风冽",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "孤狼朝前方猛地喷吐狂风，造成造成<span class=\"anemo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "摧驰号灭",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "孤狼朝玩家凶猛袭来，并用力切割两次，每次造成<span class=\"anemo\">**70%**</span>伤害，可连续施放2次。无蕴光效果。"
+  },
+  {
+   "name": "啸风坼裂",
+   "type": "远程",
+   "icon": "skill-5.webp",
+   "description": "孤狼用利爪用力劈开一刀风刃，造成<span class=\"anemo\">**90%**</span>伤害。无蕴光效果。"
+  },
+  {
+   "name": "呼狈作伥",
+   "type": "召唤",
+   "icon": "skill-6.webp",
+   "description": "一段时间后，或低于<c=#ffbfbf>70%</c>生命值时，孤狼移至场地中央，召唤`先祖狼魂`，狼魂会效仿孤狼的攻击造成<span class=\"cryo\">**冰元素**</span>伤害，期间孤狼的抗性大幅提升。\n狼魂不能够被直接命中，仅能通过在孤狼身上扩散<c=#ffacff>雷</c><c=#ff9999>火</c>元素命中。"
+  },
+  {
+   "name": "萦寒枯葬",
+   "type": "协同",
+   "icon": "skill-7.webp",
+   "description": "孤狼与狼魂一起朝地面喷吐暴风与狂霜，在地面上随机生成风刺与冰刺，造成基于各自<c=#ffffbf>30%</c>攻击力的伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "先祖狼魂",
+   "desc": "<span class=\"cryo\">**12冻**</span>盾，仅能被<c=#ffacff>雷扩散</c>与<c=#ff9999>火扩散</c>命中，可以被选中瞄准，破盾后消散使孤狼瘫痪13s。狼魂的攻击力为孤狼的<c=#ffbfbf>5/8</c>。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "先祖狼魂",
+   "description": "<span class=\"cryo\">**12冻**</span>盾，仅能被<c=#ffacff>雷扩散</c>与<c=#ff9999>火扩散</c>命中，可以被选中瞄准，破盾后消散使孤狼瘫痪13s。狼魂的攻击力为孤狼的<c=#ffbfbf>5/8</c>。",
+   "elementType": "Frozen",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 5057614,
+   "atk": 20886,
+   "weight": 300,
+   "tenacity": 400
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 1196827,
+   "hpNote": "26%",
+   "atk": 11819,
+   "atkNote": "60%",
+   "weight": 300,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "望乡的孤狼",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

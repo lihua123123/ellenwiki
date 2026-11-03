@@ -1,0 +1,139 @@
+{
+ "name": "异色三连星·瓦西里",
+ "nameEn": "Polychrome Tri-Stars: Vasily",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 407.52,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 150.72,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  },
+  {
+   "name": "增幅",
+   "pyro": 110,
+   "hydro": 110,
+   "anemo": 110,
+   "electro": 110,
+   "dendro": 110,
+   "cryo": 110,
+   "geo": 110,
+   "physical": 80
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "间续火候",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "火枪架起火狙，立即打一枪，造成<c=#ff9999>66.6%</c>伤害。\n<c=#ff7272>强化技：</c>连打三枪，造成<c=#ff9999>100%,50%,\n25%</c>伤害。"
+  },
+  {
+   "name": "烧烤时间",
+   "type": "强化",
+   "icon": "skill-2.webp",
+   "description": "进入战斗后，或从瘫痪恢复，火枪会尝试进入元素增幅状态：<c=#ffbfbf>全抗提升100%</c>，附属`水御`特化盾，有效元素是<c=#7fbfff>水</c>。"
+  },
+  {
+   "name": "战术撤离",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "靠近刚开枪的火枪，火枪直接后撤远离玩家，在增幅状态下后撤后会立即再次开枪。"
+  },
+  {
+   "name": "炎夏盛怒",
+   "type": "强化",
+   "icon": "skill-4.webp",
+   "description": "火枪倒下后，会为存活的异色三连星队友提供永久增益：<c=#ffbfbf>攻击力提升200%</c>。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "火御",
+   "desc": "<c=#ff9999>8火</c>盾，火水为2:1，其他所有反应均是1:10；击破可暂时瘫痪。该状态下，抗打断为0，重量翻6倍。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "火御",
+   "description": "<c=#ff9999>8火</c>盾，火水为2:1，其他所有反应均是1:10；击破可暂时瘫痪。该状态下，抗打断为0，重量翻6倍。",
+   "elementType": "Fire",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:A_1104",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 1828053,
+   "atk": 31329,
+   "weight": 80,
+   "tenacity": 150
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 465864,
+   "hpNote": "28%",
+   "atk": 14773,
+   "atkNote": "50%",
+   "weight": 80,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "异色三连星-瓦西里",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

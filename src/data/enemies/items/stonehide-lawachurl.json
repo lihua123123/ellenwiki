@@ -1,0 +1,149 @@
+{
+ "name": "丘丘岩盔王",
+ "nameEn": "Stonehide Lawachurl",
+ "subtitle": "磐岩刻印的丘丘王者",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 122.256,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 113.04,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 70,
+   "physical": 50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "黑虎掏",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "岩丘丘王进行勾拳、捶地2段的普通攻击，分别造成<c=#b9b9b9>40%,53.3%</c>伤害。\n<c=#fab041>魔化状态：</c>捶地产生<c=#ffbfbf>2</c>道碎岩波，造成<c=#ffe599>33.3%,16.6%,8.33%,3.33%</c>伤害。"
+  },
+  {
+   "name": "磐岩嵌",
+   "type": "强化",
+   "icon": "skill-2.webp",
+   "description": "岩丘丘王进行扩胸运动，全身变成金黄色，进入<c=#ffd24c>魔化状态</c>，并附属`岩铠`。"
+  },
+  {
+   "name": "鹤捕虾",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "岩丘丘王左手伏地冲过来，造成<c=#b9b9b9>66.6%</c>伤害，蓄力时间一般较短。"
+  },
+  {
+   "name": "掌掴蝇",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "岩丘丘王进行一次用力的勾拳，造成<c=#b9b9b9>50%</c>伤害。"
+  },
+  {
+   "name": "乌鸦坐",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "岩丘丘王侧身起跳，重重下落造成<c=#b9b9b9>100%</c>伤害。\n<c=#fab041>魔化状态：</c>落地产生<c=#ffbfbf>4</c>道坐标系方向碎岩波。"
+  },
+  {
+   "name": "地震拳",
+   "type": "猛攻",
+   "icon": "skill-6.webp",
+   "description": "岩丘丘王进行1-3次的双手捶地攻击，每次造成<c=#ffe599>33.3%</c>伤害。捶地产生<c=#ffbfbf>3</c>道碎岩波；第三次碎岩波更大更迅速。"
+  },
+  {
+   "name": "布丁飞",
+   "type": "远程",
+   "icon": "skill-7.webp",
+   "description": "岩丘丘王从地上挖并抛出3只岩史莱姆，每个造成<c=#ffe599>66.6%</c>伤害。\n<c=#fab041>魔化状态：</c>抛出一只大岩史莱姆，造成<c=#ffe599>83.3%</c>伤害；"
+  }
+ ],
+ "notes": [
+  {
+   "text": "岩铠",
+   "desc": "<c=#ffe599>20岩</c>盾，持续90s。该状态下，抗打断0，免疫风场力。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "岩铠",
+   "description": "<c=#ffe599>20岩</c>盾，持续90s。该状态下，抗打断0，免疫风场力。",
+   "elementType": "Rock",
+   "duration": 90
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "WP[75x3,50x3,25x3,0x3], WO[75,50,25,0]",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 3,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 3,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 3,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 330886,
+   "atk": 22160,
+   "weight": 150,
+   "tenacity": 400
+  },
+  {
+   "label": "精英-炉火纯青的古华派弟子",
+   "level": 103,
+   "hp": 1418938,
+   "atk": 35245,
+   "weight": 150,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "stonehide-lawachurl",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

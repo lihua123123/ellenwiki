@@ -1,0 +1,103 @@
+{
+ "name": "瘴晦瘤",
+ "nameEn": "Miasmic Tumor",
+ "subtitle": "",
+ "category": "Others",
+ "categoryLabel": "其他",
+ "tier": "None",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 203.76,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 5.024000000000001,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 0,
+   "hydro": 0,
+   "anemo": 0,
+   "electro": 0,
+   "dendro": 0,
+   "cryo": 0,
+   "geo": 0,
+   "physical": 0
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [
+  {
+   "name": "忆樱怨魂",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "瘴晦瘤产生4个追踪玩家的污秽`雷球`，每个造成<c=#ffacff>100%</c>雷球攻击力的伤害。"
+  },
+  {
+   "name": "死殛雷兆",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "瘴晦瘤朝玩家处发射巨大激光，接触持续造成<c=#ffacff>20%</c>伤害。"
+  },
+  {
+   "name": "招殆噬魂",
+   "type": "召唤",
+   "icon": "skill-3.webp",
+   "description": "瘴晦瘤召唤随机的落武者进行支援。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "雷球",
+   "desc": "攻击力恒定20。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:A_1103",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "物件",
+   "level": 100,
+   "hp": 29412,
+   "atk": 985
+  }
+ ],
+ "leyline": null,
+ "id": "miasmic-tumor",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他"
+ ]
+}

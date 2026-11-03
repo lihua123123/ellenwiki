@@ -1,0 +1,141 @@
+{
+ "name": "深海龙蜥幼体·吞雷",
+ "nameEn": "Bolteater Bathysmal Vishap",
+ "subtitle": "盘踞深海的水栖猛兽",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 54.336,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "成体",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 30,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 30
+  },
+  {
+   "name": "幼体",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 20,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "涤霆喷吐",
+   "type": "妨害",
+   "icon": "skill-1.webp",
+   "description": "吞雷蓄力发射一枚雷弹，造成<c=#ffacff>5%</c>伤害，并扣除角色<c=#72ff72>30点</c>(成体)/<c=#99ccff>10点</c>(幼体)能量，若能量不足则扣除一定比例的生命值。"
+  },
+  {
+   "name": "电奔跃集",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "(仅成体)吞雷将尾部插入地面，在一定区域内不断生成雷棘，造成<c=#ffacff>60%,30%</c>伤害。"
+  },
+  {
+   "name": "如霆之响",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "吞雷后撤，向前翻滚，用尾部扫两圈，造成2段<c=#ffacff>30%</c>伤害。"
+  },
+  {
+   "name": "浄紫濑箭",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "吞雷翘起尾部，召唤雷球，雷球破裂产生3个雷刺，造成<c=#ffacff>30%,15%,7.5%</c>伤害。"
+  },
+  {
+   "name": "左右开攻",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "(仅幼体)吞雷后撤一步，进行左、右、砸3段攻击，依次造成<c=#b8b8b8>30%,50%,80%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EP[75,50,25],EO[0](成体), EP[60,0](幼体)",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英-成体",
+   "level": 100,
+   "hp": 665520,
+   "atk": 12311,
+   "weight": 150,
+   "tenacity": 150
+  },
+  {
+   "label": "精英-幼体",
+   "level": 100,
+   "hp": 221840,
+   "atk": 4924,
+   "weight": 150,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "深海龙蜥幼体-吞雷",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "name": "幼匿叶龙",
+ "nameEn": "Yumkasaurus Whelp",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 20.096000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 30,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "引身前扑",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "幼匿叶龙坐于尾巴上，弹向前迅速抓划，造成<c=#99ff85>50%</c>伤害。"
+  },
+  {
+   "name": "衔索驱身",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "幼匿叶龙利用舌头，牵引空中并引体前进，顺势抓划，造成<c=#99ff85>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:E_0001",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 55460,
+   "atk": 3940,
+   "weight": 75,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "yumkasaurus-whelp",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

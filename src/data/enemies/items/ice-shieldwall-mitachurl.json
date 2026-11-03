@@ -1,0 +1,123 @@
+{
+ "name": "冰盾丘丘暴徒",
+ "nameEn": "Ice Shieldwall Mitachurl",
+ "subtitle": "丘丘暴徒·冰盾",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 40.751999999999995,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 30.144,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "恶狼奔",
+   "type": "位移",
+   "icon": "skill-1.webp",
+   "description": "冰盾丘丘持盾朝玩家进行冲击，触碰造成<c=#b9b9b9>50%</c>伤害，冲击后甩盾，造成<c=#b8b8b8>100%</c>伤害。该`冰盾`可在严寒环境下<c=#bfffed>持续修复</c>，但破碎后`不可再生`。"
+  },
+  {
+   "name": "饿狼扑",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "(无盾)冰盾丘丘愤怒拳击两下后冲向玩家，造成<c=#b8b8b8>50%,100%</c>伤害，最后飞扑过去，造成<c=#b8b8b8>50%</c>伤害。"
+  },
+  {
+   "name": "水牛扫",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "冰盾丘丘使用右手进行1段的攻击。\n<c=#bfffff>有盾：</c>带盾进行挥舞，造成<c=#b8b8b8>100%</c>伤害；\n<c=#bfffff>无盾：</c>挥右手，造成<c=#b8b8b8>75%</c>伤害。"
+  },
+  {
+   "name": "久寒布丁",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "冰盾丘丘从地里挖出冰史莱姆丢出，造成<span class=\"cryo\">**100%**</span>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冰盾",
+   "desc": "<span class=\"cryo\">**10冻**</span>盾，不可再生，可伤害转化。在雪山时，每0.8s+<span class=\"cryo\">**2冻**</span>。持盾状态下，抗打断0.3；格挡状态下，抗打断0.65。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "冰盾",
+   "description": "<span class=\"cryo\">**10冻**</span>盾，不可再生，可伤害转化。在雪山时，每0.8s+<span class=\"cryo\">**2冻**</span>。持盾状态下，抗打断0.3；格挡状态下，抗打断0.65。",
+   "elementType": "Ice",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_4443",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 110295,
+   "atk": 5909,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "ice-shieldwall-mitachurl",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

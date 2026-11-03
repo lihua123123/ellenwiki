@@ -1,0 +1,89 @@
+{
+ "name": "浮舍残像",
+ "nameEn": "Bosacius Residue",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 12.56,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 50,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 60,
+ "skills": [
+  {
+   "name": "合纵连横",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "浮舍召唤3个轨迹平行的推手，可能召唤互相交错的两组推手，每个推手造成<c=#ffacff>750%</c><c=#ffacff>`E`</c>伤害。\n<c=#bfbfff>疲态：</c>推手变小，伤害降至<c=#ffacff>150%E</c>。"
+  },
+  {
+   "name": "角平分线",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "浮舍召唤3个射线轨迹的推手，各推手均从同一点触发，每个推手造成<c=#ffacff>750%E</c>伤害。\n<c=#bfbfff>疲态：</c>推手变小，伤害降至<c=#ffacff>150%E</c>。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "E",
+   "desc": "环境反应等级系数，90级时为1202.81。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 388220,
+   "atk": 2462,
+   "weight": 60,
+   "tenacity": 20
+  }
+ ],
+ "leyline": null,
+ "id": "bosacius-residue",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

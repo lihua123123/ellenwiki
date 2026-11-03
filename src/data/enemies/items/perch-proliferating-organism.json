@@ -1,0 +1,89 @@
+{
+ "name": "筑巢的增殖生命体",
+ "nameEn": "Perch Proliferating Organism",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Common",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 32.6016,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 12.56,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 50,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "绿茵缘嶂",
+   "type": "阻挡",
+   "icon": "skill-1.webp",
+   "description": "筑巢型在玩家处唤出单向三草墙或三分草墙，2.5s后破坏，仅起阻挡作用。"
+  },
+  {
+   "name": "摩移地闪",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "当与玩家距离足够远时，筑巢型下地，并出现在玩家面前。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "核心守塔机制",
+   "desc": "击败筑巢型推进<c=#bfffbf>11%</c>(220)进度，恢复全队20能量。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "其他-守望者二阶段衍生物",
+   "level": 90,
+   "hp": 89041,
+   "atk": 1903,
+   "weight": 100,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "perch-proliferating-organism",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

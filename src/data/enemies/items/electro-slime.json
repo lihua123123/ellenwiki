@@ -1,0 +1,107 @@
+{
+ "name": "雷史莱姆",
+ "nameEn": "Electro Slime",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 10.8672,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 7.536,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": "IMM",
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 60,
+ "skills": [
+  {
+   "name": "电流泄溢",
+   "type": "妨害",
+   "icon": "skill-1.webp",
+   "description": "雷史莱姆周期性的放电，每次放电消耗<c=#ffacff>1雷</c>电量，造成<c=#ffacff>100%</c>伤害。"
+  },
+  {
+   "name": "酥麻撞击",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "雷史莱姆撞击玩家，造成<c=#ffacff>100%</c>伤害，没电状态则造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "薄荷之雷",
+   "type": "天赋",
+   "icon": "skill-3.webp",
+   "description": "雷史莱姆附属`电量`，耗尽后进入没电状态，一段时间或受到任意<c=#df99ff>雷元素</c>伤害后(可无元素附着)，会充满电。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "电量",
+   "desc": "<c=#ffacff>2雷</c>盾，耗尽后转为没电状态，一段时间后恢复。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "电量",
+   "description": "<c=#ffacff>2雷</c>盾，耗尽后转为没电状态，一段时间后恢复。",
+   "elementType": "Electric",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 29412,
+   "atk": 1477,
+   "weight": 60,
+   "tenacity": 20
+  }
+ ],
+ "leyline": null,
+ "id": "electro-slime",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

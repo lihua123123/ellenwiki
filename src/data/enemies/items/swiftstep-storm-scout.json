@@ -1,0 +1,95 @@
+{
+ "name": "疾迅勇士·荡风斥候",
+ "nameEn": "Swiftstep Storm Scout",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 21.7344,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 22.608,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "一剑小戳",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "荡风斥候持剑进行捅击，造成<c=#b8b8b8>85%</c>伤害。"
+  },
+  {
+   "name": "连刃接斩",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "荡风斥候进行至多2段的普攻，每段分别造成<c=#b8b8b8>75%,80%</c>伤害。"
+  },
+  {
+   "name": "疾索飞刀",
+   "type": "强攻",
+   "icon": "skill-3.webp",
+   "description": "荡风斥候将自己的剑丢出，一段时间后返回，造成<c=#99ff85>80%</c>伤害，重复2次；返回时有概率将自己打飞并附着草元素。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 88736,
+   "atk": 4432,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "swiftstep-storm-scout",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

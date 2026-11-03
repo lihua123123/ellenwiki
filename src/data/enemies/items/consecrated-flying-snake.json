@@ -1,0 +1,146 @@
+{
+ "name": "圣骸飞蛇",
+ "nameEn": "Consecrated Flying Snake",
+ "subtitle": "啃噬伟大生命的风之兽",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "噬骸",
+   "pyro": 40,
+   "hydro": 40,
+   "anemo": 70,
+   "electro": 40,
+   "dendro": 40,
+   "cryo": 40,
+   "geo": 40,
+   "physical": 40
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "天街蛇",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "圣骸飞蛇进行突刺、甩尾、上升气流三段攻击，分别造成<span class=\"anemo\">**50%,70%,90%**</span>伤害。"
+  },
+  {
+   "name": "蛇盘旋",
+   "type": "闪现",
+   "icon": "skill-2.webp",
+   "description": "距离玩家较远时，圣骸飞蛇在玩家处产生风眼，吸引玩家，持续造成<span class=\"anemo\">**10%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>，随后飞蛇出现在风眼处，产生气暴，造成<span class=\"anemo\">**90%**</span>伤害。"
+  },
+  {
+   "name": "蛇形步",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "圣骸飞蛇在自身处产生风眼吸引玩家，持续造成<span class=\"anemo\">**10%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>，并盘旋空中，5s后突然朝玩家冲出，造成<span class=\"anemo\">**70%**</span>伤害。"
+  },
+  {
+   "name": "鳝摆尾",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "距离玩家更远时，圣骸飞蛇在原地翻动，分批发射风弹，批次为1/2/3，每个风弹造成<span class=\"anemo\">**60%**</span>伤害。"
+  },
+  {
+   "name": "锯子尾",
+   "type": "远程",
+   "icon": "skill-5.webp",
+   "description": "距离玩家较远时，圣骸飞蛇使用尾部尖端扔出飞轮，造成<span class=\"anemo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "黄鳝鞭",
+   "type": "防卫",
+   "icon": "skill-6.webp",
+   "description": "玩家处于后方时，圣骸飞蛇进行一个后空翻，使用尾部纵切，造成<span class=\"anemo\">**70%**</span>伤害。"
+  },
+  {
+   "name": "龙戏珠",
+   "type": "噬骸爆发",
+   "icon": "skill-7.webp",
+   "description": "每45s-60s，圣骸飞蛇盘旋产生一个大型风弹，其具有中追踪性，命中造成<span class=\"anemo\">**100%**</span>伤害，产生风弹后形成<c=#00d8a3>`「噬骸能量块·风」`</c>；此时飞蛇失去强化，6s后则会被飞蛇吸收恢复强化。"
+  },
+  {
+   "name": "飞蛇兜风",
+   "type": "天赋",
+   "icon": "skill-8.webp",
+   "description": "圣骸飞蛇从开局、瘫痪恢复后或者吸收<c=#00d8a3>「噬骸能量块·风」</c>之后，将进行抗性强化：<c=#99ffe5>风抗+60%，其他抗性+30%</c>，并且全身变亮；该效果持续到其施放<c=#00d8a3>「龙戏珠」</c>技能后，或被携带有<c=#00d8a3>「噬骸能量块·风」</c>的玩家命中后失效。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "噬骸能量块·风",
+   "desc": "1次<span class=\"anemo\">**风元素**</span>攻击，或6次其他元素攻击可拾取，命中可瘫痪圣骸飞蛇。其存在6s，超时则会被圣骸飞蛇夺取。\n持有噬骸能量块·风时命中圣骸飞蛇则会令其强制瘫痪10s，并移除抗性提升，同时扣除<c=#ffdfbf>15%</c>生命值；噬骸能量块携带时，会反噬全队：每秒损失<c=#ffdfbf>2%</c>生命值，持续10s，穿盾不致死。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 388220,
+   "atk": 14773,
+   "weight": 150,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "consecrated-flying-snake",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

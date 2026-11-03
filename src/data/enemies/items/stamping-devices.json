@@ -1,0 +1,107 @@
+{
+ "name": "冲鸭机关",
+ "nameEn": "Stamping Devices",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 70,
+   "hydro": 70,
+   "anemo": 70,
+   "electro": 10,
+   "dendro": 70,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 70
+  },
+  {
+   "name": "深渊",
+   "pyro": 150,
+   "hydro": 150,
+   "anemo": 150,
+   "electro": 10,
+   "dendro": 150,
+   "cryo": 150,
+   "geo": 150,
+   "physical": 150
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "定向集歼",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "冲鸭机关集体对目标发射指针，造成<c=#ffacff>100%</c>伤害；充能满或耗尽生命值后将反击「重拳出击鸭」。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冲鸭机关",
+   "desc": "充能条总量100，受到<c=#ffacff>雷元素攻击</c>积攒<c=#ffdfbf>1</c>，每次触发<c=#ffacff>(月)感电反应</c>积攒<c=#ffdfbf>10</c>，攒满后反击重拳出击鸭。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [
+  {
+   "Name": "冲鸭机关",
+   "Description": "充能条总量100，受到<color=#ffacff>雷元素攻击</color>积攒<color=#ffdfbf>1</color>，每次触发<color=#ffacff>(月)感电反应</color>积攒<color=#ffdfbf>10</color>，攒满后反击重拳出击鸭。",
+   "IconPath": "",
+   "MaxValue": 100,
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "充能条总量100，受到雷元素攻击积攒1，每次触发(月)感电反应积攒10，攒满后反击重拳出击鸭。"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "其他",
+   "level": 100,
+   "hp": 388220,
+   "atk": 7387,
+   "weight": 100,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "stamping-devices",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

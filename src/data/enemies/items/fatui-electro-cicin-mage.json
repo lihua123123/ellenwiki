@@ -1,0 +1,130 @@
+{
+ "name": "愚人众·雷萤术士",
+ "nameEn": "Fatui Electro Cicin Mage",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 67.92,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 50,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "雷云紫集",
+   "type": "召唤",
+   "icon": "skill-1.webp",
+   "description": "场上无雷萤存在时，雷萤术士使用雾虚草灯召唤3只雷萤。"
+  },
+  {
+   "name": "萦雷绕逐",
+   "type": "号令",
+   "icon": "skill-2.webp",
+   "description": "雷萤术士召唤的雷萤间歇性的向玩家喷吐雷球，造成<c=#ffacff>20%</c>伤害。"
+  },
+  {
+   "name": "急速全进",
+   "type": "号令",
+   "icon": "skill-3.webp",
+   "description": "雷萤术士使用雾虚草灯命令雷萤突进，造成<c=#ffacff>20%</c>伤害。"
+  },
+  {
+   "name": "循雷迷霄",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "雷萤术士使用雾虚草灯唤出1道落雷，造成<c=#ffacff>100%</c>伤害，落雷留下雷痕地面，接触持续造成<c=#ffacff>25%</c>伤害。\n<c=#f94ccb>攻击强化：</c>召唤至多6道的落雷。"
+  },
+  {
+   "name": "缠绵之雷",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "雷萤术士杀死召唤的雷萤，缓慢升空并附属`特斯拉线圈`同时产生爆炸，造成<c=#df99ff>100%</c>伤害，并以较快的速度移动，向玩家进行高频电击持续造成<c=#df99ff>25%</c>伤害。"
+  },
+  {
+   "name": "电闪烁光",
+   "type": "位移",
+   "icon": "skill-6.webp",
+   "description": "距离玩家较远时，雷萤术士进行连续4段的传送；距离玩家太近时，传送至玩家后方。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "特斯拉线圈",
+   "desc": "<c=#ffacff>8雷</c>盾，持续15s后自动击破。该状态下，抗打断0，免疫风场力。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "特斯拉线圈",
+   "description": "<c=#ffacff>8雷</c>盾，持续15s后自动击破。该状态下，抗打断0，免疫风场力。",
+   "elementType": "Electric",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_3303",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 183826,
+   "atk": 9849,
+   "weight": 75,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "fatui-electro-cicin-mage",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

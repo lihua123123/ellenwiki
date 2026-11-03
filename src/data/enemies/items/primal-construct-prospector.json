@@ -1,0 +1,138 @@
+{
+ "name": "元能构装体·勘探机",
+ "nameEn": "Primal Construct: Prospector",
+ "subtitle": "砂原王都的建造者",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 46.1856,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 45.216,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "隐蔽",
+   "pyro": 60,
+   "hydro": 60,
+   "anemo": 60,
+   "electro": 60,
+   "dendro": 60,
+   "cryo": 60,
+   "geo": 60,
+   "physical": 60
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 200,
+ "skills": [
+  {
+   "name": "考古勘探",
+   "type": "远程",
+   "icon": "",
+   "description": "勘探机使用激光部件发射激光进行勘探，造成<c=#b8b8b8>50%,5%</c>伤害。"
+  },
+  {
+   "name": "间续照明",
+   "type": "协同 部件L",
+   "icon": "",
+   "description": "游离的激光部件间歇性发射激光，造成<c=#b8b8b8>50%</c>伤害。"
+  },
+  {
+   "name": "不可之视",
+   "type": "隐蔽",
+   "icon": "",
+   "description": "勘探机游离出两个`电锯部件`，自己进入隐蔽状态，驱散所有元素附着，<c=#ffbfbf>全抗性提升50%</c>，每个部件继承10%的勘探机生命值，状态持续10-20s。在本体上进行<c=#99ff86>激化反应</c>或其使被<c=#4cffa5>「真识波」</c>命中，可解除该状态并使其瘫痪。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "激光部件",
+   "desc": "12盾量的10%生命值盾，继承召唤者的生命值上限，其他属性相同；每秒消耗0.2直至损毁。"
+  },
+  {
+   "text": "修复中的激光部件",
+   "desc": "4草盾，1次雷元素攻击即可，其他元素只反应不消耗。击破后瘫痪构装体。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "激光部件",
+   "description": "12盾量的10%生命值盾，继承召唤者的生命值上限，其他属性相同；每秒消耗0.2直至损毁。",
+   "elementType": "",
+   "duration": ""
+  },
+  {
+   "name": "修复中的激光部件",
+   "description": "4草盾，1次雷元素攻击即可，其他元素只反应不消耗。击破后瘫痪构装体。",
+   "elementType": "Grass",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1111",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 188564,
+   "atk": 8864,
+   "weight": 200,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "primal-construct-prospector",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

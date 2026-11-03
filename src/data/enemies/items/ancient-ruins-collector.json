@@ -1,0 +1,140 @@
+{
+ "name": "秘源机兵·寻捕械",
+ "nameEn": "Ancient Ruins Collector",
+ "subtitle": "深古遗迹采集机关",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "入战",
+   "pyro": 250,
+   "hydro": 250,
+   "anemo": 250,
+   "electro": 250,
+   "dendro": 250,
+   "cryo": 250,
+   "geo": 250,
+   "physical": 250
+  },
+  {
+   "name": "正常",
+   "pyro": 50,
+   "hydro": 50,
+   "anemo": 50,
+   "electro": 50,
+   "dendro": 50,
+   "cryo": 50,
+   "geo": 50,
+   "physical": 50
+  },
+  {
+   "name": "大招&虚弱",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "炽烙赤遣",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "寻捕械推出一个排满尖牙的排斥装甲，造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "日煜天基",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "寻捕械朝天发射一束高能脉冲，其持续打击地面，持续造成<c=#ff9999>70%,35%,14%,7%</c>伤害。"
+  },
+  {
+   "name": "月余辉烨",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "寻捕械朝玩家发射连续的集中热能激光，持续造成<c=#ff9999>60%</c>伤害，至多3次。"
+  },
+  {
+   "name": "啮铁流星",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "距离较远时，寻捕械突然朝玩家发动赤牙合击，造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "旧阳皆彗",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "「应战对策」充满后，寻捕械会发射持续5s的集束激光，持续造成<c=#ff9999>100%,10%</c>伤害，期间抗性恢复正常。"
+  },
+  {
+   "name": "循觅夜源",
+   "type": "天赋",
+   "icon": "skill-6.webp",
+   "description": "寻捕械自身拥有<c=#ffdfbf>100</c>点「应战对策」上限(特殊<c=#ffdfbf>170</c>)。\n角色进入和维持「夜魂加持」状态时，其充能条均会积攒<c=#bfffbf>15</c>充能；当充满时，寻捕械就会立即中断其他技能，并开始准备集束激光，然后瘫痪5s。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:A_1101",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 388220,
+   "atk": 14773,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "ancient-ruins-collector",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

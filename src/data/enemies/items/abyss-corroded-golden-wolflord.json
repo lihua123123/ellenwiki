@@ -1,0 +1,137 @@
+{
+ "name": "渊蚀·黄金王兽",
+ "nameEn": "Abyss-Corroded Golden Wolflord",
+ "subtitle": "于边界吞蚀异界的异兽",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Boss",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 326.01599999999996,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 70.336,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "入场",
+   "pyro": 225,
+   "hydro": 225,
+   "anemo": 225,
+   "electro": 225,
+   "dendro": 225,
+   "cryo": 225,
+   "geo": 225,
+   "physical": 225
+  },
+  {
+   "name": "正常",
+   "pyro": 25,
+   "hydro": 25,
+   "anemo": 25,
+   "electro": 25,
+   "dendro": 25,
+   "cryo": 25,
+   "geo": 25,
+   "physical": 25
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "巡岩狂嗜",
+   "type": "位移",
+   "icon": "skill-1.webp",
+   "description": "黄金王兽蓄力向地面冲去，从场地外向内进行3次撞击，碰到造成<c=#ffe599>50%</c>伤害。"
+  },
+  {
+   "name": "返后倾尾",
+   "type": "防卫",
+   "icon": "skill-2.webp",
+   "description": "黄金王兽升空，在空中悬停一会后使用尾部连续扫击两次，均造成<c=#ffe599>50%</c>伤害。"
+  },
+  {
+   "name": "蚀岩之流",
+   "type": "限制",
+   "icon": "skill-3.webp",
+   "description": "黄金王兽蓄力，贴近地面喷吐渊之岩，接触持续造成<c=#ffe599>50%,12.5%,5%</c>伤害，来回两次。"
+  },
+  {
+   "name": "铄金天罚",
+   "type": "爆发 嗜魔",
+   "icon": "skill-4.webp",
+   "description": "黄金王兽飞到高空，高速下落坠入地面造成巨大范围的<c=#ffe599>100%</c>伤害，片刻后钻出，造成<c=#ceffbf>无侵蚀</c>的<c=#ffe599>25%</c>伤害，随后在场地内产生9个小岩喷造成<c=#ffe599>25%</c>伤害。"
+  },
+  {
+   "name": "邃色犬影",
+   "type": "远程",
+   "icon": "skill-5.webp",
+   "description": "黄金王兽，朝空中连续吐出大量「黄金犬首」向玩家处洒落，每个犬首造成<c=#ffe599>25%,12.5%,6.25%</c>伤害。"
+  },
+  {
+   "name": "虚嗜洿龙",
+   "type": "蓄力",
+   "icon": "skill-6.webp",
+   "description": "黄金王兽原地开始旋转蓄力，形成巨大的龙卷风，附属`虚界护罩`，蓄力结束时对全场造成<c=#ffe599>500%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>；不过小龙在场的话，它会尽力避免这一刻到来。"
+  },
+  {
+   "name": "郄兽侵蚀",
+   "type": "天赋",
+   "icon": "skill-7.webp",
+   "description": "兽境类原魔造成的伤害都会附带「侵蚀」效果。黄金王兽的效果为：每层每秒扣除玩家<c=#ffe599>(1%HP+25)</c>的生命值，每层持续<c=#ffe599>9.5s</c>，持续时间独立计算，可叠加。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "虚界护罩",
+   "desc": "<c=#9999ff>200虚界</c>盾，元素+1，夜魂+3，小龙+80，击破瘫痪黄金王兽24s并且扣除<c=#ffdfbf>35%</c>生命值。\n瘫痪时<c=#ffe599>岩抗</c>-45%。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "虚界护罩",
+   "description": "<c=#9999ff>200虚界</c>盾，元素+1，夜魂+3，小龙+80，击破瘫痪黄金王兽24s并且扣除<c=#ffdfbf>35%</c>生命值。\n瘫痪时<c=#ffe599>岩抗</c>-45%。",
+   "elementType": "",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "剧情",
+   "level": 100,
+   "hp": 1331040,
+   "atk": 13788,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "abyss-corroded-golden-wolflord",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

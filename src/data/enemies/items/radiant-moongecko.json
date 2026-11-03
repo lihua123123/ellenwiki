@@ -1,0 +1,262 @@
+{
+ "name": "蕴光月守宫",
+ "nameEn": "Radiant Moongecko",
+ "subtitle": "渴求月光的鳞蜥",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 285.264,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 87.92,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "深渊大招后",
+   "pyro": 70,
+   "hydro": 70,
+   "anemo": 70,
+   "electro": 70,
+   "dendro": 70,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 70
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "峰岩残响",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "鳞蜥进行右咬、左咬、下扑至多3段的普攻，依次造成<c=#ffe599>40%,50%,65%</c>伤害。"
+  },
+  {
+   "name": "窟明回鉴",
+   "type": "防御",
+   "icon": "skill-2.webp",
+   "description": "距离太近或处于后方时，鳞蜥迅速自转扫尾，造成<c=#ffe599>100%</c>伤害。"
+  },
+  {
+   "name": "断尾棱光",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "鳞蜥凝聚力量，用凝晶的尾部发射岩流，造成<c=#ffe599>75%</c>伤害。"
+  },
+  {
+   "name": "嵴生石蕨",
+   "type": "定点",
+   "icon": "skill-4.webp",
+   "description": "鳞蜥在场地内促生多个岩蕨，每个造成<c=#ffe599>35%</c>伤害。"
+  },
+  {
+   "name": "鎏月余晖",
+   "type": "妨害",
+   "icon": "skill-5.webp",
+   "description": "开局或瘫痪恢复后施放，鳞蜥为自身附上<c=#ffdfbf>晖岩之护</c>，岩抗提升<c=#ffdfbf>60%</c>；展开半径<c=#ffdfbf>25m</c>的`蕴光领域`；清除任意角色的「蕴光之茧」时，晖岩之护将被立即破坏。\n施放「行虚空荡」之前，全队的「蕴光之茧」会被移除(仅移除，无增益)。"
+  },
+  {
+   "name": "行虚空荡",
+   "type": "召唤",
+   "icon": "skill-6.webp",
+   "description": "鳞蜥移动到场地中央，展开穹顶，隐匿自身，并留下「`月锚岩`」；穹顶上有三只鳞蜥，其中一只会间歇性发射岩流，造成<c=#ffe599>75%</c>伤害；25s后月锚岩爆炸，造成<c=#ffe599>200%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "月锚岩",
+   "desc": "<c=#ffe599>2.8岩</c>盾，共9层，破坏后瘫痪7s；破坏第3/6/9层时会对鳞蜥造成<c=#ffbfbf>6%</c>/<c=#ffbfbf>6%</c>/<c=#ffbfbf>18%生命值</c>的伤害。\n(深境特化为<c=#ffbfbf>4%</c>/<c=#ffbfbf>4%</c>/<c=#ffbfbf>12%生命值</c>)"
+  },
+  {
+   "text": "蕴光之茧",
+   "desc": "暴击率-100%，造成的伤害-50%，受治疗加成-40%；施加时，扣除全队角色10%+1800点生命值，若角色生命值低于7200点，则改为扣除35%生命值，可致命但可开大招躲避；主动治疗清除后获得「出缠」效果。"
+  },
+  {
+   "text": "出缠",
+   "desc": "暴击率+15%，造成的伤害+50%，持续15s。"
+  },
+  {
+   "text": "晖岩之护",
+   "desc": "鳞蜥展开蕴光领域时，<c=#ffe599>岩元素</c>抗性<c=#ffbfbf>+60%</c>，当角色清除前台角色的「蕴光之茧」时，晖岩之护将被立即破坏，并失去<c=#ffe599>岩抗</c>提升。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "月锚岩",
+   "description": "<c=#ffe599>2.8岩</c>盾，共9层，破坏后瘫痪7s；破坏第3/6/9层时会对鳞蜥造成<c=#ffbfbf>6%</c>/<c=#ffbfbf>6%</c>/<c=#ffbfbf>18%生命值</c>的伤害。\n(深境特化为<c=#ffbfbf>4%</c>/<c=#ffbfbf>4%</c>/<c=#ffbfbf>12%生命值</c>)",
+   "elementType": "Rock",
+   "duration": 25
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:B_3332",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1279637,
+   "atk": 18275,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": {
+  "name": "蕴光月守宫·根牙磐错",
+  "nameEn": "Radiant Moongecko: Entangled Fangs",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 1186357,
+    "atk": 13322,
+    "multiplier": 1.2,
+    "advantage": "Geo Adv."
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 5911488,
+    "atk": 17235,
+    "multiplier": 4.0,
+    "advantage": "Healing Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 10253200,
+    "atk": 18971,
+    "multiplier": 6.0,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 20950071,
+    "atk": 20319,
+    "multiplier": 11.2,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "本体",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 70,
+    "physical": 10
+   },
+   {
+    "name": "爆破",
+    "diffNote": "N4",
+    "pyro": 70,
+    "hydro": 70,
+    "anemo": 70,
+    "electro": 70,
+    "dendro": 70,
+    "cryo": 70,
+    "geo": 70,
+    "physical": 70
+   }
+  ],
+  "skills": [
+   {
+    "name": "行虚空荡",
+    "type": "召唤 (N5)",
+    "icon": "leyline-skill-1.webp",
+    "description": "守宫移动到场地中央，展开穹顶，隐匿自身，并留下「`月锚岩`」；穹顶上有三只守宫，其中一只会间歇性发射岩流，造成<c=#ffe599>75%</c>伤害；<c=#ffdfbf>35s</c>后月锚岩爆炸，造成<c=#ffe599>200%</c>伤害，同时全抗性提升60%，持续至下次瘫痪。"
+   }
+  ],
+  "notes": [
+   {
+    "text": "月锚岩",
+    "desc": "蕴光月守宫大招丢下的岩晶块，每层<c=#ffe599>2.8岩</c>盾，共<c=#ffdfbf>9</c>层，持续<c=#ffdfbf>25s</c>；\n破坏第3/6/9层时会对鳞蜥造成<c=#ffbfbf>6%</c>/<c=#ffbfbf>6%</c>/<c=#ffbfbf>18%生命值</c>的伤害，并瘫痪7s。\n<c=#bfffbf>(N4) </c>破坏月锚岩改为对月守宫造成<c=#ffbfbf>4%</c>/<c=#ffbfbf>4%</c>/<c=#ffbfbf>12%生命值</c>的伤害。\n<c=#ffbfbf>(N5) </c>月锚岩每层的厚度变为<c=#ffe599>4岩</c>盾，持续时间延长至<c=#ffdfbf>35s</c>，且不再按照层数返回伤害，现击破所有9层后造成一次真伤，其值由<c=#ffdfbf>70%所受岩伤+10%非岩伤害</c>组成，不超过<c=#ffdfbf>40%月守宫生命值</c>。瘫痪时间缩短至4s。"
+   },
+   {
+    "text": "蕴光之茧",
+    "desc": "暴击率-100%，造成的伤害-50%，受治疗加成-40%。\n施加蕴光之茧时，扣除全队角色10%+1800点生命值，若角色生命值低于7200点，则改为扣除35%生命值，可致命，该次扣血不无视无敌帧；主动治疗清除后获得「出缠」效果。"
+   },
+   {
+    "text": "出缠",
+    "desc": "暴击率+15%，造成的伤害+50%，持续15s。"
+   },
+   {
+    "text": "晖岩之护",
+    "desc": "鳞蜥展开蕴光领域时，<c=#ffe599>岩元素</c>抗性<c=#ffbfbf>+60%</c>，当主动清除任意角色的\n「蕴光之茧」时，晖岩之护将被立即破坏，并失去<c=#ffe599>岩抗</c>提升。"
+   }
+  ],
+  "shields": [
+   {
+    "name": "月锚岩",
+    "description": "蕴光月守宫大招丢下的岩晶块，每层<c=#ffe599>2.8岩</c>盾，共<c=#ffdfbf>9</c>层，持续<c=#ffdfbf>25s</c>；\n破坏第3/6/9层时会对鳞蜥造成<c=#ffbfbf>6%</c>/<c=#ffbfbf>6%</c>/<c=#ffbfbf>18%生命值</c>的伤害，并瘫痪7s。\n<c=#bfffbf>(N4) </c>破坏月锚岩改为对月守宫造成<c=#ffbfbf>4%</c>/<c=#ffbfbf>4%</c>/<c=#ffbfbf>12%生命值</c>的伤害。\n<c=#ffbfbf>(N5) </c>月锚岩每层的厚度变为<c=#ffe599>4岩</c>盾，持续时间延长至<c=#ffdfbf>35s</c>，且不再按照层数返回伤害，现击破所有9层后造成一次真伤，其值由<c=#ffdfbf>70%所受岩伤+10%非岩伤害</c>组成，不超过<c=#ffdfbf>40%月守宫生命值</c>。瘫痪时间缩短至4s。",
+    "elementType": "Rock",
+    "duration": 25
+   }
+  ]
+ },
+ "id": "radiant-moongecko",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽",
+  "幽境危战"
+ ]
+}

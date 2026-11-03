@@ -1,0 +1,151 @@
+{
+ "name": "火斗笠剑客",
+ "nameEn": "Duelblaze",
+ "subtitle": "",
+ "category": "Others",
+ "categoryLabel": "其他",
+ "tier": "Common",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 30.564,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 54.25920000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 20,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 20,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "烈焰冲撞",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "伸缩火蕈兽后倾，朝着玩家翻滚过来，造成<c=#ff9999>101%</c>伤害。"
+  },
+  {
+   "name": "高温领域",
+   "type": "妨害",
+   "icon": "skill-2.webp",
+   "description": "伸缩火蕈兽在自身周围施放高温热焰，造成<c=#ff9999>142%</c>伤害。"
+  },
+  {
+   "name": "延时爆燃",
+   "type": "战技",
+   "icon": "skill-3.webp",
+   "description": "伸缩火蕈兽抻直，在敌人处产生火喷，造成<c=#ff9999>837%</c>伤害，被命中的敌人每2.5s将持续受到<c=#ff9999>105%</c>伤害。"
+  },
+  {
+   "name": "烈焰吐息",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "伸缩火蕈兽朝前方喷吐扇形火焰，造成<c=#ff9999>200%</c>伤害。"
+  },
+  {
+   "name": "强效猛火",
+   "type": "强化",
+   "icon": "skill-5.webp",
+   "description": "伸缩火蕈兽每次进行「烈焰吐息」后，<c=#ffbfbf>攻击力提升10%</c>，至多叠加5层。"
+  },
+  {
+   "name": "空爆火种",
+   "type": "战技",
+   "icon": "skill-6.webp",
+   "description": "伸缩火蕈兽在敌人处产生大范围火喷，造成<c=#ff9999>1000%</c>伤害，并消耗所有「强效猛火」层数。"
+  },
+  {
+   "name": "烈焰冲撞",
+   "type": "输出",
+   "icon": "skill-7.webp",
+   "description": "伸缩火蕈兽朝前方不断翻滚，造成<c=#ff9999>250%</c>伤害。"
+  },
+  {
+   "name": "强效猛火",
+   "type": "回复",
+   "icon": "skill-8.webp",
+   "description": "每8s，伸缩火蕈兽将治疗最低生命值的友方目标<c=#ffcc99>20%的生命值</c>。"
+  },
+  {
+   "name": "空爆火种",
+   "type": "战技",
+   "icon": "skill-9.webp",
+   "description": "伸缩火蕈兽在敌人处产生大范围火喷，造成<c=#ff9999>1000%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "3.5 灵蕈棋阵",
+   "desc": "150元素精通。"
+  },
+  {
+   "text": "4.2 小小灵蕈大幻戏",
+   "desc": "100元素精通，剧变反应系数1.5。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "友方-3.2智巧灵蕈",
+   "level": 90
+  },
+  {
+   "label": "普通敌方-3.2智巧灵蕈",
+   "level": 90,
+   "hp": 59360,
+   "atk": 6577,
+   "weight": 75,
+   "tenacity": 600
+  },
+  {
+   "label": "友方-3.5塔防灵蕈",
+   "level": 90
+  },
+  {
+   "label": "友方-4.2幻戏灵蕈",
+   "level": 90,
+   "hp": 97425,
+   "atk": 8222,
+   "weight": 75,
+   "tenacity": 600
+  }
+ ],
+ "leyline": null,
+ "id": "duelblaze",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他"
+ ]
+}

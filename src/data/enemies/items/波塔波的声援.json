@@ -1,0 +1,152 @@
+{
+ "name": "波塔波的声援",
+ "nameEn": "Potapo’s Solidarity",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 2064.768,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 113.04,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 50,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "寒侵夜蚀",
+   "type": "妨害",
+   "icon": "skill-1.webp",
+   "description": "「声援」聚集冰元素之力，随后迸发，扣除前台角色<c=#ffccbf>60%</c>生命值<c=#ff9999>(无法躲避)</c>，可致死。"
+  },
+  {
+   "name": "迟暮冷光",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "「声援」朝玩家方向蓄力，间断迸发5次寒涛冽流，造成<span class=\"cryo\">**70%**</span>伤害。"
+  },
+  {
+   "name": "初昕凝雪",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "「声援」凝聚碎冰，片刻后向前扇形区域挥洒暴风雪，持续造成<span class=\"cryo\">**50%,25%,\n12.5%,5%**</span>伤害"
+  },
+  {
+   "name": "皎月霏萤",
+   "type": "定点",
+   "icon": "skill-4.webp",
+   "description": "「声援」在玩家处召唤白晶流幕，持续造成<span class=\"cryo\">**20%,10%,5%,2%**</span>伤害。"
+  },
+  {
+   "name": "旦夕分晓",
+   "type": "召唤",
+   "icon": "skill-5.webp",
+   "description": "「声援」在场地上分显「佑灵身」，为友方单位，初始仅有10%生命值。\n当队伍中任意角色恢复生命值时，「佑灵身」也将恢复等量生命值。\n「佑灵身」死亡时，会对「声援」造成基于其攻击力<span class=\"cryo\">**300%**</span>的伤害。\n「佑灵身」存在22s，再次生成「佑灵身」则需等待至少40s。"
+  },
+  {
+   "name": "晦朔知魂",
+   "type": "协同",
+   "icon": "skill-6.webp",
+   "description": "「佑灵身」存在期间，若我方恢复的总生命值量累计超过「佑灵身」生命值上限的<c=#99ffb2>90%</c>/<c=#99ffb2>175%</c>/<c=#99ffb2>250%</c>时，「佑灵身」将<c=#bfffdf>唤醒施放「贯通」</c>/<c=#bfffee>提升</c><c=#bfffdf>「贯通」</c><c=#bfffee>伤害</c>/<c=#bfffee>提升为「决胜」</c>，「佑灵身」的攻击将持续对「声援」造成<c=#ffeebf>0.5%</c>/<c=#ffeebf>0.875%</c>/<c=#ffeebf>1.25%生命值</c>的真伤。\n秘影重现的「佑灵身」造成的伤害提升为<c=#ffeebf>1.6%</c>/<c=#ffeebf>2.8%</c>/<c=#ffeebf>4%生命值</c>的真伤。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "「佑灵身」",
+   "desc": "生命值：21.0191(B1)，攻击力：10.0(B2)"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 9262136,
+   "atk": 23497,
+   "weight": 150,
+   "tenacity": 210
+  },
+  {
+   "label": "秘影重现",
+   "level": 100,
+   "hp": 3193152,
+   "atk": 17728,
+   "atkNote": "80%",
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "波塔波的声援",
+ "icon": "avatar.webp",
+ "statVariants": [
+  {
+   "label": "秘影重现",
+   "level": 100,
+   "hp": 3193152,
+   "atk": 17728,
+   "atkNote": "80%",
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "aliases": [
+  "波塔波的声援·秘影重现"
+ ],
+ "tags": [
+  "地方传奇",
+  "历经百战"
+ ]
+}

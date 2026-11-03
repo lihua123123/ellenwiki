@@ -1,0 +1,140 @@
+{
+ "name": "历经百战的玳龟",
+ "nameEn": "Cocijo",
+ "subtitle": "",
+ "category": "Animals",
+ "categoryLabel": "动物",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 167.35488,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 125.60000000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 70,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 50
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "循风荧雷",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "科西霍放出一枚雷球，缓慢追踪玩家，接触爆炸造成<c=#ffacff>100%</c>伤害。"
+  },
+  {
+   "name": "魁霆之涛",
+   "type": "反击",
+   "icon": "skill-2.webp",
+   "description": "科西霍需处于`狂暴状态`。若玩家在距其13m范围内对其造成伤害，则科西霍会立即反击，造成<c=#ffacff>25%,6.75%</c>伤害，多少次伤害就反击多少次。"
+  },
+  {
+   "name": "巨鼋璨青",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "科西霍开转，不断朝玩家方向行进，接触造成<c=#ffacff>70%,35%,7%</c>伤害；进入`狂暴状态`下，旋转还会额外飞出顺时针方向排布的弹幕炼狱，接触造成<c=#ffacff>50%</c>伤害。"
+  },
+  {
+   "name": "织云紫霄",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "科西霍导引震雷，于地面持续召唤落雷，造成<c=#ffacff>50%</c>伤害。"
+  },
+  {
+   "name": "雳海千钧",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "科西霍在原地起跳重重下落，造成<c=#ffacff>50%</c>伤害，连续跳跃至多3次；`狂暴状态`下，伤害提升至<c=#ffacff>70%</c>。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "雷壳护盾",
+   "desc": "16雷盾，不可伤害转化，击破即可瘫痪科西霍10s，并使其退出狂暴状态。"
+  },
+  {
+   "text": "狂暴状态",
+   "desc": "科西霍受到伤害时会累计怒气条，每受击1次增加3%充能(燃烧伤害除外)，条满后进入狂暴状态，并附着雷壳护盾。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "雷壳护盾",
+   "description": "16雷盾，不可伤害转化，击破即可瘫痪科西霍10s，并使其退出狂暴状态。",
+   "elementType": "Electric",
+   "duration": ""
+  }
+ ],
+ "chargebar": [
+  {
+   "Name": "狂暴状态",
+   "Description": "科西霍受到伤害时会累计怒气条，每受击1次增加3%充能(燃烧伤害除外)，条满后进入狂暴状态，并附着雷壳护盾。",
+   "IconPath": "",
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "科西霍受到伤害时会累计怒气条，每受击1次增加3%充能(燃烧伤害除外)，条满后进入狂暴状态，并附着雷壳护盾。"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 2681145,
+   "atk": 28719,
+   "weight": 20000,
+   "tenacity": 4000
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 683267,
+   "hpNote": "28%",
+   "atk": 24622,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "cocijo",
+ "icon": "avatar.webp",
+ "tags": [
+  "动物",
+  "历经百战"
+ ]
+}

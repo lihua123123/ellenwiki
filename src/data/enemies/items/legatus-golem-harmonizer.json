@@ -1,0 +1,196 @@
+{
+ "name": "魔像督军·协律师",
+ "nameEn": "Legatus Golem: Harmonizer",
+ "subtitle": "无情烈火的旋律",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 105,
+ "baseStats": {
+  "hp": {
+   "Value": 228.2112,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 137.5,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "入战",
+   "pyro": 210,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 210,
+   "dendro": 210,
+   "cryo": 210,
+   "geo": 210,
+   "physical": 210
+  },
+  {
+   "name": "带甲",
+   "pyro": 70,
+   "hydro": 70,
+   "anemo": 70,
+   "electro": 70,
+   "dendro": 70,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 70
+  },
+  {
+   "name": "词条带甲",
+   "pyro": 130,
+   "hydro": 130,
+   "anemo": 130,
+   "electro": 130,
+   "dendro": 130,
+   "cryo": 130,
+   "geo": 130,
+   "physical": 130
+  },
+  {
+   "name": "破甲",
+   "pyro": -70,
+   "hydro": -70,
+   "anemo": -70,
+   "electro": -70,
+   "dendro": -70,
+   "cryo": -70,
+   "geo": -70,
+   "physical": -70
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "106",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "五调三音",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "督军进行至多3段的多种攻击：左-右-盾、左-跺-切、左-右-切；其中左、右、盾、跺、切分别依次造成<c=#ff9999>50%,60%,\n60%,70%,80%</c>伤害，进行盾攻击之后还会产生音律地波和井字交响弦音，分别造成<c=#ff9999>60%,6%</c>与<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "切弦低语",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "督军利用盾与剑作一曲消愁。演奏过程中，督军会不断散落轻音，造成<c=#ff9999>40%</c>伤害；曲终之时拨一重音，声声入耳，造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "愈声柔曼",
+   "type": "防御",
+   "icon": "skill-3.webp",
+   "description": "当督军盾量低于<c=#ffdfbf>19</c>时，督军将待在原地，并缓慢恢复岩盾盾量至66%。"
+  },
+  {
+   "name": "上弦重振",
+   "type": "召唤",
+   "icon": "skill-4.webp",
+   "description": "督军唤出3枚`谐振器`，在中央进行调谐。每个谐振器周期性都产生强音余波，造成<c=#ffe599>10%</c>伤害，命中督军时恢复<c=#ffe599>6岩</c>盾；13s后，督军引爆所有谐振器，造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "嘈弦急雨",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "督军剑指上方，从里向外奏鸣出数个轻音，如数下落，造成<c=#ff9999>70%,7%</c>伤害。"
+  },
+  {
+   "name": "弦断麾时",
+   "type": "位移",
+   "icon": "skill-6.webp",
+   "description": "距离较远时，督军放下乐器进行追逐，直到目标之处，激奏上挑，造成<c=#ff9999>70%</c>伤害。一般后接「转急促弦」。"
+  },
+  {
+   "name": "铜骑枪鸣",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "督军置剑于地，从内向外奏响三拍激昂之调，造成<c=#ff9999>100%</c>伤害；之后跳起，作曲一拍之终，造成<c=#ff9999>200%</c>伤害。"
+  },
+  {
+   "name": "四弦三声",
+   "type": "输出",
+   "icon": "skill-8.webp",
+   "description": "距离较远时，督军怒而一拨，四弦一声如裂帛，出现三刀火刃，均造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "急弦转促",
+   "type": "突袭",
+   "icon": "skill-9.webp",
+   "description": "督军进行至多2段的多种攻击：跺-盾、跺-切；其中盾、跺、切分别依次造成<c=#ff9999>60%,70%,80%</c>伤害，进行盾攻击之后还会产生音律地波，造成<c=#ff9999>60%,6%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "白石胄甲",
+   "desc": "84岩盾，存在时抗性获得提升，击破后瘫痪10s并扣除12.5%生命值。"
+  },
+  {
+   "text": "谐振器",
+   "desc": "6岩盾，击破进入「假死」状态，不会消失，全部击破可以使其破坏并使魔像督军-42岩盾。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "白石胄甲",
+   "description": "84岩盾，存在时抗性获得提升，击破后瘫痪10s并扣除12.5%生命值。",
+   "elementType": "Rock",
+   "duration": ""
+  },
+  {
+   "name": "谐振器",
+   "description": "6岩盾，击破进入「假死」状态，不会消失，全部击破可以使其破坏并使魔像督军-42岩盾。",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 105,
+   "hp": 1077359,
+   "atk": 29668,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "legatus-golem-harmonizer",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

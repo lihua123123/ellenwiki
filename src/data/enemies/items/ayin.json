@@ -1,0 +1,181 @@
+{
+ "name": "无相之火·三部曲·燃灼之炉",
+ "nameEn": "「Ayin」",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 122.256,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": "IMM",
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "无情常燃",
+   "type": "防护",
+   "icon": "skill-1.webp",
+   "description": "燃烧状态下的无相之火形成<c=#ff9999>`无殚焰胄`</c>，当复燃次数为<c=#ff9999>1/2/>2</c>时，无相之火每5s恢复<c=#ff9999>5%/2.5%/0%</c>生命值，最大恢复至<c=#ff9999>50%/25%/不恢复</c>生命值。"
+  },
+  {
+   "name": "火赞真神",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "无相之火拳击地面，拳击后从内向外扩散出3道震波，锤击与震波均造成<c=#ff9999>100%,50%,20%,10%</c>伤害，该技能将连续施放3次，施放时将出现在玩家上方。"
+  },
+  {
+   "name": "炽炎森蚺",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "无相之火化成蛇，向玩家喷出火球，喷球落地位置依次为玩家左、中、右处，每次喷3个火球，每个火球造成<c=#ff9999>100%,50%,20%,10%</c>伤害。"
+  },
+  {
+   "name": "三连拟态",
+   "type": "化形",
+   "icon": "skill-4.webp",
+   "description": "无相之火依次变形呈成公牛、鲤鱼、蝴蝶进行攻击，公牛顶造成<c=#ff9999>100%</c>伤害，鲤鱼跃出和跃入造成<c=#ff9999>100%</c>伤害，出地爆炸造成<c=#ff9999>100%</c>伤害，蝴蝶舞造成<c=#ff9999>33%</c>伤害。"
+  },
+  {
+   "name": "热氧熔珠",
+   "type": "碾压",
+   "icon": "skill-5.webp",
+   "description": "无相之火朝向玩家并化成球滚动，造成<c=#ff9999>80%</c>伤害；来回滚向玩家至多3次，接触造成<c=#ff9999>50%</c>伤害；滚动路径上留下熔岩地面，接触造成<c=#ff9999>15%,7.5%,5%,3%</c>伤害。"
+  },
+  {
+   "name": "焚净诸事",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "无相之火移到场地中央，蜷缩成球状，8s后爆炸，造成<c=#ff9999>250%</c>大范围伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "薪火不灭",
+   "type": "辅助",
+   "icon": "skill-7.webp",
+   "description": "无相之火在场地上形成3个不灭熔口，间歇升起`火种`，每个火种每2s为无相之火的<c=#ff9999>`无殚焰胄`</c>补充1元素量。该熔口在无相之火熄灭后消失。"
+  },
+  {
+   "name": "无息阴燃",
+   "type": "妨害",
+   "icon": "skill-8.webp",
+   "description": "被无相之火的任意攻击命中后，前台角色会被施加<c=#ffb299>「特殊的阴燃之火」</c>，每秒造成<c=#ff9900>4%</c>伤害，20sD，可被元素反应消去。"
+  },
+  {
+   "name": "贯地万焰",
+   "type": "辅助",
+   "icon": "skill-9.webp",
+   "description": "无相之火移到场地中央，暴露核心，不断产生炎柱，造成<c=#ff9999>100%</c>伤害，炎柱在距离无相之火一定范围外会追踪玩家生成。首次升起5根炎柱，并留下5个不灭熔口。"
+  },
+  {
+   "name": "濒亡·复燃",
+   "type": "复苏",
+   "icon": "skill-10.webp",
+   "description": "无相之火包围核心，从「贯地万焰」技能留下的不灭熔口中升起5个`火种`，熄灭所有火种可中断其复燃进程。\n复燃成功后将恢复复燃值，其值遵循该式：<c=#ff9999>40%+25%火种数量</c>。"
+  },
+  {
+   "name": "焰光错闪",
+   "type": "追踪",
+   "icon": "skill-11.webp",
+   "description": "无相之火开阵，8个火立方外壳围一圈暴露核心，一次性发射所有火立方追踪玩家，每个造成<c=#ff9999>50%,25%,12.5%,5%</c>伤害。"
+  },
+  {
+   "name": "墙封·烬热",
+   "type": "输出",
+   "icon": "skill-12.webp",
+   "description": "无相之火将外壳化为成两面墙，随后夹击，造成<c=#ff9999>100%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "无殚焰胄",
+   "desc": "48火盾，击破可熄灭无相之火。"
+  },
+  {
+   "text": "火种",
+   "desc": "6火盾，全部击破阻止无相之火复燃。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "无殚焰胄",
+   "description": "48火盾，击破可熄灭无相之火。",
+   "elementType": "Fire",
+   "duration": ""
+  },
+  {
+   "name": "火种",
+   "description": "6火盾，全部击破阻止无相之火复燃。",
+   "elementType": "Fire",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 548416,
+   "atk": 15665,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "ayin",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

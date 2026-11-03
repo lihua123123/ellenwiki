@@ -1,0 +1,173 @@
+{
+ "name": "无相之岩",
+ "nameEn": "Geo Hypostasis",
+ "subtitle": "「基末尔」",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": "IMM",
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "玄岩立阵",
+   "type": "辅助",
+   "icon": "skill-1.webp",
+   "description": "无相之岩脱去外壳，短暂暴露核心，在自身和周围3个位置升起`玄武岩柱`，生成玄武岩柱的区域造成<c=#ffe599>25%</c>伤害<c=#ffbfbf>(无数字)</c>。"
+  },
+  {
+   "name": "敕岩之罚",
+   "type": "瞄准",
+   "icon": "skill-2.webp",
+   "description": "无相之岩暴露核心，施放岩封印标记同步于玩家，随后岩封印触发崩破，造成<c=#ffe599>100%</c>伤害。"
+  },
+  {
+   "name": "无处岩锋",
+   "type": "追踪",
+   "icon": "skill-3.webp",
+   "description": "无相之岩升空开阵，8个岩立方围一圈暴露核心，连续发射20个砂岩弹，每个砂岩弹造成<c=#ffe599>25%</c>伤害，砂岩弹对玄武岩柱有自噬作用。"
+  },
+  {
+   "name": "墙封·裂石",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "无相之岩将外壳化为成两面墙，随后夹击，造成<c=#ffe599>100%</c>伤害。"
+  },
+  {
+   "name": "砂云石雨",
+   "type": "限制",
+   "icon": "skill-5.webp",
+   "description": "无相之岩脱去外壳暴露核心，在场上生成4团三角形岩雨区，其持续落下碎石造成<c=#ffe599>25%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，岩雨区间断下落巨石，造成<c=#ffe599>75%</c>伤害；岩雨区的位置与原先玄武岩柱的位置一致。"
+  },
+  {
+   "name": "晶岩谐鸣",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "无相之岩盘旋升空，激发所有玄武岩柱，玄武岩柱产生共鸣波，每次造成<c=#ffe599>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，持续8-9次，其下方会产生一个`黄岩块`，击破以获得躲避冲击波的护罩"
+  },
+  {
+   "name": "柱石晶振",
+   "type": "控制",
+   "icon": "skill-7.webp",
+   "description": "无相之岩升空，激发其下方的玄武岩柱，使其产生一个冲击波，造成<c=#ffe599>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，但据说可以跳起来躲冲击波。"
+  },
+  {
+   "name": "隳岳之锤",
+   "type": "输出",
+   "icon": "skill-8.webp",
+   "description": "无相之岩化作成大锤，蓄力后重重砸下，造成<c=#ffe599>150%</c>伤害，锤击处扩散出3个碎岩波，每个造成<c=#ffe599>50%</c>伤害。"
+  },
+  {
+   "name": "濒亡·散沙",
+   "type": "复苏",
+   "icon": "skill-9.webp",
+   "description": "生命值低于5%时，无相之岩召唤3个`复苏玄武岩柱`，复苏持续15s，每个玄武岩柱恢复无相之岩<c=#ffe599>15%</c>生命值。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "玄武岩柱",
+   "desc": "24岩盾，击破可产生1-2个岩元素晶球；受到\n突刺/穿刺-0.2岩，切割-0.28岩。"
+  },
+  {
+   "text": "复苏玄武岩柱",
+   "desc": "8岩盾，击破可产生1-2个岩元素晶球；受到\n突刺/穿刺-0.24岩，切割-0.32岩。"
+  },
+  {
+   "text": "黄岩块",
+   "desc": "3岩盾，击破可产生持续14.4s的护罩；受到\n突刺/穿刺-0.2岩，切割-0.28岩。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "玄武岩柱",
+   "description": "24岩盾，击破可产生1-2个岩元素晶球；受到\n突刺/穿刺-0.2岩，切割-0.28岩。",
+   "elementType": "Rock",
+   "duration": 15
+  },
+  {
+   "name": "复苏玄武岩柱",
+   "description": "8岩盾，击破可产生1-2个岩元素晶球；受到\n突刺/穿刺-0.24岩，切割-0.32岩。",
+   "elementType": "Rock",
+   "duration": 15
+  },
+  {
+   "name": "黄岩块",
+   "description": "3岩盾，击破可产生持续14.4s的护罩；受到\n突刺/穿刺-0.2岩，切割-0.28岩。",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 275905,
+   "atk": 15665,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "geo-hypostasis",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

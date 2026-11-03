@@ -1,0 +1,100 @@
+{
+ "name": "嵴锋龙武士·碎晶打者",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 59.769600000000004,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "趁手炬锤",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "碎晶打者使用重锤进行横、斜、砸至多3段的攻击，分别造成<c=#b8b8b8>60%,60%,\n70%+10%</c>伤害。"
+  },
+  {
+   "name": "沟壑之錾",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "碎晶打者抡锤使劲朝地面砸，造成<c=#ffe599>85%</c>伤害，技能一般会以普攻的第一段引入。"
+  },
+  {
+   "name": "破岩掘金",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "碎晶打者驱使灵力，唤出一枚岩晶，后碎晶打者使用飞锯击碎岩晶，产生的碎片造成<c=#ffe599>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:A_1102",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 244024,
+   "atk": 9849,
+   "weight": 100,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "嵴锋龙武士-碎晶打者",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

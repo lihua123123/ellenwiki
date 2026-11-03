@@ -1,0 +1,103 @@
+{
+ "name": "原初之人",
+ "nameEn": "Primordial Human",
+ "subtitle": "光塑的巨人·斯瓦罗德",
+ "category": "Tps",
+ "categoryLabel": "第三人称射击（TPS）",
+ "tier": "Quest",
+ "defaultLevel": 20,
+ "baseStats": {
+  "hp": {
+   "Value": 329.176096,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 135.174886,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "沉入时隙的梦河",
+   "type": "定点",
+   "icon": "skill-1.webp",
+   "description": "斯瓦罗德施放多道源光隙流，接触造成<c=#b8b8b8>50%,25%,10%,5%</c>伤害。"
+  },
+  {
+   "name": "瞩见苍冕的陨落",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "斯瓦罗德唤出6枚光球，依次向玩家投射，造成<c=#b8b8b8>30%,15%,6%,3%</c>伤害。"
+  },
+  {
+   "name": "曾为灵躯的注视",
+   "type": "追踪",
+   "icon": "skill-3.webp",
+   "description": "斯瓦罗德在自身两侧召唤巨量的，括弧排列状的30枚弹幕，随后飞速袭来，造成<c=#b8b8b8>20%,10%,4%,2%</c>伤害。"
+  },
+  {
+   "name": "背负无主的遗愿",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "斯瓦罗德唤出5枚金色光球，<c=#ffdfbf>可被攻击击破</c>，5s后光球变蓝，并缓慢飞来，造成<c=#b8b8b8>40%,20%,8%,4%</c>伤害。"
+  },
+  {
+   "name": "掩幪寰星的希冀",
+   "type": "远程",
+   "icon": "skill-5.webp",
+   "description": "斯瓦罗德拟出巨量的，双翼状排列的繁星，对玩家进行轰击，造成<c=#b8b8b8>20%,10%,\n4%,2%</c>伤害。"
+  },
+  {
+   "name": "弃绝慰者的心扉",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "斯瓦罗德在胸口处凝聚金光，8s后发射脉冲，造成<c=#b8b8b8>100%</c>伤害。金光可被<c=#ffdfbf>20次攻击</c>中断。"
+  },
+  {
+   "name": "无怨无忧的樊笼",
+   "type": "爆发",
+   "icon": "",
+   "description": "低于<c=#ffdfbf>50%生命值</c>时，斯瓦罗德将准备打开庭院的「门扉」。<c=#ffdfbf>125s</c>后蓄力成功，施放时将<c=#ffbfbf>秒杀</c>前台。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [
+  {
+   "label": "剧情首领",
+   "level": 20,
+   "hp": 20625,
+   "atk": 1800,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "primordial-human",
+ "icon": "avatar.webp",
+ "tags": [
+  "第三人称射击（TPS）"
+ ]
+}

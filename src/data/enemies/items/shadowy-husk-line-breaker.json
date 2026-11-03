@@ -1,0 +1,106 @@
+{
+ "name": "黯色空壳·破阵",
+ "nameEn": "Shadowy Husk: Line Breaker",
+ "subtitle": "黑蛇骑士的终末",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 81.50399999999999,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 30,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 110,
+ "skills": [
+  {
+   "name": "瀚洗回澜",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "破阵举起长枪，缓缓转身用力扫过，造成<c=#7fbfff>80%</c>伤害。"
+  },
+  {
+   "name": "江贯溦现",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "破阵侧身横拿长枪，片刻后戳击前方，造成<c=#7fbfff>80%</c>伤害。"
+  },
+  {
+   "name": "移沧行浪",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "距离较远时，破阵使用长枪蓄力冲刺，造成<c=#7fbfff>60%</c>伤害，并在冲刺结束后进行挑击造成<c=#7fbfff>100%</c>伤害。"
+  },
+  {
+   "name": "愈水疗华",
+   "type": "回复",
+   "icon": "skill-4.webp",
+   "description": "当破阵的攻击命中护盾庇护下的的玩家时，<c=#99ffe5>扣除当前15%生命值</c>，其与附近5m的黑蛇众将获得持续10s的治疗，`每1s恢复1%，可叠加至多4层，每层层数分开计算`。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 332760,
+   "atk": 7387,
+   "weight": 110,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "shadowy-husk-line-breaker",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

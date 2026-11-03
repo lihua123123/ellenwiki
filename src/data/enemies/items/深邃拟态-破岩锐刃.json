@@ -1,0 +1,39 @@
+{
+ "name": "深邃拟态·破岩锐刃",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {
+   "Value": 46.1856,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "id": "深邃拟态-破岩锐刃",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

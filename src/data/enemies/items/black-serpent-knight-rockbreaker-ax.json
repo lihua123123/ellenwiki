@@ -1,0 +1,135 @@
+{
+ "name": "黑蛇骑士·摧岩之钺",
+ "nameEn": "Black Serpent Knight: Rockbreaker Ax",
+ "subtitle": "「曾如磐石抵挡黑水奔流…」",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 108.672,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 56.52,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 50,
+   "physical": 10
+  },
+  {
+   "name": "狂战",
+   "pyro": 60,
+   "hydro": 60,
+   "anemo": 60,
+   "electro": 60,
+   "dendro": 60,
+   "cryo": 60,
+   "geo": 100,
+   "physical": 60
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "双斧齐下",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "摧岩拆开双板斧，双手各持钺，进行右斧、左斧、双斧齐下3段攻击，依次造成<c=#b9b9b9>70%,85%,100%</c>伤害。"
+  },
+  {
+   "name": "斩铁重钺",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "摧岩使用双板斧，进行顺时针旋转两圈，各造成<c=#b8b8b8>75%,85%</c>伤害。"
+  },
+  {
+   "name": "坚韧斧盾",
+   "type": "防御",
+   "icon": "skill-3.webp",
+   "description": "摧岩将双板斧拼成一个盾，并敲击地面，造成<c=#b9b9b9>100%</c>伤害，同时短暂的格挡前方的伤害。"
+  },
+  {
+   "name": "磐岩重盾",
+   "type": "防御",
+   "icon": "skill-4.webp",
+   "description": "当场上<c=#ffffbf>黑蛇众数量</c><c=#ffffbf>≥</c><c=#ffffbf>2</c>时，摧岩将双板斧拼成一个盾，然后挡在黑蛇众前面，形成一面很大的盾，格挡来自前方的伤害，抗打断0.025。当玩家处于摧岩后方或离得太远时，盾收起。"
+  },
+  {
+   "name": "金钺狂舞",
+   "type": "强攻",
+   "icon": "skill-5.webp",
+   "description": "(狂战状态)距离较远时，摧岩朝玩家冲来，用双板斧朝地上一翘，造成<c=#ffe599>100%</c>伤害，再抡起双板斧，旋转3-5圈。"
+  },
+  {
+   "name": "斫峰回旋",
+   "type": "强攻",
+   "icon": "skill-6.webp",
+   "description": "(狂战状态)摧岩抡起双板斧，旋转3-5圈，接触造成<c=#ffe599>80%,12%</c>伤害，结束时施放强力尾刀，造成<c=#ffe599>100%</c>伤害。"
+  },
+  {
+   "name": "狂岩凶战",
+   "type": "天赋",
+   "icon": "skill-7.webp",
+   "description": "当摧岩的攻击命中护盾庇护下的的玩家时，立即中断当前攻击，拼合双板斧，<c=#ffc926>扣除当前15%生命值</c>，进入<c=#ffc926>「狂战」</c>状态：<c=#ffbfbf>获得20%攻击力提升，50%全抗性提升，抗打断0，持续11s。</c>效果结束时，摧岩会把双板斧拆开。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 443680,
+   "atk": 14773,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "black-serpent-knight-rockbreaker-ax",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

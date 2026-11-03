@@ -1,0 +1,157 @@
+{
+ "name": "金礞·霜夜灵嗣",
+ "nameEn": "Gilded Sunshard: Frostnight Scion",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 138.55679999999998,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": "IMM",
+   "physical": 10
+  },
+  {
+   "name": "晦隐",
+   "pyro": 60,
+   "hydro": 60,
+   "anemo": 60,
+   "electro": 60,
+   "dendro": 60,
+   "cryo": 60,
+   "geo": 100,
+   "physical": 60
+  },
+  {
+   "name": "深渊晦隐",
+   "pyro": 130,
+   "hydro": 130,
+   "anemo": 130,
+   "electro": 130,
+   "dendro": 130,
+   "cryo": 130,
+   "geo": 170,
+   "physical": 130
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "琉影相耀",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "灵嗣利用背身的琥珀环进行至多两次的攻击，均造成<c=#ffe599>80%</c>伤害。"
+  },
+  {
+   "name": "琼光逐掷",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "灵嗣凝结晶石，并朝玩家丢出，造成<c=#ffe599>100%</c>伤害；「晦隐」状态下落地的晶石还会溅射出5枚碎片，造成<c=#ffe599>10%</c>伤害。"
+  },
+  {
+   "name": "璞玉悬行",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "灵嗣召集晶石，在自身附近施放三波岩陨，每次施放时都会闪到玩家附近，岩陨波造成<c=#ffe599>60%</c>伤害；该技能仅在「晦隐」状态下施放。"
+  },
+  {
+   "name": "蔽以璇璃",
+   "type": "天赋",
+   "icon": "skill-4.webp",
+   "description": "灵嗣转身翻越，进入「`晦隐`」状态，该状态下灵嗣施放技能前后都会闪现，并且全抗提升，解除对<c=#ffe599>岩元素</c>的免疫。"
+  },
+  {
+   "name": "授以碾玉",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "灵嗣抬起前身向前跺下，造成<c=#ffe599>70%</c>伤害。"
+  },
+  {
+   "name": "蔑以碎砾",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "灵嗣背对玩家用后肢猛踢，造成<c=#ffe599>70%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "晦隐",
+   "desc": "抗打断0，全抗性提升<c=#ffccbf>60%</c>/<c=#ffccbf>120%</c>，允许受到岩元素伤害；充能条总量<c=#ffe599>100</c>/<c=#ffe599>150</c>(深渊)，受到<c=#ffe599>岩元素</c>攻击后根据岩元素的量积攒<c=#ffe599>20n</c>或<c=#ffe599>3</c>，受到月反应伤害积攒<c=#ffe599>3</c>，充满退出状态。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [
+  {
+   "Name": "晦隐",
+   "Description": "抗打断0，全抗性提升<color=#ffccbf>60%</color>/<color=#ffccbf>120%</color>，允许受到岩元素伤害；充能条总量<color=#ffe599>100</color>/<color=#ffe599>150</color>(深渊)，受到<color=#ffe599>岩元素</color>攻击后根据岩元素的量积攒<color=#ffe599>20n</color>或<color=#ffe599>3</color>，受到月反应伤害积攒<color=#ffe599>3</color>，充满退出状态。",
+   "IconPath": "",
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "抗打断0，全抗性提升60%/120%，允许受到岩元素伤害；充能条总量100/150(深渊)，受到岩元素攻击后根据岩元素的量积攒20n或3，受到月反应伤害积攒3，充满退出状态。"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 565692,
+   "atk": 14773,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "gilded-sunshard-frostnight-scion",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

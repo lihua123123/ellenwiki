@@ -1,0 +1,144 @@
+{
+ "name": "特拉扎库伊洛特尔",
+ "nameEn": "Tlatzacuilotl",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 407.52,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 138.16,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 310,
+   "hydro": 310,
+   "anemo": 310,
+   "electro": 310,
+   "dendro": 310,
+   "cryo": 310,
+   "geo": 310,
+   "physical": 280
+  },
+  {
+   "name": "瘫痪",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "开山好手",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "伊洛特尔使用飞锯进行纵、横、切至多3段的攻击，分别造成<c=#b8b8b8>`60%`</c><c=#b8b8b8>,60%,</c><c=#b8b8b8>`70%`</c>伤害，第三段留在地上的锯子额外造成<c=#b8b8b8>10%x3</c>伤害。"
+  },
+  {
+   "name": "惊石振崖",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "伊洛特尔使劲将飞锯敲入地面，产生振波造成<c=#ffe599>`100%`</c>伤害。"
+  },
+  {
+   "name": "凿岩錾金",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "伊洛特尔驱使灵力，唤出一枚岩晶，后伊洛特尔使用飞锯粉碎岩晶，产生的碎片造成<c=#ffe599>`100%`</c>伤害。"
+  },
+  {
+   "name": "唤声循峦",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "伊洛特尔怒而起舞，挥舞飞锯进行连续不断的5段攻击，其依次造成<c=#ffe599>`33%`</c><c=#ffe599>,33%,\n</c><c=#ffe599>`33%`</c><c=#ffe599>,50%,</c><c=#ffe599>`70%`</c>伤害。"
+  },
+  {
+   "name": "魂化庇护",
+   "type": "防御",
+   "icon": "skill-5.webp",
+   "description": "伊洛特尔在低于<c=#ffcebf>70%生命值</c>时，会开启`护盾`。利用`破魂`Buff可以快速击破护盾，以及造成大量伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "护盾",
+   "desc": "3次瘫特化次数盾，该状态下锁血。对其造成累计3层破魂Buff的伤害即可击破，并使其瘫痪10s。瘫痪状态下抗性降至正常。"
+  },
+  {
+   "text": "破魂Buff",
+   "desc": "角色成功闪避敌人的部分攻击伤害时，会获得此效果，可以叠加，持续10s，叠加时刷新；当角色对其进行攻击时，消耗此效果并造成对应层数的百分比真实伤害。层数效果：每层12%HP。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "护盾",
+   "description": "3次瘫特化次数盾，该状态下锁血。对其造成累计3层破魂Buff的伤害即可击破，并使其瘫痪10s。瘫痪状态下抗性降至正常。",
+   "elementType": "",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "夜魂试炼",
+   "level": 103,
+   "hp": 1828053,
+   "atk": 28719,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "tlatzacuilotl",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

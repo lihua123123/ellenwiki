@@ -1,0 +1,321 @@
+{
+ "name": "秘源机兵·统御械",
+ "nameEn": "Ancient Ruins Master Terminal",
+ "subtitle": "深古遗迹辖制机关",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 293.4144,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "荡除",
+   "pyro": 210,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 210,
+   "dendro": 210,
+   "cryo": 210,
+   "geo": 210,
+   "physical": 210
+  },
+  {
+   "name": "凝滞",
+   "pyro": 0,
+   "hydro": 0,
+   "anemo": 0,
+   "electro": 0,
+   "dendro": 0,
+   "cryo": -40,
+   "geo": 0,
+   "physical": 0
+  },
+  {
+   "name": "夜魂",
+   "pyro": 50,
+   "hydro": 50,
+   "anemo": 50,
+   "electro": 50,
+   "dendro": 50,
+   "cryo": 50,
+   "geo": 50,
+   "physical": 50
+  },
+  {
+   "name": "不破机制惩罚",
+   "pyro": 80,
+   "hydro": 80,
+   "anemo": 80,
+   "electro": 80,
+   "dendro": 80,
+   "cryo": 80,
+   "geo": 80,
+   "physical": 80
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "流锋舞涟",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "统御械捏出一把水刀，进行左划、右划、纵合至多三段的攻击，依次造成<c=#7fbfff>60%,60%,75%</c>伤害。"
+  },
+  {
+   "name": "吞覆圆渊",
+   "type": "定点",
+   "icon": "skill-2.webp",
+   "description": "统御械张嘴，在其前方生成水漩涡，牵引玩家，位于其内将持续造成<c=#7fbfff>30%</c>伤害；3s后漩涡喷发，造成<c=#7fbfff>90%</c>伤害。"
+  },
+  {
+   "name": "晨昏迅翮",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "统御械进行俯冲，朝玩家方向袭来，接触造成<c=#7fbfff>80%</c>伤害，至多重复3次。"
+  },
+  {
+   "name": "津海天露",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "统御械瞄准玩家，标记并禁锢落点位置，随后发射一枚水球落在范围处，造成<c=#7fbfff>85%</c>伤害。"
+  },
+  {
+   "name": "潺澜逝水",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "统御械立即移至场地中央，进入「荡除」状态，期间其身旁的2个水龙头将沿顺时针方向持续喷洒水流；\n当「动量」累积至7.4%/22.2%/44.4%时，其水柱将持续造成<c=#7fbfff>20%</c>/<c=#7fbfff>50%</c>/<c=#7fbfff>100%</c>伤害。喷水持续30s，与「急湍瀑泉」共享时间。"
+  },
+  {
+   "name": "急湍瀑泉",
+   "type": "定点",
+   "icon": "skill-6.webp",
+   "description": "构型械自身拥有<c=#ffdfbf>180</c>点「应战对策」上限。角色进入「夜魂加持」状态时，会积攒<c=#bfffbf>30</c>充能，维持时每秒积攒<c=#bfffbf>10</c>充能，充满时进入「应战对策」模式：其将产生一不断追踪玩家的泉眼，并间歇喷出1-4次的水柱，持续造成<c=#7fbfff>45%</c>伤害；「动量」越多，泉眼移速越快。"
+  },
+  {
+   "name": "低温消蚀",
+   "type": "天赋",
+   "icon": "skill-7.webp",
+   "description": "「`液流动量`」初始拥有一定值，随时间持续增长，受到<span class=\"cryo\">**冰元素**</span>攻击后会回退；当动量积蓄至不同进度时，所产生的效果不同：\n当「动量」累积至<c=#ffdfbf><7.4%</c>/<c=#ffdfbf>7.4%</c>/<c=#ffdfbf>22.2%</c>/<c=#ffdfbf>44.4%</c>/<c=#ffdfbf>≥</c><c=#ffdfbf>88.9%</c>时，统御械将：\n<c=#bfffbf>减抗</c>并「凝滞」 / <c=#ffbfbf>加抗</c>并开始喷水 / 水柱伤害提升至50% / 水柱伤害提升至100% / 额外多2枚水龙头，同时水龙头转速随着阶段进行不断增加；\n当进入「应战对策」的特殊攻击模式后，仍会累积「动量」，将其打空仍可进入「凝滞」；同样，在「动量」<c=#ffdfbf><7.4%</c>时，不会进入「应战对策」状态。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "深渊抗性",
+   "desc": "战前380%，开局280%，荡除210%，若期间未进入过「凝滞」或「夜魂」状态，则结束时全抗将升至80%。"
+  },
+  {
+   "text": "液流动量",
+   "desc": "总量135，每0.4s积攒1.481%(2)，每次冰元素攻击减少2.963%(4)，初始自带23.7%(32)。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1316198,
+   "atk": 20886,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": {
+  "name": "秘源机兵统御械·毁灭武装",
+  "nameEn": "Secret Source Automaton: Overseer Device - Obliterator",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 1100076,
+    "atk": 15225,
+    "multiplier": 1.2,
+    "advantage": ""
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 5481561,
+    "atk": 19698,
+    "multiplier": 4.0,
+    "advantage": "Cryo Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 7606009,
+    "atk": 21681,
+    "multiplier": 4.8,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 14916723,
+    "atk": 23222,
+    "multiplier": 8.6,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "入场",
+    "diffNote": "N5",
+    "pyro": 340,
+    "hydro": 340,
+    "anemo": 340,
+    "electro": 340,
+    "dendro": 340,
+    "cryo": 340,
+    "geo": 340,
+    "physical": 340
+   },
+   {
+    "name": "正常",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   },
+   {
+    "name": "荡除",
+    "diffNote": "N5",
+    "pyro": 270,
+    "hydro": 270,
+    "anemo": 270,
+    "electro": 270,
+    "dendro": 270,
+    "cryo": 270,
+    "geo": 270,
+    "physical": 270
+   },
+   {
+    "name": "凝滞",
+    "diffNote": "N5",
+    "pyro": 30,
+    "hydro": 30,
+    "anemo": 30,
+    "electro": 30,
+    "dendro": 30,
+    "cryo": -30,
+    "geo": 30,
+    "physical": 30
+   },
+   {
+    "name": "夜魂",
+    "diffNote": "N5",
+    "pyro": 110,
+    "hydro": 110,
+    "anemo": 110,
+    "electro": 110,
+    "dendro": 110,
+    "cryo": 110,
+    "geo": 110,
+    "physical": 110
+   }
+  ],
+  "skills": [
+   {
+    "name": "急汹瀑涌",
+    "type": "定点 (N5)",
+    "icon": "leyline-skill-1.webp",
+    "description": "处于「应战对策」状态时，其将产生2个高速强追踪玩家的泉眼，移至玩家处立即生成水柱，高频造成<c=#7fbfff>45%</c>伤害；「液流动量」越多，泉眼移速越快。\n该模式下，仍会累积「动量」，将其打空仍可进入「凝滞」；同样，在「动量」<c=#ffdfbf><7.4%</c>(10) 时，不会进入「应战对策」状态。"
+   },
+   {
+    "name": "低温消蚀",
+    "type": "天赋",
+    "icon": "leyline-skill-2.webp",
+    "description": "「`液流动量`」初始拥有一定值，随时间持续增长，受到<span class=\"cryo\">**冰元素**</span>攻击后会回退；当动量积蓄至不同进度时，所产生的效果不同：\n当「动量」累积至\n<c=#ffdfbf><7.4%</c>(10) / <c=#ffdfbf>7.4%</c>(10) / <c=#ffdfbf>22.2%</c>(30)<c=#ffdfbf> </c>/ <c=#ffdfbf>44.4%</c>(60) / <c=#ffdfbf>≥</c><c=#ffdfbf>88.9%</c>(120) 时，统御械将：\n<c=#bfffbf>减抗</c>并「凝滞」 / <c=#ffbfbf>加抗</c>并开始喷水 / 水柱伤害提升至50% / 水柱伤害提升至100% / 额外产生2枚水柱，同时水龙头转速随着阶段进行不断增加；\n「凝滞」状态下，统御械停止攻击，所有抗性大幅降低，<span class=\"cryo\">**冰抗**</span>额外降低；「动量」高于10时退出该状态。\n<c=#ffbfbf>(N5)</c> 首次进入凝滞状态时角色恢复<c=#ffdfbf>36</c>元素能量。"
+   }
+  ],
+  "notes": [
+   {
+    "text": "液流动量",
+    "desc": "总量135，每0.4s积攒<c=#ffdfbf>1.481%</c>(2)，每次<c=#bfffff>冰元素</c>攻击减少<c=#ffdfbf>2.963%</c>(4)，初始自带<c=#ffdfbf>23.7%</c>(32)。<c=#ffbfbf>(N5) </c>每次<c=#bfffff>冰元素</c>攻击减少<c=#ffdfbf>2.222%</c>(3)。"
+   },
+   {
+    "text": "夜魂机制",
+    "desc": "「应战对策」充能总值<c=#ffdfbf>180</c>，角色进入「夜魂加持」状态时，每次积攒<c=#99ff99>30</c>充能；角色维持「夜魂加持」状态时，每秒积攒<c=#99ff99>10</c>充能。充能填满后转换攻击方式。"
+   },
+   {
+    "text": "荡除模式",
+    "desc": "荡除模式总时间持续35s，「潺澜逝水」和「急汹瀑涌」共享该时间。\n<c=#ffbfbf>(N5) </c>荡除模式总时间延长至55s。"
+   },
+   {
+    "text": "(N4) 抗性",
+    "desc": "入战前<c=#ffdfbf>310%</c>，入场<c=#ffdfbf>280%</c>，荡除<c=#ffdfbf>210%</c>，夜魂<c=#ffdfbf>50%</c>，\n凝滞<span class=\"cryo\">**冰-40%**</span>/其他<c=#ffdfbf>0%</c>。若期间<c=#ffdfbf>未进入过「凝滞」或「夜魂」状态</c>，\n<c=#dfdfdf>则</c>退出荡除模式时，全抗将升至<c=#ffdfbf>80%</c>。<c=#ffbfbf>(N5) </c>入场时短时间<c=#ffdfbf>380%</c>。"
+   }
+  ],
+  "shields": []
+ },
+ "id": "ancient-ruins-master-terminal",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关",
+  "幽境危战"
+ ]
+}

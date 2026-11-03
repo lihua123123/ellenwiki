@@ -1,0 +1,140 @@
+{
+ "name": "炽热骗骗花",
+ "nameEn": "Pyro Whopperflower",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 40.751999999999995,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 75,
+   "hydro": 35,
+   "anemo": 35,
+   "electro": 35,
+   "dendro": 35,
+   "cryo": 35,
+   "geo": 35,
+   "physical": 35
+  },
+  {
+   "name": "眩晕",
+   "pyro": 50,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 60,
+ "skills": [
+  {
+   "name": "微蕴光火",
+   "type": "追踪",
+   "icon": "skill-1.webp",
+   "description": "火骗骗花持续发射1-3个持续追踪的火焰弹，造成<c=#ff9999>22%</c>伤害。"
+  },
+  {
+   "name": "焚原百焰",
+   "type": "爆发",
+   "icon": "skill-2.webp",
+   "description": "火骗骗花消耗一个火之实进行蓄力，蓄力时附属`星火胄甲`，破坏即眩晕，蓄力完成后朝玩家连续抛射12个火焰弹，每个造成<c=#ff9999>40%</c>伤害。"
+  },
+  {
+   "name": "风扇·流炎",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "火骗骗花旋转花瓣，造成3段<c=#ff9999>33.3%</c>伤害。"
+  },
+  {
+   "name": "根巡·灼光",
+   "type": "突袭",
+   "icon": "skill-4.webp",
+   "description": "常发生在<c=#ffb872>拔假植物、突然刷出</c>时施放。\n火骗骗花从地下钻出，对地面上单位造成<c=#ff9999>200%</c>伤害，即将钻出时地面会有对应特效。一般闪现不会造成伤害。"
+  },
+  {
+   "name": "暖焰火实",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "火骗骗花初始附属3枚「火之实」，每施放一次爆发就消耗1个「火之实」。当「火之实」全部消耗后，其会停止攻击，钻地并重新装填3个「火之实」。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "星火胄甲",
+   "desc": "<c=#ff9999>2火</c>盾，击破使其眩晕一段时间。该状态下，质量翻6倍。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "星火胄甲",
+   "description": "<c=#ff9999>2火</c>盾，击破使其眩晕一段时间。该状态下，质量翻6倍。",
+   "elementType": "Fire",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:B_1113",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 110295,
+   "atk": 7387,
+   "weight": 60,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "pyro-whopperflower",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

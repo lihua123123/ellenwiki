@@ -1,0 +1,162 @@
+{
+ "name": "金焰绒翼龙暴君",
+ "nameEn": "Goldflame Qucusaur Tyrant",
+ "subtitle": "失约的金焰暴君",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 168.4416,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 125.60000000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "入战",
+   "pyro": 370,
+   "hydro": 310,
+   "anemo": 310,
+   "electro": 310,
+   "dendro": 310,
+   "cryo": 310,
+   "geo": 310,
+   "physical": 310
+  },
+  {
+   "name": "正常",
+   "pyro": 70,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "谕以疾焚",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "暴君至多进行右划、振地两段攻击，其分别造成<c=#ff9999>40%,55%</c>伤害，可单独施放。"
+  },
+  {
+   "name": "贯石穿罅",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "距离较远时，暴君伏地进行潜游，触碰造成<c=#ff9999>60%</c>伤害并立即跃出，顺势进行2次爪划击，分别造成<c=#ff9999>45%,22.5%</c>伤害。"
+  },
+  {
+   "name": "燔武燎悍",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "暴君身转一圈，造成<c=#ff9999>50%,25%</c>伤害，接着朝玩家方向突进一段距离，造成<c=#ff9999>55%,11%</c>伤害。"
+  },
+  {
+   "name": "咒阳金焰",
+   "type": "强化",
+   "icon": "skill-4.webp",
+   "description": "暴君迸发出强烈耀光，变为金焰形态升空，此时其身覆有`金焰胄身`护盾；一段时间后暴君耗尽力量会跌落瘫痪3s。"
+  },
+  {
+   "name": "烨风熠翎",
+   "type": "召唤",
+   "icon": "skill-5.webp",
+   "description": "金焰暴君丢下一枚(特化2枚)`炽风之翎`，造成<c=#ff9999>70%</c>伤害。"
+  },
+  {
+   "name": "鎏絮缲丝",
+   "type": "远程",
+   "icon": "skill-6.webp",
+   "description": "金焰暴君不断发射金翎碎片进行攻击，每个碎片均造成<c=#ff9999>40%,16%,4%</c>伤害。"
+  },
+  {
+   "name": "诅焰撷光",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "金焰暴君俯冲下来，引爆此处的`炽风之翎`，造成<c=#ff9999>100%</c>伤害并高高升空；若无翎羽引爆，则只造成一次气爆，造成<c=#ff9999>65%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "金焰胄身",
+   "desc": "24火盾，击破后会强制瘫痪暴君10s。"
+  },
+  {
+   "text": "炽风之翎",
+   "desc": "2火盾，击破后暴君将无法利用其升空。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "金焰胄身",
+   "description": "24火盾，击破后会强制瘫痪暴君10s。",
+   "elementType": "Fire",
+   "duration": ""
+  },
+  {
+   "name": "炽风之翎",
+   "description": "2火盾，击破后暴君将无法利用其升空。",
+   "elementType": "Fire",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 755595,
+   "atk": 26107,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "goldflame-qucusaur-tyrant",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

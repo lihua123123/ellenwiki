@@ -1,0 +1,127 @@
+{
+ "name": "雪奈茨芙娜的蝶安奈拉",
+ "nameEn": "Deianeira of Snezhevna",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 850.3584,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 125.60000000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 50,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 85,
+ "skills": [
+  {
+   "name": "风盈",
+   "type": "普攻·追踪",
+   "icon": "skill-1.webp",
+   "description": "风役人施放一连串的风弹，进行至多3段的连续攻击，对敌人分别造成<span class=\"anemo\">**50%x3,50%x3,60%x5**</span>伤害，第三段攻击带有追踪性；攻击造成的伤害带有(1,0.5,0.25,0.1)的衰减。"
+  },
+  {
+   "name": "陬花繁盛",
+   "type": "重击·输出",
+   "icon": "skill-2.webp",
+   "description": "风役人旋转权杖，进行一段重击，在敌人的下方连续产生3次的风泽域，均造成<span class=\"anemo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "岗嶂",
+   "type": "战技·反击",
+   "icon": "skill-3.webp",
+   "description": "风役人展开风嶂，当敌人对其施放攻击时，<c=#ffbfbf>无视此次伤害</c>并发动反击：闪现至敌人上方投下权杖，造成<span class=\"anemo\">**70%**</span>伤害，并在此处再次产生一次较弱的风泽域，造成<span class=\"anemo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "入扉",
+   "type": "天赋·妨害",
+   "icon": "skill-4.webp",
+   "description": "风役人的元素爆发命中所累加的生命之契大小等同于自身<c=#ff9999>16%</c>的攻击力，且在该生命之契的影响下，目标敌人将每秒流失<c=#dfbfff>(0.4%HP+72)</c>的生命值(后台停5%)，其与生命之契同生共死，持续10min。"
+  },
+  {
+   "name": "玦风翠流",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "风役人瞄准目标，<c=#ffebbf>消耗2%生命值</c>，2s后发动攻击，对目标敌人降下翠叶之诀，造成<span class=\"anemo\">**90%**</span>伤害并施加生命之契，随后发动追加「猎杀」攻击：\n翠叶之诀的场地将产生爆炸，造成<span class=\"anemo\">**100%**</span>伤害并施加生命之契。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 3814538,
+   "atk": 26108,
+   "weight": 85,
+   "tenacity": 100
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 694359,
+   "hpNote": "20%",
+   "atk": 7387,
+   "atkNote": "30%",
+   "weight": 85,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "雪奈茨芙娜的蝶安奈拉",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

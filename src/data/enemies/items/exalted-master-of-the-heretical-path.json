@@ -1,0 +1,420 @@
+{
+ "name": "左道的胜义尊",
+ "nameEn": "Exalted Master of the Heretical Path",
+ "subtitle": "多托雷",
+ "category": "EnemyOfNote",
+ "categoryLabel": "值得铭记的强敌",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 1304.0639999999999,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 150.72,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "103",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "刻下寒与伤",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "多托雷背身，立即用右手蓄力，立即在前方区域散布满地的冰棘，造成<span class=\"cryo\">**80%**</span>伤害，通常为「莫要应规昏聩」技能的后随。"
+  },
+  {
+   "name": "具象苦与痛",
+   "type": "定点",
+   "icon": "skill-2.webp",
+   "description": "多托雷使用右手朝玩家方向直线生成5枚1排的探针，五枚探针分别造成<c=#ffacff>25%,\n30%,35%,45%,55%</c>伤害，当多托雷生命值低于<c=#ffdfbf>70%</c>时，探针数量变为3排。"
+  },
+  {
+   "name": "樊笼必遭破毁",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "距离较远时，多托雷操纵异步数据团，在远处发射2团数据垃圾，均造成<c=#b8b8b8>65%</c>伤害，大概率后随「莫要㧑卑威权」。"
+  },
+  {
+   "name": "负担必将抛却",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "多托雷闪现至半空，并立即发射废弃数据团，造成<c=#ffacff>80%</c>伤害。"
+  },
+  {
+   "name": "莫要应规昏聩",
+   "type": "定点",
+   "icon": "skill-5.webp",
+   "description": "距离较远时，多托雷升空，并在玩家附近生成3处环形扇区，依次爆发，均造成<span class=\"cryo\">**55%**</span>攻击力的伤害。通常后随「刻下寒与伤」。低于<c=#ffdfbf>70%</c>生命值会近距施放。"
+  },
+  {
+   "name": "莫要㧑卑威权",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "多托雷立即使用右手用力敲击地面，在方形区域内产生扩散阵列，造成<c=#ffacff>75%</c>伤害。"
+  },
+  {
+   "name": "缔造失败与死难",
+   "type": "猛攻",
+   "icon": "skill-7.webp",
+   "description": "多托雷打个响指，在自身后方处产生一面橙色防火墙体，内部的漏洞块短时间内持续向前飞出，接触造成<c=#ff9999>85%</c>伤害。"
+  },
+  {
+   "name": "抹灭解脱与灵知",
+   "type": "猛攻",
+   "icon": "skill-8.webp",
+   "description": "多托雷站在中间，双手一挥，两侧立即出现「缩压墙幕」，随后两墙进行夹击，触碰墙体造成<span class=\"cryo\">**100%**</span>伤害。通常后随「具象苦与痛」或「负担必将抛却」。"
+  },
+  {
+   "name": "囿徒的觉悟",
+   "type": "位移",
+   "icon": "skill-9.webp",
+   "description": "处于多托雷侧方时，多托雷突然闪现，在原地迅速回转刷新一圈，造成<span class=\"cryo\">**70%**</span>伤害。极难触发。"
+  },
+  {
+   "name": "善恶的离断",
+   "type": "位移",
+   "icon": "skill-10.webp",
+   "description": "距离较远且多托雷不使用正常闪现连招时，多托雷立即化身能量团并进行z字位移到达玩家身旁。"
+  },
+  {
+   "name": "认知的深化",
+   "type": "位移",
+   "icon": "",
+   "description": "当多托雷处于闲置状态时，其韧性低可击退，若在5s内连续击退多托雷<c=#ffdfbf>2</c>次，将会使其立即闪现施放其他技能。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "机制",
+   "desc": "低于<c=#ffdfbf>70%生命值</c>时，多托雷部分技能得到强化，并加强连招：\n「寒与伤」->「负担」；(<c=#ffdfbf>≥</c><c=#ffdfbf>70%</c>)\n「樊笼」->「苦与痛」；(<c=#ffdfbf>≥</c><c=#ffdfbf>70%</c>)\n「樊笼」->「寒与伤」；(<c=#ffdfbf>≥</c><c=#ffdfbf>70%</c>)\n「苦与痛」->「寒与伤」；(<c=#ffdfbf>≥</c><c=#ffdfbf>70%</c>)\n「抹灭解脱」->「苦与痛」；(<c=#ffdfbf>≥</c><c=#ffdfbf>70%</c>)\n「樊笼」->「㧑卑威权」；( <c=#ffdfbf><70%</c>)\n「应规昏聩」->「寒与伤」；( <c=#ffdfbf><70%</c>)\n「苦与痛」->「苦与痛」->「寒与伤」；( <c=#ffdfbf><70%</c>)\n「抹灭解脱」->「负担」->「苦与痛」；( <c=#ffdfbf><70%</c>)"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "周本-第一阶段",
+   "level": 90,
+   "hp": 3561628,
+   "atk": 22838,
+   "weight": 150,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "exalted-master-of-the-heretical-path",
+ "icon": "avatar.webp",
+ "states": [
+  {
+   "key": "p1",
+   "label": "第一阶段",
+   "name": "左道的胜义尊·第一阶段",
+   "subtitle": "多托雷",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 1304.0639999999999,
+     "Curve": "HP_2"
+    },
+    "atk": {
+     "Value": 150.72,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-第一阶段",
+     "level": 90,
+     "hp": 3561628,
+     "atk": 22838,
+     "weight": 150,
+     "tenacity": 100
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 10,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 10,
+     "physical": 10
+    }
+   ],
+   "skills": [
+    {
+     "name": "刻下寒与伤",
+     "type": "输出",
+     "icon": "skill-1.webp",
+     "description": "多托雷背身，立即用右手蓄力，立即在前方区域散布满地的冰棘，造成<span class=\"cryo\">**80%**</span>伤害，通常为「莫要应规昏聩」技能的后随。"
+    },
+    {
+     "name": "具象苦与痛",
+     "type": "定点",
+     "icon": "skill-2.webp",
+     "description": "多托雷使用右手朝玩家方向直线生成5枚1排的探针，五枚探针分别造成<c=#ffacff>25%,\n30%,35%,45%,55%</c>伤害，当多托雷生命值低于<c=#ffdfbf>70%</c>时，探针数量变为3排。"
+    },
+    {
+     "name": "樊笼必遭破毁",
+     "type": "远程",
+     "icon": "skill-3.webp",
+     "description": "距离较远时，多托雷操纵异步数据团，在远处发射2团数据垃圾，均造成<c=#b8b8b8>65%</c>伤害，大概率后随「莫要㧑卑威权」。"
+    },
+    {
+     "name": "负担必将抛却",
+     "type": "远程",
+     "icon": "skill-4.webp",
+     "description": "多托雷闪现至半空，并立即发射废弃数据团，造成<c=#ffacff>80%</c>伤害。"
+    },
+    {
+     "name": "莫要应规昏聩",
+     "type": "定点",
+     "icon": "skill-5.webp",
+     "description": "距离较远时，多托雷升空，并在玩家附近生成3处环形扇区，依次爆发，均造成<span class=\"cryo\">**55%**</span>攻击力的伤害。通常后随「刻下寒与伤」。低于<c=#ffdfbf>70%</c>生命值会近距施放。"
+    },
+    {
+     "name": "莫要㧑卑威权",
+     "type": "输出",
+     "icon": "skill-6.webp",
+     "description": "多托雷立即使用右手用力敲击地面，在方形区域内产生扩散阵列，造成<c=#ffacff>75%</c>伤害。"
+    },
+    {
+     "name": "缔造失败与死难",
+     "type": "猛攻",
+     "icon": "skill-7.webp",
+     "description": "多托雷打个响指，在自身后方处产生一面橙色防火墙体，内部的漏洞块短时间内持续向前飞出，接触造成<c=#ff9999>85%</c>伤害。"
+    },
+    {
+     "name": "抹灭解脱与灵知",
+     "type": "猛攻",
+     "icon": "skill-8.webp",
+     "description": "多托雷站在中间，双手一挥，两侧立即出现「缩压墙幕」，随后两墙进行夹击，触碰墙体造成<span class=\"cryo\">**100%**</span>伤害。通常后随「具象苦与痛」或「负担必将抛却」。"
+    },
+    {
+     "name": "囿徒的觉悟",
+     "type": "位移",
+     "icon": "skill-9.webp",
+     "description": "处于多托雷侧方时，多托雷突然闪现，在原地迅速回转刷新一圈，造成<span class=\"cryo\">**70%**</span>伤害。极难触发。"
+    },
+    {
+     "name": "善恶的离断",
+     "type": "位移",
+     "icon": "skill-10.webp",
+     "description": "距离较远且多托雷不使用正常闪现连招时，多托雷立即化身能量团并进行z字位移到达玩家身旁。"
+    },
+    {
+     "name": "认知的深化",
+     "type": "位移",
+     "icon": "",
+     "description": "当多托雷处于闲置状态时，其韧性低可击退，若在5s内连续击退多托雷<c=#ffdfbf>2</c>次，将会使其立即闪现施放其他技能。"
+    }
+   ],
+   "notes": [
+    {
+     "text": "机制",
+     "desc": "低于<c=#ffdfbf>70%生命值</c>时，多托雷部分技能得到强化，并加强连招：\n「寒与伤」->「负担」；(<c=#ffdfbf>≥</c><c=#ffdfbf>70%</c>)\n「樊笼」->「苦与痛」；(<c=#ffdfbf>≥</c><c=#ffdfbf>70%</c>)\n「樊笼」->「寒与伤」；(<c=#ffdfbf>≥</c><c=#ffdfbf>70%</c>)\n「苦与痛」->「寒与伤」；(<c=#ffdfbf>≥</c><c=#ffdfbf>70%</c>)\n「抹灭解脱」->「苦与痛」；(<c=#ffdfbf>≥</c><c=#ffdfbf>70%</c>)\n「樊笼」->「㧑卑威权」；( <c=#ffdfbf><70%</c>)\n「应规昏聩」->「寒与伤」；( <c=#ffdfbf><70%</c>)\n「苦与痛」->「苦与痛」->「寒与伤」；( <c=#ffdfbf><70%</c>)\n「抹灭解脱」->「负担」->「苦与痛」；( <c=#ffdfbf><70%</c>)"
+    }
+   ],
+   "shields": [],
+   "chargebar": [],
+   "energy": {
+    "element": "None",
+    "elementLabel": "无元素",
+    "raw": "EnergyGroup:N_0000",
+    "rows": [
+     {
+      "hp": 0,
+      "particle": 0,
+      "orb": 0
+     }
+    ]
+   },
+   "weight": 150,
+   "elementMastery": 0,
+   "multiplayerGroup": "103",
+   "icon": "avatar.webp",
+   "defaultLevel": 90
+  },
+  {
+   "key": "p2",
+   "label": "第二阶段",
+   "name": "左道的胜义尊·融合",
+   "subtitle": "多托雷",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 869.376,
+     "Curve": "HP_2"
+    },
+    "atk": {
+     "Value": 150.72,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-第二阶段",
+     "level": 90,
+     "hp": 2374419,
+     "atk": 22838,
+     "weight": 150,
+     "tenacity": 390
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 10,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 10,
+     "physical": 10
+    },
+    {
+     "name": "蓄力",
+     "pyro": 310,
+     "hydro": 310,
+     "anemo": 310,
+     "electro": 310,
+     "dendro": 310,
+     "cryo": 310,
+     "geo": 310,
+     "physical": 310
+    }
+   ],
+   "skills": [
+    {
+     "name": "亵渎，诞生混沌",
+     "type": "远程",
+     "icon": "state-p2-skill-1.webp",
+     "description": "多托雷立即摆臂，产生3股数据风暴，造成<c=#b8b8b8>45%</c>伤害。仅入场施放一次。"
+    },
+    {
+     "name": "反抗，解脱灵性",
+     "type": "定点",
+     "icon": "state-p2-skill-2.webp",
+     "description": "多托雷在玩家身旁四个位置产生探针脉冲，均造成<c=#b8b8b8>35%</c>伤害。"
+    },
+    {
+     "name": "求索，解放真知",
+     "type": "限制",
+     "icon": "state-p2-skill-3.webp",
+     "description": "多托雷在场地四边放置4枚扫描探针，产生激光网面并向对面进行移动，到终点消失，接触激光网面持续造成<c=#b8b8b8>35%</c>伤害。"
+    },
+    {
+     "name": "无想，斫断困阻",
+     "type": "猛攻",
+     "icon": "state-p2-skill-4.webp",
+     "description": "多托雷生成「CALL_祸津御建鸣神命」，使用恶曜太刀短时蓄力后立即下劈，造成<c=#ffacff>100%</c>伤害并向两侧挤开玩家。"
+    },
+    {
+     "name": "源焰，焚净旧腐",
+     "type": "猛攻",
+     "icon": "state-p2-skill-5.webp",
+     "description": "多托雷生成「CALL_修库特尔」，并向前依次斩出火刀与霜刀的剑气，依次造成<c=#ff9999>80%</c>,<span class=\"cryo\">**80%**</span>伤害，随后发射密集弹幕，造成<c=#b8b8b8>35%</c>伤害。以上伤害均有(1,0.6,0.3,0.1)的衰减。"
+    },
+    {
+     "name": "弈局，决胜救赎",
+     "type": "召唤",
+     "icon": "state-p2-skill-6.webp",
+     "description": "壁障破坏后，多托雷将在自身两侧依次生成「CALL_王棋」、「CALL_后棋」，王棋先进行冲撞，接着后棋突旋，依次造成<c=#ff9999>75%,60%</c>伤害，技能持续至施放「摒世弃神，万有尽焚」。"
+    },
+    {
+     "name": "隐化谲念，赝造罪业",
+     "type": "蓄力",
+     "icon": "state-p2-skill-7.webp",
+     "description": "多托雷立即移至边缘，并展开`FW壁障`，同时全抗性<c=#ffdfbf>+300%</c>；<c=#ffdfbf>35s</c>后施放「摒世弃神，万有尽焚」。壁障每隔6s将玩家猛地推向另一侧，钻入壁障上的漏洞可避免被推走，一共有3种漏洞类型。击破壁障后，若当前大招倒计时大于20s，则将其缩短至<c=#ffdfbf>20s</c>。"
+    },
+    {
+     "name": "摒世弃神，万有尽焚",
+     "type": "爆发",
+     "icon": "state-p2-skill-8.webp",
+     "description": "多托雷将利用世界树的能力，<c=#ffbfbf>秒杀</c>前台角色；多人模式下，则随机<c=#ffbfbf>秒杀</c>一位玩家的前台，并对其他玩家造成<c=#b8b8b8>150%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。壁障击破后，将能够削减多托雷的`FATAL进度`，进度归零后中断蓄力，并瘫痪12s。"
+    }
+   ],
+   "notes": [
+    {
+     "text": "FW壁障",
+     "desc": "任意壁障两端需要3次任意攻击击破，方可解除。"
+    },
+    {
+     "text": "FATAL进度",
+     "desc": "初始为满，需35次任意攻击方可清空，同时中断爆发技的准备。"
+    }
+   ],
+   "shields": [],
+   "chargebar": [],
+   "energy": {
+    "element": "None",
+    "elementLabel": "无元素",
+    "raw": "EnergyGroup:N_0000",
+    "rows": [
+     {
+      "hp": 0,
+      "particle": 0,
+      "orb": 0
+     }
+    ]
+   },
+   "weight": 150,
+   "elementMastery": 0,
+   "multiplayerGroup": "103",
+   "icon": "state-p2-avatar.webp",
+   "defaultLevel": 90
+  }
+ ],
+ "defaultState": "p1",
+ "aliases": [
+  "左道的胜义尊·融合"
+ ],
+ "tags": [
+  "值得铭记的强敌"
+ ]
+}

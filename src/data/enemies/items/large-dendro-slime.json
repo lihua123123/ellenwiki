@@ -1,0 +1,130 @@
+{
+ "name": "大型草史莱姆",
+ "nameEn": "Large Dendro Slime",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 35.168,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": "IMM",
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "胶质撞击",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "在失花的大型草史莱姆面前时，大型草史莱姆撞击玩家，造成<c=#b8b8b8>50%</c>伤害。"
+  },
+  {
+   "name": "凝浆坠地",
+   "type": "控制",
+   "icon": "skill-2.webp",
+   "description": "大型草史莱姆起跳，重重下落，造成<c=#b8b8b8>100%</c>伤害。背对埋伏的大型草史莱姆也会触发此技能，诱导其离开地下。\n<c=#00ff7f>强攻强化：\n</c>该技能的使用更加频繁。"
+  },
+  {
+   "name": "萌蔓葳蕤",
+   "type": "召唤",
+   "icon": "skill-3.webp",
+   "description": "大型草史莱姆扔出3个草苗，其迅速生成埋伏的<c=#99ff99>草史莱姆</c>，可使用<c=#ff9999>火元素</c>提前破坏，<c=#99ff99>草史莱姆</c>最多可同时存在6个，与大型草史莱姆同生共死，无掉落物。"
+  },
+  {
+   "name": "燃气毒种",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "大型草史莱姆扔出3个毒草种，停留于地面，接触持续造成<c=#99ff85>10%</c>伤害，这些草种遇<span class=\"anemo\">**风元素**</span>攻击会被驱散消失，遇<c=#ff9999>火元素</c>攻击则发生爆炸，造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "孢子菌雾",
+   "type": "妨害",
+   "icon": "skill-5.webp",
+   "description": "大型草史莱姆在身边产生毒雾，持续造成<c=#99ff87>10%</c>伤害，于其范围内的原魔每秒持续<c=#bfffed>恢复5%生命值</c>。"
+  },
+  {
+   "name": "繁盛之草",
+   "type": "天赋",
+   "icon": "skill-6.webp",
+   "description": "大型草史莱姆一般躲在地下，背对它或使用<c=#ff9999>火元素</c>攻击均可唤出。其初始附属`蔷花`，不会再生。当`蔷花被`<c=#ff9999>火元素</c>引燃时，大型草史莱姆会不断尝试掐灭火焰，有概率成功。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "蔷花",
+   "desc": "<c=#99ff86>8草</c>盾，燃尽后可迫使大型草史莱姆出地面，不会再生。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "蔷花",
+   "description": "<c=#99ff86>8草</c>盾，燃尽后可迫使大型草史莱姆出地面，不会再生。",
+   "elementType": "Grass",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:A_1103",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 73530,
+   "atk": 6894,
+   "weight": 100,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "large-dendro-slime",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "name": "绒翼龙武士·膛星之锤",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 54.336,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "过燃炬锤",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "膛星之锤使用重锤进行横、斜、砸至多3段的攻击，分别造成<c=#b8b8b8>60%,60%,\n70%+10%</c>伤害。"
+  },
+  {
+   "name": "星锤狂焰",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "膛星之锤使用锤后端砸向地面，造成<c=#ff9999>50%</c>伤害，之后锤头爆炸，造成<c=#ff9999>80%</c>伤害，膛星之锤顺势后撤。"
+  },
+  {
+   "name": "铭心炙印",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "膛星之锤导引灵力，腾空而起砸向地面，造成<c=#ff9999>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:A_1102",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 221840,
+   "atk": 9849,
+   "weight": 100,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "绒翼龙武士-膛星之锤",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

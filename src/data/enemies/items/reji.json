@@ -1,0 +1,111 @@
+{
+ "name": "雷吉",
+ "nameEn": "Reji",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1263.312,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 188.4,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 110,
+   "hydro": 110,
+   "anemo": 110,
+   "electro": 110,
+   "dendro": 110,
+   "cryo": 110,
+   "geo": 110,
+   "physical": 80
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 120,
+ "skills": [
+  {
+   "name": "机械加弓",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "雷吉拿着弹弓进行至多3段的攻击，依次造成<c=#b8b8b8>50%,50%,100%</c>伤害。"
+  },
+  {
+   "name": "刚柔并缉",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "雷吉操纵着沉重的弹弓进行至多3次的攻击：翘着弹弓甩腿，造成<c=#ffacff>50%</c>伤害；接着弹弓扫1-2次，造成<c=#ffacff>75%</c>伤害。"
+  },
+  {
+   "name": "折弦烁闪",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "(红光)雷吉架起弹弓，朝玩家发射持续5波的雷弹幕，每个造成<c=#ffacff>40%</c>伤害，弹幕可被护盾弹回，对雷吉造成<c=#ffbfbf>5%</c>生命值的真伤。"
+  },
+  {
+   "name": "凌光驭刃",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "(红光)雷吉导引灵力，猛地朝玩家冲来，顺势进行一砸，造成<c=#ffacff>100%</c>伤害，其可被护盾反制，对雷吉造成<c=#ffbfbf>15%</c>生命值的真伤。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "夜魂试炼",
+   "level": 103,
+   "hp": 5666965,
+   "atk": 39162,
+   "weight": 120,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "reji",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

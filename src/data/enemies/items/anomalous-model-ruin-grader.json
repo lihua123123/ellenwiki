@@ -1,0 +1,145 @@
+{
+ "name": "遗迹重机特异体",
+ "nameEn": "Anomalous Model Ruin Grader",
+ "subtitle": "遗迹重机",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 190.176,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 87.92,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 70
+  },
+  {
+   "name": "强化",
+   "pyro": 90,
+   "hydro": 90,
+   "anemo": 90,
+   "electro": 90,
+   "dendro": 90,
+   "cryo": 90,
+   "geo": 90,
+   "physical": 150
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "混沌光种",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "强化状态下，遗迹重机短暂暴露头部核心，发射一枚大型混沌球，其分裂成3个小型混沌球，并呈三角状分布在玩家周围，触碰持续造成<c=#b8b8b8>16%</c>伤害，大型混沌连续分裂3次后消失。"
+  },
+  {
+   "name": "拳转踩踢",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "强化状态下，遗迹重机进行右拳、左拳、转身、砸击共4段的普通攻击，依次造成<c=#b8b8b8>30%,30%,30%,50%</c>伤害，停留一下，使用激光对前方轰击，造成<c=#b8b8b8>20%</c>伤害。"
+  },
+  {
+   "name": "岩崩天砸",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "强化状态下，遗迹重机举起双臂，3s后对着地面砸击造成<c=#b8b8b8>70%</c>伤害，之后使用激光对地轰击产生飞震波，造成<c=#b8b8b8>10%</c>伤害。"
+  },
+  {
+   "name": "土推机犁",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "强化状态下，遗迹重机双手拼合，往地上插入形成推土机，造成<c=#b8b8b8>40%</c>伤害，期间不断冲向玩家，触碰造成<c=#b8b8b8>30%</c>伤害，接着拔起造成<c=#b8b8b8>40%</c>伤害，插入和拔起均短暂暴露双腿核心。"
+  },
+  {
+   "name": "双掠重震",
+   "type": "位移",
+   "icon": "skill-5.webp",
+   "description": "强化状态下，遗迹重机抬起右脚，暴露双腿核心，冲向玩家并立即踩下造成<c=#b8b8b8>70%</c>伤害，然后再抬起左脚重复一遍。"
+  },
+  {
+   "name": "脉华复生",
+   "type": "回复",
+   "icon": "skill-6.webp",
+   "description": "强化状态下，且光钉未满时，遗迹重机生命值为0时，其缓慢恢复生命值至满，<c=#ffbfbf>每秒恢复12.5%生命值</c>，期间无法被任何攻击伤及。"
+  },
+  {
+   "name": "光钉专毁",
+   "type": "输出",
+   "icon": "skill-7.webp",
+   "description": "强化状态下，遗迹重机进行左转拳、左脚、右转拳、右脚共4段的普通攻击，依次造成<c=#b8b8b8>30%,40%,30%,40%</c>伤害。\n<c=#ebbfff>(仅对</c><c=#ebbfff>`普尔希娜光钉`</c><c=#ebbfff>使用)</c>"
+  }
+ ],
+ "notes": [
+  {
+   "text": "普尔希娜光钉",
+   "desc": "充能状态下的光钉数量为2时，遗迹重机攻击力<c=#ffdfbf>+20%</c>；若为3，则防御力<c=#ffdfbf>+500%</c>。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_4443",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英-特异体",
+   "level": 90,
+   "hp": 340957,
+   "atk": 13322,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "anomalous-model-ruin-grader",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

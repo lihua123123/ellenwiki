@@ -1,0 +1,106 @@
+{
+ "name": "遗迹歼击者",
+ "nameEn": "Ruin Destroyer",
+ "subtitle": "",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 40.751999999999995,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 52.752,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "远御空弹",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "歼击者张开口器，发射6个子弹，每个造成<c=#b8b8b8>40%</c>伤害。\n靠近其可打断其施放。"
+  },
+  {
+   "name": "热隙涌现",
+   "type": "妨害",
+   "icon": "skill-2.webp",
+   "description": "歼击者口器向下，暴露核心，向地面注能，在玩家位置处生成高温地板，持续释能造成<c=#b8b8b8>40%</c>伤害。"
+  },
+  {
+   "name": "齿规作图",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "歼击者横扫场地，圆规状般扫一圈，造成<c=#b9b9b9>30%</c>伤害。"
+  },
+  {
+   "name": "深凿浅蓄",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "歼击者钻入地下<c=#ffbfbf>(无敌开始)</c>，在玩家位置冒出并暴露核心`(无敌解除)`，持续牵引玩家，持续造成<c=#b9b9b9>50%</c>伤害，片刻后爆炸造成<c=#b9b9b9>150%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_1102",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 166380,
+   "atk": 10341,
+   "weight": 300,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "ruin-destroyer",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

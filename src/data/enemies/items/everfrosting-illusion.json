@@ -1,0 +1,134 @@
+{
+ "name": "永恒冰霜的幻景",
+ "nameEn": "Everfrosting Illusion",
+ "subtitle": "帕芙琳娜",
+ "category": "Tps",
+ "categoryLabel": "第三人称射击（TPS）",
+ "tier": "",
+ "defaultLevel": 20,
+ "baseStats": {
+  "hp": {
+   "Value": 109.725365,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 90.116591,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 50,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "开盾&禁锢",
+   "pyro": 210,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 210,
+   "dendro": 210,
+   "cryo": 250,
+   "geo": 210,
+   "physical": 210
+  },
+  {
+   "name": "虚弱",
+   "pyro": -40,
+   "hydro": -40,
+   "anemo": -40,
+   "electro": -40,
+   "dendro": -40,
+   "cryo": 0,
+   "geo": -40,
+   "physical": -40
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "流锷悬昙",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "帕芙琳娜使用双刃进行一次华丽的旋身攻击，造成<span class=\"cryo\">**100%**</span>伤害，并留下3枚「浮冰」，短暂停留后朝玩家攻击，造成<span class=\"cryo\">**20%**</span>伤害。「浮冰」可被击破，对帕芙琳娜造成<span class=\"cryo\">**20%**</span>伤害。"
+  },
+  {
+   "name": "饰霜铸影",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "帕芙琳娜进行2段普通攻击，均造成<span class=\"cryo\">**75%**</span>伤害，并留下3枚「浮冰」。"
+  },
+  {
+   "name": "云泻州河",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "帕芙琳娜突刺而来，造成<span class=\"cryo\">**100%**</span>伤害，若玩家距离较近，则后接「流锷悬昙」。"
+  },
+  {
+   "name": "死寒裂魄",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "帕芙琳娜驭使棱箭，以三枚一组的方式施放追踪玩家，均造成<span class=\"cryo\">**15%**</span>伤害，施放4次后结束。"
+  },
+  {
+   "name": "杵愿怜影",
+   "type": "回复",
+   "icon": "skill-5.webp",
+   "description": "帕芙琳娜在低于<c=#ffdfbf>50%生命值</c>时，会将自己封入「`冰棺`」。「浮冰」会不断在冰棺附近产生，并朝玩家攻击。冰雾会在附近产生，持续造成<span class=\"cryo\">**3.125%**</span>伤害。<c=#ffbfff>[绝境]</c>冰棺将恢复<c=#ffdfbf>30%生命值</c>。"
+  },
+  {
+   "name": "独赏幽芳",
+   "type": "控制",
+   "icon": "",
+   "description": "[绝境]帕芙琳娜每隔约<c=#ffdfbf>44s</c>，召唤冰牢禁锢玩家<c=#ffdfbf>15s</c>，解除之后造成<span class=\"cryo\">**150%**</span>伤害。期间帕芙琳娜不攻击，周围会出现2枚「霜花」，全部击破可解除禁锢。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冰棺",
+   "desc": "<span class=\"cryo\">**24冻**</span>盾，<c=#ffdfbf>16s</c>后解除，并恢复<c=#ffdfbf>15%生命值</c>，仅触发一次；击破会使其<c=#ffdfbf>扣除20%生命值</c>，同时虚弱<c=#ffdfbf>6s</c>。`星烁反应`会使<c=#ffacff>雷</c>/<span class=\"anemo\">**风**</span>的相应反应消耗比变为<c=#ffdfbf>1:4</c>，<c=#ff9999>火</c>反应消耗变为为<c=#ffdfbf>1:1</c>。\n<c=#ffbfff>[绝境]</c>厚度提升至<span class=\"cryo\">**40冻**</span>盾。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "冰棺",
+   "description": "<span class=\"cryo\">**24冻**</span>盾，<c=#ffdfbf>16s</c>后解除，并恢复<c=#ffdfbf>15%生命值</c>，仅触发一次；击破会使其<c=#ffdfbf>扣除20%生命值</c>，同时虚弱<c=#ffdfbf>6s</c>。`星烁反应`会使<c=#ffacff>雷</c>/<span class=\"anemo\">**风**</span>的相应反应消耗比变为<c=#ffdfbf>1:4</c>，<c=#ff9999>火</c>反应消耗变为为<c=#ffdfbf>1:1</c>。\n<c=#ffbfff>[绝境]</c>厚度提升至<span class=\"cryo\">**40冻**</span>盾。",
+   "elementType": "Frozen",
+   "duration": 16
+  }
+ ],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [
+  {
+   "label": "TPS射击",
+   "level": 20,
+   "hp": 6875,
+   "atk": 1200,
+   "weight": 300,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "aliases": [
+  "永恒冰雪的幻景"
+ ],
+ "id": "everfrosting-illusion",
+ "icon": "avatar.webp",
+ "tags": [
+  "第三人称射击（TPS）"
+ ]
+}

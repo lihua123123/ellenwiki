@@ -1,0 +1,39 @@
+{
+ "name": "历经百战的凛狼·狼魂",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Common",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {
+   "Value": 293.14272,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 37.68,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "id": "历经百战的凛狼-狼魂",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

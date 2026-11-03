@@ -1,0 +1,128 @@
+{
+ "name": "辖域守护者",
+ "nameEn": "Domain Keeper",
+ "subtitle": "受造之物",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "眩诩之翼",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "守护者进行抓、抓、翼斩3段普通攻击，依次造成<c=#ffe599>25%,25%,50%</c>伤害。"
+  },
+  {
+   "name": "逾渎之荡",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "守护者举剑，迅速转圈袭击，造成<c=#ffe599>33%,33%,34%</c>伤害。"
+  },
+  {
+   "name": "自恃之眼",
+   "type": "反击",
+   "icon": "skill-3.webp",
+   "description": "守护者立即进入`愚妄之眼`状态，持续5s；未成功记录将造成<c=#ffe599>50%</c>伤害，成功记录则转为对应元素形态，该元素抗性<c=#ffdfbf>提升70%</c>(<c=#ffdfbf>特化130%</c>)，并获得<c=#ffdfbf>自附着</c>。"
+  },
+  {
+   "name": "不谬之刃",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "距离守护者较远时，守护者劈出2道岩刃，均造成<c=#ffe599>40%</c>伤害。"
+  },
+  {
+   "name": "骄倨之怖",
+   "type": "位移",
+   "icon": "skill-5.webp",
+   "description": "距离守护者较远时，守护者直接朝前方猛戳，造成<c=#ffe599>75%</c>伤害。"
+  },
+  {
+   "name": "愚愎之泪",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "处于元素形态25-30s后，守望者将汇集自身元素，凝于一滴后掷于地面，造成<c=#ffffbf>对应元素的</c><c=#ffdfbf>150%</c>伤害，同时退出元素形态。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "愚妄之眼",
+   "desc": "每次会分别记录<c=#ff9999>火</c>/<c=#7fbfff>水</c>/<c=#ffacff>雷</c>/<span class=\"cryo\">**冰**</span>的攻击次数，当某一元素计数达<c=#ffdfbf>3次</c>时，即为<c=#ffdfbf>记录完成</c>，完成后<c=#ffdfbf>对应抗性+70%</c>(特化<c=#ffdfbf>+130%</c>)，并获得对应元素提升和自附着。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1113",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 388220,
+   "atk": 14773,
+   "weight": 150,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "domain-keeper",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

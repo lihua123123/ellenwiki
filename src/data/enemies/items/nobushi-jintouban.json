@@ -1,0 +1,95 @@
+{
+ "name": "野伏·阵刀番",
+ "nameEn": "Nobushi: Jintouban",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 20.096000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 110,
+ "skills": [
+  {
+   "name": "剑刺冲行",
+   "type": "位移",
+   "icon": "skill-1.webp",
+   "description": "阵刀番收刀纳刃，突然冲刺，造成<c=#b8b8b8>150%</c>伤害。"
+  },
+  {
+   "name": "顺刃下劈",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "阵刀番进行向下挥刀攻击，造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "反刃上劈",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "阵刀番进行向上挥刀攻击，造成<c=#b8b8b8>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 110920,
+   "atk": 3940,
+   "weight": 110,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "nobushi-jintouban",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "name": "幕府足轻头",
+ "nameEn": "Shougunate Infantry Captain",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 32.6016,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 25.12,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "幕府三行",
+   "type": "猛攻",
+   "icon": "skill-1.webp",
+   "description": "幕府足轻头使用戟进行至多3段的冲刺攻击，每段均造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "刃枪反划",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "幕府足轻头使用戟进行斜上划攻击，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "戟锋促连",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "幕府足轻头使用戟进行1次冲刺攻击，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "幕府诏伐",
+   "type": "命令",
+   "icon": "skill-4.webp",
+   "description": "当幕府足轻在附近时，幕府足轻头下令使附近的幕府足轻进行连续戟冲攻击。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_1101",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 88236,
+   "atk": 4924,
+   "weight": 75,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "shougunate-infantry-captain",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

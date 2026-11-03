@@ -1,0 +1,166 @@
+{
+ "name": "秘源机兵·火力升级套件",
+ "nameEn": "Mechanism Constructor Guard",
+ "subtitle": "建造机关之戍卫",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Boss",
+ "defaultLevel": 105,
+ "baseStats": {
+  "hp": {
+   "Value": 226.90714,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 162.5,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 60,
+   "hydro": 60,
+   "anemo": 60,
+   "electro": 60,
+   "dendro": 60,
+   "cryo": 60,
+   "geo": 60,
+   "physical": 60
+  },
+  {
+   "name": "蓄力",
+   "pyro": 360,
+   "hydro": 360,
+   "anemo": 360,
+   "electro": 360,
+   "dendro": 360,
+   "cryo": 360,
+   "geo": 360,
+   "physical": 360
+  },
+  {
+   "name": "瘫痪",
+   "pyro": -30,
+   "hydro": -30,
+   "anemo": -30,
+   "electro": -30,
+   "dendro": -30,
+   "cryo": -30,
+   "geo": -30,
+   "physical": -30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "106",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "匝合之视",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "构型械驻于原地，于自身处缓慢产生2次雷暴脉冲，均造成<c=#ffacff>60%</c>伤害；与此同时2枚浮游炮发射迂回中央的测距激光，造成<c=#ffacff>30%</c>伤害。"
+  },
+  {
+   "name": "渊霄丙明",
+   "type": "定点",
+   "icon": "skill-2.webp",
+   "description": "构型械驻于原地，于自身炮筒发射3枚雷轰弹，落地爆炸，每枚造成<c=#ffacff>70%</c>伤害，并留下雷地面，持续造成<c=#ffacff>7%</c>伤害。"
+  },
+  {
+   "name": "裁月堇光",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "远离构型械时，其将发射持续的雷激光，持续造成<c=#ffacff>40%,20%,12%,4%,0.4%</c>伤害；若在发射激光时靠近构型械，则其立即停止激光发射，转而化为爪掌拍下，造成<c=#ffacff>60%</c>伤害。"
+  },
+  {
+   "name": "驻于孛辘",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "过于靠近构型械时，构型械化作巨星爪掌并拍下，造成<c=#ffacff>60%</c>伤害，同时产生6道纵方向中心合拢的激光，持续造成<c=#ffacff>50%</c>伤害，聚拢后发生爆炸，造成<c=#ffacff>80%</c>伤害。"
+  },
+  {
+   "name": "煟暝紫械",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "过于靠近构型械时，构型械化作巨星爪掌并划扫，造成<c=#ffacff>60%</c>伤害；此后浮游炮接着发射弹雨，持续造成<c=#ffacff>30%,15%,3%</c>伤害。"
+  },
+  {
+   "name": "循觅夜源",
+   "type": "天赋",
+   "icon": "skill-6.webp",
+   "description": "构型械自身拥有<c=#ffdfbf>200</c>点「应战对策」上限。角色进入和维持「夜魂加持」状态时，其充能条均会积攒<c=#bfffbf>15</c>充能；当充满时，构型械就会立即中断其他技能，并开始准备球状雷弹。"
+  },
+  {
+   "name": "鸣烻焚薮",
+   "type": "必杀技",
+   "icon": "skill-7.webp",
+   "description": "构型械开掘出2柱`固态燃素`，其上有「`汲聚械`」存在，辅助构型械进行蓄力；蓄力期间的浮游炮不断发射激光，造成<c=#ffacff>50%</c>伤害，并留下造成<c=#ffacff>10%</c>伤害的滞留雷息；15s后，构型械丢出球状雷弹，<c=#ffbfbf>秒杀</c>在场非无敌状态角色。\n「应战对策」满后施放，若为此法触发，则在「扫彻方隅」结束后，浮游炮会利用雷激光规划开采场地，激光造成<c=#ffacff>30%</c>伤害；若构型械不发生转身，则固态燃素将出现在激光交点处。"
+  },
+  {
+   "name": "扫彻方隅",
+   "type": "限制",
+   "icon": "skill-8.webp",
+   "description": "「应战对策」满后优先施放，构型械横过来，并使用7枚浮游炮组装发射半圆形激光，呈顺时针旋转，接触激光持续造成<c=#ffacff>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。\n在另外一半扇形区域内，玩家将会持续获得燃素，且造成的伤害提升<c=#ffcebf>5%</c>。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "固态燃素",
+   "desc": "无法直接攀爬，比一般构型械的高一倍，仅「回声之子」成员可直接攀爬。"
+  },
+  {
+   "text": "「汲聚械」",
+   "desc": "进入屏障内以1次攻击击破，屏障外免疫，击破全部可使构型械瘫痪15s，并扣除其15%生命值。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 105,
+   "hp": 1071203,
+   "atk": 35063,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "mechanism-constructor-guard",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

@@ -15,6 +15,7 @@ import { renderRichText, highlightNumbers } from '../core/richtext.js';
 import { levelSimHtml, bindLevelSim } from '../core/level-sim.js';
 import index from '../data/weapons-index.json';
 import { weaponIcons } from '../assets/icons.js';
+import { rarityHex, elementVariant } from '../core/palette.js';
 
 /* 完整资料：非 eager，切到详情页时才加载对应文件 */
 const DETAIL_LOADERS = import.meta.glob('../../content/weapons/*.json');
@@ -28,21 +29,21 @@ for (const [path, url] of Object.entries(LOCAL_ICONS)) {
   LOCAL_ICON_MAP[decodeURIComponent(path.split('/').pop())] = url;
 }
 
-/* 武器类型主题色（仅用于筛选按钮，卡片配色只跟星级） */
+/* 武器类型主题色（仅用于筛选按钮，卡片配色只跟星级）：按元素色区分 */
 const TYPE_COLOR = {
-  单手剑: '#6aa3f0',
-  双手剑: '#e0864f',
-  长柄武器: '#b487e8',
-  弓: '#68cf9b',
-  法器: '#e3bf53',
+  单手剑: elementVariant('hydro', 'color'),
+  双手剑: elementVariant('pyro', 'color'),
+  长柄武器: elementVariant('electro', 'color'),
+  弓: elementVariant('dendro', 'color'),
+  法器: elementVariant('geo', 'color'),
 };
 
 const RARITY_COLOR = {
-  5: '#e0a63c',
-  4: '#a06cd5',
-  3: '#4a8ad6',
-  2: '#4caf7d',
-  1: '#8b98a8',
+  5: rarityHex(5, 'bg'),
+  4: rarityHex(4, 'bg'),
+  3: rarityHex(3, 'bg'),
+  2: rarityHex(2, 'bg'),
+  1: rarityHex(1, 'bg'),
 };
 
 const WEAPON_TYPES = ['单手剑', '双手剑', '长柄武器', '弓', '法器'];
@@ -88,7 +89,7 @@ function renderList(root) {
     <div class="filter-bar" id="weapon-filter">
       <div class="filter-row" role="group" aria-label="按类型筛选（可多选，不选为全部）">
         ${WEAPON_TYPES.map(t => `
-          <button class="fbtn" data-type="${t}" title="${t}" style="--el-color:${TYPE_COLOR[t]}">
+          <button class="fbtn fbtn-icon" data-type="${t}" title="${t}" style="--el-color:${TYPE_COLOR[t]}">
             ${weaponIcons[t] ? `<img class="icon-18" src="data:image/webp;base64,${weaponIcons[t]}" alt="${t}" />` : ''}
           </button>`).join('')}
       </div>

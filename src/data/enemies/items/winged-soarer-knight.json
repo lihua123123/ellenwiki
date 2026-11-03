@@ -1,0 +1,84 @@
+{
+ "name": "舞空羽骑士",
+ "nameEn": "Winged Soarer Knight",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 19.018,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 22.61,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 20,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 50,
+ "skills": [
+  {
+   "name": "以刃巡镝",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "羽骑士将制刀作箭，蓄力猛射，造成<span class=\"anemo\">**100%**</span>伤害。受<c=#bfccff>「星烁反应」</c>影响，放箭后自身会被击飞。"
+  },
+  {
+   "name": "风翦残云",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "羽骑士进行至多3段的剑术攻击，均造成<span class=\"anemo\">**70%**</span>伤害。男性和女性羽骑士的动作不相同。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "AP[0]",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 77644,
+   "atk": 4432,
+   "weight": 50,
+   "tenacity": 70
+  }
+ ],
+ "leyline": null,
+ "id": "winged-soarer-knight",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

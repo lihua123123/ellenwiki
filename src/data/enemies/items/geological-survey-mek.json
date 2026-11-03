@@ -1,0 +1,100 @@
+{
+ "name": "机关·地质勘探型",
+ "nameEn": "Geological Survey Mek",
+ "subtitle": "",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 20.096000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "探针刺划",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "勘探机关使用支撑尖爪抓划，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "地汲水汇",
+   "type": "妨害 芒",
+   "icon": "skill-2.webp",
+   "description": "勘探机关从地下挖出一点水，朝玩家连续喷吐3次，均造成<c=#7fbfff>70%</c>伤害。"
+  },
+  {
+   "name": "尘土飞扬",
+   "type": "输出 荒",
+   "icon": "skill-3.webp",
+   "description": "勘探机关连续使用打桩机击打地面3次，均造成<c=#ffe599>80%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "荒芒性质",
+   "desc": "<c=#ffbfbf>1次</c>芒荒攻击可以瘫痪相反属性的勘探机关，约25s后恢复荒芒属性。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 110920,
+   "atk": 3940,
+   "weight": 150,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "geological-survey-mek",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

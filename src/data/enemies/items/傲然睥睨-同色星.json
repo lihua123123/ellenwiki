@@ -1,0 +1,39 @@
+{
+ "name": "傲然睥睨·同色星",
+ "nameEn": "",
+ "subtitle": "啸卷之役",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {
+   "Value": 64.817345,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "id": "傲然睥睨-同色星",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

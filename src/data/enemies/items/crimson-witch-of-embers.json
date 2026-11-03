@@ -1,0 +1,141 @@
+{
+ "name": "焚尽的炎之魔女",
+ "nameEn": "Crimson Witch of Embers",
+ "subtitle": "",
+ "category": "EnemyOfNote",
+ "categoryLabel": "值得铭记的强敌",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 271.68,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 60.288,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 70,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "103",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "焚心之赤",
+   "type": "天赋",
+   "icon": "skill-1.webp",
+   "description": "罗莎琳的部分攻击命中地面会产生余烬，其持续造成<c=#ff9999>6.25%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，命中+<c=#ffdfbf>2.5%</c>炎热值，余烬永久存在，只能被<c=#99e5ff>`霜之眼`</c>破坏。"
+  },
+  {
+   "name": "炽炎笞灭",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "罗莎琳使劲挥动手中的火鞭，以5种方式施放：近弧、远直、双连、倒直、倒弧，不论怎么施放，都造成<c=#ff9999>50%</c>伤害，命中+<c=#ffdfbf>5%</c>炎热值。"
+  },
+  {
+   "name": "红莲翳火",
+   "type": "妨害",
+   "icon": "skill-3.webp",
+   "description": "罗莎琳张开双翼，召唤一堆的火之蝶坠向地面，造成<c=#ff9999>25%</c>伤害，并留下余烬，命中+<c=#ffdfbf>2%</c>炎热值。"
+  },
+  {
+   "name": "燔焦炙土",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "罗莎琳张开双翼，扇一下挥出一个暗红色的火球，火球沿直线移动，碰到造成<c=#ff9999>62.5%</c>伤害，并在途经上留下余烬，命中+<c=#ffdfbf>5%</c>炎热值。"
+  },
+  {
+   "name": "丹蝶红莲",
+   "type": "追踪",
+   "icon": "skill-5.webp",
+   "description": "罗莎琳召唤一个较大的红莲蛾，红莲蛾追逐玩家，具有一定追踪性，会穿墙，碰到造成<c=#ff9999>25%</c>伤害，命中+<c=#ffdfbf>5%</c>炎热值。"
+  },
+  {
+   "name": "冕霞降陨",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "罗莎琳张开双翼哀嚎，召唤数个火陨命中地面，有较弱的玩家倾向，每个火陨造成<c=#ff9999>100%</c>伤害，命中+<c=#ffdfbf>5%</c>炎热值。"
+  },
+  {
+   "name": "燹笞三罚",
+   "type": "输出",
+   "icon": "skill-7.webp",
+   "description": "罗莎琳挥舞火鞭，插入地面，呈三叉状，造成<c=#ff9999>50%</c>伤害，之后罗莎琳用力拔出，造成<c=#ff9999>75%</c>伤害，命中+<c=#ffdfbf>5%</c>炎热值。"
+  },
+  {
+   "name": "業瘴罪身",
+   "type": "位移",
+   "icon": "skill-8.webp",
+   "description": "罗莎琳传送转移的时候化为暗红的火球，触碰造成<c=#ff9999>37.5%</c>伤害，命中+<c=#ffdfbf>5%</c>炎热值。"
+  },
+  {
+   "name": "净染超脱",
+   "type": "爆发",
+   "icon": "skill-9.webp",
+   "description": "罗莎琳位于场地中央，旋转自身变成大火龙卷，触碰造成<c=#ff9999>75%</c>伤害，该大火龙卷会不断分出4个小火龙卷，各造成<c=#ff9999>37.5%</c>伤害，大火龙卷经过的地方会留下余烬；被大火龙卷命中+<c=#ffdfbf>5%</c>炎热值，被小火龙卷则+<c=#ffdfbf>2%</c>炎热值；\n持续时间结束后大火龙卷重新变为罗莎琳，会<c=#ff9999>充满</c>一半的炎热值。"
+  },
+  {
+   "name": "流灼如狱",
+   "type": "天赋",
+   "icon": "skill-10.webp",
+   "description": "当罗莎琳本次受到的伤害超过本阶段<c=#99e5ff>生命值的20.1%</c>时，罗莎琳施放一次大范围爆炸，造成<c=#ff9999>125%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，<c=#ff9999>充满</c>炎热值；\n该次伤害超过罗莎琳生命值20.1%的部分无效(即受到的最高伤害只能是罗莎琳<c=#99e5ff>生命值的20.1%</c>)。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "霜之眼",
+   "desc": "7次次数盾，位于场地四角，靠近每秒-20%炎热值，击破后清除半径12.5m内的余烬，且清空玩家炎热值；最大可再生数量为2。"
+  },
+  {
+   "text": "炎热",
+   "desc": "正常每秒积攒3%，满后每秒流失(3%+150)生命值，火/燃附着+20%积攒速度，冰/水附着-20%积攒速度。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "周本-第二阶段",
+   "level": 90,
+   "hp": 742006,
+   "atk": 9135,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "crimson-witch-of-embers",
+ "icon": "avatar.webp",
+ "tags": [
+  "值得铭记的强敌"
+ ]
+}

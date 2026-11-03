@@ -1,0 +1,156 @@
+{
+ "name": "镀金旅团·灵风猎手",
+ "nameEn": "Eremite: Galehunter",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 59.769600000000004,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  },
+  {
+   "name": "魔化",
+   "pyro": 60,
+   "hydro": 60,
+   "anemo": 60,
+   "electro": 60,
+   "dendro": 60,
+   "cryo": 60,
+   "geo": 60,
+   "physical": 30
+  },
+  {
+   "name": "虚弱",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": -50,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 80,
+ "skills": [
+  {
+   "name": "光巡风矢",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "灵风猎手发射一枚风元素箭矢，造成<span class=\"anemo\">**75%**</span>伤害，虚弱的灵风猎手只会施放此技能。"
+  },
+  {
+   "name": "弓矢搏刃",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "距离玩家较近时，灵风猎手手持风矢进行倒身挑、划、砸碎3段攻击，依次造成<span class=\"anemo\">**60%,70%,75%**</span>伤害。"
+  },
+  {
+   "name": "一箭风止",
+   "type": "控制",
+   "icon": "skill-3.webp",
+   "description": "灵风猎手凌空蓄力，产生真空场不断吸引玩家至风矢范围内，3s后箭矢发射，造成<span class=\"anemo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "掷矢碎刃",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "距离玩家较近时，灵风猎手掏出风矢并砸碎，造成<span class=\"anemo\">**75%**</span>伤害。"
+  },
+  {
+   "name": "风逐所向",
+   "type": "位移",
+   "icon": "skill-5.webp",
+   "description": "距离玩家较远时，灵风猎手直接冲来，使用风矢划击，造成<span class=\"anemo\">**75%**</span>伤害。"
+  },
+  {
+   "name": "诡风避之",
+   "type": "位移",
+   "icon": "skill-6.webp",
+   "description": "(魔化)若玩家接近灵风猎手，灵风猎手将迅速后撤远离玩家。"
+  },
+  {
+   "name": "厄灵解放·风之魔鸢",
+   "type": "召唤",
+   "icon": "skill-7.webp",
+   "description": "当灵风猎手的<c=#ffbfbf>生命值低于70%(特化为100%)</c>时，其会唤出武器内的风之魔鸢，<c=#bfffdf>进入魔化状态</c>，全抗性提升50%。击破风之魔鸢会使灵风猎手受到基于<span class=\"anemo\">**当前生命值的37.5%**</span>的<span class=\"anemo\">**风元素真伤**</span>，并虚弱10s，一次战斗内仅会施放一次该技能。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "机制",
+   "desc": "正在蓄力箭矢或处于魔化状态下，抗打断0，质量翻6倍。虚弱状态下抗打断0。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:B_1111",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 244024,
+   "atk": 12311,
+   "weight": 80,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "eremite-galehunter",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

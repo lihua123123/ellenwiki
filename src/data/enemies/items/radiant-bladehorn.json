@@ -1,0 +1,119 @@
+{
+ "name": "蕴光刃犀",
+ "nameEn": "Radiant Bladehorn",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 163.00799999999998,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 67.82400000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 50,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "钩犀斗角",
+   "type": "位移",
+   "icon": "skill-1.webp",
+   "description": "刃犀用角进行至多2次的顶击，边顶边冲，依次造成<span class=\"anemo\">**60%,80%**</span>伤害。"
+  },
+  {
+   "name": "风起石落",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "刃犀抬起前身，然后重重拍下，依次造成<span class=\"anemo\">**80%,100%**</span>伤害。"
+  },
+  {
+   "name": "锋嵴磔刃",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "刃犀展开半径<c=#ffdfbf>15m</c>的`蕴光领域`，依次朝玩家发射背上尖锐的3个嵴刃，每枚造成<span class=\"anemo\">**30%**</span>伤害。"
+  },
+  {
+   "name": "牴风长袭",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "刃犀展开半径<c=#ffdfbf>15m</c>的`蕴光领域`，其从远处执角冲来，接触造成<span class=\"anemo\">**40%**</span>伤害；行至目标处立即重重拍下，造成<span class=\"anemo\">**100%**</span>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "蕴光领域",
+   "desc": "展开时施加「蕴光之茧」状态，扣除全队角色10%+1800点生命值，若角色生命值低于7200点，则改为扣除35%生命值，可致命但可开大招躲避；主动治疗清除后获得「出缠」效果。若范围内前台角色仍处于「蕴光之茧」状态，刃犀不会施放「锋嵴磔刃」、「牴风长袭」。"
+  },
+  {
+   "text": "蕴光之茧",
+   "desc": "暴击率-10%，造成的伤害-10%，受治疗加成-10%。"
+  },
+  {
+   "text": "出缠",
+   "desc": "暴击率+15%，造成的伤害+50%，持续15s。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 665520,
+   "atk": 13296,
+   "weight": 150,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "radiant-bladehorn",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

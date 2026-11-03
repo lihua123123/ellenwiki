@@ -1,0 +1,153 @@
+{
+ "name": "遗迹巨蛇",
+ "nameEn": "Ruin Serpent",
+ "subtitle": "进路开掘·SI/Glp",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 217.344,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 70
+  },
+  {
+   "name": "充能",
+   "pyro": 310,
+   "hydro": 310,
+   "anemo": 310,
+   "electro": 310,
+   "dendro": 310,
+   "cryo": 310,
+   "geo": 310,
+   "physical": 370
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 1000,
+ "skills": [
+  {
+   "name": "针矛钻戳",
+   "type": "突袭",
+   "icon": "skill-1.webp",
+   "description": "遗迹巨蛇从地里冒出，使用尖尾扎地，造成击退无伤害。"
+  },
+  {
+   "name": "临渊之暗",
+   "type": "天赋",
+   "icon": "skill-2.webp",
+   "description": "进场强制削减流明石能量直至剩余<c=#72b8ff>2点</c>。"
+  },
+  {
+   "name": "渊泥翻涌",
+   "type": "埋伏",
+   "icon": "skill-3.webp",
+   "description": "遗迹巨蛇周期性钻入地下，带出黑泥在周围形成4个淤泥涌口，产生<c=#ffff99>`纯光结晶`</c>。"
+  },
+  {
+   "name": "掘地三尺",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "遗迹巨蛇朝玩家猛冲，造成<c=#b9b9b9>30%</c>伤害，接着钻入地下，钻出，用尾针扎地面，造成<c=#b9b9b9>70%</c>伤害。"
+  },
+  {
+   "name": "抻身陡落",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "遗迹巨蛇倾倒身体，向前方的扇形区域来回碾压，倒下造成<c=#b9b9b9>50%</c>伤害，碾压造成<c=#b9b9b9>40%</c>伤害。"
+  },
+  {
+   "name": "翻砂涌石",
+   "type": "牵引",
+   "icon": "skill-6.webp",
+   "description": "遗迹巨蛇钻入地下，在地面上产生砂石漩涡，持续造成<c=#b9b9b9>10%</c>伤害并牵引玩家，漩涡散去后钻出地面，紧接着又再次钻入地面，均造成<c=#b9b9b9>70%</c>伤害。"
+  },
+  {
+   "name": "污秽炸弹",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "遗迹巨蛇盘踞在淤泥涌口间进行充能，暴露弱点，不断旋转然后钻入地下，产生<c=#ffff99>`纯光结晶`</c>，此时炸弹爆炸，产生强追踪碎片，每个碎片造成<c=#b9b9b9>40%</c>/<c=#b9b9b9>30%</c>(1个涌口)伤害，并消耗淤泥涌口。"
+  },
+  {
+   "name": "污秽激波",
+   "type": "爆发",
+   "icon": "skill-8.webp",
+   "description": "遗迹巨蛇盘踞在淤泥涌口间进行充能，暴露弱点，抬着头蓄力，产生<c=#ffff99>`纯光结晶`</c>，此时施放激波，造成<c=#b9b9b9>200%</c>/<c=#b9b9b9>100%</c>(1个涌口)伤害，并消耗淤泥涌口。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "纯光结晶",
+   "desc": "<c=#ffe599>3岩</c>盾，击破产生3个流明石能量。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "纯光结晶",
+   "description": "<c=#ffe599>3岩</c>盾，击破产生3个流明石能量。",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_3303",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 974962,
+   "atk": 15665,
+   "weight": 1000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "ruin-serpent",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

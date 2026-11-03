@@ -1,0 +1,106 @@
+{
+ "name": "遗迹巡弋者",
+ "nameEn": "Ruin Cruiser",
+ "subtitle": "",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 40.751999999999995,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 52.752,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "弹淋幕雨",
+   "type": "爆发",
+   "icon": "skill-1.webp",
+   "description": "巡弋者发射定位激光，造成<c=#b9b9b9>30%</c>伤害，同时向空中发射4批子弹，如雨落下，造成<c=#b9b9b9>40%</c>伤害。"
+  },
+  {
+   "name": "三相光弹",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "巡弋者标记玩家，在周襞上形成光球，暴露核心，光球发射造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "轶光碟中",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "巡弋者瞄准标记玩家，随后发射聚光造成<c=#b8b8b8>70%</c>伤害。"
+  },
+  {
+   "name": "混沌光球",
+   "type": "召唤",
+   "icon": "skill-4.webp",
+   "description": "巡弋者生成一个混沌球，随后后撤放置，落地时触碰造成<c=#b9b9b9>40%</c>伤害，落地后接触持续造成<c=#b9b9b9>30%</c>伤害，混沌球长时间在场上存在。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_1102",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 166380,
+   "atk": 10341,
+   "weight": 300,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "ruin-cruiser",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

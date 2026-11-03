@@ -1,0 +1,174 @@
+{
+ "name": "无相之水",
+ "nameEn": "Hydro Hypostasis",
+ "subtitle": "「希伊」",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 122.256,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 113.04,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": "IMM",
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "深藏不露",
+   "type": "内鬼水滴",
+   "icon": "skill-1.webp",
+   "description": "无相之水召唤的深蓝色史莱姆，其始终追踪玩家，靠近时爆炸造成无相之水的<c=#7fbfff>31.1%</c>伤害，若爆炸命中无相之水则强制暴露其核心一段时间。"
+  },
+  {
+   "name": "馥郁疗华",
+   "type": "愈疗水滴",
+   "icon": "skill-2.webp",
+   "description": "无相之水召唤的天蓝色史莱姆，其周期性喷吐疗愈晶球，晶球追踪无相之水，其治疗量对于角色为<c=#7fbfff>50%生命值上限</c>，对于无相之水为<c=#7fbfff>10%生命值上限</c>。"
+  },
+  {
+   "name": "初泉成滴",
+   "type": "召唤",
+   "icon": "skill-3.webp",
+   "description": "无相之水挤压并汇聚水泡，随后水泡爆炸造成<c=#7fbfff>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，爆炸召唤内鬼水滴和愈疗水滴，水滴着陆造成<c=#7fbfff>33.3%</c>伤害。"
+  },
+  {
+   "name": "水击鳐形",
+   "type": "化形",
+   "icon": "skill-4.webp",
+   "description": "无相之水幻化成鳐形，向玩家处拍击，同时产生1个方向的水喷，水喷和拍击均造成<c=#7fbfff>66.6</c><c=#7fbfff>%,33.3%,16.6%,6.66%</c>伤害。"
+  },
+  {
+   "name": "天水共相",
+   "type": "控制",
+   "icon": "skill-5.webp",
+   "description": "无相之水在空中翻涌，顷刻便扎入地里，造成<c=#7fbfff>33.3%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。施放该技能后的25s内，场地将随机出现成对的水泡，触碰造成<c=#7fbfff>66.6%</c>伤害。"
+  },
+  {
+   "name": "汇海终囿",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "无相之水从场地边缘唤出8个水轴，其不断朝中央滚动，每个水轴触碰造成<c=#7fbfff>66.6%</c>伤害，水轴最后漏入中心，引起水爆，造成<c=#7fbfff>100%</c>伤害。"
+  },
+  {
+   "name": "群鱼之跃",
+   "type": "化形",
+   "icon": "skill-7.webp",
+   "description": "无相之水幻化成群鱼，从远处下潜跃出命中玩家，造成<c=#7fbfff>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，不暴露核心。"
+  },
+  {
+   "name": "浽风溦雨",
+   "type": "妨害",
+   "icon": "skill-8.webp",
+   "description": "无相之水化为高速旋转的水龙卷，预判玩家并在其下方生成3片雨区，每片雨区持续造成<c=#7fbfff>33.3%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "浮沧起伏",
+   "type": "辅助",
+   "icon": "skill-9.webp",
+   "description": "无相之水汇聚水泡，随后破裂造成<c=#7fbfff>66.6%</c>伤害，并暴露核心，同时在场地内召唤跃腾的海豚，海豚跃出造成<c=#7fbfff>66.6%</c>伤害，跃入造成<c=#7fbfff>16.6%</c>伤害。"
+  },
+  {
+   "name": "濒亡·涸尽",
+   "type": "复苏",
+   "icon": "",
+   "description": "无相之水生命值低于5%时进行复苏，复苏持续20s，复苏时汇聚的水泡爆炸无伤害，爆炸召唤`濒死水滴`，水滴落地时造成<c=#7fbfff>33.3%</c>伤害，每个水滴恢复无相之水<c=#7fbfff>15%</c>生命值。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "内鬼水滴",
+   "desc": "2水盾，击破即击败水滴，靠近即自爆。"
+  },
+  {
+   "text": "愈疗水滴",
+   "desc": "2水盾，击破即击败水滴。"
+  },
+  {
+   "text": "濒死水滴",
+   "desc": "2水盾，全部击破阻止无相之水复苏。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "内鬼水滴",
+   "description": "2水盾，击破即击败水滴，靠近即自爆。",
+   "elementType": "Water",
+   "duration": ""
+  },
+  {
+   "name": "愈疗水滴",
+   "description": "2水盾，击破即击败水滴。",
+   "elementType": "Water",
+   "duration": ""
+  },
+  {
+   "name": "濒死水滴",
+   "description": "2水盾，全部击破阻止无相之水复苏。",
+   "elementType": "Water",
+   "duration": 20
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:A_3302",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 354734,
+   "atk": 23497,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "hydro-hypostasis",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

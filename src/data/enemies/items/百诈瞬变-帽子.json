@@ -1,0 +1,39 @@
+{
+ "name": "百诈瞬变·帽子",
+ "nameEn": "",
+ "subtitle": "劲裂之役",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {
+   "Value": 101.40014,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 69.08,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "id": "百诈瞬变-帽子",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

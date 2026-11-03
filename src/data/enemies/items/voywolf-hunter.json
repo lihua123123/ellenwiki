@@ -1,0 +1,101 @@
+{
+ "name": "嗥狼追猎者",
+ "nameEn": "Voywolf Hunter",
+ "subtitle": "气魄千钧的迷兽",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 48.902,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 56.52,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 30,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "幻雪零星",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "嗥狼以站姿迅速拈弓一发冰箭，造成<span class=\"cryo\">**60%**</span>伤害；或以蹲姿发射，造成<span class=\"cryo\">**70%**</span>伤害。"
+  },
+  {
+   "name": "雨前三两",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "嗥狼蹲下迅速发射两一枚冰箭，均造成<span class=\"cryo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "流矢烁寒",
+   "type": "追踪",
+   "icon": "skill-3.webp",
+   "description": "嗥狼给弓注入冰元素，随后发射三枚极快的追踪箭，造成<span class=\"cryo\">**100%,20%,10%**</span>伤害。受`星烁反应`影响后箭失去目标，并会使其眩晕一小会。"
+  },
+  {
+   "name": "凌冰微舞",
+   "type": "输出",
+   "icon": "",
+   "description": "距离较近时，嗥狼使用下肢进行踢踹攻击，造成<span class=\"cryo\">**60%**</span>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "CP[60,0]",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 199656,
+   "atk": 11080,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "voywolf-hunter",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

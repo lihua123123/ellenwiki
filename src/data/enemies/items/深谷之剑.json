@@ -1,0 +1,84 @@
+{
+ "name": "深谷之剑",
+ "nameEn": "The Fairy Knight Twins",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1623.445,
+   "Curve": "HP_3"
+  },
+  "atk": {
+   "Value": 225.00000000000003,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "103",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "水波利刃",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "双生猎刀鳐连续甩尾产生2道水刃，均造成<c=#7fbfff>50%</c>伤害。"
+  },
+  {
+   "name": "双生之恋",
+   "type": "爆发",
+   "icon": "skill-2.webp",
+   "description": "每15s，双生猎刀鳐之间将产生<c=#bfffff>连结绳</c>进行蓄力：蓄力时间5s，完成蓄力后两个猎刀鳐都将发射1道大型水刃，造成<c=#7fbfff>100%,50%</c>伤害。\n使用「异色猎刀鳐」的水刃可以切断<c=#bfffff>连结绳支点</c>，双生猎刀鳐都将受到<c=#ffdfbf>20%</c>生命值的反噬伤害。\n双生猎刀鳐只能一起击败，先残血的会锁<c=#ffdfbf>1%</c>生命值，当另一只小于1%生命值后才能全部击败。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 2937463,
+   "atk": 46770,
+   "weight": 100,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "深谷之剑",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

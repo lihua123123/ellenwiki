@@ -1,0 +1,107 @@
+{
+ "name": "嵌合角熊",
+ "nameEn": "Chimeric Horned Bear",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 108.672,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 60.29,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 30,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "猖炽趋退",
+   "type": "位移",
+   "icon": "skill-1.webp",
+   "description": "角熊怒吼着扑而来，造成<c=#ff9999>50%</c>伤害，紧接着翻翼攻击，造成<c=#ff9999>75%</c>伤害。翼受损时不追加翻翼攻击。"
+  },
+  {
+   "name": "金牙驱伐",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "角熊使用鹿角进行顶击，造成<c=#ff9999>80%</c>伤害，容易后接各种其他技能。角受损时不施放本技能。"
+  },
+  {
+   "name": "心焦妄熊",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "角熊半起身，使用前肢击打一下，造成<c=#ff9999>60%</c>伤害，容易后接各种其他技能。"
+  },
+  {
+   "name": "捷掣烈觡",
+   "type": "猛攻",
+   "icon": "",
+   "description": "角熊蓄力，使用鹿角进行2次冲击，均造成<c=#ff9999>100%</c>伤害。受`星烁反应`影响后角破损，不再能够继续使用；触发时掉落4枚<c=#ff9999>火元素</c>微粒。"
+  },
+  {
+   "name": "焰霞半翼",
+   "type": "猛攻",
+   "icon": "",
+   "description": "角熊张开翼进行蓄力，随后怒而自旋，造成<c=#ff9999>100%</c>伤害。受`星烁反应`影响后翼破损，不再能够继续使用；触发时掉落4枚<c=#ff9999>火元素</c>微粒。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "PP[60,0]",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 443680,
+   "atk": 11819,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "chimeric-horned-bear",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

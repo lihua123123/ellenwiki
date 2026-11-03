@@ -1,0 +1,101 @@
+{
+ "name": "爆弹丘丘人",
+ "nameEn": "Hiluchurl Grenadier",
+ "subtitle": "",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 45.216,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "熔浆布丁",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "爆弹丘丘人从地里挖出`火史莱姆`，扔出爆炸造成<c=#ff9999>100%</c>伤害，若史莱姆变黑，则造成<c=#b8b8b8>25%</c>伤害。\n史莱姆可被打落，一段时间爆炸也造成相同伤害。\n在水里是挖不出火史莱姆的。"
+  },
+  {
+   "name": "掌掴子搭",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "史莱姆被打落后，爆弹丘丘人挥手抓玩家，造成<c=#b9b9b9>75%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "火史莱姆",
+   "desc": "<c=#ff9999>1火</c>盾，浇熄后造成物理伤害。\n免疫燃烧伤害。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "火史莱姆",
+   "description": "<c=#ff9999>1火</c>盾，浇熄后造成物理伤害。\n免疫燃烧伤害。",
+   "elementType": "Fire",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:C_1001",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 36765,
+   "atk": 8864,
+   "weight": 75,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "hiluchurl-grenadier",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

@@ -1,0 +1,127 @@
+{
+ "name": "焚燃·大灵显化身",
+ "nameEn": "Burning-Aflame Wayob Manifestation",
+ "subtitle": "夜晚与游灵的代行",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 57.775999999999996,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 50,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "千星挟焰",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "焚燃化身进行蓄力，凝聚燃炎之怒，向前发射9枚带追踪性的火焰弹，造成<c=#ff9999>40%,20%,10%,4%</c>伤害。"
+  },
+  {
+   "name": "一虹灼界",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "焚燃化身朝玩家方向蓄力，迸发燃素湍流，造成<c=#ff9999>70%</c>伤害。"
+  },
+  {
+   "name": "曦阳弥雨",
+   "type": "定点",
+   "icon": "skill-3.webp",
+   "description": "焚燃化身依次在玩家位置召唤6道燃素流束，每道造成<c=#ff9999>30%</c>伤害。"
+  },
+  {
+   "name": "煜光潋影",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "焚燃化身即刻展开`试炼领域`，并获得`白护盾`，从领域内不断产生向外的互相垂直的4道聚曜之光，造成多段<c=#ff9999>23.3%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，重复3回，最后收回领域并产生烈阳熔淤，造成<c=#ff9999>100%</c>伤害，所剩的护盾将转为等量`花羽之灵御`。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "试炼领域",
+   "desc": "焚燃化身展开的特殊领域，此领域内玩家造成的伤害提升120%，其内的角色造成的夜魂伤害则额外提升60%，但会不断流失元素能量(不影响特殊能量)。"
+  },
+  {
+   "text": "白护盾",
+   "desc": "111.4%生命值盾，击破后返还90元素能量(不含特殊能量)，并瘫痪焚燃化身5s。"
+  },
+  {
+   "text": "花羽之灵御",
+   "desc": "48火盾，击破后可瘫痪焚燃化身5s。一般由等量的白护盾转化而来。\n\n重复获得白护盾会使其衰减，其序列为111.4%/73.52%/\n36.76%；具体的计算公式见「窟岩·大灵显化身」。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "白护盾",
+   "description": "111.4%生命值盾，击破后返还90元素能量(不含特殊能量)，并瘫痪焚燃化身5s。",
+   "elementType": "",
+   "duration": ""
+  },
+  {
+   "name": "花羽之灵御",
+   "description": "48火盾，击破后可瘫痪焚燃化身5s。一般由等量的白护盾转化而来。\n\n重复获得白护盾会使其衰减，其序列为111.4%/73.52%/\n36.76%；具体的计算公式见「窟岩·大灵显化身」。",
+   "elementType": "Fire",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:C_1002",
+  "rows": [
+   {
+    "hp": 60,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 388220,
+   "atk": 11326,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "burning-aflame-wayob-manifestation",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

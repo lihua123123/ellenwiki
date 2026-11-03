@@ -1,0 +1,125 @@
+{
+ "name": "蕴光凛狼",
+ "nameEn": "Radiant Glacial Wolf",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 149.424,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 82.896,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 50,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "苍牙啖啮",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "凛狼对玩家进行至多抓，咬，咬3段攻击，依次造成<span class=\"cryo\">**50%,40%,70%**</span>伤害，可单独施放。"
+  },
+  {
+   "name": "孤踪飞猎",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "凛狼迅速高跳至玩家处，并踉跄一下，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "秋阑风冽",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "孤狼朝前方猛地喷吐狂风，造成造成<span class=\"cryo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "狂逐碎灭",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "凛狼展开半径<c=#ffdfbf>15m</c>的`蕴光领域`，朝玩家凶猛袭来，并用力切割两次，每次造成<span class=\"cryo\">**70%**</span>伤害，可连续施放2次。"
+  },
+  {
+   "name": "拨霜斫捩",
+   "type": "远程",
+   "icon": "skill-5.webp",
+   "description": "凛狼展开半径<c=#ffdfbf>15m</c>的`蕴光领域`，用利爪用力劈开一刀冰刃，造成<span class=\"cryo\">**90%**</span>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "蕴光领域",
+   "desc": "展开时施加「蕴光之茧」状态，扣除全队角色10%+1800点生命值，若角色生命值低于7200点，则改为扣除35%生命值，可致命但可开大招躲避；主动治疗清除后获得「出缠」效果。若范围内前台角色仍处于「蕴光之茧」状态，凛狼不会施放「狂逐碎灭」、「拨霜斫捩」。"
+  },
+  {
+   "text": "蕴光之茧",
+   "desc": "暴击率-10%，造成的伤害-10%，受治疗加成-10%。"
+  },
+  {
+   "text": "出缠",
+   "desc": "暴击率+15%，造成的伤害+50%，持续15s。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 610060,
+   "atk": 16251,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "radiant-glacial-wolf",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

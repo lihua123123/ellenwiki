@@ -1,0 +1,157 @@
+{
+ "name": "驰岚·霜夜灵嗣",
+ "nameEn": "Veiled Cloudchaser: Frostnight Scion",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 138.55679999999998,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": "IMM",
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "晦隐",
+   "pyro": 60,
+   "hydro": 60,
+   "anemo": 100,
+   "electro": 60,
+   "dendro": 60,
+   "cryo": 60,
+   "geo": 60,
+   "physical": 60
+  },
+  {
+   "name": "深渊晦隐",
+   "pyro": 130,
+   "hydro": 130,
+   "anemo": 170,
+   "electro": 130,
+   "dendro": 130,
+   "cryo": 130,
+   "geo": 130,
+   "physical": 130
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "青纱交缀",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "灵嗣使用翠翼进行至多3段的普通攻击，均造成<span class=\"anemo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "拊翼征伐",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "灵嗣飞起，腾跃至空中，在玩家处进行下落攻击，造成<span class=\"anemo\">**100%**</span>伤害；「晦隐」状态下会连续下落3次，每次落地后都会产生一牵引玩家的移动风涡，接触造成<span class=\"anemo\">**20%**</span>伤害后消失。"
+  },
+  {
+   "name": "花绽繁芯",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "灵嗣张翅，发射5枚针叶弹，针叶弹随后朝玩家方向折返，具有强追踪性，每枚造成<span class=\"anemo\">**30%,21%,15%**</span>伤害。"
+  },
+  {
+   "name": "蔽以疾巽",
+   "type": "天赋",
+   "icon": "skill-4.webp",
+   "description": "灵嗣转身翻越，进入「`晦隐`」状态，该状态下灵嗣施放技能前后都会闪现，并且全抗提升，解除对<span class=\"anemo\">**风元素**</span>的免疫。"
+  },
+  {
+   "name": "授以夕岚",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "灵嗣抬起前身向前跺下，造成<span class=\"anemo\">**70%**</span>伤害。"
+  },
+  {
+   "name": "蔑以衰飒",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "灵嗣背对玩家用后肢猛踢，造成<span class=\"anemo\">**70%**</span>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "晦隐",
+   "desc": "抗打断0，全抗性提升<c=#ffccbf>60%</c>/<c=#ffccbf>120%</c>，允许受到风元素伤害；充能条总量<span class=\"anemo\">**100**</span>/<span class=\"anemo\">**150**</span>(深渊)，受到<span class=\"anemo\">**风元素**</span>攻击后根据风元素的量积攒<span class=\"anemo\">**20n**</span>或<span class=\"anemo\">**3**</span>，受到月反应伤害积攒<span class=\"anemo\">**3**</span>，充满退出状态。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [
+  {
+   "Name": "晦隐",
+   "Description": "抗打断0，全抗性提升<color=#ffccbf>60%</color>/<color=#ffccbf>120%</color>，允许受到风元素伤害；充能条总量<color=#7fffd7>100</color>/<color=#7fffd7>150</color>(深渊)，受到<color=#7fffd7>风元素</color>攻击后根据风元素的量积攒<color=#7fffd7>20n</color>或<color=#7fffd7>3</color>，受到月反应伤害积攒<color=#7fffd7>3</color>，充满退出状态。",
+   "IconPath": "",
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "抗打断0，全抗性提升60%/120%，允许受到风元素伤害；充能条总量100/150(深渊)，受到风元素攻击后根据风元素的量积攒20n或3，受到月反应伤害积攒3，充满退出状态。"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "Anemo",
+  "elementLabel": "风",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 565692,
+   "atk": 14773,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "veiled-cloudchaser-frostnight-scion",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

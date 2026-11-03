@@ -1,0 +1,90 @@
+{
+ "name": "旋转冰蕈兽",
+ "nameEn": "Whirling Cryo Fungus",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 22.608,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 20,
+   "cryo": 20,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [
+  {
+   "name": "寒霜突袭",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "旋转冰蕈兽钻入地面，在玩家处钻出，造成<span class=\"cryo\">**60%**</span>伤害。\n<c=#ff99ff>活化：</c>快速进行3次该技能；\n<c=#ff9672>枯焦：</c>钻出伤害提升至<span class=\"cryo\">**100%**</span>。"
+  },
+  {
+   "name": "螺转锋切",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "旋转冰蕈兽快速旋转，朝着玩家撞来，造成<c=#b8b8b8>30%</c>伤害。\n<c=#ff99ff>活化：</c>速度提升；\n<c=#ff9672>枯焦：</c>撞击伤害提升至<c=#b8b8b8>60%</c>。"
+  },
+  {
+   "name": "三相之形",
+   "type": "天赋",
+   "icon": "skill-3.webp",
+   "description": "旋转冰蕈兽受到<c=#ff9999>火元素</c>/<c=#ffacff>雷元素</c>攻击后，会分别永久转变为<c=#ff9672>枯焦</c>/<c=#ff99ff>活化</c>状态。\n<c=#ff99ff>活化：</c>CD缩短，移速提升150%；\n<c=#ff9672>枯焦：</c>CD延长，移速下降50%。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:E_0001",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 55460,
+   "atk": 4432,
+   "weight": 75,
+   "tenacity": 20
+  }
+ ],
+ "leyline": null,
+ "id": "whirling-cryo-fungus",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

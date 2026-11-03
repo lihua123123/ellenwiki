@@ -1,0 +1,263 @@
+{
+ "name": "霜夜巡天灵主",
+ "nameEn": "Frostnight Herra",
+ "subtitle": "圣辉的庇卫",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 298.848,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "入场",
+   "pyro": 210,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 210,
+   "dendro": 210,
+   "cryo": 210,
+   "geo": 210,
+   "physical": 210
+  },
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "晦隐",
+   "pyro": 130,
+   "hydro": 130,
+   "anemo": 130,
+   "electro": 130,
+   "dendro": 130,
+   "cryo": 130,
+   "geo": 130,
+   "physical": 130
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "轻跹悠摇",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "灵主进行至多3段的普通攻击，每段均造成<c=#b8b8b8>50%</c>伤害；「晦隐」状态下倍率提升，每段造成<c=#b8b8b8>70%</c>伤害。吸收元素后<c=#dfbfff>可被附魔</c>。"
+  },
+  {
+   "name": "霜染白莹",
+   "type": "防御",
+   "icon": "skill-2.webp",
+   "description": "灵主飞速旋转双翼，造成<c=#b8b8b8>80%</c>伤害；「晦隐」状态下倍率提升，造成<c=#b8b8b8>100%</c>伤害。吸收元素后<c=#dfbfff>可被附魔</c>。"
+  },
+  {
+   "name": "皎光悬玉",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "灵主唤来纯皎的凝晶，朝我方角色如数发射，造成<c=#b8b8b8>50%,25%,5%</c>伤害；\n「晦隐」状态下不施放。吸收元素后<c=#dfbfff>可被附魔</c>。"
+  },
+  {
+   "name": "击风止影",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "灵主合翼，高高飞起，朝我方角色位置坠下，造成<c=#b8b8b8>100%</c>伤害；「晦隐」状态下不施放。吸收元素后<c=#dfbfff>可被附魔</c>。"
+  },
+  {
+   "name": "昏见交痕",
+   "type": "远程",
+   "icon": "skill-5.webp",
+   "description": "「晦隐」状态下，距离较远时，灵主飞快地挥舞两次，产生两道剑气，分别造成<c=#b8b8b8>70%</c>伤害。"
+  },
+  {
+   "name": "幕作惊汐",
+   "type": "远程",
+   "icon": "skill-6.webp",
+   "description": "「晦隐」状态下，距离较远时，灵主蓄力，并突然重坠，惊起地浪，造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "百羽垂曜",
+   "type": "爆发",
+   "icon": "skill-7.webp",
+   "description": "生命值低于<c=#ffcebf>70%</c>时，灵主将移至场地中央，进入「`晦隐`」状态并<c=#bfffbf>清除自身元素及附着</c>；召唤16道高速移动的流光，造成<c=#b8b8b8>70%</c>伤害；最后收尾产生爆破，造成<c=#b8b8b8>100%</c>伤害。此外，「晦隐」状态下，场地内会随机出现1-3枚落月，落地造成<c=#b8b8b8>50%</c>伤害。"
+  },
+  {
+   "name": "永帷恒彩",
+   "type": "天赋",
+   "icon": "skill-8.webp",
+   "description": "「晦隐」状态下，对灵主造成伤害可积攒进度。退出「晦隐」状态后，灵主将吸收<c=#ffebbf>「晦隐」期间</c>所受<c=#ffbfbf>总和最高</c>的<c=#ffebbf>伤害属性</c>，吸收完毕后灵主将获得<c=#ffbfbf>4单位该元素</c>自附着，并<c=#ffbfbf>免疫该元素伤害</c>；与龙兽不同的是，若为<c=#ffebbf>月曜反应伤害或物理伤害</c>最高，则不会吸收属性。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "晦隐",
+   "desc": "全抗性提升<c=#ffccbf>120%</c>，充能条总量<c=#ff9999>50</c>，受到<c=#ffdfbf>月曜反应伤害</c>积攒<c=#ffdfbf>6</c>，受到<c=#ffdfbf>非月曜伤害</c>积攒<c=#ffdfbf>1</c>，充满退出状态，并瘫痪13s；等价于<c=#ffbfbf>50</c>次<c=#ffdfbf>非月曜伤害</c>或<c=#ffbfbf>9</c>次<c=#ffdfbf>月曜伤害</c>退出状态，伤害>0的攻击才可充能。(计算总伤害时，月曜伤害按<c=#ffdfbf>1.3倍</c>计算)"
+  }
+ ],
+ "shields": [],
+ "chargebar": [
+  {
+   "Name": "晦隐",
+   "Description": "全抗性提升<color=#ffccbf>120%</color>，充能条总量<color=#ff9999>50</color>，受到<color=#ffdfbf>月曜反应伤害</color>积攒<color=#ffdfbf>6</color>，受到<color=#ffdfbf>非月曜伤害</color>积攒<color=#ffdfbf>1</color>，充满退出状态，并瘫痪13s；等价于<color=#ffbfbf>50</color>次<color=#ffdfbf>非月曜伤害</color>或<color=#ffbfbf>9</color>次<color=#ffdfbf>月曜伤害</color>退出状态，伤害>0的攻击才可充能。(计算总伤害时，月曜伤害按<color=#ffdfbf>1.3倍</color>计算)",
+   "IconPath": "",
+   "MaxValue": 50,
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "全抗性提升120%，充能条总量50，受到月曜反应伤害积攒6，受到非月曜伤害积攒1，充满退出状态，并瘫痪13s；等价于50次非月曜伤害或9次月曜伤害退出状态，伤害>0的攻击才可充能。(计算总伤害时，月曜伤害按1.3倍计算)"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1340572,
+   "atk": 20886,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": {
+  "name": "霜夜巡天灵主·惊恨憎愤",
+  "nameEn": "Frostnight Herra: Hatred and Rage",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 867373,
+    "atk": 10467,
+    "multiplier": 1.2,
+    "advantage": "Multiple Elements Adv."
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 4322026,
+    "atk": 13542,
+    "multiplier": 4.0,
+    "advantage": "High-Freq DMG Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 7246473,
+    "atk": 14905,
+    "multiplier": 5.8,
+    "advantage": "Lunar Reaction Adv."
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 12855409,
+    "atk": 15965,
+    "multiplier": 9.4,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "出场",
+    "pyro": 210,
+    "hydro": 210,
+    "anemo": 210,
+    "electro": 210,
+    "dendro": 210,
+    "cryo": 210,
+    "geo": 210,
+    "physical": 210
+   },
+   {
+    "name": "正常",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   },
+   {
+    "name": "晦隐",
+    "pyro": 130,
+    "hydro": 130,
+    "anemo": 130,
+    "electro": 130,
+    "dendro": 130,
+    "cryo": 130,
+    "geo": 130,
+    "physical": 130
+   }
+  ],
+  "skills": [],
+  "notes": [
+   {
+    "text": "晦色之月",
+    "desc": "战斗开始时会进入「晦隐」状态，全抗提升<c=#ffdfbf>120%</c>：\n需要<c=#ffdfbf>50次</c>伤害来退出此状态，其中月曜伤害算作<c=#ffdfbf>6次</c>。退出状态后，灵主将瘫痪15s，并按此期间<c=#ffdfbf>所受伤害最高的伤害属性</c>，获得<c=#ffbfbf>此元素的免疫效果</c>和永久4单位元素附着；若月曜伤害或物理伤害为最高值，则不会产生免疫效果。(计算总伤害时，月曜伤害按<c=#ffdfbf>1.3倍</c>计算)\n55s后会再次进入「晦隐」状态。"
+   }
+  ],
+  "shields": []
+ },
+ "id": "frostnight-herra",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命",
+  "幽境危战"
+ ]
+}

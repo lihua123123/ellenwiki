@@ -1,0 +1,191 @@
+{
+ "name": "焚天爆炎树",
+ "nameEn": "Sky-Searing Pyro Regisvine",
+ "subtitle": "温顺的潜在伙伴",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 134.48160000000001,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 175,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 370,
+   "hydro": 310,
+   "anemo": 310,
+   "electro": 310,
+   "dendro": 310,
+   "cryo": 310,
+   "geo": 310,
+   "physical": 330
+  },
+  {
+   "name": "瘫痪",
+   "pyro": 70,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 30
+  },
+  {
+   "name": "削弱瘫痪",
+   "pyro": 20,
+   "hydro": -40,
+   "anemo": -40,
+   "electro": -40,
+   "dendro": -40,
+   "cryo": -40,
+   "geo": -40,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "106",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "炎花热浪",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "爆炎树朝地面猛锤，锤点造成<c=#ff9999>85%</c>伤害，形成3道冲击波，各造成<c=#ff9999>50%</c>伤害，该技能可连续进行3次锤击。"
+  },
+  {
+   "name": "双炎轮转",
+   "type": "苏醒",
+   "icon": "skill-2.webp",
+   "description": "瘫痪恢复后，爆炎树在原地快速旋转一圈半，造成<c=#ff9999>85%</c>伤害，旋转之前的砸地也造成<c=#ff9999>85%</c>伤害。"
+  },
+  {
+   "name": "余焰未熄",
+   "type": "防卫",
+   "icon": "skill-3.webp",
+   "description": "处在爆炎树后方时，爆炎树向玩家方向迅速旋转半圈，造成<c=#ff9999>85%</c>伤害。"
+  },
+  {
+   "name": "飒光红流",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "爆炎树进行左砸划-右砸划-锤击三段连击，砸击造成<c=#ff9999>75%</c>伤害，划击造成<c=#ff9999>85%</c>伤害，产生的震波造成<c=#ff9999>50%</c>伤害。"
+  },
+  {
+   "name": "星焰光火",
+   "type": "追踪",
+   "icon": "skill-5.webp",
+   "description": "爆炎树使用藤条在空中召出8个火球，火球缓慢追踪玩家，造成<c=#ff9999>12.5%</c>伤害。"
+  },
+  {
+   "name": "赤潮劫阵",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "破除`冠部核心`后，爆炎树的花冠朝天，在场地边缘连续召唤绕场地逆时针旋转的7排火喷，均造成<c=#ff9999>60%</c>伤害，并产生强斥力风场排开玩家。"
+  },
+  {
+   "name": "流星火迹",
+   "type": "输出",
+   "icon": "skill-7.webp",
+   "description": "爆炎树使用藤条对着玩家，藤条迅速发射8组火焰弹，火焰弹造成<c=#ff9999>20%</c>伤害。"
+  },
+  {
+   "name": "俱焱一隅",
+   "type": "猛攻",
+   "icon": "skill-8.webp",
+   "description": "爆炎树朝前方扇形区域喷射大量火球，造成<c=#ff9999>100%</c>伤害。"
+  },
+  {
+   "name": "焚风炙金",
+   "type": "猛攻",
+   "icon": "skill-9.webp",
+   "description": "爆炎树的花冠垂直收缩下压，造成<c=#ff9999>100%</c>伤害，并在其周身生成熔岩，持续造成<c=#ff9999>30%</c>伤害；后立即在近地面喷射烈火，瞬间造成<c=#ff9999>90%</c>伤害，火焰持续喷射造成<c=#ff9999>70%,17.5%,1.75%,0.7%</c>伤害。"
+  },
+  {
+   "name": "赤心炉火",
+   "type": "转换",
+   "icon": "skill-10.webp",
+   "description": "爆炎树首先在<c=#ffbfbf>`冠部`</c>形成`核心`，被击破后直接转移到<c=#ffbfbf>`根部`</c>形成`核心`，击破后则将再次在<c=#ffbfbf>冠部</c>形成核心。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冠部核心",
+   "desc": "36火盾(削弱词条26火)，击破后转至根部；"
+  },
+  {
+   "text": "根部核心",
+   "desc": "4火盾(削弱词条2火)，击破可瘫痪爆炎树15s(削弱词条21s)。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "冠部核心",
+   "description": "36火盾(削弱词条26火)，击破后转至根部；",
+   "elementType": "Fire",
+   "duration": ""
+  },
+  {
+   "name": "根部核心",
+   "description": "4火盾(削弱词条2火)，击破可瘫痪爆炎树15s(削弱词条21s)。",
+   "elementType": "Fire",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Pyro",
+  "elementLabel": "火",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 603258,
+   "atk": 36376,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "sky-searing-pyro-regisvine",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

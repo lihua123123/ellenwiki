@@ -1,0 +1,820 @@
+{
+ "name": "若陀龙王",
+ "nameEn": "Azhdaha",
+ "subtitle": "",
+ "category": "EnemyOfNote",
+ "categoryLabel": "值得铭记的强敌",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 489.024,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 113.04,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 70,
+   "physical": 40
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "103",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "固石翡鳞",
+   "type": "召唤",
+   "icon": "skill-1.webp",
+   "description": "若陀龙王抖出身上的龙鳞，龙鳞呈直线排列，落下造成<c=#ffe599>16.6%</c>伤害，一段时间后爆炸，造成<c=#ffe599>33.3%</c>伤害。"
+  },
+  {
+   "name": "蹈践蹀足",
+   "type": "持续",
+   "icon": "skill-2.webp",
+   "description": "处在若陀龙王较近的周围时，若陀龙王使用一个前肢或后肢，拍击地面产生震波，造成<c=#ffe599>33.3%</c>伤害，震波持续2波，造成<c=#ffe599>16.6%</c>伤害。"
+  },
+  {
+   "name": "震地而峙",
+   "type": "控制",
+   "icon": "skill-3.webp",
+   "description": "若陀龙王使用头部重重敲击地面，造成<c=#ffe599>33.3%</c>伤害，产生向前扩散的岩震波，造成<c=#ffe599>66.6%</c>伤害。"
+  },
+  {
+   "name": "岫摧壑倒",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "若陀龙王蓄力冲向玩家，造成<c=#ffe599>33.3%</c>伤害，然后挑起，造成<c=#ffe599>66.6%</c>伤害。"
+  },
+  {
+   "name": "晃山沉峦",
+   "type": "控制",
+   "icon": "skill-5.webp",
+   "description": "处在若陀龙王侧身时，若陀龙王侧倾身子，造成<c=#ffe599>66.6%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "峯塌岳罅",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "若陀龙王跳起重重下落，产生两次地震，都造成<c=#ffe599>50%</c>伤害，第二次地震范围比第一次稍大。"
+  },
+  {
+   "name": "屮尾铡笞",
+   "type": "防卫",
+   "icon": "skill-7.webp",
+   "description": "处在若陀龙王尾部后方时，若陀龙王摇晃尾部重重下击，造成<c=#ffe599>66.6%</c>伤害。"
+  },
+  {
+   "name": "屮尾惩砂",
+   "type": "防卫",
+   "icon": "skill-8.webp",
+   "description": "处在若陀龙王尾部侧后方时，若陀龙王摇晃尾部旋转身子，造成大范围<c=#ffe599>66.6%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+  },
+  {
+   "name": "鎏岩躣沙",
+   "type": "游动",
+   "icon": "skill-9.webp",
+   "description": "若陀龙王潜入地下，不断产生下落的石块，造成<c=#ffe599>33.3%</c>伤害，碰到游走的若陀龙王造成<c=#ffe599>33.3%</c>伤害，其会钻出袭击玩家，造成<c=#ffe599>66.6%</c>伤害；一段时间后若陀龙王会在中心钻出，造成<c=#bababa>8.3%</c>伤害。"
+  },
+  {
+   "name": "耸壑隳靡",
+   "type": "爆发",
+   "icon": "skill-10.webp",
+   "description": "若陀龙王转阶段时，使用前肢交互拍地5下，每下造成大范围<c=#ffe599>50%</c>伤害，随后强力拍地，造成更大范围的<c=#ffe599>66.6%</c>伤害，以上伤害<c=#ffbfbf>闪避帧均无效</c>。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "周本-第一阶段",
+   "level": 90,
+   "hp": 876747,
+   "hpNote": "100%",
+   "atk": 17128,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "azhdaha",
+ "icon": "avatar.webp",
+ "states": [
+  {
+   "key": "yan",
+   "label": "岩",
+   "name": "若陀龙王·岩",
+   "subtitle": "",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 489.024,
+     "Curve": "HP_1"
+    },
+    "atk": {
+     "Value": 113.04,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-第一阶段",
+     "level": 90,
+     "hp": 876747,
+     "hpNote": "100%",
+     "atk": 17128,
+     "weight": 20000,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 10,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 70,
+     "physical": 40
+    }
+   ],
+   "skills": [
+    {
+     "name": "固石翡鳞",
+     "type": "召唤",
+     "icon": "skill-1.webp",
+     "description": "若陀龙王抖出身上的龙鳞，龙鳞呈直线排列，落下造成<c=#ffe599>16.6%</c>伤害，一段时间后爆炸，造成<c=#ffe599>33.3%</c>伤害。"
+    },
+    {
+     "name": "蹈践蹀足",
+     "type": "持续",
+     "icon": "skill-2.webp",
+     "description": "处在若陀龙王较近的周围时，若陀龙王使用一个前肢或后肢，拍击地面产生震波，造成<c=#ffe599>33.3%</c>伤害，震波持续2波，造成<c=#ffe599>16.6%</c>伤害。"
+    },
+    {
+     "name": "震地而峙",
+     "type": "控制",
+     "icon": "skill-3.webp",
+     "description": "若陀龙王使用头部重重敲击地面，造成<c=#ffe599>33.3%</c>伤害，产生向前扩散的岩震波，造成<c=#ffe599>66.6%</c>伤害。"
+    },
+    {
+     "name": "岫摧壑倒",
+     "type": "输出",
+     "icon": "skill-4.webp",
+     "description": "若陀龙王蓄力冲向玩家，造成<c=#ffe599>33.3%</c>伤害，然后挑起，造成<c=#ffe599>66.6%</c>伤害。"
+    },
+    {
+     "name": "晃山沉峦",
+     "type": "控制",
+     "icon": "skill-5.webp",
+     "description": "处在若陀龙王侧身时，若陀龙王侧倾身子，造成<c=#ffe599>66.6%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+    },
+    {
+     "name": "峯塌岳罅",
+     "type": "输出",
+     "icon": "skill-6.webp",
+     "description": "若陀龙王跳起重重下落，产生两次地震，都造成<c=#ffe599>50%</c>伤害，第二次地震范围比第一次稍大。"
+    },
+    {
+     "name": "屮尾铡笞",
+     "type": "防卫",
+     "icon": "skill-7.webp",
+     "description": "处在若陀龙王尾部后方时，若陀龙王摇晃尾部重重下击，造成<c=#ffe599>66.6%</c>伤害。"
+    },
+    {
+     "name": "屮尾惩砂",
+     "type": "防卫",
+     "icon": "skill-8.webp",
+     "description": "处在若陀龙王尾部侧后方时，若陀龙王摇晃尾部旋转身子，造成大范围<c=#ffe599>66.6%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+    },
+    {
+     "name": "鎏岩躣沙",
+     "type": "游动",
+     "icon": "skill-9.webp",
+     "description": "若陀龙王潜入地下，不断产生下落的石块，造成<c=#ffe599>33.3%</c>伤害，碰到游走的若陀龙王造成<c=#ffe599>33.3%</c>伤害，其会钻出袭击玩家，造成<c=#ffe599>66.6%</c>伤害；一段时间后若陀龙王会在中心钻出，造成<c=#bababa>8.3%</c>伤害。"
+    },
+    {
+     "name": "耸壑隳靡",
+     "type": "爆发",
+     "icon": "skill-10.webp",
+     "description": "若陀龙王转阶段时，使用前肢交互拍地5下，每下造成大范围<c=#ffe599>50%</c>伤害，随后强力拍地，造成更大范围的<c=#ffe599>66.6%</c>伤害，以上伤害<c=#ffbfbf>闪避帧均无效</c>。"
+    }
+   ],
+   "notes": [],
+   "shields": [],
+   "chargebar": [],
+   "energy": {
+    "element": "None",
+    "elementLabel": "无元素",
+    "raw": "EnergyGroup:N_0000",
+    "rows": [
+     {
+      "hp": 0,
+      "particle": 0,
+      "orb": 0
+     }
+    ]
+   },
+   "weight": 20000,
+   "elementMastery": 0,
+   "multiplayerGroup": "103",
+   "icon": "avatar.webp",
+   "defaultLevel": 90
+  },
+  {
+   "key": "shui",
+   "label": "水",
+   "name": "若陀龙王·水",
+   "subtitle": "",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 317.86579,
+     "Curve": "HP_1"
+    },
+    "atk": {
+     "Value": 113.04,
+     "Curve": "ATK_1"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-第二阶段水形态",
+     "level": 90,
+     "hp": 569886,
+     "hpNote": "65%",
+     "atk": 17128,
+     "weight": 20000,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 10,
+     "hydro": 70,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 70,
+     "physical": 40
+    }
+   ],
+   "skills": [
+    {
+     "name": "坎青之印",
+     "type": "天赋",
+     "icon": "state-shui-skill-1.webp",
+     "description": "若陀龙王的<c=#7fbfff>水元素</c>攻击会标记无护盾的玩家，每秒造成<c=#7fbfff>13.3%</c>伤害，标记持续8s，可以被元素反应消除。"
+    },
+    {
+     "name": "氲浴涓华",
+     "type": "爆发",
+     "icon": "state-shui-skill-2.webp",
+     "description": "若陀龙王咆哮，召唤数个水球绕场地旋转一段时间，触碰水球造成<c=#7fbfff>50%,25%,\n12.5%,5%</c>伤害。"
+    },
+    {
+     "name": "坼隙泉现",
+     "type": "输出",
+     "icon": "state-shui-skill-3.webp",
+     "description": "若陀龙王跳起重重下落，产生两次地震，都造成<c=#7fbfff>33.3%</c>伤害，并产生数道水流涌出：水流造成<c=#7fbfff>16.6%</c>伤害。"
+    },
+    {
+     "name": "蹈沦蹀涟",
+     "type": "持续",
+     "icon": "state-shui-skill-4.webp",
+     "description": "处在若陀龙王较近的周围时，若陀龙王使用一个前肢或后肢，拍击地面产生3次震波，均造成<c=#7fbfff>23.3%</c>伤害，并产生数道水流涌出。"
+    },
+    {
+     "name": "斫石断水",
+     "type": "输出",
+     "icon": "state-shui-skill-5.webp",
+     "description": "若陀龙王使用头部重重敲击地面，造成<c=#7fbfff>23.3%</c>伤害，随后在玩家处生成一个水喷，造成<c=#7fbfff>66.6%</c>伤害。"
+    },
+    {
+     "name": "潦浸无晴",
+     "type": "爆发",
+     "icon": "state-shui-skill-6.webp",
+     "description": "若陀龙王转阶段时，使用前肢交互拍地5下，每下造成大范围<c=#7fbfff>33.3%</c>伤害，随后前肢同时拍地，造成更大范围的<c=#7fbfff>46.6%</c>伤害，并产生数道水流涌出。以上伤害<c=#ffbfbf>闪避帧均无效</c>。"
+    }
+   ],
+   "notes": [],
+   "shields": [],
+   "chargebar": [],
+   "energy": null,
+   "weight": 20000,
+   "elementMastery": 0,
+   "multiplayerGroup": "1",
+   "icon": "state-shui-avatar.webp",
+   "defaultLevel": 90
+  },
+  {
+   "key": "bing",
+   "label": "冰",
+   "name": "若陀龙王·冰",
+   "subtitle": "",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 171.158674,
+     "Curve": "HP_1"
+    },
+    "atk": {
+     "Value": 113.04,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "首领",
+     "level": 90,
+     "hp": 306862,
+     "hpNote": "35%",
+     "atk": 17128,
+     "weight": 20000,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "水二",
+     "pyro": 10,
+     "hydro": 70,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 60,
+     "geo": 70,
+     "physical": 40
+    },
+    {
+     "name": "火二",
+     "pyro": 70,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 60,
+     "geo": 70,
+     "physical": 40
+    }
+   ],
+   "skills": [
+    {
+     "name": "煞坎之印",
+     "type": "天赋",
+     "icon": "state-bing-skill-1.webp",
+     "description": "若陀龙王的<span class=\"cryo\">**冰元素**</span>攻击会标记没带盾的玩家，每秒造成<span class=\"cryo\">**13.3%**</span>伤害，标记持续8s，可以被元素反应消除。"
+    },
+    {
+     "name": "饕冹齑骨",
+     "type": "爆发",
+     "icon": "state-bing-skill-2.webp",
+     "description": "若陀龙王潜入地下，留下尾部的伏龙树，开始召唤冰雹攻击，冰雹落地产生扩散3次的冰棘，均造成<span class=\"cryo\">**33.3%**</span>伤害，技能持续12轮，每轮同时落下3个冰雹。结束后若陀龙王钻出，造成<c=#bababa>8.3%</c>伤害。"
+    },
+    {
+     "name": "宝璧剡凌",
+     "type": "追踪",
+     "icon": "state-bing-skill-3.webp",
+     "description": "若陀龙王使用尾部召唤出一个带刺冰球，悬浮于空中，每轮不断发射4个追踪冰锥，造成<span class=\"cryo\">**46.6%,23.3%,11.65%,\n4.66%**</span>伤害，持续5轮。"
+    },
+    {
+     "name": "屮梢留霜",
+     "type": "防卫",
+     "icon": "state-bing-skill-4.webp",
+     "description": "处在若陀龙王尾部侧后方时，若陀龙王摇晃尾部旋转身子，造成大范围<span class=\"cryo\">**46.6%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>，留下3个带刺冰球，爆炸造成<span class=\"cryo\">**23.3%**</span>伤害。"
+    },
+    {
+     "name": "皲甲裂胄",
+     "type": "输出",
+     "icon": "state-bing-skill-5.webp",
+     "description": "处在若陀龙王侧身时，若陀龙王侧倾身子，造成<span class=\"cryo\">**46.6%**</span>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+    },
+    {
+     "name": "灏霜慄袭",
+     "type": "输出",
+     "icon": "state-bing-skill-6.webp",
+     "description": "若陀龙王蓄力冲向玩家，造成<span class=\"cryo\">**23.3%**</span>伤害，然后挑起，造成<span class=\"cryo\">**46.6%**</span>伤害。"
+    },
+    {
+     "name": "净水錾鳞",
+     "type": "持续",
+     "icon": "state-bing-skill-7.webp",
+     "description": "若陀龙王抖出身上的龙鳞，龙鳞落地造成<span class=\"cryo\">**23.3%**</span>伤害，随后留下不断下落的碎冰，持续造成<span class=\"cryo\">**11.6%,5.8%,2.9%,1.16%**</span>伤害，一共落下4枚龙鳞。"
+    },
+    {
+     "name": "屮梢凿屲",
+     "type": "输出",
+     "icon": "state-bing-skill-8.webp",
+     "description": "处在若陀龙王尾部后方时，若陀龙王摇晃尾部重重下击，造成<span class=\"cryo\">**46.6%**</span>伤害，然后拔出尾部产生一次爆炸，造成<span class=\"cryo\">**23.3%**</span>伤害。"
+    }
+   ],
+   "notes": [],
+   "shields": [],
+   "chargebar": [],
+   "energy": null,
+   "weight": 20000,
+   "elementMastery": 0,
+   "multiplayerGroup": "1",
+   "icon": "state-bing-avatar.webp",
+   "defaultLevel": 90
+  },
+  {
+   "key": "huo",
+   "label": "火",
+   "name": "若陀龙王·火",
+   "subtitle": "",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 317.86579,
+     "Curve": "HP_1"
+    },
+    "atk": {
+     "Value": 113.04,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-第二阶段火形态",
+     "level": 90,
+     "hp": 569886,
+     "hpNote": "65%",
+     "atk": 17128,
+     "weight": 20000,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 70,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 70,
+     "physical": 40
+    }
+   ],
+   "skills": [
+    {
+     "name": "离缟之印",
+     "type": "天赋",
+     "icon": "state-huo-skill-1.webp",
+     "description": "若陀龙王的<c=#ff9999>火元素</c>攻击会标记无护盾的玩家，每秒造成<c=#ff9999>13.3%</c>伤害，标记持续8s，可以被元素反应消除。"
+    },
+    {
+     "name": "焱陨天来",
+     "type": "爆发",
+     "icon": "state-huo-skill-2.webp",
+     "description": "若陀龙王咆哮，召唤数十个火球从天而降，造成<c=#ff9999>100%</c>伤害，并留下熔岩，持续造成<c=#ff9999>11.6%</c>伤害。"
+    },
+    {
+     "name": "堑涌熔生",
+     "type": "输出",
+     "icon": "state-huo-skill-3.webp",
+     "description": "若陀龙王跳起重重下落，产生两次地震，都造成<c=#ff9999>33.3%</c>伤害，并产生数个火球：触碰造成<c=#ff9999>16.6%</c>伤害，火球落下产生熔岩，持续造成<c=#ff9999>11.6%</c>伤害。"
+    },
+    {
+     "name": "蹈焦蹀炙",
+     "type": "持续",
+     "icon": "state-huo-skill-4.webp",
+     "description": "处在若陀龙王较近的周围时，若陀龙王使用一个前肢或后肢，拍击地面产生3次震波，均造成<c=#ff9999>23.3%</c>伤害，并产生数个火球。"
+    },
+    {
+     "name": "槃焰欲出",
+     "type": "控制",
+     "icon": "state-huo-skill-5.webp",
+     "description": "若陀龙王使用头部重重敲击地面，造成<c=#ff9999>23.3%</c>伤害，产生向前的震波，造成<c=#ff9999>66.6%</c>伤害，并产生数个火球。"
+    },
+    {
+     "name": "熯炽无霖",
+     "type": "爆发",
+     "icon": "state-huo-skill-6.webp",
+     "description": "若陀龙王转阶段时，使用前肢交互拍地5下，每下造成大范围<c=#ff9999>33.3%</c>伤害，随后前肢同时拍地，造成更大范围的<c=#ff9999>46.6%</c>伤害，并产生数个火球。以上伤害<c=#ffbfbf>闪避帧均无效</c>。"
+    }
+   ],
+   "notes": [],
+   "shields": [],
+   "chargebar": [],
+   "energy": null,
+   "weight": 20000,
+   "elementMastery": 0,
+   "multiplayerGroup": "1",
+   "icon": "state-huo-avatar.webp",
+   "defaultLevel": 90
+  },
+  {
+   "key": "lei",
+   "label": "雷",
+   "name": "若陀龙王·雷",
+   "subtitle": "",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 171.158674,
+     "Curve": "HP_1"
+    },
+    "atk": {
+     "Value": 113.04,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [
+    {
+     "label": "周本-第三阶段",
+     "level": 90,
+     "hp": 306862,
+     "hpNote": "35%",
+     "atk": 17128,
+     "weight": 20000,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "水二",
+     "pyro": 10,
+     "hydro": 70,
+     "anemo": 10,
+     "electro": 60,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 70,
+     "physical": 40
+    },
+    {
+     "name": "火二",
+     "pyro": 70,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 60,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 70,
+     "physical": 40
+    }
+   ],
+   "skills": [
+    {
+     "name": "震蠲之印",
+     "type": "天赋",
+     "icon": "state-lei-skill-1.webp",
+     "description": "若陀龙王的<c=#ffacff>雷元素</c>攻击会标记没带盾的玩家，每秒造成<c=#ffacff>13.3%</c>伤害，标记持续8s，可以被元素反应消除。"
+    },
+    {
+     "name": "紫链欻翕",
+     "type": "爆发",
+     "icon": "state-lei-skill-2.webp",
+     "description": "若陀龙王潜入地下，留下尾部的伏龙树，将全场分成中心与12个扇区，必有可躲避雷劈的扇区，若被雷劈中则造成<c=#ffacff>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，持续4轮，结束后若陀龙王钻出，造成<c=#bababa>8.3%</c>伤害。"
+    },
+    {
+     "name": "青霞沌钧",
+     "type": "追踪",
+     "icon": "state-lei-skill-3.webp",
+     "description": "若陀龙王使用尾部召唤出6个雷球，依次朝玩家发射，每个雷球造成<c=#ffacff>46.6%</c>伤害。"
+    },
+    {
+     "name": "屮木飞煋",
+     "type": "防卫",
+     "icon": "state-lei-skill-4.webp",
+     "description": "处在若陀龙王尾部侧后方时，若陀龙王摇晃尾部旋转身子，造成大范围<c=#ffacff>46.6%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，留下6个游离的雷球，触碰造成<c=#ffacff>11.6%</c>伤害。"
+    },
+    {
+     "name": "晃震紫霄",
+     "type": "输出",
+     "icon": "state-lei-skill-5.webp",
+     "description": "处在若陀龙王侧身时，若陀龙王侧倾身子，造成<c=#ffacff>46.6%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。"
+    },
+    {
+     "name": "火掣银花",
+     "type": "输出",
+     "icon": "state-lei-skill-6.webp",
+     "description": "若陀龙王蓄力冲向玩家，造成<c=#ffacff>23.3%</c>伤害，然后挑起，造成<c=#ffacff>46.6%</c>伤害。"
+    },
+    {
+     "name": "煜翡流光",
+     "type": "输出",
+     "icon": "state-lei-skill-7.webp",
+     "description": "若陀龙王抖出身上的龙鳞，龙鳞落地产生扩散的8瓣雷，造成一次<c=#ffacff>23.3%</c>伤害，一共产生4次。"
+    },
+    {
+     "name": "屮木击霆",
+     "type": "防卫",
+     "icon": "state-lei-skill-8.webp",
+     "description": "处在若陀龙王尾部后方时，若陀龙王摇晃尾部重重下击，造成<c=#df99ff>46.6%</c>伤害，然后拔出尾部产生一次爆炸，造成<c=#df99ff>23.3%</c>伤害。"
+    }
+   ],
+   "notes": [],
+   "shields": [],
+   "chargebar": [],
+   "energy": null,
+   "weight": 20000,
+   "elementMastery": 0,
+   "multiplayerGroup": "1",
+   "icon": "state-lei-avatar.webp",
+   "defaultLevel": 90
+  },
+  {
+   "key": "shuibing",
+   "label": "水冰",
+   "name": "若陀龙王·水冰",
+   "subtitle": "",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 489.024,
+     "Curve": "HP_1"
+    },
+    "atk": {
+     "Value": 113.04,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [],
+   "resistances": [],
+   "skills": [],
+   "notes": [],
+   "shields": [],
+   "chargebar": [],
+   "energy": null,
+   "weight": "",
+   "elementMastery": 0,
+   "multiplayerGroup": "103",
+   "icon": "state-shuibing-avatar.webp",
+   "defaultLevel": null
+  },
+  {
+   "key": "shuilei",
+   "label": "水雷",
+   "name": "若陀龙王·水雷",
+   "subtitle": "",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 489.024,
+     "Curve": "HP_1"
+    },
+    "atk": {
+     "Value": 113.04,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [],
+   "resistances": [],
+   "skills": [],
+   "notes": [],
+   "shields": [],
+   "chargebar": [],
+   "energy": null,
+   "weight": "",
+   "elementMastery": 0,
+   "multiplayerGroup": "103",
+   "icon": "state-shuilei-avatar.webp",
+   "defaultLevel": null
+  },
+  {
+   "key": "huobing",
+   "label": "火冰",
+   "name": "若陀龙王·火冰",
+   "subtitle": "",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 489.024,
+     "Curve": "HP_1"
+    },
+    "atk": {
+     "Value": 113.04,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [],
+   "resistances": [],
+   "skills": [],
+   "notes": [],
+   "shields": [],
+   "chargebar": [],
+   "energy": null,
+   "weight": "",
+   "elementMastery": 0,
+   "multiplayerGroup": "103",
+   "icon": "state-huobing-avatar.webp",
+   "defaultLevel": null
+  },
+  {
+   "key": "huolei",
+   "label": "火雷",
+   "name": "若陀龙王·火雷",
+   "subtitle": "",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 489.024,
+     "Curve": "HP_1"
+    },
+    "atk": {
+     "Value": 113.04,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "levelRows": [],
+   "resistances": [],
+   "skills": [],
+   "notes": [],
+   "shields": [],
+   "chargebar": [],
+   "energy": null,
+   "weight": "",
+   "elementMastery": 0,
+   "multiplayerGroup": "103",
+   "icon": "state-huolei-avatar.webp",
+   "defaultLevel": null
+  }
+ ],
+ "defaultState": "yan",
+ "aliases": [
+  "若陀龙王·岩",
+  "若陀龙王·水",
+  "若陀龙王·冰",
+  "若陀龙王·火",
+  "若陀龙王·雷",
+  "若陀龙王·水冰",
+  "若陀龙王·水雷",
+  "若陀龙王·火冰",
+  "若陀龙王·火雷"
+ ],
+ "tags": [
+  "值得铭记的强敌"
+ ]
+}

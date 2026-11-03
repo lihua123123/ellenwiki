@@ -1,0 +1,123 @@
+{
+ "name": "荒野狂狩士",
+ "nameEn": "Wilderness Hunter",
+ "subtitle": "狂猎之影",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 141.2736,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "猎火将狩",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "狂狩士将手中的蚀斧丢出，造成<c=#b8b8b8>80%</c>伤害。"
+  },
+  {
+   "name": "敞阔心怀",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "狂狩士从敞开心扉持续发射魔火，持续造成<c=#b8b8b8>50%,25%,12.5%,6%,5%</c>伤害。"
+  },
+  {
+   "name": "褫心厄爪",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "狂狩士突然握爪朝前突进袭击玩家，造成<c=#b8b8b8>80%</c>伤害。"
+  },
+  {
+   "name": "幽狂秽舞",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "狂狩士先是发出嘲吼，紧接着利用蚀斧和利爪进行旋、抓、扫至多3段的普通攻击，依次造成<c=#b8b8b8>80%,</c><c=#b8b8b8>60%</c><c=#b8b8b8>,100%</c>伤害。"
+  },
+  {
+   "name": "弑意灾魂",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "狂狩士抻直斧头，进行两段重击，依次造成<c=#b8b8b8>60%,100%</c>伤害。"
+  },
+  {
+   "name": "消逝哀色",
+   "type": "天赋",
+   "icon": "skill-6.webp",
+   "description": "狂猎血条清空之后<c=#ffbfbf>不会立即死亡</c>，而是进入`临界状态`，持续10s；期间受到的部分伤害会削减`生命上限`，状态结束后狂猎将直接恢复至生命上限，将不再能削减上限。\n<c=#99ff99>月兆处于「满辉」的队伍</c>，进行被「满辉」强化的攻击能直接使其进入10s的「失色哀恸」状态。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "临界状态",
+   "desc": "见「荒野幽徒」。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_3303",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 576784,
+   "atk": 14773,
+   "weight": 150,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "wilderness-hunter",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

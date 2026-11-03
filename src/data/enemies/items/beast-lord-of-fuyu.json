@@ -1,0 +1,100 @@
+{
+ "name": "浮玉的兽主",
+ "nameEn": "Beast Lord of Fuyu",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": -25,
+   "hydro": "IMM",
+   "anemo": 30,
+   "electro": 30,
+   "dendro": 30,
+   "cryo": 30,
+   "geo": 30,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "遗珑露珠",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "水猪顶出一个露珠朝玩家扔来，造成<c=#7fbfff>100%</c>伤害。"
+  },
+  {
+   "name": "仙泉之跌",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "水猪在原地猛烈跳动地板，造成<c=#b8b8b8>100%</c>伤害，并在周围产生诸多涌欲的泉喷，造成<c=#7fbfff>100%</c>伤害，有玩家倾向，持续5轮后结束。"
+  },
+  {
+   "name": "凝气成水",
+   "type": "天赋",
+   "icon": "skill-3.webp",
+   "description": "每5s，水猪会<c=#ffdfbf>恢复1%</c>生命值。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "HO[75,50,25]",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "其他-沉玉祝珑",
+   "level": 100,
+   "hp": 388220,
+   "atk": 12311,
+   "weight": 150,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "beast-lord-of-fuyu",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

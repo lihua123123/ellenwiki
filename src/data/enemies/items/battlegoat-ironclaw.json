@@ -1,0 +1,153 @@
+{
+ "name": "战羊",
+ "nameEn": "Battlegoat” & “Ironclaw",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1184.5248,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 163.28,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "铁爪防御",
+   "pyro": 310,
+   "hydro": 310,
+   "anemo": 310,
+   "electro": 310,
+   "dendro": 310,
+   "cryo": 310,
+   "geo": 310,
+   "physical": 310
+  },
+  {
+   "name": "眩晕&落单",
+   "pyro": -40,
+   "hydro": -40,
+   "anemo": -40,
+   "electro": -40,
+   "dendro": -40,
+   "cryo": -40,
+   "geo": -40,
+   "physical": -40
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "喧羊角逐-输出",
+   "type": "战羊",
+   "icon": "skill-1.webp",
+   "description": "战羊进行拱、角觗2段攻击，依次造成<c=#b8b8b8>45%,75%</c>伤害。"
+  },
+  {
+   "name": "顽羊驱斥-输出",
+   "type": "战羊",
+   "icon": "skill-2.webp",
+   "description": "战羊抬起前身，然后扑下顺势用角向前顶，造成<c=#b8b8b8>65%</c>伤害。"
+  },
+  {
+   "name": "蛮羊突围-位移",
+   "type": "战羊",
+   "icon": "skill-3.webp",
+   "description": "战羊开始蓄力，出现冲刺轨迹，4s后冲刺，对玩家造成<c=#b8b8b8>100%</c>伤害，对铁爪造成<c=#ffdfbf>暴击</c>伤害为30%的必定暴击伤害。"
+  },
+  {
+   "name": "蛮骑陷阵-爆发",
+   "type": "战羊",
+   "icon": "skill-4.webp",
+   "description": "战羊跑远开始蓄力，准备<c=#ffdfbf>蛮骑突击</c>，4s后冲刺，对玩家造成<c=#b8b8b8>300%</c>伤害，对铁爪造成<c=#ffdfbf>暴击</c>伤害为30%的必定暴击伤害，重复5次。命中铁爪的<c=#ffdfbf>头鸟坚壁</c>时双方将损失20%生命值，并且眩晕8s。"
+  },
+  {
+   "name": "跃羊怒遏-妨害",
+   "type": "战羊",
+   "icon": "skill-5.webp",
+   "description": "战羊抬起前身，然后迅速扑下，造成<c=#b8b8b8>100%</c>伤害，若命中铁爪，则造成其当前<c=#ffccbf>12.5%</c>生命值的暴击伤害，并令其立即旋转。愤怒状态下，将连续施放3次。"
+  },
+  {
+   "name": "沃土衔粟-远程",
+   "type": "铁爪",
+   "icon": "skill-6.webp",
+   "description": "铁爪从地面衔起一枚谷粒，抛向玩家，造成<c=#b8b8b8>100%,20%</c>伤害。愤怒状态下，将连续施放3次，每次将抛出3枚谷粒。"
+  },
+  {
+   "name": "摔落缓冲-输出",
+   "type": "铁爪",
+   "icon": "skill-7.webp",
+   "description": "铁爪被战羊的冲刺命中后会撞飞，然后落地膨胀缓冲，随后立即旋转一圈，恢复体型并造成<c=#b8b8b8>50%</c>伤害。"
+  },
+  {
+   "name": "摇翼荡爪-妨害",
+   "type": "铁爪",
+   "icon": "skill-8.webp",
+   "description": "铁爪被战羊的「跃羊怒遏」命中后会立即开始不断旋转，朝玩家方向行径，触碰持续造成<c=#b8b8b8>80%,40%</c>伤害。若命中战羊，则造成其当前<c=#ffccbf>12.5%</c>生命值的暴击伤害并中断技能。"
+  },
+  {
+   "name": "磐生铁壁-防御",
+   "type": "铁爪",
+   "icon": "skill-9.webp",
+   "description": "当铁爪被战羊的<c=#ffdfbf>蛮骑突击</c>命中2次后，抱头展开<c=#ffdfbf>头鸟坚壁</c>，全抗大幅提升，持续30s。若继续被战羊的<c=#ffdfbf>蛮骑突击</c>命中，双方将损失20%生命值，并且眩晕8s。"
+  },
+  {
+   "name": "昔日旧友",
+   "type": "天赋",
+   "icon": "skill-10.webp",
+   "description": "入战后，铁爪和战羊的攻击都会对对方造成伤害；若阵亡一方，则另一方会陷入愤怒，攻击力提升<c=#ffbfbf>200%</c>，且部分技能获得强化。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇-单只",
+   "level": 103,
+   "hp": 5313541,
+   "weight": 150,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "battlegoat-ironclaw",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

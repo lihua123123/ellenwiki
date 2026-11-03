@@ -1,0 +1,174 @@
+{
+ "name": "蕴光月幻蝶",
+ "nameEn": "Radiant Moonfly",
+ "subtitle": "月下化形的光影",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 217.344,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 70,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 70,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 20000,
+ "skills": [
+  {
+   "name": "蔓杪轻跹",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "幻蝶进行上踢、飞踹连续两段普通攻击，分别造成<c=#99ff85>50%,60%</c>伤害。"
+  },
+  {
+   "name": "苍莽重蹴",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "幻蝶接近玩家，突然发动踢踹，造成<c=#99ff85>70%</c>伤害。"
+  },
+  {
+   "name": "细裁春风",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "幻蝶蓄力，踢出一道翠刃，造成<c=#99ff85>90%</c>伤害，常衔接「死羁咒茧」。"
+  },
+  {
+   "name": "青轮三叶",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "幻蝶利用悬骸进行打击，造成<c=#99ff85>60%</c>伤害，接着倏然起身，发射一枚三叶组成的镟轮，造成<c=#99ff85>70%</c>伤害，常衔接「死羁咒茧」。"
+  },
+  {
+   "name": "死羁咒茧",
+   "type": "妨害",
+   "icon": "skill-5.webp",
+   "description": "幻蝶展开半径<c=#ffdfbf>25m</c>的苍蕴之域，范围内的玩家全队都会陷入「蕴光之茧」，同时扣除全队角色生命值，将对应角色<c=#ffbfbf>恢复满生命值</c>才可解除，并转为「出缠」效果。"
+  },
+  {
+   "name": "翠蔚馨风",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "幻蝶扑腾地旋转进行扫荡，造成<c=#99ff85>50%</c>伤害。"
+  },
+  {
+   "name": "寂浪焮风",
+   "type": "输出",
+   "icon": "skill-7.webp",
+   "description": "幻蝶倒转地进行扑棱攻击，造成<c=#ff9999>50%</c>伤害。"
+  },
+  {
+   "name": "春叶飞荧",
+   "type": "远程",
+   "icon": "skill-8.webp",
+   "description": "幻蝶挥动鳞翅扫出茁辉散弹，造成<c=#99ff85>25%</c>伤害，持续2-4次，由「秋火飞明」期间受到<span class=\"cryo\">**冰**</span>/<c=#7fbfff>水元素</c>伤害转变。"
+  },
+  {
+   "name": "秋火飞明",
+   "type": "远程",
+   "icon": "skill-9.webp",
+   "description": "幻蝶挥动鳞翅扫出灼灰散弹，造成<c=#ff9999>25%</c>伤害，持续2-4次。"
+  },
+  {
+   "name": "繁林微光",
+   "type": "远程",
+   "icon": "skill-10.webp",
+   "description": "幻蝶发射2-4枚草叶弹，每枚均造成<c=#99ff85>50%</c>伤害。"
+  },
+  {
+   "name": "萧林焚光",
+   "type": "远程",
+   "icon": "skill-11.webp",
+   "description": "幻蝶发射2-4枚焚烨弹，每枚均造成<c=#ff9999>50%</c>伤害，由「繁林微光」期间受到<c=#ff9999>火元素</c>伤害转变。"
+  },
+  {
+   "name": "绚斓一新",
+   "type": "爆发",
+   "icon": "skill-12.webp",
+   "description": "幻蝶凝聚月之下的微光草元素之力，发生大爆炸，造成<c=#99ff85>100%</c>伤害，并瘫痪15s。"
+  },
+  {
+   "name": "焕燃一星",
+   "type": "爆发",
+   "icon": "skill-13.webp",
+   "description": "幻蝶凝聚月之下的躁动火元素之力，发生大爆炸，造成<c=#ff9999>100%</c>伤害，并瘫痪15s。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "蕴光之茧",
+   "desc": "暴击率-100%，造成的伤害-50%，受治疗加成-40%；施加时，扣除全队角色10%+1800点生命值，若角色生命值低于7200点，则改为扣除35%生命值，可致命但可开大招躲避；主动治疗清除后获得「出缠」效果。"
+  },
+  {
+   "text": "出缠",
+   "desc": "暴击率+15%，造成的伤害+50%，持续15s。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 974962,
+   "atk": 20886,
+   "weight": 20000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "radiant-moonfly",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

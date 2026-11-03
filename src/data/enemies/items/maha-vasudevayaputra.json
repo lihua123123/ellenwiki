@@ -1,0 +1,169 @@
+{
+ "name": "历经百战的陆行岩本真蕈",
+ "nameEn": "Maha Vasudevayaputra",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 257.23395,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 113.04,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "枯焦",
+   "pyro": 130,
+   "hydro": 130,
+   "anemo": 130,
+   "electro": 130,
+   "dendro": 150,
+   "cryo": 130,
+   "geo": 150,
+   "physical": 130
+  },
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 30,
+   "cryo": 10,
+   "geo": 30,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 200,
+ "skills": [
+  {
+   "name": "西域蕈客",
+   "type": "位移 枯焦",
+   "icon": "skill-1.webp",
+   "description": "太子立即快速冲来，接触后立即翻起，造成<c=#ffe599>60%</c>伤害。"
+  },
+  {
+   "name": "有香自来",
+   "type": "远程 枯焦",
+   "icon": "skill-2.webp",
+   "description": "太子发射2枚辛蕈果，造成<c=#ffe599>60%,42%</c>伤害，可连续施放多次。"
+  },
+  {
+   "name": "鲜腴之滋",
+   "type": "输出 枯焦",
+   "icon": "skill-3.webp",
+   "description": "太子帽盖一亮，迅速旋转一圈，造成<c=#ffe599>50%</c>伤害，可连续施放多次。"
+  },
+  {
+   "name": "守方正味",
+   "type": "输出 正常",
+   "icon": "skill-4.webp",
+   "description": "太子用帽盖朝前方迅速顶击一次，造成<c=#ffe599>25%</c>伤害。"
+  },
+  {
+   "name": "印香深刻",
+   "type": "爆发 枯焦",
+   "icon": "skill-5.webp",
+   "description": "枯焦状态的大招。太子变大，随后翻身一跃，下落同时借力弹起，该过程重复6次，第1-5次造成<c=#ffe599>60%</c>伤害，第6次造成<c=#ffe599>100%</c>伤害，技能结束后不清空计量条。"
+  },
+  {
+   "name": "沁香妙赐",
+   "type": "爆发 活化",
+   "icon": "skill-6.webp",
+   "description": "活化状态失控的大招，太子变大不移动，在中央胡乱抛洒香弥果，落地造成<c=#ffe599>80%</c>伤害，技能结束后退至<c=#ffbfbf>枯焦</c>状态，并将计量条重置为一半。"
+  },
+  {
+   "name": "隅古方新",
+   "type": "天赋",
+   "icon": "skill-7.webp",
+   "description": "太子初始处于具有高抗的枯焦状态，并存在一`草计量条`，使得其在<c=#ffbfbf>枯焦</c>/<c=#ffffbf>正常</c>/<c=#bfffbf>活化</c>状态之间来回切换。\n<c=#ffbfbf>枯焦：</c>默认状态，枯焦或正常状态下受到<c=#ff9999>火元素</c>攻击后，计量条直接清空并转为枯焦状态。\n<c=#ffffbf>正常：</c>使用<c=#99ff85>草元素</c>攻击充能计量条，充满计量条后，移除高抗并眩晕16s，同时计量条开始衰减，衰减的计量依旧可以充能，衰减完毕后转为枯焦状态。\n<c=#ccffbf>活化：</c>正常状态下受到<c=#ffacff>雷元素</c>攻击可被计数，该雷击计数存在<c=#ffdfbf>3s</c>判定CD，当该计数达<c=#ffdfbf>3</c>后立即失控，并施放「沁香妙赐」，随后退回枯焦状态。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "草计量条",
+   "desc": "计量上限300。太子受到<c=#99ff85>草元素</c>攻击后，会根据草元素的量积攒<c=#ffdfbf>5n%</c>(15n)或<c=#ffdfbf>3.33%</c>(10)计量，攒满后进入正常状态，同时计量条开始衰减，每秒<c=#ffdfbf>-13</c>(地方传奇)/<c=#ffdfbf>-17</c>(历经百战)，衰减完毕后转为枯焦状态，衰减期间仍可使用<c=#99ff85>草元素</c>充能。\n正常状态下，抗打断1000。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [
+  {
+   "Name": "草计量条",
+   "Description": "计量上限300。太子受到<color=#99ff85>草元素</color>攻击后，会根据草元素的量积攒<color=#ffdfbf>5n%</color>(15n)或<color=#ffdfbf>3.33%</color>(10)计量，攒满后进入正常状态，同时计量条开始衰减，每秒<color=#ffdfbf>-13</color>(地方传奇)/<color=#ffdfbf>-17</color>(历经百战)，衰减完毕后转为枯焦状态，衰减期间仍可使用<color=#99ff85>草元素</color>充能。\n正常状态下，抗打断1000。",
+   "IconPath": "",
+   "MaxValue": 300,
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "计量上限300。太子受到草元素攻击后，会根据草元素的量积攒5n%(15n)或3.33%(10)计量，攒满后进入正常状态，同时计量条开始衰减，每秒-13(地方传奇)/-17(历经百战)，衰减完毕后转为枯焦状态，衰减期间仍可使用草元素充能。\n正常状态下，抗打断1000。"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 5374476,
+   "atk": 39162,
+   "weight": 200,
+   "tenacity": 4000
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 1050221,
+   "hpNote": "21.47%",
+   "atk": 22160,
+   "atkNote": "60%",
+   "weight": 200,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "maha-vasudevayaputra",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽",
+  "历经百战"
+ ]
+}

@@ -1,0 +1,158 @@
+{
+ "name": "翠翎恐蕈",
+ "nameEn": "Jadeplume Terrorshroom",
+ "subtitle": "深居幽林的蕈王",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 190.176,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 87.92,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 25,
+   "hydro": 25,
+   "anemo": 25,
+   "electro": 25,
+   "dendro": 80,
+   "cryo": 25,
+   "geo": 25,
+   "physical": 25
+  },
+  {
+   "name": "眩晕",
+   "pyro": 0,
+   "hydro": 0,
+   "anemo": 0,
+   "electro": 0,
+   "dendro": 55,
+   "cryo": 0,
+   "geo": 0,
+   "physical": 0
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 250,
+ "skills": [
+  {
+   "name": "蕈王喙尘",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "翠翎恐蕈进行左划、啄地、起跳至多三段的普通攻击，起跳<c=#bfffbf>自身附着草</c>，左划与啄地造成<c=#99ff86>60%</c>伤害，起跳造成<c=#99ff86>80%</c>伤害。"
+  },
+  {
+   "name": "不羁之行",
+   "type": "爆发",
+   "icon": "skill-2.webp",
+   "description": "翠翎恐蕈激化一式：疯狂向玩家冲来，触碰依次造成<c=#99ff87>120%,48%,12%</c>伤害，来回撞击2次，全程<c=#bfffbf>自身附着草</c>，然后眩晕20s。"
+  },
+  {
+   "name": "尾羽飞扇",
+   "type": "追踪",
+   "icon": "skill-3.webp",
+   "description": "翠翎恐蕈进行左扫、右扫、翻扫至多三段的攻击。每一扫都扔出5个孢弹，且均<c=#bfffbf>自身附着草</c>，每个孢弹造成<c=#99ff87>30%,15%,\n3%</c>伤害。"
+  },
+  {
+   "name": "孢羽囊扇",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "翠翎恐蕈激化二式：蓄力施放巨量孢子，孢子弱追踪玩家，每个孢子造成<c=#99ff87>45%,22.5%,4.5%,0.45%</c>伤害，技能结束眩晕20s。"
+  },
+  {
+   "name": "亚稳孢云",
+   "type": "猛攻",
+   "icon": "skill-5.webp",
+   "description": "翠翎恐蕈产生菌雾，向空中吟叫3次后产生爆炸<c=#bfffbf>(前2次自身挂草)</c>，造成<c=#99ff87>50%</c>伤害，并向外产生2道扩散震波，也造成<c=#99ff87>50%</c>伤害。"
+  },
+  {
+   "name": "蕈王疾舞",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "翠翎恐蕈激化三式：在原地疯狂进行挑动，持续4次，造成<c=#99ff87>120%,60%</c>伤害，技能结束眩晕20s。"
+  },
+  {
+   "name": "灰复烬生",
+   "type": "天赋",
+   "icon": "skill-7.webp",
+   "description": "当翠翎恐蕈自身被触发燃烧时，其会变黑，然后发射3个大型孢子，只能使用<c=#ff9999>火</c>和<c=#ffacff>雷</c>摧毁，每个孢子爆炸造成<c=#99ff86>50%</c>伤害，并召唤1个枯焦的浮游草蕈兽，之后翠翎恐蕈恢复正常。场上至多存在4个召唤的蕈兽。"
+  },
+  {
+   "name": "蕈王尖鸣",
+   "type": "白给",
+   "icon": "skill-8.webp",
+   "description": "距离翠翎恐蕈比较远时，翠翎恐蕈会短暂展开尾翼鸣叫，并<c=#bfffbf>自身附着草</c>，该技能不造成伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "怒气",
+   "desc": "<c=#99ff86>100草</c>充能盾，受到雷元素攻击<c=#99ff86>+2</c>/次，触发任意激化<c=#99ff86>+15</c>/次，受到火元素攻击<c=#99ff86>-34</c>/次。触发燃烧直接枯焦。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [
+  {
+   "Name": "怒气",
+   "Description": "<color=#99ff86>100草</color>充能盾，受到雷元素攻击<color=#99ff86>+2</color>/次，触发任意激化<color=#99ff86>+15</color>/次，受到火元素攻击<color=#99ff86>-34</color>/次。触发燃烧直接枯焦。",
+   "IconPath": "",
+   "Charge": [
+    {
+     "Type": "Other",
+     "ConditionDesc": "100草充能盾，受到雷元素攻击+2/次，触发任意激化+15/次，受到火元素攻击-34/次。触发燃烧直接枯焦。"
+    }
+   ]
+  }
+ ],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:A_3304",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 853091,
+   "atk": 18275,
+   "weight": 250,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "jadeplume-terrorshroom",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

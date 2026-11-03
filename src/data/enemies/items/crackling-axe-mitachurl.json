@@ -1,0 +1,141 @@
+{
+ "name": "雷斧丘丘暴徒",
+ "nameEn": "Crackling Axe Mitachurl",
+ "subtitle": "丘丘暴徒 · 雷斧",
+ "category": "Hilichurls",
+ "categoryLabel": "丘丘族群",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 40.751999999999995,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 60.288,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "斧砍树",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "雷斧进行至多3段的4种普通攻击：\n<c=#bfffeb>旋-劈</c>；<c=#bfffeb>挑-劈</c>；<c=#bfffeb>旋-旋-劈</c>；<c=#bfffeb>挑-旋</c>；每段攻击都造成<c=#b9b9b9>50%</c>/<c=#ffacff>50%</c>伤害。"
+  },
+  {
+   "name": "碎雷布丁",
+   "type": "附魔",
+   "icon": "skill-2.webp",
+   "description": "雷斧从地里挖出雷史莱姆，给斧子上`雷附魔`后丢出，造成<c=#ffacff>37.5%</c>伤害。"
+  },
+  {
+   "name": "布丁飞",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "当雷斧的斧子存在附魔，而玩家又距离比较远时，雷斧从地里挖出两种史莱姆丢出：雷史莱姆造成<c=#ffacff>62.5%</c>伤害，变异雷史莱姆造成<c=#ffacff>75%</c>伤害。"
+  },
+  {
+   "name": "飞象坠",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "(仅强攻强化)距离玩家较远时，雷斧拿着斧子跳起来下落，造成<c=#b8b8b8>100%</c>/<c=#df99ff>100%</c>伤害。若斧子附带<c=#df99ff>雷附魔</c>，则周围产生5道落雷，每道造成<c=#df99ff>50%</c>伤害。"
+  },
+  {
+   "name": "龙卷摧",
+   "type": "猛攻",
+   "icon": "skill-5.webp",
+   "description": "雷斧横拿斧子转圈圈，触碰造成<c=#b9b9b9>12.5%</c>/<c=#ffacff>12.5%</c>伤害，持续3s，旋转结束后施放尾刀，造成<c=#b9b9b9>50%</c>/<c=#ffacff>50%</c>伤害。"
+  },
+  {
+   "name": "虎鹰掠",
+   "type": "妨害",
+   "icon": "skill-6.webp",
+   "description": "(仅附魔)雷斧用力将斧子往地上砸，造成<c=#ffacff>50%</c>伤害，顺势将自己挑起，然后落地坐下，造成<c=#ffacff>75%</c>伤害。\n<c=#df3df2>强攻强化：</c>落地时周围产生3道落雷，每道造成<c=#ffacff>50%</c>伤害。"
+  },
+  {
+   "name": "狮子祭",
+   "type": "天赋",
+   "icon": "skill-7.webp",
+   "description": "(仅雷雨天、秘境)雷斧举起斧子，马上被雷电晕，并在其周围电击造成<c=#ffacff>50%</c>伤害，总共被电2次，然后雷斧躺下。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "雷附魔",
+   "desc": "<c=#ffacff>2雷</c>盾，熄灭后斧子只能打出物理伤害。该状态下，抗打断0.8。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "雷附魔",
+   "description": "<c=#ffacff>2雷</c>盾，熄灭后斧子只能打出物理伤害。该状态下，抗打断0.8。",
+   "elementType": "Electric",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1113",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 110295,
+   "atk": 11819,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "crackling-axe-mitachurl",
+ "icon": "avatar.webp",
+ "tags": [
+  "丘丘族群"
+ ]
+}

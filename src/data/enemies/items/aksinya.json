@@ -1,0 +1,91 @@
+{
+ "name": "阿克西妮娅",
+ "nameEn": "Aksinya",
+ "subtitle": "宫廷小丑",
+ "category": "Tps",
+ "categoryLabel": "第三人称射击（TPS）",
+ "tier": "Quest",
+ "defaultLevel": 20,
+ "baseStats": {
+  "hp": {
+   "Value": 137.160697,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 112.645738,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "珀水服凇",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "阿克西妮娅对玩家进行持续两轮、每轮4枚的的冰晶投射，造成<span class=\"cryo\">**20%,10%,4%,2%**</span>伤害。"
+  },
+  {
+   "name": "花飞六叶",
+   "type": "远程",
+   "icon": "skill-2.webp",
+   "description": "阿克西妮娅蓄力，之后投射6枚冰晶，均造成<span class=\"cryo\">**50%,25%,10%,5%**</span>伤害。"
+  },
+  {
+   "name": "创臻筑戍",
+   "type": "防御",
+   "icon": "skill-3.webp",
+   "description": "阿克西妮娅在场地内创建3排臻冰掩体，不可拆除。"
+  },
+  {
+   "name": "永影降谕",
+   "type": "定点",
+   "icon": "skill-4.webp",
+   "description": "阿克西妮娅躲在掩体后进行吟唱，3s后吟唱完毕，降下命符，造成<span class=\"cryo\">**100%**</span>伤害。吟唱期间<c=#ffe599>(金色)</c>对其造成<c=#ffdfbf>9次</c>伤害即可中断。"
+  },
+  {
+   "name": "无源之光",
+   "type": "连携",
+   "icon": "",
+   "description": "阿克西妮娅吟唱，6s后吟唱完毕，联动「原初之人」施放光摄，造成原初之人<c=#b8b8b8>30%,15%,6%,3%</c>攻击力的伤害。吟唱期间<c=#ffe599>(金色)</c>对其造成<c=#ffdfbf>20次</c>伤害即可中断。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [
+  {
+   "label": "剧情首领",
+   "level": 20,
+   "hp": 8594,
+   "atk": 1500,
+   "weight": 70,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "aksinya",
+ "icon": "avatar.webp",
+ "tags": [
+  "第三人称射击（TPS）"
+ ]
+}

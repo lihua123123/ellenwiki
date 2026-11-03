@@ -1,0 +1,108 @@
+{
+ "name": "奥奇坎",
+ "nameEn": "Och-Kan",
+ "subtitle": "回天的圣主",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "Boss",
+ "defaultLevel": 101,
+ "baseStats": {
+  "hp": {
+   "Value": 366.768,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "拂以蔑炎",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "奥奇坎进行右划攻击，其分别造成<c=#ff9999>40%</c>伤害。"
+  },
+  {
+   "name": "贯石穿罅",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "距离较远时，奥奇坎伏地进行潜游，触碰造成<c=#ff9999>60%</c>伤害并立即跃出，顺势进行2次爪划击，分别造成<c=#ff9999>45%,22.5%</c>伤害。"
+  },
+  {
+   "name": "燔武燎悍",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "奥奇坎身转一圈，造成<c=#ff9999>50%,25%</c>伤害，接着朝玩家方向突进一段距离，造成<c=#ff9999>55%,11%</c>伤害。"
+  },
+  {
+   "name": "灰流烬泪",
+   "type": "蓄力",
+   "icon": "skill-4.webp",
+   "description": "奥奇坎伏地进行蓄力，此时其身覆有`虚界护罩`；10s后发动震地攻击，造成<c=#ff9999>80%</c>伤害，爆炸还将扩散到周围的3个区域。"
+  },
+  {
+   "name": "焚风贤火",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "奥奇坎朝前方扇形区域喷吐怨流焚火，持续造成<c=#ff9999>60%</c>伤害。"
+  },
+  {
+   "name": "辉灵回天",
+   "type": "猛攻",
+   "icon": "",
+   "description": "奥奇坎起飞，持续朝地面喷射超能特攻光线，持续造成<c=#b9b9b9>60%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "剧情",
+   "level": 101,
+   "hp": 1545264,
+   "atk": 11446,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "och-kan",
+ "icon": "avatar.webp",
+ "tags": [
+  "无分类"
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "name": "愚人众特辖队·疗愈师",
+ "nameEn": "Oprichniki Medic",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 13.584,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 22.608,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 70,
+ "skills": [
+  {
+   "name": "偏导水珠",
+   "type": "追踪",
+   "icon": "skill-1.webp",
+   "description": "疗愈师发射具有追踪性的水弹，造成<c=#7fbfff>100%</c>伤害。"
+  },
+  {
+   "name": "愈伤注华",
+   "type": "回复",
+   "icon": "skill-2.webp",
+   "description": "疗愈师为10m范围内的己方单位恢复<c=#ffdfbf>20%</c>生命值，并且提供<c=#ffdfbf>20%的攻击力提升</c>，持续12s。武器属「双极」物件，其可用`月`<c=#ccbfff>矩</c><c=#ebbfff>力</c>没收。"
+  },
+  {
+   "name": "赤手双拳",
+   "type": "其他",
+   "icon": "skill-3.webp",
+   "description": "武器被夺后，若为女疗愈师，则进行2次拳击，均造成<c=#b8b8b8>10%</c>伤害。"
+  },
+  {
+   "name": "赤手空踹",
+   "type": "其他",
+   "icon": "skill-4.webp",
+   "description": "武器被夺后，若为男疗愈师，则抬腿旋转踢，造成<c=#b8b8b8>10%</c>伤害。"
+  },
+  {
+   "name": "柔露复华",
+   "type": "防御",
+   "icon": "",
+   "description": "疗愈师为15m范围内的己方单位施加<c=#ffdfbf>6单位</c>的<c=#7fbfff>水元素</c>护罩。<c=#ffbfff>[绝境]</c>改为开启<c=#ffacff>雷元素</c>护罩。追踪机关小车不受此效果影响。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:E_0001",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 55460,
+   "atk": 4432,
+   "weight": 70,
+   "tenacity": 50
+  }
+ ],
+ "leyline": null,
+ "id": "oprichniki-medic",
+ "icon": "avatar.webp",
+ "tags": [
+  "愚人众"
+ ]
+}

@@ -1,0 +1,111 @@
+{
+ "name": "遗迹守卫",
+ "nameEn": "Ruin Guard",
+ "subtitle": "",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 60.288,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 70
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "身旋机坠",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "遗迹守卫进行3段普通攻击：右拳挥、转身挥、落地，其依次造成<c=#b9b9b9>50%,75%,\n100%</c>伤害。"
+  },
+  {
+   "name": "占位并掌",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "遗迹守卫进行至多2段的攻击：跺脚、拍击，其依次造成<c=#b9b9b9>62.5%,87.5%</c>伤害。"
+  },
+  {
+   "name": "古法制导",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "处在较远处时，遗迹守卫转身，瞄准玩家发射6枚导弹，均造成<c=#b9b9b9>31.25%</c>伤害。"
+  },
+  {
+   "name": "耕土犁地",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "遗迹守卫旋转上半身，不断朝玩家走来，触碰高频造成<c=#b9b9b9>75%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_4443",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 257356,
+   "atk": 11819,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "ruin-guard",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关"
+ ]
+}

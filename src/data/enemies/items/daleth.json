@@ -1,0 +1,150 @@
+{
+ "name": "无相之冰·奏鸣曲·霜锐之阵",
+ "nameEn": "「Daleth」",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 122.256,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 75.36,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": "IMM",
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "寒花冰雨",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "无相之冰悬于空中，向地面连续轰炸冰刺，共轰炸3次，每次造成<span class=\"cryo\">**100%**</span>伤害，第三次轰炸留下霜覆地面，接触造成<span class=\"cryo\">**30%**</span>伤害；技能持续期间将持续随机抛出冰针，造成<span class=\"cryo\">**25%,10%,2.5%**</span>伤害。"
+  },
+  {
+   "name": "织寒碎冰",
+   "type": "追踪",
+   "icon": "skill-2.webp",
+   "description": "无相之冰开阵，8个冰立方外壳围一圈暴露核心，从上到下发射8根追踪玩家的冰锥，每个冰锥造成<span class=\"cryo\">**50%**</span>伤害；冰锥发射一段时间后，将分裂成3个更细的冰针，造成<span class=\"cryo\">**25%,10%,2.5%**</span>伤害。"
+  },
+  {
+   "name": "寒轶棘轮",
+   "type": "碾压",
+   "icon": "skill-3.webp",
+   "description": "无相之冰化成棘轮，不断朝玩家处滚动，接触造成<span class=\"cryo\">**50%**</span>伤害，滚到太边上会破碎暴露核心，持续1-3轮。"
+  },
+  {
+   "name": "寒蕨缠绕",
+   "type": "限制",
+   "icon": "skill-4.webp",
+   "description": "无相之冰脱去外壳，3簇冰棘呈逆时针样围绕其旋转，接触造成<span class=\"cryo\">**50%**</span>伤害，另有在圈外追踪玩家的冰棘，同样造成<span class=\"cryo\">**50%**</span>伤害。"
+  },
+  {
+   "name": "濒亡·封冻",
+   "type": "复苏",
+   "icon": "skill-5.webp",
+   "description": "无相之冰生命值低于5%时进行复苏，收拢并形成<span class=\"cryo\">**`极冰外壳`**</span>，复苏持续30s，当复苏次数为<span class=\"cryo\">**1/2/>2**</span>时，无相之冰每3s恢复<span class=\"cryo\">**5%/2.5%/1.25%**</span>生命值，最大恢复至<span class=\"cryo\">**50%/25%/12.5%**</span>生命值。"
+  },
+  {
+   "name": "幽生霜实",
+   "type": "辅助",
+   "icon": "skill-6.webp",
+   "description": "无相之冰抛出5个`霜之实`，落地造成<span class=\"cryo\">**25%**</span>伤害，依次落在玩家的中、右、左、右、左处，用重击将霜之实打回无相之冰处以破盾阻止恢复生命值。"
+  },
+  {
+   "name": "绝路冰嶂",
+   "type": "防卫",
+   "icon": "skill-7.webp",
+   "description": "无相之冰复苏时，召唤1至2层绕其转动的冰墙，每层由3面`冰墙`组成，每面冰墙可以承受2个霜之实的攻击。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "极冰外壳",
+   "desc": "168冻盾，击破使无相之冰虚弱。"
+  },
+  {
+   "text": "霜之实",
+   "desc": "使用重击以启动，命中时-80冻。"
+  },
+  {
+   "text": "冰墙",
+   "desc": "6冻盾，用于阻挡霜之实前进，霜之实命中时-3冻。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "极冰外壳",
+   "description": "168冻盾，击破使无相之冰虚弱。",
+   "elementType": "Frozen",
+   "duration": 30
+  },
+  {
+   "name": "冰墙",
+   "description": "6冻盾，用于阻挡霜之实前进，霜之实命中时-3冻。",
+   "elementType": "Frozen",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:A_3302",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 548416,
+   "atk": 15665,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "daleth",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

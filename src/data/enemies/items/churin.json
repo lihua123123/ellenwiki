@@ -1,0 +1,260 @@
+{
+ "name": "丘林",
+ "nameEn": "Churin",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1412.736,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 150.72,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 30,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 30,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "碎剜寒芒",
+   "type": "定点",
+   "icon": "skill-1.webp",
+   "description": "丘林在玩家头顶凝出一枚冰锥，随后落下造成<span class=\"cryo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "风绻雪絮",
+   "type": "控制",
+   "icon": "skill-2.webp",
+   "description": "丘林在玩家处召唤一个大风涡，持续牵引玩家并造成<c=#ffff99>10%</c>的<span class=\"cryo\">**冰元素**</span>与<span class=\"anemo\">**风元素**</span>伤害。"
+  },
+  {
+   "name": "晶芽凕花",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "丘林起身，朝玩家发射8枚冰晶，均造成<span class=\"cryo\">**25%**</span>伤害；随后蓄力丢出一枚冰花，造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "冰萦白霜",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "丘林自身迸发冰雾，造成<span class=\"cryo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "精雕细裁",
+   "type": "召唤",
+   "icon": "skill-5.webp",
+   "description": "丘林召唤<c=#ffdfbf>1</c>块冰/<c=#ffdfbf>2</c>块冰<c=#ffdfbf>(深渊)</c>进行雕刻，<c=#ffdfbf>5s</c>后凝成「`巨口霜精`」，开口雪球造成<span class=\"cryo\">**200%**</span>伤害。`星烁反应`会使丘林分心，巨口霜精会变成无害的`小动物`。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "巨口霜精",
+   "desc": "120冻盾，40s后会自己消失。"
+  },
+  {
+   "text": "小动物",
+   "desc": "3冻盾，12s后会自己消失。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "巨口霜精",
+   "description": "120冻盾，40s后会自己消失。",
+   "elementType": "Frozen",
+   "duration": 40
+  },
+  {
+   "name": "小动物",
+   "description": "3冻盾，12s后会自己消失。",
+   "elementType": "Frozen",
+   "duration": 12
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "WP[0x3],WO[66,33,0]",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 6337251,
+   "atk": 31329,
+   "weight": 150,
+   "tenacity": 210
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 1395818,
+   "hpNote": "24.2%",
+   "atk": 17728,
+   "atkNote": "60%",
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": {
+  "name": "历经百战的矮灵雕刻师·运风成斤",
+  "nameEn": "Battle-Hardened Domovoy Sculptor: Gale Hewing",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 1714337,
+    "atk": 5709,
+    "multiplier": 1.2,
+    "advantage": "星烁反应"
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 8542356,
+    "atk": 7387,
+    "multiplier": 4.0,
+    "advantage": "风元素优势"
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 13581624,
+    "atk": 8130,
+    "multiplier": 5.5,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 32436173,
+    "atk": 8708,
+    "multiplier": 12.0,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "正常",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 30,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 30,
+    "geo": 10,
+    "physical": 10
+   },
+   {
+    "name": "正常",
+    "diffNote": "N5",
+    "pyro": 90,
+    "hydro": 90,
+    "anemo": 90,
+    "electro": 90,
+    "dendro": 90,
+    "cryo": 90,
+    "geo": 90,
+    "physical": 90
+   },
+   {
+    "name": "满减",
+    "diffNote": "N5",
+    "pyro": 30,
+    "hydro": 30,
+    "anemo": 15,
+    "electro": 30,
+    "dendro": 30,
+    "cryo": 30,
+    "geo": 30,
+    "physical": 30
+   }
+  ],
+  "skills": [
+   {
+    "name": "碎剜缀芒",
+    "type": "定点",
+    "icon": "leyline-skill-1.webp",
+    "description": "丘林在玩家头顶凝出九枚冰锥，冰锥呈十字排列，并同时下砸，造成<span class=\"cryo\">**80%**</span>伤害。"
+   },
+   {
+    "name": "巽缠雪絮",
+    "type": "控制",
+    "icon": "leyline-skill-2.webp",
+    "description": "丘林在玩家处召唤3枚大风涡，持续牵引玩家并造成<c=#ffff99>10%</c>的<span class=\"cryo\">**冰元素**</span>与<span class=\"anemo\">**风元素**</span>伤害。场地上存在3枚风涡时，只会召唤1枚风涡。"
+   },
+   {
+    "name": "精雕细裁",
+    "type": "召唤",
+    "icon": "leyline-skill-3.webp",
+    "description": "丘林召唤<c=#ffdfbf>2</c>块冰进行雕刻，<c=#ffdfbf>6.3s</c>后凝成「`巨口霜精`」，发射雪球，造成<span class=\"cryo\">**120%**</span>伤害。`星烁反应`会使冰块爆炸，对丘林造成伤害并减少风元素抗性与其他抗性。"
+   }
+  ],
+  "notes": [
+   {
+    "text": "冰雕",
+    "desc": "雕刻师使用1枚冰块，在<c=#ffdfbf>5s</c>后将其雕刻成巨口霜精，霜精每隔一段时间发射雪球造成巨额伤害；之后每<c=#ffdfbf>约15s</c>，丘林都会使用冰块进行雕刻。\n巨口霜精具有<span class=\"cryo\">**120冻**</span>盾，<c=#ffdfbf>40s</c>后自行消失；受`星烁反应`影响，正在雕刻中的冰块会立即变成无害的小动物，其具有<span class=\"cryo\">**3冻**</span>盾，<c=#ffdfbf>12s</c>后自行消失。\n<c=#bfffbf>(N4) </c>丘林将在开局进行雕刻，且使用<c=#ffdfbf>2</c>枚冰块。\n<c=#ffbfbf>(N5) </c>丘林开局不立即进行雕刻，但丘林同样会使用<c=#ffdfbf>2</c>枚冰块，同时雕刻冰块的时长延长至<c=#ffdfbf>6.3s</c>。雕刻出的巨口霜精<c=#ffdfbf>20s</c>后自行消失，且场上的霜精不会超过2枚。\n当冰块受`星烁反应`影响时会立即爆炸，每个对丘林自己造成<c=#ffdfbf>固定的499999</c>伤害，同时降低其<c=#ffdfbf>25%风抗与20%其余抗性</c>，减抗效果可叠加最多<c=#ffdfbf>3</c>层；若<c=#ffdfbf>30s</c>内没有再次触发减抗效果，则移除所有减抗效果。"
+   }
+  ],
+  "shields": [
+   {
+    "name": "冰雕",
+    "description": "雕刻师使用1枚冰块，在<c=#ffdfbf>5s</c>后将其雕刻成巨口霜精，霜精每隔一段时间发射雪球造成巨额伤害；之后每<c=#ffdfbf>约15s</c>，丘林都会使用冰块进行雕刻。\n巨口霜精具有<span class=\"cryo\">**120冻**</span>盾，<c=#ffdfbf>40s</c>后自行消失；受`星烁反应`影响，正在雕刻中的冰块会立即变成无害的小动物，其具有<span class=\"cryo\">**3冻**</span>盾，<c=#ffdfbf>12s</c>后自行消失。\n<c=#bfffbf>(N4) </c>丘林将在开局进行雕刻，且使用<c=#ffdfbf>2</c>枚冰块。\n<c=#ffbfbf>(N5) </c>丘林开局不立即进行雕刻，但丘林同样会使用<c=#ffdfbf>2</c>枚冰块，同时雕刻冰块的时长延长至<c=#ffdfbf>6.3s</c>。雕刻出的巨口霜精<c=#ffdfbf>20s</c>后自行消失，且场上的霜精不会超过2枚。\n当冰块受`星烁反应`影响时会立即爆炸，每个对丘林自己造成<c=#ffdfbf>固定的499999</c>伤害，同时降低其<c=#ffdfbf>25%风抗与20%其余抗性</c>，减抗效果可叠加最多<c=#ffdfbf>3</c>层；若<c=#ffdfbf>30s</c>内没有再次触发减抗效果，则移除所有减抗效果。",
+    "elementType": "Frozen",
+    "duration": 40
+   }
+  ]
+ },
+ "id": "churin",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇",
+  "幽境危战"
+ ]
+}

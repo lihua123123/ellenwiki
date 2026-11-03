@@ -1,0 +1,123 @@
+{
+ "name": "玄文兽",
+ "nameEn": "Xuanwen Beast",
+ "subtitle": "伏行的玄影",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 57.0528,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 55.26400000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 50,
+   "anemo": 50,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "扑风之爪",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "玄文兽进行左右双爪交替攻击，依次造成<span class=\"anemo\">**50%,60%**</span>伤害。"
+  },
+  {
+   "name": "啸虎撕风",
+   "type": "猛攻",
+   "icon": "skill-2.webp",
+   "description": "玄文兽蓄力，用力使出右爪撕划，造成<span class=\"anemo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "镜风刀界",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "玄文兽翻动身子，劈出一刀界风尖刃，造成<span class=\"anemo\">**80%**</span>伤害。"
+  },
+  {
+   "name": "沧角涟珠",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "玄文兽唤出4枚浮仙之露，全部朝玩家处发射，均造成<c=#7fbfff>25%</c>伤害。"
+  },
+  {
+   "name": "蟠曲沉逐",
+   "type": "猛攻",
+   "icon": "skill-5.webp",
+   "description": "玄文兽进入追逐状态，若追逐至玩家处，则立即进行划击和翻击两段攻击，依次造成<span class=\"anemo\">**60%,100%**</span>伤害；若连续追逐25m以上，则停止追逐，施放扫尾造成<span class=\"anemo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "霖冰渊寒",
+   "type": "天赋",
+   "icon": "skill-6.webp",
+   "description": "当玄文兽陷入冻结状态时，若冻结状态被碎冰、融化等意外强制解除后，则其将直接眩晕10s。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1113",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 232932,
+   "atk": 10834,
+   "weight": 150,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "xuanwen-beast",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

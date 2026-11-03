@@ -2892,7 +2892,7 @@ export const characters = {
         {
           "name": "重击 变式",
           "elementAmount": "弱雷",
-          "attachRule": "独立",
+          "attachRule": "3 hits / 2.5 s",
           "particles": "",
           "note": "递变聚爆，有过载炉心时",
           "poise": ""
@@ -2901,7 +2901,7 @@ export const characters = {
           "name": "e",
           "elementAmount": "弱雷",
           "attachRule": "独立",
-          "particles": "",
+          "particles": "5 个",
           "note": "创造稳态炉心",
           "poise": ""
         },
@@ -2909,13 +2909,21 @@ export const characters = {
           "name": "E",
           "elementAmount": "弱雷",
           "attachRule": "独立",
-          "particles": "",
+          "particles": "与「 e 」共用产球 CD",
           "note": "创造过载炉心",
           "poise": ""
         },
         {
-          "name": "Q",
+          "name": "e 持续",
           "elementAmount": "弱雷",
+          "attachRule": "3 hits / 2.5 s",
+          "particles": "",
+          "note": "稳态炉心",
+          "poise": ""
+        },
+        {
+          "name": "Q",
+          "elementAmount": "强雷",
           "attachRule": "独立",
           "particles": "",
           "note": "",
@@ -2931,13 +2939,21 @@ export const characters = {
         {
           "name": "重击 变式",
           "elementAmount": "弱雷",
-          "attachRule": "",
+          "attachRule": "独立",
           "particles": "",
           "note": "臼炮直射·抵近轰击",
-          "poise": ""
+          "poise": "0.3"
         },
         {
           "name": "E",
+          "elementAmount": "弱雷",
+          "attachRule": "独立",
+          "particles": "3 个",
+          "note": "",
+          "poise": "0.3"
+        },
+        {
+          "name": "Q 释放",
           "elementAmount": "弱雷",
           "attachRule": "独立",
           "particles": "",
@@ -2945,17 +2961,9 @@ export const characters = {
           "poise": ""
         },
         {
-          "name": "Q 释放",
-          "elementAmount": "弱雷",
-          "attachRule": "",
-          "particles": "",
-          "note": "",
-          "poise": ""
-        },
-        {
           "name": "Q 后续",
           "elementAmount": "弱雷",
-          "attachRule": "",
+          "attachRule": "2 s",
           "particles": "",
           "note": "雷霰重弹",
           "poise": ""

@@ -1,0 +1,172 @@
+{
+ "name": "黄金王兽",
+ "nameEn": "Golden Wolflord",
+ "subtitle": "无名的兽境之王",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 163.00799999999998,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "入场",
+   "pyro": 225,
+   "hydro": 225,
+   "anemo": 225,
+   "electro": 225,
+   "dendro": 225,
+   "cryo": 225,
+   "geo": 225,
+   "physical": 225
+  },
+  {
+   "name": "正常",
+   "pyro": 25,
+   "hydro": 25,
+   "anemo": 25,
+   "electro": 25,
+   "dendro": 25,
+   "cryo": 25,
+   "geo": 25,
+   "physical": 25
+  },
+  {
+   "name": "嗜魔",
+   "pyro": 25,
+   "hydro": 25,
+   "anemo": 25,
+   "electro": 25,
+   "dendro": 25,
+   "cryo": 25,
+   "geo": -20,
+   "physical": 25
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 1000,
+ "skills": [
+  {
+   "name": "岩游遗迹",
+   "type": "位移",
+   "icon": "skill-1.webp",
+   "description": "黄金王兽蓄力向地面冲去，在地面进行8字形擦地移动，碰到造成<c=#ffe599>50%</c>伤害。"
+  },
+  {
+   "name": "蚀尘龙卷",
+   "type": "强攻",
+   "icon": "skill-2.webp",
+   "description": "黄金王兽原地开始旋转，形成巨大的龙卷风，在场地内来游动，碰到造成<c=#ffe599>50%,12.5%,5%</c>伤害，旋转结束时会额外造成<c=#ffe599>12.5%</c>伤害。"
+  },
+  {
+   "name": "蚀岩之流",
+   "type": "迫害",
+   "icon": "skill-3.webp",
+   "description": "黄金王兽蓄力，贴近地面喷吐渊之岩，接触持续造成<c=#ffe599>50%,12.5%,5%</c>伤害，可与某些技能形成连招。"
+  },
+  {
+   "name": "返后倾尾",
+   "type": "防卫",
+   "icon": "skill-4.webp",
+   "description": "黄金王兽升空，在空中悬停一会后立即使用尾部扫击，造成<c=#ffe599>50%</c>伤害。"
+  },
+  {
+   "name": "黄金犬首",
+   "type": "追踪",
+   "icon": "skill-5.webp",
+   "description": "黄金王兽升空停顿，连续召唤3个「黄金犬首」追踪玩家，每个犬首造成<c=#ffe599>25%</c>伤害。"
+  },
+  {
+   "name": "兽境王权",
+   "type": "强化 嗜魔",
+   "icon": "skill-6.webp",
+   "description": "黄金王兽移至场地中央，获得`兽王加冕`，进入<c=#ffeebf>嗜魔</c>状态，外观发生变化，并于场地边缘安置3个「兽境犬首」，若被该犬首命中则造成<c=#ffe599>50%</c>伤害，嗜魔后的黄金王兽的<c=#ff9999>攻击力提升30%。</c>"
+  },
+  {
+   "name": "铄金天罚",
+   "type": "爆发 嗜魔",
+   "icon": "skill-7.webp",
+   "description": "黄金王兽飞到高空，高速下落坠入地面造成巨大范围的<c=#ffe599>100%</c>伤害，片刻后钻出，造成<c=#ceffbf>无侵蚀</c>的<c=#ffe599>25%</c>伤害，随后在场地内产生9个小岩喷造成<c=#ffe599>25%</c>伤害。"
+  },
+  {
+   "name": "同源深恶",
+   "type": "协同",
+   "icon": "skill-8.webp",
+   "description": "由黄金王兽召唤的「兽境犬首」，其会周期性喷吐蓝色的「渊弹」，「渊弹」发射1s后开始追踪玩家，碰到造成<c=#bababa>12.5%</c>伤害。"
+  },
+  {
+   "name": "郄兽侵蚀",
+   "type": "天赋",
+   "icon": "skill-9.webp",
+   "description": "兽境类原魔造成的伤害都会附带「侵蚀」效果。黄金王兽的效果为：每层每秒扣除玩家<c=#ffe599>(1%HP+25)</c>的生命值，每层持续<c=#ffe599>9.5s</c>，持续时间独立计算，可叠加。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "兽王加冕",
+   "desc": "3次特化次数盾，仅能使用兽境犬首击破，需要3只，击破后瘫痪黄金王兽10s。"
+  },
+  {
+   "text": "兽境犬首",
+   "desc": "75岩充能盾，岩攻击+25/次，非岩攻击+2/次。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_4444",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 731221,
+   "atk": 20886,
+   "weight": 1000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "golden-wolflord",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

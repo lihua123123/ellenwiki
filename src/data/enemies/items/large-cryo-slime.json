@@ -1,0 +1,118 @@
+{
+ "name": "大型冰史莱姆",
+ "nameEn": "Large Cryo Slime",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 27.168,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 52.752,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": "IMM",
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "噬寒破片",
+   "type": "妨害",
+   "icon": "skill-1.webp",
+   "description": "外壳存在时，大型冰史莱姆朝玩家发射3个冰锥弹，每个造成<span class=\"cryo\">**33.3%**</span>伤害。"
+  },
+  {
+   "name": "冰质坠地",
+   "type": "妨害",
+   "icon": "skill-2.webp",
+   "description": "外壳存在时，大型冰史莱姆起跳，重重下落，造成<span class=\"cryo\">**100%**</span>伤害。\n<c=#2cccf3>攻击强化：\n</c>起落攻击的使用更加频繁。"
+  },
+  {
+   "name": "静寒幽雾",
+   "type": "妨害",
+   "icon": "skill-3.webp",
+   "description": "失去外壳时，大型冰史莱姆鼓起吹出寒气，持续造成<span class=\"cryo\">**10%**</span>伤害。"
+  },
+  {
+   "name": "晶理之冰",
+   "type": "妨害",
+   "icon": "skill-4.webp",
+   "description": "大型冰史莱姆常驻<span class=\"cryo\">**冻冰元素**</span>，且初始附属`冰罩`，打碎后才能受到伤害，一段时间后会自动恢复。在水上会冻结冰面。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冰罩",
+   "desc": "<span class=\"cryo\">**8冻**</span>盾，破坏后活跃性大幅下降，一段时间后恢复。该状态下，抗打断0.4。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "冰罩",
+   "description": "<span class=\"cryo\">**8冻**</span>盾，破坏后活跃性大幅下降，一段时间后恢复。该状态下，抗打断0.4。",
+   "elementType": "Frozen",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:A_1103",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 73530,
+   "atk": 10341,
+   "weight": 100,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "large-cryo-slime",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命"
+ ]
+}

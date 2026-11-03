@@ -1,0 +1,96 @@
+{
+ "name": "狮獒护卫",
+ "nameEn": "Leomastiff Guard",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 35.318,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 22.61,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 85,
+ "skills": [
+  {
+   "name": "归沙捷砾",
+   "type": "远程",
+   "icon": "skill-1.webp",
+   "description": "狮獒使用铲子铲起砂石，朝玩家扔来，造成<c=#b8b8b8>80%</c>伤害。"
+  },
+  {
+   "name": "浅探深凿",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "狮獒使用十字镐敲击，造成<c=#b8b8b8>65%</c>伤害。"
+  },
+  {
+   "name": "转趄回身",
+   "type": "输出",
+   "icon": "skill-3.webp",
+   "description": "狮獒使用铲子转身回旋，造成<c=#b8b8b8>100%</c>伤害，随后摔倒。"
+  },
+  {
+   "name": "开冰錾岩",
+   "type": "爆发",
+   "icon": "skill-4.webp",
+   "description": "狮獒趴下并蓄力。随后使用镐和铲交替进行攻击，分别造成<c=#7fbfff>65%,100%</c>伤害,重复4次后停下。受`星烁反应`影响后，狮獒每进行2段攻击，就会被打断，第三次被打断则直接击飞。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "HP[0]",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 144196,
+   "atk": 4432,
+   "weight": 85,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "leomastiff-guard",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

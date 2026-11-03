@@ -1,0 +1,188 @@
+{
+ "name": "穆什特希尔",
+ "nameEn": "Mushteshir",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 1222.56,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 138.16,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "力场",
+   "pyro": 210,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 210,
+   "dendro": 210,
+   "cryo": 210,
+   "geo": 210,
+   "physical": 210
+  },
+  {
+   "name": "瘫痪",
+   "pyro": -40,
+   "hydro": -40,
+   "anemo": -40,
+   "electro": -40,
+   "dendro": -40,
+   "cryo": -40,
+   "geo": -40,
+   "physical": -40
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 200,
+ "skills": [
+  {
+   "name": "残躯跃铁",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "距离较近时，先驱阵列原地起跳下落，造成<c=#7fbfff>70%</c>伤害。"
+  },
+  {
+   "name": "迹循先望",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "先驱阵列将滚动而来，接触造成<c=#7fbfff>80%</c>伤害。<c=#ffecbf>(仅大世界)</c>开局从场地后方门处滚动而来。"
+  },
+  {
+   "name": "辽海微芒",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "距离较远时，先驱阵列向空中抛出8枚水弹，向目标随机洒落，造成<c=#7fbfff>55%,27.5%,\n11%,5.5%</c>伤害。"
+  },
+  {
+   "name": "明露逐星",
+   "type": "远程",
+   "icon": "skill-4.webp",
+   "description": "距离较远时，先驱阵列转出炮口，发射一枚普通水弹，造成<c=#7fbfff>70%</c>伤害，随后再发射至多2枚强劲水弹，均造成<c=#7fbfff>80%</c>伤害。"
+  },
+  {
+   "name": "亘索流聚",
+   "type": "爆发",
+   "icon": "skill-5.webp",
+   "description": "先驱阵列使用古月力启动「`聚流力场`」，并向空中依次丢出3枚大水泡，造成<c=#7fbfff>100%</c>伤害。施放期间持续附着<c=#7fbfff>水元素</c>。"
+  },
+  {
+   "name": "栗于未知",
+   "type": "天赋",
+   "icon": "skill-6.webp",
+   "description": "当先驱阵列或「`探侦机关`」陷入冻结状态时，当冻结状态被<c=#ffdfbf>超导</c>/<c=#ffdfbf>碎冰</c>/<c=#ffdfbf>融化</c>/<c=#ffdfbf>结晶</c>/<c=#ffdfbf>扩散</c>等反应解除时，若为先驱阵列自身则将立即中断「聚流力场」，若为「`探侦机关`」则将直接被破坏。"
+  },
+  {
+   "name": "拓察辰星",
+   "type": "召唤",
+   "icon": "skill-7.webp",
+   "description": "一段时间后或生命值低于<c=#ffdfbf>50%</c>时，先驱阵列移至场地中央展开「`镇压力场`」，并向后方放置「`探侦机关`」，同时在周围形成单向屏障。机关间歇性朝玩家发射激光，造成<c=#7fbfff>35%</c>伤害。先驱阵列将持续发射水弹，造成<c=#7fbfff>70%</c>或<c=#7fbfff>80%</c>伤害，每发射一次就移动一小段。"
+  },
+  {
+   "name": "驰航戍海",
+   "type": "防御",
+   "icon": "",
+   "description": "「`镇压力场`」持续<c=#ffdfbf>20s</c>。超时后，先驱阵列将尝试回收剩余的「`探侦机关`」，同时为自身施加`聚水护罩`，并产生大浪，造成<c=#7fbfff>120%</c>伤害。回收的机关越多，护罩就越厚。护罩击破后无效果，其将在下次展开力场后移除。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "聚流/镇压力场",
+   "desc": "半径50m范围内重力减弱，跳起时减速45%；同时先驱阵列自身+200%全抗。"
+  },
+  {
+   "text": "探侦机关",
+   "desc": "6水盾，离地约3m；冻结后触发超导/碎冰/融化等反应可直接破坏，全部击破后瘫痪先驱阵列13s。"
+  },
+  {
+   "text": "聚水护罩",
+   "desc": "36水盾，基础12水，每回收一个机关+6水。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "探侦机关",
+   "description": "6水盾，离地约3m；冻结后触发超导/碎冰/融化等反应可直接破坏，全部击破后瘫痪先驱阵列13s。",
+   "elementType": "Water",
+   "duration": 20
+  },
+  {
+   "name": "聚水护罩",
+   "description": "36水盾，基础12水，每回收一个机关+6水。",
+   "elementType": "Water",
+   "duration": 20
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "WP[0x3],WO[66,33,0]",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 33,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 5484160,
+   "atk": 28719,
+   "weight": 200,
+   "tenacity": 4000
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 1093117,
+   "hpNote": "21.9%",
+   "atk": 16251,
+   "atkNote": "60%",
+   "weight": 200,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "穆什特希尔",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

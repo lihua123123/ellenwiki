@@ -1,0 +1,184 @@
+{
+ "name": "掣电树",
+ "nameEn": "Electro Regisvine",
+ "subtitle": "电荷喷薄的巨藤",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_1"
+  },
+  "atk": {
+   "Value": 62.800000000000004,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 310,
+   "hydro": 310,
+   "anemo": 310,
+   "electro": 370,
+   "dendro": 310,
+   "cryo": 310,
+   "geo": 310,
+   "physical": 330
+  },
+  {
+   "name": "瘫痪",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 70,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "霆花碎暗",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "掣电树朝地面猛锤，锤点造成<c=#ffacff>100%</c>伤害，形成3道冲击波，各造成<c=#ffacff>50%</c>伤害，该技能可连续进行3次锤击。"
+  },
+  {
+   "name": "雳击轮转",
+   "type": "苏醒",
+   "icon": "skill-2.webp",
+   "description": "瘫痪恢复后，掣电树在原地快速旋转一圈半，造成<c=#ffacff>75%</c>伤害，旋转之前的砸地也造成<c=#ffacff>75%</c>伤害。"
+  },
+  {
+   "name": "驰掣低鸣",
+   "type": "防卫",
+   "icon": "skill-3.webp",
+   "description": "处在掣电树后方时，掣电树向玩家方向迅速旋转半圈，造成<c=#ffacff>75%</c>伤害。"
+  },
+  {
+   "name": "噬霆回绝",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "掣电树进行左砸划-右砸划-锤击三段连击，均造成<c=#ffacff>75%</c>伤害，产生的震波造成<c=#ffacff>50%</c>伤害。"
+  },
+  {
+   "name": "紫雷蛰棘",
+   "type": "追踪",
+   "icon": "skill-5.webp",
+   "description": "掣电树使用藤条，一次产生3个雷棘，总计4次，雷棘锁定玩家的方位，每个雷棘造成<c=#ffacff>40%</c>伤害。"
+  },
+  {
+   "name": "电荷相撞",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "若<c=#ffe599>`盈`</c>`极花蕊`与<c=#cc99ff>`虚`</c>`极花蕊`均存在于场上，则两极将相吸，产生大范围爆炸，造成<c=#ffacff>300%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>。两极可被元素反应破坏，但在互相吸引时则不行。"
+  },
+  {
+   "name": "紫雷迷林",
+   "type": "限制",
+   "icon": "skill-7.webp",
+   "description": "掣电树使用藤条随机召唤3道落雷，每道落雷造成<c=#ffacff>40%</c>伤害，一共召唤4批。"
+  },
+  {
+   "name": "烫璃炙金",
+   "type": "持续",
+   "icon": "skill-8.webp",
+   "description": "掣电树花冠朝近处地面发射激光，来回扫两趟，均造成造成<c=#ffacff>75%</c>伤害，后对准玩家喷射电激光，持续造成<c=#ffacff>25%</c>伤害。"
+  },
+  {
+   "name": "震心曝闪",
+   "type": "转换",
+   "icon": "skill-9.webp",
+   "description": "掣电树首先在<c=#bfbfff>冠部</c>形成`核心`，此时花冠呈黄色，约30s后会将其转移至<c=#bfbfff>根部</c>，此时花冠呈紫色，交替进行。掣电树见面及核心转移至<c=#bfbfff>冠部</c>时种下<c=#ffe599>`盈`</c>`极花蕊`，造成<c=#ffacff>40%</c>伤害；转移至<c=#bfbfff>根部</c>时种下<c=#cc99ff>`虚`</c>`极花蕊`，造成<c=#ffacff>100%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "盈虚花蕊",
+   "desc": "2雷盾，击破可阻止掣电树施放电荷相撞。"
+  },
+  {
+   "text": "原循环核心",
+   "desc": "16雷盾，初始位于冠部，会周期性在冠部和根部转移，击破可瘫痪掣电树18s。"
+  },
+  {
+   "text": "次循环核心",
+   "desc": "8雷盾，为原循环核心的再生版本，以后生成的都是该种核心，击破可瘫痪掣电树18s。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "盈虚花蕊",
+   "description": "2雷盾，击破可阻止掣电树施放电荷相撞。",
+   "elementType": "Electric",
+   "duration": ""
+  },
+  {
+   "name": "原循环核心",
+   "description": "16雷盾，初始位于冠部，会周期性在冠部和根部转移，击破可瘫痪掣电树18s。",
+   "elementType": "Electric",
+   "duration": ""
+  },
+  {
+   "name": "次循环核心",
+   "description": "8雷盾，为原循环核心的再生版本，以后生成的都是该种核心，击破可瘫痪掣电树18s。",
+   "elementType": "Electric",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Electro",
+  "elementLabel": "雷",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 275905,
+   "atk": 13054,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "electro-regisvine",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

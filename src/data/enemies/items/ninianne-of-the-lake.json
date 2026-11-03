@@ -1,0 +1,116 @@
+{
+ "name": "历经百战的浊水粉碎幻灵",
+ "nameEn": "Ninianne of the Lake",
+ "subtitle": "",
+ "category": "ElementalLifeforms",
+ "categoryLabel": "元素生命",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 198.32639999999998,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": "IMM",
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 101,
+ "skills": [
+  {
+   "name": "如形似鱼",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "尼尼安涅幻化出水形鱼，并使用水形鱼进行2次挥动攻击，其均造成<c=#7fbfff>60%</c>伤害。"
+  },
+  {
+   "name": "水刑溅涌",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "尼尼安涅用力敲击地面，产生喷溅造成<c=#7fbfff>100%</c>伤害，并在正前方产生3道扩散型水喷，水喷造成<c=#7fbfff>100%,25%,10%</c>伤害。"
+  },
+  {
+   "name": "水刑回漩",
+   "type": "控制",
+   "icon": "skill-3.webp",
+   "description": "尼尼安涅疯狂进行旋转，接触造成<c=#7fbfff>40%</c>伤害，命中玩家或技能超时后，将进行一段上挑，造成<c=#7fbfff>100%</c>伤害，同时生成一个水喷，造成<c=#7fbfff>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Hydro",
+  "elementLabel": "水",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 4448263,
+   "atk": 20886,
+   "weight": 101,
+   "tenacity": 400
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 809716,
+   "hpNote": "20%",
+   "atk": 9849,
+   "atkNote": "50%",
+   "weight": 101,
+   "tenacity": 400
+  }
+ ],
+ "leyline": null,
+ "id": "ninianne-of-the-lake",
+ "icon": "avatar.webp",
+ "tags": [
+  "元素生命",
+  "历经百战"
+ ]
+}

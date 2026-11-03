@@ -1,0 +1,164 @@
+{
+ "name": "灵觉隐修的迷者",
+ "nameEn": "Wayward Hermetic Spiritspeaker",
+ "subtitle": "索居的祭司",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Boss",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 230.928,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 100.48,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 70,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "瘫痪",
+   "pyro": -30,
+   "hydro": -30,
+   "anemo": -30,
+   "electro": -30,
+   "dendro": -30,
+   "cryo": 30,
+   "geo": -30,
+   "physical": -30
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 300,
+ "skills": [
+  {
+   "name": "浅拖折锋",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "迷者使用笔刷进行2段普攻，依次造成<span class=\"cryo\">**60%,75%**</span>伤害。"
+  },
+  {
+   "name": "颤笔喷墨",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "迷者旋转画笔，转身向前方泼洒凝霜彩漆，依次造成<span class=\"cryo\">**25%,100%**</span>伤害。"
+  },
+  {
+   "name": "日台垂露",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "迷者甩出追踪性的一滴晨露，造成<span class=\"cryo\">**95%**</span>伤害。"
+  },
+  {
+   "name": "迁毫搭锋",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "迷者突然起身，造成<span class=\"cryo\">**36%**</span>伤害，并朝着玩家飞去，然后挥舞画笔两下，均造成<span class=\"cryo\">**85%**</span>伤害。"
+  },
+  {
+   "name": "烟络横林",
+   "type": "远程",
+   "icon": "skill-5.webp",
+   "description": "迷者在玩家下方生成1-3枚灵空印记，均造成<span class=\"cryo\">**100%**</span>伤害。"
+  },
+  {
+   "name": "影徒随身",
+   "type": "召唤",
+   "icon": "skill-6.webp",
+   "description": "迷者移至中央，荡起寒雾，造成<span class=\"cryo\">**75%**</span>伤害，又游引四处，生4道灵觉隐修的`浮彩分身`，并在迷者隐去和分身现形的位置再次鸣荡，造成<span class=\"cryo\">**25%**</span>伤害。"
+  },
+  {
+   "name": "轻引回锋",
+   "type": "输出",
+   "icon": "skill-7.webp",
+   "description": "分身使用笔刷进行2段普攻，依次造成<span class=\"cryo\">**60%,75%**</span>伤害。单独施放。"
+  },
+  {
+   "name": "吹毫藏锋",
+   "type": "输出",
+   "icon": "skill-8.webp",
+   "description": "分身使用笔刷进行1段下滑普攻，造成<span class=\"cryo\">**85%**</span>伤害。作为谜影循环开始的持续循环技能。"
+  },
+  {
+   "name": "激石波墨",
+   "type": "输出",
+   "icon": "skill-9.webp",
+   "description": "分身转身向前方泼洒凝霜彩漆，造成<span class=\"cryo\">**100%**</span>伤害。作为谜影循环的结尾技能施放。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "浮彩分身",
+   "desc": "<span class=\"cryo\">**8冻**</span>盾，一共4个，击破会使本体现身4s，全部击破则瘫痪本体12s；使用烟谜主/暝视龙的能力扫瞄一个分身，则可以硬控所有分身15s，并使全部分身-2<span class=\"cryo\">**冻**</span>。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "浮彩分身",
+   "description": "<span class=\"cryo\">**8冻**</span>盾，一共4个，击破会使本体现身4s，全部击破则瘫痪本体12s；使用烟谜主/暝视龙的能力扫瞄一个分身，则可以硬控所有分身15s，并使全部分身-2<span class=\"cryo\">**冻**</span>。",
+   "elementType": "Frozen",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "Cryo",
+  "elementLabel": "冰",
+  "raw": "EnergyGroup:B_3332",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "首领",
+   "level": 103,
+   "hp": 1035897,
+   "atk": 23497,
+   "weight": 300,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "wayward-hermetic-spiritspeaker",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

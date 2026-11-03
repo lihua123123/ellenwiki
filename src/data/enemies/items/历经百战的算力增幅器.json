@@ -1,0 +1,165 @@
+{
+ "name": "历经百战的算力增幅器",
+ "nameEn": "Automated Supercomputering Field Generator",
+ "subtitle": "",
+ "category": "Automatons",
+ "categoryLabel": "自律机关",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 206.4768,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 90.432,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "护甲",
+   "pyro": 210,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 210,
+   "dendro": 210,
+   "cryo": 210,
+   "geo": 210,
+   "physical": 210
+  },
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "飘域浮砂",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "场力发生装置将在场地内持续产生不断长大的裂隙，石砂从其间迸出，造成<c=#ffe599>80%</c>伤害，裂隙范围较实验性力场发生装置大。"
+  },
+  {
+   "name": "晶潮岩脉",
+   "type": "爆发",
+   "icon": "skill-2.webp",
+   "description": "场力发生装置产生振荡地面的晶岩浪朝，碰到造成<c=#ffe599>100%</c>伤害<c=#ffbfbf>(闪避帧无效)</c>，施放3次。"
+  },
+  {
+   "name": "宸岩崩玉",
+   "type": "追踪",
+   "icon": "skill-3.webp",
+   "description": "场力发生装置唤起4根残缺石柱，依次朝目标发射，造成<c=#ffe599>80%,40%,8%</c>伤害。"
+  },
+  {
+   "name": "重壳槌旋",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "场力发生装置失去荒属性后，利用壳盖旋转，造成<c=#b8b8b8>30%</c>伤害。"
+  },
+  {
+   "name": "力场初生",
+   "type": "跳跃提升",
+   "icon": "skill-5.webp",
+   "description": "场力发生装置将持续展开重力削减力场，以15m为半径的场地上提供跳跃提升效果，此状态下其将获得`保护屏障`，全抗性额外提升200%。移除暴露<c=#b299ff>`荒性发条`</c>，芒荒湮灭后方能降低其攻击欲望。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "保护屏障",
+   "desc": "20岩盾，破除后方能使用芒性攻击暂时降低进攻欲望。该状态下，抗打断0，重量翻6倍。"
+  },
+  {
+   "text": "荒性发条",
+   "desc": "累计受到1次芒性攻击方可移除，需破盾后才能生效。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "保护屏障",
+   "description": "20岩盾，破除后方能使用芒性攻击暂时降低进攻欲望。该状态下，抗打断0，重量翻6倍。",
+   "elementType": "Rock",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1115",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 2315534,
+   "atk": 31329,
+   "weight": 150,
+   "tenacity": 210
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 842992,
+   "hpNote": "40%",
+   "atk": 17728,
+   "atkNote": "60%",
+   "weight": 150,
+   "tenacity": 210
+  },
+  {
+   "label": "始基动能型",
+   "level": 100,
+   "hp": 526870,
+   "hpNote": "25%",
+   "atk": 11819,
+   "atkNote": "40%",
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "历经百战的算力增幅器",
+ "icon": "avatar.webp",
+ "tags": [
+  "自律机关",
+  "历经百战"
+ ]
+}

@@ -1,0 +1,197 @@
+{
+ "name": "赝月的异端者",
+ "nameEn": "Heretic of the False Moon",
+ "subtitle": "多托雷",
+ "category": "EnemyOfNote",
+ "categoryLabel": "值得铭记的强敌",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 1698,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 175.84,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "大招",
+   "pyro": 210,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 210,
+   "dendro": 210,
+   "cryo": 210,
+   "geo": 210,
+   "physical": 210
+  },
+  {
+   "name": "高伤遏制",
+   "pyro": 160,
+   "hydro": 160,
+   "anemo": 160,
+   "electro": 160,
+   "dendro": 160,
+   "cryo": 160,
+   "geo": 160,
+   "physical": 160
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "103",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "月坠天明皆湮圮",
+   "type": "爆发",
+   "icon": "skill-1.webp",
+   "description": "博士立即升空，召唤3枚「`拟造古月遗骸`」落地，造成<c=#b8b8b8>20%</c>伤害；6s后，博士汇聚月矩力发动月陨冲击，不处于「遗骸」后方扇区的目标将立即被<c=#ffbfbf>`秒杀`</c>。"
+  },
+  {
+   "name": "且妄虚帷共垂星",
+   "type": "持续",
+   "icon": "skill-2.webp",
+   "description": "博士将在高空召唤5枚陨落的拟造古月遗骸，依次向地面落去，并造成<c=#b8b8b8>70%</c>伤害；该技能为持久技，期间博士可施放其他技能。"
+  },
+  {
+   "name": "奔如泾涌开河汇",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "博士朝前方及两侧方向迅速发射水柱，均造成<c=#7fbfff>60%</c>伤害。"
+  },
+  {
+   "name": "犹为赝月作嗣影",
+   "type": "召唤",
+   "icon": "skill-4.webp",
+   "description": "博士召唤2个「月拟造影」，其将移动至玩家周围，进行一次攻击后消失，造成3段月拟造影<span class=\"cryo\">**20%**</span>攻击力的伤害。也常作为古月惩罚的偷袭技能。"
+  },
+  {
+   "name": "归如古海逆时废",
+   "type": "猛攻",
+   "icon": "skill-5.webp",
+   "description": "博士朝天，持续降雨造成<c=#7fbfff>20%</c>伤害；8s后，博士倒放降雨，升起的雨滴也造成<c=#7fbfff>20%</c>伤害，随后于中央产生巨大水花，造成<c=#7fbfff>100%</c>伤害。"
+  },
+  {
+   "name": "自有六界作觇察",
+   "type": "定点",
+   "icon": "skill-6.webp",
+   "description": "博士锚定玩家，从自身游离出6个背向博士的游走激光，接触造成<c=#ffacff>20%,10%,5%,\n2%</c>伤害；同时依次召唤三针与五针，先后砸向角色，分别造成<c=#ffacff>70%,80%</c>伤害。"
+  },
+  {
+   "name": "去如冷泉击坪碎",
+   "type": "远程",
+   "icon": "skill-7.webp",
+   "description": "博士突然向左侧滑动，并发射数道激流，持续造成<c=#7fbfff>20%</c>伤害，随后博士会根据距离，后接「矫锋诡剂未曾试」的某一段攻击"
+  },
+  {
+   "name": "矫锋诡剂未曾试",
+   "type": "输出",
+   "icon": "skill-8.webp",
+   "description": "博士在近处进行至多2段普攻：钉锁造成<c=#ffacff>40%</c>伤害；水柱向前方及两侧方向造成<c=#7fbfff>60%</c>伤害；可单独施放。"
+  },
+  {
+   "name": "针银刀转添濯时",
+   "type": "输出",
+   "icon": "skill-9.webp",
+   "description": "博士在近处进行3段普攻：钉锁造成<c=#ffacff>20%</c>伤害，并向前产生3道游走激光；冰钉挥舞造成<span class=\"cryo\">**40%**</span>伤害；水柱仅向前方造成<c=#7fbfff>60%</c>伤害。"
+  },
+  {
+   "name": "僭月将行不觉窥",
+   "type": "妨害",
+   "icon": "skill-10.webp",
+   "description": "博士操纵三月权能，对玩家施加干扰：\n<c=#f1a3be>虹月</c>：角色不可面向博士，持续6s；\n<c=#a5e4f8>霜月</c>：角色不能大幅移动，持续6s；\n<c=#c4f2f8>恒月</c>：角色水平移动反转，持续6s。"
+  },
+  {
+   "name": "但月行矩有步规",
+   "type": "控制",
+   "icon": "skill-11.webp",
+   "description": "违反博士的三月干扰将触发惩罚：清空全队所有能量，并被投影仪抓起，造成<span class=\"cryo\">**10%x4+50%**</span>伤害；遵循三月干扰则恢复全队所有能量。<c=#ffbfbf>恒月干扰为始终遵循</c>。"
+  },
+  {
+   "name": "月既初亏异罅生",
+   "type": "领域",
+   "icon": "skill-12.webp",
+   "description": "博士在场地边界召唤3个「`月拟造影`」，造成4~5段<span class=\"cryo\">**100%**</span><span class=\"cryo\">**E**</span>攻击力的伤害，同时产生不断扩张的「`蚀月领域`」，该领域初始产生冰脉冲，随着领域范围扩张，冰脉冲的威力也逐渐加强：\n初始造成<span class=\"cryo\">**150%E**</span>伤害，扩张至约一半半径后出现「`异界裂隙`」，随后脉冲伤害提升至<span class=\"cryo\">**300%E**</span>，扩张结束一段时间后冰脉冲频率翻倍，伤害提升至<span class=\"cryo\">**450%E**</span>。\n「异界裂隙」内游走的激光持续造成<c=#ffacff>80%E</c>的真伤。若未完全清除「蚀月领域」，则博士不再尝试生成新的领域。"
+  },
+  {
+   "name": "吾命虽蹇不由天",
+   "type": "天赋",
+   "icon": "skill-13.webp",
+   "description": "若博士受到超过自身<c=#ffdfbf>20%</c>生命值的单次伤害，则立即进入高伤遏制状态，全抗提升<c=#ffdfbf>150%</c>，持续3.5s，并恢复期间损失的生命值，不超过<c=#ffdfbf>33%</c>生命值上限。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "拟造古月遗骸",
+   "desc": "位于其后方可避免秒杀，处于该处时为全队提供元素能量与特殊能量的持续恢复。"
+  },
+  {
+   "text": "秒杀机理",
+   "desc": "不同于其他秒杀，该秒杀为造成多次70%生命值的伤害。"
+  },
+  {
+   "text": "月拟造影",
+   "desc": "博士召唤物，生命值267122(7.2F)，攻击力12180(6.4B2)，在「异界」内体现生命值，在常规场地体现攻击力。"
+  },
+  {
+   "text": "蚀月领域",
+   "desc": "不断扩张的红色圆形，扩张完毕耗时20s，半径最大可达10m，角色位于其中会降低40%移速。"
+  },
+  {
+   "text": "异界裂隙",
+   "desc": "蚀月领域扩张至4.5m(9s)时出现，进入期间会出现与裂隙同位的月拟造影，清除相应造影可移除相应位置的蚀月领域并退出空间，或者自寻出口逃脱。"
+  },
+  {
+   "text": "E",
+   "desc": "环境反应等级系数，90级时为1202.81。\n若想被投影仪抓起，双方等级差同样需要≤20级。\n高伤遏制机制CD为30s。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "周本",
+   "level": 90,
+   "hp": 4637536,
+   "atk": 26644,
+   "weight": 150,
+   "tenacity": 500
+  }
+ ],
+ "leyline": null,
+ "id": "heretic-of-the-false-moon",
+ "icon": "avatar.webp",
+ "tags": [
+  "值得铭记的强敌"
+ ]
+}

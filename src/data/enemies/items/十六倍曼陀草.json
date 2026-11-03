@@ -1,0 +1,171 @@
+{
+ "name": "十六倍曼陀草",
+ "nameEn": "Hexadecatonic Mandragora",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 869.376,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 150.72,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "脆性",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 135,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "刚性",
+   "pyro": 80,
+   "hydro": 80,
+   "anemo": 80,
+   "electro": 80,
+   "dendro": 205,
+   "cryo": 80,
+   "geo": 80,
+   "physical": 80
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 200,
+ "skills": [
+  {
+   "name": "循灵跃动",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "曼陀草进行1-3次的跳跃攻击，造成<c=#99ff85>50%,20%</c>伤害，「脆性」状态会经常施放失败，表现为突然的倒地。"
+  },
+  {
+   "name": "弧分曳形",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "曼陀草原地蓄力，孢囊发光，而后迅速进行多次弹射，接触造成<c=#99ff85>55%,16.5%,\n5.5%</c>伤害；接着重重坠地，造成<c=#99ff85>100%</c>伤害。"
+  },
+  {
+   "name": "林间孢雾",
+   "type": "远程",
+   "icon": "skill-3.webp",
+   "description": "距离较远时，曼陀草向前方发射6枚曲轨孢弹，造成<c=#99ff85>40%,20%,7.2%</c>伤害，会重复施放2-3次；「脆性」状态下只发射3枚孢弹，且只连续施放一次。"
+  },
+  {
+   "name": "翠卉柔风",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "曼陀草开始倒立并朝玩家方向旋转，移动一小段距离，接触造成<c=#99ff85>50%</c>伤害。"
+  },
+  {
+   "name": "裂茵蔓种",
+   "type": "召唤",
+   "icon": "skill-5.webp",
+   "description": "曼陀草初始处于「刚性」聚合状态，首次`分裂倒计时`为<c=#ffdfbf>35s</c>，后续为<c=#ffdfbf>38s</c>；倒计时结束后，在9-12m范围内分裂为10个`孢子`，持续17s；之后恢复。若期间击败8个及以上孢子，则会使曼陀草恢复后退出「刚性」状态，进入「脆性」聚合状态，并使分裂倒计时延长至<c=#ffdfbf>44s</c>。\n低于<c=#ffebbf>20%生命值</c>则根据剩余生命分裂对应数量的孢子(2%/个)；低于<c=#ffebbf>2%生命值</c>则不再分裂。"
+  },
+  {
+   "name": "新绿倾旋",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "孢子轻轻撞击，造成<c=#99ff85>100%</c>伤害。"
+  },
+  {
+   "name": "团草菌雾",
+   "type": "远程",
+   "icon": "skill-7.webp",
+   "description": "距离较远时，孢子抛射一枚草球，造成<c=#99ff85>80%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "孢子分裂范围",
+   "desc": "中心范围<c=#ffdfbf>0-0.3m</c>，1个孢子；内层范围<c=#ffdfbf>2-4.5m</c>，3个孢子；中层范围<c=#ffdfbf>5-8m</c>，3个孢子；外层范围<c=#ffdfbf>9-12m</c>，3个孢子。\n处于「刚性」聚合状态时，抗打断0.12。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Dendro",
+  "elementLabel": "草",
+  "raw": "EnergyGroup:B_1114",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 3899847,
+   "atk": 31329,
+   "weight": 200,
+   "tenacity": 150
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 958349,
+   "hpNote": "27%",
+   "atk": 16251,
+   "atkNote": "55%",
+   "weight": 200,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "十六倍曼陀草",
+ "icon": "avatar.webp",
+ "statVariants": [
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 958349,
+   "hpNote": "27%",
+   "atk": 16251,
+   "atkNote": "55%",
+   "weight": 200,
+   "tenacity": 150
+  }
+ ],
+ "aliases": [
+  "历经百战的十六倍曼陀草"
+ ],
+ "tags": [
+  "地方传奇",
+  "历经百战"
+ ]
+}

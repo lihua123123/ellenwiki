@@ -1,0 +1,137 @@
+{
+ "name": "海乱鬼·炎威",
+ "nameEn": "Kairagi: Fiery Might",
+ "subtitle": "落武者·祟炎",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 65.2032,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 94.2,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "刀法·炎火",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "炎威进行3段的普通攻击，每段攻击都造成<c=#ff9999>46.6%</c>/<c=#b9b9b9>46.6%</c>伤害。"
+  },
+  {
+   "name": "冲击·焰飘",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "炎威将剑朝向玩家，并蓄势冲向玩家，造成<c=#ff9999>66.6%</c>/<c=#b8b8b8>66.6%</c>伤害。"
+  },
+  {
+   "name": "惟神术·炎",
+   "type": "强化",
+   "icon": "skill-3.webp",
+   "description": "炎威将刀刃附上火元素，附魔完成后进行一次下劈，造成<c=#ff9999>100%</c>伤害，附魔持续30s，不可被元素反应消除。"
+  },
+  {
+   "name": "冲旋·烟星",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "炎威侧身插刀，拔刀时旋转一圈半，造成2段<c=#ff9999>66.6%</c>/<c=#b9b9b9>66.6%</c>伤害。"
+  },
+  {
+   "name": "跃击·熔炽",
+   "type": "猛攻",
+   "icon": "skill-5.webp",
+   "description": "炎威举着刀直接跳起来，朝下劈，造成<c=#ff9999>80%</c>/<c=#b8b8b8>80%</c>伤害，当处于火附魔状态时跳劈纵向范围提升50%，并且留下高温地面，接触持续造成<c=#ff9999>20%</c>伤害。"
+  },
+  {
+   "name": "格挡·击火",
+   "type": "格挡",
+   "icon": "skill-6.webp",
+   "description": "炎威斜拿刀刃，抵挡前方任何攻击，免疫击飞，持续一段时间后放下。该状态下不免疫冻结和石化，处于冻结或石化状态下仍可受伤。"
+  },
+  {
+   "name": "忿恨·薪燃",
+   "type": "回复",
+   "icon": "skill-7.webp",
+   "description": "当附近有海乱鬼倒下时，短时间50m内战斗状态下的海乱鬼会进入「忿恨」状态：<c=#ffbfbf>立即恢复50%生命值，免疫冻结和石化</c>。炎威进入此状态后，无论刀是否有火附魔，攻击均造成<c=#ff9999>火元素</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_3333",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 50,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 25,
+    "particle": 0,
+    "orb": 1
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 266208,
+   "atk": 18467,
+   "weight": 150,
+   "tenacity": 210
+  },
+  {
+   "label": "普通-3.4振刀",
+   "level": 90,
+   "hp": 374848,
+   "atk": 3806,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "kairagi-fiery-might",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

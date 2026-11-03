@@ -1,0 +1,160 @@
+{
+ "name": "永恒燃烧的幻景",
+ "nameEn": "Ever-burning Illusion",
+ "subtitle": "扎拉",
+ "category": "Tps",
+ "categoryLabel": "第三人称射击（TPS）",
+ "tier": "Quest",
+ "defaultLevel": 20,
+ "baseStats": {
+  "hp": {
+   "Value": 304.789135,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 135.174886,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "开局",
+   "pyro": 250,
+   "hydro": 210,
+   "anemo": 210,
+   "electro": 210,
+   "dendro": 210,
+   "cryo": 210,
+   "geo": 210,
+   "physical": 210
+  },
+  {
+   "name": "正常",
+   "pyro": 50,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "命曜",
+   "pyro": 50,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 50,
+   "geo": 10,
+   "physical": 10
+  },
+  {
+   "name": "虚弱",
+   "pyro": 0,
+   "hydro": -40,
+   "anemo": -40,
+   "electro": -40,
+   "dendro": -40,
+   "cryo": -40,
+   "geo": -40,
+   "physical": -40
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 2000,
+ "skills": [
+  {
+   "name": "白冽晖羽",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "扎拉进行左右双翼挥扫、转身三段攻击，分别造成<c=#ff9999>50%,50%,70%</c>伤害。\n「命曜之姿」强化：攻击造成<span class=\"cryo\">**冰元素**</span>伤害，且伤害倍率提升，分别造成<span class=\"cryo\">**65%,\n65%,90%**</span>伤害。"
+  },
+  {
+   "name": "灰汐寒痕",
+   "type": "防御",
+   "icon": "skill-2.webp",
+   "description": "处于侧后方时，扎拉一个转身，顺便造成<c=#ff9999>25%</c>伤害。\n「命曜之姿」强化：攻击造成<span class=\"cryo\">**冰元素**</span>伤害，且伤害倍率提升，造成<span class=\"cryo\">**65%**</span>伤害。"
+  },
+  {
+   "name": "命生苍霰",
+   "type": "强化",
+   "icon": "skill-3.webp",
+   "description": "扎拉升空，消耗<c=#ffdfbf>18%生命值</c>，<c=#ffdfbf>缓慢</c>展开等量的`残霜护罩`，并进入「命曜之姿」状态。护罩展开期间可受`星烁反应`影响。\n该状态下，扎拉每造成一次伤害，都会为自身恢复<c=#ffdfbf>3%生命值</c>(爆发恢复<c=#ffdfbf>15%生命值</c>)，恢复总量至多不超过所消耗的生命值，恢复行为可受`星烁反应`影响。\n当生命值不足以消耗时，扎拉会尽量转换剩余的生命值成等量的护罩。护罩移除后进入<c=#ffdfbf>15s</c>的虚弱状态，直至再次开启护罩。\n第<c=#ffdfbf>2/3/4/>4</c>次展开护罩时的生命值恢复量为原来的<c=#ffdfbf>50%/25%/12.5%/10%</c>。\n<c=#ffbfff>[绝境]</c>该状态下会召唤特殊冰柱，造成<span class=\"cryo\">**50%**</span>伤害，产生的冲击波持续造成<span class=\"cryo\">**50%**</span>伤害伤害。"
+  },
+  {
+   "name": "至怒斗冠",
+   "type": "位移",
+   "icon": "skill-4.webp",
+   "description": "距离较远时，扎拉朝玩家冲击而来，分别造成<c=#b8b8b8>100%</c>伤害，仅在「命曜之姿」状态下施放。"
+  },
+  {
+   "name": "烬灭蚀爪",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "扎拉抬起前肢进行两段爪划攻击，均造成<c=#b8b8b8>60%</c>伤害。\n「命曜之姿」强化：能够连续施放2次。"
+  },
+  {
+   "name": "啖霜碎银",
+   "type": "爆发",
+   "icon": "",
+   "description": "扎拉移至场地中央，召唤3枚`冰柱`，造成<span class=\"cryo\">**100%**</span>伤害；同时将凛冬盛放的花冠裹回蓓蕾，随后令其猛烈绽放，造成<span class=\"cryo\">**150%**</span>伤害，退出「命曜之姿」状态并移除护罩。<c=#ffbfff>[绝境]</c>召唤2枚特殊冰柱，施放后不退出「命曜之姿」状态。"
+  },
+  {
+   "name": "星烁辉离",
+   "type": "天赋",
+   "icon": "",
+   "description": "「命曜之姿」：恢复的生命值将<c=#ffdfbf>立即扣除</c>，等于回血失效。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "冰柱",
+   "desc": "可使用「钩镰炮」扯倒，对扎拉造成<c=#ffdfbf>30%生命值</c>的<span class=\"cryo\">**冰元素真伤**</span>并使其退出「命曜之姿」状态。"
+  },
+  {
+   "text": "残霜护罩",
+   "desc": "层页生命护罩，共<c=#ffdfbf>3</c>层，每层<c=#ffdfbf>6%生命值</c>，破坏后进入虚弱状态，约<c=#ffdfbf>15s</c>后再次展开护罩。展开时，完全填满护罩需<c=#ffdfbf>2s</c>。护罩展开期间，<c=#ffdfbf>全抗性将短暂+100%</c>。\n<c=#ffbfff>[绝境]</c>护盾层数变为2层，每层<c=#ffdfbf>15%生命值</c>。"
+  }
+ ],
+ "shields": [
+  {
+   "name": "残霜护罩",
+   "description": "层页生命护罩，共<c=#ffdfbf>3</c>层，每层<c=#ffdfbf>6%生命值</c>，破坏后进入虚弱状态，约<c=#ffdfbf>15s</c>后再次展开护罩。展开时，完全填满护罩需<c=#ffdfbf>2s</c>。护罩展开期间，<c=#ffdfbf>全抗性将短暂+100%</c>。\n<c=#ffbfff>[绝境]</c>护盾层数变为2层，每层<c=#ffdfbf>15%生命值</c>。",
+   "elementType": "",
+   "duration": ""
+  }
+ ],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [
+  {
+   "label": "剧情首领",
+   "level": 20,
+   "hp": 19097,
+   "atk": 1800,
+   "weight": 2000,
+   "tenacity": 4000
+  },
+  {
+   "label": "TPS射击",
+   "level": 20,
+   "hp": 6875,
+   "atk": 10443,
+   "weight": 2000,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "ever-burning-illusion",
+ "icon": "avatar.webp",
+ "tags": [
+  "第三人称射击（TPS）"
+ ]
+}

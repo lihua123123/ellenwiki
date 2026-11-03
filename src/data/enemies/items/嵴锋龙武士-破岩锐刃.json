@@ -1,0 +1,100 @@
+{
+ "name": "嵴锋龙武士·破岩锐刃",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 59.769600000000004,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 50.24,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 100,
+ "skills": [
+  {
+   "name": "开山好手",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "破岩锐刃使用飞锯进行纵、横、切至多3段的攻击，分别造成<c=#b8b8b8>60%,60%,70%</c>伤害，第三段留在地上的锯子额外造成<c=#b8b8b8>10%x3</c>伤害。"
+  },
+  {
+   "name": "没入石棱",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "破岩锐刃使劲将飞锯嵌入地面，造成<c=#ffe599>10%</c>伤害，随后产生振波造成<c=#ffe599>70%</c>伤害。"
+  },
+  {
+   "name": "凿岩錾金",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "破岩锐刃驱使灵力，唤出一枚岩晶，后破岩锐刃使用飞锯粉碎岩晶，产生的碎片造成<c=#ffe599>100%</c>伤害。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:A_1102",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通",
+   "level": 100,
+   "hp": 244024,
+   "atk": 9849,
+   "weight": 100,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "嵴锋龙武士-破岩锐刃",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}

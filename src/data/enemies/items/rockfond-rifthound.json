@@ -1,0 +1,141 @@
+{
+ "name": "嗜岩·兽境猎犬",
+ "nameEn": "Rockfond Rifthound",
+ "subtitle": "隙间侵入的异兽",
+ "category": "Abyss",
+ "categoryLabel": "深渊",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 95.088,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 40.19200000000001,
+   "Curve": "ATK_1"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 25,
+   "hydro": 25,
+   "anemo": 25,
+   "electro": 25,
+   "dendro": 25,
+   "cryo": 25,
+   "geo": 25,
+   "physical": 25
+  },
+  {
+   "name": "嗜魔",
+   "pyro": 25,
+   "hydro": 25,
+   "anemo": 25,
+   "electro": 25,
+   "dendro": 25,
+   "cryo": 25,
+   "geo": -40,
+   "physical": 25
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 150,
+ "skills": [
+  {
+   "name": "涎齿啮合",
+   "type": "位移",
+   "icon": "skill-1.webp",
+   "description": "猎犬突然后撤，随后直接冲向玩家咬合，造成<c=#ffe599>90%</c>伤害。"
+  },
+  {
+   "name": "兽性抓划",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "猎犬在近处进行左右两段划击攻击，两段攻击均造成<c=#ffe599>85%</c>伤害。"
+  },
+  {
+   "name": "长尾蛰击",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "猎犬后空翻消失，传送至玩家身后使用尾部击打造成<c=#ffe599>100%</c>伤害。"
+  },
+  {
+   "name": "琢瑀衔晶",
+   "type": "输出",
+   "icon": "skill-4.webp",
+   "description": "距离玩家较远时，猎犬使蓄力吐出一枚弱追踪岩晶，造成<c=#ffe599>95%</c>伤害。"
+  },
+  {
+   "name": "嗜岩之碿",
+   "type": "天赋",
+   "icon": "skill-5.webp",
+   "description": "每受到一次直接<c=#ffe599>岩元素</c>伤害，其怒气值就增长20%，值满时猎犬的外观发生明显变化，永久<c=#ffecbf>进入嗜魔状态</c>，以<c=#ffc926>岩抗减至-40%</c>为代价提升攻击频率。"
+  },
+  {
+   "name": "卷啸腾涌",
+   "type": "妨害",
+   "icon": "skill-6.webp",
+   "description": "(嗜魔施放)猎犬后空翻朝玩家快速冲过来，造成<c=#ffe599>85%</c>伤害，持续3轮。"
+  },
+  {
+   "name": "群狼天嗥",
+   "type": "辅助",
+   "icon": "skill-7.webp",
+   "description": "(幼兽在场时施放)猎犬朝空中咆哮一下，赋予30m附近的任意幼兽<c=#ffbfbf>25%的攻击力提升</c>，持续10s，可叠加2层，每层持续时间独立计算。"
+  },
+  {
+   "name": "郄兽侵蚀",
+   "type": "天赋",
+   "icon": "skill-8.webp",
+   "description": "兽境类原魔造成的伤害都会附带「侵蚀」效果。兽境猎犬的效果为：每层每秒扣除玩家<c=#ffcebf>0.5%HP</c>的生命值，每层持续<c=#ffcebf>9.5s</c>，持续时间独立计算，可叠加。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "Geo",
+  "elementLabel": "岩",
+  "raw": "EnergyGroup:A_2202",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 2,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "精英",
+   "level": 100,
+   "hp": 388220,
+   "atk": 7879,
+   "weight": 150,
+   "tenacity": 210
+  }
+ ],
+ "leyline": null,
+ "id": "rockfond-rifthound",
+ "icon": "avatar.webp",
+ "tags": [
+  "深渊"
+ ]
+}

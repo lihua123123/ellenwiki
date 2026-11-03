@@ -1,0 +1,162 @@
+{
+ "name": "西格德",
+ "nameEn": "Sigurd",
+ "subtitle": "永誓猎杀「狂猎」之人",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "Legend",
+ "defaultLevel": 103,
+ "baseStats": {
+  "hp": {
+   "Value": 611.28,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 138.16,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 99,
+ "skills": [
+  {
+   "name": "不屈戮刃",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "西格德使用短刀进行至多3段的攻击，依次造成<c=#ffacff>45%,45%,55%</c>伤害，每刀都会划出剑气；技能施放后闪现。"
+  },
+  {
+   "name": "殄灭戗雷",
+   "type": "位移",
+   "icon": "skill-2.webp",
+   "description": "西格德执剑朝前方猛冲，造成<c=#ffacff>85%</c>伤害，最多冲刺2次。"
+  },
+  {
+   "name": "八夤诛猎",
+   "type": "爆发",
+   "icon": "skill-3.webp",
+   "description": "西格德原地蓄力，施放大范围戕灭神斩，连续造成<c=#ffacff>50%,30%,10%,5%,2.5%</c>伤害。"
+  },
+  {
+   "name": "昏罔深蚀",
+   "type": "天赋",
+   "icon": "skill-4.webp",
+   "description": "狂猎之鸩已然入髓，西格德一阶段清空血条后不会死亡，转为<c=#ffdfbf>具有狂猎性质的二阶段</c>。整体性质与狂猎无异。"
+  },
+  {
+   "name": "业痴心魔",
+   "type": "召唤",
+   "icon": "skill-5.webp",
+   "description": "西格德从心膛掏出魔火，落地即召唤4个「荒野幽徒」，且造成<c=#b8b8b8>20%</c>伤害。"
+  },
+  {
+   "name": "执灯常明",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "执灯人之志深铭心底，召唤物出现17s后，西格德将其抓起，并如数殉灭，每个造成<c=#b8b8b8>200%</c>伤害，按照召唤物剩余生命上限为西格德恢复生命上限。"
+  },
+  {
+   "name": "缠心黑火",
+   "type": "远程",
+   "icon": "skill-7.webp",
+   "description": "西格德又从心膛掏出魔火，猛地丢出，造成<c=#b8b8b8>80%,16%,4%</c>伤害。"
+  },
+  {
+   "name": "惛然前赴",
+   "type": "位移",
+   "icon": "skill-8.webp",
+   "description": "西格德邪意上身，朝前方猛地冲刺两次，均造成<c=#b8b8b8>100%</c>伤害。"
+  },
+  {
+   "name": "幽魂野行",
+   "type": "位移",
+   "icon": "skill-9.webp",
+   "description": "西格德化为幽雾，之后显现并给予一个怀抱，造成<c=#b8b8b8>80%</c>伤害。"
+  },
+  {
+   "name": "迷魊游猎",
+   "type": "输出",
+   "icon": "skill-10.webp",
+   "description": "西格德朝前方猛猛抓划2-3次，依次造成<c=#b8b8b8>70%,70%,80%</c>伤害。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "临界状态",
+   "desc": "见「荒野幽徒」。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:B_1115",
+  "rows": [
+   {
+    "hp": 75,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 50,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 25,
+    "particle": 1,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 3,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "地方传奇",
+   "level": 103,
+   "hp": 2,
+   "atk": 28719,
+   "weight": 99,
+   "tenacity": 150
+  },
+  {
+   "label": "历经百战",
+   "level": 100,
+   "hp": 2,
+   "hpNote": "21%",
+   "atk": 13542,
+   "atkNote": "50%",
+   "weight": 99,
+   "tenacity": 150
+  }
+ ],
+ "leyline": null,
+ "id": "西格德",
+ "icon": "avatar.webp",
+ "tags": [
+  "地方传奇"
+ ]
+}

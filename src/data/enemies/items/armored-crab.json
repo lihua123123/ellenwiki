@@ -1,0 +1,75 @@
+{
+ "name": "重甲蟹·陆地·橙",
+ "nameEn": "Armored Crab",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "Common",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 10.59552,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 45,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 75,
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:E_0001",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 1,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通-陆地",
+   "level": 100
+  },
+  {
+   "label": "普通-水下",
+   "level": 100,
+   "hp": 32628,
+   "atk": 8822,
+   "weight": 75,
+   "tenacity": 20
+  }
+ ],
+ "leyline": null,
+ "id": "armored-crab",
+ "icon": "avatar.webp",
+ "tags": [
+  "异种魔兽"
+ ]
+}

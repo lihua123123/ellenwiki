@@ -1,0 +1,155 @@
+{
+ "name": "盗宝团·卡门",
+ "nameEn": "Treasure Hoarder: Carmen",
+ "subtitle": "",
+ "category": "OtherHumanFactions",
+ "categoryLabel": "其他人类势力",
+ "tier": "Elite",
+ "defaultLevel": 100,
+ "baseStats": {
+  "hp": {
+   "Value": 108.672,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 30.144,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 10,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": -20
+  },
+  {
+   "name": "士气",
+   "pyro": 70,
+   "hydro": 70,
+   "anemo": 70,
+   "electro": 70,
+   "dendro": 70,
+   "cryo": 70,
+   "geo": 70,
+   "physical": 60
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "1",
+ "weight": 200,
+ "skills": [
+  {
+   "name": "微蚀平铲",
+   "type": "输出",
+   "icon": "skill-1.webp",
+   "description": "(旧)卡门横向挥动铲子，造成<c=#b9b9b9>125%</c>伤害。"
+  },
+  {
+   "name": "斜落铲击",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "(旧)卡门纵向挥动铲子，造成<c=#b9b9b9>120%</c>伤害。"
+  },
+  {
+   "name": "舞铲街疾",
+   "type": "位移",
+   "icon": "skill-3.webp",
+   "description": "(旧)卡门横抓铲子，进行冲刺并不断挥动铲子，接触造成<c=#b9b9b9>50%</c>伤害，冲刺结束后施放强力尾刀，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "枯土燥尘",
+   "type": "妨害",
+   "icon": "skill-4.webp",
+   "description": "(旧)卡门用铲挖地，扔出1个泥土块，不造成伤害，但遮挡视野。"
+  },
+  {
+   "name": "青铁平铲",
+   "type": "输出",
+   "icon": "skill-5.webp",
+   "description": "(新)卡门横向挥动铲子，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "斜正铲击",
+   "type": "输出",
+   "icon": "skill-6.webp",
+   "description": "(新)卡门纵向挥动铲子，造成<c=#b9b9b9>75%</c>伤害。"
+  },
+  {
+   "name": "舞铲街疾",
+   "type": "远程",
+   "icon": "skill-7.webp",
+   "description": "(新)卡门横抓铲子，进行冲刺并不断挥动铲子，接触造成<c=#b9b9b9>50%</c>伤害，冲刺结束后施放强力尾刀，造成<c=#b9b9b9>100%</c>伤害。"
+  },
+  {
+   "name": "死土硬石",
+   "type": "妨害",
+   "icon": "skill-8.webp",
+   "description": "(新)卡门用铲挖地，扔出3-5个泥土块，每个造成<c=#b9b9b9>75%</c>伤害，不会遮挡视野。"
+  },
+  {
+   "name": "士气鼓舞",
+   "type": "强化",
+   "icon": "skill-9.webp",
+   "description": "(新)卡门发怒，进入士气强化状态，该状态可使用<c=#ffff72>「避邪爆竹」</c>破除并使其瘫痪。"
+  }
+ ],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "White",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:A_2203",
+  "rows": [
+   {
+    "hp": 66,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 33,
+    "particle": 2,
+    "orb": 0
+   },
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 1
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "普通-旧模",
+   "level": 100,
+   "hp": 110295,
+   "atk": 4924,
+   "weight": 200,
+   "tenacity": 100
+  },
+  {
+   "label": "普通-2.4海灯节新模",
+   "level": 100,
+   "hp": 443680,
+   "atk": 5909,
+   "weight": 100,
+   "tenacity": 100
+  }
+ ],
+ "leyline": null,
+ "id": "treasure-hoarder-carmen",
+ "icon": "avatar.webp",
+ "tags": [
+  "其他人类势力"
+ ]
+}
