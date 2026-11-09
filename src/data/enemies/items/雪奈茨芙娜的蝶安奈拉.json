@@ -151,15 +151,6 @@
     "atk": 5420,
     "multiplier": 5.6,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 17506998,
-    "atk": 5806,
-    "multiplier": 11.1,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -208,13 +199,13 @@
  },
  "id": "雪奈茨芙娜的蝶安奈拉",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "aliases": [
   "历经百战的风役人"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

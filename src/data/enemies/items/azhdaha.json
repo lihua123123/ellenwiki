@@ -126,6 +126,9 @@
  ],
  "leyline": null,
  "id": "azhdaha",
+ "images": [
+  "chart.webp"
+ ],
  "icon": "avatar.webp",
  "states": [
   {

@@ -212,15 +212,6 @@
     "atk": 17887,
     "multiplier": 6.0,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 16743003,
-    "atk": 19158,
-    "multiplier": 11.1,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -315,13 +306,13 @@
  },
  "id": "穆什特希尔",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "aliases": [
   "历经百战的先驱秘源统辖阵列"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

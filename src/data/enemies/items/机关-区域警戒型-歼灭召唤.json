@@ -87,6 +87,9 @@
  ],
  "leyline": null,
  "id": "机关-区域警戒型-歼灭召唤",
+ "images": [
+  "chart.webp"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "自律机关"

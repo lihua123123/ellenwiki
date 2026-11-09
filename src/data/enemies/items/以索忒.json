@@ -156,15 +156,6 @@
     "atk": 5420,
     "multiplier": 5.2,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 13969549,
-    "atk": 5806,
-    "multiplier": 9.3,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -217,13 +208,13 @@
  },
  "id": "以索忒",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "aliases": [
   "历经百战的霜役人"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

@@ -202,15 +202,6 @@
     "atk": 13550,
     "multiplier": 6.7,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 17195518,
-    "atk": 14514,
-    "multiplier": 11.4,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -304,13 +295,13 @@
  },
  "id": "拉斯科尔尼科夫",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "aliases": [
   "历经百战的火刃突击队员"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

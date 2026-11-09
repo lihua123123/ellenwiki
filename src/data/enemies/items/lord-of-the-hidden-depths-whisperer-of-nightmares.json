@@ -186,15 +186,6 @@
     "atk": 16260,
     "multiplier": 6.1,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 23658107,
-    "atk": 17417,
-    "multiplier": 10.6,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -243,10 +234,10 @@
  },
  "id": "lord-of-the-hidden-depths-whisperer-of-nightmares",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

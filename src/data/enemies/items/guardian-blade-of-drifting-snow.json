@@ -176,15 +176,6 @@
     "atk": 20597,
     "multiplier": 6.0,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 21871489,
-    "atk": 22061,
-    "multiplier": 11.6,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -261,10 +252,10 @@
  },
  "id": "guardian-blade-of-drifting-snow",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

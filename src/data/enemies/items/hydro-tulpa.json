@@ -177,15 +177,6 @@
     "atk": 21681,
     "multiplier": 5.1,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 17260003,
-    "atk": 23222,
-    "multiplier": 10.5,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -285,10 +276,10 @@
  },
  "id": "hydro-tulpa",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

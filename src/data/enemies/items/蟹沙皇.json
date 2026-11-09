@@ -177,15 +177,6 @@
     "atk": 13550,
     "multiplier": 4.7,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 10053990,
-    "atk": 14514,
-    "multiplier": 7.4,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -261,13 +252,13 @@
  },
  "id": "蟹沙皇",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "aliases": [
   "历经百战的岩居蟹"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

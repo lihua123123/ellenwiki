@@ -176,15 +176,6 @@
     "atk": 16260,
     "multiplier": 4.3,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 13909262,
-    "atk": 17417,
-    "multiplier": 9.1,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -230,10 +221,10 @@
  },
  "id": "aeonblight-drake",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

@@ -198,15 +198,6 @@
     "atk": 14905,
     "multiplier": 4.9,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 10200306,
-    "atk": 15965,
-    "multiplier": 7.3,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -273,13 +264,13 @@
  },
  "id": "最后的特诺奇兹托克人",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "aliases": [
   "历经百战的皮皮潘偶像"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

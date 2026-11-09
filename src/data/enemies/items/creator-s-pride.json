@@ -214,15 +214,6 @@
     "atk": 16260,
     "multiplier": 6.7,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 25925713,
-    "atk": 17417,
-    "multiplier": 12.1,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -304,10 +295,10 @@
  },
  "id": "creator-s-pride",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

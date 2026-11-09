@@ -168,15 +168,6 @@
     "atk": 8130,
     "multiplier": 5.5,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 32436173,
-    "atk": 8708,
-    "multiplier": 12.0,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -253,10 +244,10 @@
  },
  "id": "churin",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

@@ -172,8 +172,8 @@
  "leyline": null,
  "id": "门扉前的弈局",
  "images": [
-  "reference.png",
-  "reference-2.png"
+  "chart.webp",
+  "chart-2.webp"
  ],
  "icon": "avatar.webp",
  "states": [

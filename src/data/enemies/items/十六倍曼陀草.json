@@ -179,15 +179,6 @@
     "atk": 16260,
     "multiplier": 6.3,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 11896647,
-    "atk": 17417,
-    "multiplier": 10.6,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -280,13 +271,13 @@
  },
  "id": "十六倍曼陀草",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "aliases": [
   "历经百战的十六倍曼陀草"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

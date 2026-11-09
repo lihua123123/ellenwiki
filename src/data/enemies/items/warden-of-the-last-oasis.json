@@ -107,6 +107,9 @@
  ],
  "leyline": null,
  "id": "warden-of-the-last-oasis",
+ "images": [
+  "chart.webp"
+ ],
  "icon": "avatar.webp",
  "states": [
   {

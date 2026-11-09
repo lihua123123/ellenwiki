@@ -89,6 +89,9 @@
  ],
  "leyline": null,
  "id": "幻形豕兽-水-活动",
+ "images": [
+  "chart.webp"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

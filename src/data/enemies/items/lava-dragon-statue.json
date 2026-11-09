@@ -197,15 +197,6 @@
     "atk": 21681,
     "multiplier": 4.4,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 11325501,
-    "atk": 23222,
-    "multiplier": 8.0,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -271,10 +262,10 @@
  },
  "id": "lava-dragon-statue",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

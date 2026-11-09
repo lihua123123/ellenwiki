@@ -182,15 +182,6 @@
     "atk": 18971,
     "multiplier": 6.0,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 20950071,
-    "atk": 20319,
-    "multiplier": 11.2,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -255,10 +246,10 @@
  },
  "id": "radiant-moongecko",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

@@ -256,15 +256,6 @@
     "atk": 16260,
     "multiplier": 6.7,
     "advantage": "Dendro Adv."
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 10988094,
-    "atk": 17417,
-    "multiplier": 12.9,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -330,10 +321,10 @@
  },
  "id": "iniquitous-baptist",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

@@ -206,15 +206,6 @@
     "atk": 21681,
     "multiplier": 4.8,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 14916723,
-    "atk": 23222,
-    "multiplier": 8.6,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -314,10 +305,10 @@
  },
  "id": "ancient-ruins-master-terminal",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

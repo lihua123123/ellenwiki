@@ -244,7 +244,7 @@
  },
  "id": "watcher-fallen-vigil",
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [
@@ -255,6 +255,6 @@
   "开眼者·傲然睥睨"
  ],
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ]
 }

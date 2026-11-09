@@ -199,15 +199,6 @@
     "atk": 14905,
     "multiplier": 5.8,
     "advantage": "Lunar Reaction Adv."
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 12855409,
-    "atk": 15965,
-    "multiplier": 9.4,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -256,10 +247,10 @@
  },
  "id": "frostnight-herra",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

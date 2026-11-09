@@ -241,7 +241,9 @@ def extract_leyline_difficulty(blocks):
             'multiplier': rows.get('mult', {}).get(i),
             'advantage': rows.get('advantage', {}).get(i, ''),
         })
-    return result
+    # N6 绝境不进数据（2026-11-09 用户要求：幽境只展示 N3/N4/N5）。
+    # 在结果阶段过滤而不是在表头阶段过滤：否则 N6 列的 HP/ATK 会被按 x 坐标归到 N5 列上。
+    return [row for row in result if row['key'] != 'N6']
 
 
 def parse_energy(blocks):
@@ -478,6 +480,23 @@ def resolve_icon_file(icon_path):
 
 
 # ──────────────── 输出 / 图片 ────────────────
+def save_chart_webp(src: Path, dest: Path, width=1600, quality=82):
+    """整图（一图流）落盘：按宽缩到 1600px 的 webp。
+
+    上游整图是 2~5 MB 的 1920×1728 / 2048×1080 PNG，714 张共 1.2 GB；
+    1600px/q82 单张只剩 100~320 KB，技能名照样看得清，能随包进安装程序。
+    """
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    im = Image.open(src)
+    im.load()
+    if im.width > width:
+        im = im.resize((width, round(im.height * width / im.width)), Image.LANCZOS)
+    if im.mode not in ('RGB', 'RGBA'):
+        im = im.convert('RGBA' if 'A' in im.getbands() else 'RGB')
+    im.save(dest, 'WEBP', quality=quality, method=5)
+    return dest
+
+
 def save_webp(src: Path, dest: Path, max_side=None):
     dest.parent.mkdir(parents=True, exist_ok=True)
     im = Image.open(src).convert('RGBA')
@@ -722,6 +741,91 @@ def base_entry_from_fields(fields, internal_id):
 
 # v2.0 内容图映射（敌人原名 → 种子图相对路径）。懒加载，离线可用。
 _V2_IMAGE_MAP = None
+def _v2_seed_dir():
+    return WIKI_ROOT / 'scripts' / 'seed' / 'v2-enemy-avatars'
+
+
+def name_candidates(name):
+    """一图流/头像的候选名：原名 → 去「历经百战的」→ 逐段砍掉「·后缀」。
+
+    v2 仓库只给「母体」出图：历经百战的丘丘萨满 用的是 丘丘萨满 的图，
+    守望者·堕天·深渊·异色元素星 用的是 守望者·堕天 的图。砍到剩一段为止。
+    """
+    name = (name or '').strip()
+    out = [name]
+    if name.startswith('历经百战的'):
+        out.append(name[len('历经百战的'):])
+    parts = re.split(r'[·-]', name)
+    for i in range(len(parts) - 1, 0, -1):
+        out.append('·'.join(parts[:i]))
+    return [c for c in out if c]
+
+
+_V2_SEED_INDEX = None
+
+
+def _v2_seed_index():
+    """{文件名主干: 路径}，一次扫描整棵 v2 种子目录。"""
+    global _V2_SEED_INDEX
+    if _V2_SEED_INDEX is None:
+        idx = {}
+        root = _v2_seed_dir()
+        if root.exists():
+            for p in sorted(root.rglob('*.png')):
+                idx.setdefault(p.stem, p)
+        _V2_SEED_INDEX = idx
+    return _V2_SEED_INDEX
+
+
+def _v2_seed_avatar(name):
+    """v2 只给了头像（.webp）的 7.2 怪物：<EC分类>/<名字>.webp。"""
+    root = _v2_seed_dir()
+    if not root.exists():
+        return None
+    for cand in name_candidates(name):
+        hits = list(root.rglob(f'{cand}.webp'))
+        if hits:
+            return hits[0]
+    return None
+
+
+def v2_seed_images(name):
+    """一图流种子文件列表（精确 → 名称回退链）。返回 [Path]。"""
+    rules = (_load_v2_image_map() or {}).get(name)
+    if rules:
+        rels = rules.get('seeds') or ([rules['seed']] if rules.get('seed') else [])
+        ok = [WIKI_ROOT / r for r in rels if (WIKI_ROOT / r).exists()]
+        for r in rels:
+            if not (WIKI_ROOT / r).exists():
+                print(f'  ⚠ v2 内容图种子缺失：{WIKI_ROOT / r}')
+        if ok:
+            return ok
+    idx = _v2_seed_index()
+    for cand in name_candidates(name):
+        if cand in idx:
+            return [idx[cand]]
+    return []
+
+
+def apply_v2_images(entry, img_dir):
+    """把一图流写成 <id>/chart*.webp（1600px）；已有多张时不动。返回写入的图片数。"""
+    if entry.get('images'):
+        return 0
+    seeds = v2_seed_images(entry.get('name'))
+    if not seeds:
+        return 0
+    img_dir.mkdir(parents=True, exist_ok=True)
+    for old in list(img_dir.glob('reference*.png')) + list(img_dir.glob('chart*.webp')):
+        old.unlink()
+    imgs = []
+    for seed in seeds:
+        fn = 'chart.webp' if not imgs else f'chart-{len(imgs) + 1}.webp'
+        save_chart_webp(seed, img_dir / fn)
+        imgs.append(fn)
+    entry['images'] = imgs
+    return len(imgs)
+
+
 def _load_v2_image_map():
     global _V2_IMAGE_MAP
     if _V2_IMAGE_MAP is None:
@@ -808,30 +912,17 @@ def export_images(entry, fields, source, prefix_skills='skill'):
             save_webp(avatar, img_dir / 'avatar.webp')
             avatar_file = 'avatar.webp'
 
+    # 没有真头像就留空：v2 种子目录里的 <名字>.webp 是**一图流的 256px 缩略图**（256x179 这种），
+    # 塞进 40x40 头像格就是「拿一图流占位」——用户明确要求去掉。宁可空着，也不拿图表凑。
+    if not avatar_file:
+        stale = img_dir / 'avatar.webp'
+        if stale.exists():
+            stale.unlink()
+
     # v2.0 内容图（一图流，置于详情底部，非头像）：
-    # 按敌人原名在 scripts/seed/v2-image-map.json 匹配种子图，离线可用、不依赖网络；
-    # 仅作内容补充，GIEnemyChartXML 之后收录同名真实敌人也不会冲突。
-    if not entry.get('images'):
-        _v2m = _load_v2_image_map()
-        _m = _v2m.get(entry.get('name')) if _v2m else None
-        if _m:
-            import shutil as _shutil
-            # 支持多张（多阶段 boss / 双人组合 / 驮兽系列）：seeds 优先，回退单 seed
-            _seeds = _m.get('seeds') or ([_m['seed']] if _m.get('seed') else [])
-            _ok_seeds = [_rel for _rel in _seeds if (WIKI_ROOT / _rel).exists()]
-            for _rel in _seeds:
-                if _rel not in _ok_seeds:
-                    print(f'  ⚠ v2 内容图种子缺失：{WIKI_ROOT / _rel}')
-            if _ok_seeds:
-                # 清掉旧 reference 系列，避免图片数量变少时残留孤儿文件
-                for _old in img_dir.glob('reference*.png'):
-                    _old.unlink()
-                _imgs = []
-                for _rel in _ok_seeds:
-                    _fn = 'reference.png' if not _imgs else f'reference-{len(_imgs) + 1}.png'
-                    _shutil.copy2(WIKI_ROOT / _rel, img_dir / _fn)
-                    _imgs.append(_fn)
-                entry['images'] = _imgs
+    # 种子目录 scripts/seed/v2-enemy-avatars（= GIEnemyChartv2.0 的 enemy/EC* 渲染图），
+    # 精确名 → 去「历经百战的」→ 逐段砍「·后缀」回退到母体。
+    apply_v2_images(entry, img_dir)
 
     # 技能图标：IconPath 查 icons/ 树 → fxg 摆放定位
     skills = fields.get('Skill') or fields.get('SkillDiffer') or []
@@ -1595,7 +1686,8 @@ def main():
             co = (collected.get(ley_e['_internal_id']) or {}).get('Coefficients') or {}
             dl = (collected.get(ley_e['_internal_id']) or {}).get('DefaultLevels') or {}
             rows = []
-            for key in ('N3', 'N4', 'N5', 'N6'):
+            # N6 绝境不进数据（2026-11-09 用户要求：幽境只展示 N3/N4/N5）
+            for key in ('N3', 'N4', 'N5'):
                 rows.append({
                     'key': key, 'name': DIFFICULTY_NAMES.get(key, key),
                     'level': dl.get(key), 'hp': None, 'atk': None,
@@ -1606,8 +1698,8 @@ def main():
         # 不放基础图顶替（基础图只属于基础内容块）。
         _ley_src = _load_v2_leyline_map().get(norm_key(base['leyline']['name']))
         if _ley_src and _ley_src.exists():
-            shutil.copy2(_ley_src, img_dir / 'leyline.png')
-            base['leylineImages'] = ['leyline.png']
+            save_chart_webp(_ley_src, img_dir / 'leyline.webp')
+            base['leylineImages'] = ['leyline.webp']
         else:
             print(f'  ⚠ 幽境内容图未匹配：{base["name"]} / {base["leyline"]["name"]}')
         # 幽境左侧立绘兜底：export_portrait 拿不到时用 scripts/seed/leyline-art-map.json 的原画。
@@ -1644,7 +1736,7 @@ def main():
                 _dst_dir.mkdir(parents=True, exist_ok=True)
                 if _src_dir.exists():
                     for _f in _src_dir.iterdir():
-                        if _f.name == 'leyline.png' or _f.name.startswith('leyline-'):
+                        if _f.name.startswith('leyline') and _f.suffix in ('.png', '.webp'):
                             shutil.copy2(_f, _dst_dir / _f.name)
                 if not _host.get('leyline'):
                     _host['leyline'] = e['leyline']
@@ -1713,8 +1805,8 @@ def main():
             _img_dir.mkdir(parents=True, exist_ok=True)
             _seed = WIKI_ROOT / _lv['seed'] if _lv.get('seed') else None
             if _seed and _seed.exists():
-                shutil.copy2(_seed, _img_dir / 'leyline.png')
-                _base['leylineImages'] = ['leyline.png']
+                save_chart_webp(_seed, _img_dir / 'leyline.webp')
+                _base['leylineImages'] = ['leyline.webp']
             _base['leyline'] = {
                 'name': _lv['name'],
                 'nameEn': _lv.get('nameEn', ''),
@@ -1810,6 +1902,14 @@ def main():
         'ref': ref,
         'img_root': img_root,
     })
+
+    # 6.82) 合并后的多形态 boss 再取一次一图流：图片是在合并前按「·岩 / ·末席」这种
+    #       分形态名取的，取不到；合并后本体名（若陀龙王 / 「公子」）才有一图流。
+    for e in entries:
+        if e.get('states') and not e.get('images'):
+            n = apply_v2_images(e, img_root / e['id'])
+            if n:
+                print(f'  一图流回填：{e["name"]} ← {n} 张')
 
     # 6.85) 上游源错版时的正版数据覆盖（女士一阶段：mxml 里其实是霜役人）
     apply_state_skill_overrides(entries, {
@@ -1915,8 +2015,8 @@ def main():
                 if _src.exists():
                     _dst_dir = WIKI_ROOT / 'public' / 'images' / 'enemies' / _parent['id']
                     _dst_dir.mkdir(parents=True, exist_ok=True)
-                    shutil.copy2(_src, _dst_dir / 'leyline.png')
-                    _parent['leylineImages'] = ['leyline.png']
+                    save_chart_webp(_src, _dst_dir / 'leyline.webp')
+                    _parent['leylineImages'] = ['leyline.webp']
             entries.remove(_child)
             print(f'  合并幽境变体：{_child["name"]} → {_parent["name"]}')
 

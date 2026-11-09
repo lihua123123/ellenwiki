@@ -230,15 +230,6 @@
     "atk": 14905,
     "multiplier": 5.6,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 11168065,
-    "atk": 15965,
-    "multiplier": 8.9,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -316,10 +307,10 @@
  },
  "id": "深邃摹结株-ii型",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

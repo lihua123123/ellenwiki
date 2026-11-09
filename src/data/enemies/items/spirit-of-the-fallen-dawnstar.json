@@ -163,15 +163,6 @@
     "atk": 10840,
     "multiplier": 3.4,
     "advantage": "Aggregate Adv."
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 7972064,
-    "atk": 11611,
-    "multiplier": 5.7,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -257,10 +248,10 @@
  },
  "id": "spirit-of-the-fallen-dawnstar",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

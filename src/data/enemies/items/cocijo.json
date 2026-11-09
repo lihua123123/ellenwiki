@@ -132,6 +132,9 @@
  ],
  "leyline": null,
  "id": "cocijo",
+ "images": [
+  "chart.webp"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物",

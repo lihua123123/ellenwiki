@@ -193,15 +193,6 @@
     "atk": 18971,
     "multiplier": 7.6,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 14042885,
-    "atk": 20319,
-    "multiplier": 11.4,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -288,10 +279,10 @@
  },
  "id": "emperor-of-fire-and-iron",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

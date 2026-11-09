@@ -173,15 +173,6 @@
     "atk": 21681,
     "multiplier": 3.5,
     "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 23114491,
-    "atk": 23222,
-    "multiplier": 9.1,
-    "advantage": ""
    }
   ],
   "resistances": [
@@ -271,10 +262,10 @@
  },
  "id": "ancient-ruins-constructor",
  "leylineImages": [
-  "leyline.png"
+  "leyline.webp"
  ],
  "images": [
-  "reference.png"
+  "chart.webp"
  ],
  "icon": "avatar.webp",
  "tags": [

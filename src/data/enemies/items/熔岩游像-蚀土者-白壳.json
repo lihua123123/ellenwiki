@@ -32,6 +32,9 @@
  "levelRows": [],
  "leyline": null,
  "id": "熔岩游像-蚀土者-白壳",
+ "images": [
+  "chart.webp"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"
