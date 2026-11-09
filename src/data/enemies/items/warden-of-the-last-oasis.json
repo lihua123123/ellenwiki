@@ -116,6 +116,7 @@
    "key": "p1",
    "label": "第一阶段",
    "name": "终末绿洲的守望者",
+   "nameEn": "Warden of the Last Oasis",
    "subtitle": "历经千年之「末日」 的进化生命",
    "tier": "Boss",
    "baseStats": {
@@ -224,6 +225,7 @@
    "key": "p3",
    "label": "第三阶段",
    "name": "起源绿洲的守望者",
+   "nameEn": "Warden of Oasis Prime",
    "subtitle": "经由「火种」而 得以复苏的生命",
    "tier": "Boss",
    "baseStats": {

@@ -120,6 +120,7 @@
    "key": "ben",
    "label": "本体",
    "name": "吞星之鲸",
+   "nameEn": "All-Devouring Narwhal",
    "subtitle": "无光星海彼端的访客",
    "tier": "Boss",
    "baseStats": {
@@ -231,6 +232,7 @@
    "key": "phantom",
    "label": "幻影",
    "name": "吞星之鲸·幻影",
+   "nameEn": "All-Devouring Narwhal- Phantom",
    "subtitle": "无光星海彼端的访客",
    "tier": "Boss",
    "baseStats": {

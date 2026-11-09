@@ -148,6 +148,7 @@
    "key": "p1",
    "label": "第一阶段",
    "name": "「女士」·第一阶段",
+   "nameEn": "「La Signora」",
    "subtitle": "愚人众执行官第八席",
    "tier": "Boss",
    "baseStats": {
@@ -281,13 +282,13 @@
    "elementMastery": 0,
    "multiplayerGroup": "103",
    "icon": "avatar.webp",
-   "defaultLevel": 90,
-   "nameEn": "「La Signora」"
+   "defaultLevel": 90
   },
   {
    "key": "p2",
    "label": "第二阶段",
    "name": "焚尽的炎之魔女",
+   "nameEn": "Crimson Witch of Embers",
    "subtitle": "罗莎琳·克鲁兹希卡·洛厄法特",
    "tier": "Boss",
    "baseStats": {
@@ -417,8 +418,7 @@
    "elementMastery": 0,
    "multiplayerGroup": "103",
    "icon": "state-p2-avatar.webp",
-   "defaultLevel": 90,
-   "nameEn": "Crimson Witch of Embers"
+   "defaultLevel": 90
   }
  ],
  "defaultState": "p1",

@@ -135,6 +135,7 @@
    "key": "yan",
    "label": "岩",
    "name": "若陀龙王·岩",
+   "nameEn": "Azhdaha",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {
@@ -262,6 +263,7 @@
    "key": "shui",
    "label": "水",
    "name": "若陀龙王·水",
+   "nameEn": "Azhdaha",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {
@@ -354,6 +356,7 @@
    "key": "bing",
    "label": "冰",
    "name": "若陀龙王·冰",
+   "nameEn": "Symphony Cryo Hypostasis",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {
@@ -469,6 +472,7 @@
    "key": "huo",
    "label": "火",
    "name": "若陀龙王·火",
+   "nameEn": "Azhdaha",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {
@@ -561,6 +565,7 @@
    "key": "lei",
    "label": "雷",
    "name": "若陀龙王·雷",
+   "nameEn": "Azhdaha",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {
@@ -676,6 +681,7 @@
    "key": "shuibing",
    "label": "水冰",
    "name": "若陀龙王·水冰",
+   "nameEn": "",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {
@@ -709,6 +715,7 @@
    "key": "shuilei",
    "label": "水雷",
    "name": "若陀龙王·水雷",
+   "nameEn": "",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {
@@ -742,6 +749,7 @@
    "key": "huobing",
    "label": "火冰",
    "name": "若陀龙王·火冰",
+   "nameEn": "",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {
@@ -775,6 +783,7 @@
    "key": "huolei",
    "label": "火雷",
    "name": "若陀龙王·火雷",
+   "nameEn": "",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {

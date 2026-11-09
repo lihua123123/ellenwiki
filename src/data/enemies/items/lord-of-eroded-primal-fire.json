@@ -136,6 +136,7 @@
    "key": "ground",
    "label": "地面",
    "name": "蚀灭的源焰之主·地面",
+   "nameEn": "Lord of Eroded Primal Fire",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {
@@ -267,6 +268,7 @@
    "key": "air",
    "label": "空中",
    "name": "蚀灭的源焰之主·空中",
+   "nameEn": "Lord of Eroded Primal Fire",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {

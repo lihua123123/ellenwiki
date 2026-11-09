@@ -146,6 +146,7 @@
    "key": "p1",
    "label": "第一阶段",
    "name": "左道的胜义尊·第一阶段",
+   "nameEn": "Exalted Master of the Heretical Path",
    "subtitle": "多托雷",
    "tier": "Boss",
    "baseStats": {
@@ -283,6 +284,7 @@
    "key": "p2",
    "label": "第二阶段",
    "name": "左道的胜义尊·融合",
+   "nameEn": "Exalted Master of the Heretical Path",
    "subtitle": "多托雷",
    "tier": "Boss",
    "baseStats": {

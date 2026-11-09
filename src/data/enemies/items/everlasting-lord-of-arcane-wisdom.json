@@ -148,6 +148,7 @@
    "key": "p1",
    "label": "第一阶段",
    "name": "七叶寂照秘密主·半身",
+   "nameEn": "Everlasting Lord of Arcane Wisdom",
    "subtitle": "「正机之神」",
    "tier": "Boss",
    "baseStats": {
@@ -291,6 +292,7 @@
    "key": "p2",
    "label": "第二阶段",
    "name": "七叶寂照秘密主·第二阶段",
+   "nameEn": "Everlasting Lord of Arcane Wisdom",
    "subtitle": "「正机之神」",
    "tier": "Boss",
    "baseStats": {

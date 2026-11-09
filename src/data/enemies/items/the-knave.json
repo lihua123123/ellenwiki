@@ -1,434 +1,435 @@
 {
-  "name": "「仆人」",
-  "nameEn": "The Knave",
-  "subtitle": "愚人众执行官第四席",
-  "category": "EnemyOfNote",
-  "categoryLabel": "值得铭记的强敌",
-  "tier": "Boss",
-  "defaultLevel": 90,
-  "baseStats": {
+ "name": "「仆人」",
+ "nameEn": "The Knave",
+ "subtitle": "愚人众执行官第四席",
+ "category": "EnemyOfNote",
+ "categoryLabel": "值得铭记的强敌",
+ "tier": "Boss",
+ "defaultLevel": 90,
+ "baseStats": {
+  "hp": {
+   "Value": 652.0319999999999,
+   "Curve": "HP_2"
+  },
+  "atk": {
+   "Value": 125.60000000000001,
+   "Curve": "ATK_2"
+  },
+  "def": {
+   "Value": 500,
+   "Curve": "DEF_1"
+  }
+ },
+ "resistances": [
+  {
+   "name": "正常",
+   "pyro": 70,
+   "hydro": 10,
+   "anemo": 10,
+   "electro": 10,
+   "dendro": 10,
+   "cryo": 10,
+   "geo": 10,
+   "physical": 10
+  }
+ ],
+ "elementMastery": 0,
+ "multiplayerGroup": "103",
+ "weight": 500,
+ "skills": [
+  {
+   "name": "赴身孤月之时",
+   "type": "猛攻",
+   "icon": "skill-1.webp",
+   "description": "仆人跃起，下落至玩家处并顺势收割，造成<c=#ff9999>100%</c>伤害；强化后还将在近处额外挥动血翼，造成<c=#ff4c4c>70%</c>伤害。"
+  },
+  {
+   "name": "烬中斩试之礼",
+   "type": "输出",
+   "icon": "skill-2.webp",
+   "description": "仆人进行至多5段的普通攻击，其依次造成<c=#ff9999>20%,20%,30%x3,50%,60%</c>伤害，强化前只施放2段，强化后施放至多5段。"
+  },
+  {
+   "name": "无尽晦色血潮",
+   "type": "妨害",
+   "icon": "skill-3.webp",
+   "description": "低于<c=#ffccbf>70%</c>生命值后，仆人将进入强化状态：大幅减少所受伤害，为角色施加`「生命之契」`并允许施放「血潮赤宴」等更多的技能；生命之契的大小基于仆人<c=#bfffff>10%</c>的攻击力，并且每2.5秒流失<c=#bfffff>(1.25%HP+200)</c>的生命值。"
+  },
+  {
+   "name": "厄雏困于樊笼",
+   "type": "爆发 血潮赤宴",
+   "icon": "skill-4.webp",
+   "description": "仆人打个响指，向全场施加`「生命之契」`，凝聚赤华，翻空振翼，展开万缕游丝，造成<c=#ff4c4c>70%</c>伤害，接着丝线交织迸裂，造成<c=#ff4c4c>100%</c>伤害。打断本技能施放则反噬仆人<c=#ffccbf>11.2%</c>的生命值。"
+  },
+  {
+   "name": "如鹰缧于血绁",
+   "type": "猛攻",
+   "icon": "skill-5.webp",
+   "description": "仆人进行3段攻击：两次使用旋转镰刀攻击，持续造成<c=#ffbfbf>50%</c>伤害，之后转身化为鹰爪擒抓，造成<c=#ff4c4c>70%</c>伤害。强化前只施放1段，强化后施放全部。"
+  },
+  {
+   "name": "喑哑于鸩毒中",
+   "type": "爆发",
+   "icon": "skill-6.webp",
+   "description": "仆人放下镰刀，从地面唤出2波成米字对的尖牙，两两咬合造成<c=#ff4c4c>50%,12.5%</c>伤害，之后4对尖牙再次冒出，进行绞杀，造成<c=#ff4c4c>100%</c>伤害。"
+  },
+  {
+   "name": "炉前诡行之礼",
+   "type": "位移",
+   "icon": "skill-7.webp",
+   "description": "仆人蓄势，立即突进进行收割，造成<c=#ff9999>70%</c>伤害；若角色命中后站着不动，则强化后还会回扯一段距离，造成<c=#ff9999>80%</c>伤害。"
+  },
+  {
+   "name": "猎鸟坠于悬梁",
+   "type": "猛攻",
+   "icon": "skill-8.webp",
+   "description": "仆人悬于红丝之上，唤出2个幻影，均造成<c=#ff4c4c>50%</c>伤害，之后后倾倒下顺势闪击，造成<c=#ff4c4c>70%+17.5%</c>伤害，并迅速后撤，造成<c=#ff4c4c>70%</c>伤害。"
+  },
+  {
+   "name": "稚雏庇于丝羽",
+   "type": "反击",
+   "icon": "skill-9.webp",
+   "description": "玩家在远处对仆人造成伤害时，会被仆人的厄月血火之翼阻挡，累计阻挡4次后会对玩家施加一段追加攻击，造成<c=#ff4c4c>70%</c>伤害。"
+  },
+  {
+   "name": "已于枝影消融",
+   "type": "突袭",
+   "icon": "skill-10.webp",
+   "description": "仆人左右横跳，立即向玩家收割，造成<c=#ff9999>80%</c>伤害，之后立即接上「如鹰缧于血绁」技能。"
+  },
+  {
+   "name": "如玄影般残闪",
+   "type": "闪避",
+   "icon": "skill-11.webp",
+   "description": "玩家在近处对仆人造成伤害时，仆人会尝试远离规避；若仆人处于未强化状态下，玩家在远处对仆人造成伤害时，仆人会左右闪现躲避伤害。"
+  },
+  {
+   "name": "笼中织丝之链",
+   "type": "位移",
+   "icon": "skill-12.webp",
+   "description": "仆人利用手中链绳位移，将出现在背对玩家更远的场地一侧。"
+  }
+ ],
+ "notes": [
+  {
+   "text": "「生命之契」",
+   "desc": "消除生命之契后将使队伍中前台角色获得「赤叶」效果，角色进行重击将产生「血汐冲击」造成真实伤害，并消耗「赤叶」效果，该效果至多叠加1层。\n「血汐冲击」造成基于仆人1.8%生命值的真实伤害。\n\n70%生命值以下进入强化状态期间，角色造成的伤害降低100%(增伤区-1)；9%锁血转入二阶段。"
+  }
+ ],
+ "shields": [],
+ "chargebar": [],
+ "energy": {
+  "element": "None",
+  "elementLabel": "无元素",
+  "raw": "EnergyGroup:N_0000",
+  "rows": [
+   {
+    "hp": 0,
+    "particle": 0,
+    "orb": 0
+   }
+  ]
+ },
+ "levelRows": [
+  {
+   "label": "周本-第一阶段",
+   "level": 90,
+   "hp": 1780814,
+   "atk": 19031,
+   "weight": 500,
+   "tenacity": 4000
+  }
+ ],
+ "leyline": null,
+ "id": "the-knave",
+ "images": [
+  "chart.webp",
+  "chart-2.webp"
+ ],
+ "icon": "avatar.webp",
+ "states": [
+  {
+   "key": "p1",
+   "label": "第一阶段",
+   "name": "「仆人」·第一阶段",
+   "nameEn": "The Knave",
+   "subtitle": "愚人众执行官第四席",
+   "tier": "Boss",
+   "baseStats": {
     "hp": {
-      "Value": 652.0319999999999,
-      "Curve": "HP_2"
+     "Value": 652.0319999999999,
+     "Curve": "HP_2"
     },
     "atk": {
-      "Value": 125.60000000000001,
-      "Curve": "ATK_2"
+     "Value": 125.60000000000001,
+     "Curve": "ATK_2"
     },
     "def": {
-      "Value": 500,
-      "Curve": "DEF_1"
+     "Value": 500,
+     "Curve": "DEF_1"
     }
-  },
-  "resistances": [
+   },
+   "levelRows": [
     {
-      "name": "正常",
-      "pyro": 70,
-      "hydro": 10,
-      "anemo": 10,
-      "electro": 10,
-      "dendro": 10,
-      "cryo": 10,
-      "geo": 10,
-      "physical": 10
+     "label": "周本-第一阶段",
+     "level": 90,
+     "hp": 1780814,
+     "atk": 19031,
+     "weight": 500,
+     "tenacity": 4000
     }
-  ],
-  "elementMastery": 0,
-  "multiplayerGroup": "103",
-  "weight": 500,
-  "skills": [
+   ],
+   "resistances": [
     {
-      "name": "赴身孤月之时",
-      "type": "猛攻",
-      "icon": "skill-1.webp",
-      "description": "仆人跃起，下落至玩家处并顺势收割，造成<c=#ff9999>100%</c>伤害；强化后还将在近处额外挥动血翼，造成<c=#ff4c4c>70%</c>伤害。"
-    },
-    {
-      "name": "烬中斩试之礼",
-      "type": "输出",
-      "icon": "skill-2.webp",
-      "description": "仆人进行至多5段的普通攻击，其依次造成<c=#ff9999>20%,20%,30%x3,50%,60%</c>伤害，强化前只施放2段，强化后施放至多5段。"
-    },
-    {
-      "name": "无尽晦色血潮",
-      "type": "妨害",
-      "icon": "skill-3.webp",
-      "description": "低于<c=#ffccbf>70%</c>生命值后，仆人将进入强化状态：大幅减少所受伤害，为角色施加`「生命之契」`并允许施放「血潮赤宴」等更多的技能；生命之契的大小基于仆人<c=#bfffff>10%</c>的攻击力，并且每2.5秒流失<c=#bfffff>(1.25%HP+200)</c>的生命值。"
-    },
-    {
-      "name": "厄雏困于樊笼",
-      "type": "爆发 血潮赤宴",
-      "icon": "skill-4.webp",
-      "description": "仆人打个响指，向全场施加`「生命之契」`，凝聚赤华，翻空振翼，展开万缕游丝，造成<c=#ff4c4c>70%</c>伤害，接着丝线交织迸裂，造成<c=#ff4c4c>100%</c>伤害。打断本技能施放则反噬仆人<c=#ffccbf>11.2%</c>的生命值。"
-    },
-    {
-      "name": "如鹰缧于血绁",
-      "type": "猛攻",
-      "icon": "skill-5.webp",
-      "description": "仆人进行3段攻击：两次使用旋转镰刀攻击，持续造成<c=#ffbfbf>50%</c>伤害，之后转身化为鹰爪擒抓，造成<c=#ff4c4c>70%</c>伤害。强化前只施放1段，强化后施放全部。"
-    },
-    {
-      "name": "喑哑于鸩毒中",
-      "type": "爆发",
-      "icon": "skill-6.webp",
-      "description": "仆人放下镰刀，从地面唤出2波成米字对的尖牙，两两咬合造成<c=#ff4c4c>50%,12.5%</c>伤害，之后4对尖牙再次冒出，进行绞杀，造成<c=#ff4c4c>100%</c>伤害。"
-    },
-    {
-      "name": "炉前诡行之礼",
-      "type": "位移",
-      "icon": "skill-7.webp",
-      "description": "仆人蓄势，立即突进进行收割，造成<c=#ff9999>70%</c>伤害；若角色命中后站着不动，则强化后还会回扯一段距离，造成<c=#ff9999>80%</c>伤害。"
-    },
-    {
-      "name": "猎鸟坠于悬梁",
-      "type": "猛攻",
-      "icon": "skill-8.webp",
-      "description": "仆人悬于红丝之上，唤出2个幻影，均造成<c=#ff4c4c>50%</c>伤害，之后后倾倒下顺势闪击，造成<c=#ff4c4c>70%+17.5%</c>伤害，并迅速后撤，造成<c=#ff4c4c>70%</c>伤害。"
-    },
-    {
-      "name": "稚雏庇于丝羽",
-      "type": "反击",
-      "icon": "skill-9.webp",
-      "description": "玩家在远处对仆人造成伤害时，会被仆人的厄月血火之翼阻挡，累计阻挡4次后会对玩家施加一段追加攻击，造成<c=#ff4c4c>70%</c>伤害。"
-    },
-    {
-      "name": "已于枝影消融",
-      "type": "突袭",
-      "icon": "skill-10.webp",
-      "description": "仆人左右横跳，立即向玩家收割，造成<c=#ff9999>80%</c>伤害，之后立即接上「如鹰缧于血绁」技能。"
-    },
-    {
-      "name": "如玄影般残闪",
-      "type": "闪避",
-      "icon": "skill-11.webp",
-      "description": "玩家在近处对仆人造成伤害时，仆人会尝试远离规避；若仆人处于未强化状态下，玩家在远处对仆人造成伤害时，仆人会左右闪现躲避伤害。"
-    },
-    {
-      "name": "笼中织丝之链",
-      "type": "位移",
-      "icon": "skill-12.webp",
-      "description": "仆人利用手中链绳位移，将出现在背对玩家更远的场地一侧。"
+     "name": "正常",
+     "pyro": 70,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 10,
+     "physical": 10
     }
-  ],
-  "notes": [
+   ],
+   "skills": [
     {
-      "text": "「生命之契」",
-      "desc": "消除生命之契后将使队伍中前台角色获得「赤叶」效果，角色进行重击将产生「血汐冲击」造成真实伤害，并消耗「赤叶」效果，该效果至多叠加1层。\n「血汐冲击」造成基于仆人1.8%生命值的真实伤害。\n\n70%生命值以下进入强化状态期间，角色造成的伤害降低100%(增伤区-1)；9%锁血转入二阶段。"
+     "name": "赴身孤月之时",
+     "type": "猛攻",
+     "icon": "skill-1.webp",
+     "description": "仆人跃起，下落至玩家处并顺势收割，造成<c=#ff9999>100%</c>伤害；强化后还将在近处额外挥动血翼，造成<c=#ff4c4c>70%</c>伤害。"
+    },
+    {
+     "name": "烬中斩试之礼",
+     "type": "输出",
+     "icon": "skill-2.webp",
+     "description": "仆人进行至多5段的普通攻击，其依次造成<c=#ff9999>20%,20%,30%x3,50%,60%</c>伤害，强化前只施放2段，强化后施放至多5段。"
+    },
+    {
+     "name": "无尽晦色血潮",
+     "type": "妨害",
+     "icon": "skill-3.webp",
+     "description": "低于<c=#ffccbf>70%</c>生命值后，仆人将进入强化状态：大幅减少所受伤害，为角色施加`「生命之契」`并允许施放「血潮赤宴」等更多的技能；生命之契的大小基于仆人<c=#bfffff>10%</c>的攻击力，并且每2.5秒流失<c=#bfffff>(1.25%HP+200)</c>的生命值。"
+    },
+    {
+     "name": "厄雏困于樊笼",
+     "type": "爆发 血潮赤宴",
+     "icon": "skill-4.webp",
+     "description": "仆人打个响指，向全场施加`「生命之契」`，凝聚赤华，翻空振翼，展开万缕游丝，造成<c=#ff4c4c>70%</c>伤害，接着丝线交织迸裂，造成<c=#ff4c4c>100%</c>伤害。打断本技能施放则反噬仆人<c=#ffccbf>11.2%</c>的生命值。"
+    },
+    {
+     "name": "如鹰缧于血绁",
+     "type": "猛攻",
+     "icon": "skill-5.webp",
+     "description": "仆人进行3段攻击：两次使用旋转镰刀攻击，持续造成<c=#ffbfbf>50%</c>伤害，之后转身化为鹰爪擒抓，造成<c=#ff4c4c>70%</c>伤害。强化前只施放1段，强化后施放全部。"
+    },
+    {
+     "name": "喑哑于鸩毒中",
+     "type": "爆发",
+     "icon": "skill-6.webp",
+     "description": "仆人放下镰刀，从地面唤出2波成米字对的尖牙，两两咬合造成<c=#ff4c4c>50%,12.5%</c>伤害，之后4对尖牙再次冒出，进行绞杀，造成<c=#ff4c4c>100%</c>伤害。"
+    },
+    {
+     "name": "炉前诡行之礼",
+     "type": "位移",
+     "icon": "skill-7.webp",
+     "description": "仆人蓄势，立即突进进行收割，造成<c=#ff9999>70%</c>伤害；若角色命中后站着不动，则强化后还会回扯一段距离，造成<c=#ff9999>80%</c>伤害。"
+    },
+    {
+     "name": "猎鸟坠于悬梁",
+     "type": "猛攻",
+     "icon": "skill-8.webp",
+     "description": "仆人悬于红丝之上，唤出2个幻影，均造成<c=#ff4c4c>50%</c>伤害，之后后倾倒下顺势闪击，造成<c=#ff4c4c>70%+17.5%</c>伤害，并迅速后撤，造成<c=#ff4c4c>70%</c>伤害。"
+    },
+    {
+     "name": "稚雏庇于丝羽",
+     "type": "反击",
+     "icon": "skill-9.webp",
+     "description": "玩家在远处对仆人造成伤害时，会被仆人的厄月血火之翼阻挡，累计阻挡4次后会对玩家施加一段追加攻击，造成<c=#ff4c4c>70%</c>伤害。"
+    },
+    {
+     "name": "已于枝影消融",
+     "type": "突袭",
+     "icon": "skill-10.webp",
+     "description": "仆人左右横跳，立即向玩家收割，造成<c=#ff9999>80%</c>伤害，之后立即接上「如鹰缧于血绁」技能。"
+    },
+    {
+     "name": "如玄影般残闪",
+     "type": "闪避",
+     "icon": "skill-11.webp",
+     "description": "玩家在近处对仆人造成伤害时，仆人会尝试远离规避；若仆人处于未强化状态下，玩家在远处对仆人造成伤害时，仆人会左右闪现躲避伤害。"
+    },
+    {
+     "name": "笼中织丝之链",
+     "type": "位移",
+     "icon": "skill-12.webp",
+     "description": "仆人利用手中链绳位移，将出现在背对玩家更远的场地一侧。"
     }
-  ],
-  "shields": [],
-  "chargebar": [],
-  "energy": {
+   ],
+   "notes": [
+    {
+     "text": "「生命之契」",
+     "desc": "消除生命之契后将使队伍中前台角色获得「赤叶」效果，角色进行重击将产生「血汐冲击」造成真实伤害，并消耗「赤叶」效果，该效果至多叠加1层。\n「血汐冲击」造成基于仆人1.8%生命值的真实伤害。\n\n70%生命值以下进入强化状态期间，角色造成的伤害降低100%(增伤区-1)；9%锁血转入二阶段。"
+    }
+   ],
+   "shields": [],
+   "chargebar": [],
+   "energy": {
     "element": "None",
     "elementLabel": "无元素",
     "raw": "EnergyGroup:N_0000",
     "rows": [
-      {
-        "hp": 0,
-        "particle": 0,
-        "orb": 0
-      }
+     {
+      "hp": 0,
+      "particle": 0,
+      "orb": 0
+     }
     ]
+   },
+   "weight": 500,
+   "elementMastery": 0,
+   "multiplayerGroup": "103",
+   "icon": "avatar.webp",
+   "defaultLevel": 90
   },
-  "levelRows": [
-    {
-      "label": "周本-第一阶段",
-      "level": 90,
-      "hp": 1780814,
-      "atk": 19031,
-      "weight": 500,
-      "tenacity": 4000
+  {
+   "key": "p2",
+   "label": "第二阶段",
+   "name": "两界之火的遗烬",
+   "nameEn": "Cinder of Two Worlds’ Flames",
+   "subtitle": "",
+   "tier": "Boss",
+   "baseStats": {
+    "hp": {
+     "Value": 366.768,
+     "Curve": "HP_2"
+    },
+    "atk": {
+     "Value": 175.84,
+     "Curve": "ATK_2"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
     }
-  ],
-  "leyline": null,
-  "id": "the-knave",
-  "images": [
-    "chart.webp",
-    "chart-2.webp"
-  ],
-  "icon": "avatar.webp",
-  "states": [
+   },
+   "levelRows": [
     {
-      "key": "p1",
-      "label": "第一阶段",
-      "name": "「仆人」·第一阶段",
-      "subtitle": "愚人众执行官第四席",
-      "tier": "Boss",
-      "baseStats": {
-        "hp": {
-          "Value": 652.0319999999999,
-          "Curve": "HP_2"
-        },
-        "atk": {
-          "Value": 125.60000000000001,
-          "Curve": "ATK_2"
-        },
-        "def": {
-          "Value": 500,
-          "Curve": "DEF_1"
-        }
-      },
-      "levelRows": [
-        {
-          "label": "周本-第一阶段",
-          "level": 90,
-          "hp": 1780814,
-          "atk": 19031,
-          "weight": 500,
-          "tenacity": 4000
-        }
-      ],
-      "resistances": [
-        {
-          "name": "正常",
-          "pyro": 70,
-          "hydro": 10,
-          "anemo": 10,
-          "electro": 10,
-          "dendro": 10,
-          "cryo": 10,
-          "geo": 10,
-          "physical": 10
-        }
-      ],
-      "skills": [
-        {
-          "name": "赴身孤月之时",
-          "type": "猛攻",
-          "icon": "skill-1.webp",
-          "description": "仆人跃起，下落至玩家处并顺势收割，造成<c=#ff9999>100%</c>伤害；强化后还将在近处额外挥动血翼，造成<c=#ff4c4c>70%</c>伤害。"
-        },
-        {
-          "name": "烬中斩试之礼",
-          "type": "输出",
-          "icon": "skill-2.webp",
-          "description": "仆人进行至多5段的普通攻击，其依次造成<c=#ff9999>20%,20%,30%x3,50%,60%</c>伤害，强化前只施放2段，强化后施放至多5段。"
-        },
-        {
-          "name": "无尽晦色血潮",
-          "type": "妨害",
-          "icon": "skill-3.webp",
-          "description": "低于<c=#ffccbf>70%</c>生命值后，仆人将进入强化状态：大幅减少所受伤害，为角色施加`「生命之契」`并允许施放「血潮赤宴」等更多的技能；生命之契的大小基于仆人<c=#bfffff>10%</c>的攻击力，并且每2.5秒流失<c=#bfffff>(1.25%HP+200)</c>的生命值。"
-        },
-        {
-          "name": "厄雏困于樊笼",
-          "type": "爆发 血潮赤宴",
-          "icon": "skill-4.webp",
-          "description": "仆人打个响指，向全场施加`「生命之契」`，凝聚赤华，翻空振翼，展开万缕游丝，造成<c=#ff4c4c>70%</c>伤害，接着丝线交织迸裂，造成<c=#ff4c4c>100%</c>伤害。打断本技能施放则反噬仆人<c=#ffccbf>11.2%</c>的生命值。"
-        },
-        {
-          "name": "如鹰缧于血绁",
-          "type": "猛攻",
-          "icon": "skill-5.webp",
-          "description": "仆人进行3段攻击：两次使用旋转镰刀攻击，持续造成<c=#ffbfbf>50%</c>伤害，之后转身化为鹰爪擒抓，造成<c=#ff4c4c>70%</c>伤害。强化前只施放1段，强化后施放全部。"
-        },
-        {
-          "name": "喑哑于鸩毒中",
-          "type": "爆发",
-          "icon": "skill-6.webp",
-          "description": "仆人放下镰刀，从地面唤出2波成米字对的尖牙，两两咬合造成<c=#ff4c4c>50%,12.5%</c>伤害，之后4对尖牙再次冒出，进行绞杀，造成<c=#ff4c4c>100%</c>伤害。"
-        },
-        {
-          "name": "炉前诡行之礼",
-          "type": "位移",
-          "icon": "skill-7.webp",
-          "description": "仆人蓄势，立即突进进行收割，造成<c=#ff9999>70%</c>伤害；若角色命中后站着不动，则强化后还会回扯一段距离，造成<c=#ff9999>80%</c>伤害。"
-        },
-        {
-          "name": "猎鸟坠于悬梁",
-          "type": "猛攻",
-          "icon": "skill-8.webp",
-          "description": "仆人悬于红丝之上，唤出2个幻影，均造成<c=#ff4c4c>50%</c>伤害，之后后倾倒下顺势闪击，造成<c=#ff4c4c>70%+17.5%</c>伤害，并迅速后撤，造成<c=#ff4c4c>70%</c>伤害。"
-        },
-        {
-          "name": "稚雏庇于丝羽",
-          "type": "反击",
-          "icon": "skill-9.webp",
-          "description": "玩家在远处对仆人造成伤害时，会被仆人的厄月血火之翼阻挡，累计阻挡4次后会对玩家施加一段追加攻击，造成<c=#ff4c4c>70%</c>伤害。"
-        },
-        {
-          "name": "已于枝影消融",
-          "type": "突袭",
-          "icon": "skill-10.webp",
-          "description": "仆人左右横跳，立即向玩家收割，造成<c=#ff9999>80%</c>伤害，之后立即接上「如鹰缧于血绁」技能。"
-        },
-        {
-          "name": "如玄影般残闪",
-          "type": "闪避",
-          "icon": "skill-11.webp",
-          "description": "玩家在近处对仆人造成伤害时，仆人会尝试远离规避；若仆人处于未强化状态下，玩家在远处对仆人造成伤害时，仆人会左右闪现躲避伤害。"
-        },
-        {
-          "name": "笼中织丝之链",
-          "type": "位移",
-          "icon": "skill-12.webp",
-          "description": "仆人利用手中链绳位移，将出现在背对玩家更远的场地一侧。"
-        }
-      ],
-      "notes": [
-        {
-          "text": "「生命之契」",
-          "desc": "消除生命之契后将使队伍中前台角色获得「赤叶」效果，角色进行重击将产生「血汐冲击」造成真实伤害，并消耗「赤叶」效果，该效果至多叠加1层。\n「血汐冲击」造成基于仆人1.8%生命值的真实伤害。\n\n70%生命值以下进入强化状态期间，角色造成的伤害降低100%(增伤区-1)；9%锁血转入二阶段。"
-        }
-      ],
-      "shields": [],
-      "chargebar": [],
-      "energy": {
-        "element": "None",
-        "elementLabel": "无元素",
-        "raw": "EnergyGroup:N_0000",
-        "rows": [
-          {
-            "hp": 0,
-            "particle": 0,
-            "orb": 0
-          }
-        ]
-      },
-      "weight": 500,
-      "elementMastery": 0,
-      "multiplayerGroup": "103",
-      "icon": "avatar.webp",
-      "defaultLevel": 90
+     "label": "周本-第二阶段",
+     "level": 90,
+     "hp": 1001707,
+     "atk": 26644,
+     "weight": 300,
+     "tenacity": 4000
+    }
+   ],
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 70,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 10,
+     "geo": 10,
+     "physical": 10
+    }
+   ],
+   "skills": [
+    {
+     "name": "薄暝殄瘁之刻",
+     "type": "突袭",
+     "icon": "state-p2-skill-1.webp",
+     "description": "入战后，仆人立即从高处跃下，下落至玩家处，造成<c=#ff4c4c>100%</c>伤害，并秀出她的双镰刀。"
     },
     {
-      "key": "p2",
-      "label": "第二阶段",
-      "name": "两界之火的遗烬",
-      "subtitle": "",
-      "tier": "Boss",
-      "baseStats": {
-        "hp": {
-          "Value": 366.768,
-          "Curve": "HP_2"
-        },
-        "atk": {
-          "Value": 175.84,
-          "Curve": "ATK_2"
-        },
-        "def": {
-          "Value": 500,
-          "Curve": "DEF_1"
-        }
-      },
-      "levelRows": [
-        {
-          "label": "周本-第二阶段",
-          "level": 90,
-          "hp": 1001707,
-          "atk": 26644,
-          "weight": 300,
-          "tenacity": 4000
-        }
-      ],
-      "resistances": [
-        {
-          "name": "正常",
-          "pyro": 70,
-          "hydro": 10,
-          "anemo": 10,
-          "electro": 10,
-          "dendro": 10,
-          "cryo": 10,
-          "geo": 10,
-          "physical": 10
-        }
-      ],
-      "skills": [
-        {
-          "name": "薄暝殄瘁之刻",
-          "type": "突袭",
-          "icon": "state-p2-skill-1.webp",
-          "description": "入战后，仆人立即从高处跃下，下落至玩家处，造成<c=#ff4c4c>100%</c>伤害，并秀出她的双镰刀。"
-        },
-        {
-          "name": "朱丝织缀之礼",
-          "type": "位移",
-          "icon": "state-p2-skill-2.webp",
-          "description": "仆人向前扔出镰刀，造成<c=#ff9999>70%</c>伤害，接着仆人顺势利用链条冲出，造成<c=#ff9999>70%+50%</c>伤害，之后接上数刀挥舞。"
-        },
-        {
-          "name": "缁乌将迎厄月",
-          "type": "妨害",
-          "icon": "state-p2-skill-3.webp",
-          "description": "仆人施放 「血潮赤宴」类技能之前，会打响指，为角色施加`「生命之契」`并进入 「血潮赤宴」蓄力状态。打断蓄力则反噬仆人<c=#ffccbf>11.2%</c>的生命值。生命之契的大小基于仆人<c=#bfffff>10%</c>的攻击力，并且每2.5秒流失<c=#bfffff>(1.25%HP+200)</c>的生命值。"
-        },
-        {
-          "name": "真劫无复之宴",
-          "type": "爆发",
-          "icon": "state-p2-skill-4.webp",
-          "description": "仆人升空，在空中展出缬绯光翼，两侧各发射9枚星弹，均造成<c=#ff4c4c>15%</c>伤害；光翼化为6枚猩红弹嵌入地面，片刻后喷发，均造成<c=#ff4c4c>200%</c>伤害，同时仆人立即落地下落至玩家处，造成<c=#ff4c4c>100%</c>伤害。"
-        },
-        {
-          "name": "永驻凄苦之林",
-          "type": "爆发 血潮赤宴",
-          "icon": "",
-          "description": "仆人掷手地面，唤出深血木丛，造成<c=#ff4c4c>75%</c>伤害，之后扩散至外圈，也造成<c=#ff4c4c>75%</c>伤害，最后仆人回收一掷，造成<c=#ff4c4c>100%</c>伤害。"
-        },
-        {
-          "name": "否决命运之恸",
-          "type": "爆发 血潮赤宴",
-          "icon": "",
-          "description": "仆人用双镰刀划出X，展开绞割领域，造成<c=#ff4c4c>50%</c>伤害，领域内持续进行绞割，持续造成<c=#ff4c4c>20%,10%</c>伤害，最后领域爆裂，造成<c=#ff4c4c>40%+100%</c>伤害。"
-        },
-        {
-          "name": "月染狱中翩跹",
-          "type": "输出",
-          "icon": "state-p2-skill-7.webp",
-          "description": "仆人进行至多5段的普通攻击，其依次造成<c=#ff9999>30%,40%,40%,40%x2,80%</c>伤害，其中第一段会丢出旋转火轮，将持续造成<c=#ff9999>12.5%</c>伤害。"
-        },
-        {
-          "name": "指尖迷离殷影",
-          "type": "猛攻",
-          "icon": "state-p2-skill-8.webp",
-          "description": "仆人展开外骨骼，发动血火之光，造成<c=#ff4c4c>100%</c>伤害，可以连续施放至多3次。"
-        },
-        {
-          "name": "烈酒覆杯罗裳",
-          "type": "防御",
-          "icon": "state-p2-skill-9.webp",
-          "description": "若玩家处于仆人侧后方，则仆人立即进行转身斩，造成<c=#ff9999>50%x2</c>伤害，然后追加施放「月染狱中翩跹」或「朱丝织缀之礼」。"
-        },
-        {
-          "name": "阖血亘久之狱",
-          "type": "位移",
-          "icon": "state-p2-skill-10.webp",
-          "description": "仆人进行大跳位移，将出现在背对玩家更远的场地一侧。"
-        }
-      ],
-      "notes": [
-        {
-          "text": "「生命之契」",
-          "desc": "消除生命之契后将使队伍中前台角色获得「赤叶」效果，角色进行重击将产生「血汐冲击」造成真实伤害，并消耗「赤叶」效果，该效果至多叠加1层。\n「血汐冲击」造成基于仆人1.8%生命值的真实伤害。"
-        }
-      ],
-      "shields": [],
-      "chargebar": [],
-      "energy": {
-        "element": "None",
-        "elementLabel": "无元素",
-        "raw": "EnergyGroup:N_0000",
-        "rows": [
-          {
-            "hp": 0,
-            "particle": 0,
-            "orb": 0
-          }
-        ]
-      },
-      "weight": 300,
-      "elementMastery": 0,
-      "multiplayerGroup": "103",
-      "icon": "state-p2-avatar.webp",
-      "defaultLevel": 90,
-      "nameEn": "Cinder of Two Worlds’ Flames"
+     "name": "朱丝织缀之礼",
+     "type": "位移",
+     "icon": "state-p2-skill-2.webp",
+     "description": "仆人向前扔出镰刀，造成<c=#ff9999>70%</c>伤害，接着仆人顺势利用链条冲出，造成<c=#ff9999>70%+50%</c>伤害，之后接上数刀挥舞。"
+    },
+    {
+     "name": "缁乌将迎厄月",
+     "type": "妨害",
+     "icon": "state-p2-skill-3.webp",
+     "description": "仆人施放 「血潮赤宴」类技能之前，会打响指，为角色施加`「生命之契」`并进入 「血潮赤宴」蓄力状态。打断蓄力则反噬仆人<c=#ffccbf>11.2%</c>的生命值。生命之契的大小基于仆人<c=#bfffff>10%</c>的攻击力，并且每2.5秒流失<c=#bfffff>(1.25%HP+200)</c>的生命值。"
+    },
+    {
+     "name": "真劫无复之宴",
+     "type": "爆发",
+     "icon": "state-p2-skill-4.webp",
+     "description": "仆人升空，在空中展出缬绯光翼，两侧各发射9枚星弹，均造成<c=#ff4c4c>15%</c>伤害；光翼化为6枚猩红弹嵌入地面，片刻后喷发，均造成<c=#ff4c4c>200%</c>伤害，同时仆人立即落地下落至玩家处，造成<c=#ff4c4c>100%</c>伤害。"
+    },
+    {
+     "name": "永驻凄苦之林",
+     "type": "爆发 血潮赤宴",
+     "icon": "",
+     "description": "仆人掷手地面，唤出深血木丛，造成<c=#ff4c4c>75%</c>伤害，之后扩散至外圈，也造成<c=#ff4c4c>75%</c>伤害，最后仆人回收一掷，造成<c=#ff4c4c>100%</c>伤害。"
+    },
+    {
+     "name": "否决命运之恸",
+     "type": "爆发 血潮赤宴",
+     "icon": "",
+     "description": "仆人用双镰刀划出X，展开绞割领域，造成<c=#ff4c4c>50%</c>伤害，领域内持续进行绞割，持续造成<c=#ff4c4c>20%,10%</c>伤害，最后领域爆裂，造成<c=#ff4c4c>40%+100%</c>伤害。"
+    },
+    {
+     "name": "月染狱中翩跹",
+     "type": "输出",
+     "icon": "state-p2-skill-7.webp",
+     "description": "仆人进行至多5段的普通攻击，其依次造成<c=#ff9999>30%,40%,40%,40%x2,80%</c>伤害，其中第一段会丢出旋转火轮，将持续造成<c=#ff9999>12.5%</c>伤害。"
+    },
+    {
+     "name": "指尖迷离殷影",
+     "type": "猛攻",
+     "icon": "state-p2-skill-8.webp",
+     "description": "仆人展开外骨骼，发动血火之光，造成<c=#ff4c4c>100%</c>伤害，可以连续施放至多3次。"
+    },
+    {
+     "name": "烈酒覆杯罗裳",
+     "type": "防御",
+     "icon": "state-p2-skill-9.webp",
+     "description": "若玩家处于仆人侧后方，则仆人立即进行转身斩，造成<c=#ff9999>50%x2</c>伤害，然后追加施放「月染狱中翩跹」或「朱丝织缀之礼」。"
+    },
+    {
+     "name": "阖血亘久之狱",
+     "type": "位移",
+     "icon": "state-p2-skill-10.webp",
+     "description": "仆人进行大跳位移，将出现在背对玩家更远的场地一侧。"
     }
-  ],
-  "defaultState": "p1",
-  "aliases": [
-    "两界之火的遗烬"
-  ],
-  "tags": [
-    "值得铭记的强敌"
-  ]
+   ],
+   "notes": [
+    {
+     "text": "「生命之契」",
+     "desc": "消除生命之契后将使队伍中前台角色获得「赤叶」效果，角色进行重击将产生「血汐冲击」造成真实伤害，并消耗「赤叶」效果，该效果至多叠加1层。\n「血汐冲击」造成基于仆人1.8%生命值的真实伤害。"
+    }
+   ],
+   "shields": [],
+   "chargebar": [],
+   "energy": {
+    "element": "None",
+    "elementLabel": "无元素",
+    "raw": "EnergyGroup:N_0000",
+    "rows": [
+     {
+      "hp": 0,
+      "particle": 0,
+      "orb": 0
+     }
+    ]
+   },
+   "weight": 300,
+   "elementMastery": 0,
+   "multiplayerGroup": "103",
+   "icon": "state-p2-avatar.webp",
+   "defaultLevel": 90
+  }
+ ],
+ "defaultState": "p1",
+ "aliases": [
+  "两界之火的遗烬"
+ ],
+ "tags": [
+  "值得铭记的强敌"
+ ]
 }

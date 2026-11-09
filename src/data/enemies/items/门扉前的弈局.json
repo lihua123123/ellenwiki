@@ -181,6 +181,7 @@
    "key": "ben",
    "label": "本体",
    "name": "门扉前的弈局",
+   "nameEn": "",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {
@@ -353,6 +354,7 @@
    "key": "wangqi",
    "label": "王棋",
    "name": "「王棋」",
+   "nameEn": "",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {
@@ -469,6 +471,7 @@
    "key": "houqi",
    "label": "后棋",
    "name": "「后棋」",
+   "nameEn": "",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {
@@ -585,6 +588,7 @@
    "key": "shenghua",
    "label": "升华之后",
    "name": "升华之后",
+   "nameEn": "",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {
@@ -704,6 +708,7 @@
    "key": "shengyang",
    "label": "升扬之王",
    "name": "升扬之王",
+   "nameEn": "",
    "subtitle": "",
    "tier": "Boss",
    "baseStats": {

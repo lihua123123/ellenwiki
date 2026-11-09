@@ -363,6 +363,26 @@ def find_avatar(asset_dir):
     return best[0] if best else None
 
 
+def find_state_avatar(asset_dir):
+    """阶段头像：图表页里 200~320 见方的角色图（女士2 的 image_24、仆人2 的 image_45）。
+
+    多阶段的 base avatar 是 catalog 母体那张，直接拷过去两个阶段会长得一模一样；
+    页面自己的方形图才是该阶段的真实头像。
+    """
+    if asset_dir is None:
+        return None
+    best = None
+    for p in sorted(asset_dir.glob('*.png')):
+        size = asset_size(asset_dir, p.name)
+        if not size:
+            continue
+        w, h = size
+        if 200 <= w <= 320 and 200 <= h <= 320 and abs(w / h - 1) <= 0.12:
+            if best is None or w * h > best[1]:
+                best = (p, w * h)
+    return best[0] if best else None
+
+
 def find_portrait(asset_dir):
     """幽境立绘：500~900 宽、长宽比 0.9~1.4 的大图。"""
     best = None
@@ -1216,9 +1236,15 @@ def merge_state_groups(entries, ctx):
                 entry, sp['key'], sp['label'], prefix, grp['base'],
                 content_entry=page if (page and src) else None)
             snaps.append(snap)
+            # page 是临时条目，没有 fxg 字段；要从 sources 里取该页的源（含 fxg 路径）。
+            # 没有 page 的阶段（公子·末席 这类）退回 src 条目自己的来源页（_source_name）。
+            avatar_page = sp.get('page') or (entry.get('_source_name') if entry else None)
+            page_source = ctx['sources'].get(avatar_page) if avatar_page else None
+            page_asset_dir = asset_dir_for(page_source.fxg) if page_source and page_source.fxg else None
             metas.append({'entry': entry, 'snap': snap, 'primary': primary,
                           'avatar_id': entry['id'], 'skill_id': (page or entry)['id'],
-                          'page': sp.get('page'), 'src': sp.get('src')})
+                          'page': sp.get('page'), 'src': sp.get('src'),
+                          'state_avatar': find_state_avatar(page_asset_dir)})
             if primary:
                 host = entry
         if host is None:
@@ -1254,7 +1280,11 @@ def merge_state_groups(entries, ctx):
         for meta in sorted(metas, key=lambda m: m['primary']):
             prefix = '' if meta['primary'] else f'state-{meta["snap"]["key"]}-'
             av_src = img_root / meta['avatar_id'] / 'avatar.webp'
-            if av_src.exists():
+            state_av = meta.get('state_avatar')
+            if state_av is not None and not meta['primary']:
+                save_webp(state_av, dest_dir / f'{prefix}avatar.webp')
+                meta['snap']['icon'] = f'{prefix}avatar.webp'
+            elif av_src.exists():
                 av_dst = dest_dir / f'{prefix}avatar.webp'
                 if av_src.resolve() != av_dst.resolve():
                     shutil.copyfile(av_src, av_dst)

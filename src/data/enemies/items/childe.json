@@ -136,6 +136,7 @@
    "key": "p1",
    "label": "第一阶段",
    "name": "「公子」·末席",
+   "nameEn": "「Childe」",
    "subtitle": "愚人众执行官末席",
    "tier": "Boss",
    "baseStats": {
@@ -267,6 +268,7 @@
    "key": "p2",
    "label": "第二阶段",
    "name": "「公子」·邪眼解放",
+   "nameEn": "「Childe」",
    "subtitle": "邪眼解放",
    "tier": "Boss",
    "baseStats": {
@@ -392,6 +394,7 @@
    "key": "p3",
    "label": "第三阶段",
    "name": "「公子」·第三阶段",
+   "nameEn": "「Childe」",
    "subtitle": "别看了这里没有",
    "tier": "Boss",
    "baseStats": {

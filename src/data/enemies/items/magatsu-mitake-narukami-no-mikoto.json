@@ -141,6 +141,7 @@
    "key": "p1",
    "label": "第一阶段",
    "name": "祸津御建鸣神命·第一阶段",
+   "nameEn": "Magatsu Mitake Narukami no Mikoto",
    "subtitle": "雷电之稻妻殿",
    "tier": "",
    "baseStats": {
@@ -272,6 +273,7 @@
    "key": "p2",
    "label": "第二阶段",
    "name": "祸津御建鸣神命·第二阶段",
+   "nameEn": "Magatsu Mitake Narukami no Mikoto",
    "subtitle": "雷电之稻妻殿",
    "tier": "",
    "baseStats": {
@@ -407,6 +409,7 @@
    "key": "p3",
    "label": "第三阶段",
    "name": "祸津御建鸣神命·第三阶段",
+   "nameEn": "Magatsu Mitake Narukami no Mikoto",
    "subtitle": "雷电之稻妻殿",
    "tier": "Boss",
    "baseStats": {
