@@ -8,12 +8,12 @@
     {
       "key": "ElementalLifeforms",
       "label": "元素生命",
-      "count": 56
+      "count": 57
     },
     {
       "key": "MagicalBeasts",
       "label": "异种魔兽",
-      "count": 152
+      "count": 154
     },
     {
       "key": "Abyss",
@@ -23,7 +23,7 @@
     {
       "key": "Automatons",
       "label": "自律机关",
-      "count": 53
+      "count": 52
     },
     {
       "key": "OtherHumanFactions",
@@ -33,7 +33,7 @@
     {
       "key": "Fatui",
       "label": "愚人众",
-      "count": 37
+      "count": 54
     },
     {
       "key": "EnemyOfNote",
@@ -43,17 +43,17 @@
     {
       "key": "Legends",
       "label": "地方传奇",
-      "count": 58
+      "count": 61
     },
     {
       "key": "StygianOnslaught",
       "label": "幽境危战",
-      "count": 1
+      "count": 29
     },
     {
       "key": "NonCategorized",
       "label": "无分类",
-      "count": 81
+      "count": 83
     },
     {
       "key": "Others",
@@ -68,7 +68,7 @@
     {
       "key": "Tps",
       "label": "第三人称射击（TPS）",
-      "count": 11
+      "count": 19
     }
   ],
   "enemies": [
@@ -625,7 +625,7 @@
     {
       "id": "女士",
       "name": "「女士」",
-      "nameEn": "Frost Operative",
+      "nameEn": "「La Signora」",
       "category": "EnemyOfNote",
       "categoryLabel": "值得铭记的强敌",
       "tier": "Boss",
@@ -3538,24 +3538,6 @@
       "stateCount": 0
     },
     {
-      "id": "crab-tsar",
-      "name": "历经百战的岩居蟹",
-      "nameEn": "Crab Tsar",
-      "category": "Animals",
-      "categoryLabel": "动物",
-      "tier": "Legend",
-      "icon": "avatar.webp",
-      "hasLeyline": true,
-      "leyName": "历经百战的岩居蟹·百万爆轰",
-      "aliases": [],
-      "tags": [
-        "动物",
-        "幽境危战",
-        "历经百战"
-      ],
-      "stateCount": 0
-    },
-    {
       "id": "cocijo",
       "name": "历经百战的玳龟",
       "nameEn": "Cocijo",
@@ -3981,12 +3963,11 @@
       "categoryLabel": "动物",
       "tier": "Animal",
       "icon": "avatar.webp",
-      "hasLeyline": true,
-      "leyName": "历经百战的玳龟·坚盾轰霆",
+      "hasLeyline": false,
+      "leyName": "",
       "aliases": [],
       "tags": [
-        "动物",
-        "幽境危战"
+        "动物"
       ],
       "stateCount": 0
     },
@@ -4607,11 +4588,15 @@
       "categoryLabel": "地方传奇",
       "tier": "Legend",
       "icon": "avatar.webp",
-      "hasLeyline": false,
-      "leyName": "",
-      "aliases": [],
+      "hasLeyline": true,
+      "leyName": "历经百战的霜役人·涉血芒锋",
+      "aliases": [
+        "历经百战的霜役人"
+      ],
       "tags": [
-        "地方传奇"
+        "地方传奇",
+        "幽境危战",
+        "历经百战"
       ],
       "stateCount": 0
     },
@@ -4671,50 +4656,15 @@
       "categoryLabel": "地方传奇",
       "tier": "Legend",
       "icon": "avatar.webp",
-      "hasLeyline": false,
-      "leyName": "",
+      "hasLeyline": true,
+      "leyName": "历经百战的十六倍曼陀草·风滚狂蔓",
       "aliases": [
         "历经百战的十六倍曼陀草"
       ],
       "tags": [
         "地方传奇",
-        "历经百战"
-      ],
-      "stateCount": 0
-    },
-    {
-      "id": "sigurd",
-      "name": "历经百战的执灯人",
-      "nameEn": "Sigurd",
-      "category": "Legends",
-      "categoryLabel": "地方传奇",
-      "tier": "Legend",
-      "icon": "avatar.webp",
-      "hasLeyline": true,
-      "leyName": "历经百战的执灯人·哀恸回响",
-      "aliases": [],
-      "tags": [
-        "地方传奇",
-        "幽境危战",
-        "历经百战"
-      ],
-      "stateCount": 0
-    },
-    {
-      "id": "the-last-survivor-of-tenochtzitoc",
-      "name": "历经百战的皮皮潘偶像",
-      "nameEn": "The Last Survivor of Tenochtzitoc",
-      "category": "Legends",
-      "categoryLabel": "地方传奇",
-      "tier": "Legend",
-      "icon": "avatar.webp",
-      "hasLeyline": true,
-      "leyName": "历经百战的皮皮潘偶像·百诈瞬变",
-      "aliases": [],
-      "tags": [
-        "地方传奇",
-        "幽境危战",
-        "历经百战"
+        "历经百战",
+        "幽境危战"
       ],
       "stateCount": 0
     },
@@ -4934,11 +4884,15 @@
       "categoryLabel": "地方传奇",
       "tier": "Legend",
       "icon": "avatar.webp",
-      "hasLeyline": false,
-      "leyName": "",
-      "aliases": [],
+      "hasLeyline": true,
+      "leyName": "历经百战的火刃突击队员·决死武装",
+      "aliases": [
+        "历经百战的火刃突击队员"
+      ],
       "tags": [
-        "地方传奇"
+        "地方传奇",
+        "幽境危战",
+        "历经百战"
       ],
       "stateCount": 0
     },
@@ -4982,11 +4936,15 @@
       "categoryLabel": "地方传奇",
       "tier": "Legend",
       "icon": "avatar.webp",
-      "hasLeyline": false,
-      "leyName": "",
-      "aliases": [],
+      "hasLeyline": true,
+      "leyName": "历经百战的皮皮潘偶像·百诈瞬变",
+      "aliases": [
+        "历经百战的皮皮潘偶像"
+      ],
       "tags": [
-        "地方传奇"
+        "地方传奇",
+        "幽境危战",
+        "历经百战"
       ],
       "stateCount": 0
     },
@@ -4998,11 +4956,15 @@
       "categoryLabel": "地方传奇",
       "tier": "Legend",
       "icon": "avatar.webp",
-      "hasLeyline": false,
-      "leyName": "",
-      "aliases": [],
+      "hasLeyline": true,
+      "leyName": "历经百战的凛狼·极寒冰魄",
+      "aliases": [
+        "历经百战的凛狼"
+      ],
       "tags": [
-        "地方传奇"
+        "地方传奇",
+        "幽境危战",
+        "历经百战"
       ],
       "stateCount": 0
     },
@@ -5177,11 +5139,12 @@
       "categoryLabel": "地方传奇",
       "tier": "Legend",
       "icon": "avatar.webp",
-      "hasLeyline": false,
-      "leyName": "",
+      "hasLeyline": true,
+      "leyName": "历经百战的玳龟·坚盾轰霆",
       "aliases": [],
       "tags": [
-        "地方传奇"
+        "地方传奇",
+        "幽境危战"
       ],
       "stateCount": 0
     },
@@ -5193,11 +5156,15 @@
       "categoryLabel": "地方传奇",
       "tier": "Legend",
       "icon": "avatar.webp",
-      "hasLeyline": false,
-      "leyName": "",
-      "aliases": [],
+      "hasLeyline": true,
+      "leyName": "先驱秘源统辖阵列之影·蜂巢意志",
+      "aliases": [
+        "历经百战的先驱秘源统辖阵列"
+      ],
       "tags": [
-        "地方传奇"
+        "地方传奇",
+        "幽境危战",
+        "历经百战"
       ],
       "stateCount": 0
     },
@@ -5276,11 +5243,15 @@
       "categoryLabel": "地方传奇",
       "tier": "Legend",
       "icon": "avatar.webp",
-      "hasLeyline": false,
-      "leyName": "",
-      "aliases": [],
+      "hasLeyline": true,
+      "leyName": "历经百战的岩居蟹·百万爆轰",
+      "aliases": [
+        "历经百战的岩居蟹"
+      ],
       "tags": [
-        "地方传奇"
+        "地方传奇",
+        "幽境危战",
+        "历经百战"
       ],
       "stateCount": 0
     },
@@ -5308,11 +5279,15 @@
       "categoryLabel": "地方传奇",
       "tier": "Legend",
       "icon": "avatar.webp",
-      "hasLeyline": false,
-      "leyName": "",
-      "aliases": [],
+      "hasLeyline": true,
+      "leyName": "历经百战的执灯人·哀恸回响",
+      "aliases": [
+        "历经百战的执灯人"
+      ],
       "tags": [
-        "地方传奇"
+        "地方传奇",
+        "幽境危战",
+        "历经百战"
       ],
       "stateCount": 0
     },
@@ -5420,11 +5395,12 @@
       "categoryLabel": "地方传奇",
       "tier": "Legend",
       "icon": "avatar.webp",
-      "hasLeyline": false,
-      "leyName": "",
+      "hasLeyline": true,
+      "leyName": "历经百战的暝视龙·霜雪苛念",
       "aliases": [],
       "tags": [
-        "地方传奇"
+        "地方传奇",
+        "幽境危战"
       ],
       "stateCount": 0
     },
@@ -5452,11 +5428,15 @@
       "categoryLabel": "地方传奇",
       "tier": "Legend",
       "icon": "avatar.webp",
-      "hasLeyline": false,
-      "leyName": "",
-      "aliases": [],
+      "hasLeyline": true,
+      "leyName": "历经百战的风役人·诡谲芒锋",
+      "aliases": [
+        "历经百战的风役人"
+      ],
       "tags": [
-        "地方传奇"
+        "地方传奇",
+        "幽境危战",
+        "历经百战"
       ],
       "stateCount": 0
     },
@@ -5489,22 +5469,6 @@
       "aliases": [],
       "tags": [
         "地方传奇"
-      ],
-      "stateCount": 0
-    },
-    {
-      "id": "the-open-eyed-overbearing-contempt",
-      "name": "开眼者·傲然睥睨",
-      "nameEn": "The Open-Eyed: Overbearing Contempt",
-      "category": "StygianOnslaught",
-      "categoryLabel": "幽境危战",
-      "tier": "Boss",
-      "icon": "avatar.webp",
-      "hasLeyline": false,
-      "leyName": "",
-      "aliases": [],
-      "tags": [
-        "幽境危战"
       ],
       "stateCount": 0
     },
@@ -5809,24 +5773,6 @@
       "aliases": [],
       "tags": [
         "异种魔兽"
-      ],
-      "stateCount": 0
-    },
-    {
-      "id": "the-homesick-lone-wolf",
-      "name": "历经百战的凛狼",
-      "nameEn": "The Homesick Lone Wolf",
-      "category": "MagicalBeasts",
-      "categoryLabel": "异种魔兽",
-      "tier": "Legend",
-      "icon": "avatar.webp",
-      "hasLeyline": true,
-      "leyName": "历经百战的凛狼·极寒冰魄",
-      "aliases": [],
-      "tags": [
-        "异种魔兽",
-        "幽境危战",
-        "历经百战"
       ],
       "stateCount": 0
     },
@@ -6658,12 +6604,11 @@
       "categoryLabel": "异种魔兽",
       "tier": "Common",
       "icon": "avatar.webp",
-      "hasLeyline": true,
-      "leyName": "历经百战的暝视龙·霜雪苛念",
+      "hasLeyline": false,
+      "leyName": "",
       "aliases": [],
       "tags": [
-        "异种魔兽",
-        "幽境危战"
+        "异种魔兽"
       ],
       "stateCount": 0
     },
@@ -7986,24 +7931,6 @@
       "stateCount": 0
     },
     {
-      "id": "raskolnikov",
-      "name": "历经百战的火刃突击队员",
-      "nameEn": "Raskolnikov",
-      "category": "Fatui",
-      "categoryLabel": "愚人众",
-      "tier": "Legend",
-      "icon": "avatar.webp",
-      "hasLeyline": true,
-      "leyName": "历经百战的火刃突击队员·决死武装",
-      "aliases": [],
-      "tags": [
-        "愚人众",
-        "幽境危战",
-        "历经百战"
-      ],
-      "stateCount": 0
-    },
-    {
       "id": "polychrome-tri-stars-vasily",
       "name": "历经百战的火铳游击兵",
       "nameEn": "Polychrome Tri-Stars: Vasily",
@@ -8033,42 +7960,6 @@
       "aliases": [],
       "tags": [
         "愚人众",
-        "历经百战"
-      ],
-      "stateCount": 0
-    },
-    {
-      "id": "yseut",
-      "name": "历经百战的霜役人",
-      "nameEn": "Yseut",
-      "category": "Fatui",
-      "categoryLabel": "愚人众",
-      "tier": "Legend",
-      "icon": "avatar.webp",
-      "hasLeyline": true,
-      "leyName": "历经百战的霜役人·涉血芒锋",
-      "aliases": [],
-      "tags": [
-        "愚人众",
-        "幽境危战",
-        "历经百战"
-      ],
-      "stateCount": 0
-    },
-    {
-      "id": "deianeira-of-snezhevna",
-      "name": "历经百战的风役人",
-      "nameEn": "Deianeira of Snezhevna",
-      "category": "Fatui",
-      "categoryLabel": "愚人众",
-      "tier": "Legend",
-      "icon": "avatar.webp",
-      "hasLeyline": true,
-      "leyName": "历经百战的风役人·诡谲芒锋",
-      "aliases": [],
-      "tags": [
-        "愚人众",
-        "幽境危战",
         "历经百战"
       ],
       "stateCount": 0
@@ -10992,24 +10883,6 @@
       "stateCount": 0
     },
     {
-      "id": "mushteshir",
-      "name": "历经百战的先驱秘源统辖阵列",
-      "nameEn": "Mushteshir",
-      "category": "Automatons",
-      "categoryLabel": "自律机关",
-      "tier": "Legend",
-      "icon": "avatar.webp",
-      "hasLeyline": true,
-      "leyName": "先驱秘源统辖阵列之影·蜂巢意志",
-      "aliases": [],
-      "tags": [
-        "自律机关",
-        "幽境危战",
-        "历经百战"
-      ],
-      "stateCount": 0
-    },
-    {
       "id": "历经百战的算力增幅器",
       "name": "历经百战的算力增幅器",
       "nameEn": "Automated Supercomputering Field Generator",
@@ -11050,11 +10923,15 @@
       "categoryLabel": "自律机关",
       "tier": "Common",
       "icon": "avatar.webp",
-      "hasLeyline": false,
-      "leyName": "",
-      "aliases": [],
+      "hasLeyline": true,
+      "leyName": "开眼者·傲然睥睨",
+      "aliases": [
+        "开眼者·傲然睥睨",
+        "开眼者"
+      ],
       "tags": [
-        "自律机关"
+        "自律机关",
+        "幽境危战"
       ],
       "stateCount": 0
     },
@@ -11715,6 +11592,647 @@
       "aliases": [],
       "tags": [
         "自律机关"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "野猪",
+      "name": "野猪",
+      "nameEn": "",
+      "category": "Animals",
+      "categoryLabel": "动物",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "动物"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "冰结镜映体",
+      "name": "冰结镜映体",
+      "nameEn": "",
+      "category": "ElementalLifeforms",
+      "categoryLabel": "元素生命",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "元素生命"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "先锋士",
+      "name": "先锋士",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "冰雹重炮手",
+      "name": "冰雹重炮手",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "尖端全能攻坚型",
+      "name": "尖端全能攻坚型",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "尖端全能斥候型",
+      "name": "尖端全能斥候型",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "尖端火力地效型",
+      "name": "尖端火力地效型",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "岩使游击兵",
+      "name": "岩使游击兵",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "强侦地效型",
+      "name": "强侦地效型",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "强侦攻坚型",
+      "name": "强侦攻坚型",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "强侦斥候型",
+      "name": "强侦斥候型",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "掷弹兵",
+      "name": "掷弹兵",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "支援兵",
+      "name": "支援兵",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "榴铳手",
+      "name": "榴铳手",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "水铳重卫士",
+      "name": "水铳重卫士",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "疗愈师",
+      "name": "疗愈师",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "线列军",
+      "name": "线列军",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "藏镜仕女",
+      "name": "藏镜仕女",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "近战攻坚型",
+      "name": "近战攻坚型",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "近战斥候型",
+      "name": "近战斥候型",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "雷霰近卫军",
+      "name": "雷霰近卫军",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "风拳前锋军",
+      "name": "风拳前锋军",
+      "nameEn": "",
+      "category": "Fatui",
+      "categoryLabel": "愚人众",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "愚人众"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "厄生古树种",
+      "name": "厄生古树种",
+      "nameEn": "",
+      "category": "Legends",
+      "categoryLabel": "地方传奇",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "地方传奇"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "喧闹兽众-斯塔夫罗金",
+      "name": "喧闹兽众·斯塔夫罗金",
+      "nameEn": "",
+      "category": "Legends",
+      "categoryLabel": "地方传奇",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "地方传奇"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "喧闹兽众-瓦尔瓦拉",
+      "name": "喧闹兽众·瓦尔瓦拉",
+      "nameEn": "",
+      "category": "Legends",
+      "categoryLabel": "地方传奇",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "地方传奇"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "喧闹兽众-维尔霍文斯基",
+      "name": "喧闹兽众·维尔霍文斯基",
+      "nameEn": "",
+      "category": "Legends",
+      "categoryLabel": "地方传奇",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "地方传奇"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "太古硬猥兽",
+      "name": "太古硬猥兽",
+      "nameEn": "",
+      "category": "Legends",
+      "categoryLabel": "地方传奇",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "地方传奇"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "嵌合蝎尾怪",
+      "name": "嵌合蝎尾怪",
+      "nameEn": "",
+      "category": "MagicalBeasts",
+      "categoryLabel": "异种魔兽",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "异种魔兽"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "嵌合鳄蹄兽",
+      "name": "嵌合鳄蹄兽",
+      "nameEn": "",
+      "category": "MagicalBeasts",
+      "categoryLabel": "异种魔兽",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "异种魔兽"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "浪涛锚定者",
+      "name": "浪涛锚定者",
+      "nameEn": "",
+      "category": "MagicalBeasts",
+      "categoryLabel": "异种魔兽",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": true,
+      "leyName": "浪涛锚定者·狂飙突噬",
+      "aliases": [],
+      "tags": [
+        "异种魔兽",
+        "幽境危战"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "猎月人-雷利尔",
+      "name": "猎月人·雷利尔",
+      "nameEn": "",
+      "category": "NonCategorized",
+      "categoryLabel": "无分类",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "无分类"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "赝造的角骏",
+      "name": "赝造的角骏",
+      "nameEn": "",
+      "category": "NonCategorized",
+      "categoryLabel": "无分类",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "无分类"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "先锋士tps",
+      "name": "先锋士TPS",
+      "nameEn": "",
+      "category": "Tps",
+      "categoryLabel": "第三人称射击（TPS）",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "第三人称射击（TPS）"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "水铳士tps",
+      "name": "水铳士TPS",
+      "nameEn": "",
+      "category": "Tps",
+      "categoryLabel": "第三人称射击（TPS）",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "第三人称射击（TPS）"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "火铳士tps",
+      "name": "火铳士TPS",
+      "nameEn": "",
+      "category": "Tps",
+      "categoryLabel": "第三人称射击（TPS）",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "第三人称射击（TPS）"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "烁晶之人",
+      "name": "烁晶之人",
+      "nameEn": "",
+      "category": "Tps",
+      "categoryLabel": "第三人称射击（TPS）",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "第三人称射击（TPS）"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "狙击手tps",
+      "name": "狙击手TPS",
+      "nameEn": "",
+      "category": "Tps",
+      "categoryLabel": "第三人称射击（TPS）",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "第三人称射击（TPS）"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "疗愈师tps",
+      "name": "疗愈师TPS",
+      "nameEn": "",
+      "category": "Tps",
+      "categoryLabel": "第三人称射击（TPS）",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "第三人称射击（TPS）"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "线列兵tps",
+      "name": "线列兵TPS",
+      "nameEn": "",
+      "category": "Tps",
+      "categoryLabel": "第三人称射击（TPS）",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "第三人称射击（TPS）"
+      ],
+      "stateCount": 0
+    },
+    {
+      "id": "萨杜诺娃",
+      "name": "萨杜诺娃",
+      "nameEn": "",
+      "category": "Tps",
+      "categoryLabel": "第三人称射击（TPS）",
+      "tier": "",
+      "icon": "",
+      "hasLeyline": false,
+      "leyName": "",
+      "aliases": [],
+      "tags": [
+        "第三人称射击（TPS）"
       ],
       "stateCount": 0
     }
