@@ -1095,7 +1095,9 @@ STATE_GROUPS = [
         'base': '「仆人」',
         'states': [
             {'key': 'p1', 'label': '第一阶段', 'src': '「仆人」'},
-            {'key': 'p2', 'label': '第二阶段', 'page': '仆人2'},
+            # 二阶段在 catalog 里另有一条「两界之火的遗烬」（技能与 仆人2 页逐条相同），
+            # 以它为身份（名字/英文名/头像），内容取 仆人2 页；合并后列表不再出现两张卡。
+            {'key': 'p2', 'label': '第二阶段', 'src': '两界之火的遗烬', 'page': '仆人2'},
         ],
     },
 ]
@@ -1175,6 +1177,8 @@ def _state_snapshot(entry, key, label, prefix, base_name, content_entry=None):
         'key': key,
         'label': label,
         'name': name,
+        # 阶段自己的英文名（女士第二阶段 Crimson Witch of Embers、仆人第二阶段 Cinder of Two Worlds' Flames…）
+        'nameEn': entry.get('nameEn') or '',
         'subtitle': entry.get('subtitle') or '',
         'tier': entry.get('tier') or '',
         'baseStats': entry.get('baseStats') or {},

@@ -38,7 +38,7 @@
   {
    "key": "EnemyOfNote",
    "label": "值得铭记的强敌",
-   "count": 15
+   "count": 14
   },
   {
    "key": "Legends",
@@ -596,7 +596,7 @@
    "hasLeyline": false,
    "leyName": "",
    "aliases": [
-    "仆人"
+    "两界之火的遗烬"
    ],
    "tags": [
     "值得铭记的强敌"
@@ -657,22 +657,6 @@
     "值得铭记的强敌"
    ],
    "stateCount": 2
-  },
-  {
-   "id": "cinder-of-two-worlds-flames",
-   "name": "两界之火的遗烬",
-   "nameEn": "Cinder of Two Worlds’ Flames",
-   "category": "EnemyOfNote",
-   "categoryLabel": "值得铭记的强敌",
-   "tier": "Boss",
-   "icon": "avatar.webp",
-   "hasLeyline": false,
-   "leyName": "",
-   "aliases": [],
-   "tags": [
-    "值得铭记的强敌"
-   ],
-   "stateCount": 0
   },
   {
    "id": "all-devouring-narwhal",
