@@ -120,6 +120,9 @@
  ],
  "leyline": null,
  "id": "西尼阿斯",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "地方传奇"

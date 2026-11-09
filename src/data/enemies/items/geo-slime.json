@@ -76,6 +76,9 @@
  ],
  "leyline": null,
  "id": "geo-slime",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "元素生命"

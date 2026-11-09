@@ -52,7 +52,7 @@
   {
    "name": "采息复灵",
    "type": "回复",
-   "icon": "",
+   "icon": "skill-3.webp",
    "description": "树妖进行「扎根」，生出根须，暴露胸部树心，持续<c=#ffdfbf>3s</c>后恢复<c=#ffdfbf>17%生命值</c>，同时获得持续1次技能的「岩息」。"
   }
  ],
@@ -83,6 +83,9 @@
  ],
  "leyline": null,
  "id": "juvenile-tree-segment",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

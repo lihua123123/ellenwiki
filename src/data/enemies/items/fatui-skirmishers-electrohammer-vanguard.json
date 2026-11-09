@@ -116,6 +116,9 @@
  ],
  "leyline": null,
  "id": "fatui-skirmishers-electrohammer-vanguard",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

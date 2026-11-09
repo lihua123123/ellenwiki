@@ -64,11 +64,11 @@
  "shields": [],
  "chargebar": [
   {
-   "Name": "冲鸭机关",
-   "Description": "充能条总量100，受到<color=#ffacff>雷元素攻击</color>积攒<color=#ffdfbf>1</color>，每次触发<color=#ffacff>(月)感电反应</color>积攒<color=#ffdfbf>10</color>，攒满后反击重拳出击鸭。",
-   "IconPath": "",
-   "MaxValue": 100,
-   "Charge": [
+   "name": "冲鸭机关",
+   "description": "充能条总量100，受到<c=#ffacff>雷元素攻击</c>积攒<c=#ffdfbf>1</c>，每次触发<c=#ffacff>(月)感电反应</c>积攒<c=#ffdfbf>10</c>，攒满后反击重拳出击鸭。",
+   "iconPath": "",
+   "maxValue": 100,
+   "charge": [
     {
      "Type": "Other",
      "ConditionDesc": "充能条总量100，受到雷元素攻击积攒1，每次触发(月)感电反应积攒10，攒满后反击重拳出击鸭。"
@@ -100,6 +100,9 @@
  ],
  "leyline": null,
  "id": "stamping-devices",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

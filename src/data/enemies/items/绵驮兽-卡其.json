@@ -75,6 +75,9 @@
  ],
  "leyline": null,
  "id": "绵驮兽-卡其",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

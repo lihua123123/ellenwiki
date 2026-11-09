@@ -92,13 +92,13 @@
   {
    "name": "茹焰炙升",
    "type": "爆发",
-   "icon": "",
+   "icon": "skill-6.webp",
    "description": "造物移至场地中央，将火焰盛放的花冠裹回蓓蕾，随后令其猛烈绽放，造成<c=#ff9999>150%</c>伤害，退出「命曜之姿」状态并移除护罩。若命中玩家则恢复<c=#ffdfbf>15%生命值</c>。"
   },
   {
    "name": "星烁辉离",
    "type": "天赋",
-   "icon": "",
+   "icon": "skill-7.webp",
    "description": "「命曜之姿」：生成护罩时会倒扣<c=#ffdfbf>2</c>层；恢复的生命值将<c=#ffdfbf>立即扣除</c>，等于回血失效。"
   }
  ],
@@ -156,6 +156,9 @@
  ],
  "leyline": null,
  "id": "immortal-construct",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

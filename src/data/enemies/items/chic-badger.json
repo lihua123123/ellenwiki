@@ -40,7 +40,7 @@
   {
    "name": "荤肉采集",
    "type": "辅助",
-   "icon": "",
+   "icon": "skill-1.webp",
    "description": "当队伍存在菈乌玛或哥伦比娅，接近任意帔毛獾时，它们会将禽肉或兽肉等物品带回到玩家身边。"
   }
  ],
@@ -71,6 +71,9 @@
  ],
  "leyline": null,
  "id": "chic-badger",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

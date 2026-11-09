@@ -144,6 +144,9 @@
  ],
  "leyline": null,
  "id": "bongo-head",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他"

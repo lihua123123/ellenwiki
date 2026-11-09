@@ -94,7 +94,7 @@
   {
    "name": "濒亡·涸尽",
    "type": "复苏",
-   "icon": "",
+   "icon": "skill-10.webp",
    "description": "无相之水生命值低于5%时进行复苏，复苏持续20s，复苏时汇聚的水泡爆炸无伤害，爆炸召唤濒死水滴，水滴落地时造成<c=#7fbfff>33.3%</c>伤害，每个水滴恢复无相之水<c=#7fbfff>15%</c>生命值。"
   }
  ],
@@ -177,6 +177,9 @@
  ],
  "leyline": null,
  "id": "he",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "元素生命"

@@ -132,11 +132,11 @@
  "shields": [],
  "chargebar": [
   {
-   "Name": "冲鸭机关",
-   "Description": "充能条总量100，每次受到(月)感电反应伤害积攒10，攒满后反击大鸭；在大世界中，冷静一下鸭与薇尔琪塔的攻击能够额外积攒3充能。",
-   "IconPath": "",
-   "MaxValue": 100,
-   "Charge": [
+   "name": "冲鸭机关",
+   "description": "充能条总量100，每次受到(月)感电反应伤害积攒10，攒满后反击大鸭；在大世界中，冷静一下鸭与薇尔琪塔的攻击能够额外积攒3充能。",
+   "iconPath": "",
+   "maxValue": 100,
+   "charge": [
     {
      "Type": "Other",
      "ConditionDesc": "充能条总量100，每次受到(月)感电反应伤害积攒10，攒满后反击大鸭；在大世界中，冷静一下鸭与薇尔琪塔的攻击能够额外积攒3充能。"
@@ -303,6 +303,12 @@
   "shields": []
  },
  "id": "creator-s-pride",
+ "leylineImages": [
+  "leyline.png"
+ ],
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "自律机关",

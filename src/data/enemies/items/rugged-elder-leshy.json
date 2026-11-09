@@ -69,7 +69,7 @@
   {
    "name": "采息复灵",
    "type": "回复",
-   "icon": "",
+   "icon": "skill-4.webp",
    "description": "树妖进行「扎根」，下肢生出`虬须`，暴露胸部树心，持续<c=#ffdfbf>10s</c>后恢复<c=#ffdfbf>34%生命值</c>，同时获得持续<c=#ffdfbf>30s</c>的「灵髓」。受`星烁反应`影响后，树妖便会跌倒在地，同时树心高度也将下降。\n破坏虬须时，若树妖附着了<c=#ff9999>火元素</c>，那么它将受到<c=#ffdfbf>34%生命值</c>的<c=#ff9999>火元素真伤</c>，无附着。"
   }
  ],
@@ -115,6 +115,10 @@
  ],
  "leyline": null,
  "id": "rugged-elder-leshy",
+ "images": [
+  "reference.png",
+  "reference-2.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

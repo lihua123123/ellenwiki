@@ -167,6 +167,9 @@
  ],
  "leyline": null,
  "id": "radiant-moonfly",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

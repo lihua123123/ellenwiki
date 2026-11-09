@@ -87,6 +87,9 @@
  ],
  "leyline": null,
  "id": "force-recon-ground-effect-landcruiser",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

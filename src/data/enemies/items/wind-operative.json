@@ -110,6 +110,9 @@
  ],
  "leyline": null,
  "id": "wind-operative",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

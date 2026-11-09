@@ -73,73 +73,73 @@
   {
    "name": "喧号·绯王附剑",
    "type": "输出",
-   "icon": "",
+   "icon": "skill-1.webp",
    "description": "王抡起大剑，朝玩家方向砍下，造成<c=#ff9999>75%</c>伤害。"
   },
   {
    "name": "风弦·声潺肃箭",
    "type": "输出",
-   "icon": "",
+   "icon": "skill-2.webp",
    "description": "后召唤4枚雷电棘刺，对前方的目标造成<c=#ffacff>40%,20%,8%</c>伤害。"
   },
   {
    "name": "争笛·红绸步垫",
    "type": "输出",
-   "icon": "",
+   "icon": "skill-3.webp",
    "description": "王突然朝玩家方向突进，造成<c=#ff9999>70%</c>伤害；接着原地旋转，持续造成<c=#ff9999>33%,\n19.8%,9.9%,3.3%</c>伤害。"
   },
   {
    "name": "华音·浮迭瀑滟",
    "type": "输出",
-   "icon": "",
+   "icon": "skill-4.webp",
    "description": "后扔下一枚「马」并爆裂，造成<c=#7fbfff>80%</c>伤害。"
   },
   {
    "name": "重铃·千擢缚焰",
    "type": "位移",
-   "icon": "",
+   "icon": "skill-5.webp",
    "description": "王背上「象」，持剑一跃落地，造成<c=#ff9999>100%</c>伤害；接着王将剑拔出，产生的冲击波造成<c=#ff9999>60%</c>伤害。"
   },
   {
    "name": "兵簧·绽澜幕潋",
    "type": "输出",
-   "icon": "",
+   "icon": "skill-6.webp",
    "description": "后从地上唤出6枚排成环状的「兵」，造成<c=#7fbfff>80%</c>伤害，然后「兵」又落回地面，造成<c=#7fbfff>100%</c>伤害。"
   },
   {
    "name": "锋镝·舞绎其间",
    "type": "协同",
-   "icon": "",
+   "icon": "skill-7.webp",
    "description": "王指使后一同进行一连串攻击：\n后进行近战划击，造成<c=#ffacff>75%</c>伤害；王掏出「象」置于地面，造成<c=#ff9999>80%</c>伤害；后发射连续的雷片子弹，造成<c=#ffacff>28%,\n14%~2.8%</c>伤害；王扔出的「象」落地爆炸，对落点范围内造成<c=#ff9999>100%</c>伤害。"
   },
   {
    "name": "湍沦·炙灭其间",
    "type": "协同",
-   "icon": "",
+   "icon": "skill-8.webp",
    "description": "后协助王进行烧灼攻击：\n后召唤一个水漩涡，持续牵引角色并持续施加<c=#7fbfff>水元素</c>附着，同时王手持「马」作喷火器，持续造成<c=#ff9999>30%,15%,7.5%,\n3%</c>伤害。"
   },
   {
    "name": "杀着·殄敌熛烬穹霄焰",
    "type": "爆发",
-   "icon": "",
+   "icon": "skill-9.webp",
    "description": "王移至场地中央，高举大剑并开始蓄力，期间双方将持续附着<c=#7fbfff>水元素</c>，后在场地降下小雨，造成<c=#7fbfff>28%</c>伤害；12s王蓄力完成，大剑落下，造成<c=#ff9999>125%</c>伤害并<c=#ffccbf>`秒杀`</c>前台。期间王会<c=#ffccbf>`持续恢复生命值`</c>。\n<c=#ffe599>破解方法：</c>只需将`冻结条`填满即可，王损失<c=#ffdfbf>10%</c>/<c=#ffdfbf>15%</c>/<c=#ffdfbf>20%</c>生命值。"
   },
   {
    "name": "杀着·归覆漰腾碧海掀",
    "type": "爆发",
-   "icon": "",
+   "icon": "skill-10.webp",
    "description": "后移至场地中央，开始吟诵，四周出现巨大水幕，期间我方将持续附着<c=#7fbfff>水元素</c>，王在场地内横冲直撞，接触造成<c=#ff9999>40%</c>伤害；16s后吟唱完成，水幕奔涌，<c=#ffccbf>秒杀</c>前台。\n<c=#ffe599>破解方法：</c>将`冻结条`填满并引导王撞击即可，后损失<c=#ffdfbf>18%</c>/<c=#ffdfbf>23%</c>/<c=#ffdfbf>28%</c>生命值。"
   },
   {
    "name": "天轮·城炮之骈",
    "type": "协同",
-   "icon": "",
+   "icon": "skill-11.webp",
    "description": "后协助王进行下落攻击：\n王跳至「车」上，后引爆「车」将王炸飞，并引剑重重下落，造成<c=#ff9999>100%</c>伤害。引爆「车」将造成<c=#ff9999>75%</c>的超载伤害。"
   },
   {
    "name": "弈舞·未落之幕",
    "type": "回复",
-   "icon": "",
+   "icon": "skill-12.webp",
    "description": "当一方倒下后，另一方会消耗当前50%生命值将其复活等同于消耗量的生命值，期间抗性大幅提升；治疗方处于<c=#ffbfbf>20%</c>生命值时不再消耗，若其低于<c=#ffbfbf>20%</c>则放弃治疗进入狂暴，任由另一方消亡，并将自身攻击力永久提升<c=#ffccbf>100%</c>，降低抗性。王进入狂暴时造成<c=#ff9999>40%</c>伤害。"
   }
  ],
@@ -171,6 +171,10 @@
  ],
  "leyline": null,
  "id": "门扉前的弈局",
+ "images": [
+  "reference.png",
+  "reference-2.png"
+ ],
  "icon": "avatar.webp",
  "states": [
   {
@@ -252,73 +256,73 @@
     {
      "name": "喧号·绯王附剑",
      "type": "输出",
-     "icon": "",
+     "icon": "skill-1.webp",
      "description": "王抡起大剑，朝玩家方向砍下，造成<c=#ff9999>75%</c>伤害。"
     },
     {
      "name": "风弦·声潺肃箭",
      "type": "输出",
-     "icon": "",
+     "icon": "skill-2.webp",
      "description": "后召唤4枚雷电棘刺，对前方的目标造成<c=#ffacff>40%,20%,8%</c>伤害。"
     },
     {
      "name": "争笛·红绸步垫",
      "type": "输出",
-     "icon": "",
+     "icon": "skill-3.webp",
      "description": "王突然朝玩家方向突进，造成<c=#ff9999>70%</c>伤害；接着原地旋转，持续造成<c=#ff9999>33%,\n19.8%,9.9%,3.3%</c>伤害。"
     },
     {
      "name": "华音·浮迭瀑滟",
      "type": "输出",
-     "icon": "",
+     "icon": "skill-4.webp",
      "description": "后扔下一枚「马」并爆裂，造成<c=#7fbfff>80%</c>伤害。"
     },
     {
      "name": "重铃·千擢缚焰",
      "type": "位移",
-     "icon": "",
+     "icon": "skill-5.webp",
      "description": "王背上「象」，持剑一跃落地，造成<c=#ff9999>100%</c>伤害；接着王将剑拔出，产生的冲击波造成<c=#ff9999>60%</c>伤害。"
     },
     {
      "name": "兵簧·绽澜幕潋",
      "type": "输出",
-     "icon": "",
+     "icon": "skill-6.webp",
      "description": "后从地上唤出6枚排成环状的「兵」，造成<c=#7fbfff>80%</c>伤害，然后「兵」又落回地面，造成<c=#7fbfff>100%</c>伤害。"
     },
     {
      "name": "锋镝·舞绎其间",
      "type": "协同",
-     "icon": "",
+     "icon": "skill-7.webp",
      "description": "王指使后一同进行一连串攻击：\n后进行近战划击，造成<c=#ffacff>75%</c>伤害；王掏出「象」置于地面，造成<c=#ff9999>80%</c>伤害；后发射连续的雷片子弹，造成<c=#ffacff>28%,\n14%~2.8%</c>伤害；王扔出的「象」落地爆炸，对落点范围内造成<c=#ff9999>100%</c>伤害。"
     },
     {
      "name": "湍沦·炙灭其间",
      "type": "协同",
-     "icon": "",
+     "icon": "skill-8.webp",
      "description": "后协助王进行烧灼攻击：\n后召唤一个水漩涡，持续牵引角色并持续施加<c=#7fbfff>水元素</c>附着，同时王手持「马」作喷火器，持续造成<c=#ff9999>30%,15%,7.5%,\n3%</c>伤害。"
     },
     {
      "name": "杀着·殄敌熛烬穹霄焰",
      "type": "爆发",
-     "icon": "",
+     "icon": "skill-9.webp",
      "description": "王移至场地中央，高举大剑并开始蓄力，期间双方将持续附着<c=#7fbfff>水元素</c>，后在场地降下小雨，造成<c=#7fbfff>28%</c>伤害；12s王蓄力完成，大剑落下，造成<c=#ff9999>125%</c>伤害并<c=#ffccbf>`秒杀`</c>前台。期间王会<c=#ffccbf>`持续恢复生命值`</c>。\n<c=#ffe599>破解方法：</c>只需将`冻结条`填满即可，王损失<c=#ffdfbf>10%</c>/<c=#ffdfbf>15%</c>/<c=#ffdfbf>20%</c>生命值。"
     },
     {
      "name": "杀着·归覆漰腾碧海掀",
      "type": "爆发",
-     "icon": "",
+     "icon": "skill-10.webp",
      "description": "后移至场地中央，开始吟诵，四周出现巨大水幕，期间我方将持续附着<c=#7fbfff>水元素</c>，王在场地内横冲直撞，接触造成<c=#ff9999>40%</c>伤害；16s后吟唱完成，水幕奔涌，<c=#ffccbf>秒杀</c>前台。\n<c=#ffe599>破解方法：</c>将`冻结条`填满并引导王撞击即可，后损失<c=#ffdfbf>18%</c>/<c=#ffdfbf>23%</c>/<c=#ffdfbf>28%</c>生命值。"
     },
     {
      "name": "天轮·城炮之骈",
      "type": "协同",
-     "icon": "",
+     "icon": "skill-11.webp",
      "description": "后协助王进行下落攻击：\n王跳至「车」上，后引爆「车」将王炸飞，并引剑重重下落，造成<c=#ff9999>100%</c>伤害。引爆「车」将造成<c=#ff9999>75%</c>的超载伤害。"
     },
     {
      "name": "弈舞·未落之幕",
      "type": "回复",
-     "icon": "",
+     "icon": "skill-12.webp",
      "description": "当一方倒下后，另一方会消耗当前50%生命值将其复活等同于消耗量的生命值，期间抗性大幅提升；治疗方处于<c=#ffbfbf>20%</c>生命值时不再消耗，若其低于<c=#ffbfbf>20%</c>则放弃治疗进入狂暴，任由另一方消亡，并将自身攻击力永久提升<c=#ffccbf>100%</c>，降低抗性。王进入狂暴时造成<c=#ff9999>40%</c>伤害。"
     }
    ],
@@ -371,67 +375,67 @@
     {
      "name": "连逐·丹王巧灼",
      "type": "位移",
-     "icon": "",
+     "icon": "state-wangqi-skill-1.webp",
      "description": "「王」朝玩家方向进行至多3次的连续着棋，每次造成<c=#ff9999>72%</c>伤害。"
     },
     {
      "name": "闲着·正王势守",
      "type": "输出",
-     "icon": "",
+     "icon": "state-wangqi-skill-2.webp",
      "description": "「王」在原地对其攻击范围(3x3)造成<c=#ff9999>100%</c>伤害，也常见于「王」连续进攻后施放。"
     },
     {
      "name": "易位·逸车御马",
      "type": "位移",
-     "icon": "",
+     "icon": "state-wangqi-skill-3.webp",
      "description": "「王」迅速驾「车」远离，而后召唤2个「车」进攻，造成<c=#ff9999>75%</c>伤害；大概率补上3个「马」进攻，每次造成<c=#ff9999>60%</c>伤害。"
     },
     {
      "name": "失格·靡翼推马",
      "type": "远程",
-     "icon": "",
+     "icon": "state-wangqi-skill-4.webp",
      "description": "距离较远时，「王」直接使出3个「马」进攻，每次造成<c=#ff9999>60%</c>伤害。"
     },
     {
      "name": "纵着·辗转天象",
      "type": "位移",
-     "icon": "",
+     "icon": "state-wangqi-skill-5.webp",
      "description": "「王」召唤`「象」`，并凌于其上，沿对角线移动，每次移动时「象」均进行落雷进攻，造成<c=#ffacff>70%</c>伤害。「象」被破坏后「王」损失<c=#ffccbf>15%</c>/<c=#ffccbf>20%</c>/<c=#ffccbf>25%</c>生命值。"
     },
     {
      "name": "奇着·悬孤三卒",
      "type": "召唤",
-     "icon": "",
+     "icon": "state-wangqi-skill-6.webp",
      "description": "「王」在C3~F6区域内召唤3个互不相连的孤「兵」，自身则`装甲`驾「车」连续进攻冲刺，每次造成<c=#ff9999>90%</c>伤害；\n「兵」也会攻击自身3x3范围内的玩家，每次造成<c=#ff9999>40%</c>伤害。「王」相撞3次后，装甲破损并损失<c=#ffccbf>15%</c>/<c=#ffccbf>20%</c>/<c=#ffccbf>25%</c>生命值。"
     },
     {
      "name": "将和·后驿憩王",
      "type": "防御",
-     "icon": "",
+     "icon": "state-wangqi-skill-7.webp",
      "description": "「王」生命值达<c=#ffccbf>6.25%</c>时，将立即召唤「后」援场，自身离场；直至「后」被击倒，低生命值的「王」才会再次出现并处于「将死」的低抗性状态。"
     },
     {
      "name": "长逐·孤后高灼",
      "type": "输出",
-     "icon": "",
+     "icon": "state-wangqi-skill-8.webp",
      "description": "「后」朝玩家方向对其近身范围以十字和X字形连续着棋2次，每次造成<c=#ff9999>80%</c>伤害。"
     },
     {
      "name": "妙着·正后持慑",
      "type": "输出",
-     "icon": "",
+     "icon": "state-wangqi-skill-9.webp",
      "description": "「后」在原地对其攻击范围(八个方向)造成<c=#ff9999>100%</c>伤害。"
     },
     {
      "name": "险着·縻翼短杀",
      "type": "输出",
-     "icon": "",
+     "icon": "state-wangqi-skill-10.webp",
      "description": "「后」伸出双刃，朝玩家方向发动一次进攻，旋转的剑刃造成<c=#ff9999>33%,33%,19.8%</c>伤害。"
     },
     {
      "name": "威局·恃高凭远",
      "type": "远程",
-     "icon": "",
+     "icon": "state-wangqi-skill-11.webp",
      "description": "「后」在原地召唤大量弹幕飞向我方，造成<c=#ff9999>55%,27.5%,9.9%</c>伤害。"
     }
    ],
@@ -487,67 +491,67 @@
     {
      "name": "连逐·丹王巧灼",
      "type": "位移",
-     "icon": "",
+     "icon": "state-houqi-skill-1.webp",
      "description": "「王」朝玩家方向进行至多3次的连续着棋，每次造成<c=#ff9999>72%</c>伤害。"
     },
     {
      "name": "闲着·正王势守",
      "type": "输出",
-     "icon": "",
+     "icon": "state-houqi-skill-2.webp",
      "description": "「王」在原地对其攻击范围(3x3)造成<c=#ff9999>100%</c>伤害，也常见于「王」连续进攻后施放。"
     },
     {
      "name": "易位·逸车御马",
      "type": "位移",
-     "icon": "",
+     "icon": "state-houqi-skill-3.webp",
      "description": "「王」迅速驾「车」远离，而后召唤2个「车」进攻，造成<c=#ff9999>75%</c>伤害；大概率补上3个「马」进攻，每次造成<c=#ff9999>60%</c>伤害。"
     },
     {
      "name": "失格·靡翼推马",
      "type": "远程",
-     "icon": "",
+     "icon": "state-houqi-skill-4.webp",
      "description": "距离较远时，「王」直接使出3个「马」进攻，每次造成<c=#ff9999>60%</c>伤害。"
     },
     {
      "name": "纵着·辗转天象",
      "type": "位移",
-     "icon": "",
+     "icon": "state-houqi-skill-5.webp",
      "description": "「王」召唤`「象」`，并凌于其上，沿对角线移动，每次移动时「象」均进行落雷进攻，造成<c=#ffacff>70%</c>伤害。「象」被破坏后「王」损失<c=#ffccbf>15%</c>/<c=#ffccbf>20%</c>/<c=#ffccbf>25%</c>生命值。"
     },
     {
      "name": "奇着·悬孤三卒",
      "type": "召唤",
-     "icon": "",
+     "icon": "state-houqi-skill-6.webp",
      "description": "「王」在C3~F6区域内召唤3个互不相连的孤「兵」，自身则`装甲`驾「车」连续进攻冲刺，每次造成<c=#ff9999>90%</c>伤害；\n「兵」也会攻击自身3x3范围内的玩家，每次造成<c=#ff9999>40%</c>伤害。「王」相撞3次后，装甲破损并损失<c=#ffccbf>15%</c>/<c=#ffccbf>20%</c>/<c=#ffccbf>25%</c>生命值。"
     },
     {
      "name": "将和·后驿憩王",
      "type": "防御",
-     "icon": "",
+     "icon": "state-houqi-skill-7.webp",
      "description": "「王」生命值达<c=#ffccbf>6.25%</c>时，将立即召唤「后」援场，自身离场；直至「后」被击倒，低生命值的「王」才会再次出现并处于「将死」的低抗性状态。"
     },
     {
      "name": "长逐·孤后高灼",
      "type": "输出",
-     "icon": "",
+     "icon": "state-houqi-skill-8.webp",
      "description": "「后」朝玩家方向对其近身范围以十字和X字形连续着棋2次，每次造成<c=#ff9999>80%</c>伤害。"
     },
     {
      "name": "妙着·正后持慑",
      "type": "输出",
-     "icon": "",
+     "icon": "state-houqi-skill-9.webp",
      "description": "「后」在原地对其攻击范围(八个方向)造成<c=#ff9999>100%</c>伤害。"
     },
     {
      "name": "险着·縻翼短杀",
      "type": "输出",
-     "icon": "",
+     "icon": "state-houqi-skill-10.webp",
      "description": "「后」伸出双刃，朝玩家方向发动一次进攻，旋转的剑刃造成<c=#ff9999>33%,33%,19.8%</c>伤害。"
     },
     {
      "name": "威局·恃高凭远",
      "type": "远程",
-     "icon": "",
+     "icon": "state-houqi-skill-11.webp",
      "description": "「后」在原地召唤大量弹幕飞向我方，造成<c=#ff9999>55%,27.5%,9.9%</c>伤害。"
     }
    ],
@@ -603,73 +607,73 @@
     {
      "name": "喧号·绯王附剑",
      "type": "输出",
-     "icon": "",
+     "icon": "state-shenghua-skill-1.webp",
      "description": "王抡起大剑，朝玩家方向砍下，造成<c=#ff9999>75%</c>伤害。"
     },
     {
      "name": "风弦·声潺肃箭",
      "type": "输出",
-     "icon": "",
+     "icon": "state-shenghua-skill-2.webp",
      "description": "后召唤4枚雷电棘刺，对前方的目标造成<c=#ffacff>40%,20%,8%</c>伤害。"
     },
     {
      "name": "争笛·红绸步垫",
      "type": "输出",
-     "icon": "",
+     "icon": "state-shenghua-skill-3.webp",
      "description": "王突然朝玩家方向突进，造成<c=#ff9999>70%</c>伤害；接着原地旋转，持续造成<c=#ff9999>33%,\n19.8%,9.9%,3.3%</c>伤害。"
     },
     {
      "name": "华音·浮迭瀑滟",
      "type": "输出",
-     "icon": "",
+     "icon": "state-shenghua-skill-4.webp",
      "description": "后扔下一枚「马」并爆裂，造成<c=#7fbfff>80%</c>伤害。"
     },
     {
      "name": "重铃·千擢缚焰",
      "type": "位移",
-     "icon": "",
+     "icon": "state-shenghua-skill-5.webp",
      "description": "王背上「象」，持剑一跃落地，造成<c=#ff9999>100%</c>伤害；接着王将剑拔出，产生的冲击波造成<c=#ff9999>60%</c>伤害。"
     },
     {
      "name": "兵簧·绽澜幕潋",
      "type": "输出",
-     "icon": "",
+     "icon": "state-shenghua-skill-6.webp",
      "description": "后从地上唤出6枚排成环状的「兵」，造成<c=#7fbfff>80%</c>伤害，然后「兵」又落回地面，造成<c=#7fbfff>100%</c>伤害。"
     },
     {
      "name": "锋镝·舞绎其间",
      "type": "协同",
-     "icon": "",
+     "icon": "state-shenghua-skill-7.webp",
      "description": "王指使后一同进行一连串攻击：\n后进行近战划击，造成<c=#ffacff>75%</c>伤害；王掏出「象」置于地面，造成<c=#ff9999>80%</c>伤害；后发射连续的雷片子弹，造成<c=#ffacff>28%,\n14%~2.8%</c>伤害；王扔出的「象」落地爆炸，对落点范围内造成<c=#ff9999>100%</c>伤害。"
     },
     {
      "name": "湍沦·炙灭其间",
      "type": "协同",
-     "icon": "",
+     "icon": "state-shenghua-skill-8.webp",
      "description": "后协助王进行烧灼攻击：\n后召唤一个水漩涡，持续牵引角色并持续施加<c=#7fbfff>水元素</c>附着，同时王手持「马」作喷火器，持续造成<c=#ff9999>30%,15%,7.5%,\n3%</c>伤害。"
     },
     {
      "name": "杀着·殄敌熛烬穹霄焰",
      "type": "爆发",
-     "icon": "",
+     "icon": "state-shenghua-skill-9.webp",
      "description": "王移至场地中央，高举大剑并开始蓄力，期间双方将持续附着<c=#7fbfff>水元素</c>，后在场地降下小雨，造成<c=#7fbfff>28%</c>伤害；12s王蓄力完成，大剑落下，造成<c=#ff9999>125%</c>伤害并<c=#ffccbf>`秒杀`</c>前台。期间王会<c=#ffccbf>`持续恢复生命值`</c>。\n<c=#ffe599>破解方法：</c>只需将`冻结条`填满即可，王损失<c=#ffdfbf>10%</c>/<c=#ffdfbf>15%</c>/<c=#ffdfbf>20%</c>生命值。"
     },
     {
      "name": "杀着·归覆漰腾碧海掀",
      "type": "爆发",
-     "icon": "",
+     "icon": "state-shenghua-skill-10.webp",
      "description": "后移至场地中央，开始吟诵，四周出现巨大水幕，期间我方将持续附着<c=#7fbfff>水元素</c>，王在场地内横冲直撞，接触造成<c=#ff9999>40%</c>伤害；16s后吟唱完成，水幕奔涌，<c=#ffccbf>秒杀</c>前台。\n<c=#ffe599>破解方法：</c>将`冻结条`填满并引导王撞击即可，后损失<c=#ffdfbf>18%</c>/<c=#ffdfbf>23%</c>/<c=#ffdfbf>28%</c>生命值。"
     },
     {
      "name": "天轮·城炮之骈",
      "type": "协同",
-     "icon": "",
+     "icon": "state-shenghua-skill-11.webp",
      "description": "后协助王进行下落攻击：\n王跳至「车」上，后引爆「车」将王炸飞，并引剑重重下落，造成<c=#ff9999>100%</c>伤害。引爆「车」将造成<c=#ff9999>75%</c>的超载伤害。"
     },
     {
      "name": "弈舞·未落之幕",
      "type": "回复",
-     "icon": "",
+     "icon": "state-shenghua-skill-12.webp",
      "description": "当一方倒下后，另一方会消耗当前50%生命值将其复活等同于消耗量的生命值，期间抗性大幅提升；治疗方处于<c=#ffbfbf>20%</c>生命值时不再消耗，若其低于<c=#ffbfbf>20%</c>则放弃治疗进入狂暴，任由另一方消亡，并将自身攻击力永久提升<c=#ffccbf>100%</c>，降低抗性。王进入狂暴时造成<c=#ff9999>40%</c>伤害。"
     }
    ],
@@ -722,73 +726,73 @@
     {
      "name": "喧号·绯王附剑",
      "type": "输出",
-     "icon": "",
+     "icon": "state-shengyang-skill-1.webp",
      "description": "王抡起大剑，朝玩家方向砍下，造成<c=#ff9999>75%</c>伤害。"
     },
     {
      "name": "风弦·声潺肃箭",
      "type": "输出",
-     "icon": "",
+     "icon": "state-shengyang-skill-2.webp",
      "description": "后召唤4枚雷电棘刺，对前方的目标造成<c=#ffacff>40%,20%,8%</c>伤害。"
     },
     {
      "name": "争笛·红绸步垫",
      "type": "输出",
-     "icon": "",
+     "icon": "state-shengyang-skill-3.webp",
      "description": "王突然朝玩家方向突进，造成<c=#ff9999>70%</c>伤害；接着原地旋转，持续造成<c=#ff9999>33%,\n19.8%,9.9%,3.3%</c>伤害。"
     },
     {
      "name": "华音·浮迭瀑滟",
      "type": "输出",
-     "icon": "",
+     "icon": "state-shengyang-skill-4.webp",
      "description": "后扔下一枚「马」并爆裂，造成<c=#7fbfff>80%</c>伤害。"
     },
     {
      "name": "重铃·千擢缚焰",
      "type": "位移",
-     "icon": "",
+     "icon": "state-shengyang-skill-5.webp",
      "description": "王背上「象」，持剑一跃落地，造成<c=#ff9999>100%</c>伤害；接着王将剑拔出，产生的冲击波造成<c=#ff9999>60%</c>伤害。"
     },
     {
      "name": "兵簧·绽澜幕潋",
      "type": "输出",
-     "icon": "",
+     "icon": "state-shengyang-skill-6.webp",
      "description": "后从地上唤出6枚排成环状的「兵」，造成<c=#7fbfff>80%</c>伤害，然后「兵」又落回地面，造成<c=#7fbfff>100%</c>伤害。"
     },
     {
      "name": "锋镝·舞绎其间",
      "type": "协同",
-     "icon": "",
+     "icon": "state-shengyang-skill-7.webp",
      "description": "王指使后一同进行一连串攻击：\n后进行近战划击，造成<c=#ffacff>75%</c>伤害；王掏出「象」置于地面，造成<c=#ff9999>80%</c>伤害；后发射连续的雷片子弹，造成<c=#ffacff>28%,\n14%~2.8%</c>伤害；王扔出的「象」落地爆炸，对落点范围内造成<c=#ff9999>100%</c>伤害。"
     },
     {
      "name": "湍沦·炙灭其间",
      "type": "协同",
-     "icon": "",
+     "icon": "state-shengyang-skill-8.webp",
      "description": "后协助王进行烧灼攻击：\n后召唤一个水漩涡，持续牵引角色并持续施加<c=#7fbfff>水元素</c>附着，同时王手持「马」作喷火器，持续造成<c=#ff9999>30%,15%,7.5%,\n3%</c>伤害。"
     },
     {
      "name": "杀着·殄敌熛烬穹霄焰",
      "type": "爆发",
-     "icon": "",
+     "icon": "state-shengyang-skill-9.webp",
      "description": "王移至场地中央，高举大剑并开始蓄力，期间双方将持续附着<c=#7fbfff>水元素</c>，后在场地降下小雨，造成<c=#7fbfff>28%</c>伤害；12s王蓄力完成，大剑落下，造成<c=#ff9999>125%</c>伤害并<c=#ffccbf>`秒杀`</c>前台。期间王会<c=#ffccbf>`持续恢复生命值`</c>。\n<c=#ffe599>破解方法：</c>只需将`冻结条`填满即可，王损失<c=#ffdfbf>10%</c>/<c=#ffdfbf>15%</c>/<c=#ffdfbf>20%</c>生命值。"
     },
     {
      "name": "杀着·归覆漰腾碧海掀",
      "type": "爆发",
-     "icon": "",
+     "icon": "state-shengyang-skill-10.webp",
      "description": "后移至场地中央，开始吟诵，四周出现巨大水幕，期间我方将持续附着<c=#7fbfff>水元素</c>，王在场地内横冲直撞，接触造成<c=#ff9999>40%</c>伤害；16s后吟唱完成，水幕奔涌，<c=#ffccbf>秒杀</c>前台。\n<c=#ffe599>破解方法：</c>将`冻结条`填满并引导王撞击即可，后损失<c=#ffdfbf>18%</c>/<c=#ffdfbf>23%</c>/<c=#ffdfbf>28%</c>生命值。"
     },
     {
      "name": "天轮·城炮之骈",
      "type": "协同",
-     "icon": "",
+     "icon": "state-shengyang-skill-11.webp",
      "description": "后协助王进行下落攻击：\n王跳至「车」上，后引爆「车」将王炸飞，并引剑重重下落，造成<c=#ff9999>100%</c>伤害。引爆「车」将造成<c=#ff9999>75%</c>的超载伤害。"
     },
     {
      "name": "弈舞·未落之幕",
      "type": "回复",
-     "icon": "",
+     "icon": "state-shengyang-skill-12.webp",
      "description": "当一方倒下后，另一方会消耗当前50%生命值将其复活等同于消耗量的生命值，期间抗性大幅提升；治疗方处于<c=#ffbfbf>20%</c>生命值时不再消耗，若其低于<c=#ffbfbf>20%</c>则放弃治疗进入狂暴，任由另一方消亡，并将自身攻击力永久提升<c=#ffccbf>100%</c>，降低抗性。王进入狂暴时造成<c=#ff9999>40%</c>伤害。"
     }
    ],

@@ -92,7 +92,7 @@
   {
    "name": "掩脉存根",
    "type": "位移",
-   "icon": "",
+   "icon": "skill-6.webp",
    "description": "弗瑞奥萨遁入地面，在目标处留下「`阻生根须`」，<c=#ffdfbf>1.5s</c>后现身。根须受`星烁反应`影响后会变矮，受击即可破坏，无论位置。"
   }
  ],
@@ -148,6 +148,9 @@
  ],
  "leyline": null,
  "id": "furiosa",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "地方传奇"

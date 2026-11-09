@@ -82,6 +82,9 @@
  ],
  "leyline": null,
  "id": "preliminary-proliferating-organism",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

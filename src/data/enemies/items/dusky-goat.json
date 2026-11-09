@@ -40,7 +40,7 @@
   {
    "name": "升跃飞渡",
    "type": "天赋",
-   "icon": "",
+   "icon": "skill-1.webp",
    "description": "靠近暮暮羊时，其会产生与自身同色的「单极」力场并利用其逃离，力场持续8s。"
   },
   {
@@ -77,6 +77,9 @@
  ],
  "leyline": null,
  "id": "dusky-goat",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

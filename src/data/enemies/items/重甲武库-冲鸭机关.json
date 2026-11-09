@@ -32,6 +32,9 @@
  "levelRows": [],
  "leyline": null,
  "id": "重甲武库-冲鸭机关",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

@@ -173,6 +173,9 @@
  ],
  "leyline": null,
  "id": "古岩龙蜥-水",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

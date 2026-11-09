@@ -1,0 +1,149 @@
+{
+ "「女士」": {
+  "p1": {
+   "fxg": "女士1",
+   "_note": "上游 mxml/MXMLEnemiesOfNote/女士1.mxml 的内容其实是「愚人众·霜役人」，一阶段只能按 fxg/FXGEnemiesOfNote/女士1.fxg 重建：技能名/类型取图内标题图，文案按 RichText 坐标取。",
+   "nameEn": "「La Signora」",
+   "subtitle": "愚人众执行官第八席",
+   "defaultLevel": 90,
+   "weight": 150,
+   "energy": null,
+   "levelRows": [
+    {
+     "label": "周本-第一阶段",
+     "level": 90,
+     "hp": 371003,
+     "atk": 9135,
+     "weight": 150,
+     "tenacity": 4000
+    }
+   ],
+   "baseStats": {
+    "hp": {
+     "Value": 135.840044,
+     "Curve": "HP_2"
+    },
+    "atk": {
+     "Value": 60.287611,
+     "Curve": "ATK_1"
+    },
+    "def": {
+     "Value": 500,
+     "Curve": "DEF_1"
+    }
+   },
+   "resistances": [
+    {
+     "name": "正常",
+     "pyro": 10,
+     "hydro": 10,
+     "anemo": 10,
+     "electro": 10,
+     "dendro": 10,
+     "cryo": 70,
+     "geo": 10,
+     "physical": 10
+    }
+   ],
+   "skills": [
+    {
+     "name": "远冬之霜",
+     "type": "天赋",
+     "icon": "image_29.png",
+     "desc": [
+      738,
+      223
+     ]
+    },
+    {
+     "name": "愚绽遗芳",
+     "type": "妨害",
+     "icon": "image_33.png",
+     "desc": [
+      738,
+      447
+     ]
+    },
+    {
+     "name": "深寒之枷",
+     "type": "锁定",
+     "icon": "image_37.png",
+     "desc": [
+      738,
+      671
+     ]
+    },
+    {
+     "name": "碎砂冰砾",
+     "type": "追踪",
+     "icon": "image_17.png",
+     "desc": [
+      738,
+      927
+     ]
+    },
+    {
+     "name": "寒卉潮翕",
+     "type": "天赋",
+     "icon": "image_41.png",
+     "desc": [
+      738,
+      1151
+     ]
+    },
+    {
+     "name": "褶风百寒",
+     "type": "靠近",
+     "icon": "image_31.png",
+     "desc": [
+      1410,
+      223
+     ]
+    },
+    {
+     "name": "凛冽之凌",
+     "type": "碾压",
+     "icon": "image_35.png",
+     "desc": [
+      1410,
+      447
+     ]
+    },
+    {
+     "name": "不泯涸雾",
+     "type": "输出",
+     "icon": "image_39.png",
+     "desc": [
+      1410,
+      671
+     ]
+    },
+    {
+     "name": "千夫对指",
+     "type": "锁定",
+     "icon": "image_15.png",
+     "desc": [
+      1410,
+      927
+     ]
+    },
+    {
+     "name": "冰茧蕴温",
+     "type": "天赋",
+     "icon": "image_43.png",
+     "desc": [
+      1410,
+      1151
+     ]
+    }
+   ]
+  },
+  "p2": {
+   "_note": "二阶段名/英文名以图内标题为准（fxg/FXGEnemiesOfNote/女士2.fxg）；技能与数值上游 mxml 正确，不动。",
+   "name": "焚尽的炎之魔女",
+   "nameEn": "Crimson Witch of Embers",
+   "subtitle": "罗莎琳·克鲁兹希卡·洛厄法特",
+   "tier": "Boss"
+  }
+ }
+}

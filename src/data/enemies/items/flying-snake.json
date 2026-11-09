@@ -71,6 +71,9 @@
  ],
  "leyline": null,
  "id": "flying-snake",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

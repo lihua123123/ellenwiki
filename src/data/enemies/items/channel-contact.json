@@ -83,6 +83,9 @@
  ],
  "leyline": null,
  "id": "channel-contact",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

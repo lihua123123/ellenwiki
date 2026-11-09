@@ -66,6 +66,9 @@
  ],
  "leyline": null,
  "id": "oprichniki-line-trooper",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "第三人称射击（TPS）"

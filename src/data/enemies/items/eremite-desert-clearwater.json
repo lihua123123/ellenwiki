@@ -126,6 +126,9 @@
  ],
  "leyline": null,
  "id": "eremite-desert-clearwater",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他人类势力"

@@ -117,6 +117,9 @@
  ],
  "leyline": null,
  "id": "large-pyro-slime",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "元素生命"

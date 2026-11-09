@@ -70,7 +70,7 @@
   {
    "name": "辉灵回天",
    "type": "猛攻",
-   "icon": "",
+   "icon": "skill-6.webp",
    "description": "奥奇坎起飞，持续朝地面喷射超能特攻光线，持续造成<c=#b9b9b9>60%</c>伤害。"
   }
  ],
@@ -101,6 +101,9 @@
  ],
  "leyline": null,
  "id": "och-kan",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

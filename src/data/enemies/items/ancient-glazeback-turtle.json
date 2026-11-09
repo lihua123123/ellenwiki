@@ -71,6 +71,9 @@
  ],
  "leyline": null,
  "id": "ancient-glazeback-turtle",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

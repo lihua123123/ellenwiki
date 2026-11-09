@@ -122,6 +122,9 @@
  ],
  "leyline": null,
  "id": "electro-abyss-mage",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "深渊"

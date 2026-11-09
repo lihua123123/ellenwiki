@@ -71,11 +71,11 @@
  "shields": [],
  "chargebar": [
   {
-   "Name": "「完全燃烧」",
-   "Description": "热量上限1000点。蚀土者受到<color=#ff9999>火元素</color>攻击后，会根据火元素的量积攒<color=#ffdfbf>1.5n%</color>(15n)或<color=#ffdfbf>0.7%</color>(7)热量；热量条积攒至<color=#ffebbf>20%</color>/<color=#ffebbf>40%</color>/<color=#ffebbf>60%</color>时，蚀土者会相对应的受到基于<color=#ffebbf>25%</color>/<color=#ffebbf>20%</color>/<color=#ffebbf>15%</color>生命值的物理伤害，此伤害受抗性、防御及易伤等影响；而当热量满时，蚀土者将直接死亡。",
-   "IconPath": "",
-   "MaxValue": 1000,
-   "Charge": [
+   "name": "「完全燃烧」",
+   "description": "热量上限1000点。蚀土者受到<c=#ff9999>火元素</c>攻击后，会根据火元素的量积攒<c=#ffdfbf>1.5n%</c>(15n)或<c=#ffdfbf>0.7%</c>(7)热量；热量条积攒至<c=#ffebbf>20%</c>/<c=#ffebbf>40%</c>/<c=#ffebbf>60%</c>时，蚀土者会相对应的受到基于<c=#ffebbf>25%</c>/<c=#ffebbf>20%</c>/<c=#ffebbf>15%</c>生命值的物理伤害，此伤害受抗性、防御及易伤等影响；而当热量满时，蚀土者将直接死亡。",
+   "iconPath": "",
+   "maxValue": 1000,
+   "charge": [
     {
      "Type": "Other",
      "ConditionDesc": "热量上限1000点。蚀土者受到火元素攻击后，会根据火元素的量积攒1.5n%(15n)或0.7%(7)热量；热量条积攒至20%/40%/60%时，蚀土者会相对应的受到基于25%/20%/15%生命值的物理伤害，此伤害受抗性、防御及易伤等影响；而当热量满时，蚀土者将直接死亡。"
@@ -117,6 +117,9 @@
  ],
  "leyline": null,
  "id": "eroding-avatar-of-lava",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

@@ -122,6 +122,9 @@
  ],
  "leyline": null,
  "id": "pyro-abyss-mage",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "深渊"

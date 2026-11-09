@@ -182,6 +182,9 @@
  ],
  "leyline": null,
  "id": "cracking-thunder-manifestation",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "元素生命"

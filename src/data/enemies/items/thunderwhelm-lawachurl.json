@@ -164,6 +164,9 @@
  ],
  "leyline": null,
  "id": "thunderwhelm-lawachurl",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "丘丘族群"

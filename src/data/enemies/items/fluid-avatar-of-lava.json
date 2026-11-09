@@ -99,6 +99,9 @@
  ],
  "leyline": null,
  "id": "fluid-avatar-of-lava",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

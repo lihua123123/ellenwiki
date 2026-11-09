@@ -242,6 +242,12 @@
   ]
  },
  "id": "lord-of-the-hidden-depths-whisperer-of-nightmares",
+ "leylineImages": [
+  "leyline.png"
+ ],
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "深渊",

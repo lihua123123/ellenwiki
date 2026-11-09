@@ -76,6 +76,9 @@
  ],
  "leyline": null,
  "id": "jade-giant-tortoise",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

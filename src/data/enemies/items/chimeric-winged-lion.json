@@ -104,19 +104,19 @@
   {
    "name": "烈惊千朽",
    "type": "爆发",
-   "icon": "",
+   "icon": "skill-8.webp",
    "description": "翼骏狮蜷缩，在场地召唤5枚`风球`，5s后尝试吸收它们。若10s内吸收了3枚风球，则施放气爆，造成<span class=\"anemo\">**30%**</span>伤害，否则施放失败。可受`星烁反应`影响。"
   },
   {
    "name": "寸飙鸢狩",
    "type": "输出",
-   "icon": "",
+   "icon": "skill-9.webp",
    "description": "翼骏狮短暂蓄力，突然朝玩家冲来并着陆，造成<span class=\"anemo\">**60%**</span>伤害，准备重新进入「唤雷」形态。"
   },
   {
    "name": "星烁辉离",
    "type": "天赋",
-   "icon": "",
+   "icon": "skill-10.webp",
    "description": "「威淬万钧」：中断技能，并使其护罩<c=#ffdfbf>-4</c>单位；「烈惊千朽」：无法吸收风球，并失去<c=#ffdfbf>15%</c>生命值<c=#ffdfbf>(仅大世界)</c>。两者均会掉落<c=#ffdfbf>6枚</c>对应元素微粒。"
   }
  ],
@@ -283,6 +283,12 @@
   ]
  },
  "id": "chimeric-winged-lion",
+ "leylineImages": [
+  "leyline.png"
+ ],
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽",

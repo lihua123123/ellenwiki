@@ -75,7 +75,7 @@
   {
    "name": "寸飙鸢狩",
    "type": "输出",
-   "icon": "",
+   "icon": "skill-5.webp",
    "description": "兽短暂蓄力，突然朝玩家冲来并着陆，造成<span class=\"anemo\">**60%**</span>伤害。"
   }
  ],
@@ -103,6 +103,9 @@
  ],
  "leyline": null,
  "id": "ever-lingering-illusion",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "第三人称射击（TPS）"

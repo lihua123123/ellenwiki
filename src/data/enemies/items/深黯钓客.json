@@ -115,6 +115,9 @@
  ],
  "leyline": null,
  "id": "深黯钓客",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "深渊"

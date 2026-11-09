@@ -144,6 +144,9 @@
  ],
  "leyline": null,
  "id": "twirly-whirly",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他"

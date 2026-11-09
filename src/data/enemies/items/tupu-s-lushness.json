@@ -75,7 +75,7 @@
   {
    "name": "夜域祝颂",
    "type": "天赋",
-   "icon": "",
+   "icon": "skill-5.webp",
    "description": "场地内存在「夜祝晶球」。「繁茂」吸收晶球时，每1枚会给予其<c=#ffecbf>1/6</c>的`雷元素护罩`；\n玩家吸收晶球达<c=#ffbfbf>6</c>枚时，将生成能够抵消「霆斥」的夜域祭场，持续20s；\n达<c=#ffbfbf>10</c>枚时，生成「巡礼护盾」，持续15s；另外每吸收一枚「夜祝晶球」，都会补满燃素。\n继续吸收晶球时，将产生冲击波，每次对「繁茂」造成<c=#ffbfbf>5%</c>生命值的真伤，且扣除<c=#ffdfbf>1/6</c>的雷元素护罩。"
   }
  ],
@@ -133,6 +133,9 @@
  ],
  "leyline": null,
  "id": "tupu-s-lushness",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "地方传奇"

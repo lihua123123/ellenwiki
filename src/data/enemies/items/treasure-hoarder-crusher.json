@@ -98,6 +98,9 @@
  ],
  "leyline": null,
  "id": "treasure-hoarder-crusher",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他人类势力"

@@ -106,10 +106,10 @@
  "shields": [],
  "chargebar": [
   {
-   "Name": "怒气",
-   "Description": "<color=#99ff86>100草</color>充能盾，受到雷元素攻击<color=#99ff86>+2</color>/次，触发任意激化<color=#99ff86>+15</color>/次，受到火元素攻击<color=#99ff86>-34</color>/次。触发燃烧直接枯焦。",
-   "IconPath": "",
-   "Charge": [
+   "name": "怒气",
+   "description": "<c=#99ff86>100草</c>充能盾，受到雷元素攻击<c=#99ff86>+2</c>/次，触发任意激化<c=#99ff86>+15</c>/次，受到火元素攻击<c=#99ff86>-34</c>/次。触发燃烧直接枯焦。",
+   "iconPath": "",
+   "charge": [
     {
      "Type": "Other",
      "ConditionDesc": "100草充能盾，受到雷元素攻击+2/次，触发任意激化+15/次，受到火元素攻击-34/次。触发燃烧直接枯焦。"
@@ -151,6 +151,9 @@
  ],
  "leyline": null,
  "id": "jadeplume-terrorshroom",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

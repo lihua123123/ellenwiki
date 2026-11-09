@@ -100,6 +100,9 @@
  ],
  "leyline": null,
  "id": "dragon-of-the-city-of-flowing-ash",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

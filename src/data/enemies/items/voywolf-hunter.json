@@ -58,7 +58,7 @@
   {
    "name": "凌冰微舞",
    "type": "输出",
-   "icon": "",
+   "icon": "skill-4.webp",
    "description": "距离较近时，嗥狼使用下肢进行踢踹攻击，造成<span class=\"cryo\">**60%**</span>伤害。"
   }
  ],
@@ -94,6 +94,9 @@
  ],
  "leyline": null,
  "id": "voywolf-hunter",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

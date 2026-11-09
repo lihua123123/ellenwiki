@@ -111,6 +111,9 @@
  ],
  "leyline": null,
  "id": "black-serpent-knight-windcutter",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "深渊"

@@ -164,6 +164,9 @@
  ],
  "leyline": null,
  "id": "the-peak",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "地方传奇"

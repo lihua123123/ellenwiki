@@ -87,6 +87,9 @@
  ],
  "leyline": null,
  "id": "millelith-soldier",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他人类势力"

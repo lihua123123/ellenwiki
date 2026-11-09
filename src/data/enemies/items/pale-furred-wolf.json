@@ -75,6 +75,9 @@
  ],
  "leyline": null,
  "id": "pale-furred-wolf",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

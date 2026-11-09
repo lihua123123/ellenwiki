@@ -4,6 +4,8 @@ node_modules/
 # Build output
 dist/
 dist-ssr/
+# Launcher 元数据快照（scripts/build-launcher-metadata.mjs 生成，由 build-api 镜像进 dist）
+build/
 
 # Logs
 *.log
@@ -35,3 +37,9 @@ Thumbs.db
 
 # Temp / scratch
 .tmp-*
+
+# 数据脚本的远程表缓存（Material.json 等，可重新下载）
+scripts/.cache/
+
+# 敌人一图流大图（每张 2~5 MB，站点构建用，不入库）
+public/images/enemies/*/reference*.png

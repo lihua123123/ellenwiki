@@ -1,0 +1,33 @@
+{
+ "id": "赝造的角骏",
+ "name": "赝造的角骏",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {},
+  "atk": {},
+  "def": {}
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "images": [
+  "reference.png"
+ ],
+ "icon": "",
+ "tags": [
+  "无分类"
+ ]
+}

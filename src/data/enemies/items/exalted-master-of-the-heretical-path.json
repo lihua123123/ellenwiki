@@ -100,7 +100,7 @@
   {
    "name": "认知的深化",
    "type": "位移",
-   "icon": "",
+   "icon": "skill-11.webp",
    "description": "当多托雷处于闲置状态时，其韧性低可击退，若在5s内连续击退多托雷<c=#ffdfbf>2</c>次，将会使其立即闪现施放其他技能。"
   }
  ],
@@ -136,6 +136,10 @@
  ],
  "leyline": null,
  "id": "exalted-master-of-the-heretical-path",
+ "images": [
+  "reference.png",
+  "reference-2.png"
+ ],
  "icon": "avatar.webp",
  "states": [
   {
@@ -245,7 +249,7 @@
     {
      "name": "认知的深化",
      "type": "位移",
-     "icon": "",
+     "icon": "skill-11.webp",
      "description": "当多托雷处于闲置状态时，其韧性低可击退，若在5s内连续击退多托雷<c=#ffdfbf>2</c>次，将会使其立即闪现施放其他技能。"
     }
    ],

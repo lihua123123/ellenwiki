@@ -99,6 +99,9 @@
  ],
  "leyline": null,
  "id": "capybara-king",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

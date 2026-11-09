@@ -40,7 +40,7 @@
   {
    "name": "马格尼特",
    "type": "天赋",
-   "icon": "",
+   "icon": "skill-1.webp",
    "description": "部分岩居蟹的顶部磁石可用于搬运吸附「单极」或「双极」物件。\n岩居蟹喜欢白灵果。"
   }
  ],
@@ -71,6 +71,9 @@
  ],
  "leyline": null,
  "id": "rock-crab",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

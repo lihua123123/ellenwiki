@@ -122,6 +122,9 @@
  ],
  "leyline": null,
  "id": "fatui-skirmishers-cryogunner-legionnaire",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

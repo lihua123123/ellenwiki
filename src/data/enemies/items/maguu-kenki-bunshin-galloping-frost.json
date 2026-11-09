@@ -104,6 +104,9 @@
  ],
  "leyline": null,
  "id": "maguu-kenki-bunshin-galloping-frost",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "自律机关"

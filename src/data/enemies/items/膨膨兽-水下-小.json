@@ -46,7 +46,7 @@
   {
    "name": "尾落鳍悬",
    "type": "防卫",
-   "icon": "",
+   "icon": "skill-2.webp",
    "description": "(摆烂的膨膨兽)攻击膨膨兽时，膨膨兽抬起尾部拍打地面，造成<c=#b9b9b9>50%</c>伤害。"
   }
  ],
@@ -93,6 +93,9 @@
  ],
  "leyline": null,
  "id": "膨膨兽-水下-小",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

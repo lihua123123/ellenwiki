@@ -120,6 +120,9 @@
  ],
  "leyline": null,
  "id": "thundering-wayob-manifestation",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

@@ -75,6 +75,9 @@
  ],
  "leyline": null,
  "id": "苍绒狼-白",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

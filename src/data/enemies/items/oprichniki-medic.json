@@ -95,6 +95,9 @@
  ],
  "leyline": null,
  "id": "oprichniki-medic",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

@@ -113,6 +113,9 @@
  ],
  "leyline": null,
  "id": "primeval-source-dragon-mech",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

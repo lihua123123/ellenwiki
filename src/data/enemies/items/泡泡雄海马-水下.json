@@ -126,6 +126,9 @@
  ],
  "leyline": null,
  "id": "泡泡雄海马-水下",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

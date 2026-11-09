@@ -116,6 +116,9 @@
  ],
  "leyline": null,
  "id": "abyssal-stormterror-dvalin",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

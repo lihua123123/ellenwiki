@@ -148,6 +148,9 @@
  ],
  "leyline": null,
  "id": "zayin",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "元素生命"

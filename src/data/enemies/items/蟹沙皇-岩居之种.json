@@ -32,6 +32,9 @@
  "levelRows": [],
  "leyline": null,
  "id": "蟹沙皇-岩居之种",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

@@ -75,6 +75,9 @@
  ],
  "leyline": null,
  "id": "hunter-s-ray",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

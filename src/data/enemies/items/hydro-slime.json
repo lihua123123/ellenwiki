@@ -82,6 +82,9 @@
  ],
  "leyline": null,
  "id": "hydro-slime",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "元素生命"

@@ -65,10 +65,10 @@
  "shields": [],
  "chargebar": [
   {
-   "Name": "附魔状态",
-   "Description": "巡陆艇的武器进行附魔且顶部出现一充能条，此时<color=#ffdfbf>触发4次(月)感电</color>或<color=#ffdfbf>直接利用月矩力</color>可中断技能。",
-   "IconPath": "",
-   "Charge": [
+   "name": "附魔状态",
+   "description": "巡陆艇的武器进行附魔且顶部出现一充能条，此时<c=#ffdfbf>触发4次(月)感电</c>或<c=#ffdfbf>直接利用月矩力</c>可中断技能。",
+   "iconPath": "",
+   "charge": [
     {
      "Type": "Other",
      "ConditionDesc": "巡陆艇的武器进行附魔且顶部出现一充能条，此时触发4次(月)感电或直接利用月矩力可中断技能。"
@@ -105,6 +105,9 @@
  ],
  "leyline": null,
  "id": "close-combat-storm-landcruiser",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

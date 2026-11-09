@@ -75,6 +75,9 @@
  ],
  "leyline": null,
  "id": "thorny-cyst",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他"

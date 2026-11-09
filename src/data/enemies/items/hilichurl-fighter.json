@@ -112,6 +112,9 @@
  ],
  "leyline": null,
  "id": "hilichurl-fighter",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "丘丘族群"

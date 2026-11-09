@@ -94,6 +94,9 @@
  ],
  "leyline": null,
  "id": "spirit-of-omen-pyro-scorpion",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

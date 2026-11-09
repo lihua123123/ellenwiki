@@ -51,19 +51,19 @@
   {
    "name": "考古勘探",
    "type": "远程",
-   "icon": "",
+   "icon": "skill-1.webp",
    "description": "勘探机使用激光部件发射激光进行勘探，造成<c=#b8b8b8>50%,5%</c>伤害。"
   },
   {
    "name": "间续照明",
    "type": "协同 部件L",
-   "icon": "",
+   "icon": "skill-2.webp",
    "description": "游离的激光部件间歇性发射激光，造成<c=#b8b8b8>50%</c>伤害。"
   },
   {
    "name": "不可之视",
    "type": "隐蔽",
-   "icon": "",
+   "icon": "skill-3.webp",
    "description": "勘探机游离出两个`电锯部件`，自己进入隐蔽状态，驱散所有元素附着，<c=#ffbfbf>全抗性提升50%</c>，每个部件继承10%的勘探机生命值，状态持续10-20s。在本体上进行<c=#99ff86>激化反应</c>或其使被<c=#4cffa5>「真识波」</c>命中，可解除该状态并使其瘫痪。"
   }
  ],
@@ -131,6 +131,9 @@
  ],
  "leyline": null,
  "id": "primal-construct-prospector",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "自律机关"

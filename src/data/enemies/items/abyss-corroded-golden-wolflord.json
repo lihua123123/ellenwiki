@@ -130,6 +130,9 @@
  ],
  "leyline": null,
  "id": "abyss-corroded-golden-wolflord",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "深渊"

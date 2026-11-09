@@ -75,6 +75,9 @@
  ],
  "leyline": null,
  "id": "猎刀鳐-青",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

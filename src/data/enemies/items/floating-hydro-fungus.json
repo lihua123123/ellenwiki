@@ -83,6 +83,9 @@
  ],
  "leyline": null,
  "id": "floating-hydro-fungus",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

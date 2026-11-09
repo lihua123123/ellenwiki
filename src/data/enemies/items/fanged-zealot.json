@@ -111,6 +111,9 @@
  ],
  "leyline": null,
  "id": "fanged-zealot",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

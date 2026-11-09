@@ -40,7 +40,7 @@
   {
    "name": "受迫跃迁",
    "type": "天赋",
-   "icon": "",
+   "icon": "skill-1.webp",
    "description": "受击后钻入地面并形成同色「单极」磁场，持续20s，结束后古石螺重新钻出地面。"
   }
  ],
@@ -71,6 +71,9 @@
  ],
  "leyline": null,
  "id": "atapetra-conch",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

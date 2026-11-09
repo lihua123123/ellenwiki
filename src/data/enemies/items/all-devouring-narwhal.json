@@ -110,6 +110,10 @@
  ],
  "leyline": null,
  "id": "all-devouring-narwhal",
+ "images": [
+  "reference.png",
+  "reference-2.png"
+ ],
  "icon": "avatar.webp",
  "states": [
   {

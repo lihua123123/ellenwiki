@@ -128,6 +128,9 @@
  ],
  "leyline": null,
  "id": "black-serpent-knight-rockbreaker-ax",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "深渊"

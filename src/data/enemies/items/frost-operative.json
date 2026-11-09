@@ -110,6 +110,9 @@
  ],
  "leyline": null,
  "id": "frost-operative",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

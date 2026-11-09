@@ -116,6 +116,9 @@
  ],
  "leyline": null,
  "id": "fatui-skirmishers-pyroslinger-bracer",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

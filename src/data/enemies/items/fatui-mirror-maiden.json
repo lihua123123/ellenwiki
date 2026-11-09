@@ -123,6 +123,9 @@
  ],
  "leyline": null,
  "id": "fatui-mirror-maiden",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

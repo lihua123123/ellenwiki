@@ -489,7 +489,7 @@
     {
      "name": "涌泉交转",
      "type": "妨害",
-     "icon": "",
+     "icon": "state-p3-skill-10.webp",
      "description": "公子施放数个水喷，呈折线形移动，每个造成<c=#7fbfff>35%</c>伤害，命中<c=#72ff96>施加</c><c=#72dcff>「断流·水」</c>效果。"
     },
     {

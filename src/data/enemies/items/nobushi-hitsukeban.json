@@ -102,6 +102,9 @@
  ],
  "leyline": null,
  "id": "nobushi-hitsukeban",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他人类势力"

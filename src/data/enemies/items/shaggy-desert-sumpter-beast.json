@@ -95,6 +95,9 @@
  ],
  "leyline": null,
  "id": "shaggy-desert-sumpter-beast",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

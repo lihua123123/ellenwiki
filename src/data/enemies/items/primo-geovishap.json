@@ -173,6 +173,9 @@
  ],
  "leyline": null,
  "id": "primo-geovishap",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

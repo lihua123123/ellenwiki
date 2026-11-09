@@ -126,6 +126,9 @@
  ],
  "leyline": null,
  "id": "sternshield-crab",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

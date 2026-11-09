@@ -68,6 +68,9 @@
  ],
  "leyline": null,
  "id": "重甲蟹-陆地-绿",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

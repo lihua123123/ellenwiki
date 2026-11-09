@@ -254,6 +254,12 @@
   ]
  },
  "id": "radiant-moongecko",
+ "leylineImages": [
+  "leyline.png"
+ ],
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽",

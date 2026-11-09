@@ -133,6 +133,9 @@
  ],
  "leyline": null,
  "id": "ancient-ruins-collector",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "自律机关"

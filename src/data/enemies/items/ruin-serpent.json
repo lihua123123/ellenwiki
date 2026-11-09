@@ -146,6 +146,9 @@
  ],
  "leyline": null,
  "id": "ruin-serpent",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "自律机关"

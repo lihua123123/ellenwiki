@@ -99,6 +99,9 @@
  ],
  "leyline": null,
  "id": "shougunate-infantry-captain",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他人类势力"

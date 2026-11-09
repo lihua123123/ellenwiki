@@ -58,13 +58,13 @@
   {
    "name": "捷掣烈觡",
    "type": "猛攻",
-   "icon": "",
+   "icon": "skill-4.webp",
    "description": "角熊蓄力，使用鹿角进行2次冲击，均造成<c=#ff9999>100%</c>伤害。受`星烁反应`影响后角破损，不再能够继续使用；触发时掉落4枚<c=#ff9999>火元素</c>微粒。"
   },
   {
    "name": "焰霞半翼",
    "type": "猛攻",
-   "icon": "",
+   "icon": "skill-5.webp",
    "description": "角熊张开翼进行蓄力，随后怒而自旋，造成<c=#ff9999>100%</c>伤害。受`星烁反应`影响后翼破损，不再能够继续使用；触发时掉落4枚<c=#ff9999>火元素</c>微粒。"
   }
  ],
@@ -100,6 +100,9 @@
  ],
  "leyline": null,
  "id": "chimeric-horned-bear",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

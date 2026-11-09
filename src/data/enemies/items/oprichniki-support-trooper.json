@@ -89,6 +89,9 @@
  ],
  "leyline": null,
  "id": "oprichniki-support-trooper",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

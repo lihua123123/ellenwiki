@@ -88,6 +88,9 @@
  ],
  "leyline": null,
  "id": "hydro-samachurl",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "丘丘族群"

@@ -163,10 +163,98 @@
    "tenacity": 4000
   }
  ],
- "leyline": null,
+ "leyline": {
+  "name": "开眼者·傲然睥睨",
+  "nameEn": "The Open-Eyed: Overbearing Contempt",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "",
+  "difficulties": [],
+  "resistances": [
+   {
+    "name": "正常",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   },
+   {
+    "name": "监视",
+    "diffNote": "N5",
+    "pyro": 80,
+    "hydro": 80,
+    "anemo": 80,
+    "electro": 80,
+    "dendro": 80,
+    "cryo": 80,
+    "geo": 80
+   },
+   {
+    "name": "岩星",
+    "diffNote": "N4",
+    "pyro": 140,
+    "hydro": 140,
+    "anemo": 140,
+    "electro": 140,
+    "dendro": 140,
+    "cryo": 140,
+    "geo": 140
+   },
+   {
+    "name": "岩星",
+    "diffNote": "N3",
+    "pyro": 80,
+    "hydro": 80,
+    "anemo": 80,
+    "electro": 80,
+    "dendro": 80,
+    "cryo": 80,
+    "geo": 80
+   }
+  ],
+  "skills": [
+   {
+    "name": "监摄之神筑",
+    "type": "反击",
+    "icon": "skill-1.webp",
+    "description": "守望者将长矛先转一圈，造成<c=#ffe599>40%</c>伤害，随后立即进入`监候之统摄`状态，持续<c=#ffcebf>5s</c>；记录完毕后/未成功记录 将造成<c=#ffffbf>对应元素</c>/<c=#ffe599>岩元素</c>的<c=#ffbfbf>68%</c>伤害。累计施放2次后立即准备大招「现象之谵妄」。\n<c=#ffbfbf>(N5)</c><c=#bfffbf> </c>记录期间的<c=#ffdfbf>全抗+70%</c>，且记录次数提升，第二次记录的时间提升至<c=#ffdfbf>8s</c>。"
+   },
+   {
+    "name": "现象之谵妄",
+    "type": "爆发",
+    "icon": "skill-2.webp",
+    "description": "守望者移至场地中央，并进行蓄力，同时召唤2枚`元素星`，<c=#ffdfbf>18s</c>后，将根据场上剩余的元素星，召唤对应天谴之矛，依次造成<c=#ffffbf>对应元素</c>的<c=#ffbfbf>100%</c>伤害。\n<c=#bfffbf>(N4) </c>若守望者召唤了<c=#ffdfbf>异色的两个元素星</c>，则它们的生命值将由守望者的1/6降至1/15。\n<c=#ffbfbf>(N5)</c><c=#bfffbf> </c>守望者的天谴之矛将造成<c=#ffffbf>对应元素</c>的<c=#ffbfbf>300%</c>伤害。"
+   }
+  ],
+  "notes": [
+   {
+    "text": "监候之统摄",
+    "desc": "大招之前会施放2次，每次会分别记录<c=#ff9999>火</c>/<c=#7fbfff>水</c>/<c=#ffacff>雷</c>/<span class=\"cryo\">**冰**</span>的攻击次数，首次施放时，当某一元素次数达<c=#ffdfbf>3次</c>时，即为<c=#ffdfbf>记录完成</c>，并作为元素星的属性储存，记录时间为<c=#ffdfbf>5s</c>；若第二次记录的元素与首次<c=#ffdfbf>相同</c>，则需要<c=#ffdfbf>9次攻击</c>才能被记录。\n<c=#ffbfbf>(N5)</c> 整个技能期间的<c=#ffdfbf>全抗+70%</c>，且两次记录的次数需求提升至<c=#ffdfbf>5次</c>/<c=#ffdfbf>15次</c>；进入第二次记录的间隔大幅缩短，第二次的记录时间延长至<c=#ffdfbf>8s</c>。"
+   },
+   {
+    "text": "元素星",
+    "desc": "由守望者大招召唤，每个元素星的生命值为守望者的<c=#ffdfbf>1/6</c>；\n活性元素星免疫对应属性伤害；惰性岩元素星全抗<c=#ffdfbf>80%</c>;\n破坏第<c=#ffdfbf>1</c>/<c=#ffdfbf>2</c>颗元素星将对守望者造成<c=#ffdfbf>2段3%</c>/<c=#ffdfbf>2段9%生命值</c>的<c=#ffffbf>对应元素真伤</c>(仅暴击的一段有附着)。\n<c=#bfffbf>(N4) </c>惰性岩元素星全抗提升至<c=#ffdfbf>140%</c>;\n<c=#bfffbf>(N4) </c>若守望者召唤了两枚不同的元素星，则它们的生命值将降至守望者的<c=#ffdfbf>1/15</c>。"
+   }
+  ],
+  "shields": []
+ },
  "id": "watcher-fallen-vigil",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
-  "自律机关"
+  "自律机关",
+  "幽境危战"
+ ],
+ "aliases": [
+  "开眼者·傲然睥睨"
+ ],
+ "leylineImages": [
+  "leyline.png"
  ]
 }

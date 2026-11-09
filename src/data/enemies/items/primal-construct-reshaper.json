@@ -131,6 +131,9 @@
  ],
  "leyline": null,
  "id": "primal-construct-reshaper",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "自律机关"

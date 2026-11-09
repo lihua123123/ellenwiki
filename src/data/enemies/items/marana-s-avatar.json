@@ -81,6 +81,9 @@
  ],
  "leyline": null,
  "id": "marana-s-avatar",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他"

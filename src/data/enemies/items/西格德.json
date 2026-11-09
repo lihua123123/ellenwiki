@@ -153,10 +153,101 @@
    "tenacity": 150
   }
  ],
- "leyline": null,
+ "leyline": {
+  "name": "历经百战的执灯人·哀恸回响",
+  "nameEn": "Battle-Hardened Lightkeeper: Mourning Echoes",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 459197,
+    "atk": 10467,
+    "multiplier": 1.2,
+    "advantage": ""
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 2288131,
+    "atk": 13542,
+    "multiplier": 4.0,
+    "advantage": ""
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 3307214,
+    "atk": 14905,
+    "multiplier": 5.0,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 8109043,
+    "atk": 15965,
+    "multiplier": 11.2,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "正常",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   }
+  ],
+  "skills": [
+   {
+    "name": "业痴心魔",
+    "type": "召唤",
+    "icon": "leyline-skill-1.webp",
+    "description": "执灯人从心膛掏出魔火，丢在面前，落地召唤<c=#ffdfbf>2</c>个「荒野幽徒」，且造成<c=#b8b8b8>20%</c>伤害。"
+   }
+  ],
+  "notes": [
+   {
+    "text": "悲余残念",
+    "desc": "执灯人一阶段处于「游荡」状态，不具有狂猎相关性质，将其第一条血清空后，可以令其陷入「狂猎」状态。\n执灯人转阶段的「失色哀恸」状态只<c=#ffdfbf>持续4s</c>。"
+   },
+   {
+    "text": "失色哀恸(临界状态)",
+    "desc": "若队伍不处于 <c=#99ff99>「满辉」</c>，则只能通过清空红血，才可使其陷入临界状态，从而继续削减生命上限，期间狂猎所受伤害的<c=#ffdfbf>65%</c>会用于削减上限；\n若队伍处于<c=#99ff99>「满辉」</c>，施放被「满辉」强化的技能，附近的狂猎会直接进入临界状态，期间狂猎所受伤害的<c=#ffdfbf>90%</c>会用于削减上限，注意该临界状态也只持续10s，并且不能中途续杯。\n狂猎<c=#ffdfbf>进入因清空红血所致的</c>临界状态时，会立即减少<c=#ffdfbf>10%</c>生命上限，此后每次进入状态都会额外削减<c=#ffdfbf>8%</c>生命上限，即：第一次清空红血会立即削减<c=#ffdfbf>10%</c>生命上限，第二次<c=#ffdfbf>18%</c>，第三次<c=#ffdfbf>26%</c>……以此类推。"
+   },
+   {
+    "text": "荒野幽徒",
+    "desc": "共2只，每只为执灯人<c=#ffbfbf>2/15生命值</c>。「荒野幽徒」的<c=#ffdfbf>15%生命上限</c>用于<c=#ffdfbf>回复</c>执灯人自身的生命上限；若召唤物生命上限已遭削减，则取其<c=#ffdfbf>7.5%生命上限</c>作为回复；执灯人单次最高回复上限<c=#ffdfbf>不超过30%生命值</c>。"
+   }
+  ],
+  "shields": []
+ },
  "id": "西格德",
+ "leylineImages": [
+  "leyline.png"
+ ],
+ "aliases": [
+  "历经百战的执灯人"
+ ],
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
-  "地方传奇"
+  "地方传奇",
+  "幽境危战",
+  "历经百战"
  ]
 }

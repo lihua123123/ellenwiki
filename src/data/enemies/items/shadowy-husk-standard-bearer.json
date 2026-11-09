@@ -110,6 +110,9 @@
  ],
  "leyline": null,
  "id": "shadowy-husk-standard-bearer",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "深渊"

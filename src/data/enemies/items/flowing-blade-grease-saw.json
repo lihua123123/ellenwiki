@@ -88,6 +88,9 @@
  ],
  "leyline": null,
  "id": "flowing-blade-grease-saw",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他人类势力"

@@ -32,6 +32,9 @@
  "levelRows": [],
  "leyline": null,
  "id": "望乡的孤狼-狼魂",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

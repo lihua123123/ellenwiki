@@ -284,6 +284,12 @@
   ]
  },
  "id": "hydro-tulpa",
+ "leylineImages": [
+  "leyline.png"
+ ],
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "元素生命",

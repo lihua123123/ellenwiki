@@ -100,11 +100,11 @@
  "shields": [],
  "chargebar": [
   {
-   "Name": "草计量条",
-   "Description": "计量上限300。太子受到<color=#99ff85>草元素</color>攻击后，会根据草元素的量积攒<color=#ffdfbf>5n%</color>(15n)或<color=#ffdfbf>3.33%</color>(10)计量，攒满后进入正常状态，同时计量条开始衰减，每秒<color=#ffdfbf>-13</color>(地方传奇)/<color=#ffdfbf>-17</color>(历经百战)，衰减完毕后转为枯焦状态，衰减期间仍可使用<color=#99ff85>草元素</color>充能。\n正常状态下，抗打断1000。",
-   "IconPath": "",
-   "MaxValue": 300,
-   "Charge": [
+   "name": "草计量条",
+   "description": "计量上限300。太子受到<c=#99ff85>草元素</c>攻击后，会根据草元素的量积攒<c=#ffdfbf>5n%</c>(15n)或<c=#ffdfbf>3.33%</c>(10)计量，攒满后进入正常状态，同时计量条开始衰减，每秒<c=#ffdfbf>-13</c>(地方传奇)/<c=#ffdfbf>-17</c>(历经百战)，衰减完毕后转为枯焦状态，衰减期间仍可使用<c=#99ff85>草元素</c>充能。\n正常状态下，抗打断1000。",
+   "iconPath": "",
+   "maxValue": 300,
+   "charge": [
     {
      "Type": "Other",
      "ConditionDesc": "计量上限300。太子受到草元素攻击后，会根据草元素的量积攒5n%(15n)或3.33%(10)计量，攒满后进入正常状态，同时计量条开始衰减，每秒-13(地方传奇)/-17(历经百战)，衰减完毕后转为枯焦状态，衰减期间仍可使用草元素充能。\n正常状态下，抗打断1000。"
@@ -161,6 +161,9 @@
  ],
  "leyline": null,
  "id": "摩诃婆苏提婆耶弗太子",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "地方传奇"

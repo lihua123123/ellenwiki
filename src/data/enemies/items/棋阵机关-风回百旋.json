@@ -75,6 +75,9 @@
  ],
  "leyline": null,
  "id": "棋阵机关-风回百旋",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他"

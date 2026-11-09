@@ -1,0 +1,33 @@
+{
+ "id": "线列兵tps",
+ "name": "线列兵TPS",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "Tps",
+ "categoryLabel": "第三人称射击（TPS）",
+ "tier": "",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {},
+  "atk": {},
+  "def": {}
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "images": [
+  "reference.png"
+ ],
+ "icon": "",
+ "tags": [
+  "第三人称射击（TPS）"
+ ]
+}

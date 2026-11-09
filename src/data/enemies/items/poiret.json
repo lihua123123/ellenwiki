@@ -111,6 +111,9 @@
  ],
  "leyline": null,
  "id": "poiret",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他人类势力"

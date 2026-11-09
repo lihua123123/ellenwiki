@@ -136,7 +136,7 @@
   {
    "name": "裂魄散烟林",
    "type": "控制",
-   "icon": "",
+   "icon": "skill-17.webp",
    "description": "若娜瓦将角色传至面前，施放「死之洪流」，将该角色<c=#ffbfbf>(除主角外)</c>的灵魂裂分为3个「生命」，同时使队伍进入「裂魂」状态：队伍的血条替换为特殊的<c=#ffdfbf>「性命」条</c>，并重置为50%；朱赤羽击将不断出现在玩家附近，且玩家<c=#ffdfbf>不能够切换角色</c>；<c=#ffcdbf>20s</c>后结束「裂魂」状态。\n主角免疫「裂魂」效果。"
   }
  ],
@@ -165,6 +165,9 @@
  ],
  "leyline": null,
  "id": "ronova",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

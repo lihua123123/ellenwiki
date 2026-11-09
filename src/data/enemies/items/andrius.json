@@ -161,6 +161,9 @@
  ],
  "leyline": null,
  "id": "andrius",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "值得铭记的强敌"

@@ -75,7 +75,7 @@
   {
    "name": "纵斩冰锋",
    "type": "远程",
-   "icon": "",
+   "icon": "skill-5.webp",
    "description": "(魔化)炽阳凝冰拼合武器成双刃剑，竖直丢出，造成2段<span class=\"cryo\">**25%**</span>伤害，该技能经常施放2次。"
   }
  ],
@@ -126,6 +126,9 @@
  ],
  "leyline": null,
  "id": "eremite-sunfrost",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他人类势力"

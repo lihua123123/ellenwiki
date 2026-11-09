@@ -83,6 +83,9 @@
  ],
  "leyline": null,
  "id": "oprichniki-bombardier",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

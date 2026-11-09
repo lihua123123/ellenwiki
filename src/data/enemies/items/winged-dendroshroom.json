@@ -94,6 +94,9 @@
  ],
  "leyline": null,
  "id": "winged-dendroshroom",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

@@ -82,6 +82,9 @@
  ],
  "leyline": null,
  "id": "hydro-mimic-mallard",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

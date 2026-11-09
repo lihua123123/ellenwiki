@@ -98,6 +98,9 @@
  ],
  "leyline": null,
  "id": "shadowy-husk-defender",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "深渊"

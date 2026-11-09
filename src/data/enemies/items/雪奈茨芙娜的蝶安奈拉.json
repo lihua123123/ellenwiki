@@ -118,10 +118,108 @@
    "tenacity": 100
   }
  ],
- "leyline": null,
+ "leyline": {
+  "name": "历经百战的风役人·诡谲芒锋",
+  "nameEn": "Veteran Wind Operative: Treacherous Blade",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 1000315,
+    "atk": 3806,
+    "multiplier": 1.2,
+    "advantage": "Shield Adv."
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 4984459,
+    "atk": 4924,
+    "multiplier": 4.0,
+    "advantage": "Bond of Life Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 8068957,
+    "atk": 5420,
+    "multiplier": 5.6,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 17506998,
+    "atk": 5806,
+    "multiplier": 11.1,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "正常",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 50,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": -20
+   }
+  ],
+  "skills": [
+   {
+    "name": "玦风翠流",
+    "type": "爆发",
+    "icon": "leyline-skill-1.webp",
+    "description": "风役人瞄准目标，<c=#ffebbf>消耗2%生命值</c>，2s后发动攻击，对目标敌人降下翠叶之诀，造成<span class=\"anemo\">**90%**</span>伤害并施加生命之契，随后发动追加「猎杀」攻击：\n翠叶之诀的场地将产生爆炸，造成<span class=\"anemo\">**100%**</span>伤害并施加生命之契。\n被施加生命之契的目标，在遭受每段追加「猎杀」时都会累积生命之契。"
+   }
+  ],
+  "notes": [
+   {
+    "text": "(N5) 诡绘白盾",
+    "desc": "施放爆发时，役人自身会立即获得白盾，厚度为<c=#ffbfbf>22.5%生命值</c>，期间抗打断为0.01；击破白盾后役人将<c=#ffdfbf>失去等量生命值</c>。\n白盾存在期间，役人将<c=#ffbfbf>持续</c>向全队角色<c=#ffbfbf>施加生命之契</c>，先施加<c=#ffbfbf>500%</c>攻击力的生命之契，之后每0.5s施加<c=#ffbfbf>75%</c>攻击力的生契。\n对于<c=#ffbfbf>N5</c>和<c=#ffacff>N6</c>难度，役人首次施加<c=#ffdfbf>27100</c>/<c=#ffdfbf>29028</c>点生命之契，后续每0.5秒施加<c=#ffdfbf>4065</c>/<c=#ffdfbf>4354</c>点生命之契。\n角色离地时依旧能够展开白盾。"
+   },
+   {
+    "text": "佞意",
+    "desc": "役人的爆发的每段伤害都会施加<c=#ffbfbf>16%</c>攻击力的生命之契，且在该生命之契的影响下，被命中的角色将每秒流失<c=#ffdfbf>(0.4%HP+72)</c>的生命值(后台止于5%)，持续10min，或清除生命之契后解除。\n施放爆发时，<c=#ffdfbf>消耗2%生命值</c>；爆发的第一段伤害命中时，<c=#ffebbf>恢复5%生命值</c>；当生命值<c=#ffebbf>低于20%</c>时，施放爆发改为<c=#ffebbf>消耗10%当前生命值</c>。\n爆发的追加攻击对附有生命之契的目标造成的伤害提升<c=#ffbfbf>150%</c>。"
+   },
+   {
+    "text": "异浪",
+    "desc": "役人离地、卡死，或受到击退、击飞等技能效果的影响，会<c=#ffdfbf>立即闪现脱离</c>，并进行展开护盾等行为。"
+   }
+  ],
+  "shields": [
+   {
+    "name": "(N5) 诡绘白盾",
+    "description": "施放爆发时，役人自身会立即获得白盾，厚度为<c=#ffbfbf>22.5%生命值</c>，期间抗打断为0.01；击破白盾后役人将<c=#ffdfbf>失去等量生命值</c>。\n白盾存在期间，役人将<c=#ffbfbf>持续</c>向全队角色<c=#ffbfbf>施加生命之契</c>，先施加<c=#ffbfbf>500%</c>攻击力的生命之契，之后每0.5s施加<c=#ffbfbf>75%</c>攻击力的生契。\n对于<c=#ffbfbf>N5</c>和<c=#ffacff>N6</c>难度，役人首次施加<c=#ffdfbf>27100</c>/<c=#ffdfbf>29028</c>点生命之契，后续每0.5秒施加<c=#ffdfbf>4065</c>/<c=#ffdfbf>4354</c>点生命之契。\n角色离地时依旧能够展开白盾。",
+    "elementType": "",
+    "duration": ""
+   }
+  ]
+ },
  "id": "雪奈茨芙娜的蝶安奈拉",
+ "leylineImages": [
+  "leyline.png"
+ ],
+ "aliases": [
+  "历经百战的风役人"
+ ],
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
-  "地方传奇"
+  "地方传奇",
+  "幽境危战",
+  "历经百战"
  ]
 }

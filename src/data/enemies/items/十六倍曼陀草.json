@@ -146,26 +146,152 @@
    "tenacity": 150
   }
  ],
- "leyline": null,
+ "leyline": {
+  "name": "历经百战的十六倍曼陀草·风滚狂蔓",
+  "nameEn": "Battle-Hardened Hexadecatonic Mandragora: Stormvine",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 711814,
+    "atk": 11419,
+    "multiplier": 1.2,
+    "advantage": "Aggregate Adv."
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 3546893,
+    "atk": 14773,
+    "multiplier": 4.0,
+    "advantage": "Overloaded Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 6356983,
+    "atk": 16260,
+    "multiplier": 6.3,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 11896647,
+    "atk": 17417,
+    "multiplier": 10.6,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "刚性",
+    "diffNote": "N5",
+    "pyro": 310,
+    "hydro": 310,
+    "anemo": 310,
+    "electro": 310,
+    "dendro": 435,
+    "cryo": 310,
+    "geo": 310,
+    "physical": 310
+   },
+   {
+    "name": "刚性",
+    "pyro": 80,
+    "hydro": 80,
+    "anemo": 80,
+    "electro": 80,
+    "dendro": 205,
+    "cryo": 80,
+    "geo": 80,
+    "physical": 80
+   },
+   {
+    "name": "脆性",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 135,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   },
+   {
+    "name": "脆性",
+    "diffNote": "N5",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": -40,
+    "electro": 10,
+    "dendro": 135,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   },
+   {
+    "name": "孢子",
+    "diffNote": "N5",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": -40,
+    "electro": 10,
+    "dendro": 135,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   }
+  ],
+  "skills": [
+   {
+    "name": "裂茵蔓种",
+    "type": "召唤 (N5)",
+    "icon": "leyline-skill-1.webp",
+    "description": "曼陀草初始处于「刚性」聚合状态，首次`分裂倒计时`为<c=#ffdfbf>38s</c>，后续为<c=#ffdfbf>41s</c>；倒计时结束后，在9-12m范围内分裂为10个`孢子`，持续<c=#ffdfbf>22s</c>；之后恢复。若期间击败8个及以上孢子，则会使曼陀草恢复后退出「刚性」状态，并使分裂倒计时延长至<c=#ffdfbf>47s</c>。"
+   }
+  ],
+  "notes": [
+   {
+    "text": "刚性/脆性聚合",
+    "desc": "初始为「刚性」聚合状态，首次分裂倒计时为<c=#ffdfbf>35s</c>，若分裂期间击败8个及以上孢子，则会使曼陀草进入「脆性」聚合状态，使分裂倒计时延长至<c=#ffdfbf>44s</c>，否则依旧处于「刚性」状态，分裂倒计时延长至为<c=#ffdfbf>38s</c>。\n处于「刚性」状态时，抗打断0.12。\n分裂倒计时可被<c=#ffacff>雷</c>与<c=#ff9999>火</c>元素攻击加速，根据其元素量扣除<c=#ffdfbf>n*1s</c>或<c=#ffdfbf>0.15s</c>。\n<c=#ffbfbf>(N5) </c>各分裂倒计时延长3s，对应上述变为38s、41s、47s；分裂倒计时加速数值变化，现根据其元素量扣除<c=#ffdfbf>n*0.5s</c>或<c=#ffdfbf>0.5s</c>。"
+   },
+   {
+    "text": "分裂状态与孢子",
+    "desc": "分裂倒计时结束后分裂为10个孢子，持续17s，孢子为<c=#ffdfbf>曼陀草10%生命值</c>。对孢子造成伤害时，也会对曼陀草造成伤害。若低于<c=#ffebbf>20%生命值</c>则根据剩余生命分裂对应数量的孢子(2%/个)；低于<c=#ffebbf>2%生命值</c>则不再分裂。<c=#ffbfbf>(N5) </c>分裂状态延长5s，即22s。"
+   },
+   {
+    "text": "孢子分裂范围",
+    "desc": "中心范围<c=#ffdfbf>0-0.3m</c>，1个孢子；\n内层范围<c=#ffdfbf>2-4.5m</c>，3个孢子；\n中层范围<c=#ffdfbf>5-8m</c>，3个孢子；\n外层范围<c=#ffdfbf>9-12m</c>，3个孢子。"
+   },
+   {
+    "text": "(N5) 孢子分裂范围",
+    "desc": "中心范围<c=#ffdfbf>0-0.3m</c>，1个孢子；\n内层范围<c=#ffdfbf>2-4.5m</c>，3个孢子；\n中层范围<c=#ffdfbf>5-7.5m</c>，3个孢子；\n外层范围<c=#ffdfbf>8-10m</c>，3个孢子。"
+   }
+  ],
+  "shields": []
+ },
  "id": "十六倍曼陀草",
- "icon": "avatar.webp",
- "statVariants": [
-  {
-   "label": "历经百战",
-   "level": 100,
-   "hp": 958349,
-   "hpNote": "27%",
-   "atk": 16251,
-   "atkNote": "55%",
-   "weight": 200,
-   "tenacity": 150
-  }
+ "leylineImages": [
+  "leyline.png"
  ],
  "aliases": [
   "历经百战的十六倍曼陀草"
  ],
+ "images": [
+  "reference.png"
+ ],
+ "icon": "avatar.webp",
  "tags": [
   "地方传奇",
+  "幽境危战",
   "历经百战"
  ]
 }

@@ -313,6 +313,12 @@
   "shields": []
  },
  "id": "ancient-ruins-master-terminal",
+ "leylineImages": [
+  "leyline.png"
+ ],
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "自律机关",

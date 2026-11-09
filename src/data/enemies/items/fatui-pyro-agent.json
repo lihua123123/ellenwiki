@@ -129,6 +129,9 @@
  ],
  "leyline": null,
  "id": "fatui-pyro-agent",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

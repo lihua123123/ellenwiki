@@ -94,6 +94,9 @@
  ],
  "leyline": null,
  "id": "spirit-of-omen-dendro-spirit-serpent",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

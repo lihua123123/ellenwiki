@@ -92,7 +92,7 @@
   {
    "name": "远逸近挠",
    "type": "远程",
-   "icon": "",
+   "icon": "skill-6.webp",
    "description": "距离较远时，熔火蟹曲线冲击，使用爪子进行攻击，造成<c=#b9b9b9>70%</c>伤害。"
   },
   {
@@ -172,6 +172,9 @@
  ],
  "leyline": null,
  "id": "tyrant-of-fire-and-iron",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

@@ -88,6 +88,9 @@
  ],
  "leyline": null,
  "id": "ferocious-warrior-wrestler",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他人类势力"

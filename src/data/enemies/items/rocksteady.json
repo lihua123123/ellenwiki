@@ -148,6 +148,9 @@
  ],
  "leyline": null,
  "id": "rocksteady",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他"

@@ -118,6 +118,9 @@
  ],
  "leyline": null,
  "id": "radiant-lunapod",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

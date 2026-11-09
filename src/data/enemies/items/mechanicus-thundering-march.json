@@ -75,6 +75,9 @@
  ],
  "leyline": null,
  "id": "mechanicus-thundering-march",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他"

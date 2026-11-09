@@ -71,6 +71,9 @@
  ],
  "leyline": null,
  "id": "angelic-sea-hare",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

@@ -95,6 +95,9 @@
  ],
  "leyline": null,
  "id": "machine-marionette-heart-of-the-blade",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

@@ -170,6 +170,9 @@
  ],
  "leyline": null,
  "id": "all-terrain-combat-mek",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

@@ -32,6 +32,9 @@
  "levelRows": [],
  "leyline": null,
  "id": "大雪猪王-秋野防灾",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

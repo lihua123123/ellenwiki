@@ -1,0 +1,33 @@
+{
+ "id": "猎月人-雷利尔",
+ "name": "猎月人·雷利尔",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "NonCategorized",
+ "categoryLabel": "无分类",
+ "tier": "",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {},
+  "atk": {},
+  "def": {}
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "images": [
+  "reference.png"
+ ],
+ "icon": "",
+ "tags": [
+  "无分类"
+ ]
+}

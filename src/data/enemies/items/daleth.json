@@ -143,6 +143,9 @@
  ],
  "leyline": null,
  "id": "daleth",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "元素生命"

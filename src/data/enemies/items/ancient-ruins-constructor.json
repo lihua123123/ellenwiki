@@ -270,6 +270,12 @@
   ]
  },
  "id": "ancient-ruins-constructor",
+ "leylineImages": [
+  "leyline.png"
+ ],
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "自律机关",

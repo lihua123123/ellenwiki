@@ -1,0 +1,33 @@
+{
+ "id": "近战斥候型",
+ "name": "近战斥候型",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "Fatui",
+ "categoryLabel": "愚人众",
+ "tier": "",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {},
+  "atk": {},
+  "def": {}
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "images": [
+  "reference.png"
+ ],
+ "icon": "",
+ "tags": [
+  "愚人众"
+ ]
+}

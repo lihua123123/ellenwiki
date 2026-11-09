@@ -68,6 +68,9 @@
  ],
  "leyline": null,
  "id": "重甲蟹-水下-橙",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

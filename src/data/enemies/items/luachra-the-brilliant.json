@@ -58,7 +58,7 @@
   {
    "name": "滞流红晕",
    "type": "天赋",
-   "icon": "",
+   "icon": "skill-4.webp",
    "description": "大海兔施放某些技能时，将产生<c=#ecbfff>`滞流红晕`</c>。\n使用「异色水母」的帽子炸弹，能对处于<c=#ecbfff>`滞流红晕`</c>下的大海兔额外造成<c=#ffdfbf>15%</c>生命值的伤害并令其移除护罩。"
   }
  ],
@@ -94,6 +94,9 @@
  ],
  "leyline": null,
  "id": "luachra-the-brilliant",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "地方传奇"

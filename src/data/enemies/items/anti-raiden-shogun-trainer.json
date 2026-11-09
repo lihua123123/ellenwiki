@@ -68,6 +68,9 @@
  ],
  "leyline": null,
  "id": "anti-raiden-shogun-trainer",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他"

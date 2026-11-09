@@ -111,6 +111,9 @@
  ],
  "leyline": null,
  "id": "pavlina",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

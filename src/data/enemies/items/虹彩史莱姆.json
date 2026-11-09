@@ -87,13 +87,13 @@
   {
    "name": "归于明瑕",
    "type": "爆发",
-   "icon": "",
+   "icon": "skill-7.webp",
    "description": "聚光状态下，虹彩史莱姆凝聚无瑕之力，高速旋转自身并下压产生3波冲击波，对范围内目标造成<c=#b8b8b8>100%</c>伤害，命中召唤的史莱姆时将其击杀。"
   },
   {
    "name": "素月凝胶",
    "type": "输出",
-   "icon": "",
+   "icon": "skill-8.webp",
    "description": "虹彩史莱姆靠近角色进行一次撞击，造成<c=#ffffbf>30%</c>的对应元素伤害。"
   }
  ],
@@ -181,6 +181,9 @@
  ],
  "leyline": null,
  "id": "虹彩史莱姆",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "statVariants": [
   {

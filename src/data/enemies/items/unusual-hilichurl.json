@@ -86,6 +86,9 @@
  ],
  "leyline": null,
  "id": "unusual-hilichurl",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "丘丘族群"

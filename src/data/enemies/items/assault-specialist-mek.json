@@ -133,6 +133,9 @@
  ],
  "leyline": null,
  "id": "assault-specialist-mek",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "自律机关"

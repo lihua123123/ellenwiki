@@ -75,7 +75,7 @@
   {
    "name": "虎下山",
    "type": "噬骸爆发",
-   "icon": "",
+   "icon": "skill-5.webp",
    "description": "每45s-60s，圣骸牙兽扫出一片绿色迷雾，隐蔽消失，顷刻突然出现在玩家上方并落地，造成<c=#99ff87>80%</c>伤害，形成荆棘区，其会二次爆炸造成<c=#99ff87>100%</c>伤害，并形成<c=#00bd2c>「</c><c=#00bd2c>`噬骸能量块·草`</c><c=#00bd2c>」</c>；此时牙兽失去强化，6s后则会被牙兽吸收恢复强化。"
   },
   {
@@ -127,6 +127,9 @@
  ],
  "leyline": null,
  "id": "consecrated-fanged-beast",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

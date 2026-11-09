@@ -123,6 +123,9 @@
  ],
  "leyline": null,
  "id": "large-dendro-slime",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "元素生命"

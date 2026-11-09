@@ -148,6 +148,9 @@
  ],
  "leyline": null,
  "id": "海捷德",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "地方传奇"

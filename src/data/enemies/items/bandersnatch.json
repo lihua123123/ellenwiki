@@ -81,7 +81,7 @@
   {
    "name": "坍星殛卵",
    "type": "爆发",
-   "icon": "",
+   "icon": "skill-6.webp",
    "description": "巨大态下约<c=#ffdfbf>20s</c>后，斑劫汇聚自身全部元素，凝成一枚巨形雷珠，随后掷下爆炸造成<c=#ffacff>200%</c>伤害并缩小。受<c=#bfcdff>「星烁反应」</c>影响后中断技能。"
   }
  ],
@@ -137,6 +137,9 @@
  ],
  "leyline": null,
  "id": "bandersnatch",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "地方传奇"

@@ -130,6 +130,9 @@
  ],
  "leyline": null,
  "id": "波塔波的声援",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "statVariants": [
   {

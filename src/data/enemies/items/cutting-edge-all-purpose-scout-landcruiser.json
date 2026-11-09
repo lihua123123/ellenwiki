@@ -77,10 +77,10 @@
  "shields": [],
  "chargebar": [
   {
-   "Name": "附魔状态",
-   "Description": "巡陆艇的武器进行附魔且顶部出现一充能条，此时<color=#ffdfbf>触发6次(月)感电</color>或<color=#ffdfbf>直接利用月矩力</color>可中断技能。\n仅在周围存在地面单位时才能进入附魔状态。",
-   "IconPath": "",
-   "Charge": [
+   "name": "附魔状态",
+   "description": "巡陆艇的武器进行附魔且顶部出现一充能条，此时<c=#ffdfbf>触发6次(月)感电</c>或<c=#ffdfbf>直接利用月矩力</c>可中断技能。\n仅在周围存在地面单位时才能进入附魔状态。",
+   "iconPath": "",
+   "charge": [
     {
      "Type": "Other",
      "ConditionDesc": "巡陆艇的武器进行附魔且顶部出现一充能条，此时触发6次(月)感电或直接利用月矩力可中断技能。\n仅在周围存在地面单位时才能进入附魔状态。"
@@ -122,6 +122,9 @@
  ],
  "leyline": null,
  "id": "cutting-edge-all-purpose-scout-landcruiser",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

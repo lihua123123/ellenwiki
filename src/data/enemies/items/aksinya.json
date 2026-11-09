@@ -64,7 +64,7 @@
   {
    "name": "无源之光",
    "type": "连携",
-   "icon": "",
+   "icon": "skill-5.webp",
    "description": "阿克西妮娅吟唱，6s后吟唱完毕，联动「原初之人」施放光摄，造成原初之人<c=#b8b8b8>30%,15%,6%,3%</c>攻击力的伤害。吟唱期间<c=#ffe599>(金色)</c>对其造成<c=#ffdfbf>20次</c>伤害即可中断。"
   }
  ],
@@ -84,6 +84,9 @@
  ],
  "leyline": null,
  "id": "aksinya",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "第三人称射击（TPS）"

@@ -83,6 +83,9 @@
  ],
  "leyline": null,
  "id": "浮游草蕈兽-恐蕈召唤",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

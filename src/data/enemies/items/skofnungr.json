@@ -106,6 +106,9 @@
  ],
  "leyline": null,
  "id": "skofnungr",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

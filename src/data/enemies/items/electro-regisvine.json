@@ -177,6 +177,9 @@
  ],
  "leyline": null,
  "id": "electro-regisvine",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

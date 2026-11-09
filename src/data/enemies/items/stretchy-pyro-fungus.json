@@ -83,6 +83,9 @@
  ],
  "leyline": null,
  "id": "stretchy-pyro-fungus",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

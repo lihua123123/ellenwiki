@@ -105,11 +105,11 @@
  ],
  "chargebar": [
   {
-   "Name": "「过载燃烧」",
-   "Description": "热量上限944。微末受到火元素攻击后，会根据火元素的量积攒2.119n%(20n)或0.742%(7)热量，攒满后进入虚耗状态，该状态下会失去抗性提升。",
-   "IconPath": "",
-   "MaxValue": 944,
-   "Charge": [
+   "name": "「过载燃烧」",
+   "description": "热量上限944。微末受到火元素攻击后，会根据火元素的量积攒2.119n%(20n)或0.742%(7)热量，攒满后进入虚耗状态，该状态下会失去抗性提升。",
+   "iconPath": "",
+   "maxValue": 944,
+   "charge": [
     {
      "Type": "Other",
      "ConditionDesc": "热量上限944。微末受到火元素攻击后，会根据火元素的量积攒2.119n%(20n)或0.742%(7)热量，攒满后进入虚耗状态，该状态下会失去抗性提升。"
@@ -156,6 +156,9 @@
  ],
  "leyline": null,
  "id": "infinitesimal",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "地方传奇"

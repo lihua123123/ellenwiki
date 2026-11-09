@@ -128,6 +128,9 @@
  ],
  "leyline": null,
  "id": "rilai",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "地方传奇"

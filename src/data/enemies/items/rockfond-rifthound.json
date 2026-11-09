@@ -134,6 +134,9 @@
  ],
  "leyline": null,
  "id": "rockfond-rifthound",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "深渊"

@@ -144,10 +144,135 @@
    "tenacity": 10000
   }
  ],
- "leyline": null,
+ "leyline": {
+  "name": "历经百战的岩居蟹·百万爆轰",
+  "nameEn": "Battle-Scarred Rock Crab: One Million Blasts",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "leyline-portrait.webp",
+  "difficulties": [
+   {
+    "key": "N3",
+    "name": "困难",
+    "level": 90,
+    "hp": 861697,
+    "atk": 9516,
+    "multiplier": 1.2,
+    "advantage": ""
+   },
+   {
+    "key": "N4",
+    "name": "险恶",
+    "level": 100,
+    "hp": 4293743,
+    "atk": 12311,
+    "multiplier": 4.0,
+    "advantage": "Bloom Adv."
+   },
+   {
+    "key": "N5",
+    "name": "无畏",
+    "level": 105,
+    "hp": 5833715,
+    "atk": 13550,
+    "multiplier": 4.7,
+    "advantage": ""
+   },
+   {
+    "key": "N6",
+    "name": "绝境",
+    "level": 110,
+    "hp": 10053990,
+    "atk": 14514,
+    "multiplier": 7.4,
+    "advantage": ""
+   }
+  ],
+  "resistances": [
+   {
+    "name": "正常",
+    "pyro": 10,
+    "hydro": 10,
+    "anemo": 10,
+    "electro": 10,
+    "dendro": 10,
+    "cryo": 10,
+    "geo": 10,
+    "physical": 10
+   },
+   {
+    "name": "开盾",
+    "pyro": 210,
+    "hydro": 210,
+    "anemo": 210,
+    "electro": 210,
+    "dendro": 210,
+    "cryo": 210,
+    "geo": 210,
+    "physical": 210
+   },
+   {
+    "name": "爆轰",
+    "diffNote": "N4",
+    "pyro": 80,
+    "hydro": 80,
+    "anemo": 80,
+    "electro": 80,
+    "dendro": 80,
+    "cryo": 80,
+    "geo": 80,
+    "physical": 80
+   },
+   {
+    "name": "瘫痪",
+    "pyro": -30,
+    "hydro": -30,
+    "anemo": -30,
+    "electro": -30,
+    "dendro": -30,
+    "cryo": -30,
+    "geo": -30,
+    "physical": -30
+   }
+  ],
+  "skills": [
+   {
+    "name": "千百沦灭",
+    "type": "爆发 (N5)",
+    "icon": "leyline-skill-1.webp",
+    "description": "蟹沙皇升空进行`伟大轰袭`，依次布下其下方内中外三圈，每圈各6枚种子的阵，30s后全部引爆，每枚造成<c=#7fbfff>100%</c>伤害，之后在场地内产生巨大水泡，炸裂后<c=#ffbfbf>秒杀</c>当前场上角色。\n轰袭失败后蟹沙皇陷入瘫痪，会消去所有种子，但会掉落3枚种子。\n岩居之种受到<c=#ff9999>火元素伤害</c>后会立即爆炸，造成<c=#7fbfff>300%</c>伤害。\n<c=#ffbfbf>本技能除瘫痪外产生的种子不会造成伤害。</c>"
+   }
+  ],
+  "notes": [
+   {
+    "text": "岩居之种",
+    "desc": "受到<c=#99ff85>月/原/烈/超绽放伤害</c>后会转化，于1s后离地，对蟹沙皇造成<c=#ffdfbf>所受绽放伤害500%</c>的<c=#99ff85>草元素</c>伤害，因其为二次转换伤害，故会受蟹沙皇自身抗性、防御影响；除去抗性、防御及易伤影响外，单枚岩居之种的基础伤害不超过150w。\n伟大轰袭期间产生的「岩居之种」并<c=#ffccbf>不会</c>造成伤害。"
+   },
+   {
+    "text": "伟大轰袭",
+    "desc": "需转化<c=#ffdfbf>6</c>枚岩居之种方可击落，瘫痪7.5s。\n<c=#bfffcd>(N4)</c>若蟹沙皇成功施放大招，则后续<c=#ffdfbf>全抗+70%</c>。"
+   },
+   {
+    "text": "机制",
+    "desc": "(N4) 大招爆轰成功后将获得抗性，直至下一次中断大招。"
+   }
+  ],
+  "shields": []
+ },
  "id": "蟹沙皇",
+ "leylineImages": [
+  "leyline.png"
+ ],
+ "aliases": [
+  "历经百战的岩居蟹"
+ ],
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
-  "地方传奇"
+  "地方传奇",
+  "幽境危战",
+  "历经百战"
  ]
 }

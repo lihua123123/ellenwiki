@@ -83,6 +83,9 @@
  ],
  "leyline": null,
  "id": "floating-anemo-fungus",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

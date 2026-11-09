@@ -1,0 +1,33 @@
+{
+ "id": "厄生古树种",
+ "name": "厄生古树种",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "Legends",
+ "categoryLabel": "地方传奇",
+ "tier": "",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {},
+  "atk": {},
+  "def": {}
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": null,
+ "images": [
+  "reference.png"
+ ],
+ "icon": "",
+ "tags": [
+  "地方传奇"
+ ]
+}

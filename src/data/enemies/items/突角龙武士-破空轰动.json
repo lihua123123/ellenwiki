@@ -93,6 +93,9 @@
  ],
  "leyline": null,
  "id": "突角龙武士-破空轰动",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他人类势力"

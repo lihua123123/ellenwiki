@@ -87,6 +87,9 @@
  ],
  "leyline": null,
  "id": "mechanicus-water-mirror",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他"

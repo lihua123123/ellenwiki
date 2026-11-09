@@ -136,6 +136,9 @@
  ],
  "leyline": null,
  "id": "ruin-hunter",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "自律机关"

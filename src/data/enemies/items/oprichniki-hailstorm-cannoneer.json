@@ -99,6 +99,9 @@
  ],
  "leyline": null,
  "id": "oprichniki-hailstorm-cannoneer",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "愚人众"

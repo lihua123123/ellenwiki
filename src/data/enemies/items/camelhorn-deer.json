@@ -64,6 +64,9 @@
  ],
  "leyline": null,
  "id": "camelhorn-deer",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

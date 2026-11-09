@@ -111,6 +111,9 @@
  ],
  "leyline": null,
  "id": "rockfond-rifthound-whelp",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "深渊"

@@ -116,6 +116,9 @@
  ],
  "leyline": null,
  "id": "wilderness-hunter",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "深渊"

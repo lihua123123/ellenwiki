@@ -122,6 +122,9 @@
  ],
  "leyline": null,
  "id": "wooden-shield-hilichurl",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "丘丘族群"

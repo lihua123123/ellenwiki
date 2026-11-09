@@ -139,6 +139,9 @@
  ],
  "leyline": null,
  "id": "consecrated-horned-crocodile",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

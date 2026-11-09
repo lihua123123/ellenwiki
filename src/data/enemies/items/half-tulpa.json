@@ -89,6 +89,9 @@
  ],
  "leyline": null,
  "id": "half-tulpa",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

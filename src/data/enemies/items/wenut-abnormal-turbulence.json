@@ -81,6 +81,9 @@
  ],
  "leyline": null,
  "id": "wenut-abnormal-turbulence",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他"

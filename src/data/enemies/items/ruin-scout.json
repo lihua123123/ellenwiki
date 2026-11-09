@@ -99,6 +99,9 @@
  ],
  "leyline": null,
  "id": "ruin-scout",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "自律机关"

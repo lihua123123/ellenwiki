@@ -104,6 +104,9 @@
  ],
  "leyline": null,
  "id": "the-great-snowboar-king",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "动物"

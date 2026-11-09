@@ -117,6 +117,9 @@
  ],
  "leyline": null,
  "id": "gluttonous-yumkasaur-mountain-lord",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

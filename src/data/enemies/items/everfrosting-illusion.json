@@ -92,7 +92,7 @@
   {
    "name": "独赏幽芳",
    "type": "控制",
-   "icon": "",
+   "icon": "skill-6.webp",
    "description": "[绝境]帕芙琳娜每隔约<c=#ffdfbf>44s</c>，召唤冰牢禁锢玩家<c=#ffdfbf>15s</c>，解除之后造成<span class=\"cryo\">**150%**</span>伤害。期间帕芙琳娜不攻击，周围会出现2枚「霜花」，全部击破可解除禁锢。"
   }
  ],
@@ -127,6 +127,9 @@
   "永恒冰雪的幻景"
  ],
  "id": "everfrosting-illusion",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "第三人称射击（TPS）"

@@ -87,6 +87,9 @@
  ],
  "leyline": null,
  "id": "hydro-mimic-finch",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

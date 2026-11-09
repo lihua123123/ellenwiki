@@ -76,7 +76,7 @@
   {
    "name": "无怨无忧的樊笼",
    "type": "爆发",
-   "icon": "",
+   "icon": "skill-7.webp",
    "description": "低于<c=#ffdfbf>50%生命值</c>时，斯瓦罗德将准备打开庭院的「门扉」。<c=#ffdfbf>125s</c>后蓄力成功，施放时将<c=#ffbfbf>秒杀</c>前台。"
   }
  ],
@@ -96,6 +96,9 @@
  ],
  "leyline": null,
  "id": "primordial-human",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "第三人称射击（TPS）"

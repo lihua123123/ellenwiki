@@ -52,7 +52,7 @@
   {
    "name": "冰躯怜椁",
    "type": "回复",
-   "icon": "",
+   "icon": "skill-3.webp",
    "description": "秘法师在低于<c=#ffdfbf>50%生命值</c>时，会将自己封入「`冰棺`」，<c=#ffdfbf>16s</c>后解除，并恢复<c=#ffdfbf>50%生命值</c>，仅触发一次。受`星烁反应`影响，冰棺会更容易被<c=#ffacff>雷元素</c>/<span class=\"anemo\">**风元素**</span>破坏。"
   }
  ],
@@ -95,6 +95,9 @@
  ],
  "leyline": null,
  "id": "glaciomancer",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

@@ -46,7 +46,7 @@
   {
    "name": "鸣弦流星",
    "type": "强化",
-   "icon": "",
+   "icon": "skill-2.webp",
    "description": "兽怪将使用自身的元素力，令其进入「解放」状态，根据变体的不同，其可汲取<c=#99ff87>草</c>/<span class=\"cryo\">**冰**</span>/<span class=\"anemo\">**风**</span>的元素力，使攻击变为对应属性伤害。\n「解放」状态下会连续发射多枚弹药。受`星烁反应`影响，每进行一次攻击就会被打断。"
   }
  ],
@@ -81,6 +81,9 @@
  ],
  "leyline": null,
  "id": "volkodlak-sharpshooter",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

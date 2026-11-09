@@ -82,6 +82,9 @@
  ],
  "leyline": null,
  "id": "bosacius-residue",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

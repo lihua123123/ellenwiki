@@ -105,10 +105,10 @@
  "shields": [],
  "chargebar": [
   {
-   "Name": "晦隐",
-   "Description": "抗打断0，全抗性提升<color=#ffccbf>60%</color>/<color=#ffccbf>120%</color>，允许受到火元素伤害；充能条总量<color=#ff9999>100</color>/<color=#ff9999>150</color>(深渊)，受到<color=#ff9999>火元素</color>攻击后根据火元素的量积攒<color=#ff9999>20n</color>或<color=#ff9999>3</color>，受到月反应伤害积攒<color=#ff9999>3</color>，充满退出状态。",
-   "IconPath": "",
-   "Charge": [
+   "name": "晦隐",
+   "description": "抗打断0，全抗性提升<c=#ffccbf>60%</c>/<c=#ffccbf>120%</c>，允许受到火元素伤害；充能条总量<c=#ff9999>100</c>/<c=#ff9999>150</c>(深渊)，受到<c=#ff9999>火元素</c>攻击后根据火元素的量积攒<c=#ff9999>20n</c>或<c=#ff9999>3</c>，受到月反应伤害积攒<c=#ff9999>3</c>，充满退出状态。",
+   "iconPath": "",
+   "charge": [
     {
      "Type": "Other",
      "ConditionDesc": "抗打断0，全抗性提升60%/120%，允许受到火元素伤害；充能条总量100/150(深渊)，受到火元素攻击后根据火元素的量积攒20n或3，受到月反应伤害积攒3，充满退出状态。"
@@ -150,6 +150,9 @@
  ],
  "leyline": null,
  "id": "blazing-brilliance-frostnight-scion",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "元素生命"

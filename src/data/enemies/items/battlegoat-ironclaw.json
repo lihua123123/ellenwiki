@@ -146,6 +146,9 @@
  ],
  "leyline": null,
  "id": "battlegoat-ironclaw",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "地方传奇"

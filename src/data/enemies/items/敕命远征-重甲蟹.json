@@ -32,6 +32,9 @@
  "levelRows": [],
  "leyline": null,
  "id": "敕命远征-重甲蟹",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

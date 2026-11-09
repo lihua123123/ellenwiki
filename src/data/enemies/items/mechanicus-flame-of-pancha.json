@@ -75,6 +75,9 @@
  ],
  "leyline": null,
  "id": "mechanicus-flame-of-pancha",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他"

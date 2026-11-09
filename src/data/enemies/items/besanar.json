@@ -194,6 +194,9 @@
  ],
  "leyline": null,
  "id": "besanar",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "元素生命"

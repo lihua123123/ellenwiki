@@ -71,6 +71,9 @@
  ],
  "leyline": null,
  "id": "hydro-mimic-raptor",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

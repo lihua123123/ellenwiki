@@ -118,6 +118,9 @@
  ],
  "leyline": null,
  "id": "raiden-shogun",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "无分类"

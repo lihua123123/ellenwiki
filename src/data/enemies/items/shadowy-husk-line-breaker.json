@@ -99,6 +99,9 @@
  ],
  "leyline": null,
  "id": "shadowy-husk-line-breaker",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "深渊"

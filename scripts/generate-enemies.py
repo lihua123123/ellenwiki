@@ -30,13 +30,15 @@ generate-enemies.py — 敌人图鉴 ETL（全量）。
 """
 import io
 import json
+import os
 import re
 import shutil
 import sys
 from pathlib import Path
 
 # ──────────────── 配置 ────────────────
-SOURCE_ROOT = Path(r'D:\edge下载\GIEnemyChartXML-main')
+# 图表源（mxml + fxg + icons）：默认是制图机上的解压目录，可用 ELLEN_CHART_ROOT 覆盖。
+SOURCE_ROOT = Path(os.environ.get('ELLEN_CHART_ROOT') or r'D:\edge下载\GIEnemyChartXML-main')
 WIKI_ROOT = Path(__file__).resolve().parent.parent
 COLLECTED_DIR = Path(r'D:\EllenDB\workspace\ec_tmp\collected_all')
 GEN_REPORT = Path(r'D:\EllenDB\workspace\ec_tmp\gen_all\_generation_report.json')
@@ -326,6 +328,14 @@ def parse_fxg_images(fxg_path):
     return out
 
 
+def asset_dir_for(fxg_path):
+    """fxg 的资源目录：常规是 `<名字>.assets`，个别页直接是 `<名字>`（元能构装体·勘探机）。"""
+    for cand in (fxg_path.parent / (fxg_path.stem + '.assets'), fxg_path.parent / fxg_path.stem):
+        if cand.is_dir():
+            return cand
+    return None
+
+
 def asset_size(asset_dir, name):
     p = asset_dir / name
     if not p.exists():
@@ -395,6 +405,67 @@ def extract_skill_rows(blocks):
         if m and m.group(2) in ('定点', '控制', '远程', '输出', '召唤', '妨害', '爆发', '防御', '位移'):
             rows.append((y, x, m.group(1).strip()))
     return rows
+
+
+def loose_skill_rows(blocks):
+    """技能名行（宽松）：类型放宽成 2~4 个汉字。
+
+    `extract_skill_rows` 的白名单只有 9 个类型，凡「协同 / 回复 / 转换 / 苏醒 / 反击 /
+    追踪 / 碾压 / 锁定 / 靠近 / 天赋 / 防卫」这类行都会被丢掉，行数一少，按行号对齐的
+    图标就整段错位或直接空着（门扉前的弈局2 12 行里丢 4 行、祸津御建鸣神命 10 行里丢 4 行）。
+    行本身仍是「名字-类型」，只是不认白名单。
+    """
+    rows = []
+    for y, x, text in blocks:
+        m = re.match(r'^([^<>]+?)-([\u4e00-\u9fa5]{2,4})$', text.strip().replace('\n', ''))
+        if m:
+            rows.append((y, x, m.group(1).strip()))
+    return rows
+
+
+def _clean_skill_name(name):
+    """去掉模仿招式的『 *来源* 』尾巴（深邃摹结株）。"""
+    return re.sub(r'\s*\*[^*]*\*$', '', name or '').strip()
+
+
+def page_skill_icons(source):
+    """页 → ({归一化技能名: 图标源文件}, 按行序的图标列表)。"""
+    if not source or not source.fxg or not source.mxml:
+        return {}, []
+    asset_dir = asset_dir_for(source.fxg)
+    if asset_dir is None:
+        return {}, []
+    rows = loose_skill_rows(parse_mxml_blocks(source.mxml))
+    if not rows:
+        return {}, []
+    icons = find_skill_icons(source.fxg, asset_dir, rows)
+    by_name = {}
+    for (_y, _x, name), icon in zip(rows, icons):
+        if icon:
+            by_name.setdefault(norm_key(name), icon)
+    return by_name, icons
+
+
+def fill_skill_icons(skills, source, img_dir, prefix=''):
+    """按技能名补空图标；行数与技能数一致时再用行号兜底。返回补上的个数。"""
+    by_name, ordered = page_skill_icons(source)
+    if not by_name and not ordered:
+        return 0
+    align_by_index = len(ordered) == len(skills)
+    filled = 0
+    for i, sk in enumerate(skills):
+        if sk.get('icon'):
+            continue
+        src = by_name.get(norm_key(_clean_skill_name(sk.get('name'))))
+        if src is None and align_by_index:
+            src = ordered[i]
+        if src is None:
+            continue
+        name = f'{prefix}skill-{i + 1}.webp'
+        write_skill_icon(Path(src), img_dir / name)
+        sk['icon'] = name
+        filled += 1
+    return filled
 
 
 def resolve_icon_file(icon_path):
@@ -649,6 +720,75 @@ def base_entry_from_fields(fields, internal_id):
     }
 
 
+# v2.0 内容图映射（敌人原名 → 种子图相对路径）。懒加载，离线可用。
+_V2_IMAGE_MAP = None
+def _load_v2_image_map():
+    global _V2_IMAGE_MAP
+    if _V2_IMAGE_MAP is None:
+        _f = WIKI_ROOT / 'scripts' / 'seed' / 'v2-image-map.json'
+        if _f.exists():
+            _V2_IMAGE_MAP = json.loads(_f.read_text(encoding='utf-8'))
+        else:
+            _V2_IMAGE_MAP = {}
+    return _V2_IMAGE_MAP
+
+
+# ECLeyLine 幽境内容图映射（幽境名 → 种子图）。文件名形如「<战役>-<幽境名>.png」。
+_V2_LEYLINE_MAP = None
+def _load_v2_leyline_map():
+    global _V2_LEYLINE_MAP
+    if _V2_LEYLINE_MAP is None:
+        _d = WIKI_ROOT / 'scripts' / 'seed' / 'v2-enemy-avatars' / 'ECLeyLine'
+        _m = {}
+        if _d.exists():
+            for _p in sorted(_d.glob('*.png')):
+                _m[norm_key(re.sub(r'^.+?之役-', '', _p.stem))] = _p
+        _V2_LEYLINE_MAP = _m
+    return _V2_LEYLINE_MAP
+
+
+# 幽境全身立绘映射（幽境名 → 原画种子）。v2 图是「全技能一图流」信息卡，这里补纯立绘。
+_V2_LEYLINE_ART = None
+def _load_leyline_art_map():
+    global _V2_LEYLINE_ART
+    if _V2_LEYLINE_ART is None:
+        _f = WIKI_ROOT / 'scripts' / 'seed' / 'leyline-art-map.json'
+        _m = {}
+        if _f.exists():
+            for _k, _rel in json.loads(_f.read_text(encoding='utf-8')).items():
+                _m[norm_key(_k)] = WIKI_ROOT / _rel
+        _V2_LEYLINE_ART = _m
+    return _V2_LEYLINE_ART
+
+
+# 真名归并映射（Veterans「历经百战的XXX」条目名 → Legends 真名条目名）。
+# 源数据里同一只怪有 Legends/<Id>_Elite（真名）与 Veterans/<Id>_Battle（历经百战）两份，
+# 图鉴只保留真名条目，Veterans 的旧名进 aliases。
+_REALNAME_MERGE = None
+def _load_realname_merge():
+    global _REALNAME_MERGE
+    if _REALNAME_MERGE is None:
+        _f = WIKI_ROOT / 'scripts' / 'seed' / 'realname-merge.json'
+        _REALNAME_MERGE = {}
+        if _f.exists():
+            for _k, _v in json.loads(_f.read_text(encoding='utf-8')).items():
+                _REALNAME_MERGE[norm_key(_k)] = _v
+    return _REALNAME_MERGE
+
+
+# 幽境块改挂映射（幽境名 → 真名条目名）。用于母体不是同名家族的场合，如
+# 「历经百战的玳龟·坚盾轰霆」的母体是地方传奇「科西霍」而不是野怪「玳龟」。
+_LEYLINE_REPARENT = None
+def _load_leyline_reparent():
+    global _LEYLINE_REPARENT
+    if _LEYLINE_REPARENT is None:
+        _f = WIKI_ROOT / 'scripts' / 'seed' / 'leyline-reparent.json'
+        _LEYLINE_REPARENT = {}
+        if _f.exists():
+            for _k, _v in json.loads(_f.read_text(encoding='utf-8')).items():
+                _LEYLINE_REPARENT[norm_key(_k)] = _v
+    return _LEYLINE_REPARENT
+
 def export_images(entry, fields, source, prefix_skills='skill'):
     """头像 + 技能图标导出到 public/images/enemies/<id>/。返回 (icon 名列表, 头像文件名)。"""
     enemy_id = entry['id']
@@ -662,11 +802,36 @@ def export_images(entry, fields, source, prefix_skills='skill'):
         save_webp(src_icon, img_dir / 'avatar.webp', max_side=256)
         avatar_file = 'avatar.webp'
     elif source and source.fxg:
-        asset_dir = source.fxg.parent / (source.fxg.stem + '.assets')
-        avatar = find_avatar(asset_dir) if asset_dir.exists() else None
+        asset_dir = asset_dir_for(source.fxg)
+        avatar = find_avatar(asset_dir) if asset_dir else None
         if avatar:
             save_webp(avatar, img_dir / 'avatar.webp')
             avatar_file = 'avatar.webp'
+
+    # v2.0 内容图（一图流，置于详情底部，非头像）：
+    # 按敌人原名在 scripts/seed/v2-image-map.json 匹配种子图，离线可用、不依赖网络；
+    # 仅作内容补充，GIEnemyChartXML 之后收录同名真实敌人也不会冲突。
+    if not entry.get('images'):
+        _v2m = _load_v2_image_map()
+        _m = _v2m.get(entry.get('name')) if _v2m else None
+        if _m:
+            import shutil as _shutil
+            # 支持多张（多阶段 boss / 双人组合 / 驮兽系列）：seeds 优先，回退单 seed
+            _seeds = _m.get('seeds') or ([_m['seed']] if _m.get('seed') else [])
+            _ok_seeds = [_rel for _rel in _seeds if (WIKI_ROOT / _rel).exists()]
+            for _rel in _seeds:
+                if _rel not in _ok_seeds:
+                    print(f'  ⚠ v2 内容图种子缺失：{WIKI_ROOT / _rel}')
+            if _ok_seeds:
+                # 清掉旧 reference 系列，避免图片数量变少时残留孤儿文件
+                for _old in img_dir.glob('reference*.png'):
+                    _old.unlink()
+                _imgs = []
+                for _rel in _ok_seeds:
+                    _fn = 'reference.png' if not _imgs else f'reference-{len(_imgs) + 1}.png'
+                    _shutil.copy2(WIKI_ROOT / _rel, img_dir / _fn)
+                    _imgs.append(_fn)
+                entry['images'] = _imgs
 
     # 技能图标：IconPath 查 icons/ 树 → fxg 摆放定位
     skills = fields.get('Skill') or fields.get('SkillDiffer') or []
@@ -680,8 +845,8 @@ def export_images(entry, fields, source, prefix_skills='skill'):
             continue
         icon_files.append('')
     if source and source.fxg and any(not f for f in icon_files):
-        asset_dir = source.fxg.parent / (source.fxg.stem + '.assets')
-        if asset_dir.exists():
+        asset_dir = asset_dir_for(source.fxg)
+        if asset_dir:
             blocks = parse_mxml_blocks(source.mxml) if source.mxml else []
             rows = extract_skill_rows(blocks)
             fallback = find_skill_icons(source.fxg, asset_dir, rows) if rows else []
@@ -697,8 +862,8 @@ def export_portrait(source, img_dir):
     """幽境立绘。"""
     if not source or not source.fxg:
         return ''
-    asset_dir = source.fxg.parent / (source.fxg.stem + '.assets')
-    portrait = find_portrait(asset_dir) if asset_dir.exists() else None
+    asset_dir = asset_dir_for(source.fxg)
+    portrait = find_portrait(asset_dir) if asset_dir else None
     if not portrait:
         return ''
     save_webp(portrait, img_dir / 'leyline-portrait.webp')
@@ -822,7 +987,9 @@ STATE_GROUPS = [
         'base': '「女士」',
         'states': [
             {'key': 'p1', 'label': '第一阶段', 'src': '「女士」'},
-            {'key': 'p2', 'label': '第二阶段', 'page': '女士2'},
+            # 二阶段在 catalog 里另有一条「焚尽的炎魔女」，这里以它为身份（头像/英文名），
+            # 内容取 女士2 页，合并后列表不再出现两张卡。
+            {'key': 'p2', 'label': '第二阶段', 'src': '焚尽的炎之魔女', 'page': '女士2'},
         ],
     },
     {
@@ -955,7 +1122,8 @@ def merge_state_groups(entries, ctx):
                 content_entry=page if (page and src) else None)
             snaps.append(snap)
             metas.append({'entry': entry, 'snap': snap, 'primary': primary,
-                          'avatar_id': entry['id'], 'skill_id': (page or entry)['id']})
+                          'avatar_id': entry['id'], 'skill_id': (page or entry)['id'],
+                          'page': sp.get('page'), 'src': sp.get('src')})
             if primary:
                 host = entry
         if host is None:
@@ -1010,6 +1178,12 @@ def merge_state_groups(entries, ctx):
                 if src_f.resolve() != dst_f.resolve():
                     shutil.copyfile(src_f, dst_f)
                 sk['icon'] = f'{prefix}skill-{i + 1}.webp'
+            # 状态页自己的 fxg：多阶段 boss 的技能是各页独有的，母体那套图标对不上，
+            # 按技能名从该状态的源页补（门扉前的弈局 / 祸津御建鸣神命 / 七叶寂照秘密主…）。
+            if any(not sk.get('icon') for sk in meta['snap']['skills']):
+                page_src = (ctx['sources'].get(meta.get('page') or '')
+                            or ctx['sources'].get(meta.get('src') or ''))
+                fill_skill_icons(meta['snap']['skills'], page_src, dest_dir, prefix)
 
         # 顶层头像 = 主状态的图。源页临时条目（_page_entry）初始 icon 为空，
         # 而上面的字段复制发生在导出图片之前，不回填的话列表卡片会没头像。
@@ -1036,6 +1210,119 @@ def merge_state_groups(entries, ctx):
         print(f'  多状态合并：{host["name"]}（{"/".join(s["label"] for s in snaps)}）')
     return [e for e in entries if id(e) not in removed]
 
+
+# ──────────────── 覆盖（上游源错版时的正版数据） ────────────────
+def _fxg_inline_markup(body):
+    """fxg 行内富文本 → 站内富文本（颜色继续走 convert_richtext 那套）。"""
+    t = re.sub(r'<span[^>]*?color="(#[0-9a-fA-F]{6})"[^>]*>(.*?)</span>',
+               r'<color=\1>\2</color>', body, flags=re.S)
+    t = re.sub(r'<span[^>]*>(.*?)</span>', r'\1', t, flags=re.S)
+    t = re.sub(r'</?content>', '', t)
+    t = re.sub(r'<p[^>]*>', '', t).replace('</p>', '\n')
+    t = re.sub(r'<br\s*/?>', '\n', t)
+    t = convert_richtext(t)
+    # 只清站内不认识的标签：<c=#hex>…</c> 是富文本颜色，必须留着
+    t = re.sub(r'<(?!/?c=|/c>)[a-zA-Z/][^>]*>', '', t)
+    return re.sub(r'\n{2,}', '\n', t).strip()
+
+
+def fxg_paragraphs(fxg_path):
+    """fxg → [(x, y, 站内富文本)]；按坐标取文案，上游改版后顺序变了也不会串行。"""
+    raw = fxg_path.read_text(encoding='utf-8')
+    out = []
+    for m in re.finditer(r'<RichText x="(-?\d+)" y="(-?\d+)"[^>]*>(.*?)</RichText>', raw, re.S):
+        text = _fxg_inline_markup(m.group(3))
+        if text:
+            out.append((int(m.group(1)), int(m.group(2)), text))
+    return out
+
+
+def _paragraph_at(paragraphs, coord, label):
+    """按 (x, y) 取段落，±6px 容差；取不到直接报错，避免静默写空文案。"""
+    if not coord:
+        return ''
+    px, py = coord
+    hit = next((t for x, y, t in paragraphs if abs(x - px) <= 6 and abs(y - py) <= 6), None)
+    if hit is None:
+        raise SystemExit(f'  ✘ 覆盖文案坐标失效：{label} ({px},{py})，请对照 fxg 重新取值')
+    return hit
+
+
+def _state_override_rules():
+    f = WIKI_ROOT / 'scripts' / 'seed' / 'state-skill-overrides.json'
+    return json.loads(f.read_text(encoding='utf-8')) if f.exists() else {}
+
+
+def apply_state_skill_overrides(entries, ctx):
+    """上游 mxml 内容对不上条目的（如 女士1.mxml 其实是「愚人众·霜役人」）用种子强制覆盖。
+
+    种子结构：
+        {"<条目名>": {"<state key>": {
+            "fxg": "<页名>",              # 文案与技能名素材都取自这页
+            "nameEn" / "subtitle" / "levelRows" / "resistances" / "energy": ...,
+            "skills": [{"name", "type", "icon": "<.assets 里的文件名>", "desc": [x, y]}]
+        }}}
+    """
+    rules = _state_override_rules()
+    if not rules:
+        return
+    by_name = {e['name']: e for e in entries}
+    for ename, states in rules.items():
+        e = by_name.get(ename)
+        if e is None:
+            print(f'  ⚠ 覆盖目标未找到：{ename}')
+            continue
+        img_dir = ctx['img_root'] / e['id']
+        img_dir.mkdir(parents=True, exist_ok=True)
+        for key, spec in states.items():
+            snap = next((s for s in e.get('states') or [] if s['key'] == key), None)
+            if snap is None:
+                print(f'  ⚠ 覆盖状态未找到：{ename}/{key}')
+                continue
+            src = ctx['sources'].get(spec.get('fxg') or '')
+            paragraphs = []
+            asset_dir = None
+            if spec.get('skills'):
+                if src is None or not src.fxg:
+                    print(f'  ⚠ 覆盖源页未找到：{ename}/{key} ({spec.get("fxg")})')
+                    continue
+                asset_dir = asset_dir_for(src.fxg)
+                if asset_dir is None:
+                    print(f'  ⚠ 覆盖源缺资源目录：{ename}/{key}（{spec.get("fxg")}）')
+                    continue
+                paragraphs = fxg_paragraphs(src.fxg)
+            primary = key == (e.get('defaultState') or '')
+            prefix = '' if primary else f'state-{key}-'
+            skills = None
+            if spec.get('skills'):
+                skills = []
+                for i, sk in enumerate(spec['skills']):
+                    icon = ''
+                    asset = asset_dir / sk['icon'] if sk.get('icon') else None
+                    if asset is not None and asset.exists():
+                        icon = f'{prefix}skill-{i + 1}.webp'
+                        write_skill_icon(asset, img_dir / icon)
+                    skills.append({
+                        'name': sk['name'],
+                        'type': sk.get('type', ''),
+                        'icon': icon,
+                        'description': _paragraph_at(paragraphs, sk.get('desc'), f'{ename}/{sk["name"]}'),
+                    })
+                snap['skills'] = skills
+            fields = ('name', 'nameEn', 'subtitle', 'tier', 'levelRows', 'resistances',
+                      'energy', 'weight', 'defaultLevel', 'baseStats')
+            for f in fields:
+                if f in spec:
+                    snap[f] = spec[f]
+            if primary:
+                if skills is not None:
+                    e['skills'] = skills
+                for f in fields:
+                    if f in spec:
+                        e[f] = spec[f]
+            print(f'  覆盖：{ename}/{key}'
+                  f'{" 技能 " + str(len(skills)) + " 条" if skills is not None else " 仅字段"}'
+                  f'（源 {spec.get("fxg") or "—"}）')
 
 
 def build_source_only_entries(sources_by_name, curve, energy_index, icon_idx, ref):
@@ -1196,6 +1483,15 @@ def main():
         mid = ley_e['_internal_id']
         candidates = [e for e in entries if e is not ley_e and not is_leyline_entry(e)]
 
+        # 0) 种子改挂：幽境名 → 指定真名条目。母体不是同名家族时用，
+        #    如「历经百战的玳龟·坚盾轰霆」应挂地方传奇「科西霍」而不是野怪「玳龟」。
+        _rp = _load_leyline_reparent().get(norm_key(ley_e.get('name') or ''))
+        if _rp:
+            for e in candidates:
+                if norm_key(e['name']) == norm_key(_rp):
+                    return e
+            print(f'  ⚠ 幽境改挂目标未找到：{ley_e["name"]} → {_rp}')
+
         def match_exact(e, target):
             ek = norm_key(e['name'])
             return ek == target or norm_key(strip_prefixes(ek)) == norm_key(strip_prefixes(target))
@@ -1238,6 +1534,15 @@ def main():
                         and len(e['name']) >= 2 and e['name'] in joined]
                 if hits:
                     return max(hits, key=lambda e: len(e['name']))
+        # 兜底：challenge / 源名都没命中时，直接用条目自身名字解析。
+        # 去战役前缀 → 去「历经百战的」→ 取「·」前段，做归一化精确匹配。
+        # 例：Mandragora_Leyline「历经百战的十六倍曼陀草·风滚狂蔓」→ 十六倍曼陀草。
+        cand = re.sub(r'^.+?之役-', '', ley_e.get('name') or '')
+        cand = re.sub(r'^历经百战的', '', cand).split('·')[0].strip()
+        if cand:
+            for e in candidates:
+                if norm_key(e['name']) == norm_key(cand):
+                    return e
         return None
 
     attached = set()
@@ -1259,9 +1564,10 @@ def main():
             if src:
                 write_skill_icon(src, dest)
             elif ley_source and ley_source.fxg and ley_source.mxml:
-                asset_dir = ley_source.fxg.parent / (ley_source.fxg.stem + '.assets')
+                asset_dir = asset_dir_for(ley_source.fxg)
                 rows = extract_skill_rows(parse_mxml_blocks(ley_source.mxml))
-                fb = find_skill_icons(ley_source.fxg, asset_dir, rows) if rows else []
+                fb = (find_skill_icons(ley_source.fxg, asset_dir, rows)
+                      if rows and asset_dir else [])
                 if i < len(fb) and fb[i]:
                     write_skill_icon(fb[i], dest)
                 else:
@@ -1296,10 +1602,132 @@ def main():
                     'multiplier': co.get(key), 'advantage': '',
                 })
             base['leyline']['difficulties'] = rows
+        # 幽境专属内容图：按「<战役>-<幽境名>」的幽境名匹配 ECLeyLine 种子图，
+        # 不放基础图顶替（基础图只属于基础内容块）。
+        _ley_src = _load_v2_leyline_map().get(norm_key(base['leyline']['name']))
+        if _ley_src and _ley_src.exists():
+            shutil.copy2(_ley_src, img_dir / 'leyline.png')
+            base['leylineImages'] = ['leyline.png']
+        else:
+            print(f'  ⚠ 幽境内容图未匹配：{base["name"]} / {base["leyline"]["name"]}')
+        # 幽境左侧立绘兜底：export_portrait 拿不到时用 scripts/seed/leyline-art-map.json 的原画。
+        # （v2 的 ECLeyLine/*.png 是「全技能一图流」信息卡，不能当立绘用）
+        if not base['leyline'].get('portrait'):
+            _ley_art = _load_leyline_art_map().get(norm_key(base['leyline']['name']))
+            if _ley_art and _ley_art.exists():
+                shutil.copy2(_ley_art, img_dir / 'leyline-portrait.png')
+                base['leyline']['portrait'] = 'leyline-portrait.png'
         attached.add(id(ley_e))
         print(f'  幽境挂接：{ley_e["name"]} → {base["name"]}')
 
     entries = [e for e in entries if id(e) not in attached]
+
+    # 5.5) 真名归并：同一只怪在源里同时有 Legends/<Id>_Elite（真名，如「西格德」）与
+    #      Veterans/<Id>_Battle（「历经百战的执灯人」）两条时，图鉴只保留真名条目，
+    #      旧名进 aliases + 补「历经百战」标签。种子 scripts/seed/realname-merge.json
+    #      = {"Veterans 名": "真名"}。
+    _rm = _load_realname_merge()
+    if _rm:
+        _by_norm = {}
+        for e in entries:
+            _by_norm.setdefault(norm_key(e['name']), e)
+        _fold = set()
+        for e in entries:
+            _host_name = _rm.get(norm_key(e['name']))
+            _host = _by_norm.get(norm_key(_host_name)) if _host_name else None
+            if not _host or _host is e:
+                continue
+            # 幽境块若仍挂在变体上（未走 leyline-reparent 改挂），连带资产搬给真名条目
+            if e.get('leyline'):
+                _src_dir = WIKI_ROOT / 'public' / 'images' / 'enemies' / e['id']
+                _dst_dir = WIKI_ROOT / 'public' / 'images' / 'enemies' / _host['id']
+                _dst_dir.mkdir(parents=True, exist_ok=True)
+                if _src_dir.exists():
+                    for _f in _src_dir.iterdir():
+                        if _f.name == 'leyline.png' or _f.name.startswith('leyline-'):
+                            shutil.copy2(_f, _dst_dir / _f.name)
+                if not _host.get('leyline'):
+                    _host['leyline'] = e['leyline']
+                if e.get('leylineImages') and not _host.get('leylineImages'):
+                    _host['leylineImages'] = e['leylineImages']
+            _host.setdefault('aliases', [])
+            if e['name'] not in _host['aliases']:
+                _host['aliases'].append(e['name'])
+            _host.setdefault('_extra_tags', [])
+            if '历经百战' not in _host['_extra_tags']:
+                _host['_extra_tags'].append('历经百战')
+            _fold.add(id(e))
+            print(f'  真名归并：{e["name"]} → {_host["name"]}')
+        entries = [e for e in entries if id(e) not in _fold]
+
+    # 6.0) v2.0 种子占位敌人（CI/离线兜底，GIEnemyChartXML 尚未收录的新/缺图敌人）
+    #   仅当图鉴中尚无同名（归一比较）敌人时注入；XML 之后收录会自动让位，重跑不丢。
+    _ph_file = WIKI_ROOT / 'scripts' / 'seed' / 'enemy-v2-placeholders.json'
+    if _ph_file.exists():
+        _existing = {norm_key(e['name']) for e in entries}
+        _ph_list = json.loads(_ph_file.read_text(encoding='utf-8'))
+        for _ph in _ph_list:
+            if norm_key(_ph['name']) in _existing:
+                continue
+            _seed = _ph.get('seed')
+            _entry = {
+                '_internal_id': '',
+                '_source_name': '',
+                '_raw_fields': {},
+                'id': _ph.get('id') or slugify_zh(_ph['name']),
+                'name': _ph['name'],
+                'nameEn': _ph.get('nameEn', ''),
+                'subtitle': '',
+                'category': _ph['category'],
+                'categoryLabel': CATEGORY_LABELS.get(_ph['category'], _ph['category']),
+                'tier': '',
+                'defaultLevel': None,
+                'baseStats': {'hp': {}, 'atk': {}, 'def': {}},
+                'resistances': [],
+                'elementMastery': 0,
+                'multiplayerGroup': '',
+                'weight': '',
+                'skills': [],
+                'notes': [],
+                'shields': [],
+                'chargebar': [],
+                'energy': None,
+                'levelRows': [],
+                'leyline': None,
+            }
+            entries.append(_entry)
+            _existing.add(norm_key(_ph['name']))
+            print(f'  v2 占位：{_ph["name"]}（{_ph["category"]}）')
+
+    # 6.1) 无数据幽境变体：挂到母体（源里没有该变体的条目，只补名称 + 幽境图 + 幽境标签）。
+    #      种子形如 {"parent": "浪涛锚定者", "name": "浪涛锚定者·狂飙突噬", "seed": "..."}。
+    _lv_file = WIKI_ROOT / 'scripts' / 'seed' / 'leyline-variants.json'
+    if _lv_file.exists():
+        _by_name = {norm_key(e['name']): e for e in entries}
+        for _lv in json.loads(_lv_file.read_text(encoding='utf-8')):
+            _base = _by_name.get(norm_key(_lv.get('parent', '')))
+            if not _base:
+                print(f'  ⚠ 幽境变体母体未找到：{_lv.get("parent")} / {_lv.get("name")}')
+                continue
+            _img_dir = WIKI_ROOT / 'public' / 'images' / 'enemies' / _base['id']
+            _img_dir.mkdir(parents=True, exist_ok=True)
+            _seed = WIKI_ROOT / _lv['seed'] if _lv.get('seed') else None
+            if _seed and _seed.exists():
+                shutil.copy2(_seed, _img_dir / 'leyline.png')
+                _base['leylineImages'] = ['leyline.png']
+            _base['leyline'] = {
+                'name': _lv['name'],
+                'nameEn': _lv.get('nameEn', ''),
+                'category': 'StygianOnslaught',
+                'categoryLabel': CATEGORY_LABELS.get('StygianOnslaught', '幽境危战'),
+                'portrait': '',
+                'difficulties': [],
+                'resistances': [],
+                'skills': [],
+                'notes': [],
+                'shields': [],
+            }
+            print(f'  幽境变体（无数据）：{_lv["name"]} → {_base["name"]}')
 
     # 6) 图片 + mxml 补数据（基础条目）
     # 源页缺 Tier、但同族/目录已标首领的周本条目 → 补齐档位（仅标注，不改数值）
@@ -1318,6 +1746,9 @@ def main():
         icon_files, avatar_file = export_images(e, fields, source)
         for i, sk in enumerate(e['skills']):
             sk['icon'] = icon_files[i] if i < len(icon_files) else ''
+        # 图标兜底：export_images 是按行号对齐的，源页技能行数一少就整段空着；
+        # 这里再按技能名补一遍（门扉前的弈局 / 祸津御建鸣神命 / 凝冰秘法师…）。
+        fill_skill_icons(e['skills'], source, img_root / e['id'], '')
         e['icon'] = avatar_file
         enrich_from_mxml(e, source)
         fill_base_stats_from_rows(e, curve)
@@ -1377,6 +1808,12 @@ def main():
         'energy_index': energy_index,
         'icon_idx': icon_idx,
         'ref': ref,
+        'img_root': img_root,
+    })
+
+    # 6.85) 上游源错版时的正版数据覆盖（女士一阶段：mxml 里其实是霜役人）
+    apply_state_skill_overrides(entries, {
+        'sources': sources_by_name,
         'img_root': img_root,
     })
 
@@ -1443,6 +1880,76 @@ def main():
             holder['notes'] = [n for n in holder.get('notes', [])
                                if (e['name'], n['text'].strip()) not in NOTE_EXCLUDE]
 
+    # 6.2) 幽境变体并入母体（源里独立成条、实际是母体的幽境形态）：
+    #      数据搬进母体 leyline 块，图片复制为 leyline.png，删除独立条目。
+    #      scripts/seed/leyline-merge.json → [{"child_id": "...", "parent": "母体名"}]
+    _merge_file = WIKI_ROOT / 'scripts' / 'seed' / 'leyline-merge.json'
+    if _merge_file.exists():
+        for _rule in json.loads(_merge_file.read_text(encoding='utf-8')):
+            _child = next((x for x in entries if x['id'] == _rule.get('child_id')), None)
+            _parent = next((x for x in entries if x['name'] == _rule.get('parent')), None)
+            if not _child or not _parent:
+                continue
+            _parent['leyline'] = {
+                'name': _child['name'],
+                'nameEn': _child.get('nameEn', ''),
+                'category': _child.get('category', ''),
+                'categoryLabel': _child.get('categoryLabel', ''),
+                'portrait': '',
+                'difficulties': [],
+                'resistances': _child.get('resistances') or [],
+                'skills': _child.get('skills') or [],
+                'notes': _child.get('notes') or [],
+                'shields': _child.get('shields') or [],
+            }
+            _tg = _parent.setdefault('tags', [])
+            if '幽境危战' not in _tg:
+                _tg.append('幽境危战')
+            if _rule.get('alias'):
+                _al = _parent.setdefault('aliases', [])
+                if _rule['alias'] not in _al:
+                    _al.append(_rule['alias'])
+            _cimgs = _child.get('images') or []
+            if _cimgs:
+                _src = WIKI_ROOT / 'public' / 'images' / 'enemies' / _child['id'] / _cimgs[0]
+                if _src.exists():
+                    _dst_dir = WIKI_ROOT / 'public' / 'images' / 'enemies' / _parent['id']
+                    _dst_dir.mkdir(parents=True, exist_ok=True)
+                    shutil.copy2(_src, _dst_dir / 'leyline.png')
+                    _parent['leylineImages'] = ['leyline.png']
+            entries.remove(_child)
+            print(f'  合并幽境变体：{_child["name"]} → {_parent["name"]}')
+
+    # 6.95) 模仿类首领的招式补充：如「深邃摹结株·I/II/III型」会模仿 13 个首领的招式，
+    #       但源 JSON 只给 2 个本体技能，招式文字只在 fxg 排版里 → 用种子补进 skills，
+    #       招式名后缀「 *来源怪物*」（本体「深邃摹结株」不加）。
+    #       种子 scripts/seed/papilla-mimic-skills.json = {变体名: [{name, source, description}]}
+    _pm_file = WIKI_ROOT / 'scripts' / 'seed' / 'papilla-mimic-skills.json'
+    if _pm_file.exists():
+        _pm = json.loads(_pm_file.read_text(encoding='utf-8'))
+        _by_norm = {norm_key(e['name']): e for e in entries}
+        for _ename, _skills in _pm.items():
+            _e = _by_norm.get(norm_key(_ename))
+            if not _e:
+                print(f'  ⚠ 模仿招式目标未找到：{_ename}')
+                continue
+            _have = {s.get('name') for s in _e.get('skills', [])}
+            _added = 0
+            for _s in _skills:
+                _full = f'{_s["name"]} *{_s["source"]}*'
+                if _full in _have:
+                    continue
+                _e.setdefault('skills', []).append({
+                    'name': _full,
+                    'type': '',
+                    'icon': '',
+                    'description': _s.get('description', ''),
+                })
+                _have.add(_full)
+                _added += 1
+            if _added:
+                print(f'  模仿招式：{_ename} +{_added} 条（共 {len(_e["skills"])}）')
+
     index = []
     for e in sorted(entries, key=lambda x: (x['categoryLabel'], x['name'])):
         item = {k: v for k, v in e.items() if not k.startswith('_')}
@@ -1481,7 +1988,14 @@ def main():
     seen = {}
     for e in index:
         seen[e['category']] = seen.get(e['category'], 0) + 1
+    # 幽境危战：跨分类筛选维度。条目保留自身分类（自律机关/地方传奇…），
+    # 这里只按「有没有幽境块」计数，让筛选栏的「幽境危战」始终可用。
+    _ley_count = sum(1 for e in index if e.get('hasLeyline'))
     for cat, label in CATEGORY_LABELS.items():
+        if cat == 'StygianOnslaught':
+            if _ley_count:
+                categories.append({'key': cat, 'label': label, 'count': _ley_count})
+            continue
         if cat in seen and not (cat in ('EnemiesOfNote', 'MysticalBeasts', 'LeyLine', 'Leyline')):
             categories.append({'key': cat, 'label': label, 'count': seen[cat]})
             del seen[cat]

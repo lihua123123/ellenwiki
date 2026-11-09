@@ -252,6 +252,12 @@
   ]
  },
  "id": "churin",
+ "leylineImages": [
+  "leyline.png"
+ ],
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "地方传奇",

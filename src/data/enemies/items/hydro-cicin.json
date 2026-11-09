@@ -76,6 +76,9 @@
  ],
  "leyline": null,
  "id": "hydro-cicin",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

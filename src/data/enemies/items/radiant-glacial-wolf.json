@@ -118,6 +118,9 @@
  ],
  "leyline": null,
  "id": "radiant-glacial-wolf",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

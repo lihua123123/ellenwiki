@@ -142,6 +142,10 @@
  ],
  "leyline": null,
  "id": "the-knave",
+ "images": [
+  "reference.png",
+  "reference-2.png"
+ ],
  "icon": "avatar.webp",
  "states": [
   {
@@ -334,25 +338,25 @@
     {
      "name": "薄暝殄瘁之刻",
      "type": "突袭",
-     "icon": "",
+     "icon": "state-p2-skill-1.webp",
      "description": "入战后，仆人立即从高处跃下，下落至玩家处，造成<c=#ff4c4c>100%</c>伤害，并秀出她的双镰刀。"
     },
     {
      "name": "朱丝织缀之礼",
      "type": "位移",
-     "icon": "",
+     "icon": "state-p2-skill-2.webp",
      "description": "仆人向前扔出镰刀，造成<c=#ff9999>70%</c>伤害，接着仆人顺势利用链条冲出，造成<c=#ff9999>70%+50%</c>伤害，之后接上数刀挥舞。"
     },
     {
      "name": "缁乌将迎厄月",
      "type": "妨害",
-     "icon": "",
+     "icon": "state-p2-skill-3.webp",
      "description": "仆人施放 「血潮赤宴」类技能之前，会打响指，为角色施加`「生命之契」`并进入 「血潮赤宴」蓄力状态。打断蓄力则反噬仆人<c=#ffccbf>11.2%</c>的生命值。生命之契的大小基于仆人<c=#bfffff>10%</c>的攻击力，并且每2.5秒流失<c=#bfffff>(1.25%HP+200)</c>的生命值。"
     },
     {
      "name": "真劫无复之宴",
      "type": "爆发",
-     "icon": "",
+     "icon": "state-p2-skill-4.webp",
      "description": "仆人升空，在空中展出缬绯光翼，两侧各发射9枚星弹，均造成<c=#ff4c4c>15%</c>伤害；光翼化为6枚猩红弹嵌入地面，片刻后喷发，均造成<c=#ff4c4c>200%</c>伤害，同时仆人立即落地下落至玩家处，造成<c=#ff4c4c>100%</c>伤害。"
     },
     {
@@ -370,25 +374,25 @@
     {
      "name": "月染狱中翩跹",
      "type": "输出",
-     "icon": "",
+     "icon": "state-p2-skill-7.webp",
      "description": "仆人进行至多5段的普通攻击，其依次造成<c=#ff9999>30%,40%,40%,40%x2,80%</c>伤害，其中第一段会丢出旋转火轮，将持续造成<c=#ff9999>12.5%</c>伤害。"
     },
     {
      "name": "指尖迷离殷影",
      "type": "猛攻",
-     "icon": "",
+     "icon": "state-p2-skill-8.webp",
      "description": "仆人展开外骨骼，发动血火之光，造成<c=#ff4c4c>100%</c>伤害，可以连续施放至多3次。"
     },
     {
      "name": "烈酒覆杯罗裳",
      "type": "防御",
-     "icon": "",
+     "icon": "state-p2-skill-9.webp",
      "description": "若玩家处于仆人侧后方，则仆人立即进行转身斩，造成<c=#ff9999>50%x2</c>伤害，然后追加施放「月染狱中翩跹」或「朱丝织缀之礼」。"
     },
     {
      "name": "阖血亘久之狱",
      "type": "位移",
-     "icon": "",
+     "icon": "state-p2-skill-10.webp",
      "description": "仆人进行大跳位移，将出现在背对玩家更远的场地一侧。"
     }
    ],

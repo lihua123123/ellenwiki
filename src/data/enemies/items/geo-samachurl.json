@@ -106,6 +106,9 @@
  ],
  "leyline": null,
  "id": "geo-samachurl",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "丘丘族群"

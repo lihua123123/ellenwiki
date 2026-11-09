@@ -1,0 +1,48 @@
+{
+ "id": "浪涛锚定者",
+ "name": "浪涛锚定者",
+ "nameEn": "",
+ "subtitle": "",
+ "category": "MagicalBeasts",
+ "categoryLabel": "异种魔兽",
+ "tier": "",
+ "defaultLevel": null,
+ "baseStats": {
+  "hp": {},
+  "atk": {},
+  "def": {}
+ },
+ "resistances": [],
+ "elementMastery": 0,
+ "multiplayerGroup": "",
+ "weight": "",
+ "skills": [],
+ "notes": [],
+ "shields": [],
+ "chargebar": [],
+ "energy": null,
+ "levelRows": [],
+ "leyline": {
+  "name": "浪涛锚定者·狂飙突噬",
+  "nameEn": "",
+  "category": "StygianOnslaught",
+  "categoryLabel": "幽境危战",
+  "portrait": "",
+  "difficulties": [],
+  "resistances": [],
+  "skills": [],
+  "notes": [],
+  "shields": []
+ },
+ "leylineImages": [
+  "leyline.png"
+ ],
+ "images": [
+  "reference.png"
+ ],
+ "icon": "",
+ "tags": [
+  "异种魔兽",
+  "幽境危战"
+ ]
+}

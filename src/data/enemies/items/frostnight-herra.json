@@ -117,11 +117,11 @@
  "shields": [],
  "chargebar": [
   {
-   "Name": "晦隐",
-   "Description": "全抗性提升<color=#ffccbf>120%</color>，充能条总量<color=#ff9999>50</color>，受到<color=#ffdfbf>月曜反应伤害</color>积攒<color=#ffdfbf>6</color>，受到<color=#ffdfbf>非月曜伤害</color>积攒<color=#ffdfbf>1</color>，充满退出状态，并瘫痪13s；等价于<color=#ffbfbf>50</color>次<color=#ffdfbf>非月曜伤害</color>或<color=#ffbfbf>9</color>次<color=#ffdfbf>月曜伤害</color>退出状态，伤害>0的攻击才可充能。(计算总伤害时，月曜伤害按<color=#ffdfbf>1.3倍</color>计算)",
-   "IconPath": "",
-   "MaxValue": 50,
-   "Charge": [
+   "name": "晦隐",
+   "description": "全抗性提升<c=#ffccbf>120%</c>，充能条总量<c=#ff9999>50</c>，受到<c=#ffdfbf>月曜反应伤害</c>积攒<c=#ffdfbf>6</c>，受到<c=#ffdfbf>非月曜伤害</c>积攒<c=#ffdfbf>1</c>，充满退出状态，并瘫痪13s；等价于<c=#ffbfbf>50</c>次<c=#ffdfbf>非月曜伤害</c>或<c=#ffbfbf>9</c>次<c=#ffdfbf>月曜伤害</c>退出状态，伤害>0的攻击才可充能。(计算总伤害时，月曜伤害按<c=#ffdfbf>1.3倍</c>计算)",
+   "iconPath": "",
+   "maxValue": 50,
+   "charge": [
     {
      "Type": "Other",
      "ConditionDesc": "全抗性提升120%，充能条总量50，受到月曜反应伤害积攒6，受到非月曜伤害积攒1，充满退出状态，并瘫痪13s；等价于50次非月曜伤害或9次月曜伤害退出状态，伤害>0的攻击才可充能。(计算总伤害时，月曜伤害按1.3倍计算)"
@@ -255,6 +255,12 @@
   "shields": []
  },
  "id": "frostnight-herra",
+ "leylineImages": [
+  "leyline.png"
+ ],
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "元素生命",

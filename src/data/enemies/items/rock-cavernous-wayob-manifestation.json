@@ -124,6 +124,9 @@
  ],
  "leyline": null,
  "id": "rock-cavernous-wayob-manifestation",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

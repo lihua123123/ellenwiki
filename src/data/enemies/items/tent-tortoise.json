@@ -69,87 +69,13 @@
    "tenacity": 50
   }
  ],
- "leyline": {
-  "name": "历经百战的玳龟·坚盾轰霆",
-  "nameEn": "Battle-Hardened Tent Tortoise: Thunderous Aegis",
-  "category": "StygianOnslaught",
-  "categoryLabel": "幽境危战",
-  "portrait": "leyline-portrait.webp",
-  "difficulties": [
-   {
-    "key": "N3",
-    "name": "困难",
-    "level": 90,
-    "hp": 653097,
-    "atk": 10467,
-    "multiplier": 1.2,
-    "advantage": ""
-   },
-   {
-    "key": "N4",
-    "name": "险恶",
-    "level": 100,
-    "hp": 3254310,
-    "atk": 13542,
-    "multiplier": 4.0,
-    "advantage": "Low-Freq DMG Adv."
-   },
-   {
-    "key": "N5",
-    "name": "无畏",
-    "level": 105,
-    "hp": 6397042,
-    "atk": 14905,
-    "multiplier": 6.8,
-    "advantage": ""
-   },
-   {
-    "key": "N6",
-    "name": "绝境",
-    "level": 110,
-    "hp": 13283708,
-    "atk": 15965,
-    "multiplier": 12.9,
-    "advantage": ""
-   }
-  ],
-  "resistances": [
-   {
-    "name": "正常",
-    "pyro": 10,
-    "hydro": 10,
-    "anemo": 10,
-    "electro": 70,
-    "dendro": 10,
-    "cryo": 10,
-    "geo": 10,
-    "physical": 50
-   }
-  ],
-  "skills": [],
-  "notes": [
-   {
-    "text": "雷棘护罩",
-    "desc": "16雷盾，不可伤害转化，击破即可瘫痪科西霍10s，并使其退出狂暴状态。<c=#ffbfbf>(N5)</c>雷盾加厚，为32雷盾。"
-   },
-   {
-    "text": "怒气与狂暴",
-    "desc": "玳龟受到伤害时会累计怒气条，上限100进度，每受击1次增加<c=#ffdfbf>3</c>进度(燃烧伤害除外)，条满后进入狂暴状态，并展开雷棘护罩。\n<c=#ffbfbf>(N5)</c>怒气条上限变为30进度，每受击1次增加<c=#ffdfbf>3</c>进度(燃烧伤害除外)，但每0.5s失去<c=#ffdfbf>2</c>进度。"
-   }
-  ],
-  "shields": [
-   {
-    "name": "雷棘护罩",
-    "description": "16雷盾，不可伤害转化，击破即可瘫痪科西霍10s，并使其退出狂暴状态。<c=#ffbfbf>(N5)</c>雷盾加厚，为32雷盾。",
-    "elementType": "Electric",
-    "duration": ""
-   }
-  ]
- },
+ "leyline": null,
  "id": "tent-tortoise",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
-  "动物",
-  "幽境危战"
+  "动物"
  ]
 }

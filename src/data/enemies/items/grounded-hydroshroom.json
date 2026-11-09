@@ -94,6 +94,9 @@
  ],
  "leyline": null,
  "id": "grounded-hydroshroom",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽"

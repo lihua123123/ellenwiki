@@ -87,6 +87,9 @@
  ],
  "leyline": null,
  "id": "棋阵机关-寒际鲛冰",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他"

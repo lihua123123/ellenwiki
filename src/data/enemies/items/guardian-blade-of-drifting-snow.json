@@ -260,6 +260,12 @@
   ]
  },
  "id": "guardian-blade-of-drifting-snow",
+ "leylineImages": [
+  "leyline.png"
+ ],
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "异种魔兽",

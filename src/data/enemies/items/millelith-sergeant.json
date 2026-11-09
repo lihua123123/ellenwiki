@@ -104,6 +104,9 @@
  ],
  "leyline": null,
  "id": "millelith-sergeant",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "其他人类势力"

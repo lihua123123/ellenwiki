@@ -105,10 +105,10 @@
  "shields": [],
  "chargebar": [
   {
-   "Name": "晦隐",
-   "Description": "抗打断0，全抗性提升<color=#ffccbf>60%</color>/<color=#ffccbf>120%</color>，允许受到冰元素伤害；充能条总量<color=#99ffff>100</color>/<color=#99ffff>150</color>(深渊)，受到<color=#99ffff>冰元素</color>攻击后根据冰元素的量积攒<color=#99ffff>20n</color>或<color=#99ffff>3</color>，受到月反应伤害积攒<color=#99ffff>3</color>，充满退出状态。",
-   "IconPath": "",
-   "Charge": [
+   "name": "晦隐",
+   "description": "抗打断0，全抗性提升<c=#ffccbf>60%</c>/<c=#ffccbf>120%</c>，允许受到冰元素伤害；充能条总量<span class=\"cryo\">**100**</span>/<span class=\"cryo\">**150**</span>(深渊)，受到<span class=\"cryo\">**冰元素**</span>攻击后根据冰元素的量积攒<span class=\"cryo\">**20n**</span>或<span class=\"cryo\">**3**</span>，受到月反应伤害积攒<span class=\"cryo\">**3**</span>，充满退出状态。",
+   "iconPath": "",
+   "charge": [
     {
      "Type": "Other",
      "ConditionDesc": "抗打断0，全抗性提升60%/120%，允许受到冰元素伤害；充能条总量100/150(深渊)，受到冰元素攻击后根据冰元素的量积攒20n或3，受到月反应伤害积攒3，充满退出状态。"
@@ -150,6 +150,9 @@
  ],
  "leyline": null,
  "id": "icy-crystal-frostnight-scion",
+ "images": [
+  "reference.png"
+ ],
  "icon": "avatar.webp",
  "tags": [
   "元素生命"
