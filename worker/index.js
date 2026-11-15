@@ -98,9 +98,27 @@ function mapR2JsonKey(target) {
   return R2_JSON_KEY_PREFIX + rest;
 }
 
+/* wiki 数据：/api/wiki/<dataset>/... -> data/wiki/<dataset>/...（与 launcher 共用版本化前缀）
+ * 只放行白名单数据集，避免把任意路径拼进 R2 key；中文文件名需先解码再拼。*/
+const WIKI_JSON_PREFIX = '/api/wiki/';
+const WIKI_JSON_DATASETS = new Set(['characters', 'weapons', 'artifacts', 'index']);
+
+function mapWikiJsonKey(target) {
+  if (!target || !target.startsWith(WIKI_JSON_PREFIX)) return null;
+  let rest;
+  try { rest = decodeURIComponent(target.slice(WIKI_JSON_PREFIX.length)); } catch { return null; }
+  if (!rest.endsWith('.json') || rest.includes('..') || rest.includes('//') || rest.includes('\\')) return null;
+  const seg = rest.split('/');
+  if (!WIKI_JSON_DATASETS.has(seg[0])) return null;
+  return 'data/wiki/' + rest;
+}
+
 function r2JsonCacheControl(target) {
   if (target === '/api/launcher/manifest.json') return 'no-cache, must-revalidate';
   if (target === '/api/launcher/launcher-metadata.zip') return 'public, max-age=3600';
+  if (target.startsWith('/api/wiki/characters/archive/')) return 'public, max-age=86400';
+  if (target.startsWith('/api/wiki/index/')) return 'no-cache, must-revalidate';
+  if (target.startsWith('/api/wiki/')) return 'public, max-age=3600';
   return 'public, max-age=86400';
 }
 
@@ -115,10 +133,38 @@ async function readR2(env, key) {
   if (!bucket) return null;
   try {
     const obj = await bucket.get(key);
-    return obj ? obj.body : null;
+    if (!obj) return null;
+    /* R2 的 httpEtag 带引号、 etag 不带；统一成强 ETag 形态，供 If-None-Match 比对 */
+    const raw = obj.httpEtag || obj.etag || '';
+    const etag = raw ? (raw.startsWith('"') ? raw : `"${raw}"`) : null;
+    return { body: obj.body, etag };
   } catch {
     return null;
   }
+}
+
+/** If-None-Match 命中（支持逗号列表与 *；W/ 弱校验按同值处理）。 */
+function etagMatches(request, etag) {
+  if (!etag) return false;
+  const inm = request?.headers?.get('If-None-Match');
+  if (!inm) return false;
+  return inm.split(',').some((tok) => {
+    const v = tok.trim();
+    return v === '*' || v === etag || v === `W/${etag}`;
+  });
+}
+
+/** R2 命中时的统一响应：200 带 ETag；条件请求命中返回 304 空体。 */
+function r2JsonResponse(target, obj, request, origin) {
+  const headers = new Headers(cors(origin));
+  headers.set('Content-Type', target.endsWith('.zip')
+    ? 'application/zip' : 'application/json; charset=utf-8');
+  headers.set('Cache-Control', r2JsonCacheControl(target));
+  headers.set('X-Content-Type-Options', 'nosniff');
+  headers.set('X-Ellen-Asset', 'r2');
+  if (obj.etag) headers.set('ETag', obj.etag);
+  if (etagMatches(request, obj.etag)) return new Response(null, { status: 304, headers });
+  return new Response(obj.body, { status: 200, headers });
 }
 
 /* ==================== D 灰度准备：版本化布局适配（接线但不生效） ====================
@@ -248,10 +294,10 @@ async function serveLauncherAsset(category, file, request, url, env, origin, ctx
 }
 
 
-async function serveData(target, url, env, origin) {
+async function serveData(target, url, request, env, origin) {
   /* P2-B：开关打开时优先从 R2 读 data/launcher/；miss 继续原 worker-static 路径 */
   const flags = r2Flags(env);
-  const r2Key = flags.json ? mapR2JsonKey(target) : null;
+  const r2Key = flags.json ? (mapR2JsonKey(target) || mapWikiJsonKey(target)) : null;
   /* D 灰度准备：版本化开关打开时先试 releases/<v>/<原 key>；命中即返回
      （等价于 P2-B 命中，响应头一致）；pointer / 版本对象 miss 均回落到
      下方 P2-B 未版本化前缀。开关 false 时整段零额外 R2 读取，行为逐字节不变。 */
@@ -259,34 +305,16 @@ async function serveData(target, url, env, origin) {
     const prefix = await readR2Pointer(env);
     if (prefix) {
       const vKey = versionedR2Key(prefix, r2Key);
-      const vBody = vKey ? await readR2(env, vKey) : null;
-      if (vBody) {
-        const headers = new Headers(cors(origin));
-        headers.set('Content-Type', target.endsWith('.zip')
-          ? 'application/zip' : 'application/json; charset=utf-8');
-        headers.set('Cache-Control', r2JsonCacheControl(target));
-        headers.set('X-Content-Type-Options', 'nosniff');
-        headers.set('X-Ellen-Asset', 'r2');
-        return new Response(vBody, { status: 200, headers });
-      }
+      const vObj = vKey ? await readR2(env, vKey) : null;
+      if (vObj) return r2JsonResponse(target, vObj, request, origin);
       logFallback({ route: url.pathname, r2Key: vKey, source: 'r2-versioned-miss', next: 'r2-legacy' });
     } else {
       logFallback({ route: url.pathname, source: 'pointer-miss', next: 'r2-legacy' });
     }
   }
   if (r2Key) {
-    const body = await readR2(env, r2Key);
-    if (body) {
-      const headers = new Headers(cors(origin));
-      // 不信任 R2 httpMetadata：A 上传时 JSON 存的是 application/json（无 charset），
-      // 这里显式规范化，保持与 serveData 原契约一致。
-      headers.set('Content-Type', target.endsWith('.zip')
-        ? 'application/zip' : 'application/json; charset=utf-8');
-      headers.set('Cache-Control', r2JsonCacheControl(target));
-      headers.set('X-Content-Type-Options', 'nosniff');
-      headers.set('X-Ellen-Asset', 'r2');
-      return new Response(body, { status: 200, headers });
-    }
+    const obj = await readR2(env, r2Key);
+    if (obj) return r2JsonResponse(target, obj, request, origin);
     logFallback({ route: url.pathname, r2Key, source: 'r2-miss', next: 'worker-static' });
   }
 
@@ -379,7 +407,7 @@ export default {
       if (request.method !== 'GET' && request.method !== 'HEAD') {
         return json({ error: '数据 API 只支持 GET' }, 405, origin);
       }
-      return serveData(target, url, env, origin);
+      return serveData(target, url, request, env, origin);
     }
 
     const res = await env.ASSETS.fetch(request);

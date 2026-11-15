@@ -3,6 +3,13 @@
 	"name": "ellenwiki",
 	"main": "worker/index.js",
 	"compatibility_date": "2026-09-21",
+	// ⚠️ 开关必须写在配置里：Cloudflare Workers Builds 在 push 后自动构建时不带 `--var`，
+	// 缺省 false 会让构建产物把 /api/launcher/* 落回空的 worker-static（build/launcher/ 未入库）→ 404。
+	// 显式关闭（回滚）：`wrangler deploy --var R2_JSON_ENABLED:false --var R2_VERSIONED_ENABLED:false`。
+	"vars": {
+		"R2_JSON_ENABLED": "true",
+		"R2_VERSIONED_ENABLED": "true"
+	},
 	"observability": {
 		"enabled": true
 	},

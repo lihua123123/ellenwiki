@@ -195,17 +195,28 @@ function renderDetail(root, set) {
 
 async function renderDetailAsync(root, slug) {
   root.innerHTML = `<p class="empty-hint">正在加载圣遗物资料…</p>`;
-  const loader = DETAIL_LOADERS[`../../content/artifacts/${slug}.json`];
-  if (!loader) {
+  let data = null;
+  try {
+    const res = await fetch(`/api/wiki/artifacts/${encodeURIComponent(slug)}.json`, { headers: { Accept: 'application/json' } });
+    if (res.ok && (res.headers.get('content-type') || '').includes('json')) data = await res.json();
+  } catch { /* 网络异常 → 回退打包 chunk */ }
+  if (!data) {
+    const loader = DETAIL_LOADERS[`../../content/artifacts/${slug}.json`];
+    if (loader) {
+      try {
+        const mod = await loader();
+        data = mod.default || mod;
+      } catch (err) {
+        root.innerHTML = `<p class="empty-hint">圣遗物资料加载失败：${escapeHtml(err.message)}</p>`;
+        return;
+      }
+    }
+  }
+  if (!data) {
     root.innerHTML = `<p class="empty-hint">未找到圣遗物「${escapeHtml(slug)}」的资料</p>`;
     return;
   }
-  try {
-    const mod = await loader();
-    renderDetail(root, mod.default || mod);
-  } catch (err) {
-    root.innerHTML = `<p class="empty-hint">圣遗物资料加载失败：${escapeHtml(err.message)}</p>`;
-  }
+  renderDetail(root, data);
 }
 
 export function initArtifactsPage(root, params) {

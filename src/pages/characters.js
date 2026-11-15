@@ -100,7 +100,7 @@ function talentIconHtml(item, cls = 'talent-icon') {
 }
 
 /* 拍平角色数据并补上元素字段，再按实装版本倒序（新角色在前）；
- * 版本来自 content/characters/<名>.json 的 version 字段（scripts/sync-character-versions.mjs 写入），
+ * 版本来自 content/characters/<名>.json 的 version 字段（内容管线写入），
  * 暂无版本的排在最后 */
 const versionParts = (v) => String(v || '').split('.').map(Number);
 function versionRank(name) {
@@ -350,7 +350,7 @@ function levelSelector(skill) {
     </div>`;
 }
 
-/* 文本段落换行；<buff>…</buff> 标记（由 scripts/sync-buffs.mjs 写入）转成加强色 */
+/* 文本段落换行；<buff>…</buff> 标记（由内容管线写入）转成加强色 */
 const textHtml = (text) => escapeHtml(text || '')
   .replace(/&lt;buff&gt;/g, '<span class="rt-buff">')
   .replace(/&lt;\/buff&gt;/g, '</span>')
@@ -388,7 +388,7 @@ function inlineStatesHtml(desc, states = []) {
 }
 
 /* 描述整体渲染：正文（状态名内嵌悬停）+ 逸闻（附录色斜体，悬停说明）。
- * 有 buffs.description（gachabase 加强版文本，只给新增片段包了 <buff>）时优先渲染它。 */
+ * 有 buffs.description（加强版文本，只给新增片段包了 <buff>）时优先渲染它。 */
 const descHtml = (item, refs) => {
   const desc = item.buffs?.description || item.description;
   const states = item.buffs?.states || item.states;
@@ -530,6 +530,169 @@ function renderHero(char, meta, profile) {
     </header>`;
 }
 
+/* ============ 角色档案（立绘 / 装扮 / 名片 / 料理 / 资料 / 故事） ============ */
+
+/* 图片统一走 enka CDN（与天赋图标同源）：档案 JSON 只存图标名，不存完整 URL */
+const ENKA_UI = 'https://enka.network/ui';
+const uiUrl = (name) => (name ? `${ENKA_UI}/${name}.png` : '');
+
+/* 文本 → 段落（源文本用单个 \n 分段） */
+const paragraphs = (text) => String(text || '')
+  .split(/\n+/)
+  .map((p) => p.trim())
+  .filter(Boolean)
+  .map((p) => `<p>${escapeHtml(p)}</p>`)
+  .join('');
+
+/* 语音分区：战斗/成长 → 关于/了解 → 其余（闲聊、天气、问候、喜好…） */
+const VOICE_BATTLE_RE = /元素战技|元素爆发|冲刺|风之翼|宝箱|生命值低|倒下|重受击|加入队伍|突破的感受/;
+function voiceGroup(title) {
+  const t = String(title || '');
+  if (VOICE_BATTLE_RE.test(t)) return '战斗与成长';
+  if (/^关于|^想要了解/.test(t)) return '关于与了解';
+  return '闲聊与问候';
+}
+
+/* 统一的折叠外壳：标题 + 右侧摘要 + 正文 */
+function archiveDetails(key, label, meta, body) {
+  return `
+    <details class="archive-item" data-archive="${key}">
+      <summary>
+        <span class="archive-label">${escapeHtml(label)}</span>
+        ${meta ? `<span class="archive-meta">${escapeHtml(meta)}</span>` : ''}
+      </summary>
+      <div class="archive-body">${body}</div>
+    </details>`;
+}
+
+const splashBody = (a, name) => (a.splash ? `
+  <figure class="splash-wrap">
+    <img class="splash-img" src="${escapeHtml(uiUrl(a.splash))}" alt="${escapeHtml(name)} 立绘" loading="lazy" decoding="async" onerror="this.closest('details').remove()" />
+  </figure>` : '');
+
+const costumeBody = (a) => (a.costumes?.length ? `
+  <div class="costume-grid">
+    ${a.costumes.map((c) => `
+      <article class="costume-card">
+        <span class="costume-thumb"><img src="${escapeHtml(uiUrl(c.icon || a.icon))}" alt="" loading="lazy" onerror="this.style.visibility='hidden'" /></span>
+        <div class="costume-text">
+          <h4>${escapeHtml(c.name)}${c.isDefault ? '<span class="archive-tag">默认</span>' : ''}</h4>
+          ${c.desc ? `<p>${escapeHtml(c.desc)}</p>` : ''}
+        </div>
+      </article>`).join('')}
+  </div>` : '');
+
+const nameCardBody = (a) => {
+  const nc = a.nameCard;
+  if (!nc) return '';
+  const pic = nc.pic ? uiUrl(`${nc.pic}_P`) : '';
+  return `
+    <div class="namecard">
+      ${pic ? `<div class="namecard-pic-wrap"><img class="namecard-pic" src="${escapeHtml(pic)}" alt="${escapeHtml(nc.name)}" loading="lazy" /></div>` : ''}
+      <div class="namecard-info">
+        ${nc.icon ? `<img class="namecard-icon" src="${escapeHtml(uiUrl(nc.icon))}" alt="" loading="lazy" onerror="this.style.visibility='hidden'" />` : ''}
+        <div class="namecard-text">
+          <h4>${escapeHtml(nc.name)}</h4>
+          ${nc.desc ? paragraphs(nc.desc) : ''}
+        </div>
+      </div>
+    </div>`;
+};
+
+/* 特色料理图标偶有 CDN 缺图（新版本物料滞后），失败时回退到原始料理图标 */
+const dishCardHtml = (item, label, fallbackIcon) => (item ? `
+  <article class="dish-card">
+    <span class="dish-thumb">${item.icon ? `<img src="${escapeHtml(uiUrl(item.icon))}" alt="" loading="lazy"
+      data-fallback="${escapeHtml(uiUrl(fallbackIcon))}"
+      onerror="if(this.dataset.fallback&&this.src!==this.dataset.fallback){this.src=this.dataset.fallback}else{this.style.visibility='hidden'}" />` : ''}</span>
+    <span class="dish-kind">${escapeHtml(label)}</span>
+    <span class="dish-name">${escapeHtml(item.name)}</span>
+  </article>` : '');
+
+const dishBody = (a) => {
+  if (!a.dish) return '';
+  const sp = a.dish.special || {};
+  return `
+    <div class="dish-row">
+      ${dishCardHtml(a.dish.special, '特色料理', a.dish.origin?.icon)}
+      ${dishCardHtml(a.dish.origin, '原始料理')}
+      <div class="dish-text">
+        ${sp.desc ? `<p class="dish-desc">${escapeHtml(sp.desc)}</p>` : ''}
+        ${sp.effect ? `<p class="dish-effect"><span class="dish-effect-label">效果</span>${escapeHtml(sp.effect)}</p>` : ''}
+      </div>
+    </div>`;
+};
+
+/* 基础档案：称号 / 所属 / 生日 / 神之眼 / 命之座 / 声优 */
+const infoGrid = (info) => {
+  if (!info) return '';
+  const rows = [
+    ['称号', info.title],
+    ['所属', info.native],
+    ['生日', info.birthday],
+    ['神之眼', [info.visionType, info.vision].filter(Boolean).join(' · ')],
+    ['命之座', info.constellation],
+  ].filter(([, v]) => v);
+  const cv = info.cv || {};
+  const cvs = [['中', cv.cn], ['日', cv.jp], ['英', cv.en], ['韩', cv.kr]].filter(([, v]) => v);
+  return `
+    <dl class="info-grid">
+      ${rows.map(([k, v]) => `<div class="info-cell"><dt>${k}</dt><dd>${escapeHtml(v)}</dd></div>`).join('')}
+      ${cvs.length ? `<div class="info-cell info-cv"><dt>声优</dt><dd>${cvs.map(([k, v]) => `<span class="cv-item"><span class="cv-lang">${k}</span>${escapeHtml(v)}</span>`).join('')}</dd></div>` : ''}
+    </dl>`;
+};
+
+const voiceBody = (a) => {
+  if (!a.voices?.length) return '';
+  const groups = new Map();
+  for (const v of a.voices) {
+    const g = voiceGroup(v.title);
+    if (!groups.has(g)) groups.set(g, []);
+    groups.get(g).push(v);
+  }
+  return `
+    <div class="voice-groups">
+      ${[...groups].map(([g, list]) => `
+        <section class="voice-group">
+          <h4 class="voice-group-title">${g}<span class="archive-count">${list.length}</span></h4>
+          ${list.map((v) => `
+            <details class="voice-item">
+              <summary>${escapeHtml(v.title)}</summary>
+              ${paragraphs(v.text)}
+            </details>`).join('')}
+        </section>`).join('')}
+    </div>`;
+};
+
+const storyBody = (a) => (a.stories?.length ? `
+  <div class="story-list">
+    ${a.stories.map((s) => `
+      <details class="story-item">
+        <summary>${escapeHtml(s.title)}</summary>
+        <div class="story-body">${paragraphs(s.text)}</div>
+      </details>`).join('')}
+  </div>` : '');
+
+/* 角色档案整块：命之座之后，六个折叠项（全部默认收起） */
+function archiveSection(archive, name) {
+  if (!archive) return '';
+  const items = [];
+  if (archive.splash) items.push(archiveDetails('splash', '立绘', '', splashBody(archive, name)));
+  if (archive.costumes?.length) items.push(archiveDetails('costume', '装扮', `${archive.costumes.length} 套`, costumeBody(archive)));
+  if (archive.nameCard) items.push(archiveDetails('namecard', '名片', archive.nameCard.name || '', nameCardBody(archive)));
+  if (archive.dish) items.push(archiveDetails('dish', '料理', archive.dish.special?.name || '', dishBody(archive)));
+  if (archive.info || archive.voices?.length) {
+    items.push(archiveDetails('voice', '资料', archive.voices?.length ? `${archive.voices.length} 条语音` : '', `${infoGrid(archive.info)}${voiceBody(archive)}`));
+  }
+  if (archive.stories?.length) items.push(archiveDetails('story', '故事', `${archive.stories.length} 篇`, storyBody(archive)));
+  if (!items.length) return '';
+  return `
+      <section class="talent-section char-archive">
+        <h2>角色档案</h2>
+        <div class="archive-list">${items.join('')}</div>
+      </section>`;
+}
+
 /* 无本地资料的角色：退回纯附着/产球表 */
 /* 占位卡片：无本地资料的角色先搭好框架，标注等待补充 */
 const pendingCard = (type, name, rows = [], showTag = true) => `
@@ -546,7 +709,7 @@ const pendingCard = (type, name, rows = [], showTag = true) => `
     </div>`}
   </article>`;
 
-function renderDetailPlain(root, char, meta) {
+function renderDetailPlain(root, char, meta, archive) {
   const groups = groupAttachmentRows(char.skills);
   const restRows = [
     ...groups.sprint,
@@ -577,6 +740,7 @@ function renderDetailPlain(root, char, meta) {
         <h2>命之座</h2>
         <div class="talent-grid">${pendingCard('命之座', '', [], false)}</div>
       </section>
+      ${archiveSection(archive, char.name)}
       ${restRows.length ? `
       <section class="card">
         <h2 style="margin-top:0">其他 · 附着与产球</h2>
@@ -625,7 +789,7 @@ function bindStatsSection(root, profile) {
 }
 
 /* 有本地资料的角色：左上天赋描述 + 右上等级选择 + 下方附着/产球表 */
-function renderDetailProfile(root, char, meta, profile) {
+function renderDetailProfile(root, char, meta, profile, archive) {
   const groups = groupAttachmentRows(char.skills);
   const refs = skillRefRegex(profile);
 
@@ -726,6 +890,8 @@ function renderDetailProfile(root, char, meta, profile) {
         <div class="constellation-panels">${constellationCards}</div>
       </section>` : ''}
 
+      ${archiveSection(archive, char.name)}
+
       ${groups.other.length ? `
       <section class="card">
         <h2 style="margin-top:0">其他 · 附着与产球</h2>
@@ -742,29 +908,45 @@ function renderDetailProfile(root, char, meta, profile) {
 /* 角色完整资料：import.meta.glob 懒加载（与敌人图鉴同模式，纯静态可用，不依赖 /api） */
 const profileLoaders = import.meta.glob('../../content/characters/*.json');
 
+/* 角色档案（立绘/装扮/名片/料理/资料/故事）：独立子目录，由 scripts/fetch-avatar-archive.mjs 生成 */
+const archiveLoaders = import.meta.glob('../../content/characters/archive/*.json');
+
+async function loadArchive(name) {
+  const loader = archiveLoaders[`../../content/characters/archive/${name}.json`];
+  if (!loader) return null;
+  try {
+    const mod = await loader();
+    return mod.default || mod;
+  } catch {
+    return null;
+  }
+}
+
 async function renderDetail(root, char) {
   const meta = ELEMENT_META[char.element];
   root.innerHTML = '<div class="route-loading">加载角色详情…</div>';
+  const archivePromise = loadArchive(char.name);
   let profile = null;
-  /* ① 优先走打包内的 content/characters/<名>.json（懒加载独立 chunk） */
-  const loader = profileLoaders[`../../content/characters/${char.name}.json`];
-  if (loader) {
-    try {
-      const mod = await loader();
-      profile = mod.default || mod;
-    } catch { /* 文件损坏 → 继续尝试 API */ }
-  }
-  /* ② 兜底：/api/characters/<名>.json（build-api.mjs 产物 / wrangler dev） */
+  /* ① 优先走 R2 版本化数据：/api/wiki/* 由 Worker 映射到 releases/{v}/data/wiki/... */
+  try {
+    const res = await fetch(`/api/wiki/characters/${encodeURIComponent(char.name)}.json`, { headers: { Accept: 'application/json' } });
+    if (res.ok && (res.headers.get('content-type') || '').includes('json')) profile = await res.json();
+  } catch { /* 网络异常 → 回退打包 chunk */ }
+  /* ② 兜底：打包内 content/characters/<名>.json（离线/断网可用） */
   if (!profile) {
-    try {
-      const res = await fetch(`./api/characters/${encodeURIComponent(char.name)}.json`);
-      if (res.ok) profile = await res.json();
-    } catch { /* 网络异常 → 退化为纯文本详情 */ }
+    const loader = profileLoaders[`../../content/characters/${char.name}.json`];
+    if (loader) {
+      try {
+        const mod = await loader();
+        profile = mod.default || mod;
+      } catch { /* 损坏 → 退化为纯文本详情 */ }
+    }
   }
+  const archive = await archivePromise;
   if (profile) {
-    renderDetailProfile(root, char, meta, profile);
+    renderDetailProfile(root, char, meta, profile, archive);
   } else {
-    renderDetailPlain(root, char, meta);
+    renderDetailPlain(root, char, meta, archive);
   }
 }
 
