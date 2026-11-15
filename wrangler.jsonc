@@ -8,7 +8,8 @@
 	// 显式关闭（回滚）：`wrangler deploy --var R2_JSON_ENABLED:false --var R2_VERSIONED_ENABLED:false`。
 	"vars": {
 		"R2_JSON_ENABLED": "true",
-		"R2_VERSIONED_ENABLED": "true"
+		"R2_VERSIONED_ENABLED": "true",
+		"R2_ASSETS_ENABLED": "true"
 	},
 	"observability": {
 		"enabled": true
@@ -23,7 +24,11 @@
 		// `/api` 本身要单独列：`/api/*` 的通配不匹配无尾斜杠的根路径。
 		"run_worker_first": [
 			"/api",
-			"/api/*"
+			"/api/*",
+			// 图片必须进 Worker：否则静态层会直接返回 dist 镜像（无 X-Ellen-Asset、Cache-Control
+			// 是资产默认值），dist 缺失时还会被 SPA 兜底成 index.html（<img> 拿到 HTML）。
+			// 进 Worker 后走 serveImage：R2 版本化优先 -> dist 镜像 -> JSON 404。
+			"/images/*"
 		]
 	},
 	"r2_buckets": [

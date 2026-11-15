@@ -113,9 +113,124 @@ function mapWikiJsonKey(target) {
   return 'data/wiki/' + rest;
 }
 
+/* ==================== 全量接线：其余数据集路由 -> R2 key ====================
+ * 敌人数据在 R2 是 data/enemies/items/<slug>.json（源目录结构），对外仍是扁平的
+ * /api/enemies/<slug>.json —— 差异在 Worker 内吸收。所有映射都做白名单与穿越校验，
+ * 未命中返回 null，继续走 worker-static（回退链不变）。
+ */
+function mapEnemyDataKey(target) {
+  const PREFIX = '/api/enemies/';
+  if (!target.startsWith(PREFIX)) return null;
+  let rest;
+  try { rest = decodeURIComponent(target.slice(PREFIX.length)); } catch { return null; }
+  if (!rest.endsWith('.json') || rest.includes('..') || rest.includes('\\')) return null;
+  if (rest === 'index.json' || rest === 'assets-manifest.json') return 'data/enemies/' + rest;
+  if (rest.includes('/')) return null;
+  return 'data/enemies/items/' + rest;
+}
+
+/* 挑战三件套只有固定文件名，白名单直接枚举，避免拼任意 key。 */
+function mapChallengeKey(target) {
+  const m = /^\/api\/challenge\/(abyss|theater|stygian)\.json$/.exec(target);
+  return m ? `data/challenges/${m[1]}.json` : null;
+}
+
+/* 幽境攻略：对外 /api/guides/hard-challenge.json，R2 里沿用 Launcher 原文件名。 */
+function mapGuideKey(target) {
+  return target === '/api/guides/hard-challenge.json'
+    ? 'data/endgame/HardChallengeBosses.json' : null;
+}
+
+/* 随包补充表：单独前缀 data/launcher-supplement/，不并入 data/launcher/。 */
+function mapSupplementKey(target) {
+  const PREFIX = '/api/launcher/supplement/';
+  if (!target.startsWith(PREFIX)) return null;
+  let rest;
+  try { rest = decodeURIComponent(target.slice(PREFIX.length)); } catch { return null; }
+  if (!rest.endsWith('.json') || rest.includes('..') || rest.includes('/') || rest.includes('\\')) return null;
+  return 'data/launcher-supplement/' + rest;
+}
+
+/* 图片路由 -> assets/<...>。顺序敏感：_thumbs 必须排在 enemies 之前。 */
+const IMAGE_R2_ROUTES = [
+  [/^\/images\/enemies\/_thumbs\/(.+)$/u, 'assets/enemies/_thumbs/'],
+  [/^\/images\/enemies\/(.+)$/u, 'assets/enemies/'],
+  [/^\/images\/characters\/(.+)$/u, 'assets/characters/'],
+  [/^\/images\/guides\/hard-challenge\/(.+)$/u, 'assets/endgame/hard-challenge/'],
+];
+
+function mapImageKey(pathname) {
+  let p;
+  try { p = decodeURIComponent(pathname); } catch { return null; }
+  if (p.includes('..') || p.includes('\\')) return null;
+  for (const [re, prefix] of IMAGE_R2_ROUTES) {
+    const m = re.exec(p);
+    if (m) return prefix + m[1];
+  }
+  return null;
+}
+
+/* 图片缓存：原图/缩略图可 SWR 长缓存；其余（角色图、攻略图）1 天。 */
+function imageCacheControl(pathname) {
+  if (pathname.startsWith('/images/enemies/')) {
+    return 'public, max-age=86400, stale-while-revalidate=604800';
+  }
+  return 'public, max-age=86400';
+}
+
+/* 二进制响应：content-type 取 R2 存的 httpMetadata（上传时已写对），缺失兜底 image/png。 */
+function r2BinaryResponse(obj, request, origin, cacheControl) {
+  const headers = new Headers(cors(origin));
+  headers.set('Content-Type', obj.contentType || 'image/png');
+  headers.set('Cache-Control', cacheControl);
+  headers.set('X-Content-Type-Options', 'nosniff');
+  headers.set('X-Ellen-Asset', 'r2');
+  if (obj.etag) headers.set('ETag', obj.etag);
+  if (etagMatches(request, obj.etag)) return new Response(null, { status: 304, headers });
+  return new Response(obj.body, { status: 200, headers });
+}
+
+/* /images/*：R2（版本化优先）-> dist 镜像 -> JSON 404。 */
+async function serveImage(url, request, env, origin) {
+  if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors(origin) });
+  if (request.method !== 'GET' && request.method !== 'HEAD') {
+    return json({ error: '图片只支持 GET' }, 405, origin);
+  }
+  const r2Key = mapImageKey(url.pathname);
+  if (r2Key && r2Flags(env).assets) {
+    if (r2VersionedFlag(env)) {
+      const prefix = await readR2Pointer(env);
+      if (prefix) {
+        const vObj = await readR2(env, prefix + r2Key);
+        if (vObj) return r2BinaryResponse(vObj, request, origin, imageCacheControl(url.pathname));
+        logFallback({ route: url.pathname, r2Key: prefix + r2Key, source: 'r2-versioned-miss', next: 'r2-legacy' });
+      } else {
+        logFallback({ route: url.pathname, source: 'pointer-miss', next: 'r2-legacy' });
+      }
+    }
+    const obj = await readR2(env, r2Key);
+    if (obj) return r2BinaryResponse(obj, request, origin, imageCacheControl(url.pathname));
+    logFallback({ route: url.pathname, r2Key, source: 'r2-miss', next: 'worker-static' });
+  }
+  const res = await env.ASSETS.fetch(new Request(new URL(url.pathname, url.origin), { method: 'GET' }));
+  const ct = res.headers.get('content-type') || '';
+  if (!res.ok || !(ct.startsWith('image/') || ct.includes('octet-stream'))) {
+    return json({ error: 'not found', path: url.pathname }, 404, origin);
+  }
+  const headers = new Headers(cors(origin));
+  headers.set('Content-Type', ct.startsWith('image/') ? ct : 'image/png');
+  headers.set('Cache-Control', 'public, max-age=604800, s-maxage=2592000, immutable');
+  headers.set('X-Content-Type-Options', 'nosniff');
+  headers.set('X-Ellen-Asset', 'mirror');
+  return new Response(res.body, { status: 200, headers });
+}
+
 function r2JsonCacheControl(target) {
   if (target === '/api/launcher/manifest.json') return 'no-cache, must-revalidate';
   if (target === '/api/launcher/launcher-metadata.zip') return 'public, max-age=3600';
+  if (target === '/api/enemies/index.json' || target === '/api/enemies/assets-manifest.json') return 'no-cache, must-revalidate';
+  if (target.startsWith('/api/challenge/')) return 'public, max-age=1800';
+  if (target.startsWith('/api/launcher/supplement/')) return 'no-cache, must-revalidate';
   if (target.startsWith('/api/wiki/characters/archive/')) return 'public, max-age=86400';
   if (target.startsWith('/api/wiki/index/')) return 'no-cache, must-revalidate';
   if (target.startsWith('/api/wiki/')) return 'public, max-age=3600';
@@ -137,7 +252,7 @@ async function readR2(env, key) {
     /* R2 的 httpEtag 带引号、 etag 不带；统一成强 ETag 形态，供 If-None-Match 比对 */
     const raw = obj.httpEtag || obj.etag || '';
     const etag = raw ? (raw.startsWith('"') ? raw : `"${raw}"`) : null;
-    return { body: obj.body, etag };
+    return { body: obj.body, etag, size: obj.size, contentType: obj.httpMetadata?.contentType || '' };
   } catch {
     return null;
   }
@@ -246,7 +361,22 @@ async function serveLauncherAsset(category, file, request, url, env, origin, ctx
     return json({ error: '图标只支持 GET' }, 405, origin);
   }
 
-  /* 1. 构建期镜像进 dist 的那批（最近版本的角色/武器） */
+  /* 1. R2 版本化镜像（assets/launcher/<cat>/<file>）：命中即命中，比回源 CDN 可控 */
+  if (r2Flags(env).assets) {
+    const assetKey = `assets/launcher/${category}/${file}`;
+    const tryKeys = [];
+    if (r2VersionedFlag(env)) {
+      const prefix = await readR2Pointer(env);
+      if (prefix) tryKeys.push(prefix + assetKey);
+    }
+    tryKeys.push(assetKey);
+    for (const k of tryKeys) {
+      const obj = await readR2(env, k);
+      if (obj) return r2BinaryResponse(obj, request, origin, ASSET_CACHE_CONTROL);
+    }
+  }
+
+  /* 2. 构建期镜像进 dist 的那批（最近版本的角色/武器） */
   const localTarget = new URL(url.pathname, url.origin);
   const local = await env.ASSETS.fetch(new Request(localTarget, { method: 'GET' }));
   const localType = local.headers.get('content-type') || '';
@@ -257,7 +387,7 @@ async function serveLauncherAsset(category, file, request, url, env, origin, ctx
     });
   }
 
-  /* 2. 边缘缓存（不带 CORS，避免跨来源污染；命中后再补头） */
+  /* 3. 边缘缓存（不带 CORS，避免跨来源污染；命中后再补头） */
   const cacheKey = new Request(`${url.origin}${url.pathname}`, { method: 'GET' });
   const cache = caches.default;
   const cached = await cache.match(cacheKey);
@@ -268,7 +398,7 @@ async function serveLauncherAsset(category, file, request, url, env, origin, ctx
     });
   }
 
-  /* 3. 回源 */
+  /* 4. 回源 */
   for (const build of LAUNCHER_ASSET_UPSTREAMS) {
     try {
       const res = await fetch(build(category, file), {
@@ -297,7 +427,10 @@ async function serveLauncherAsset(category, file, request, url, env, origin, ctx
 async function serveData(target, url, request, env, origin) {
   /* P2-B：开关打开时优先从 R2 读 data/launcher/；miss 继续原 worker-static 路径 */
   const flags = r2Flags(env);
-  const r2Key = flags.json ? (mapR2JsonKey(target) || mapWikiJsonKey(target)) : null;
+  const r2Key = flags.json
+    ? (mapR2JsonKey(target) || mapWikiJsonKey(target) || mapEnemyDataKey(target)
+       || mapChallengeKey(target) || mapGuideKey(target) || mapSupplementKey(target))
+    : null;
   /* D 灰度准备：版本化开关打开时先试 releases/<v>/<原 key>；命中即返回
      （等价于 P2-B 命中，响应头一致）；pointer / 版本对象 miss 均回落到
      下方 P2-B 未版本化前缀。开关 false 时整段零额外 R2 读取，行为逐字节不变。 */
@@ -399,6 +532,11 @@ export default {
     const asset = url.pathname.match(LAUNCHER_ASSET_PATH);
     if (asset) {
       return serveLauncherAsset(asset[1], decodeURIComponent(asset[2]), request, url, env, origin, ctx);
+    }
+
+    /* 图片：R2 优先、dist 镜像兜底 */
+    if (url.pathname.startsWith('/images/')) {
+      return serveImage(url, request, env, origin);
     }
 
     const target = mapDataPath(url.pathname);
