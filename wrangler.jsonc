@@ -1,14 +1,29 @@
 {
-  "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "ellenwiki",
-  "main": "worker/index.js",
-  "compatibility_date": "2026-09-21",
-  "observability": {
-    "enabled": true
-  },
-  "assets": {
-    "directory": "./dist",
-    "binding": "ASSETS",
-    "not_found_handling": "single-page-application"
-  }
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "ellenwiki",
+	"main": "worker/index.js",
+	"compatibility_date": "2026-09-21",
+	"observability": {
+		"enabled": true
+	},
+	"assets": {
+		"directory": "./dist",
+		"binding": "ASSETS",
+		"not_found_handling": "single-page-application",
+		// ⚠️ 必须是 `/api/*` 而不是只列 assets 子路径：一旦用了数组形式，**未匹配的路径
+		// 不会再进 Worker**（会被静态层的 SPA 兜底成 index.html，导致整个数据 API 变成 HTML）。
+		// 覆盖 /api/* 同时兼顾图标回源与原有 JSON 转发；站点静态文件仍走快速路径。
+		// `/api` 本身要单独列：`/api/*` 的通配不匹配无尾斜杠的根路径。
+		"run_worker_first": [
+			"/api",
+			"/api/*"
+		]
+	},
+	"r2_buckets": [
+		{
+			"bucket_name": "ellen-assets",
+			"binding": "ellen_assets",
+			"remote": true
+		}
+	]
 }
